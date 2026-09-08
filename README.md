@@ -305,13 +305,13 @@ La propuesta también facilita el acceso autorizado a información agrícola par
 
 NovaTech está conformada por estudiantes que aportan diferentes conocimientos técnicos y habilidades para el análisis, diseño, implementación y documentación de TerraTech. A continuación, se presentan los perfiles de los integrantes del equipo.
 
-| Fotografía | Datos académicos | Perfil y aporte al equipo |
-| --- | --- | --- |
-| [Incorporar fotografía 1] | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** [Código 1]<br>**Carrera:** [Carrera 1] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| [Incorporar fotografía 2] | **Apellidos y nombres:** Bendezu Navarro, Rúbens Fitzgerald<br>**Código:** [Código 2]<br>**Carrera:** [Carrera 2] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| [Incorporar fotografía 3] | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** [Código 3]<br>**Carrera:** [Carrera 3] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| [Incorporar fotografía 4] | **Apellidos y nombres:** Pariona Chacca, Angel Jose<br>**Código:** [Código 4]<br>**Carrera:** [Carrera 4] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| [Incorporar fotografía 5] | **Apellidos y nombres:** Retuerto Rodriguez, Jorge Manuel<br>**Código:** [Código 5]<br>**Carrera:** [Carrera 5] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| Fotografía                                                | Datos académicos | Perfil y aporte al equipo |
+|-----------------------------------------------------------| --- | --- |
+| [Incorporar fotografía 1]                                 | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** [Código 1]<br>**Carrera:** [Carrera 1] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| [Incorporar fotografía 2]                                 | **Apellidos y nombres:** Bendezu Navarro, Rúbens Fitzgerald<br>**Código:** [Código 2]<br>**Carrera:** [Carrera 2] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| <img src="assets/images/cap1/foto-james.jpeg" alt="Foto"> | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** [Código 3]<br>**Carrera:** [Carrera 3] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| [Incorporar fotografía 4]                                 | **Apellidos y nombres:** Pariona Chacca, Angel Jose<br>**Código:** [Código 4]<br>**Carrera:** [Carrera 4] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| [Incorporar fotografía 5]                                 | **Apellidos y nombres:** Retuerto Rodriguez, Jorge Manuel<br>**Código:** [Código 5]<br>**Carrera:** [Carrera 5] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
 
 ## 1.2. Solution Profile
 
