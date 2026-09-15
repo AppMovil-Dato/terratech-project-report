@@ -1054,11 +1054,64 @@ El enlace público del mapa se incorporará cuando el equipo habilite su compart
 
 ### 2.4.3. Product Backlog
 
-Priorizar por valor de negocio y estimar las historias. Considerar la landing page desde el primer sprint. Incluir captura y enlace público al backlog en la herramienta de gestión.
+El Product Backlog prioriza las historias por valor para el negocio, considerando la Landing Page desde el primer sprint. La estimación utiliza la escala 1, 2, 3, 5 y 8, y la columna Sprint indica el sprint previsto para su desarrollo.
 
-| Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
-| --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| # Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+| :---: | :--- | :--- | :---: | :---: |
+| 1 | US01 | Visualización del mensaje de valor | 2 | Sprint 1 |
+| 2 | US02 | Conocimiento de las características de la solución | 3 | Sprint 1 |
+| 3 | US03 | Solicitud de demostración | 5 | Sprint 1 |
+| 4 | US04 | Consulta de términos y condiciones | 1 | Sprint 1 |
+| 5 | US05 | Información del proyecto y del equipo | 2 | Sprint 1 |
+| 6 | US06 | Registro de nuevo usuario | 5 | Sprint 2 |
+| 7 | US07 | Inicio de sesión | 3 | Sprint 2 |
+| 8 | US08 | Recuperación de contraseña | 3 | Sprint 2 |
+| 9 | US09 | Gestión del perfil de usuario | 2 | Sprint 2 |
+| 10 | US10 | Consulta de indicadores clave | 5 | Sprint 2 |
+| 11 | US11 | Selección de zona o sensor específico | 3 | Sprint 2 |
+| 12 | US12 | Consulta del histórico de datos | 5 | Sprint 2 |
+| 13 | US17 | Registro de un nuevo sensor | 3 | Sprint 2 |
+| 14 | US13 | Identificación de zonas fértiles | 8 | Sprint 3 |
+| 15 | US14 | Navegación en el mapa | 3 | Sprint 3 |
+| 16 | US15 | Recomendación automática de riego | 5 | Sprint 3 |
+| 17 | US16 | Recomendación automática de fertilización | 5 | Sprint 3 |
+| 18 | US18 | Configuración de umbrales de alerta | 3 | Sprint 3 |
+| 19 | US22 | Consulta del pronóstico del clima | 5 | Sprint 3 |
+| 20 | US19 | Documentación interactiva de la API | 2 | Sprint 4 |
+| 21 | US20 | Consulta de datos de un sensor | 3 | Sprint 4 |
+| 22 | US21 | Registro de recomendaciones mediante webhook | 5 | Sprint 4 |
+| 23 | US23 | Consulta de imágenes satelitales | 8 | Sprint 4 |
+| 24 | US24 | Registro de insumos | 3 | Sprint 4 |
+| 25 | US25 | Consulta y filtrado del inventario | 3 | Sprint 4 |
+| 26 | US26 | Actualización del stock de insumos | 5 | Sprint 4 |
+| 27 | US27 | Consulta de notificaciones de los sensores | 3 | Sprint 4 |
+| 28 | US28 | Configuración de preferencias de notificaciones | 5 | Sprint 4 |
+| 29 | US29 | Alertas de demanda de productos | 3 | Sprint 5 |
+| 30 | US30 | Notificaciones de nuevas reseñas | 3 | Sprint 5 |
+| 31 | US31 | Notificaciones de nuevos productos de interés | 3 | Sprint 5 |
+| 32 | US32 | Notificaciones de ofertas y disponibilidad | 3 | Sprint 5 |
+| 33 | US33 | Consulta de comentarios y calificaciones | 3 | Sprint 5 |
+| 34 | US34 | Consulta de la reputación de productos | 3 | Sprint 5 |
+| 35 | US35 | Publicación de reseñas de productos | 3 | Sprint 5 |
+| 36 | US36 | Consulta de reseñas de otros compradores | 2 | Sprint 5 |
+| 37 | US37 | Consulta de productos más demandados | 5 | Sprint 5 |
+| 38 | US38 | Consulta de zonas con mayor actividad | 5 | Sprint 5 |
+| 39 | US39 | Consulta del catálogo de productos | 5 | Sprint 5 |
+| 40 | US40 | Consulta del detalle y la trazabilidad de un producto | 5 | Sprint 5 |
+| 41 | TS01 | Configuración de repositorios con GitFlow | 2 | Sprint 1 |
+| 42 | TS02 | Despliegue automático de los productos | 3 | Sprint 1 |
+| 43 | TS03 | Configuración de la base de datos en la nube | 3 | Sprint 1 |
+| 44 | TS04 | Configuración de variables de entorno | 2 | Sprint 1 |
+| 45 | TS05 | Implementación del servicio de autenticación | 8 | Sprint 2 |
+| 46 | TS08 | Consulta de perfiles agrícolas | 3 | Sprint 5 |
+| 47 | TS09 | Gestión del inventario de insumos | 5 | Sprint 5 |
+| 48 | TS10 | Consulta de reportes analíticos por dispositivo | 3 | Sprint 5 |
+| 49 | TS11 | Gestión de la comunidad y reseñas | 8 | Sprint 5 |
+| 50 | SP01 | Viabilidad de la integración de sensores IoT | 3 | Sprint 3 |
+| 51 | SP02 | Viabilidad del almacenamiento local y la sincronización sin conexión | 3 | Sprint 4 |
+| 52 | SP03 | Viabilidad de las notificaciones push | 3 | Sprint 5 |
+
+La captura del tablero y el enlace público del Product Backlog se incorporarán cuando el equipo cree el tablero en la herramienta de gestión seleccionada.
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
