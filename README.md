@@ -48,7 +48,7 @@ Proyecto
     </tr>
     <tr>
       <td>[Código 4]</td>
-      <td>[Apellidos y nombres 4]</td>
+      <td>Delgado Perez, James Caleb</td>
     </tr>
     <tr>
       <td>U202318612</td>
@@ -67,12 +67,15 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor                       | Descripción de modificación |
-|:---:|:---:|-----------------------------|---|
-| 0.1.0 | 04/09/2026 | Bryan Barba                       | Creación del repositorio `terratech-project-report`. |
-| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz]       | Creación de la estructura inicial del informe del proyecto TerraTech. |
-| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez         | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
-| 0.3.0 | 14/09/2026 | Jorge Manuel Retuerto Rodriguez   | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
+| Versión | Fecha | Autor | Descripción de modificación |
+|:---:|:---:|---|---|
+| 0.1.0 | 04/09/2026 | Bryan Barba | Creación del repositorio `terratech-project-report`. |
+| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz] | Creación de la estructura inicial del informe del proyecto TerraTech. |
+| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
+| 0.3.0 | 14/09/2026 | Jorge Manuel Retuerto Rodriguez | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
+| 0.3.1 | 15/09/2026 | James Caleb Delgado Perez | Actualización del registro para documentar los aportes realizados en la AV1: elaboración y revisión del Capítulo I para su adaptación al proyecto móvil; organización inicial del informe por archivos y posterior consolidación en un único README; ajuste del índice y sus enlaces internos; organización de la bibliografía; e integración del avance del Capítulo II elaborado por un compañero y de sus imágenes. |
+
+
 
 ## Project Report Collaboration Insights
 
