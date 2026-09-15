@@ -705,41 +705,186 @@ El análisis de las entrevistas consolida las variables objetivas (demográficas
 
 ## 2.3. Needfinding
 
-> Pendiente de desarrollo. Los siguientes apartados contienen la estructura y las indicaciones para completarlos.
+El proceso de Needfinding traduce los hallazgos de las entrevistas en artefactos de diseño centrados en las personas. Tomando como insumo el análisis demográfico, conductual y tecnológico de cada segmento (2.2) y las brechas identificadas frente a los competidores (2.1), el equipo elaboró los artefactos que se presentan a continuación, los cuales orientan el diseño de la aplicación móvil TerraTech.
 
 ### 2.3.1. User Personas
 
-Elaborar en UXPressia una ficha por segmento. Incluir introducción, captura, enlace y explicación de su relación con las entrevistas y el análisis competitivo.
+Las fichas de User Persona resumen el perfil de cada segmento objetivo en un arquetipo que reúne sus datos demográficos, metas, frustraciones, habilidades tecnológicas, marcas e influencias y canales de interacción. Cada ficha se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007: el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y conectividad limitada; el proveedor de insumos (ENT-003, ENT-004) necesita datos objetivos del suelo para respaldar sus recomendaciones; y el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y la trazabilidad del producto. Asimismo, cada ficha incorpora las características más frecuentes del análisis estadístico presentado en 2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
+
+**Segmento 1: Agricultor**
+
+<img src="assets/images/cap2/user-person-1.png" alt="User Persona - Agricultor" width="700">
+
+**Segmento 2: Proveedor de insumos**
+
+<img src="assets/images/cap2/user-person-2.png" alt="User Persona - Proveedor de insumos" width="700">
+
+**Segmento 3: Cliente final**
+
+<img src="assets/images/cap2/user-person-3.png" alt="User Persona - Cliente final" width="700">
 
 ### 2.3.2. User Task Matrix
 
-Registrar tareas que los usuarios realizan para cumplir sus objetivos. Incluir columnas de frecuencia e importancia para cada User Persona y explicar las principales diferencias y coincidencias.
+La User Task Matrix compara las tareas que cada segmento realiza hoy para alcanzar sus objetivos, sin considerar la existencia de la solución (es decir, actividades del negocio y no funcionalidades de software). Las tareas se identificaron a partir de las entrevistas y se valoraron según su frecuencia (Alta, Media, Baja) y su importancia para cada User Persona.
 
-| Tarea | Persona 1: frecuencia | Persona 1: importancia |
-| --- | --- | --- |
-| Por completar | Por completar | Por completar |
+| Tarea | Agricultor: Frecuencia | Agricultor: Importancia | Proveedor: Frecuencia | Proveedor: Importancia | Cliente final: Frecuencia | Cliente final: Importancia |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Supervisar el estado del suelo y del cultivo | Alta | Alta | Media | Alta | Baja | Baja |
+| Decidir cuándo regar o aplicar fertilizantes | Alta | Alta | Media | Media | Baja | Baja |
+| Anticipar riesgos climáticos (heladas, sequías, lluvias) | Alta | Alta | Media | Alta | Baja | Media |
+| Detectar plagas o enfermedades en el cultivo | Alta | Alta | Media | Alta | Baja | Baja |
+| Planificar la siembra y la rotación de cultivos | Media | Alta | Baja | Media | Baja | Baja |
+| Registrar el rendimiento de la producción | Media | Media | Baja | Media | Baja | Baja |
+| Asesorar a agricultores sobre insumos y buenas prácticas | Baja | Media | Alta | Alta | Baja | Baja |
+| Verificar la procedencia y la calidad de los productos agrícolas | Baja | Media | Alta | Alta | Alta | Alta |
+| Comparar precios y opciones antes de comprar o vender | Media | Media | Alta | Alta | Alta | Alta |
+| Coordinar visitas, pedidos y entregas con la red de contactos | Media | Media | Alta | Alta | Media | Media |
+| Comunicarse por mensajería con clientes, proveedores o familiares | Media | Media | Alta | Alta | Alta | Media |
+| Compartir opiniones o recomendaciones sobre productos | Baja | Baja | Media | Media | Alta | Media |
 
-Agregar las columnas correspondientes a las demás personas.
+**Análisis de la User Task Matrix:**
+
+Los agricultores concentran la mayor frecuencia e importancia en tareas operativas: supervisar el suelo, decidir el riego y anticipar riesgos climáticos o plagas, pues de ello dependen directamente sus cosechas. Los proveedores destacan en tareas comerciales y de asesoría, como verificar la calidad de los productos, comparar opciones y coordinar visitas y entregas, lo que refleja un uso más estratégico de la información. Los clientes finales realizan con menor frecuencia tareas de producción, pero otorgan alta importancia a verificar la procedencia y calidad de lo que compran, comparar alternativas y compartir recomendaciones. En coincidencia, los tres segmentos necesitan comunicarse y comparar información antes de tomar decisiones, lo que sustenta la propuesta de valor de TerraTech: información objetiva del cultivo disponible desde el dispositivo móvil.
 
 ### 2.3.3. User Journey Mapping
 
-Elaborar en UXPressia un User Journey Map As-Is por persona, vinculado con su ficha. Describir el recorrido actual completo e incluir captura y explicación.
+Los User Journey Maps describen el recorrido de extremo a extremo que cada User Persona sigue actualmente (situación As-Is), antes de contar con TerraTech. Estos mapas, elaborados en UXPressia y vinculados con la ficha de su respectivo User Persona, permiten reconocer los puntos de dolor y las oportunidades de mejora que la aplicación móvil debe atender.
+
+**Segmento 1: Agricultor**
+
+El mapa de Marcelino muestra el recorrido que sigue en su cultivo de zanahoria en Huánuco para revisar el estado del suelo y decidir cuándo regar o fertilizar. Al no contar con mediciones objetivas, depende de la inspección visual y de su experiencia, lo que le genera incertidumbre frente a cambios climáticos inesperados y un importante desgaste físico al recorrer el terreno.
+
+<img src="assets/images/cap2/journey-map-1.png" alt="User Journey Map - Agricultor" width="900">
+
+**Segmento 2: Proveedor de insumos**
+
+El mapa de Karim refleja el proceso de asesoría que realiza en Cañete para recomendar insumos a los agricultores. El recorrido combina visitas presenciales con su experiencia previa, pero la ausencia de datos reales del suelo deriva en recomendaciones poco precisas, reclamos y pérdida de confianza de sus clientes.
+
+<img src="assets/images/cap2/journey-map-2.png" alt="User Journey Map - Proveedor de insumos" width="900">
+
+**Segmento 3: Cliente final**
+
+El mapa de Luciana describe su proceso de compra de frutas y verduras en La Molina. Aunque valora la frescura, el precio y la apariencia del producto, no dispone de información confiable sobre el origen ni las prácticas de cultivo, por lo que decide con información incompleta y desconfianza.
+
+<img src="assets/images/cap2/journey-map-3.png" alt="User Journey Map - Cliente final" width="900">
 
 ### 2.3.4. Empathy Mapping
 
-Elaborar en UXPressia un mapa por persona. Describir qué necesita hacer, dice, ve, hace, escucha, piensa y siente, incluyendo pains y gains. Presentar capturas y explicar el proceso.
+Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, escucha, dice y hace en su contexto cotidiano. Fueron elaborados en UXPressia a partir de las observaciones y respuestas obtenidas en las entrevistas, identificando también sus principales pains y gains.
+
+**Segmento 1: Agricultor**
+
+En el mapa de Marcelino se observa una permanente preocupación por las heladas y la posible pérdida de su cosecha, así como el cansancio que le genera recorrer el terreno para palpar la humedad. Escucha consejos de agricultores veteranos y siente temor inicial hacia la tecnología, pero también desea mayor certeza para mejorar su productividad. Sus pains son la falta de información precisa y el esfuerzo físico; sus gains, la tranquilidad de anticiparse al clima y proteger su inversión.
+
+<img src="assets/images/cap2/empathy-map-1.png" alt="Empathy Map - Agricultor" width="900">
+
+**Segmento 2: Proveedor de insumos**
+
+El mapa de Karim evidencia frustración por las recomendaciones imprecisas y la necesidad de recuperar credibilidad frente a los agricultores. Ve clientes con problemas de suelo y competencia en el mercado, escucha reclamos y comentarios de otros asesores, y basa su trabajo en visitas a campo y experiencia. Sus pains son la falta de datos objetivos y la pérdida de clientes; sus gains, fidelizar a los agricultores y aumentar sus ventas con asesorías más acertadas.
+
+<img src="assets/images/cap2/empathy-map-2.png" alt="Empathy Map - Proveedor de insumos" width="900">
+
+**Segmento 3: Cliente final**
+
+El mapa de Luciana refleja el deseo de transparencia y la desconfianza que le generan las etiquetas confusas o la falta de información sobre el producto. Escucha tendencias de alimentación saludable y testimonios de otros compradores, y suele buscar referencias en su teléfono antes de decidir por precio y apariencia. Sus pains son la dificultad para verificar el origen y la calidad; sus gains, acceder a productos saludables y reconocer prácticas sostenibles con mayor confianza.
+
+<img src="assets/images/cap2/empathy-map-3.png" alt="Empathy Map - Cliente final" width="900">
 
 ### 2.3.5. Big Picture EventStorming
 
-Describir la sesión colaborativa de exploración del negocio: participantes, eventos relevantes, relaciones, procesos, problemas y oportunidades. Incluir capturas de las etapas y sus explicaciones.
+El equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro con el propósito de comprender el dominio del negocio agrícola de TerraTech a alto nivel. La sesión se centró en el flujo de negocio real, desde la preparación de la tierra hasta la comercialización del producto, identificando los eventos significativos del ciclo de cultivo, los actores del ecosistema y las reglas que rigen el comportamiento del sistema.
+
+**Eventos de dominio (domain events):**
+
+- *Soil Prepared*: la tierra quedó preparada para la siembra.
+- *Crop Planted*: el cultivo fue sembrado.
+- *Soil Moisture Changed*: cambió la humedad del suelo.
+- *Nutrient Level Changed*: cambió el nivel de nutrientes.
+- *Irrigation Applied*: se aplicó riego.
+- *Fertilizer Applied*: se aplicó fertilizante.
+- *Weather Alert Received*: se recibió una alerta climática.
+- *Crop Growth Stage Updated*: se actualizó la etapa de crecimiento.
+- *Pest Detected*: se detectó una plaga.
+- *Crop Harvested*: se cosechó el cultivo.
+- *Yield Recorded*: se registró el rendimiento.
+- *Product Listed for Sale*: el producto quedó publicado para la venta.
+- *Product Sold*: el producto fue vendido.
+- *Traceability QR Generated*: se generó el código QR de trazabilidad.
+- *Sustainability Report Generated*: se generó el reporte de sostenibilidad.
+
+**Actores:**
+
+- *Farmer (agricultor)*: prepara, siembra, riega, fertiliza y cosecha.
+- *Soil (suelo)*: actor pasivo que origina los cambios de humedad y nutrientes.
+- *Weather (clima)*: actor externo que genera las alertas climáticas.
+- *Advisor / Supplier (asesor / proveedor)*: recomienda insumos a partir de los datos del suelo.
+- *End Customer (cliente final)*: compra productos y verifica su trazabilidad.
+
+**Políticas de negocio:**
+
+- Cuando la humedad del suelo cae por debajo del 30%, se dispara una recomendación de riego.
+- Cuando el nitrógeno desciende por debajo de 20 ppm, se dispara una recomendación de fertilización.
+- Cuando se detecta una plaga, se dispara una alerta de control fitosanitario.
+- Cuando el cultivo se cosecha, se actualizan el inventario y los registros de rendimiento.
+- Cuando un producto se publica, se genera su código QR de trazabilidad.
+
+<img src="assets/images/cap2/big-picture-event-storming2.0.jpg" alt="Big Picture EventStorming" width="900">
 
 ### 2.3.6. Ubiquitous Language
 
-Definir términos del dominio en inglés, con equivalencia en español opcional y definición en español.
+El siguiente glosario reúne los términos del dominio de negocio de TerraTech, alineados con los bounded contexts definidos en 2.6. Los términos se presentan en inglés, con su equivalente en español, y su definición en español, evitando ambigüedades en la comunicación entre el equipo y los stakeholders.
 
-| Término | Definición |
-| --- | --- |
-| Por completar | Por completar |
+**Identity & Access Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| User | Usuario | Persona que interactúa con la aplicación mediante una cuenta propia. |
+| Credentials | Credenciales | Datos de acceso (correo y contraseña) que permiten autenticar al usuario. |
+| Sign-Up | Registro | Proceso mediante el cual una persona crea una cuenta en la aplicación. |
+| Sign-In | Inicio de sesión | Proceso de autenticación que valida las credenciales del usuario. |
+| Session | Sesión | Periodo durante el cual el usuario autenticado mantiene acceso a la aplicación. |
+
+**Analytics Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Report | Reporte | Resumen de métricas calculadas sobre el comportamiento de un dispositivo o cultivo. |
+| Metric | Métrica | Valor cuantificable que describe el desempeño del cultivo o del dispositivo. |
+| Mean Value | Valor promedio | Promedio estadístico de las mediciones de un periodo determinado. |
+| Variance | Varianza | Medida de dispersión de las mediciones respecto a su promedio. |
+| Standard Deviation | Desviación estándar | Medida de variabilidad de las mediciones de un periodo. |
+| Technical Interpretation | Interpretación técnica | Conclusión, en lenguaje natural, sobre el significado de los datos analizados. |
+
+**Monitoring Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Field | Parcela / campo | Extensión de terreno cultivada que el agricultor administra. |
+| Device | Dispositivo / sensor | Equipo instalado en la parcela que mide las condiciones del suelo. |
+| Soil Type | Tipo de suelo | Clasificación del suelo de una parcela. |
+| Field Size | Extensión de la parcela | Superficie del campo expresada en metros cuadrados. |
+| Location | Ubicación | Coordenadas geográficas donde se encuentra la parcela. |
+| Device Status | Estado del dispositivo | Condición operativa del dispositivo (en línea, fuera de línea, batería baja). |
+| Last Sync | Última sincronización | Momento en que el dispositivo envió datos por última vez. |
+
+**Stock Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Inventory | Inventario | Registro de los insumos que un usuario tiene disponibles. |
+| Product | Producto | Insumo agrícola que se comercializa o se almacena. |
+| Stock | Existencias | Cantidad disponible de un producto. |
+| Stock Quantity | Cantidad en stock | Número de unidades disponibles de un producto. |
+| Warehouse Location | Ubicación en almacén | Lugar físico donde se resguarda el producto. |
+
+**Notification Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Notification | Notificación | Mensaje generado por el sistema para informar al usuario. |
+| Alert | Alerta | Notificación prioritaria sobre una condición crítica del cultivo o del dispositivo. |
+| Read | Leída | Estado que indica que el usuario ya revisó la notificación. |
+| Notification Channel | Canal de notificación | Medio por el que se entrega la notificación (aplicación móvil o correo electrónico). |
 
 ## 2.4. Requirements Specification
 
