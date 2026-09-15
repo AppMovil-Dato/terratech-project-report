@@ -308,7 +308,7 @@ NovaTech está conformada por estudiantes que aportan diferentes conocimientos t
 
 | Fotografía                                                | Datos académicos | Perfil y aporte al equipo |
 |-----------------------------------------------------------| --- | --- |
-| [Incorporar fotografía 1]                                 | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** [Código 1]<br>**Carrera:** [Carrera 1] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
+| <img src="assets/images/cap1/foto-bryan.jpeg" alt="Foto"> | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** U202323479<br>**Carrera:** Ingeniería de Software | Soy una persona creativa y disciplinada, con capacidad para trabajar en equipo. Mis habilidades técnicas incluyen lenguajes de programación como Python y TypeScript. Me esfuerzo por contribuir activamente al desarrollo del proyecto. |
 | [Incorporar fotografía 2]                                 | **Apellidos y nombres:** Bendezu Navarro, Rúbens Fitzgerald<br>**Código:** [Código 2]<br>**Carrera:** [Carrera 2] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
 | <img src="assets/images/cap1/foto-james.jpeg" alt="Foto"> | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** [Código 3]<br>**Carrera:** [Carrera 3] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
 | [Incorporar fotografía 4]                                 | **Apellidos y nombres:** Pariona Chacca, Angel Jose<br>**Código:** [Código 4]<br>**Carrera:** [Carrera 4] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
@@ -705,75 +705,413 @@ El análisis de las entrevistas consolida las variables objetivas (demográficas
 
 ## 2.3. Needfinding
 
-> Pendiente de desarrollo. Los siguientes apartados contienen la estructura y las indicaciones para completarlos.
+El proceso de Needfinding transforma los resultados de las entrevistas en artefactos de diseño centrados en los usuarios. A partir del análisis demográfico, conductual y tecnológico de cada segmento (2.2) y de las diferencias identificadas frente a los competidores (2.1), el equipo elaboró los artefactos que se presentan a continuación, los cuales orientan el diseño de la aplicación móvil TerraTech.
 
 ### 2.3.1. User Personas
 
-Elaborar en UXPressia una ficha por segmento. Incluir introducción, captura, enlace y explicación de su relación con las entrevistas y el análisis competitivo.
+Las fichas de User Persona presentan el perfil de cada segmento objetivo y reúnen sus datos demográficos, metas, frustraciones, habilidades tecnológicas, marcas e influencias y canales de interacción. Cada ficha se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007: el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y conectividad limitada; el proveedor de insumos (ENT-003, ENT-004) necesita datos objetivos del suelo para respaldar sus recomendaciones; y el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y la trazabilidad del producto. Asimismo, cada ficha incorpora las características más frecuentes del análisis estadístico presentado en 2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
+
+**Segmento 1: Agricultor**
+
+<img src="assets/images/cap2/user-person-1.png" alt="User Persona - Agricultor" width="700">
+
+**Segmento 2: Proveedor de insumos**
+
+<img src="assets/images/cap2/user-person-2.png" alt="User Persona - Proveedor de insumos" width="700">
+
+**Segmento 3: Cliente final**
+
+<img src="assets/images/cap2/user-person-3.png" alt="User Persona - Cliente final" width="700">
 
 ### 2.3.2. User Task Matrix
 
-Registrar tareas que los usuarios realizan para cumplir sus objetivos. Incluir columnas de frecuencia e importancia para cada User Persona y explicar las principales diferencias y coincidencias.
+La User Task Matrix compara las tareas que cada segmento realiza hoy para alcanzar sus objetivos, sin considerar la existencia de la solución (es decir, actividades del negocio y no funcionalidades de software). Las tareas se identificaron a partir de las entrevistas y se valoraron según su frecuencia (Alta, Media, Baja) y su importancia para cada User Persona.
 
-| Tarea | Persona 1: frecuencia | Persona 1: importancia |
-| --- | --- | --- |
-| Por completar | Por completar | Por completar |
+| Tarea | Agricultor: Frecuencia | Agricultor: Importancia | Proveedor: Frecuencia | Proveedor: Importancia | Cliente final: Frecuencia | Cliente final: Importancia |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Supervisar el estado del suelo y del cultivo | Alta | Alta | Media | Alta | Baja | Baja |
+| Decidir cuándo regar o aplicar fertilizantes | Alta | Alta | Media | Media | Baja | Baja |
+| Anticipar riesgos climáticos (heladas, sequías, lluvias) | Alta | Alta | Media | Alta | Baja | Media |
+| Detectar plagas o enfermedades en el cultivo | Alta | Alta | Media | Alta | Baja | Baja |
+| Planificar la siembra y la rotación de cultivos | Media | Alta | Baja | Media | Baja | Baja |
+| Registrar el rendimiento de la producción | Media | Media | Baja | Media | Baja | Baja |
+| Asesorar a agricultores sobre insumos y buenas prácticas | Baja | Media | Alta | Alta | Baja | Baja |
+| Verificar la procedencia y la calidad de los productos agrícolas | Baja | Media | Alta | Alta | Alta | Alta |
+| Comparar precios y opciones antes de comprar o vender | Media | Media | Alta | Alta | Alta | Alta |
+| Coordinar visitas, pedidos y entregas con la red de contactos | Media | Media | Alta | Alta | Media | Media |
+| Comunicarse por mensajería con clientes, proveedores o familiares | Media | Media | Alta | Alta | Alta | Media |
+| Compartir opiniones o recomendaciones sobre productos | Baja | Baja | Media | Media | Alta | Media |
 
-Agregar las columnas correspondientes a las demás personas.
+**Análisis de la User Task Matrix:**
+
+Los agricultores realizan con mayor frecuencia e importancia tareas operativas: supervisar el suelo, decidir el riego y anticipar riesgos climáticos o plagas, porque de ello dependen directamente sus cosechas. Los proveedores destacan en tareas comerciales y de asesoría, como verificar la calidad de los productos, comparar opciones y coordinar visitas y entregas, lo que corresponde a un uso más estratégico de la información. Los clientes finales realizan con menor frecuencia tareas de producción, pero otorgan alta importancia a verificar la procedencia y calidad de lo que compran, comparar alternativas y compartir recomendaciones. En común, los tres segmentos necesitan comunicarse y comparar información antes de tomar decisiones, lo que respalda la propuesta de valor de TerraTech: información objetiva del cultivo disponible desde el dispositivo móvil.
 
 ### 2.3.3. User Journey Mapping
 
-Elaborar en UXPressia un User Journey Map As-Is por persona, vinculado con su ficha. Describir el recorrido actual completo e incluir captura y explicación.
+Los User Journey Maps describen el recorrido de extremo a extremo que cada User Persona sigue actualmente (situación As-Is), antes de contar con TerraTech. Estos mapas, elaborados en UXPressia y vinculados con la ficha de su respectivo User Persona, permiten reconocer los puntos de dolor y las oportunidades de mejora que la aplicación móvil debe atender.
+
+**Segmento 1: Agricultor**
+
+El mapa de Marcelino muestra el recorrido que sigue en su cultivo de zanahoria en Huánuco para revisar el estado del suelo y decidir cuándo regar o fertilizar. Al no contar con mediciones objetivas, depende de la inspección visual y de su experiencia, lo que le genera incertidumbre frente a cambios climáticos inesperados y un importante esfuerzo físico al recorrer el terreno.
+
+<img src="assets/images/cap2/journey-map-1.png" alt="User Journey Map - Agricultor" width="900">
+
+**Segmento 2: Proveedor de insumos**
+
+El mapa de Karim refleja el proceso de asesoría que realiza en Cañete para recomendar insumos a los agricultores. El recorrido combina visitas presenciales con su experiencia previa, pero la ausencia de datos reales del suelo genera recomendaciones poco precisas, reclamos y pérdida de confianza de sus clientes.
+
+<img src="assets/images/cap2/journey-map-2.png" alt="User Journey Map - Proveedor de insumos" width="900">
+
+**Segmento 3: Cliente final**
+
+El mapa de Luciana describe su proceso de compra de frutas y verduras en La Molina. Aunque valora la frescura, el precio y la apariencia del producto, no dispone de información confiable sobre el origen ni las prácticas de cultivo, por lo que decide con información incompleta y desconfianza.
+
+<img src="assets/images/cap2/journey-map-3.png" alt="User Journey Map - Cliente final" width="900">
 
 ### 2.3.4. Empathy Mapping
 
-Elaborar en UXPressia un mapa por persona. Describir qué necesita hacer, dice, ve, hace, escucha, piensa y siente, incluyendo pains y gains. Presentar capturas y explicar el proceso.
+Los Empathy Maps profundizan en lo que cada User Persona piensa, siente, ve, escucha, dice y hace en su contexto cotidiano. Fueron elaborados en UXPressia a partir de las observaciones y respuestas obtenidas en las entrevistas, identificando también sus principales pains y gains.
+
+**Segmento 1: Agricultor**
+
+En el mapa de Marcelino se observa una permanente preocupación por las heladas y la posible pérdida de su cosecha, así como el cansancio que le genera recorrer el terreno para palpar la humedad. Escucha consejos de agricultores veteranos y siente temor inicial hacia la tecnología, pero también desea mayor certeza para mejorar su productividad. Sus pains son la falta de información precisa y el esfuerzo físico; sus gains, la tranquilidad de anticiparse al clima y proteger su inversión.
+
+<img src="assets/images/cap2/empathy-map-1.png" alt="Empathy Map - Agricultor" width="900">
+
+**Segmento 2: Proveedor de insumos**
+
+El mapa de Karim evidencia frustración por las recomendaciones imprecisas y la necesidad de recuperar credibilidad frente a los agricultores. Ve clientes con problemas de suelo y competencia en el mercado, escucha reclamos y comentarios de otros asesores, y basa su trabajo en visitas a campo y experiencia. Sus pains son la falta de datos objetivos y la pérdida de clientes; sus gains, fidelizar a los agricultores y aumentar sus ventas con asesorías más acertadas.
+
+<img src="assets/images/cap2/empathy-map-2.png" alt="Empathy Map - Proveedor de insumos" width="900">
+
+**Segmento 3: Cliente final**
+
+El mapa de Luciana refleja el deseo de transparencia y la desconfianza que le generan las etiquetas confusas o la falta de información sobre el producto. Escucha tendencias de alimentación saludable y testimonios de otros compradores, y suele buscar referencias en su teléfono antes de decidir por precio y apariencia. Sus pains son la dificultad para verificar el origen y la calidad; sus gains, acceder a productos saludables y reconocer prácticas sostenibles con mayor confianza.
+
+<img src="assets/images/cap2/empathy-map-3.png" alt="Empathy Map - Cliente final" width="900">
 
 ### 2.3.5. Big Picture EventStorming
 
-Describir la sesión colaborativa de exploración del negocio: participantes, eventos relevantes, relaciones, procesos, problemas y oportunidades. Incluir capturas de las etapas y sus explicaciones.
+El equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro con el propósito de comprender el dominio del negocio agrícola de TerraTech a alto nivel. La sesión se centró en el flujo de negocio real, desde la preparación de la tierra hasta la comercialización del producto, identificando los eventos significativos del ciclo de cultivo, los actores del ecosistema y las reglas que determinan el comportamiento del sistema.
+
+**Eventos de dominio (domain events):**
+
+- *Soil Prepared*: la tierra quedó preparada para la siembra.
+- *Crop Planted*: el cultivo fue sembrado.
+- *Soil Moisture Changed*: cambió la humedad del suelo.
+- *Nutrient Level Changed*: cambió el nivel de nutrientes.
+- *Irrigation Applied*: se aplicó riego.
+- *Fertilizer Applied*: se aplicó fertilizante.
+- *Weather Alert Received*: se recibió una alerta climática.
+- *Crop Growth Stage Updated*: se actualizó la etapa de crecimiento.
+- *Pest Detected*: se detectó una plaga.
+- *Crop Harvested*: se cosechó el cultivo.
+- *Yield Recorded*: se registró el rendimiento.
+- *Product Listed for Sale*: el producto quedó publicado para la venta.
+- *Product Sold*: el producto fue vendido.
+- *Traceability QR Generated*: se generó el código QR de trazabilidad.
+- *Sustainability Report Generated*: se generó el reporte de sostenibilidad.
+
+**Actores:**
+
+- *Farmer (agricultor)*: prepara, siembra, riega, fertiliza y cosecha.
+- *Soil (suelo)*: actor pasivo que origina los cambios de humedad y nutrientes.
+- *Weather (clima)*: actor externo que genera las alertas climáticas.
+- *Advisor / Supplier (asesor / proveedor)*: recomienda insumos a partir de los datos del suelo.
+- *End Customer (cliente final)*: compra productos y verifica su trazabilidad.
+
+**Políticas de negocio:**
+
+- Cuando la humedad del suelo cae por debajo del 30%, se dispara una recomendación de riego.
+- Cuando el nitrógeno desciende por debajo de 20 ppm, se dispara una recomendación de fertilización.
+- Cuando se detecta una plaga, se dispara una alerta de control fitosanitario.
+- Cuando el cultivo se cosecha, se actualizan el inventario y los registros de rendimiento.
+- Cuando un producto se publica, se genera su código QR de trazabilidad.
+
+<img src="assets/images/cap2/big-picture-event-storming2.0.jpg" alt="Big Picture EventStorming" width="900">
 
 ### 2.3.6. Ubiquitous Language
 
-Definir términos del dominio en inglés, con equivalencia en español opcional y definición en español.
+El siguiente glosario reúne los términos del dominio de negocio de TerraTech, alineados con los bounded contexts definidos en 2.6. Los términos se presentan en inglés, con su equivalente en español, y su definición en español, evitando ambigüedades en la comunicación entre el equipo y los actores involucrados.
 
-| Término | Definición |
-| --- | --- |
-| Por completar | Por completar |
+**Identity & Access Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| User | Usuario | Persona que interactúa con la aplicación mediante una cuenta propia. |
+| Credentials | Credenciales | Datos de acceso (correo y contraseña) que permiten autenticar al usuario. |
+| Sign-Up | Registro | Proceso mediante el cual una persona crea una cuenta en la aplicación. |
+| Sign-In | Inicio de sesión | Proceso de autenticación que valida las credenciales del usuario. |
+| Session | Sesión | Periodo durante el cual el usuario autenticado mantiene acceso a la aplicación. |
+
+**Analytics Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Report | Reporte | Resumen de métricas calculadas sobre el comportamiento de un dispositivo o cultivo. |
+| Metric | Métrica | Valor cuantificable que describe el desempeño del cultivo o del dispositivo. |
+| Mean Value | Valor promedio | Promedio estadístico de las mediciones de un periodo determinado. |
+| Variance | Varianza | Medida de dispersión de las mediciones respecto a su promedio. |
+| Standard Deviation | Desviación estándar | Medida de variabilidad de las mediciones de un periodo. |
+| Technical Interpretation | Interpretación técnica | Conclusión, en lenguaje natural, sobre el significado de los datos analizados. |
+
+**Monitoring Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Field | Parcela / campo | Extensión de terreno cultivada que el agricultor administra. |
+| Device | Dispositivo / sensor | Equipo instalado en la parcela que mide las condiciones del suelo. |
+| Soil Type | Tipo de suelo | Clasificación del suelo de una parcela. |
+| Field Size | Extensión de la parcela | Superficie del campo expresada en metros cuadrados. |
+| Location | Ubicación | Coordenadas geográficas donde se encuentra la parcela. |
+| Device Status | Estado del dispositivo | Condición operativa del dispositivo (en línea, fuera de línea, batería baja). |
+| Last Sync | Última sincronización | Momento en que el dispositivo envió datos por última vez. |
+
+**Stock Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Inventory | Inventario | Registro de los insumos que un usuario tiene disponibles. |
+| Product | Producto | Insumo agrícola que se comercializa o se almacena. |
+| Stock | Existencias | Cantidad disponible de un producto. |
+| Stock Quantity | Cantidad en stock | Número de unidades disponibles de un producto. |
+| Warehouse Location | Ubicación en almacén | Lugar físico donde se resguarda el producto. |
+
+**Notification Management**
+
+| Term (English) | Término (Español) | Definición |
+| :--- | :--- | :--- |
+| Notification | Notificación | Mensaje generado por el sistema para informar al usuario. |
+| Alert | Alerta | Notificación prioritaria sobre una condición crítica del cultivo o del dispositivo. |
+| Read | Leída | Estado que indica que el usuario ya revisó la notificación. |
+| Notification Channel | Canal de notificación | Medio por el que se entrega la notificación (aplicación móvil o correo electrónico). |
 
 ## 2.4. Requirements Specification
 
-> Pendiente de desarrollo. Los siguientes apartados contienen la estructura y las indicaciones para completarlos.
+A partir del análisis de entrevistas, del Needfinding y de las decisiones de diseño táctico, el equipo especifica los requisitos del producto digital TerraTech. Las historias se organizan en Epics alineadas con los bounded contexts definidos en 2.6, y sus criterios de aceptación se redactan en formato Given–When–Then, en presente y tercera persona, sin referencias a detalles de interfaz y de forma verificable.
 
 ### 2.4.1. User Stories
 
-Identificar Epics y elaborar una ficha por User Story. Incorporar Technical Stories para capacidades sin interacción directa con usuarios y Spike Stories para investigación o pruebas de viabilidad.
+La siguiente tabla resume los Epics identificados y las historias que agrupa cada uno. La prioridad se expresa como Alta, Media o Baja según el valor para el negocio y su dependencia con el resto de funcionalidades.
 
-| Story ID | User | Priority | Epic |
-| --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar |
+| EPIC ID | Nombre | User Stories |
+| :--- | :--- | :--- |
+| EPIC01 | Landing Page & Marketing | US01, US02, US03, US04, US05 |
+| EPIC02 | Autenticación y Gestión de Usuarios (IAM) | US06, US07, US08, US09 |
+| EPIC03 | Dashboard de Monitoreo en Tiempo Real (Monitoring) | US10, US11, US12 |
+| EPIC04 | Mapa de Fertilidad (Monitoring) | US13, US14 |
+| EPIC05 | Motor de Recomendaciones (Monitoring) | US15, US16 |
+| EPIC06 | Gestión de Sensores (Monitoring) | US17, US18 |
+| EPIC07 | API RESTful | US19, US20, US21 |
+| EPIC08 | Integración con Servicios Externos | US22, US23 |
+| EPIC09 | Stock Management | US24, US25, US26 |
+| EPIC10 | Notification Management | US27, US28, US29, US30, US31, US32 |
+| EPIC11 | Community & Reputation | US33, US34, US35, US36 |
+| EPIC12 | Analytics & Catalog | US37, US38, US39, US40 |
+| EPIC13 | Configuración y Despliegue (Technical Stories) | TS01–TS05, TS08–TS11 |
+| EPIC14 | Investigación y Viabilidad (Spike Stories) | SP01, SP02, SP03 |
 
-**Title:** Por completar.
+#### EPIC01: Landing Page & Marketing
 
-**Description:** Como [rol], deseo [capacidad], para [beneficio].
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US01 | Visitante | Alta | Visualización del mensaje de valor | Como visitante, deseo comprender rápidamente qué ofrece TerraTech para evaluar si la solución responde a mi necesidad. | **Scenario 1: Visualización del mensaje principal**<br>Given el visitante accede a la URL del Landing Page<br>When la página termina de cargar<br>Then se presenta el mensaje de valor de TerraTech y una acción para solicitar una demostración<br>And la acción de solicitud está disponible desde la página principal sin necesidad de desplazamiento<br><br>**Scenario 2: Adaptación a pantallas pequeñas**<br>Given el visitante accede desde un dispositivo móvil de 320px de ancho<br>When la página se renderiza<br>Then el contenido principal se adapta verticalmente sin desbordamiento horizontal |
+| US02 | Visitante | Media | Conocimiento de las características de la solución | Como visitante, deseo conocer las características principales de TerraTech para determinar si satisface mis necesidades. | **Scenario 1: Presentación de características**<br>Given el visitante ha cargado el Landing Page<br>When consulta la sección de características<br>Then se describen exactamente tres características: "Sensor de Humedad", "Sensor de Nutrientes" y "Alertas en Tiempo Real"<br>And cada característica incluye un título y una descripción de máximo 150 caracteres |
+| US03 | Visitante | Alta | Solicitud de demostración | Como visitante, deseo solicitar una demostración para recibir información personalizada sobre TerraTech. | **Scenario 1: Envío exitoso**<br>Given el visitante completa los campos Nombre, Email, Teléfono y Tamaño de terreno en hectáreas<br>When confirma el envío de la solicitud<br>Then el sistema registra la solicitud y muestra una confirmación de recepción<br>And los campos del formulario quedan vacíos<br><br>**Scenario 2: Campos obligatorios incompletos**<br>Given el visitante omite el campo Email<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico es obligatorio y no registra la solicitud<br><br>**Scenario 3: Formato de correo inválido**<br>Given el visitante ingresa un correo con formato inválido<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico no es válido y no registra la solicitud |
+| US04 | Visitante | Baja | Consulta de términos y condiciones | Como visitante, deseo leer los términos y condiciones del servicio para conocer mis derechos y obligaciones al usar TerraTech. | **Scenario 1: Acceso desde el Landing Page**<br>Given el visitante se encuentra en el Landing Page<br>When solicita consultar los términos y condiciones<br>Then el sistema presenta el documento completo con su fecha de última actualización<br><br>**Scenario 2: Acceso desde la aplicación móvil**<br>Given el usuario ha iniciado sesión en la aplicación móvil<br>When solicita consultar los términos y condiciones<br>Then el sistema presenta el documento sin abandonar la aplicación |
+| US05 | Visitante | Media | Información del proyecto y del equipo | Como visitante, deseo conocer el propósito del proyecto y al equipo responsable para generar confianza en la solución. | **Scenario 1: Información del proyecto**<br>Given el visitante accede al Landing Page<br>When consulta la sección sobre el proyecto<br>Then se presenta la misión y visión de TerraTech junto con el nombre de la startup NovaTech<br><br>**Scenario 2: Información del equipo**<br>Given el visitante consulta la sección del equipo<br>Then se muestran las fotografías, nombres completos, roles y especialidad de los integrantes del equipo de desarrollo |
 
-**Acceptance Criteria:** redactar varios escenarios Given–When–Then, en presente y tercera persona, verificables y sin detalles de interfaz. Para APIs, utilizar el rol Developer y considerar escenarios request/response. Para spikes, especificar objetivo de investigación y resultados que permitan verificar su conclusión.
+#### EPIC02: Autenticación y Gestión de Usuarios (IAM)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US06 | Agricultor | Alta | Registro de nuevo usuario | Como agricultor, deseo crear una cuenta en TerraTech para acceder a la aplicación y configurar mis parcelas. | **Scenario 1: Registro exitoso**<br>Given el usuario accede al registro<br>When ingresa Nombre (mínimo 2 caracteres), Email válido y Contraseña (mínimo 6 caracteres) confirmada correctamente<br>And confirma el registro<br>Then se crea la cuenta con rol "Agricultor"<br>And el sistema envía un correo de verificación con enlace válido por 24 horas<br><br>**Scenario 2: Correo ya registrado**<br>Given el usuario ingresa un correo que ya existe<br>When confirma el registro<br>Then el sistema informa que el correo ya está registrado y ofrece la opción de recuperar la contraseña<br><br>**Scenario 3: Contraseñas no coinciden**<br>Given el usuario ingresa contraseñas distintas<br>When confirma el registro<br>Then el sistema informa que las contraseñas no coinciden y no crea la cuenta |
+| US07 | Usuario registrado | Alta | Inicio de sesión | Como usuario registrado, deseo iniciar sesión con mis credenciales para acceder a mi información y a los datos de mis cultivos. | **Scenario 1: Inicio de sesión exitoso**<br>Given el usuario se encuentra en la pantalla de inicio de sesión<br>When ingresa email y contraseña válidos y verificados<br>And confirma el inicio de sesión<br>Then el sistema emite un token JWT válido por 8 horas<br>And el usuario accede a su información personalizada<br><br>**Scenario 2: Credenciales incorrectas**<br>Given el usuario ingresa una contraseña incorrecta<br>When confirma el inicio de sesión<br>Then el sistema informa que las credenciales son inválidas y no emite token<br><br>**Scenario 3: Correo no verificado**<br>Given el usuario se registró pero no verificó su correo<br>When intenta iniciar sesión con credenciales correctas<br>Then el sistema indica que debe verificar su correo electrónico y ofrece reenviar el enlace de verificación |
+| US08 | Usuario registrado | Media | Recuperación de contraseña | Como usuario registrado, deseo recuperar mi contraseña olvidada para volver a acceder a mi cuenta. | **Scenario 1: Envío del enlace de recuperación**<br>Given el usuario solicita recuperar su contraseña<br>When ingresa su correo registrado y confirma el envío<br>Then el sistema envía un enlace con token único válido por 1 hora<br>And informa que debe revisar su correo para restablecer la contraseña<br><br>**Scenario 2: Restablecimiento exitoso**<br>Given el usuario accede al enlace de recuperación con un token válido<br>When ingresa y confirma la nueva contraseña<br>Then el sistema actualiza la contraseña almacenada de forma cifrada<br>And informa que la contraseña fue actualizada<br><br>**Scenario 3: Token expirado o inválido**<br>Given el usuario accede a un enlace de recuperación con token inválido o expirado<br>When intenta restablecer su contraseña<br>Then el sistema informa que el enlace expiró y permite solicitar uno nuevo |
+| US09 | Agricultor | Media | Gestión del perfil de usuario | Como agricultor, deseo consultar y actualizar mi perfil para mantener vigente mi información personal y la de mi parcela. | **Scenario 1: Consulta del perfil**<br>Given el usuario ha iniciado sesión<br>When accede a su perfil<br>Then el sistema muestra Nombre, Email (no editable), Teléfono, Ubicación y Tamaño del terreno, junto con la fecha de registro<br><br>**Scenario 2: Actualización exitosa**<br>Given el usuario modifica su número de teléfono<br>When confirma la actualización<br>Then el sistema guarda el nuevo valor y confirma la actualización<br><br>**Scenario 3: Validación del tamaño del terreno**<br>Given el usuario ingresa un tamaño de terreno negativo<br>When confirma la actualización<br>Then el sistema informa que el tamaño debe ser mayor a 0 y no actualiza el perfil |
+
+#### EPIC03: Dashboard de Monitoreo en Tiempo Real (Monitoring)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US10 | Agricultor | Alta | Consulta de indicadores clave | Como agricultor, deseo consultar en tiempo real los valores de humedad, nutrientes y temperatura del suelo para decidir oportunamente el riego y la fertilización. | **Scenario 1: Consulta inicial**<br>Given el agricultor ha iniciado sesión y tiene al menos un sensor asociado<br>When accede al dashboard<br>Then el sistema muestra los valores actuales de humedad (%), nutrientes (N-P-K en ppm) y temperatura del suelo (°C)<br>And indica la fecha y hora de la última actualización de cada valor<br><br>**Scenario 2: Actualización automática**<br>Given el dashboard está visible y existe conexión con el servicio de datos<br>When el backend recibe una nueva lectura del sensor<br>Then los valores mostrados se actualizan sin intervención del usuario<br><br>**Scenario 3: Sensor sin conexión**<br>Given un sensor no envía datos durante más de 30 minutos<br>When el sistema actualiza la información<br>Then el sistema advierte que los datos están desactualizados por falta de conexión del sensor |
+| US11 | Agricultor | Media | Selección de zona o sensor específico | Como agricultor, deseo seleccionar una parcela o sensor específico para revisar los datos de esa zona de mi cultivo. | **Scenario 1: Selección de zona**<br>Given el agricultor tiene configuradas zonas con nombres<br>When selecciona una zona<br>Then el sistema muestra los indicadores correspondientes a los sensores de esa zona<br><br>**Scenario 2: Actualización de indicadores por zona**<br>Given el dashboard muestra los datos de una zona<br>When el agricultor selecciona otra zona<br>Then los indicadores y el histórico se actualizan con los datos de la nueva zona<br>And el sistema registra el cambio de zona consultada |
+| US12 | Agricultor | Media | Consulta del histórico de datos | Como agricultor, deseo consultar el histórico de humedad de mi cultivo para identificar tendencias y anticipar decisiones. | **Scenario 1: Rango por defecto**<br>Given el agricultor consulta el histórico<br>When el sistema carga la información<br>Then se presentan los valores de humedad de los últimos 7 días<br>And se indica el umbral mínimo configurado como referencia<br><br>**Scenario 2: Cambio de rango**<br>Given el agricultor consulta el histórico de 7 días<br>When selecciona un rango de 30 días<br>Then el sistema actualiza la información en menos de 2 segundos<br><br>**Scenario 3: Detalle de un punto del histórico**<br>Given el histórico está visible<br>When el agricultor consulta un punto específico<br>Then el sistema informa la fecha exacta, el valor de humedad y si existió una alerta en esa fecha |
+
+#### EPIC04: Mapa de Fertilidad (Monitoring)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US13 | Agricultor | Media | Identificación de zonas fértiles | Como agricultor, deseo identificar las zonas más fértiles de mi terreno para planificar la rotación de cultivos y optimizar la siembra. | **Scenario 1: Visualización de fertilidad por zona**<br>Given el agricultor accede a la sección del mapa de fertilidad y existe al menos una zona con datos de sensores<br>When el sistema carga el mapa<br>Then cada zona se representa según su nivel de fertilidad:<br>- Óptimo: humedad mayor a 60% y nutrientes en rango óptimo<br>- Moderado: humedad entre 30% y 60% o nutrientes en rango medio<br>- Crítico: humedad menor a 30% o nutrientes bajos<br>And el agricultor puede consultar el detalle de cada zona<br><br>**Scenario 2: Acciones sugeridas por nivel**<br>Given el mapa de fertilidad está visible<br>When el agricultor consulta la referencia de niveles<br>Then el sistema presenta, para cada nivel, la acción sugerida correspondiente (mantener el plan actual, monitorear en 12 horas o regar y fertilizar en las próximas 2 horas) |
+| US14 | Agricultor | Baja | Navegación en el mapa | Como agricultor, deseo acercar y desplazarme por el mapa para examinar zonas específicas con mayor detalle. | **Scenario 1: Acercamiento y alejamiento**<br>Given el mapa de fertilidad está visible<br>When el agricultor acerca o aleja la vista<br>Then el mapa presenta mayor o menor nivel de detalle según la acción<br><br>**Scenario 2: Desplazamiento**<br>Given el mapa se encuentra con alto nivel de detalle<br>When el agricultor se desplaza por el mapa<br>Then la vista se desplaza y mantiene el nivel de acercamiento seleccionado |
+
+#### EPIC05: Motor de Recomendaciones (Monitoring)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US15 | Agricultor | Alta | Recomendación automática de riego | Como agricultor, deseo recibir una recomendación automática sobre cuándo regar para optimizar el uso del agua y evitar el estrés hídrico. | **Scenario 1: Humedad críticamente baja**<br>Given el agricultor ha iniciado sesión y el sensor de la zona "Norte" reporta 25% de humedad<br>And el umbral mínimo configurado para la zona es 30%<br>When el sistema procesa la última lectura<br>Then se genera una recomendación urgente de riego para la zona Norte con una duración sugerida de 25 minutos<br>And se envía una notificación al dispositivo del agricultor si las notificaciones están habilitadas<br><br>**Scenario 2: Humedad adecuada**<br>Given el sensor de la zona "Sur" reporta 65% de humedad y los umbrales son mínimo 30% y máximo 80%<br>When el sistema procesa la lectura<br>Then se genera un aviso informativo que indica que no es necesario regar<br>And no se envía notificación al dispositivo<br><br>**Scenario 3: Humedad excesiva**<br>Given el sensor reporta 85% de humedad y el umbral máximo es 80%<br>When el sistema evalúa la condición<br>Then se genera una recomendación de suspender el riego por riesgo de pudrición de raíces |
+| US16 | Agricultor | Alta | Recomendación automática de fertilización | Como agricultor, deseo recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar la sobrefertilización y reducir costos. | **Scenario 1: Deficiencia de nitrógeno**<br>Given el sensor de la zona "Este" reporta N=15 ppm, P=25 ppm y K=40 ppm<br>And los rangos óptimos son N (20-40 ppm), P (15-30 ppm) y K (30-50 ppm)<br>When el sistema evalúa los datos<br>Then se genera una recomendación de aplicar 8 kg/ha de Nitrógeno (Urea 46-0-0) para la zona Este<br>And la recomendación se registra con tipo "fertilizer"<br><br>**Scenario 2: Nutrientes en niveles óptimos**<br>Given la zona "Oeste" reporta N=35 ppm, P=22 ppm y K=45 ppm<br>When el agricultor consulta las recomendaciones<br>Then el sistema informa que los niveles son adecuados y sugiere mantener el plan de fertilización<br><br>**Scenario 3: Deficiencias múltiples**<br>Given la zona "Norte" reporta N=10 ppm, P=8 ppm y K=20 ppm<br>When el sistema procesa los datos<br>Then se genera una recomendación prioritaria de aplicar 12 kg/ha de NPK 20-20-20 por deficiencias múltiples |
+
+#### EPIC06: Gestión de Sensores (Monitoring)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US17 | Agricultor | Alta | Registro de un nuevo sensor | Como agricultor, deseo registrar un nuevo sensor en mi cuenta para monitorear una nueva zona o cultivo. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a la gestión de sensores<br>When registra un dispositivo con código único (formato TT-XXXXXX), nombre de la zona y cultivo actual<br>And confirma el registro<br>Then el sensor queda asociado a su cuenta con estado "Activo"<br>And el sistema comienza a recibir datos en los siguientes 5 minutos<br><br>**Scenario 2: Código inválido o inexistente**<br>Given el agricultor ingresa un código que no existe en el inventario global<br>When confirma el registro<br>Then el sistema informa que el código es inválido y no asocia el sensor<br><br>**Scenario 3: Código ya registrado**<br>Given el código ingresado ya está asociado a otra cuenta<br>When el agricultor confirma el registro<br>Then el sistema informa que el sensor ya está registrado por otro usuario y no lo asocia |
+| US18 | Agricultor | Media | Configuración de umbrales de alerta | Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado. | **Scenario 1: Configuración por zona**<br>Given el agricultor se encuentra en la configuración de alertas de una zona<br>When establece humedad mínima de 25% y máxima de 75%<br>And confirma la configuración<br>Then el sistema guarda los umbrales para esa zona y confirma la actualización<br><br>**Scenario 2: Alerta por umbral personalizado**<br>Given el umbral máximo de la zona "Centro" es 70%<br>And el sensor reporta 72% de humedad<br>When el sistema evalúa la condición<br>Then se genera una alerta que indica humedad excesiva y sugiere suspender el riego por 12 horas<br><br>**Scenario 3: Restablecimiento de valores**<br>Given el agricultor ha modificado los umbrales de una zona<br>When solicita restablecer los valores por defecto<br>Then el sistema restaura los umbrales predeterminados y confirma la acción |
+
+#### EPIC07: API RESTful
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US19 | Developer | Media | Documentación interactiva de la API | Como developer, deseo consultar la documentación de la API para comprender cómo consumir sus endpoints correctamente. | **Scenario 1: Consulta de la documentación**<br>Given la API del backend se encuentra desplegada en el entorno de desarrollo<br>When el developer accede a la documentación interactiva<br>Then el sistema presenta los endpoints agrupados por controlador<br>And cada endpoint incluye método HTTP, ruta, parámetros y ejemplos de solicitud y respuesta<br><br>**Scenario 2: Prueba de un endpoint**<br>Given el developer cuenta con un token JWT válido<br>When ejecuta la consulta de un sensor específico desde la documentación<br>Then el sistema responde con el código HTTP y el JSON correspondiente<br><br>**Scenario 3: Actualización de la documentación**<br>Given se incorpora un nuevo endpoint al backend<br>When el equipo genera una nueva versión del proyecto<br>Then la documentación se actualiza automáticamente sin cambios manuales |
+| US20 | Developer | Media | Consulta de datos de un sensor | Como developer, deseo consumir un endpoint que devuelva los últimos valores de un sensor para mostrarlos en la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un sensor con identificador sens-001 asociado a una parcela y con lecturas de las últimas 24 horas<br>When se consulta el endpoint con un token válido<br>Then el sistema responde HTTP 200 con el identificador del sensor, la parcela, la humedad, los nutrientes (N-P-K), la temperatura, la fecha de la lectura y el nivel de batería<br><br>**Scenario 2: Sensor no encontrado**<br>Given no existe un sensor con el identificador consultado<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 404 con un mensaje que indica que el sensor no existe<br><br>**Scenario 3: Lecturas desactualizadas**<br>Given el sensor consultado no registra lecturas recientes<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 200 e indica que los datos están desactualizados junto con el tiempo transcurrido desde la última lectura |
+| US21 | Developer | Media | Registro de recomendaciones mediante webhook | Como developer, deseo implementar un endpoint que reciba las recomendaciones del motor de análisis para almacenarlas y mostrarlas en la aplicación. | **Scenario 1: Recepción válida**<br>Given el motor de análisis envía una recomendación con zona, acción, duración, prioridad y motivo<br>And la solicitud incluye una clave de API válida<br>When el sistema procesa la solicitud<br>Then el sistema almacena la recomendación y responde HTTP 201 con la ubicación del recurso creado<br>And la recomendación queda disponible para el agricultor<br><br>**Scenario 2: Datos incompletos**<br>Given la solicitud no incluye la zona de la recomendación<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 400 con el detalle del campo faltante y no almacena la recomendación<br><br>**Scenario 3: Clave de API inválida**<br>Given la solicitud no incluye la clave de API o incluye una incorrecta<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 401 y no procesa la recomendación |
+
+#### EPIC08: Integración con Servicios Externos
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US22 | Agricultor | Media | Consulta del pronóstico del clima | Como agricultor, deseo consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego con las lluvias previstas. | **Scenario 1: Consulta del pronóstico**<br>Given el agricultor ha iniciado sesión y su perfil tiene una ubicación configurada<br>When consulta el pronóstico en su panel principal<br>Then el sistema presenta la probabilidad de lluvia de las próximas 24 horas, la temperatura actual y prevista, la humedad ambiental y la velocidad del viento<br>And los datos provienen de un servicio externo de clima<br><br>**Scenario 2: Actualización automática**<br>Given el pronóstico está visible y la última actualización tiene más de 3 horas<br>When el sistema ejecuta la actualización periódica<br>Then el pronóstico se actualiza sin intervención del agricultor<br><br>**Scenario 3: Recomendación combinada**<br>Given el pronóstico indica 80% de probabilidad de lluvia con 10 mm en las próximas 6 horas<br>And el sensor de humedad reporta 35%<br>When el sistema evalúa ambos factores<br>Then el sistema recomienda suspender el riego planificado para ese día y estima un ahorro aproximado de 500 litros |
+| US23 | Agricultor | Baja | Consulta de imágenes satelitales | Como agricultor, deseo consultar imágenes satelitales de mi parcela para identificar visualmente zonas con problemas de crecimiento. | **Scenario 1: Consulta de la imagen más reciente**<br>Given el agricultor accede a la sección de imágenes satelitales<br>When el sistema obtiene la imagen más reciente del servicio externo<br>Then el sistema presenta la imagen con su fecha de captura<br>And el agricultor puede alternar entre la vista satelital y el mapa base<br><br>**Scenario 2: Consulta histórica**<br>Given el agricultor consulta una fecha anterior<br>When el sistema obtiene la imagen disponible más cercana a esa fecha<br>Then el sistema presenta la imagen e informa la fecha y el porcentaje de nubosidad<br>And si no existen imágenes para la fecha, el sistema informa la situación<br><br>**Scenario 3: Comparación de periodos**<br>Given el agricultor activa la comparación entre dos fechas<br>When el sistema presenta ambas imágenes<br>Then el agricultor puede comparar los cambios en la vegetación entre los dos periodos |
+
+#### EPIC09: Stock Management
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US24 | Agricultor | Media | Registro de insumos | Como agricultor, deseo registrar los insumos que tengo disponibles para llevar un control de los productos destinados a mis cultivos. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a su inventario<br>When registra un insumo con nombre, cantidad, unidad de medida, precio unitario y proveedor opcional<br>And confirma el registro<br>Then el insumo queda registrado en el inventario y el sistema confirma la operación<br><br>**Scenario 2: Nombre obligatorio**<br>Given el agricultor intenta registrar un insumo sin nombre<br>When confirma el registro<br>Then el sistema informa que el nombre es obligatorio y no registra el insumo<br><br>**Scenario 3: Cantidad inválida**<br>Given el agricultor ingresa una cantidad negativa<br>When confirma el registro<br>Then el sistema informa que la cantidad debe ser mayor o igual a cero y no registra el insumo |
+| US25 | Agricultor | Media | Consulta y filtrado del inventario | Como agricultor, deseo consultar mi inventario y filtrarlo por nombre o disponibilidad para encontrar rápidamente lo que necesito. | **Scenario 1: Consulta del inventario**<br>Given el agricultor accede a su inventario<br>When el sistema carga la información<br>Then se presenta la lista de insumos con nombre, cantidad, unidad, precio unitario y proveedor<br>And la lista se organiza en páginas de 10 elementos<br><br>**Scenario 2: Filtro por nombre**<br>Given el agricultor consulta su inventario<br>When busca por el nombre de un insumo<br>Then el sistema presenta únicamente los insumos cuyo nombre coincide con la búsqueda<br><br>**Scenario 3: Filtro por stock bajo**<br>Given el agricultor consulta su inventario<br>When aplica el filtro de stock bajo<br>Then el sistema presenta los insumos con cantidad inferior al umbral configurado e indica su condición |
+| US26 | Agricultor | Baja | Actualización del stock de insumos | Como agricultor, deseo aumentar o disminuir la cantidad de un insumo para reflejar el consumo real o las nuevas compras. | **Scenario 1: Descuento por consumo**<br>Given el agricultor consulta un insumo de su inventario<br>When registra el descuento de una cantidad<br>And confirma la operación<br>Then el sistema reduce el stock en la cantidad indicada y confirma la actualización<br><br>**Scenario 2: Aumento por compra**<br>Given el agricultor registra una nueva compra de un insumo<br>When ingresa la cantidad y el precio de compra<br>And confirma la operación<br>Then el sistema aumenta el stock y registra el movimiento en el historial<br><br>**Scenario 3: Stock insuficiente**<br>Given el insumo tiene 10 unidades disponibles y el agricultor intenta descontar 15<br>When confirma la operación<br>Then el sistema informa que el stock es insuficiente y no realiza el descuento |
+
+#### EPIC10: Notification Management
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US27 | Agricultor | Alta | Consulta de notificaciones de los sensores | Como agricultor, deseo recibir y consultar las notificaciones generadas por los sensores para actuar ante condiciones críticas. | **Scenario 1: Consulta de notificaciones**<br>Given el agricultor ha iniciado sesión<br>When consulta sus notificaciones<br>Then el sistema presenta las notificaciones no leídas primero<br>And cada notificación indica su tipo, mensaje, fecha, hora y estado<br><br>**Scenario 2: Notificación por humedad baja**<br>Given el sensor de la zona "Norte" reporta 25% de humedad, por debajo del umbral crítico<br>When el sistema procesa la lectura<br>Then el sistema genera una notificación que informa la humedad registrada y recomienda regar en las próximas 2 horas<br>And la notificación se envía al panel del agricultor y a su correo si el canal está habilitado<br><br>**Scenario 3: Marcado como leída**<br>Given el agricultor consulta una notificación no leída<br>When abre su detalle<br>Then el sistema marca la notificación como leída y actualiza el contador de notificaciones pendientes |
+| US28 | Agricultor | Media | Configuración de preferencias de notificaciones | Como agricultor, deseo configurar qué notificaciones recibo y por qué canales para ajustar la aplicación a mis necesidades. | **Scenario 1: Habilitar o deshabilitar un tipo**<br>Given el agricultor accede a la configuración de notificaciones<br>When desactiva las notificaciones de humedad<br>Then el sistema deja de enviar ese tipo de notificaciones y confirma la actualización<br><br>**Scenario 2: Selección de canales**<br>Given el agricultor configura sus canales de notificación<br>When habilita la aplicación móvil y el correo electrónico<br>Then el sistema envía las alertas por ambos canales y confirma la actualización<br><br>**Scenario 3: Umbral personalizado**<br>Given el agricultor establece un umbral mínimo de humedad de 35%<br>When el sensor reporta 32%<br>Then el sistema genera la alerta correspondiente<br>And si el sensor reporta 40%, el sistema no genera la alerta |
+| US29 | Proveedor | Media | Alertas de demanda de productos | Como proveedor, deseo recibir alertas cuando la demanda de un producto supere un umbral para anticipar la reposición de stock. | **Scenario 1: Alta demanda**<br>Given el proveedor configuró un umbral de demanda de 100 unidades mensuales<br>When las ventas del mes superan ese umbral<br>Then el sistema genera una notificación que informa las unidades vendidas y sugiere reponer stock<br><br>**Scenario 2: Producto sin ventas**<br>Given un producto no registra ventas en los últimos 30 días<br>When el sistema detecta la inactividad<br>Then el sistema genera una notificación que sugiere revisar el precio o promover el producto<br><br>**Scenario 3: Configuración del umbral**<br>Given el proveedor accede a la configuración de notificaciones<br>When establece un umbral de demanda de 50 unidades para un producto<br>Then el sistema genera alertas solo cuando las ventas superan ese umbral |
+| US30 | Proveedor | Baja | Notificaciones de nuevas reseñas | Como proveedor, deseo recibir notificaciones cuando un agricultor publique una reseña sobre mis productos para responder oportunamente. | **Scenario 1: Reseña positiva**<br>Given un agricultor publica una reseña con calificación de 4 o 5 estrellas sobre un producto del proveedor<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación con el producto, la calificación y el comentario<br>And la notificación permite acceder al detalle de la reseña<br><br>**Scenario 2: Reseña negativa**<br>Given un agricultor publica una reseña con calificación de 1 o 2 estrellas<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación prioritaria con el producto, la calificación y el comentario<br>And la notificación permite responder a la reseña |
+| US31 | Cliente final | Baja | Notificaciones de nuevos productos de interés | Como cliente final, deseo recibir notificaciones cuando se publique un producto que coincida con mis intereses para conocer las novedades disponibles. | **Scenario 1: Nuevo producto en una categoría de interés**<br>Given el cliente marcó "Frutas" como categoría de interés<br>When un agricultor publica un producto de esa categoría<br>Then el cliente recibe una notificación con el nombre del producto y un acceso a su detalle<br><br>**Scenario 2: Nuevo producto en una región de interés**<br>Given el cliente seleccionó "Huánuco" como región de interés<br>When se publica un producto de esa región<br>Then el cliente recibe una notificación con la información del producto<br><br>**Scenario 3: Configuración de intereses**<br>Given el cliente accede a la configuración de sus intereses<br>When selecciona categorías y regiones<br>Then el sistema guarda las preferencias y envía solo las notificaciones que coinciden con ellas |
+| US32 | Cliente final | Baja | Notificaciones de ofertas y disponibilidad | Como cliente final, deseo recibir avisos cuando un producto de mi interés tenga una oferta o esté por agotarse para aprovechar la oportunidad. | **Scenario 1: Oferta especial**<br>Given un producto marcado como favorito reduce su precio en 20%<br>When el agricultor actualiza el precio<br>Then el cliente recibe una notificación con el producto y el descuento aplicado<br><br>**Scenario 2: Disponibilidad limitada**<br>Given el stock de un producto favorito baja de 10 unidades<br>When el sistema detecta el cambio<br>Then el cliente recibe una notificación que informa las unidades disponibles<br><br>**Scenario 3: Gestión de favoritos**<br>Given el cliente consulta el detalle de un producto<br>When agrega el producto a sus favoritos<br>Then el sistema comienza a enviarle notificaciones de ofertas y disponibilidad de ese producto |
+
+#### EPIC11: Community & Reputation
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US33 | Proveedor | Media | Consulta de comentarios y calificaciones | Como proveedor, deseo consultar los comentarios y calificaciones sobre mis productos para conocer la percepción de los agricultores y mejorar mi oferta. | **Scenario 1: Consulta de comentarios**<br>Given el proveedor consulta la comunidad y selecciona un producto de su catálogo<br>When el sistema carga la información<br>Then se presenta la lista de comentarios con nombre del agricultor, calificación, texto y fecha<br>And los comentarios se ordenan del más reciente al más antiguo<br><br>**Scenario 2: Filtro por calificación**<br>Given el proveedor consulta los comentarios de un producto<br>When aplica el filtro de 5 estrellas<br>Then el sistema presenta únicamente los comentarios con esa calificación y actualiza el contador<br><br>**Scenario 3: Respuesta a un comentario**<br>Given el proveedor consulta un comentario de un agricultor<br>When publica una respuesta<br>Then el sistema registra la respuesta debajo del comentario original y notifica al agricultor |
+| US34 | Proveedor | Baja | Consulta de la reputación de productos | Como proveedor, deseo consultar un resumen de la reputación de mis productos para identificar oportunidades de mejora. | **Scenario 1: Resumen por producto**<br>Given el proveedor accede a la sección de reputación<br>When el sistema carga la información<br>Then se presenta, por cada producto, el nombre, la calificación promedio, el número de reseñas y la distribución de calificaciones<br><br>**Scenario 2: Productos con baja calificación**<br>Given el proveedor tiene productos con calificación promedio menor a 3 estrellas<br>When consulta el resumen de reputación<br>Then el sistema resalta esos productos y sugiere revisar los comentarios negativos<br><br>**Scenario 3: Notificación de nueva reseña**<br>Given un agricultor publica una reseña sobre un producto del proveedor<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación y el contador de notificaciones se actualiza |
+| US35 | Cliente final | Media | Publicación de reseñas de productos | Como cliente final, deseo publicar una reseña y calificación sobre un producto que adquirí para compartir mi experiencia con otros compradores. | **Scenario 1: Publicación exitosa**<br>Given el cliente ha iniciado sesión y registra un pedido completado<br>When publica una reseña con calificación de 1 a 5 estrellas y un texto de entre 10 y 500 caracteres<br>Then el sistema registra la reseña y la presenta en el detalle del producto<br><br>**Scenario 2: Texto demasiado corto**<br>Given el cliente ingresa un texto de menos de 10 caracteres<br>When intenta publicar la reseña<br>Then el sistema informa que la reseña debe tener al menos 10 caracteres y no la publica<br><br>**Scenario 3: Edición o eliminación**<br>Given el cliente ha publicado una reseña previamente<br>When modifica su contenido o solicita eliminarla<br>Then el sistema actualiza o elimina la reseña y confirma la operación |
+| US36 | Cliente final | Media | Consulta de reseñas de otros compradores | Como cliente final, deseo consultar las reseñas y calificaciones de otros compradores para evaluar la calidad de un producto antes de comprarlo. | **Scenario 1: Consulta de reseñas**<br>Given el cliente consulta el detalle de un producto<br>When el sistema carga la sección de reseñas<br>Then se presenta la lista de reseñas con nombre del comprador, calificación, fecha, texto y fotografía si existe<br>And las reseñas se ordenan de la más reciente a la más antigua<br><br>**Scenario 2: Resumen de calificaciones**<br>Given el cliente consulta las reseñas de un producto<br>Then el sistema presenta la calificación promedio, el número total de reseñas y la distribución de estrellas<br><br>**Scenario 3: Filtro por calificación**<br>Given el cliente consulta las reseñas de un producto<br>When aplica un filtro por calificación<br>Then el sistema presenta únicamente las reseñas con esa calificación y actualiza el contador |
+
+#### EPIC12: Analytics & Catalog
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| US37 | Proveedor | Media | Consulta de productos más demandados | Como proveedor, deseo consultar los productos más demandados por los agricultores para orientar mi oferta y mis ventas. | **Scenario 1: Consulta de la demanda**<br>Given el proveedor ha iniciado sesión con su rol<br>When consulta la sección de analíticas de demanda<br>Then el sistema presenta una tabla con producto, número de pedidos, unidades vendidas, ingresos y tendencia<br>And la tabla se ordena por número de pedidos de mayor a menor<br><br>**Scenario 2: Tendencia por producto**<br>Given el proveedor consulta la demanda de un producto específico<br>When el sistema carga la información<br>Then se presenta la demanda mensual de los últimos 12 meses con los valores de cada periodo<br><br>**Scenario 3: Filtros de demanda**<br>Given el proveedor consulta la tabla de demanda<br>When aplica un filtro por región<br>Then el sistema actualiza la información con los pedidos de esa región |
+| US38 | Proveedor | Baja | Consulta de zonas con mayor actividad | Como proveedor, deseo consultar las zonas con mayor demanda de insumos para focalizar mi estrategia de ventas. | **Scenario 1: Demanda por región**<br>Given el proveedor consulta la sección de zonas de demanda<br>When el sistema carga la información<br>Then se presenta un mapa con las regiones diferenciadas por nivel de demanda<br>And cada región permite consultar el número de agricultores y los productos más solicitados<br><br>**Scenario 2: Consulta de métricas**<br>Given el proveedor consulta el mapa de demanda<br>When solicita la vista de tabla<br>Then el sistema presenta región, agricultores activos, pedidos, producto principal e ingresos estimados<br>And la tabla permite ordenarse por cualquiera de sus campos<br><br>**Scenario 3: Exportación de datos**<br>Given el proveedor consulta las analíticas de demanda<br>When solicita exportar la información<br>Then el sistema genera un archivo CSV con los datos filtrados y la fecha de generación |
+| US39 | Cliente final | Media | Consulta del catálogo de productos | Como cliente final, deseo consultar el catálogo de productos agrícolas con filtros por categoría, región y certificaciones para encontrar lo que busco. | **Scenario 1: Consulta del catálogo**<br>Given el cliente accede al catálogo<br>When el sistema carga la información<br>Then se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br><br>**Scenario 2: Filtros del catálogo**<br>Given el cliente consulta el catálogo<br>When aplica los filtros de categoría y región<br>Then el sistema presenta únicamente los productos que coinciden con ambos filtros<br><br>**Scenario 3: Búsqueda por nombre**<br>Given el cliente consulta el catálogo<br>When busca un producto por su nombre<br>Then el sistema presenta los productos cuyo nombre coincide con la búsqueda |
+| US40 | Cliente final | Media | Consulta del detalle y la trazabilidad de un producto | Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. | **Scenario 1: Información del producto**<br>Given el cliente selecciona un producto del catálogo<br>When el sistema carga su detalle<br>Then se presenta el nombre, las imágenes, el precio, la descripción, la región de origen, el nombre del agricultor, las certificaciones y las prácticas de cultivo registradas<br><br>**Scenario 2: Consulta de la trazabilidad**<br>Given el cliente consulta el detalle de un producto<br>When accede a la sección de trazabilidad<br>Then el sistema presenta la línea de tiempo con las fechas de siembra, cosecha, empaque, envío y llegada al almacén<br><br>**Scenario 3: Acciones sobre el producto**<br>Given el cliente consulta el detalle de un producto<br>When solicita contactar al agricultor<br>Then el sistema habilita el contacto con el agricultor<br>And la incorporación del producto a un carrito de compras se considera fuera del alcance de esta entrega |
+
+#### EPIC13: Configuración y Despliegue (Technical Stories)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| TS01 | Developer | Media | Configuración de repositorios con GitFlow | Como developer, deseo que los repositorios sigan GitFlow y Conventional Commits para mantener un historial ordenado y facilitar el trabajo colaborativo. | **Scenario 1: Ramas del flujo de trabajo**<br>Given se consultan las ramas de un repositorio del proyecto<br>Then existen las ramas permanentes main y develop<br>And las funcionalidades se desarrollan en ramas feature<br>And la rama main solo recibe cambios mediante pull request con al menos una aprobación<br><br>**Scenario 2: Mensajes de commit**<br>Given se revisa el historial de commits de un repositorio<br>When se analizan los últimos mensajes registrados<br>Then todos siguen el formato tipo(alcance): descripción<br><br>**Scenario 3: Plantilla de pull request**<br>Given un developer crea una pull request hacia develop<br>When se abre la solicitud<br>Then se carga una plantilla con la descripción del cambio, su tipo, las pruebas ejecutadas y las evidencias correspondientes |
+| TS02 | Developer | Media | Despliegue automático de los productos | Como developer, deseo que los cambios integrados se desplieguen automáticamente para mantener disponibles las versiones más recientes de los productos. | **Scenario 1: Despliegue del frontend**<br>Given se integra un cambio en la rama main del repositorio del frontend<br>When el servicio de despliegue detecta el cambio<br>Then el sistema compila y publica la nueva versión en menos de 2 minutos<br>And el equipo recibe una notificación del despliegue<br><br>**Scenario 2: Integración continua del backend**<br>Given se integra un cambio en la rama main del repositorio del backend<br>When el flujo de integración continua se ejecuta<br>Then el sistema ejecuta las pruebas unitarias<br>And si las pruebas pasan, compila y despliega la API<br>And si alguna prueba falla, cancela el despliegue y notifica al equipo<br><br>**Scenario 3: Variables de entorno en el despliegue**<br>Given la aplicación requiere variables de configuración<br>When el servicio de despliegue compila el proyecto<br>Then las variables se inyectan desde la configuración del servicio y no están incluidas en el repositorio |
+| TS03 | Developer | Media | Configuración de la base de datos en la nube | Como developer, deseo contar con una base de datos PostgreSQL en la nube para persistir la información de usuarios, parcelas, dispositivos y recomendaciones. | **Scenario 1: Conexión desde la API**<br>Given la API está configurada con la cadena de conexión del servicio de base de datos<br>When el equipo ejecuta el proyecto en entorno local apuntando a la nube<br>Then la API se conecta a la base de datos sin errores de conexión<br>And el sistema registra la conexión establecida<br><br>**Scenario 2: Migraciones al iniciar**<br>Given existen migraciones pendientes en el proyecto de acceso a datos<br>When la API se inicia en el entorno de despliegue<br>Then el sistema aplica las migraciones y actualiza el esquema de la base de datos<br><br>**Scenario 3: Copias de seguridad**<br>Given la base de datos está en producción<br>When el servicio ejecuta las tareas programadas<br>Then el sistema genera copias de seguridad diarias con una retención mínima de 7 días<br>And el equipo puede restaurar una copia desde el servicio de base de datos |
+| TS04 | Developer | Media | Configuración de variables de entorno | Como developer, deseo utilizar variables de entorno para las configuraciones sensibles y evitar credenciales incluidas en el repositorio. | **Scenario 1: Configuración del frontend**<br>Given el frontend requiere la URL de la API y una clave de servicio externo<br>When se revisa el repositorio del frontend<br>Then no existen claves incluidas en el código<br>And existe un archivo de ejemplo con las variables requeridas<br>And el archivo con valores locales está excluido del control de versiones<br><br>**Scenario 2: Configuración del backend**<br>Given el backend requiere la cadena de conexión, la clave del servicio de clima y la clave de firma de tokens<br>When se revisa la configuración del proyecto<br>Then los valores sensibles se proporcionan mediante variables de entorno o secretos locales<br><br>**Scenario 3: Validación al iniciar**<br>Given la API se inicia sin la clave de firma de tokens configurada<br>When el sistema carga la configuración<br>Then la API interrumpe el inicio con un mensaje que indica la variable faltante<br>And no expone información sensible |
+| TS05 | Developer | Alta | Implementación del servicio de autenticación | Como developer, deseo implementar endpoints seguros de registro e inicio de sesión para que la aplicación móvil gestione las sesiones de los usuarios. | **Scenario 1: Registro exitoso**<br>Given se recibe una solicitud de registro con un correo único y una contraseña válida<br>When la API verifica que el correo no está registrado<br>And cifra la contraseña antes de almacenarla<br>Then la API responde HTTP 201 con los datos del usuario registrado y un estado de éxito<br><br>**Scenario 2: Correo duplicado**<br>Given se recibe una solicitud de registro con un correo ya existente<br>When la API busca el correo en la base de datos y encuentra coincidencia<br>Then la API responde HTTP 400 con un mensaje que indica que el correo ya está registrado y no almacena el usuario<br><br>**Scenario 3: Inicio de sesión exitoso**<br>Given se recibe una solicitud de inicio de sesión con credenciales válidas<br>When la API valida las credenciales<br>Then la API responde HTTP 200 con los datos del usuario y el token de sesión<br><br>**Scenario 4: Credenciales inválidas**<br>Given se recibe una solicitud de inicio de sesión con credenciales incorrectas<br>When la API no encuentra coincidencia de credenciales<br>Then la API responde con un estado de error y no emite token de sesión |
+| TS08 | Developer | Media | Consulta de perfiles agrícolas | Como developer, deseo consultar un endpoint que devuelva la configuración de un perfil agrícola para utilizarla en la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un perfil asociado a un terreno en la base de datos<br>When se consulta el endpoint con un token válido<br>Then la API responde HTTP 200 con el identificador del perfil, el usuario asociado, el nombre del terreno, el teléfono de contacto y los umbrales configurados<br><br>**Scenario 2: Perfil no encontrado**<br>Given no existe un perfil con el identificador consultado<br>When se ejecuta la consulta<br>Then la API responde HTTP 404 con un mensaje que indica que el perfil no existe |
+| TS09 | Developer | Media | Gestión del inventario de insumos | Como developer, deseo implementar endpoints para gestionar el inventario de insumos de los agricultores. | **Scenario 1: Registro de un insumo**<br>Given un agricultor autenticado con perfil válido<br>When se recibe una solicitud de registro con producto, perfil, cantidad y ubicación de almacén<br>Then la API responde HTTP 201 con los datos del registro creado<br><br>**Scenario 2: Consulta del inventario**<br>Given un agricultor autenticado registra al menos un insumo<br>When se consulta el inventario<br>Then la API responde HTTP 200 con la lista de insumos registrados<br><br>**Scenario 3: Actualización de stock**<br>Given existe un insumo registrado<br>When se recibe una solicitud de actualización con una nueva cantidad<br>Then la API responde HTTP 200 con el insumo actualizado<br><br>**Scenario 4: Consulta de un insumo por identificador**<br>Given existe un insumo registrado con un identificador conocido<br>When se consulta ese identificador<br>Then la API responde HTTP 200 con los datos del insumo |
+| TS10 | Developer | Media | Consulta de reportes analíticos por dispositivo | Como developer, deseo consultar un endpoint que devuelva los reportes analíticos de un dispositivo para alimentar los gráficos de la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un reporte asociado a un dispositivo en la base de datos<br>When se consulta el endpoint con un token válido<br>Then la API responde HTTP 200 con el identificador del reporte, el dispositivo, el tipo de reporte, el valor promedio, la varianza, la desviación estándar, la interpretación técnica y la fecha de generación<br><br>**Scenario 2: Reporte no encontrado**<br>Given no existe un reporte para el dispositivo consultado<br>When se ejecuta la consulta<br>Then la API responde HTTP 404 con un mensaje que indica que el reporte no existe |
+| TS11 | Developer | Media | Gestión de la comunidad y reseñas | Como developer, deseo implementar los endpoints del módulo de comunidad para gestionar perfiles públicos y reseñas de productos. | **Scenario 1: Creación de un perfil de comunidad**<br>Given un usuario recién registrado desea activar su perfil en la comunidad<br>When la API recibe el alias, la biografía pública y la visibilidad del perfil<br>Then la API responde HTTP 201 con los datos del perfil creado<br><br>**Scenario 2: Consulta de un perfil público**<br>Given existe un perfil de comunidad con identificador conocido<br>When se consulta el perfil<br>Then la API responde HTTP 200 con el alias, la puntuación de reputación, la biografía y la visibilidad<br><br>**Scenario 3: Actualización del perfil**<br>Given un agricultor modifica su alias, su biografía y la visibilidad de su perfil<br>When la API recibe la actualización<br>Then la API responde HTTP 200 con los datos actualizados del perfil |
+
+#### EPIC14: Investigación y Viabilidad (Spike Stories)
+
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| SP01 | Developer | Media | Viabilidad de la integración de sensores IoT | Como equipo de desarrollo, queremos investigar y prototipar la integración de los sensores IoT de TerraTech con la aplicación móvil para conocer sus implicaciones técnicas y el esfuerzo requerido. | **Contexto:** TerraTech utiliza sensores que registran humedad, nutrientes y temperatura del suelo. El equipo necesita definir cómo se transmiten las lecturas, cómo se reciben en la aplicación móvil y qué restricciones impone el entorno rural.<br><br>**Scenario 1: Revisión de la documentación del hardware**<br>Given el equipo requiere comprender el funcionamiento de los sensores<br>When revisa la documentación técnica de los dispositivos y del protocolo de comunicación<br>Then el equipo documenta los formatos de transmisión, la frecuencia de envío y los requisitos de configuración en un informe compartido<br><br>**Scenario 2: Evaluación de compatibilidad con la aplicación móvil**<br>Given la aplicación móvil se desarrolla con la tecnología definida por el equipo<br>When se evalúa la recepción de los datos del sensor en un prototipo<br>Then el equipo documenta las librerías necesarias, los requisitos de permisos y las limitaciones encontradas<br><br>**Scenario 3: Prueba de concepto**<br>Given el equipo dispone de un sensor de prueba<br>When construye un prototipo mínimo que recibe y presenta una lectura<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la integración<br>When desglosa las tareas y compara alternativas<br>Then el informe incluye una estimación de esfuerzo y una recomendación de implementación<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
+| SP02 | Developer | Media | Viabilidad del almacenamiento local y la sincronización sin conexión | Como equipo de desarrollo, queremos investigar las alternativas de almacenamiento local y sincronización para que la aplicación móvil funcione con conectividad limitada. | **Contexto:** parte de los usuarios trabaja en zonas rurales con conectividad intermitente o nula. La aplicación debe permitir consultar información previamente descargada y actualizarla cuando se recupere la conexión.<br><br>**Scenario 1: Revisión de alternativas**<br>Given el equipo requiere definir la estrategia de almacenamiento local<br>When compara las alternativas disponibles para la tecnología móvil seleccionada<br>Then el equipo documenta ventajas, limitaciones y esfuerzo de adopción de cada alternativa en un informe compartido<br><br>**Scenario 2: Prototipo de almacenamiento y consulta**<br>Given el equipo seleccionó una alternativa<br>When construye un prototipo que almacena localmente las últimas lecturas y las consulta sin conexión<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 3: Evaluación de la sincronización**<br>Given el prototipo almacena información localmente<br>When se restablece la conexión<br>Then el equipo evalúa y documenta el mecanismo de sincronización, la resolución de conflictos y el consumo de datos<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la estrategia<br>When desglosa las tareas de implementación<br>Then el informe incluye una estimación de esfuerzo y una recomendación técnica<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
+| SP03 | Developer | Media | Viabilidad de las notificaciones push | Como equipo de desarrollo, queremos investigar la integración de un servicio de notificaciones push para enviar alertas de los cultivos a los usuarios. | **Contexto:** las alertas de humedad, nutrientes y clima requieren notificar al usuario incluso cuando la aplicación no está en uso. El equipo debe evaluar el servicio, los permisos y las limitaciones en dispositivos con restricciones de batería.<br><br>**Scenario 1: Evaluación del servicio de notificaciones**<br>Given el equipo requiere enviar alertas al dispositivo móvil<br>When revisa las opciones de servicios de notificaciones disponibles<br>Then el equipo documenta la configuración requerida, los costos y las limitaciones de cada opción en un informe compartido<br><br>**Scenario 2: Prototipo de recepción de la alerta**<br>Given el equipo seleccionó un servicio de notificaciones<br>When construye un prototipo que recibe una alerta enviada desde el backend<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 3: Evaluación de permisos y segmentación**<br>Given el prototipo recibe notificaciones<br>When se prueban los permisos del sistema operativo y la segmentación por preferencias del usuario<br>Then el equipo documenta el comportamiento observado y las limitaciones por tipo de dispositivo<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la integración<br>When desglosa las tareas de implementación<br>Then el informe incluye una estimación de esfuerzo y una recomendación técnica<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
 
 ### 2.4.2. Impact Mapping
 
-Elaborar en UXPressia el mapa con varios Business Goals SMART, Actors/Personas, Impacts, Deliverables y User Stories. Incluir captura, enlace y explicación.
+El Impact Map de TerraTech se elaboró en UXPressia tomando como punto de partida los objetivos formulados en el Lean UX Process (1.2.2) y las fichas de User Persona de 2.3.1. Los Business Goals se expresan de forma SMART y los actores corresponden a los tres segmentos objetivo. La tabla siguiente resume la relación entre los objetivos, los cambios esperados en el comportamiento de los actores, los entregables del negocio y las historias que los habilitan.
 
 | Business Goal | Actor / Persona | Impact | Deliverable | User Story |
-| --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| :--- | :--- | :--- | :--- | :--- |
+| BG-01: Lograr que al menos el 80% de los agricultores participantes utilice TerraTech de forma regular durante los 3 meses posteriores al piloto. | Agricultor | Mejorar la gestión y el monitoreo del suelo en tiempo real. | Monitoreo de los parámetros del suelo en tiempo real con indicadores e histórico. | US10: Como agricultor, deseo consultar en tiempo real los valores de humedad, nutrientes y temperatura para decidir oportunamente el riego y la fertilización.<br>US12: Como agricultor, deseo consultar el histórico de humedad para identificar tendencias. |
+| BG-01: Lograr que al menos el 80% de los agricultores participantes utilice TerraTech de forma regular durante los 3 meses posteriores al piloto. | Agricultor | Tomar decisiones informadas para optimizar los cultivos. | Recomendaciones automáticas de riego y fertilización con análisis predictivo. | US15: Como agricultor, deseo recibir una recomendación automática de riego para optimizar el uso del agua.<br>US16: Como agricultor, deseo recibir una recomendación de fertilización para evitar la sobrefertilización. |
+| BG-02: Reducir entre 25% y 30% el uso innecesario de agua en los cultivos de los agricultores usuarios al finalizar el primer ciclo de uso. | Agricultor | Reducir costos de agua y fertilizantes. | Alertas configurables por umbral y recomendaciones basadas en el pronóstico del clima. | US18: Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas.<br>US22: Como agricultor, deseo consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego. |
+| BG-03: Reducir en 20% los costos relacionados con el uso innecesario de fertilizantes durante el primer ciclo de uso. | Agricultor | Aplicar insumos según las condiciones registradas del suelo. | Registro de insumos y control de stock disponibles en la aplicación móvil. | US24: Como agricultor, deseo registrar los insumos que tengo disponibles para llevar un control de mis productos.<br>US26: Como agricultor, deseo aumentar o disminuir la cantidad de un insumo para reflejar el consumo real. |
+| BG-04: Lograr que al menos el 70% de los proveedores participantes utilice la información registrada en TerraTech para sustentar sus recomendaciones durante el piloto. | Proveedor | Acceder a datos reales del suelo de sus clientes. | Analítica de la información registrada por cliente y cultivo. | US37: Como proveedor, deseo consultar los productos más demandados por los agricultores para orientar mi oferta.<br>US38: Como proveedor, deseo consultar las zonas con mayor demanda de insumos para focalizar mi estrategia de ventas. |
+| BG-04: Lograr que al menos el 70% de los proveedores participantes utilice la información registrada en TerraTech para sustentar sus recomendaciones durante el piloto. | Proveedor | Recomendar insumos adecuados con mayor precisión. | Recomendaciones de insumos basadas en el análisis de los datos del suelo. | US16: Como agricultor, deseo recibir una recomendación de fertilización para evitar la sobrefertilización.<br>US29: Como proveedor, deseo recibir alertas cuando la demanda de un producto supere un umbral para anticipar la reposición de stock. |
+| BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Conocer el origen y la trazabilidad del producto. | Ficha de producto con información de origen y línea de tiempo del cultivo. | US40: Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. |
+| BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Tomar decisiones de compra con mayor confianza. | Catálogo de productos con reseñas y calificaciones de otros compradores. | US39: Como cliente final, deseo consultar el catálogo de productos con filtros por categoría, región y certificaciones.<br>US36: Como cliente final, deseo consultar las reseñas de otros compradores para evaluar la calidad de un producto antes de comprarlo. |
+
+<img src="assets/images/cap2/impact-mapping.png" alt="Impact Mapping - TerraTech" width="1000">
+
+El enlace público del mapa se incorporará cuando el equipo habilite su compartición desde UXPressia.
 
 ### 2.4.3. Product Backlog
 
-Priorizar por valor de negocio y estimar las historias. Considerar la landing page desde el primer sprint. Incluir captura y enlace público al backlog en la herramienta de gestión.
+El Product Backlog prioriza las historias por valor para el negocio, considerando la Landing Page desde el primer sprint. La estimación utiliza la escala 1, 2, 3, 5 y 8, y la columna Sprint indica el sprint previsto para su desarrollo.
 
-| Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
-| --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| # Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+| :---: | :--- | :--- | :---: | :---: |
+| 1 | US01 | Visualización del mensaje de valor | 2 | Sprint 1 |
+| 2 | US02 | Conocimiento de las características de la solución | 3 | Sprint 1 |
+| 3 | US03 | Solicitud de demostración | 5 | Sprint 1 |
+| 4 | US04 | Consulta de términos y condiciones | 1 | Sprint 1 |
+| 5 | US05 | Información del proyecto y del equipo | 2 | Sprint 1 |
+| 6 | US06 | Registro de nuevo usuario | 5 | Sprint 2 |
+| 7 | US07 | Inicio de sesión | 3 | Sprint 2 |
+| 8 | US08 | Recuperación de contraseña | 3 | Sprint 2 |
+| 9 | US09 | Gestión del perfil de usuario | 2 | Sprint 2 |
+| 10 | US10 | Consulta de indicadores clave | 5 | Sprint 2 |
+| 11 | US11 | Selección de zona o sensor específico | 3 | Sprint 2 |
+| 12 | US12 | Consulta del histórico de datos | 5 | Sprint 2 |
+| 13 | US17 | Registro de un nuevo sensor | 3 | Sprint 2 |
+| 14 | US13 | Identificación de zonas fértiles | 8 | Sprint 3 |
+| 15 | US14 | Navegación en el mapa | 3 | Sprint 3 |
+| 16 | US15 | Recomendación automática de riego | 5 | Sprint 3 |
+| 17 | US16 | Recomendación automática de fertilización | 5 | Sprint 3 |
+| 18 | US18 | Configuración de umbrales de alerta | 3 | Sprint 3 |
+| 19 | US22 | Consulta del pronóstico del clima | 5 | Sprint 3 |
+| 20 | US19 | Documentación interactiva de la API | 2 | Sprint 4 |
+| 21 | US20 | Consulta de datos de un sensor | 3 | Sprint 4 |
+| 22 | US21 | Registro de recomendaciones mediante webhook | 5 | Sprint 4 |
+| 23 | US23 | Consulta de imágenes satelitales | 8 | Sprint 4 |
+| 24 | US24 | Registro de insumos | 3 | Sprint 4 |
+| 25 | US25 | Consulta y filtrado del inventario | 3 | Sprint 4 |
+| 26 | US26 | Actualización del stock de insumos | 5 | Sprint 4 |
+| 27 | US27 | Consulta de notificaciones de los sensores | 3 | Sprint 4 |
+| 28 | US28 | Configuración de preferencias de notificaciones | 5 | Sprint 4 |
+| 29 | US29 | Alertas de demanda de productos | 3 | Sprint 5 |
+| 30 | US30 | Notificaciones de nuevas reseñas | 3 | Sprint 5 |
+| 31 | US31 | Notificaciones de nuevos productos de interés | 3 | Sprint 5 |
+| 32 | US32 | Notificaciones de ofertas y disponibilidad | 3 | Sprint 5 |
+| 33 | US33 | Consulta de comentarios y calificaciones | 3 | Sprint 5 |
+| 34 | US34 | Consulta de la reputación de productos | 3 | Sprint 5 |
+| 35 | US35 | Publicación de reseñas de productos | 3 | Sprint 5 |
+| 36 | US36 | Consulta de reseñas de otros compradores | 2 | Sprint 5 |
+| 37 | US37 | Consulta de productos más demandados | 5 | Sprint 5 |
+| 38 | US38 | Consulta de zonas con mayor actividad | 5 | Sprint 5 |
+| 39 | US39 | Consulta del catálogo de productos | 5 | Sprint 5 |
+| 40 | US40 | Consulta del detalle y la trazabilidad de un producto | 5 | Sprint 5 |
+| 41 | TS01 | Configuración de repositorios con GitFlow | 2 | Sprint 1 |
+| 42 | TS02 | Despliegue automático de los productos | 3 | Sprint 1 |
+| 43 | TS03 | Configuración de la base de datos en la nube | 3 | Sprint 1 |
+| 44 | TS04 | Configuración de variables de entorno | 2 | Sprint 1 |
+| 45 | TS05 | Implementación del servicio de autenticación | 8 | Sprint 2 |
+| 46 | TS08 | Consulta de perfiles agrícolas | 3 | Sprint 5 |
+| 47 | TS09 | Gestión del inventario de insumos | 5 | Sprint 5 |
+| 48 | TS10 | Consulta de reportes analíticos por dispositivo | 3 | Sprint 5 |
+| 49 | TS11 | Gestión de la comunidad y reseñas | 8 | Sprint 5 |
+| 50 | SP01 | Viabilidad de la integración de sensores IoT | 3 | Sprint 3 |
+| 51 | SP02 | Viabilidad del almacenamiento local y la sincronización sin conexión | 3 | Sprint 4 |
+| 52 | SP03 | Viabilidad de las notificaciones push | 3 | Sprint 5 |
+
+La captura del tablero y el enlace público del Product Backlog se incorporarán cuando el equipo cree el tablero en la herramienta de gestión seleccionada.
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
