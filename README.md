@@ -705,11 +705,11 @@ El análisis de las entrevistas consolida las variables objetivas (demográficas
 
 ## 2.3. Needfinding
 
-El proceso de Needfinding traduce los hallazgos de las entrevistas en artefactos de diseño centrados en las personas. Tomando como insumo el análisis demográfico, conductual y tecnológico de cada segmento (2.2) y las brechas identificadas frente a los competidores (2.1), el equipo elaboró los artefactos que se presentan a continuación, los cuales orientan el diseño de la aplicación móvil TerraTech.
+El proceso de Needfinding transforma los resultados de las entrevistas en artefactos de diseño centrados en los usuarios. A partir del análisis demográfico, conductual y tecnológico de cada segmento (2.2) y de las diferencias identificadas frente a los competidores (2.1), el equipo elaboró los artefactos que se presentan a continuación, los cuales orientan el diseño de la aplicación móvil TerraTech.
 
 ### 2.3.1. User Personas
 
-Las fichas de User Persona resumen el perfil de cada segmento objetivo en un arquetipo que reúne sus datos demográficos, metas, frustraciones, habilidades tecnológicas, marcas e influencias y canales de interacción. Cada ficha se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007: el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y conectividad limitada; el proveedor de insumos (ENT-003, ENT-004) necesita datos objetivos del suelo para respaldar sus recomendaciones; y el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y la trazabilidad del producto. Asimismo, cada ficha incorpora las características más frecuentes del análisis estadístico presentado en 2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
+Las fichas de User Persona presentan el perfil de cada segmento objetivo y reúnen sus datos demográficos, metas, frustraciones, habilidades tecnológicas, marcas e influencias y canales de interacción. Cada ficha se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007: el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y conectividad limitada; el proveedor de insumos (ENT-003, ENT-004) necesita datos objetivos del suelo para respaldar sus recomendaciones; y el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y la trazabilidad del producto. Asimismo, cada ficha incorpora las características más frecuentes del análisis estadístico presentado en 2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
 
 **Segmento 1: Agricultor**
 
@@ -744,7 +744,7 @@ La User Task Matrix compara las tareas que cada segmento realiza hoy para alcanz
 
 **Análisis de la User Task Matrix:**
 
-Los agricultores concentran la mayor frecuencia e importancia en tareas operativas: supervisar el suelo, decidir el riego y anticipar riesgos climáticos o plagas, pues de ello dependen directamente sus cosechas. Los proveedores destacan en tareas comerciales y de asesoría, como verificar la calidad de los productos, comparar opciones y coordinar visitas y entregas, lo que refleja un uso más estratégico de la información. Los clientes finales realizan con menor frecuencia tareas de producción, pero otorgan alta importancia a verificar la procedencia y calidad de lo que compran, comparar alternativas y compartir recomendaciones. En coincidencia, los tres segmentos necesitan comunicarse y comparar información antes de tomar decisiones, lo que sustenta la propuesta de valor de TerraTech: información objetiva del cultivo disponible desde el dispositivo móvil.
+Los agricultores realizan con mayor frecuencia e importancia tareas operativas: supervisar el suelo, decidir el riego y anticipar riesgos climáticos o plagas, porque de ello dependen directamente sus cosechas. Los proveedores destacan en tareas comerciales y de asesoría, como verificar la calidad de los productos, comparar opciones y coordinar visitas y entregas, lo que corresponde a un uso más estratégico de la información. Los clientes finales realizan con menor frecuencia tareas de producción, pero otorgan alta importancia a verificar la procedencia y calidad de lo que compran, comparar alternativas y compartir recomendaciones. En común, los tres segmentos necesitan comunicarse y comparar información antes de tomar decisiones, lo que respalda la propuesta de valor de TerraTech: información objetiva del cultivo disponible desde el dispositivo móvil.
 
 ### 2.3.3. User Journey Mapping
 
@@ -752,13 +752,13 @@ Los User Journey Maps describen el recorrido de extremo a extremo que cada User 
 
 **Segmento 1: Agricultor**
 
-El mapa de Marcelino muestra el recorrido que sigue en su cultivo de zanahoria en Huánuco para revisar el estado del suelo y decidir cuándo regar o fertilizar. Al no contar con mediciones objetivas, depende de la inspección visual y de su experiencia, lo que le genera incertidumbre frente a cambios climáticos inesperados y un importante desgaste físico al recorrer el terreno.
+El mapa de Marcelino muestra el recorrido que sigue en su cultivo de zanahoria en Huánuco para revisar el estado del suelo y decidir cuándo regar o fertilizar. Al no contar con mediciones objetivas, depende de la inspección visual y de su experiencia, lo que le genera incertidumbre frente a cambios climáticos inesperados y un importante esfuerzo físico al recorrer el terreno.
 
 <img src="assets/images/cap2/journey-map-1.png" alt="User Journey Map - Agricultor" width="900">
 
 **Segmento 2: Proveedor de insumos**
 
-El mapa de Karim refleja el proceso de asesoría que realiza en Cañete para recomendar insumos a los agricultores. El recorrido combina visitas presenciales con su experiencia previa, pero la ausencia de datos reales del suelo deriva en recomendaciones poco precisas, reclamos y pérdida de confianza de sus clientes.
+El mapa de Karim refleja el proceso de asesoría que realiza en Cañete para recomendar insumos a los agricultores. El recorrido combina visitas presenciales con su experiencia previa, pero la ausencia de datos reales del suelo genera recomendaciones poco precisas, reclamos y pérdida de confianza de sus clientes.
 
 <img src="assets/images/cap2/journey-map-2.png" alt="User Journey Map - Proveedor de insumos" width="900">
 
@@ -792,7 +792,7 @@ El mapa de Luciana refleja el deseo de transparencia y la desconfianza que le ge
 
 ### 2.3.5. Big Picture EventStorming
 
-El equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro con el propósito de comprender el dominio del negocio agrícola de TerraTech a alto nivel. La sesión se centró en el flujo de negocio real, desde la preparación de la tierra hasta la comercialización del producto, identificando los eventos significativos del ciclo de cultivo, los actores del ecosistema y las reglas que rigen el comportamiento del sistema.
+El equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro con el propósito de comprender el dominio del negocio agrícola de TerraTech a alto nivel. La sesión se centró en el flujo de negocio real, desde la preparación de la tierra hasta la comercialización del producto, identificando los eventos significativos del ciclo de cultivo, los actores del ecosistema y las reglas que determinan el comportamiento del sistema.
 
 **Eventos de dominio (domain events):**
 
@@ -832,7 +832,7 @@ El equipo realizó una sesión colaborativa de Big Picture EventStorming en Miro
 
 ### 2.3.6. Ubiquitous Language
 
-El siguiente glosario reúne los términos del dominio de negocio de TerraTech, alineados con los bounded contexts definidos en 2.6. Los términos se presentan en inglés, con su equivalente en español, y su definición en español, evitando ambigüedades en la comunicación entre el equipo y los stakeholders.
+El siguiente glosario reúne los términos del dominio de negocio de TerraTech, alineados con los bounded contexts definidos en 2.6. Los términos se presentan en inglés, con su equivalente en español, y su definición en español, evitando ambigüedades en la comunicación entre el equipo y los actores involucrados.
 
 **Identity & Access Management**
 
