@@ -67,13 +67,13 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-|:---:|:---:|---|---|
-| 0.1.0 | 04/09/2026 | Bryan Barba | Creación del repositorio `terratech-project-report`. |
-| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz] | Creación de la estructura inicial del informe del proyecto TerraTech. |
-| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
+| Versión | Fecha | Autor                           | Descripción de modificación |
+|:---:|:---:|---------------------------------|---|
+| 0.1.0 | 04/09/2026 | Bryan Barba                     | Creación del repositorio `terratech-project-report`. |
+| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz]     | Creación de la estructura inicial del informe del proyecto TerraTech. |
+| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez       | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
 | 0.3.0 | 14/09/2026 | Jorge Manuel Retuerto Rodriguez | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
-| 0.3.1 | 15/09/2026 | James Caleb Delgado Perez | Actualización del registro para documentar los aportes realizados en la AV1: elaboración y revisión del Capítulo I para su adaptación al proyecto móvil; organización inicial del informe por archivos y posterior consolidación en un único README; ajuste del índice y sus enlaces internos; organización de la bibliografía; e integración del avance del Capítulo II elaborado por un compañero y de sus imágenes. |
+| 0.3.1 | 15/09/2026 | James Caleb Delgado Perez       | Actualización del registro para documentar los aportes realizados en la AV1: elaboración y revisión del Capítulo I para su adaptación al proyecto móvil; organización inicial del informe por archivos y posterior consolidación en un único README; ajuste del índice y sus enlaces internos; organización de la bibliografía; e integración del avance del Capítulo II elaborado por un compañero y de sus imágenes. |
 
 
 
@@ -90,15 +90,14 @@ El registro de colaboración será actualizado progresivamente en cada entrega �
 
 Para la elaboración de la AV1, el equipo estableció una organización basada en GitFlow. La rama `main` conserva las versiones estables del informe, `develop` integra los avances del equipo y las ramas `feature/*` permiten que cada integrante desarrolle las secciones asignadas de manera independiente.
 
-#### Registro preliminar de participación
-
 | Integrante | Usuario de GitHub | Responsabilidad asignada | Ramas |
-|---|---|---|---|
-| [Apellidos y nombres 1] | [Usuario 1] | [Responsabilidad 1] | Por registrar |
-| [Apellidos y nombres 2] | [Usuario 2] | [Responsabilidad 2] | Por registrar |
-| [Apellidos y nombres 3] | [Usuario 3] | [Responsabilidad 3] | Por registrar |
-| [Apellidos y nombres 4] | [Usuario 4] | [Responsabilidad 4] | Por registrar |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407 | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
+|---|-------------------|---|---|
+| [Apellidos y nombres 1] | [Usuario 1]       | [Responsabilidad 1] | Por registrar |
+| [Apellidos y nombres 2] | [Usuario 2]       | [Responsabilidad 2] | Por registrar |
+| Delgado Perez, James Caleb | JAmsy06        | **Responsabilidad:** desarrollo del Capítulo I y consolidación del informe.<br><br>**Realizado:** elaboración y adaptación del contenido del Capítulo I; actualización de la carátula; organización inicial del informe por archivos y posterior unificación en el README; ajuste del índice y sus enlaces; organización de la bibliografía; e incorporación del avance del Capítulo II y sus imágenes proporcionados por un compañero.<br><br>**En curso:** actualización del registro de versiones, participación individual, Student Outcome y objetivos SMART.<br><br>**Pendiente:** elaborar la versión definitiva del Lean UX Canvas; revisar los segmentos objetivo y su sustento estadístico; completar los datos pendientes de los perfiles con la información proporcionada por los integrantes; consolidar las conclusiones y generar el PDF del informe. | **Ramas utilizadas:**<br>`feature/av1-readme-front-matter`<br>`feature/av1-chapter-1-presentation`<br>`feature/av1-unify-report-readme`<br><br>**Rama de esta actualización:**<br>`feature/av1-james-report-tracking` |
+| [Apellidos y nombres 4] | [Usuario 4]       | [Responsabilidad 4] | Por registrar |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407         | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
+
 
 #### Evidencias de colaboración
 
