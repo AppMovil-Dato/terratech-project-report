@@ -240,16 +240,16 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 | Relevante | [Por completar]. | [Por completar]. |
 | Plazo | [Por completar]. | [Por completar]. |
 
-### [Apellidos y nombres 3]
+### Delgado Perez, James Caleb
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
 |---|---|---|
-| Objetivo profesional | [Por completar]. | [Por completar]. |
-| Específico | [Por completar]. | [Por completar]. |
-| Medible | [Por completar]. | [Por completar]. |
-| Alcanzable | [Por completar]. | [Por completar]. |
-| Relevante | [Por completar]. | [Por completar]. |
-| Plazo | [Por completar]. | [Por completar]. |
+| Objetivo profesional | Desarrollar y documentar dos aplicaciones móviles para Android que consuman una API, y publicar su código y una demostración funcional en mi portafolio durante los primeros doce meses después de finalizar la carrera. | Elaborar un caso de estudio de UX para un proyecto personal de aplicación móvil, incluyendo la definición del problema, los usuarios objetivo, un Lean UX Canvas y un prototipo evaluado con al menos cinco participantes, durante los primeros seis meses después de finalizar la carrera. |
+| Específico | Fortalecer mis competencias de desarrollo móvil mediante la construcción de aplicaciones con funcionalidades de consulta y registro de información, integración con una API y documentación de instalación y uso. | Fortalecer mis competencias de investigación y diseño UX mediante la definición de hipótesis, el diseño de un prototipo y la evaluación de su usabilidad. |
+| Medible | Completar dos aplicaciones funcionales, publicar sus dos repositorios con un README de instalación y uso, y presentar una demostración de cada aplicación. | Publicar un caso de estudio con un Lean UX Canvas, un prototipo navegable, los resultados de una evaluación con al menos cinco participantes y una iteración de mejoras basada en los hallazgos. |
+| Alcanzable | Dedicar cuatro horas semanales al aprendizaje y desarrollo, utilizar documentación técnica y construir las aplicaciones mediante incrementos pequeños que pueda implementar y comprobar. | Dedicar dos horas semanales al caso de estudio, utilizar los conocimientos de Lean UX adquiridos durante la carrera y organizar sesiones de evaluación con participantes voluntarios del segmento definido. |
+| Relevante | Contar con evidencia práctica de mis capacidades para desarrollar aplicaciones móviles y presentar un portafolio que respalde mi incorporación a equipos de desarrollo de software. | Mejorar mi capacidad para relacionar las necesidades de los usuarios con decisiones de diseño y comunicar esas decisiones mediante documentación y evidencia. |
+| Plazo | Completar la primera aplicación dentro de los primeros seis meses y la segunda antes de finalizar el mes doce, contados desde la finalización de la carrera. | Completar el caso de estudio, la evaluación y la iteración de mejoras antes de finalizar el sexto mes después de terminar la carrera. |
 
 ### [Apellidos y nombres 4]
 
