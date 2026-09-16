@@ -75,7 +75,7 @@ Proyecto
 |  0.3.0  | 14/09/2026 | Jorge Manuel Retuerto Rodriguez | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
 |  0.4.0  | 15/09/2026 | James Caleb Delgado Perez       | Actualización del registro para documentar los aportes realizados en la AV1: elaboración y revisión del Capítulo I para su adaptación al proyecto móvil; organización inicial del informe por archivos y posterior consolidación en un único README; ajuste del índice y sus enlaces internos; organización de la bibliografía; e integración del avance del Capítulo II elaborado por un compañero y de sus imágenes. |
 |  0.4.1  | 15/09/2026 | James Caleb Delgado Perez       | Elaboración y actualización del Lean UX Canvas de TerraTech y revisión de los segmentos objetivo y su sustento estadístico, manteniendo la coherencia con el alcance del proyecto documentado en el Capítulo I. |
-
+|  0.4.2  | 15/09/2026 | James Caleb Delgado Perez | Revisión y alineación del Capítulo I con el alcance funcional actual de TerraTech, actualizando el Solution Profile, objetivos, restricciones, Lean UX Assumptions, Hypothesis Statements, segmentos objetivo y registros relacionados con el aporte individual. |
 
 ## Project Report Collaboration Insights
 
@@ -91,14 +91,14 @@ El registro de colaboración será actualizado progresivamente en cada entrega �
 Para la elaboración de la AV1, el equipo estableció una organización basada en GitFlow. La rama `main` conserva las versiones estables del informe, `develop` integra los avances del equipo y las ramas `feature/*` permiten que cada integrante desarrolle las secciones asignadas de manera independiente.
 
 #### Registro preliminar de participación
+
 | Integrante | Usuario de GitHub | Responsabilidad asignada | Ramas |
 |---|-------------------|---|---|
-| [Apellidos y nombres 1] | [Usuario 1]       | [Responsabilidad 1] | Por registrar |
-| [Apellidos y nombres 2] | [Usuario 2]       | [Responsabilidad 2] | Por registrar |
-| Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo del Capítulo I y consolidación del informe.<br><br>**Realizado:** elaboración y adaptación del contenido del Capítulo I; actualización de la carátula; organización inicial del informe por archivos y posterior unificación en el README; ajuste del índice y sus enlaces; organización de la bibliografía; incorporación del avance del Capítulo II y sus imágenes proporcionados por un compañero; actualización del registro de versiones, participación individual, Student Outcome y objetivos SMART; elaboración y actualización del Lean UX Canvas; y revisión de los segmentos objetivo y su sustento estadístico.<br><br> | **Ramas utilizadas:**<br>`feature/av1-readme-front-matter`<br>`feature/av1-chapter-1-presentation`<br>`feature/av1-unify-report-readme`<br>`feature/av1-james-report-tracking` |
-| [Apellidos y nombres 4] | [Usuario 4]       | [Responsabilidad 4] | Por registrar |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407         | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
-
+| [Apellidos y nombres 1] | [Usuario 1] | [Responsabilidad 1] | Por registrar |
+| [Apellidos y nombres 2] | [Usuario 2] | [Responsabilidad 2] | Por registrar |
+| Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo del Capítulo I y consolidación del informe.<br><br>**Realizado:** elaboración y adaptación del contenido del Capítulo I; actualización de la carátula; organización inicial del informe por archivos y posterior unificación en el README; ajuste del índice y sus enlaces; organización de la bibliografía; actualización del registro de versiones, participación individual, Student Outcome y objetivos SMART; elaboración y actualización del Lean UX Canvas; revisión de los segmentos objetivo y su sustento estadístico; y revisión de coherencia y alineación del Capítulo I con el alcance funcional actualizado del proyecto.<br><br> | **Ramas utilizadas:**<br>`feature/av1-readme-front-matter`<br>`feature/av1-chapter-1-presentation`<br>`feature/av1-unify-report-readme`<br>`feature/av1-james-report-tracking` |
+| [Apellidos y nombres 4] | [Usuario 4] | [Responsabilidad 4] | Por registrar |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
 
 #### Evidencias de colaboración
 
@@ -205,14 +205,12 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
 
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
+En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, manteniendo el alcance funcional y la reutilización del backend existente. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones del informe.<br>**Evidencias:** Capítulo I, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación y justificar su adaptación al contexto móvil.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar los capítulos en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También integré el avance del Capítulo II proporcionado por un compañero, consolidé las conclusiones y generé el PDF de la AV1. La revisión del Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, registro de versiones, registro de participación, historial de commits y PDF de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar los resultados y aplicar nuevos conocimientos me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |
-
-<div style="page-break-after: always;"></div>
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br>**Evidencias:** Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |<div style="page-break-after: always;"></div>
 
 ## Objetivos SMART
 
@@ -285,11 +283,13 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 
 NovaTech es una startup tecnológica orientada al diseño y desarrollo de soluciones digitales accesibles, eficientes y escalables. Su propósito es aplicar tecnologías de software, análisis de datos e Internet de las Cosas para atender problemas reales en sectores que necesitan modernizar sus procesos y mejorar la toma de decisiones.
 
-En el marco del presente proyecto, NovaTech desarrolla **TerraTech**, una solución dirigida al sector agrícola que integra dispositivos IoT, servicios digitales y una aplicación móvil. La solución permite consultar información sobre la humedad y los nutrientes del suelo, recibir alertas ante condiciones desfavorables y acceder a información y recomendaciones que apoyan las decisiones de riego, fertilización y cuidado de los cultivos.
+En el marco del presente proyecto, NovaTech desarrolla **TerraTech**, una solución dirigida al sector agrícola que integra dispositivos IoT, servicios digitales y una aplicación móvil. La solución permite consultar información sobre la humedad, los nutrientes, la temperatura y otras condiciones relevantes del suelo, recibir alertas ante condiciones desfavorables y acceder a información histórica, análisis y recomendaciones que apoyan las decisiones de riego, fertilización y cuidado de los cultivos.
 
-TerraTech busca transformar los datos recolectados en información comprensible y útil para pequeños y medianos agricultores. Para ello, considera una experiencia móvil sencilla, basada en indicadores visuales, alertas y opciones de navegación adaptadas a usuarios con distintos niveles de alfabetización digital y que pueden trabajar en zonas con conectividad limitada.
+TerraTech busca transformar los datos recolectados en información comprensible y útil para pequeños y medianos agricultores. Para ello, considera una experiencia móvil sencilla, basada en indicadores visuales, alertas, notificaciones y opciones de navegación adaptadas a usuarios con distintos niveles de alfabetización digital y que pueden trabajar en zonas con conectividad limitada.
 
-Asimismo, contempla la participación de proveedores y asesores de insumos agrícolas, así como de clientes finales y compradores interesados en conocer la procedencia y las condiciones registradas durante el cultivo de los productos.
+La solución también contempla funcionalidades relacionadas con la gestión de terrenos y sensores, el control de insumos agrícolas, la consulta de información climática y otras fuentes externas, así como mecanismos de comunicación, comunidad, reputación y trazabilidad que permiten ampliar el uso de la información registrada dentro del ecosistema agrícola.
+
+Asimismo, contempla la participación de proveedores y asesores de insumos agrícolas, que pueden utilizar información autorizada de los cultivos para apoyar sus recomendaciones y actividades comerciales, así como de clientes finales y compradores interesados en consultar productos, opiniones e información relacionada con su procedencia y las condiciones registradas durante el cultivo.
 
 **Misión**
 
@@ -301,9 +301,9 @@ Ser una startup peruana reconocida por desarrollar soluciones digitales innovado
 
 **Propuesta de valor**
 
-NovaTech propone, mediante TerraTech, acercar la agricultura de precisión a pequeños y medianos agricultores mediante una aplicación móvil intuitiva y tecnología IoT de bajo costo. La solución transforma datos técnicos del suelo en información visual, alertas y recomendaciones comprensibles, permitiendo que el usuario supervise sus campos y tome decisiones oportunas.
+NovaTech propone, mediante TerraTech, acercar la agricultura de precisión a pequeños y medianos agricultores mediante una aplicación móvil intuitiva y tecnología IoT de bajo costo. La solución transforma datos técnicos del suelo en información visual, alertas, análisis y recomendaciones comprensibles, permitiendo que el usuario supervise sus campos, gestione sus sensores e insumos y tome decisiones oportunas relacionadas con el riego, la fertilización y el cuidado de los cultivos.
 
-La propuesta también facilita el acceso autorizado a información agrícola para apoyar la asesoría de los proveedores y las decisiones de compra de consumidores y comerciantes.
+La propuesta también facilita el acceso autorizado a información agrícola para apoyar la asesoría de los proveedores, incorpora mecanismos de notificación e información complementaria para la gestión agrícola y permite a clientes finales y compradores consultar productos, opiniones e información relacionada con su procedencia y trazabilidad.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -319,19 +319,23 @@ NovaTech está conformada por estudiantes que aportan diferentes conocimientos t
 
 ## 1.2. Solution Profile
 
-TerraTech es una solución tecnológica dirigida al sector agrícola que integra dispositivos IoT con servicios digitales y una aplicación móvil. Los sensores permiten recopilar información sobre la humedad, los nutrientes y otras condiciones relevantes del suelo, mientras que la aplicación presenta estos datos mediante indicadores visuales, alertas e información histórica.
+TerraTech es una solución tecnológica dirigida al sector agrícola que integra dispositivos IoT, servicios digitales y una aplicación móvil. Los sensores permiten recopilar información sobre la humedad, los nutrientes, la temperatura y otras condiciones relevantes del suelo, mientras que la aplicación presenta estos datos mediante indicadores visuales, alertas, información histórica y herramientas de análisis.
 
-Para el curso de Aplicaciones para Dispositivos Móviles, el proyecto reutiliza el trabajo desarrollado previamente en Aplicaciones Open Source. La adaptación conserva el dominio del negocio, los servicios del backend y las funcionalidades existentes de TerraTech, y se concentra en su acceso y utilización mediante la experiencia móvil. No se plantea un rediseño del backend ni la incorporación de nuevos módulos de negocio como consecuencia de la reorganización del informe.
+Para el curso de Aplicaciones para Dispositivos Móviles, TerraTech reutiliza el dominio de negocio, la base tecnológica y los servicios desarrollados previamente en Aplicaciones Open Source, adaptándolos y organizándolos alrededor de una experiencia móvil. El alcance documentado de la solución comprende la gestión de usuarios y perfiles, el monitoreo de terrenos y sensores, la consulta histórica, el análisis de información, las recomendaciones agrícolas, las notificaciones, la gestión de insumos, la integración con servicios externos y las funcionalidades de interacción y consulta disponibles para los diferentes segmentos objetivo.
 
-La solución busca apoyar a los pequeños y medianos agricultores en la toma de decisiones relacionadas con el riego, la fertilización y el cuidado de sus cultivos. Para ello, contempla el monitoreo de terrenos, la consulta de información histórica, el análisis predictivo y las recomendaciones automáticas disponibles en la solución.
+La solución busca apoyar principalmente a los pequeños y medianos agricultores en la toma de decisiones relacionadas con el riego, la fertilización y el cuidado de sus cultivos. Para ello, contempla el monitoreo de terrenos, la consulta de información histórica, el análisis predictivo, las recomendaciones de apoyo a la decisión, la configuración de alertas y umbrales, la administración de sensores y el control de los insumos agrícolas disponibles.
 
-Asimismo, considera el almacenamiento local de información para permitir la consulta de registros previamente obtenidos cuando la conectividad sea limitada. La actualización de estos registros se realiza al disponer de conexión, por lo que la consulta sin conexión debe distinguirse de la recepción de nuevas mediciones.
+TerraTech también puede complementar la información obtenida directamente de los terrenos mediante la integración con servicios externos que proporcionen información relevante para la actividad agrícola, como datos climáticos u otras fuentes de información que permitan ampliar el contexto disponible para el usuario.
 
-Los proveedores y asesores de insumos agrícolas pueden utilizar información autorizada sobre los cultivos para sustentar sus recomendaciones. Por su parte, los clientes finales y compradores —tanto consumidores como comerciantes mayoristas y minoristas— pueden consultar información compartida sobre la procedencia y las condiciones registradas durante el cultivo.
+Asimismo, considera el almacenamiento local de información para permitir la consulta de registros previamente obtenidos cuando la conectividad sea limitada. La actualización y sincronización de estos registros se realizará cuando exista conectividad disponible, por lo que la consulta sin conexión debe distinguirse de la recepción de nuevas mediciones desde los servicios remotos.
 
-Dentro de esta experiencia se contempla el acceso a fichas informativas mediante códigos QR. Estos mecanismos facilitan la consulta de información registrada en TerraTech; no constituyen, por sí mismos, una certificación de inocuidad, producción orgánica o buenas prácticas agrícolas.
+Los proveedores y asesores de insumos agrícolas pueden utilizar información autorizada sobre los cultivos para sustentar sus recomendaciones, realizar seguimiento a sus clientes y consultar información relacionada con productos, demanda y otras variables útiles para sus actividades dentro de la plataforma.
 
-El objetivo de TerraTech es reducir la incertidumbre asociada a la gestión tradicional de los terrenos, facilitar el monitoreo de los cultivos y transformar los datos recopilados en información comprensible que contribuya con el uso eficiente de los recursos agrícolas.
+Por su parte, los clientes finales y compradores —tanto consumidores como comerciantes mayoristas y minoristas— pueden consultar información sobre los productos agrícolas, su procedencia y las condiciones registradas durante el cultivo. TerraTech también contempla funcionalidades de catálogo, comentarios, calificaciones y reputación que permiten complementar la información disponible antes de tomar decisiones de compra.
+
+Dentro de esta experiencia se contempla el acceso a fichas informativas y mecanismos de trazabilidad mediante códigos QR. Estos mecanismos facilitan la consulta de información registrada en TerraTech; no constituyen, por sí mismos, una certificación de inocuidad, producción orgánica o buenas prácticas agrícolas.
+
+El objetivo de TerraTech es reducir la incertidumbre asociada a la gestión tradicional de los terrenos, facilitar el monitoreo de los cultivos, mejorar el acceso a información relevante y conectar a agricultores, proveedores, asesores, clientes finales y compradores mediante una experiencia digital orientada al sector agrícola.
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -356,18 +360,23 @@ La investigación realizada previamente para TerraTech se conserva como antecede
 | **Where – ¿Dónde ocurre?** | Ocurre en unidades agropecuarias ubicadas en zonas rurales del Perú, especialmente en regiones andinas donde el acceso a infraestructura y herramientas tecnológicas puede ser limitado. También se manifiesta en los espacios de asesoría y comercialización vinculados con estos productores. La ubicación específica del primer piloto deberá ser definida por el equipo. |
 | **When – ¿Cuándo ocurre?** | Se manifiesta durante el ciclo agrícola, principalmente al evaluar el terreno, planificar la siembra, regar, fertilizar y responder ante variaciones en el estado del suelo. Para proveedores y compradores, aparece al formular recomendaciones, evaluar productos o tomar decisiones de compra. |
 | **Why – ¿Por qué ocurre?** | Se relaciona con la ausencia de mediciones continuas, el costo o la complejidad de algunas soluciones tecnológicas, las limitaciones de conectividad y la dependencia de información dispersa. La importancia de estas causas debe contrastarse con la evidencia de las entrevistas. |
-| **How – ¿Cómo se manifiesta?** | Las decisiones pueden tomarse utilizando inspecciones visuales, experiencia previa o registros manuales. Esto dificulta detectar oportunamente cambios en la humedad o los nutrientes, realizar un seguimiento histórico de cada terreno y compartir información comprensible con otros actores. |
+| **How – ¿Cómo se manifiesta?** | Las decisiones pueden tomarse utilizando inspecciones visuales, experiencia previa o registros manuales. Esto dificulta detectar oportunamente cambios en la humedad o los nutrientes, realizar un seguimiento histórico de cada terreno, administrar información relacionada con los recursos utilizados y compartir información comprensible con otros actores. |
 | **How much – ¿Cuál es su magnitud?** | Como indicadores del contexto, en 2023 el 81,7 % de las unidades agropecuarias del país pertenecía a la agricultura familiar de subsistencia y el porcentaje alcanzaba el 92,5 % en la Sierra. Además, durante el cuarto trimestre de 2025 el 23,4 % de los hogares rurales tenía Internet en el hogar. Estas cifras describen el entorno del problema; el impacto específico sobre agua, fertilizantes, producción e ingresos debe medirse mediante una línea base y pruebas piloto. |
 
 #### Objetivos preliminares
 
-- Facilitar el monitoreo de la humedad, los nutrientes y otras condiciones relevantes del suelo mediante dispositivos IoT.
+- Facilitar el monitoreo de la humedad, los nutrientes, la temperatura y otras condiciones relevantes del suelo mediante dispositivos IoT.
 - Transformar los datos recopilados en información visual, comprensible y útil para la toma de decisiones.
-- Presentar alertas que permitan responder oportunamente ante condiciones que puedan afectar los cultivos.
+- Presentar alertas y notificaciones que permitan responder oportunamente ante condiciones que puedan afectar los cultivos.
 - Proporcionar información histórica, análisis predictivo y recomendaciones que apoyen la planificación de las actividades agrícolas.
-- Permitir la consulta de información previamente almacenada en el dispositivo móvil cuando exista conectividad limitada.
-- Facilitar el acceso autorizado a información agrícola para apoyar las recomendaciones de los proveedores.
-- Facilitar la consulta de información sobre procedencia y condiciones registradas durante el cultivo por parte de consumidores y compradores comerciales, incluyendo los mecanismos de acceso mediante QR disponibles en TerraTech.
+- Facilitar la gestión de terrenos, sensores y umbrales asociados con las condiciones monitoreadas.
+- Permitir la consulta de información previamente almacenada en el dispositivo móvil cuando exista conectividad limitada y su posterior sincronización al recuperar la conexión.
+- Facilitar la gestión y seguimiento de los insumos agrícolas disponibles para los usuarios.
+- Complementar la información agrícola mediante la integración con servicios externos relevantes para la toma de decisiones, como servicios de información climática.
+- Facilitar el acceso autorizado a información agrícola para apoyar las recomendaciones y actividades de los proveedores.
+- Proporcionar herramientas de consulta y análisis que permitan a los proveedores conocer información relevante para el seguimiento de sus clientes y productos.
+- Facilitar mecanismos de interacción, comentarios, calificaciones y reputación entre los usuarios de TerraTech.
+- Facilitar la consulta de productos, procedencia y condiciones registradas durante el cultivo por parte de consumidores y compradores comerciales, incluyendo mecanismos de acceso mediante códigos QR.
 - Evaluar, mediante una línea base y pruebas piloto, los posibles cambios en el consumo de agua, el uso de fertilizantes y la productividad.
 
 #### Restricciones preliminares
@@ -378,10 +387,15 @@ La investigación realizada previamente para TerraTech se conserva como antecede
 - Dependencia de la calibración, precisión, alimentación energética y resistencia física de los dispositivos.
 - Diferentes niveles de alfabetización digital entre los agricultores, incluyendo usuarios adultos mayores.
 - Dependencia de la conectividad y de la disponibilidad de los servicios para recibir nuevas mediciones y actualizar la información almacenada.
+- Necesidad de definir mecanismos adecuados de almacenamiento local, sincronización y resolución de conflictos cuando se recupere la conectividad.
+- Dependencia de servicios externos para determinadas funcionalidades, como la consulta de información climática, imágenes u otros datos complementarios.
+- Dependencia de los permisos y restricciones del sistema operativo móvil para funcionalidades como notificaciones, almacenamiento local y sincronización en segundo plano.
+- Necesidad de validar técnicamente la frecuencia de lectura de los sensores, los protocolos de comunicación, el consumo energético y la conectividad IoT utilizada.
 - Necesidad de validar las recomendaciones agrícolas con especialistas y evitar presentarlas como diagnósticos definitivos o garantías de resultados.
 - Protección de los datos personales, productivos y geográficos registrados por los usuarios.
+- Necesidad de gestionar adecuadamente los comentarios, calificaciones y demás información generada por los usuarios dentro de las funcionalidades de comunidad y reputación.
+- Dependencia de la calidad, disponibilidad y actualización de los datos registrados para las funciones de análisis, recomendaciones y trazabilidad.
 - Limitación de las fichas y códigos QR a la información disponible y autorizada; su consulta no equivale a una certificación externa.
-- Conservación de los servicios y reglas de negocio existentes durante la adaptación móvil, sin ampliar el alcance funcional por cambios de redacción del informe.
 
 ### 1.2.2. Lean UX Process
 
@@ -397,11 +411,11 @@ Se presenta un solo Problem Statement para todo el proyecto, considerando a los 
 
 **Lo que buscamos abordar de manera conjunta es** la necesidad de monitorear las condiciones del suelo, presentar los datos de forma comprensible mediante una aplicación móvil, analizar la información recopilada y facilitar su intercambio controlado entre los actores involucrados. El análisis competitivo permite contrastar en qué medida las alternativas existentes atienden estas necesidades.
 
-**Nuestro producto abordará esta necesidad mediante** la integración de sensores IoT de bajo costo y conectividad de largo alcance con una aplicación móvil de interfaz simplificada. TerraTech permitirá consultar el estado de los cultivos, recibir alertas, revisar información histórica y recomendaciones, consultar registros almacenados localmente y compartir información autorizada. Los clientes finales y compradores podrán acceder a información sobre los productos mediante los mecanismos de consulta y códigos QR de la solución.
+**Nuestro producto abordará esta necesidad mediante** la integración de sensores IoT y servicios digitales con una aplicación móvil de interfaz simplificada. TerraTech permitirá monitorear terrenos y sensores, consultar indicadores e información histórica, visualizar alertas y notificaciones, acceder a análisis y recomendaciones, gestionar insumos y utilizar información complementaria procedente de servicios externos. Asimismo, facilitará la interacción entre agricultores y proveedores y permitirá a clientes finales y compradores consultar productos, opiniones e información de trazabilidad mediante fichas y códigos QR.
 
 **Nuestro enfoque inicial será** atender a pequeños y medianos agricultores de zonas rurales y andinas que necesiten monitorear sus terrenos y recibir información comprensible para apoyar sus decisiones de riego, fertilización y cuidado de los cultivos. Los proveedores y asesores de insumos agrícolas, así como los consumidores y compradores comerciales, se consideran segmentos complementarios de la solución.
 
-**Sabremos que hemos tenido éxito cuando observemos** que, durante las pruebas piloto, al menos el 80 % de los agricultores participantes utilice TerraTech regularmente, pueda consultar el estado de sus terrenos e interpretar sus alertas sin asistencia constante. Asimismo, se evaluará si los proveedores pueden utilizar información autorizada para sustentar sus recomendaciones y si los clientes finales y compradores pueden consultar y comprender la información compartida sobre los productos.
+**Sabremos que hemos tenido éxito cuando observemos** que al menos el 80 % de los agricultores participantes utilice TerraTech regularmente durante el periodo de evaluación definido para la solución y pueda consultar el estado de sus terrenos e interpretar sus alertas sin asistencia constante. Asimismo, se evaluará que al menos el 70 % de los proveedores participantes utilice la información registrada en TerraTech para apoyar sus recomendaciones y que al menos el 60 % de los clientes finales y compradores participantes consulte información de trazabilidad durante las pruebas correspondientes.
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -415,11 +429,11 @@ Estas suposiciones deben contrastarse con las entrevistas, los experimentos y la
 
 - **BA-02 – Viabilidad de la solución:** Creemos que los agricultores adoptarán TerraTech si perciben que los beneficios obtenidos justifican el costo del kit y el esfuerzo necesario para aprender a utilizarlo.
 
-- **BA-03 – Modelo de monetización:** Creemos que TerraTech puede generar ingresos mediante la venta de kits IoT y planes de suscripción mensual asociados al uso de la plataforma. Los precios deben evaluarse considerando los costos y la disposición de pago de los usuarios.
+- **BA-03 – Modelo de monetización:** Creemos que TerraTech puede generar ingresos mediante la venta de kits IoT y planes de suscripción mensual asociados al uso de la plataforma. Como hipótesis comercial inicial se considera un kit con un precio inferior a S/ 300 y planes mensuales dentro de un rango aproximado de S/ 30 a S/ 50. Estos valores deberán validarse considerando los costos reales y la disposición de pago de los usuarios.
 
 - **BA-04 – Alianzas estratégicas:** Creemos que las asociaciones agrícolas, cooperativas y proveedores de insumos pueden contribuir con la difusión, distribución y soporte de TerraTech.
 
-- **BA-05 – Capacidades organizacionales:** Creemos que NovaTech cuenta con una base tecnológica reutilizable que permitirá integrar la experiencia móvil con los dispositivos IoT y los servicios digitales de TerraTech.
+- **BA-05 – Capacidades organizacionales:** Creemos que NovaTech cuenta con una base tecnológica reutilizable que permitirá integrar la experiencia móvil con los dispositivos IoT, los servicios digitales y las capacidades funcionales documentadas para TerraTech.
 
 ##### Business Outcome Assumptions
 
@@ -431,29 +445,39 @@ Estas suposiciones deben contrastarse con las entrevistas, los experimentos y la
 
 - **BOA-04 – Viabilidad comercial:** Creemos que NovaTech puede alcanzar un margen aproximado del 30 % en la venta de los kits IoT y conseguir usuarios suscritos a los planes mensuales.
 
-- **BOA-05 – Adopción del mercado:** Creemos que al menos el 80 % de los agricultores participantes en el piloto utilizará TerraTech regularmente y mostrará interés en continuar utilizando el servicio.
+- **BOA-05 – Adopción del mercado:** Creemos que al menos el 80 % de los agricultores participantes utilizará TerraTech regularmente durante el periodo de evaluación definido y mostrará interés en continuar utilizando el servicio.
 
-Los resultados relacionados con agua, fertilizantes y rentabilidad deberán evaluarse frente a una línea base, definiendo el periodo de comparación y considerando las condiciones de cada cultivo.
+- **BOA-06 – Uso por proveedores:** Creemos que al menos el 70 % de los proveedores participantes utilizará la información registrada en TerraTech para apoyar sus recomendaciones durante las pruebas piloto.
+
+- **BOA-07 – Consulta de trazabilidad:** Creemos que al menos el 60 % de los clientes finales y compradores participantes consultará la información de trazabilidad disponible durante las pruebas piloto.
+
+Los resultados relacionados con agua, fertilizantes, rentabilidad, adopción, utilización de la información y consulta de trazabilidad deberán evaluarse frente a criterios previamente definidos, estableciendo el periodo de medición, la línea base correspondiente y las condiciones de cada prueba.
 
 ##### User Assumptions
 
 - **UA-01 – Usuario principal:** Creemos que nuestros usuarios principales son pequeños y medianos agricultores responsables de las decisiones sobre riego, fertilización y cuidado de sus terrenos, especialmente en zonas rurales y andinas. El perfil considera adultos de distintas edades, incluyendo adultos mayores, y diferentes niveles de experiencia con dispositivos móviles.
 
-- **UA-02 – Usuario secundario:** Creemos que nuestros usuarios secundarios son proveedores y asesores de insumos agrícolas que necesitan información sobre las condiciones de los terrenos para sustentar sus recomendaciones y realizar seguimiento a sus clientes.
+- **UA-02 – Usuario secundario:** Creemos que nuestros usuarios secundarios son proveedores y asesores de insumos agrícolas que necesitan información sobre las condiciones de los terrenos para sustentar sus recomendaciones, realizar seguimiento a sus clientes y gestionar información relacionada con los productos que ofrecen.
 
-- **UA-03 – Usuario terciario:** Creemos que nuestros usuarios terciarios son clientes finales y compradores de productos agrícolas interesados en conocer su procedencia y las condiciones registradas durante el cultivo. Este segmento incluye consumidores que adquieren productos para uso personal o familiar, así como compradores mayoristas y minoristas que los adquieren para comercializarlos.
+- **UA-03 – Usuario terciario:** Creemos que nuestros usuarios terciarios son clientes finales y compradores de productos agrícolas interesados en conocer su procedencia, las condiciones registradas durante el cultivo y las opiniones disponibles sobre los productos. Este segmento incluye consumidores que adquieren productos para uso personal o familiar, así como compradores mayoristas y minoristas que los adquieren para comercializarlos.
 
 ##### User Outcome and Benefit Assumptions
 
-- **UOBA-01 – Información sobre el terreno:** Creemos que los agricultores podrán conocer las condiciones registradas de humedad y nutrientes de sus terrenos sin depender únicamente de la intuición o la observación directa.
+- **UOBA-01 – Información sobre el terreno:** Creemos que los agricultores podrán conocer las condiciones registradas de humedad, nutrientes, temperatura y otros indicadores de sus terrenos sin depender únicamente de la intuición o la observación directa.
 
 - **UOBA-02 – Prevención de pérdidas:** Creemos que los agricultores podrán reaccionar oportunamente ante alertas relacionadas con la falta de agua, niveles inadecuados de nutrientes u otras condiciones desfavorables.
 
 - **UOBA-03 – Optimización del tiempo:** Creemos que los agricultores podrán consultar información sobre sus terrenos desde su dispositivo móvil sin tener que desplazarse continuamente hacia cada parcela.
 
-- **UOBA-04 – Recomendaciones sustentadas:** Creemos que los proveedores podrán utilizar información autorizada y las recomendaciones disponibles en TerraTech para apoyar su asesoría y fortalecer la confianza de sus clientes.
+- **UOBA-04 – Gestión de recursos:** Creemos que los agricultores podrán gestionar información relacionada con sus sensores, alertas e insumos agrícolas desde una misma solución para facilitar el seguimiento de sus actividades.
 
-- **UOBA-05 – Transparencia del producto:** Creemos que los clientes finales y compradores podrán consultar información compartida sobre la procedencia y el tratamiento de los productos agrícolas para tomar decisiones de compra mejor informadas.
+- **UOBA-05 – Recomendaciones sustentadas:** Creemos que los proveedores podrán utilizar información autorizada y las herramientas de análisis disponibles en TerraTech para apoyar su asesoría, realizar seguimiento y fortalecer la confianza de sus clientes.
+
+- **UOBA-06 – Información comercial para proveedores:** Creemos que los proveedores podrán utilizar información sobre productos, demanda y actividad de los usuarios para orientar determinadas decisiones comerciales.
+
+- **UOBA-07 – Transparencia del producto:** Creemos que los clientes finales y compradores podrán consultar información compartida sobre la procedencia, el tratamiento y la trazabilidad de los productos agrícolas para tomar decisiones de compra mejor informadas.
+
+- **UOBA-08 – Comunidad y reputación:** Creemos que los comentarios, calificaciones y mecanismos de reputación permitirán a proveedores y compradores disponer de información adicional sobre la experiencia de otros usuarios dentro de TerraTech.
 
 ##### Feature Assumptions
 
@@ -465,11 +489,13 @@ Los resultados relacionados con agua, fertilizantes y rentabilidad deberán eval
 
 - **FA-04 – Monitoreo y consulta de cultivos:** Creemos que la visualización de las condiciones registradas de cada terreno permitirá que los agricultores detecten variaciones y tomen decisiones oportunas. La consulta de datos almacenados localmente facilitará el acceso a información previamente obtenida cuando no exista conexión, y su actualización se realizará cuando esta se restablezca.
 
-- **FA-05 – Conectividad social y consulta de procedencia:** Creemos que los mecanismos de comunicación e intercambio autorizado de información, junto con la consulta de fichas mediante códigos QR, facilitarán la colaboración entre agricultores y proveedores y el acceso de clientes finales y compradores a información sobre los productos agrícolas.
+- **FA-05 – Ecosistema digital, comunidad y trazabilidad:** Creemos que los mecanismos de comunicación e intercambio autorizado de información, el catálogo de productos, las funciones de comunidad y reputación y la consulta de fichas mediante códigos QR facilitarán la interacción entre agricultores, proveedores, clientes finales y compradores, además de mejorar el acceso a información relevante para sus decisiones.
+
+Además de las cinco Feature Assumptions priorizadas para la formulación de las hipótesis Lean UX, TerraTech contempla capacidades complementarias de autenticación y gestión de perfiles, administración de sensores e insumos, notificaciones configurables, integración con servicios externos y herramientas de analítica. Estas capacidades forman parte del alcance funcional documentado en los requisitos del producto, aunque no constituyen hipótesis independientes dentro del presente Lean UX Process.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-A partir de las suposiciones identificadas, se formularon cinco hipótesis verificables. Cada Hypothesis Statement se encuentra relacionado con una de las cinco Feature Assumptions de TerraTech.
+A partir de las suposiciones identificadas, se formularon cinco hipótesis verificables. Cada Hypothesis Statement se encuentra relacionado con una de las cinco Feature Assumptions priorizadas de TerraTech.
 
 ##### H-01 – Hardware robusto (FA-01)
 
@@ -477,7 +503,7 @@ A partir de las suposiciones identificadas, se formularon cinco hipótesis verif
 
 ##### H-02 – Interfaz simplificada (FA-02)
 
-**CREEMOS QUE LOGRAREMOS** que al menos el 80 % de los agricultores participantes utilice TerraTech regularmente durante el piloto **SI** los agricultores con diferentes niveles de alfabetización digital **LOGRAN** consultar el estado de sus terrenos e interpretar las alertas sin asistencia constante **CON** una aplicación móvil basada en íconos, colores tipo semáforo, textos breves y notificaciones comprensibles.
+**CREEMOS QUE LOGRAREMOS** que al menos el 80 % de los agricultores participantes utilice TerraTech regularmente durante el periodo de evaluación definido **SI** los agricultores con diferentes niveles de alfabetización digital **LOGRAN** consultar el estado de sus terrenos e interpretar las alertas sin asistencia constante **CON** una aplicación móvil basada en íconos, colores tipo semáforo, textos breves y notificaciones comprensibles.
 
 ##### H-03 – Análisis de información y recomendaciones (FA-03)
 
@@ -487,11 +513,13 @@ A partir de las suposiciones identificadas, se formularon cinco hipótesis verif
 
 **CREEMOS QUE LOGRAREMOS** reducir aproximadamente en un 20 % los costos relacionados con el uso innecesario de fertilizantes **SI** los agricultores **LOGRAN** identificar variaciones en los nutrientes y otras condiciones registradas del suelo **CON** la consulta de información de sus terrenos y cultivos desde la aplicación móvil.
 
-##### H-05 – Conectividad social y consulta de procedencia (FA-05)
+##### H-05 – Ecosistema digital, comunidad y trazabilidad (FA-05)
 
-**CREEMOS QUE LOGRAREMOS** fortalecer la adopción y viabilidad comercial de TerraTech mediante usuarios interesados en continuar con el servicio **SI** los agricultores, proveedores, clientes finales y compradores **LOGRAN** intercambiar y consultar información autorizada para apoyar sus recomendaciones y decisiones de compra **CON** mecanismos de comunicación y consulta de fichas sobre los productos agrícolas, incluyendo el acceso mediante códigos QR.
+**CREEMOS QUE LOGRAREMOS** fortalecer la adopción y viabilidad comercial de TerraTech mediante usuarios interesados en continuar utilizando la solución **SI** los agricultores, proveedores, clientes finales y compradores **LOGRAN** interactuar, intercambiar y consultar información relevante para sus actividades y decisiones **CON** mecanismos de comunicación, comunidad y reputación, catálogo de productos y fichas de trazabilidad accesibles mediante códigos QR.
 
 #### 1.2.2.4. Lean UX Canvas
+
+El Lean UX Canvas prioriza las principales hipótesis de negocio, usuarios, beneficios y características que requieren validación. Las capacidades complementarias documentadas en los requisitos del producto se mantienen dentro del alcance general de TerraTech, aunque no todas se representan como hipótesis independientes en el Canvas.
 
 <img src="assets/images/cap1/LeanUxCanvas.png" alt="canvas" style="width: 90%; max-width: 800px; height: 650px;">
 
@@ -506,22 +534,22 @@ Las estadísticas nacionales describen el entorno de los segmentos; las entrevis
 
     - **Perfil:** Productores responsables de las decisiones de riego, fertilización y cuidado de unidades agrícolas pequeñas o medianas, principalmente ubicadas en zonas rurales de la Sierra peruana. Se consideran usuarios de distintas edades, incluyendo adultos mayores, con diferentes niveles de alfabetización digital.
     - **Sustento estadístico:** Según la Encuesta Nacional Agropecuaria 2023, el 81,7 % de las unidades agropecuarias del país pertenecía a la agricultura familiar de subsistencia, porcentaje que alcanzó el 92,5 % en la Sierra. Asimismo, el 64,1 % de los productores tenía entre 35 y 64 años. Respecto al nivel educativo, el 48,4 % contaba únicamente con educación primaria y el 8,6 % no tenía educación formal. Estos datos contextualizan la diversidad de los productores y la necesidad de evaluar una experiencia móvil comprensible; no establecen un límite de edad para participar en el proyecto. ([INEI, 2024](https://proyectos.inei.gob.pe/iinei/srienaho/Descarga/DocumentosMetodologicos/2023-62/05_PUBLICACION_ENA_2023.pdf))
-    - **Problema:** Incertidumbre sobre la humedad, los nutrientes y el estado general de sus tierras, lo que dificulta la toma oportuna de decisiones sobre riego y fertilización. Las limitaciones de conectividad también pueden dificultar la consulta de información en el campo.
-    - **Beneficio:** Monitoreo del estado del suelo, alertas comprensibles, consulta de registros y análisis de la información recolectada para apoyar la planificación agrícola y el uso eficiente de recursos.
+    - **Problema:** Incertidumbre sobre la humedad, los nutrientes y el estado general de sus tierras, lo que dificulta la toma oportuna de decisiones sobre riego y fertilización. Las limitaciones de conectividad también pueden dificultar la consulta de información en el campo y el acceso continuo a herramientas digitales.
+    - **Beneficio:** Monitoreo del estado del suelo, alertas y recomendaciones comprensibles, consulta de registros históricos, gestión de sensores e insumos e información complementaria que apoye la planificación agrícola y el uso eficiente de recursos.
 
 - **Proveedores y asesores de insumos agrícolas:**
 
     - **Perfil:** Comerciantes, distribuidores y asesores locales que venden o recomiendan fertilizantes, semillas, plaguicidas y otros insumos utilizados en la producción agrícola.
     - **Sustento estadístico:** La Encuesta Nacional Agropecuaria 2023 señala que el 3,2 % de los productores recibió asistencia técnica, aunque el 80,9 % tuvo acceso a alguna clase de información agropecuaria, como precios, demanda, condiciones climáticas, precio de fertilizantes, aptitud del suelo o técnicas de manejo. Estas cifras describen el contexto de acceso a información y asistencia de los agricultores atendidos por este segmento; no representan un conteo de proveedores ni demuestran por sí mismas su disposición a utilizar TerraTech. ([INEI, 2024](https://proyectos.inei.gob.pe/iinei/srienaho/Descarga/DocumentosMetodologicos/2023-62/05_PUBLICACION_ENA_2023.pdf))
-    - **Problema:** Falta de datos reales y actualizados para formular recomendaciones adecuadas a los agricultores, lo que puede ocasionar errores, reclamos y pérdida de confianza.
-    - **Beneficio:** Acceso autorizado a información sobre las condiciones de los cultivos y a herramientas de consulta y análisis para apoyar la asesoría, realizar seguimiento y fortalecer la relación con sus clientes.
+    - **Problema:** Falta de datos reales y actualizados para formular recomendaciones adecuadas a los agricultores, realizar seguimiento y orientar determinadas decisiones relacionadas con los productos e insumos que ofrecen.
+    - **Beneficio:** Acceso autorizado a información sobre las condiciones de los cultivos, herramientas de consulta y análisis, información relacionada con productos y demanda, notificaciones y mecanismos de interacción que permitan apoyar la asesoría, realizar seguimiento y fortalecer la relación con sus clientes.
 
 - **Clientes finales y compradores de productos agrícolas:**
 
     - **Perfil:** Personas que adquieren productos agrícolas para consumo personal o familiar, así como comerciantes, distribuidores y compradores mayoristas o minoristas que los adquieren para comercializarlos. Comparten el interés por conocer la procedencia y las condiciones de producción, aunque sus criterios de compra y uso de la información pueden ser diferentes.
     - **Sustento estadístico:** Según el Censo Nacional de Mercados de Abastos de 2016, citado en la Hoja de Ruta de PRODUCE (2021), se identificaron 2 612 mercados en el Perú: 44 mayoristas y 2 568 minoristas, además de 328 946 puestos fijos. Estas cifras permiten dimensionar parte del entorno comercial donde participan comerciantes y consumidores. No constituyen una estimación del número total de consumidores ni demuestran sus preferencias sobre trazabilidad; estas deben contrastarse con la investigación del proyecto. ([PRODUCE, 2021](https://pndp.produce.gob.pe/wp-content/uploads/2025/03/HOJA-DE-RUTA-D.S.-N%C2%BA-021-2021-PRODUCE.pdf))
-    - **Problema:** Dificultad para conocer la procedencia de los productos y acceder a información comprensible sobre las condiciones registradas durante su cultivo, tanto al comprar para consumo como al seleccionar productos para comercializarlos.
-    - **Beneficio:** Acceso a fichas informativas y datos compartidos por el agricultor sobre la procedencia y el cultivo, incluyendo su consulta mediante códigos QR, para tomar decisiones de compra mejor informadas. La información presentada no sustituye certificaciones ni controles de calidad externos.
+    - **Problema:** Dificultad para conocer la procedencia de los productos y acceder a información comprensible sobre las condiciones registradas durante su cultivo, así como a referencias adicionales que permitan comparar alternativas antes de realizar una compra.
+    - **Beneficio:** Acceso a un catálogo de productos, fichas informativas, información de trazabilidad, comentarios, calificaciones y datos compartidos por el agricultor sobre la procedencia y el cultivo, incluyendo su consulta mediante códigos QR, para apoyar decisiones de compra mejor informadas. La información presentada no sustituye certificaciones ni controles de calidad externos.
 
 # Capítulo II: Requirements Development and Software Solution Design
 [Volver al contenido principal](#contenido)
@@ -1639,7 +1667,7 @@ Report "1" *-- "1" TechnicalInterpretation : contains >
 IReportRepository ..> Report : manages >
 CreateReportCommand ..> Report : instantiates >
 
-@endluml
+@enduml
 ```
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
