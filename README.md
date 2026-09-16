@@ -127,7 +127,7 @@ assets/images/readme/report-collaboration-insights-av1.png.png
       largos y difíciles de recordar.
     - Evitar subir demasiado contenido en un solo commit.
 
-\pagebreak
+<div class="page"></div>
 
 ## Contenido
 
@@ -175,7 +175,7 @@ assets/images/readme/report-collaboration-insights-av1.png.png
     - [Métodos y técnicas de ingeniería de software](#métodos-y-técnicas-de-ingeniería-de-software)
 - [Anexos](#anexos)
 
-\pagebreak
+<div class="page"></div>
 
 ## Student Outcome
 
@@ -295,7 +295,7 @@ relevantes y estar delimitados por un plazo.
 | Relevante | Utilizar arquitecturas conocidas, herramientas de código abierto o infraestructura en la nube con capas gratuitas (e.g., Firebase, Vercel, AWS Free Tier) para reducir costos iniciales y avanzar de forma incremental. | Permitirá validar una idea de negocio propia en el mercado, poner en práctica habilidades de liderazgo, producto y desarrollo integral, y diversificar las fuentes de ingresos/portafolio. |
 | Plazo | En un plazo máximo de 3 a 6 meses posteriores a la finalización de los estudios académicos. | En un plazo máximo de 6 a 9 meses, dedicando horas semanales constantes fuera del horario académico. |
 
-\pagebreak
+<div class="page"></div>
 
 # Capítulo I: Presentación
 
@@ -2163,7 +2163,7 @@ la mantenibilidad del sistema.
 | AuthorizeAttribute.cs | Authorization Filter | Filtro que valida la presencia del usuario autenticado en el contexto HTTP. |
 | AllowAnonymousAttribute.cs | Metadata Attribute | Atributo para omitir la validación de autorización en endpoints públicos. |
 
-\pagebreak
+<div class="page"></div>
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
