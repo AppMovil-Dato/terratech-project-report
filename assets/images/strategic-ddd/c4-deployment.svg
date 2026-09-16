@@ -10,8 +10,8 @@
 
   <!-- Header -->
   <rect x="30" y="25" width="1140" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadow6)"/>
-  <text x="60" y="58" fill="#f8fafc" font-size="20" font-weight="700">TerraTech — C4 Deployment Diagram (Nivel 3)</text>
-  <text x="60" y="80" fill="#94a3b8" font-size="13">Diagrama de Despliegue de Infraestructura Física / Cloud: Dispositivos Móviles, Servidor Cloud y Servicios SaaS</text>
+  <text x="60" y="58" fill="#f8fafc" font-size="20" font-weight="700">TerraTech — Software Architecture Deployment Diagram</text>
+  <text x="60" y="80" fill="#94a3b8" font-size="13">Distribución de la aplicación móvil, backend, base de datos relacional y servicios externos</text>
 
   <!-- Node 1: Dispositivo Móvil del Agricultor -->
   <g transform="translate(40, 130)">
@@ -61,44 +61,44 @@
     </g>
   </g>
 
-  <!-- Node 2: Cloud Infrastructure (AWS / GCP) -->
+  <!-- Node 2: Cloud Infrastructure -->
   <g transform="translate(440, 130)">
     <rect width="420" height="680" rx="14" fill="#1e293b" fill-opacity="0.8" stroke="#818cf8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadow6)"/>
     <rect x="15" y="15" width="240" height="26" rx="6" fill="#4338ca"/>
-    <text x="135" y="32" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">☁️ Cloud Infrastructure (AWS / GCP)</text>
-    <text x="20" y="65" fill="#94a3b8" font-size="11">Region: us-east-1 (N. Virginia)</text>
-    <text x="20" y="82" fill="#94a3b8" font-size="11">Security: TLS 1.3 / VPC / Reverse Proxy HTTPS</text>
+    <text x="135" y="32" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">☁️ Cloud Infrastructure</text>
+    <text x="20" y="65" fill="#94a3b8" font-size="11">Entorno: infraestructura cloud del proyecto</text>
+    <text x="20" y="82" fill="#94a3b8" font-size="11">Comunicación segura mediante HTTPS/TLS</text>
 
-    <!-- Sub-node: Docker Container (App Service) -->
+    <!-- Sub-node: Backend REST API -->
     <g transform="translate(20, 105)">
       <rect width="380" height="280" rx="10" fill="#438dd5" stroke="#bfdbfe" stroke-width="1.5"/>
-      <text x="190" y="30" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Docker Container: Spring Boot API</text>
-      <text x="190" y="50" fill="#dbeafe" font-size="11" text-anchor="middle">[OpenJDK 21 Alpine Linux]</text>
+      <text x="190" y="30" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Backend REST API</text>
+      <text x="190" y="50" fill="#dbeafe" font-size="11" text-anchor="middle">[ASP.NET Core Runtime]</text>
       
       <rect x="15" y="70" width="350" height="55" rx="6" fill="#1d4ed8"/>
       <text x="190" y="92" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">REST Controllers (OpenAPI / Swagger 3.0)</text>
-      <text x="190" y="110" fill="#bfdbfe" font-size="9" text-anchor="middle">Endpoints HTTP: /api/v1/iam, /api/v1/parcels, /api/v1/analytics</text>
+      <text x="190" y="110" fill="#bfdbfe" font-size="9" text-anchor="middle">Endpoints REST para los contextos documentados en 2.6</text>
 
       <rect x="15" y="135" width="350" height="55" rx="6" fill="#1d4ed8"/>
       <text x="190" y="157" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Domain &amp; Application Services</text>
-      <text x="190" y="175" fill="#bfdbfe" font-size="9" text-anchor="middle">Lógica de evaluación agronómica, semver, políticas de alerta</text>
+      <text x="190" y="175" fill="#bfdbfe" font-size="9" text-anchor="middle">Servicios de aplicación y reglas de dominio</text>
 
       <rect x="15" y="200" width="350" height="65" rx="6" fill="#1d4ed8"/>
-      <text x="190" y="222" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Infrastructure Adapters &amp; Schedulers</text>
-      <text x="190" y="238" fill="#bfdbfe" font-size="9" text-anchor="middle">WeatherServiceAdapter, FcmPushNotificationAdapter,</text>
-      <text x="190" y="252" fill="#bfdbfe" font-size="9" text-anchor="middle">Spring @Scheduled Tasks (monitoreo periódico de heladas)</text>
+      <text x="190" y="222" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Infrastructure &amp; Persistence</text>
+      <text x="190" y="238" fill="#bfdbfe" font-size="9" text-anchor="middle">Entity Framework Core, JWT y adaptadores externos</text>
+      <text x="190" y="252" fill="#bfdbfe" font-size="9" text-anchor="middle">Servicios técnicos compartidos del backend</text>
     </g>
 
-    <!-- Sub-node: Managed PostgreSQL Instance -->
+    <!-- Sub-node: Relational Database Instance -->
     <g transform="translate(20, 420)">
       <rect width="380" height="230" rx="10" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
       <text x="190" y="30" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Managed Relational DB Instance</text>
-      <text x="190" y="50" fill="#bfdbfe" font-size="11" text-anchor="middle">[Cloud SQL / AWS RDS PostgreSQL 16]</text>
-      <text x="15" y="85" fill="#ffffff" font-size="11">• Almacenamiento persistente SSD NVMe con cifrado AES-256</text>
-      <text x="15" y="108" fill="#ffffff" font-size="11">• Schemas por contexto: iam_db, parcel_db, analytics_db,</text>
-      <text x="15" y="125" fill="#ffffff" font-size="11">  notification_db, community_db</text>
-      <text x="15" y="150" fill="#ffffff" font-size="11">• Copias de seguridad automáticas diarias</text>
-      <text x="15" y="175" fill="#ffffff" font-size="11">• Conexión segura mediante HikariCP Connection Pool</text>
+      <text x="190" y="50" fill="#bfdbfe" font-size="11" text-anchor="middle">[Proveedor relacional según configuración]</text>
+      <text x="15" y="85" fill="#ffffff" font-size="11">• Persistencia relacional del backend</text>
+      <text x="15" y="108" fill="#ffffff" font-size="11">• Datos de IAM, Monitoring, Analytics,</text>
+      <text x="15" y="125" fill="#ffffff" font-size="11">  Stock y Notification Management</text>
+      <text x="15" y="150" fill="#ffffff" font-size="11">• Configuración de conexión mediante variables de entorno</text>
+      <text x="15" y="175" fill="#ffffff" font-size="11">• Acceso a datos mediante Entity Framework Core</text>
     </g>
   </g>
 
@@ -125,7 +125,7 @@
       <text x="15" y="70" fill="#94a3b8" font-size="10">• Infraestructura Google Push</text>
       <text x="15" y="90" fill="#94a3b8" font-size="10">• Protocolo HTTP v1 API</text>
       <text x="15" y="110" fill="#94a3b8" font-size="10">• Tokens de registro por celular</text>
-      <text x="15" y="130" fill="#94a3b8" font-size="10">• Entrega garantizada de alertas</text>
+      <text x="15" y="130" fill="#94a3b8" font-size="10">• Entrega según disponibilidad del servicio</text>
     </g>
   </g>
 
@@ -135,8 +135,8 @@
   <text x="430" y="230" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">HTTPS 443</text>
 
   <!-- Cloud API -> RDS -->
-  <path d="M 630 385 L 630 420" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow6)"/>
-  <text x="630" y="405" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">Port 5432</text>
+  <path d="M 630 515 L 630 550" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow6)"/>
+  <text x="630" y="538" fill="#38bdf8" font-size="9" font-weight="bold" text-anchor="middle">DB Connection</text>
 
   <!-- Cloud API -> Weather -->
   <path d="M 840 220 L 915 220" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow6)"/>
@@ -148,5 +148,5 @@
 
   <!-- Firebase -> Mobile Client -->
   <path d="M 915 450 L 880 450 L 880 750 L 340 750 L 340 650" stroke="#f97316" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrow6)" fill="none"/>
-  <text x="610" y="740" fill="#fed7aa" font-size="9" font-weight="bold" text-anchor="middle">Canal Seguro Google Play Services Push Notification</text>
+  <text x="610" y="740" fill="#fed7aa" font-size="9" font-weight="bold" text-anchor="middle">Push vía Google Play Services</text>
 </svg>

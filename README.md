@@ -57,6 +57,8 @@
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
@@ -1353,15 +1355,21 @@ características más frecuentes del análisis estadístico presentado en
 
 **Segmento 1: Agricultor**
 
-![](assets/images/cap2/user-person-1.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-1.png" alt="User Persona Agricultor" width="520">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
-![](assets/images/cap2/user-person-2.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-2.png" alt="User Persona Proveedor de insumos" width="520">
+</p>
 
 **Segmento 3: Cliente final**
 
-![](assets/images/cap2/user-person-3.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-3.png" alt="User Persona Cliente final" width="520">
+</p>
 
 ### 2.3.2. User Task Matrix
 
@@ -1421,7 +1429,9 @@ inspección visual y de su experiencia, lo que le genera incertidumbre
 frente a cambios climáticos inesperados y un importante esfuerzo físico
 al recorrer el terreno.
 
-![](assets/images/cap2/journey-map-1.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-1.png" alt="User Journey Map Agricultor" width="700">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
@@ -1431,7 +1441,9 @@ presenciales con su experiencia previa, pero la ausencia de datos reales
 del suelo genera recomendaciones poco precisas, reclamos y pérdida de
 confianza de sus clientes.
 
-![](assets/images/cap2/journey-map-2.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-2.png" alt="User Journey Map Proveedor de insumos" width="700">
+</p>
 
 **Segmento 3: Cliente final**
 
@@ -1441,7 +1453,9 @@ producto, no dispone de información confiable sobre el origen ni las
 prácticas de cultivo, por lo que decide con información incompleta y
 desconfianza.
 
-![](assets/images/cap2/journey-map-3.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-3.png" alt="User Journey Map Cliente final" width="700">
+</p>
 
 ### 2.3.4. Empathy Mapping
 
@@ -1460,7 +1474,9 @@ también desea mayor certeza para mejorar su productividad. Sus pains son
 la falta de información precisa y el esfuerzo físico; sus gains, la
 tranquilidad de anticiparse al clima y proteger su inversión.
 
-![](assets/images/cap2/empathy-map-1.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-1.png" alt="Empathy Map Agricultor" width="650">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
@@ -1472,7 +1488,9 @@ trabajo en visitas a campo y experiencia. Sus pains son la falta de
 datos objetivos y la pérdida de clientes; sus gains, fidelizar a los
 agricultores y aumentar sus ventas con asesorías más acertadas.
 
-![](assets/images/cap2/empathy-map-2.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-2.png" alt="Empathy Map Proveedor de insumos" width="650">
+</p>
 
 **Segmento 3: Cliente final**
 
@@ -1484,7 +1502,9 @@ decidir por precio y apariencia. Sus pains son la dificultad para
 verificar el origen y la calidad; sus gains, acceder a productos
 saludables y reconocer prácticas sostenibles con mayor confianza.
 
-![](assets/images/cap2/empathy-map-3.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-3.png" alt="Empathy Map Cliente final" width="650">
+</p>
 
 ### 2.3.5. Big Picture EventStorming
 
@@ -1538,7 +1558,9 @@ del sistema.
   registros de rendimiento.
 - Cuando un producto se publica, se genera su código QR de trazabilidad.
 
-![](assets/images/cap2/big-picture-event-storming2.0.jpg){width=500px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/big-picture-event-storming2.0.jpg" alt="Big Picture EventStorming de TerraTech" width="700">
+</p>
 
 ### 2.3.6. Ubiquitous Language
 
@@ -1777,7 +1799,9 @@ historias que los habilitan.
 | BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Conocer el origen y la trazabilidad del producto. | Ficha de producto con información de origen y línea de tiempo del cultivo. | US40: Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. |
 | BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Tomar decisiones de compra con mayor confianza. | Catálogo de productos con reseñas y calificaciones de otros compradores. | US39: Como cliente final, deseo consultar el catálogo de productos con filtros por categoría, región y características registradas del producto.<br>US36: Como cliente final, deseo consultar las reseñas de otros compradores para evaluar la calidad de un producto antes de comprarlo. |
 
-![](assets/images/cap2/impact-mapping.png){width=1000px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/impact-mapping.png" alt="Impact Mapping de TerraTech" width="700">
+</p>
 
 El enlace público del mapa se incorporará cuando el equipo habilite su
 compartición desde UXPressia.
@@ -2167,17 +2191,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Iam-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Component.png" alt="IAM Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Iam-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Domain.png" alt="IAM Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Iam-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Db.png" alt="IAM Database Design Diagram" width="650">
+</p>
 
 ### 2.6.2. Bounded Context: Analytics Management
 
