@@ -1,0 +1,28 @@
+---
+title: "Informe de Trabajo Final: TerraTech"
+subtitle: "Aplicaciones para Dispositivos Móviles (1ACC0238)"
+author:
+  - "NovaTech"
+date: "Septiembre 2026"
+fontsize: 11pt
+
+header-includes:
+  - \usepackage{array}
+  - \usepackage{longtable}
+  - \usepackage{booktabs}
+  - \usepackage{etoolbox}
+  - \patchcmd{\longtable}{\def\keep@next{\endgroup}}{\def\keep@next{\endgroup\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}}}{}{}
+
+geometry:
+  - top=20mm
+  - bottom=20mm
+  - left=20mm
+  - right=20mm
+
+colorlinks: true
+linkcolor: "blue"
+urlcolor: "blue"
+
+toc: false
+numbersections: false
+---
