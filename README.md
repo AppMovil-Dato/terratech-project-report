@@ -47,7 +47,7 @@ Proyecto
       <td>Delgado Perez, James Caleb</td>
     </tr>
     <tr>
-      <td>[Código 4]</td>
+      <td>U202314734</td>
       <td>Pariona Chacca, Angel Jose</td>
     </tr>
     <tr>
