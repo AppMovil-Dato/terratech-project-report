@@ -48,7 +48,7 @@ Proyecto
     </tr>
     <tr>
       <td>[Código 4]</td>
-      <td>[Apellidos y nombres 4]</td>
+      <td>Delgado Perez, James Caleb</td>
     </tr>
     <tr>
       <td>U202318612</td>
@@ -67,12 +67,15 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor                       | Descripción de modificación |
-|:---:|:---:|-----------------------------|---|
-| 0.1.0 | 04/09/2026 | Bryan Barba                       | Creación del repositorio `terratech-project-report`. |
-| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz]       | Creación de la estructura inicial del informe del proyecto TerraTech. |
-| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez         | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
-| 0.3.0 | 14/09/2026 | Jorge Manuel Retuerto Rodriguez   | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
+| Versión | Fecha | Autor                           | Descripción de modificación |
+|:---:|:---:|---------------------------------|---|
+| 0.1.0 | 04/09/2026 | Bryan Barba                     | Creación del repositorio `terratech-project-report`. |
+| 0.2.0 | 04/09/2026 | [Nombre completo de Lucemz]     | Creación de la estructura inicial del informe del proyecto TerraTech. |
+| 0.2.1 | 06/09/2026 | James Caleb Delgado Pérez       | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
+| 0.3.0 | 14/09/2026 | Jorge Manuel Retuerto Rodriguez | Documentar las capas Domain, Interface, Application e Infrastructure y diagramas asociados al Bounded. |
+| 0.3.1 | 15/09/2026 | James Caleb Delgado Perez       | Actualización del registro para documentar los aportes realizados en la AV1: elaboración y revisión del Capítulo I para su adaptación al proyecto móvil; organización inicial del informe por archivos y posterior consolidación en un único README; ajuste del índice y sus enlaces internos; organización de la bibliografía; e integración del avance del Capítulo II elaborado por un compañero y de sus imágenes. |
+| 0.3.2 | 15/09/2026 | James Caleb Delgado Perez       | Elaboración y actualización del Lean UX Canvas de TerraTech y revisión de los segmentos objetivo y su sustento estadístico, manteniendo la coherencia con el alcance del proyecto documentado en el Capítulo I. |
+
 
 ## Project Report Collaboration Insights
 
@@ -88,14 +91,14 @@ El registro de colaboración será actualizado progresivamente en cada entrega �
 Para la elaboración de la AV1, el equipo estableció una organización basada en GitFlow. La rama `main` conserva las versiones estables del informe, `develop` integra los avances del equipo y las ramas `feature/*` permiten que cada integrante desarrolle las secciones asignadas de manera independiente.
 
 #### Registro preliminar de participación
-
 | Integrante | Usuario de GitHub | Responsabilidad asignada | Ramas |
-|---|---|---|---|
-| [Apellidos y nombres 1] | [Usuario 1] | [Responsabilidad 1] | Por registrar |
-| [Apellidos y nombres 2] | [Usuario 2] | [Responsabilidad 2] | Por registrar |
-| [Apellidos y nombres 3] | [Usuario 3] | [Responsabilidad 3] | Por registrar |
-| [Apellidos y nombres 4] | [Usuario 4] | [Responsabilidad 4] | Por registrar |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407 | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
+|---|-------------------|---|---|
+| [Apellidos y nombres 1] | [Usuario 1]       | [Responsabilidad 1] | Por registrar |
+| [Apellidos y nombres 2] | [Usuario 2]       | [Responsabilidad 2] | Por registrar |
+| Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo del Capítulo I y consolidación del informe.<br><br>**Realizado:** elaboración y adaptación del contenido del Capítulo I; actualización de la carátula; organización inicial del informe por archivos y posterior unificación en el README; ajuste del índice y sus enlaces; organización de la bibliografía; incorporación del avance del Capítulo II y sus imágenes proporcionados por un compañero; actualización del registro de versiones, participación individual, Student Outcome y objetivos SMART; elaboración y actualización del Lean UX Canvas; y revisión de los segmentos objetivo y su sustento estadístico.<br><br> | **Ramas utilizadas:**<br>`feature/av1-readme-front-matter`<br>`feature/av1-chapter-1-presentation`<br>`feature/av1-unify-report-readme`<br>`feature/av1-james-report-tracking` |
+| [Apellidos y nombres 4] | [Usuario 4]       | [Responsabilidad 4] | Por registrar |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407         | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
+
 
 #### Evidencias de colaboración
 
@@ -206,8 +209,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | [Conclusión grupal acumulable correspondiente a la AV1]. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | [Conclusión grupal acumulable correspondiente a la AV1]. |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, manteniendo el alcance funcional y la reutilización del backend existente. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones del informe.<br>**Evidencias:** Capítulo I, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación y justificar su adaptación al contexto móvil.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**Delgado Perez, James Caleb** — **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar los capítulos en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También integré el avance del Capítulo II proporcionado por un compañero, consolidé las conclusiones y generé el PDF de la AV1. La revisión del Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, registro de versiones, registro de participación, historial de commits y PDF de la AV1.<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar los resultados y aplicar nuevos conocimientos me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>[Conclusión grupal acumulable correspondiente a la AV1]. |
 
 <div style="page-break-after: always;"></div>
 
@@ -237,16 +240,16 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 | Relevante | [Por completar]. | [Por completar]. |
 | Plazo | [Por completar]. | [Por completar]. |
 
-### [Apellidos y nombres 3]
+### Delgado Perez, James Caleb
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
 |---|---|---|
-| Objetivo profesional | [Por completar]. | [Por completar]. |
-| Específico | [Por completar]. | [Por completar]. |
-| Medible | [Por completar]. | [Por completar]. |
-| Alcanzable | [Por completar]. | [Por completar]. |
-| Relevante | [Por completar]. | [Por completar]. |
-| Plazo | [Por completar]. | [Por completar]. |
+| Objetivo profesional | Desarrollar y documentar dos aplicaciones móviles para Android que consuman una API, y publicar su código y una demostración funcional en mi portafolio durante los primeros doce meses después de finalizar la carrera. | Elaborar un caso de estudio de UX para un proyecto personal de aplicación móvil, incluyendo la definición del problema, los usuarios objetivo, un Lean UX Canvas y un prototipo evaluado con al menos cinco participantes, durante los primeros seis meses después de finalizar la carrera. |
+| Específico | Fortalecer mis competencias de desarrollo móvil mediante la construcción de aplicaciones con funcionalidades de consulta y registro de información, integración con una API y documentación de instalación y uso. | Fortalecer mis competencias de investigación y diseño UX mediante la definición de hipótesis, el diseño de un prototipo y la evaluación de su usabilidad. |
+| Medible | Completar dos aplicaciones funcionales, publicar sus dos repositorios con un README de instalación y uso, y presentar una demostración de cada aplicación. | Publicar un caso de estudio con un Lean UX Canvas, un prototipo navegable, los resultados de una evaluación con al menos cinco participantes y una iteración de mejoras basada en los hallazgos. |
+| Alcanzable | Dedicar cuatro horas semanales al aprendizaje y desarrollo, utilizar documentación técnica y construir las aplicaciones mediante incrementos pequeños que pueda implementar y comprobar. | Dedicar dos horas semanales al caso de estudio, utilizar los conocimientos de Lean UX adquiridos durante la carrera y organizar sesiones de evaluación con participantes voluntarios del segmento definido. |
+| Relevante | Contar con evidencia práctica de mis capacidades para desarrollar aplicaciones móviles y presentar un portafolio que respalde mi incorporación a equipos de desarrollo de software. | Mejorar mi capacidad para relacionar las necesidades de los usuarios con decisiones de diseño y comunicar esas decisiones mediante documentación y evidencia. |
+| Plazo | Completar la primera aplicación dentro de los primeros seis meses y la segunda antes de finalizar el mes doce, contados desde la finalización de la carrera. | Completar el caso de estudio, la evaluación y la iteración de mejoras antes de finalizar el sexto mes después de terminar la carrera. |
 
 ### [Apellidos y nombres 4]
 
@@ -306,13 +309,13 @@ La propuesta también facilita el acceso autorizado a información agrícola par
 
 NovaTech está conformada por estudiantes que aportan diferentes conocimientos técnicos y habilidades para el análisis, diseño, implementación y documentación de TerraTech. A continuación, se presentan los perfiles de los integrantes del equipo.
 
-| Fotografía                                                | Datos académicos | Perfil y aporte al equipo |
-|-----------------------------------------------------------| --- | --- |
-| <img src="assets/images/cap1/foto-bryan.jpeg" alt="Foto"> | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** U202323479<br>**Carrera:** Ingeniería de Software | Soy una persona creativa y disciplinada, con capacidad para trabajar en equipo. Mis habilidades técnicas incluyen lenguajes de programación como Python y TypeScript. Me esfuerzo por contribuir activamente al desarrollo del proyecto. |
-| [Incorporar fotografía 2]                                 | **Apellidos y nombres:** Bendezu Navarro, Rúbens Fitzgerald<br>**Código:** [Código 2]<br>**Carrera:** [Carrera 2] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| <img src="assets/images/cap1/foto-james.jpeg" alt="Foto"> | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** [Código 3]<br>**Carrera:** [Carrera 3] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| [Incorporar fotografía 4]                                 | **Apellidos y nombres:** Pariona Chacca, Angel Jose<br>**Código:** [Código 4]<br>**Carrera:** [Carrera 4] | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech]. |
-| <img src="assets/images/cap1/foto-jorge.jpeg" alt="Foto"> | **Apellidos y nombres:** Retuerto Rodriguez, Jorge Manuel<br>**Código:** U202318612<br>**Carrera:** Ingenieria de Software | Mi nombre es Jorge Manuel Retuerto Rodríguez, tengo 21 años y estoy cursando el 7mo ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi conocimiento y habilidades de programación son intermedias en C++, C#, HTML y CSS. Sin embargo, básicas en Python y Java. Me haré responsable de la comunicación del grupo, planificación y desarrollo junto a mi equipo. |
+| Fotografía                                                | Datos académicos                                                                                                           | Perfil y aporte al equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="assets/images/cap1/foto-bryan.jpeg" alt="Foto"> | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** U202323479<br>**Carrera:** Ingeniería de Software     | Soy una persona creativa y disciplinada, con capacidad para trabajar en equipo. Mis habilidades técnicas incluyen lenguajes de programación como Python y TypeScript. Me esfuerzo por contribuir activamente al desarrollo del proyecto.                                                                                                                                                                                                                                                                                                                                                               |
+| [Incorporar fotografía 2]                                 | **Apellidos y nombres:** Bendezu Navarro, Rúbens Fitzgerald<br>**Código:** [Código 2]<br>**Carrera:** [Carrera 2]          | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech].                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| <img src="assets/images/cap1/foto-james.jpeg" alt="Foto"> | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** u202115277<br>**Carrera:** Ingenieria de Software       | Soy un estudiante de Ingeniería de Software apasionado por crear soluciones digitales prácticas y eficientes. Cuento con experiencia en C++, Java (Diseño y Patrones de Software), HTML, CSS, JavaScript. Además de trabajar con Java y Angular, me defino como una persona organizada, con rápida capacidad de aprendizaje y orientada al trabajo en equipo. Veo en este proyecto la oportunidad ideal para aportar valor, incorporarme al ámbito laboral y fortalecer mi perfil profesional. En mi tiempo libre practico deportes y encuentro en la programación y la música una vía de creatividad. |
+| [Incorporar fotografía 4]                                 | **Apellidos y nombres:** Pariona Chacca, Angel Jose<br>**Código:** [Código 4]<br>**Carrera:** [Carrera 4]                  | [Redactar un párrafo que describa sus principales conocimientos técnicos, habilidades personales y el aporte que realizará en NovaTech].                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| <img src="assets/images/cap1/foto-jorge.jpeg" alt="Foto"> | **Apellidos y nombres:** Retuerto Rodriguez, Jorge Manuel<br>**Código:** U202318612<br>**Carrera:** Ingenieria de Software | Mi nombre es Jorge Manuel Retuerto Rodríguez, tengo 21 años y estoy cursando el 7mo ciclo de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi conocimiento y habilidades de programación son intermedias en C++, C#, HTML y CSS. Sin embargo, básicas en Python y Java. Me haré responsable de la comunicación del grupo, planificación y desarrollo junto a mi equipo.                                                                                                                                                                                        |
 
 ## 1.2. Solution Profile
 
@@ -490,7 +493,8 @@ A partir de las suposiciones identificadas, se formularon cinco hipótesis verif
 
 #### 1.2.2.4. Lean UX Canvas
 
-<!-- Pendiente: incorporar las dos propuestas del Lean UX Canvas para su revisión y selección con el equipo. Ambas deben reflejar los segmentos, funcionalidades e hipótesis descritos en esta versión del capítulo. -->
+<img src="assets/images/cap1/LeanUxCanvas.png" alt="canvas" style="width: 90%; max-width: 800px; height: 650px;">
+
 
 ## 1.3. Segmentos objetivo
 
