@@ -78,6 +78,7 @@ Proyecto
 |  0.4.2  | 15/09/2026 | James Caleb Delgado Perez | Revisión y alineación del Capítulo I con el alcance funcional actual de TerraTech, actualizando el Solution Profile, objetivos, restricciones, Lean UX Assumptions, Hypothesis Statements, segmentos objetivo y registros relacionados con el aporte individual. |
 |  0.4.3  | 15/09/2026 | Barba Estrada, Bryan Eduardo | Desarrollo de 2.3 Needfinding y 2.4 Requirements Specification (user stories, technical/spike stories, impact mapping y product backlog) y correcciones de consistencia del Capítulo II. |
 |  0.5.0  | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Elaboración y documentación del Strategic Domain-Driven Design (DDD): descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diseño de arquitectura de software C4 (diagramas de Contexto, Contenedores y Despliegue con soporte offline-first y persistencia local Room). |
+|  0.5.1  | 15/09/2026 | Barba Estrada, Bryan Eduardo | Corrección de la consistencia del Impact Mapping y de US17, incorporación de las conclusiones individuales en Student Outcome y limpieza de notas pendientes en la sección 2.4. |
 
 ## Project Report Collaboration Insights
 
@@ -1085,7 +1086,7 @@ El Impact Map de TerraTech se elaboró en UXPressia tomando como punto de partid
 
 <img src="assets/images/cap2/impact-mapping.png" alt="Impact Mapping - TerraTech" width="1000">
 
-El enlace público del mapa se incorporará cuando el equipo habilite su compartición desde UXPressia.
+El Impact Map fue elaborado en UXPressia.
 
 ### 2.4.3. Product Backlog
 
@@ -1146,8 +1147,6 @@ El Product Backlog prioriza las historias por valor para el negocio, considerand
 | 51 | SP01 | Viabilidad de la integración de sensores IoT | 3 | Sprint 3 |
 | 52 | SP02 | Viabilidad del almacenamiento local y la sincronización sin conexión | 3 | Sprint 4 |
 | 53 | SP03 | Viabilidad de las notificaciones push | 3 | Sprint 5 |
-
-La captura del tablero y el enlace público del Product Backlog se incorporarán cuando el equipo cree el tablero en la herramienta de gestión seleccionada.
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
