@@ -2260,17 +2260,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Analytics-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Component.png" alt="Analytics Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Component](assets/images/cap5/Analytics-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Domain.png" alt="Analytics Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Analytics-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Db.png" alt="Analytics Database Design Diagram" width="650">
+</p>
 
 ### 2.6.3. Bounded Context: Monitoring Management
 
@@ -2351,17 +2357,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Monitoring-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Component.png" alt="Monitoring Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Monitoring-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Domain.png" alt="Monitoring Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Monitoring-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Db.png" alt="Monitoring Database Design Diagram" width="650">
+</p>
 
 ### 2.6.4. Bounded Context: Stock Management
 
@@ -2405,17 +2417,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Stock-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Component.png" alt="Stock Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Stock-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Domain.png" alt="Stock Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-![Database](assets/images/cap5/Stock-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Db.png" alt="Stock Database Design Diagram" width="650">
+</p>
 
 ### 2.6.5. Bounded Context: Notification Management
 
@@ -2459,17 +2477,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Notification-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Component.png" alt="Notification Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Notification-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Domain.png" alt="Notification Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-![Database](assets/images/cap5/Notification-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Db.png" alt="Notification Database Design Diagram" width="650">
+</p>
 
 ### 2.6.6. Bounded Context: Shared Bounded
 
