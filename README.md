@@ -258,7 +258,7 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 | Medible | Aprobar el examen práctico oficial y publicar al menos 2 aplicaciones con Jetpack Compose y Clean Architecture. | Completar la ruta formativa de Cloud Architecture y aprobar la certificación con puntaje >= 800/1000. |
 | Alcanzable | Estudiando 10 horas semanales y aplicando los conocimientos en proyectos de producción. | Desarrollando laboratorios prácticos de microservicios, eventos distribuidos y DDD durante 8 meses. |
 | Relevante | Consolida el perfil profesional en desarrollo nativo móvil de alto rendimiento. | Permite diseñar arquitecturas móviles y cloud escalables y resilientes a nivel empresarial. |
-| Plazo | 6 meses post-graduación | 14 meses post-graduación | [Por completar]. |
+| Plazo | 6 meses post-graduación | 14 meses post-graduación |
 
 ### Retuerto Rodriguez, Jorge Manuel
 
