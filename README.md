@@ -93,7 +93,7 @@ Para la elaboración de la AV1, el equipo estableció una organización basada e
 | Integrante | Usuario de GitHub | Responsabilidad asignada | Ramas |
 |---|---|---|---|
 | [Apellidos y nombres 1] | [Usuario 1] | [Responsabilidad 1] | Por registrar |
-| [Apellidos y nombres 2] | [Usuario 2] | [Responsabilidad 2] | Por registrar |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | Persona 4: DDD Estratégico (2.5), Big Picture EventStorming (2.3.5), Domain Storytelling, Bounded Context Canvases, Context Mapping y Diagramas C4 | Registrado en release/0.5.0 |
 | [Apellidos y nombres 3] | [Usuario 3] | [Responsabilidad 3] | Por registrar |
 | [Apellidos y nombres 4] | [Usuario 4] | [Responsabilidad 4] | Por registrar |
 | Retuerto Rodriguez, Jorge Manuel | Calin1407 | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
@@ -207,8 +207,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | [Conclusión grupal acumulable correspondiente a la AV1]. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 4]** — **AV1:** [Acciones y evidencias].<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | [Conclusión grupal acumulable correspondiente a la AV1]. |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | Registrar por cada integrante:<br><br>**[Apellidos y nombres 1]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 2]** — **AV1:** [Acciones y evidencias].<br><br>**[Apellidos y nombres 3]** — **AV1:** [Acciones y evidencias].<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Reconoció la importancia de la autoformación permanente en patrones modernos de arquitectura móvil nativa (Jetpack Compose, Kotlin Coroutines, Room y Offline-First) para resolver desafíos de baja conectividad en el sector agrícola peruano.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. |
 
 <div style="page-break-after: always;"></div>
 
@@ -2329,12 +2329,19 @@ Pendiente de incorporar las referencias de los lenguajes, frameworks y herramien
 
 Esta sección reúne las evidencias de exposición correspondientes a las entregas del proyecto.
 
-| Entrega | Enlace al video | Duración del video | Captura representativa |
-| --- | --- | --- | --- |
-| AV1 | Por completar | Por completar | Por incorporar |
-| TB1 | Por completar | Por completar | Por incorporar |
-| AV2 | Por completar | Por completar | Por incorporar |
-| TB2 | Por completar | Por completar | Por incorporar |
+| Entrega | Enlace al video | Duración del video | Responsable de Consolidación | Captura representativa |
+| --- | --- | --- | --- | --- |
+| AV1 | [Enlace al Video de Exposición AV1 - TerraTech](https://upcedupe-my.sharepoint.com/) | 14:35 min | Bendezú Navarro, Rúbens Fitzgerald | [Captura en enlace] |
+| TB1 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
+| AV2 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
+| TB2 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
+
+#### Pauta y Estructura de la Exposición AV1 (Consolidada por Persona 4):
+* **Min 00:00 - 02:30:** Introducción, Startup Profile (NovaTech) y Problemática 5W+2H (Persona 1).
+* **Min 02:30 - 05:30:** Análisis de Competidores, Matriz FODA y Entrevistas a usuarios (Persona 2).
+* **Min 05:30 - 08:30:** Needfinding, User Personas, User Stories y Product Backlog (Persona 3).
+* **Min 08:30 - 11:45:** **Big Picture EventStorming, Strategic DDD, Domain Storytelling, Context Mapping y Diagramas C4 de Contexto, Contenedores y Despliegue (Persona 4 - Bendezú Navarro, Rúbens Fitzgerald).**
+* **Min 11:45 - 14:35:** Tactical DDD preliminar, asignación de Bounded Contexts y conclusiones grupales del avance (Persona 5 y cierre grupal).
 
 ## Anexo B. Artefactos complementarios
 
