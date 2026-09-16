@@ -68,7 +68,7 @@ Proyecto
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor                           | Descripción de modificación |
-|:-------:|:---:|---------------------------------|---|
+| :--- | :--- | :--- | :--- |
 |  0.1.0  | 04/09/2026 | Bryan Barba                     | Creación del repositorio `terratech-project-report`. |
 |  0.2.0  | 04/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Creación de la estructura inicial del informe del proyecto TerraTech. |
 |  0.2.1  | 06/09/2026 | James Caleb Delgado Pérez       | Actualización de la carátula con los datos del curso, NRC, docente, equipo y proyecto. |
@@ -96,12 +96,12 @@ Para la elaboración de la AV1, el equipo estableció una organización basada e
 #### Registro preliminar de participación
 
 | Integrante | Usuario de GitHub | Responsabilidad asignada | Ramas |
-|---|-------------------|---|---|
+| :--- | :--- | :--- | :--- |
 | Barba Estrada, Bryan Eduardo | bry4nbe | **Responsabilidad:** desarrollo de 2.3 Needfinding y 2.4 Requirements Specification.<br><br>**Realizado:** elaboración de User Personas, User Task Matrix, User Journey Maps, Empathy Maps, Big Picture EventStorming y Ubiquitous Language; redacción de User Stories, Technical Stories y Spike Stories con criterios Given–When–Then; Impact Mapping con objetivos SMART; y Product Backlog priorizado y estimado.<br><br> | **Ramas utilizadas:**<br>`feature/av1-needfinding-requirements` |
 | Bendezú Navarro, Rúbens Fitzgerald | Lucemz | **Responsabilidad:** Strategic Domain-Driven Design (DDD), arquitectura de software C4 y coordinación técnica AV1.<br><br>**Realizado:** modelado Big Picture EventStorming, descubrimiento de 5 Bounded Contexts candidatos, Domain Storytelling con narrativa de casos de uso de campo, elaboración de 5 Bounded Context Canvases completos, Context Mapping con patrones de relación formales y diseño de arquitectura C4 (Contexto, Contenedores y Despliegue con enfoque nativo Android y offline-first con Room).<br><br> | **Ramas utilizadas:**<br>`feature/strategic-ddd-c4`<br>`release/0.5.0` |
 | Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo del Capítulo I y consolidación del informe.<br><br>**Realizado:** elaboración y adaptación del contenido del Capítulo I; actualización de la carátula; organización inicial del informe por archivos y posterior unificación en el README; ajuste del índice y sus enlaces; organización de la bibliografía; actualización del registro de versiones, participación individual, Student Outcome y objetivos SMART; elaboración y actualización del Lean UX Canvas; revisión de los segmentos objetivo y su sustento estadístico; y revisión de coherencia y alineación del Capítulo I con el alcance funcional actualizado del proyecto.<br><br> | **Ramas utilizadas:**<br>`feature/av1-readme-front-matter`<br>`feature/av1-chapter-1-presentation`<br>`feature/av1-unify-report-readme`<br>`feature/av1-james-report-tracking` |
 | Pariona Chacca, Angel Jose | Angelitoso-opp | **Responsabilidad:** desarrollo de 2.1 Competidores y 2.2 Entrevistas.<br><br>**Realizado:** benchmark y Competitive Analysis Landscape de 3 competidores directos, análisis FODA y estrategias competitivas móviles; diseño metodológico de entrevistas semiestructuradas para 3 segmentos; registro y resúmenes de 7 entrevistas (ENT-001 a ENT-007) y análisis estadístico y cualitativo por segmento.<br><br> | **Ramas utilizadas:**<br>`feature/av1-chapter-2-competitors-and-interviews` |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407 | Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | feature/tactical-ddd |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | **Responsabilidad:** Documentacion de arquitectura, Model C4 y diagrama de cada Bounded | **Ramas utilizadas:**<br>`feature/tactical-ddd` |
 
 #### Evidencias de colaboración
 
@@ -113,10 +113,19 @@ Antes de la entrega AV1, incorporar aquí:
 3. Explicación de los principales aportes de cada integrante.
 
 Ruta sugerida para la imagen:
-assets/images/readme/report-collaboration-insights-av1.png
+assets/images/readme/report-collaboration-insights-av1.png.png
 -->
 
-> **Pendiente para la entrega:** incorporar las capturas y el análisis de participación cuando el equipo haya integrado sus aportes en `develop`.
+### Collaboration Insights AV1
+
+<img src="assets/images/team/collaboration-insights-av1.png" alt="AV1">
+
+- Recomendaciones para siguientes entregas:
+  - Nombrar ramas de manera corta y descriptiva, evitando nombres como `feature/av1-chapter-2-competitors-and-interviews` que son demasiado largos y difíciles de recordar.
+  - Evitar subir demasiado contenido en un solo commit.
+
+
+
 
 ## Contenido
 
@@ -161,42 +170,14 @@ assets/images/readme/report-collaboration-insights-av1.png
     - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
         - [2.6.x. Bounded Context: Nombre por completar](#26x-bounded-context-nombre-por-completar)
 
-- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
-    - [3.1. Product Design](#31-product-design)
-        - [3.1.1. Style Guidelines](#311-style-guidelines)
-        - [3.1.2. Information Architecture](#312-information-architecture)
-        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
-        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
-
-- [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
-    - [4.1. Software Configuration Management](#41-software-configuration-management)
-        - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
-        - [4.1.2. Source Code Management](#412-source-code-management)
-        - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
-        - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
-    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
-        - [4.2.x. Sprint n](#42x-sprint-n)
-    - [4.3. Validation Interviews](#43-validation-interviews)
-        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
-        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
-
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-    - [Video App Validation](#video-app-validation)
-    - [Video About-the-Product](#video-about-the-product)
-    - [Video About-the-Team](#video-about-the-team)
-
-- [Glosario](#glosario)
 
 - [Bibliografía](#bibliografía)
     - [Dominio de negocio](#dominio-de-negocio)
     - [Métodos y técnicas de ingeniería de software](#métodos-y-técnicas-de-ingeniería-de-software)
-    - [Lenguajes, frameworks y herramientas](#lenguajes-frameworks-y-herramientas)
-
+  
 - [Anexos](#anexos)
-    - [Anexo A. Videos de Exposiciones](#anexo-a-videos-de-exposiciones)
-    - [Anexo B. Artefactos complementarios](#anexo-b-artefactos-complementarios)
 
 <div style="page-break-after: always;"></div>
 
@@ -211,9 +192,9 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
-|---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **Barba Estrada, Bryan Eduardo** — **AV1:** Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br>**Evidencias:** secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 (Contexto, Contenedores y Despliegue) incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** — **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br>**Evidencias:** Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**Pariona Chacca, Angel Jose** — **AV1:** Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br>**Evidencias:** secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido.<br><br>**Bendezú Navarro, Rúbens Fitzgerald — AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Pariona Chacca, Angel Jose — AV1:** Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Barba Estrada, Bryan Eduardo** — **AV1:** Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br>**Evidencias:** artefactos de Needfinding, user stories y product backlog incorporados en el README.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 (Contexto, Contenedores y Despliegue) incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** — **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1.<br><br>**Pariona Chacca, Angel Jose** — **AV1:** Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br>**Evidencias:** análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** [Acciones y evidencias]. | **Delgado Perez, James Caleb — AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>**Bendezú Navarro, Rúbens Fitzgerald — AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Pariona Chacca, Angel Jose — AV1:** Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. |<div style="page-break-after: always;"></div>
+| :--- | :--- | :--- |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **Barba Estrada, Bryan Eduardo** — **AV1:** Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br>**Evidencias:** secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 (Contexto, Contenedores y Despliegue) incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** — **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br>**Evidencias:** Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**Pariona Chacca, Angel Jose** — **AV1:** Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br>**Evidencias:** secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema. | **Delgado Perez, James Caleb — AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido.<br><br>**Bendezú Navarro, Rúbens Fitzgerald — AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Pariona Chacca, Angel Jose — AV1:** Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. <br><br>**Retuerto Rodriguez, Jorge Manuel — AV1:** El diseño de los diagramas de clases y la estructura de datos por Bounded Context me permitieron entender cómo traducir los conceptos estratégicos del dominio agrícola en un modelo de software táctico. Aprendí que definir correctamente las relaciones entre entidades e iterar sobre el modelo de persistencia local es clave para garantizar la integridad y coherencia de los datos en aplicaciones móviles |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Barba Estrada, Bryan Eduardo** — **AV1:** Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br>**Evidencias:** artefactos de Needfinding, user stories y product backlog incorporados en el README.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** — **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 (Contexto, Contenedores y Despliegue) incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** — **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1.<br><br>**Pariona Chacca, Angel Jose** — **AV1:** Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br>**Evidencias:** análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub.<br><br>**Retuerto Rodriguez, Jorge Manuel** — **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema. | **Delgado Perez, James Caleb — AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>**Bendezú Navarro, Rúbens Fitzgerald — AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Pariona Chacca, Angel Jose — AV1:** Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable. <br><br>**Retuerto Rodriguez, Jorge Manuel — AV1:** Mantenerse actualizado en patrones de modelado de datos y arquitecturas de almacenamiento local es fundamental para afrontar los retos de sincronización e integridad de información en el sector agrícola. Comprendí que el aprendizaje constante me permite diseñar estructuras de software robustas que se adaptan eficientemente a los cambios en los requisitos del dominio. |<div style="page-break-after: always;"></div>
 
 ## Objetivos SMART
 
@@ -222,7 +203,7 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 ### Barba Estrada, Bryan Eduardo
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
-|---|---|---|
+| :--- | :--- | :--- |
 | Objetivo profesional | Desempeñarme como desarrollador de aplicaciones móviles en un equipo de ingeniería de software dentro de los primeros doce meses de egresado. | Diseñar, desarrollar y publicar una aplicación móvil propia en Google Play antes de finalizar el primer año de egresado. |
 | Específico | Incorporarme a un equipo de desarrollo móvil (Android o multiplataforma). | Publicar una aplicación con almacenamiento local, consumo de una API y documentación de uso. |
 | Medible | Conseguir una posición de desarrollador móvil y completar al menos tres funcionalidades en producción durante el primer año. | Aplicación publicada, repositorio con README y al menos 50 instalaciones o usuarios de prueba. |
@@ -233,7 +214,7 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 ### Bendezú Navarro, Rúbens Fitzgerald
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
-|---|---|---|
+| :--- | :--- | :--- |
 | Objetivo profesional | Certificación Profesional en Android | Especialización en Arquitectura Cloud y DDD |
 | Específico | Obtener la certificación oficial Google Associate Android Developer (AAD). | Obtener la certificación AWS Certified Solutions Architect - Associate. |
 | Medible | Aprobar el examen practical oficial y publicar al menos 2 aplicaciones con Jetpack Compose y Clean Architecture. | Completar la ruta formativa de Cloud Architecture y aprobar la certificación con puntaje >= 800/1000. |
@@ -244,7 +225,7 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 ### Delgado Perez, James Caleb
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
-|---|---|---|
+| :--- | :--- | :--- |
 | Objetivo profesional | Desarrollar y documentar dos aplicaciones móviles para Android que consuman una API, y publicar su código y una demostración funcional en mi portafolio durante los primeros doce meses después de finalizar la carrera. | Elaborar un caso de estudio de UX para un proyecto personal de aplicación móvil, incluyendo la definición del problema, los usuarios objetivo, un Lean UX Canvas y un prototipo evaluado con al menos cinco participantes, durante los primeros seis meses después de finalizar la carrera. |
 | Específico | Fortalecer mis competencias de desarrollo móvil mediante la construcción de aplicaciones con funcionalidades de consulta y registro de información, integración con una API y documentación de instalación y uso. | Fortalecer mis competencias de investigación y diseño UX mediante la definición de hipótesis, el diseño de un prototipo y la evaluación de su usabilidad. |
 | Medible | Completar dos aplicaciones funcionales, publicar sus dos repositorios con un README de instalación y uso, y presentar una demostración de cada aplicación. | Publicar un caso de estudio con un Lean UX Canvas, un prototipo navegable, los resultados de una evaluación con al menos cinco participantes y una iteración de mejoras basada en los hallazgos. |
@@ -255,7 +236,7 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 ### Pariona Chacca, Angel Jose
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
-|---|---|---|
+| :--- | :--- | :--- |
 | Objetivo profesional | Conseguir empleo como desarrollador junior de aplicaciones móviles en una empresa de tecnología dentro de los primeros doce meses después de terminar la carrera. | Crear y publicar una aplicación móvil propia y funcional que guarde datos en el celular y se conecte a internet, dentro de los primeros seis meses después de egresar. |
 | Específico | Postular a ofertas de trabajo e integrarme a un equipo para colaborar en el desarrollo de aplicaciones para celulares. | Desarrollar una aplicación móvil sencilla para resolver un problema práctico, permitiendo guardar información básica en el teléfono y consultar datos en línea. |
 | Medible | Postular formalmente a convocatorias laborales, superar las entrevistas de selección y aprobar el periodo de prueba inicial de tres meses. | Subir el proyecto a GitHub con una guía sencilla de instalación y un video corto de dos minutos mostrando la aplicación en funcionamiento. |
@@ -266,13 +247,13 @@ Cada integrante de NovaTech formulará al menos dos objetivos SMART relacionados
 ### Retuerto Rodriguez, Jorge Manuel
 
 | Elemento SMART | Objetivo 1 | Objetivo 2 |
-|---|---|---|
-| Objetivo profesional | [Por completar]. | [Por completar]. |
-| Específico | [Por completar]. | [Por completar]. |
-| Medible | [Por completar]. | [Por completar]. |
-| Alcanzable | [Por completar]. | [Por completar]. |
-| Relevante | [Por completar]. | [Por completar]. |
-| Plazo | [Por completar]. | [Por completar]. |
+| :--- | :--- | :--- |
+| Objetivo profesional | Introducirme en el mercado, dentro de una empresa de tecnologia y teniendo un puesto como desarrollador junior. | Poner en marcha mis proyectos propios. |
+| Específico | Conseguir un puesto de trabajo como Desarrollador Junior (Frontend, Backend o Fullstack) en una empresa del sector tecnológico o consultoría TI, aplicando metodologías ágiles y arquitecturas limpias. | Lanzar una versión funcional (MVP - Minimum Viable Product) de una aplicación o plataforma propia, desplegada en producción y accesible para los primeros usuarios de prueba. |
+| Medible | Postular a un mínimo de 10 ofertas semanales, realizar al menos 5 entrevistas técnicas o de selección y obtener al menos 1 oferta laboral formal. | Completar el 100% de las funcionalidades clave definidas en el backlog del MVP y alcanzar un primer grupo de al menos 20 usuarios activos que prueben la solución. |
+| Alcanzable | Completar el 100% de las funcionalidades clave definidas en el backlog del MVP y alcanzar un primer grupo de al menos 20 usuarios activos que prueben la solución. | Utilizar arquitecturas conocidas, herramientas de código abierto o infraestructura en la nube con capas gratuitas (e.g., Firebase, Vercel, AWS Free Tier) para reducir costos iniciales y avanzar de forma incremental. |
+| Relevante | Utilizar arquitecturas conocidas, herramientas de código abierto o infraestructura en la nube con capas gratuitas (e.g., Firebase, Vercel, AWS Free Tier) para reducir costos iniciales y avanzar de forma incremental. | Permitirá validar una idea de negocio propia en el mercado, poner en práctica habilidades de liderazgo, producto y desarrollo integral, y diversificar las fuentes de ingresos/portafolio. |
+| Plazo | En un plazo máximo de 3 a 6 meses posteriores a la finalización de los estudios académicos. | En un plazo máximo de 6 a 9 meses, dedicando horas semanales constantes fuera del horario académico. |
 
 <div style="page-break-after: always;"></div>
 
@@ -312,8 +293,8 @@ La propuesta también facilita el acceso autorizado a información agrícola par
 
 NovaTech está conformada por estudiantes que aportan diferentes conocimientos técnicos y habilidades para el análisis, diseño, implementación y documentación de TerraTech. A continuación, se presentan los perfiles de los integrantes del equipo.
 
-| Fotografía                                                | Datos académicos                                                                                                           | Perfil y aporte al equipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fotografía  | Datos académicos | Perfil y aporte al equipo |
+| :--- | :--- | :--- |
 | <img src="assets/images/cap1/foto-bryan.jpeg" alt="Foto"> | **Apellidos y nombres:** Barba Estrada, Bryan Eduardo<br>**Código:** U202323479<br>**Carrera:** Ingeniería de Software     | Soy una persona creativa y disciplinada, con capacidad para trabajar en equipo. Mis habilidades técnicas incluyen lenguajes de programación como Python y TypeScript. Me esfuerzo por contribuir activamente al desarrollo del proyecto.                                                                                                                                                                                                                                                                                                                                                               |
 | <img src="assets/images/team/fitzgerald-bendezu.png" alt="Rúbens Fitzgerald Bendezú Navarro" width="120" style="border-radius: 6px;"> | **Apellidos y nombres:** Bendezú Navarro, Rúbens Fitzgerald<br>**Código:** U20231D390<br>**Carrera:** Ingeniería de Software | Estudiante de 7mo ciclo de Ingeniería de Software en la UPC con especialización en desarrollo móvil nativo Android y arquitectura de software. Conocimientos sólidos en Kotlin, Jetpack Compose, Room, Spring Boot 3, PostgreSQL, Domain-Driven Design (DDD) y arquitectura limpia. Como aporte a NovaTech, lidera el modelado del dominio estratégico, diseño arquitectónico C4 y resiliencia offline-first para la solución móvil. |
 | <img src="assets/images/cap1/foto-james.jpeg" alt="Foto"> | **Apellidos y nombres:** Delgado Perez, James Caleb<br>**Código:** u202115277<br>**Carrera:** Ingenieria de Software       | Soy un estudiante de Ingeniería de Software apasionado por crear soluciones digitales prácticas y eficientes. Cuento con experiencia en C++, Java (Diseño y Patrones de Software), HTML, CSS, JavaScript. Además de trabajar con Java y Angular, me defino como una persona organizada, con rápida capacidad de aprendizaje y orientada al trabajo en equipo. Veo en este proyecto la oportunidad ideal para aportar valor, incorporarme al ámbito laboral y fortalecer mi perfil profesional. En mi tiempo libre practico deportes y encuentro en la programación y la música una vía de creatividad. |
@@ -357,7 +338,7 @@ La investigación realizada previamente para TerraTech se conserva como antecede
 #### Análisis de la problemática mediante 5W + 2H
 
 | Pregunta | Análisis |
-| --- | --- |
+| :--- | :--- |
 | **What – ¿Qué sucede?** | Los agricultores enfrentan incertidumbre al tomar decisiones sobre el riego, la fertilización y el cuidado de los cultivos debido a la falta de información integrada y oportuna sobre las condiciones del suelo. Los proveedores y compradores también encuentran dificultades para acceder a información que apoye sus recomendaciones o decisiones de compra. |
 | **Who – ¿A quién afecta?** | Afecta principalmente a pequeños y medianos agricultores. También involucra a proveedores y asesores de insumos agrícolas, así como a clientes finales y compradores que adquieren productos para consumo personal, familiar o comercialización. |
 | **Where – ¿Dónde ocurre?** | Ocurre en unidades agropecuarias ubicadas en zonas rurales del Perú, especialmente en regiones andinas donde el acceso a infraestructura y herramientas tecnológicas puede ser limitado. También se manifiesta en los espacios de asesoría y comercialización vinculados con estos productores. La ubicación específica del primer piloto deberá ser definida por el equipo. |
@@ -571,7 +552,7 @@ Para este análisis competitivo se realizó un benchmark enfocado en identificar
 El objetivo del **Competitive Analysis Landscape** es evaluar el perfil de producto, marketing y FODA de estos competidores para identificar oportunidades clave de diferenciación para **TerraTech**, especialmente en accesibilidad económica, experiencia móvil optimizada para trabajo en campo, soporte para zonas con baja o nula conectividad mediante almacenamiento local y monitoreo continuo del suelo en tiempo real.
 
 | Dimensión | TerraTech (Nuestra Startup) | Agrotech | AgroVista del Valle | Phytech |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | **Logo** | <img src="assets/images/cap2/terratech-logo.png" alt="Logo TerraTech" width="50"> | <img src="assets/images/cap2/logo-agrotech.png" alt="Logo AgroTech" width="50"> | <img src="assets/images/cap2/logo-vista-del-valle.png" alt="Logo AgroVista" width="50"> | <img src="assets/images/cap2/logo-phytech.png" alt="Logo Phytech" width="50"> |
 | **Overview** | Solución móvil conectada a sensores IoT de bajo costo que permite monitorear en tiempo real la humedad y nutrientes del suelo desde smartphones, generando alertas preventivas y análisis predictivo adaptado a las condiciones del campo peruano. | Empresa que implementa tecnología agrícola mediante el uso de drones, sensores y asesoría técnica especializada presencial para optimizar la productividad de los cultivos. | Empresa de servicios agrícolas que utiliza análisis multiespectral e imágenes satelitales/aéreas para monitorear la salud vegetal y evaluar las condiciones del terreno. | Plataforma digital internacional de agricultura de precisión que integra sensores IoT e inteligencia artificial para optimizar el riego y el rendimiento de cultivos a gran escala. |
 | **Ventaja competitiva y valor ofrecido** | Monitoreo continuo del suelo en tiempo real con latencia mínima, alertas push inmediatas, funcionamiento offline en la app móvil con sincronización posterior, interfaz simplificada para baja alfabetización digital y costos altamente accesibles para pequeños y medianos agricultores. | Soluciones integrales de hardware de alta gama (drones) y acompañamiento técnico presencial especializado. | Alta precisión en el análisis científico de imágenes multiespectrales para la detección temprana de anomalías en grandes extensiones. | Algoritmos avanzados de IA para la automatización de decisiones de riego a nivel empresarial con soporte global. |
@@ -590,7 +571,7 @@ El objetivo del **Competitive Analysis Landscape** es evaluar el perfil de produ
 A partir del análisis de las fortalezas y debilidades de los competidores, se establecen las siguientes estrategias y tácticas para posicionar a **TerraTech** como la solución móvil líder en agricultura accesible:
 
 | Hallazgo | Estrategia | Táctica |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | **Altos costos de competidores (Phytech > US$ 500/ha; Agrotech con drones costosos)** | Diferenciación por accesibilidad económica y bajo costo de adopción. | Ofrecer kits de sensores IoT a precio de penetración (< S/ 300) junto con una aplicación móvil accesible bajo suscripción flexible (S/ 30 - S/ 50 mensuales), eliminando costos de consultoría externa. |
 | **Falta de monitoreo continuo en competidores basados en vuelos periódicos (AgroVista del Valle)** | Posicionamiento en monitoreo continuo del suelo en tiempo real directo al smartphone. | Enviar lecturas de humedad y nutrientes cada 5 minutos directo a la app móvil, permitiendo tomar decisiones inmediatas de riego y fertilización antes de que se produzca estrés hídrico. |
 | **Baja alfabetización digital y desconfianza del agricultor rural ante software complejo** | Experiencia de usuario móvil simplificada e inclusiva con asistencia guiada. | Diseñar la aplicación móvil con tipografía legible (mínimo 16px), íconos de alto contraste, semáforos visuales (rojo/amarillo/verde), sistema de notificaciones push directas y tutoriales paso a paso interactivos. |
@@ -604,7 +585,7 @@ A partir del análisis de las fortalezas y debilidades de los competidores, se e
 Para recopilar requerimientos reales del dominio y diseñar la experiencia móvil de **TerraTech**, se prepararon guías de entrevista semiestructuradas orientadas a los tres segmentos objetivo: **Agricultores**, **Proveedores de Insumos Agrícolas** y **Clientes Finales / Compradores**.
 
 | Segmento | Pregunta principal | Preguntas complementarias | Información buscada |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **Segmento 1: Agricultores** | ¿Cómo gestiona actualmente el riego y fertilización de sus cultivos, y qué dificultades enfrenta al tomar estas decisiones en el campo? | 1. ¿Qué cultivos trabaja y qué extensión tiene su terreno?<br>2. ¿Cómo evalúa la humedad y fertilidad del suelo en el día a día?<br>3. ¿Qué pérdidas ha tenido por factores climáticos o plagas?<br>4. ¿Qué celular utiliza y cómo es su experiencia con aplicaciones móviles?<br>5. ¿Qué opina de recibir alertas en su teléfono sobre cuándo regar?<br>6. ¿Qué temores tiene al instalar tecnología o sensores en su terreno? | Nivel de alfabetización digital, tipo de dispositivo móvil utilizado, conectividad en campo, métodos de monitoreo tradicionales, puntos de dolor ante heladas/sequías y disposición al uso de alertas en el smartphone. |
 | **Segmento 2: Proveedores de Insumos** | ¿Cómo realiza el diagnóstico y la recomendación de fertilizantes e insumos a los agricultores, y cómo valida su efectividad? | 1. ¿Qué insumos ofrece y cómo asesora a sus clientes?<br>2. ¿Qué datos del suelo le ayudarían a recomendar productos con mayor precisión?<br>3. ¿Cómo realiza el seguimiento postventa de sus productos?<br>4. ¿Qué herramientas móviles o digitales utiliza para su trabajo diario?<br>5. ¿Cómo le ayudaría contar con una app que reciba datos en tiempo real de los campos de sus clientes? | Procesos de asesoría técnica, canales de comunicación móvil (WhatsApp, apps), problemas de recomendaciones inexactas por falta de datos y requerimientos para un dashboard móvil de clientes. |
 | **Segmento 3: Clientes Finales / Compradores** | ¿Qué factores determinan su decisión de compra de productos agrícolas y qué importancia le otorga a la trazabilidad y sostenibilidad? | 1. ¿Con qué frecuencia compra productos agrícolas y dónde?<br>2. ¿Cómo verifica la frescura, calidad y ausencia de químicos nocivos?<br>3. ¿Estaría dispuesto a pagar más si conoce el proceso de cultivo?<br>4. ¿Utiliza su smartphone para escanear códigos QR o buscar información de alimentos?<br>5. ¿Qué información le generaría mayor confianza al comprar? | Hábitos de compra, uso del smartphone en el punto de venta (búsqueda de información, lectura de QR), disposición a pagar por productos sostenibles y necesidades de visualización de trazabilidad. |
@@ -670,7 +651,7 @@ Para recopilar requerimientos reales del dominio y diseñar la experiencia móvi
 A continuación se presentan las entrevistas realizadas a los tres segmentos objetivo, acompañadas de su evidencia gráfica, enlace a la grabación y resumen descriptivo:
 
 | ID | Segmento | Nombres y apellidos | Edad | Distrito | Fecha | Tiempo de inicio | Video y captura |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **ENT-001** | Agricultores | Marcelino Encarnación Timoteo | 67 | Huánuco | 28/03/2026 | 00:00 - 12:25 | [Video](https://tinyurl.com/3ey2frc6) <br> <img src="assets/images/cap2/entrevista-11.png" alt="Marcelino" width="100"> |
 | **ENT-002** | Agricultores | Joe Cañamero | 52 | Cusco | 28/03/2026 | 12:30 - 23:53 | [Video](https://tinyurl.com/38k9bf9j) <br> <img src="assets/images/cap2/entrevista-12.png" alt="Joe" width="100"> |
 | **ENT-003** | Proveedores de Insumos | Anita Monago Cachay | 35 | Lima | 29/03/2026 | 23:58 - 30:32 | [Video](https://tinyurl.com/nhcd3sx8) <br> <img src="assets/images/cap2/entrevista-21.png" alt="Anita" width="100"> |
@@ -707,7 +688,7 @@ A continuación se presentan las entrevistas realizadas a los tres segmentos obj
 El análisis de las entrevistas consolida las variables objetivas (demográficas) y subjetivas (comportamiento, tecnología y dolores) para fundamentar los requerimientos de la solución móvil **TerraTech**.
 
 | Segmento | Variable | Valor observado | Frecuencia | Total de entrevistados | Porcentaje | Entrevistas relacionadas |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Agricultores** | Género | Masculino | 2 | 2 | 100% | ENT-001, ENT-002 |
 | **Agricultores** | Rango de edad | 50 a 67 años | 2 | 2 | 100% | ENT-001, ENT-002 |
 | **Agricultores** | Nivel educativo | Primaria / Secundaria incompleta | 2 | 2 | 100% | ENT-001, ENT-002 |
@@ -763,7 +744,7 @@ Las fichas de User Persona presentan el perfil de cada segmento objetivo y reún
 La User Task Matrix compara las tareas que cada segmento realiza hoy para alcanzar sus objetivos, sin considerar la existencia de la solución (es decir, actividades del negocio y no funcionalidades de software). Las tareas se identificaron a partir de las entrevistas y se valoraron según su frecuencia (Alta, Media, Baja) y su importancia para cada User Persona.
 
 | Tarea | Agricultor: Frecuencia | Agricultor: Importancia | Proveedor: Frecuencia | Proveedor: Importancia | Cliente final: Frecuencia | Cliente final: Importancia |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Supervisar el estado del suelo y del cultivo | Alta | Alta | Media | Alta | Baja | Baja |
 | Decidir cuándo regar o aplicar fertilizantes | Alta | Alta | Media | Media | Baja | Baja |
 | Anticipar riesgos climáticos (heladas, sequías, lluvias) | Alta | Alta | Media | Alta | Baja | Media |
@@ -948,7 +929,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC01: Landing Page & Marketing
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US01 | Visitante | Alta | Visualización del mensaje de valor | Como visitante, deseo comprender rápidamente qué ofrece TerraTech para evaluar si la solución responde a mi necesidad. | **Scenario 1: Visualización del mensaje principal**<br>Given el visitante accede a la URL del Landing Page<br>When la página termina de cargar<br>Then se presenta el mensaje de valor de TerraTech y una acción para solicitar una demostración<br>And la acción de solicitud está disponible desde la página principal sin necesidad de desplazamiento<br><br>**Scenario 2: Adaptación a pantallas pequeñas**<br>Given el visitante accede desde un dispositivo móvil de 320px de ancho<br>When la página se renderiza<br>Then el contenido principal se adapta verticalmente sin desbordamiento horizontal |
 | US02 | Visitante | Media | Conocimiento de las características de la solución | Como visitante, deseo conocer las características principales de TerraTech para determinar si satisface mis necesidades. | **Scenario 1: Presentación de características**<br>Given el visitante ha cargado el Landing Page<br>When consulta la sección de características<br>Then se describen exactamente tres características: "Sensor de Humedad", "Sensor de Nutrientes" y "Alertas en Tiempo Real"<br>And cada característica incluye un título y una descripción de máximo 150 caracteres |
 | US03 | Visitante | Alta | Solicitud de demostración | Como visitante, deseo solicitar una demostración para recibir información personalizada sobre TerraTech. | **Scenario 1: Envío exitoso**<br>Given el visitante completa los campos Nombre, Email, Teléfono y Tamaño de terreno en hectáreas<br>When confirma el envío de la solicitud<br>Then el sistema registra la solicitud y muestra una confirmación de recepción<br>And los campos del formulario quedan vacíos<br><br>**Scenario 2: Campos obligatorios incompletos**<br>Given el visitante omite el campo Email<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico es obligatorio y no registra la solicitud<br><br>**Scenario 3: Formato de correo inválido**<br>Given el visitante ingresa un correo con formato inválido<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico no es válido y no registra la solicitud |
@@ -958,7 +939,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC02: Autenticación y Gestión de Usuarios (IAM)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US06 | Agricultor | Alta | Registro de nuevo usuario | Como agricultor, deseo crear una cuenta en TerraTech para acceder a la aplicación y configurar mis parcelas. | **Scenario 1: Registro exitoso**<br>Given el usuario accede al registro<br>When ingresa Nombre (mínimo 2 caracteres), Email válido y Contraseña (mínimo 6 caracteres) confirmada correctamente<br>And confirma el registro<br>Then se crea la cuenta con rol "Agricultor"<br>And el sistema envía un correo de verificación con enlace válido por 24 horas<br><br>**Scenario 2: Correo ya registrado**<br>Given el usuario ingresa un correo que ya existe<br>When confirma el registro<br>Then el sistema informa que el correo ya está registrado y ofrece la opción de recuperar la contraseña<br><br>**Scenario 3: Contraseñas no coinciden**<br>Given el usuario ingresa contraseñas distintas<br>When confirma el registro<br>Then el sistema informa que las contraseñas no coinciden y no crea la cuenta |
 | US07 | Usuario registrado | Alta | Inicio de sesión | Como usuario registrado, deseo iniciar sesión con mis credenciales para acceder a mi información y a los datos de mis cultivos. | **Scenario 1: Inicio de sesión exitoso**<br>Given el usuario se encuentra en la pantalla de inicio de sesión<br>When ingresa email y contraseña válidos y verificados<br>And confirma el inicio de sesión<br>Then el sistema emite un token JWT válido por 8 horas<br>And el usuario accede a su información personalizada<br><br>**Scenario 2: Credenciales incorrectas**<br>Given el usuario ingresa una contraseña incorrecta<br>When confirma el inicio de sesión<br>Then el sistema informa que las credenciales son inválidas y no emite token<br><br>**Scenario 3: Correo no verificado**<br>Given el usuario se registró pero no verificó su correo<br>When intenta iniciar sesión con credenciales correctas<br>Then el sistema indica que debe verificar su correo electrónico y ofrece reenviar el enlace de verificación |
 | US08 | Usuario registrado | Media | Recuperación de contraseña | Como usuario registrado, deseo recuperar mi contraseña olvidada para volver a acceder a mi cuenta. | **Scenario 1: Envío del enlace de recuperación**<br>Given el usuario solicita recuperar su contraseña<br>When ingresa su correo registrado y confirma el envío<br>Then el sistema envía un enlace con token único válido por 1 hora<br>And informa que debe revisar su correo para restablecer la contraseña<br><br>**Scenario 2: Restablecimiento exitoso**<br>Given el usuario accede al enlace de recuperación con un token válido<br>When ingresa y confirma la nueva contraseña<br>Then el sistema actualiza la contraseña almacenada de forma cifrada<br>And informa que la contraseña fue actualizada<br><br>**Scenario 3: Token expirado o inválido**<br>Given el usuario accede a un enlace de recuperación con token inválido o expirado<br>When intenta restablecer su contraseña<br>Then el sistema informa que el enlace expiró y permite solicitar uno nuevo |
@@ -967,7 +948,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC03: Dashboard de Monitoreo en Tiempo Real (Monitoring)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US10 | Agricultor | Alta | Consulta de indicadores clave | Como agricultor, deseo consultar en tiempo real los valores de humedad, nutrientes y temperatura del suelo para decidir oportunamente el riego y la fertilización. | **Scenario 1: Consulta inicial**<br>Given el agricultor ha iniciado sesión y tiene al menos un sensor asociado<br>When accede al dashboard<br>Then el sistema muestra los valores actuales de humedad (%), nutrientes (N-P-K en ppm) y temperatura del suelo (°C)<br>And indica la fecha y hora de la última actualización de cada valor<br><br>**Scenario 2: Actualización automática**<br>Given el dashboard está visible y existe conexión con el servicio de datos<br>When el backend recibe una nueva lectura del sensor<br>Then los valores mostrados se actualizan sin intervención del usuario<br><br>**Scenario 3: Sensor sin conexión**<br>Given un sensor no envía datos durante más de 30 minutos<br>When el sistema actualiza la información<br>Then el sistema advierte que los datos están desactualizados por falta de conexión del sensor |
 | US11 | Agricultor | Media | Selección de zona o sensor específico | Como agricultor, deseo seleccionar una parcela o sensor específico para revisar los datos de esa zona de mi cultivo. | **Scenario 1: Selección de zona**<br>Given el agricultor tiene configuradas zonas con nombres<br>When selecciona una zona<br>Then el sistema muestra los indicadores correspondientes a los sensores de esa zona<br><br>**Scenario 2: Actualización de indicadores por zona**<br>Given el dashboard muestra los datos de una zona<br>When el agricultor selecciona otra zona<br>Then los indicadores y el histórico se actualizan con los datos de la nueva zona<br>And el sistema registra el cambio de zona consultada |
 | US12 | Agricultor | Media | Consulta del histórico de datos | Como agricultor, deseo consultar el histórico de humedad de mi cultivo para identificar tendencias y anticipar decisiones. | **Scenario 1: Rango por defecto**<br>Given el agricultor consulta el histórico<br>When el sistema carga la información<br>Then se presentan los valores de humedad de los últimos 7 días<br>And se indica el umbral mínimo configurado como referencia<br><br>**Scenario 2: Cambio de rango**<br>Given el agricultor consulta el histórico de 7 días<br>When selecciona un rango de 30 días<br>Then el sistema actualiza la información en menos de 2 segundos<br><br>**Scenario 3: Detalle de un punto del histórico**<br>Given el histórico está visible<br>When el agricultor consulta un punto específico<br>Then el sistema informa la fecha exacta, el valor de humedad y si existió una alerta en esa fecha |
@@ -975,28 +956,28 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC04: Mapa de Fertilidad (Monitoring)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US13 | Agricultor | Media | Identificación de zonas fértiles | Como agricultor, deseo identificar las zonas más fértiles de mi terreno para planificar la rotación de cultivos y optimizar la siembra. | **Scenario 1: Visualización de fertilidad por zona**<br>Given el agricultor accede a la sección del mapa de fertilidad y existe al menos una zona con datos de sensores<br>When el sistema carga el mapa<br>Then cada zona se representa según su nivel de fertilidad:<br>- Óptimo: humedad mayor a 60% y nutrientes en rango óptimo<br>- Moderado: humedad entre 30% y 60% o nutrientes en rango medio<br>- Crítico: humedad menor a 30% o nutrientes bajos<br>And el agricultor puede consultar el detalle de cada zona<br><br>**Scenario 2: Acciones sugeridas por nivel**<br>Given el mapa de fertilidad está visible<br>When el agricultor consulta la referencia de niveles<br>Then el sistema presenta, para cada nivel, la acción sugerida correspondiente (mantener el plan actual, monitorear en 12 horas o regar y fertilizar en las próximas 2 horas) |
 | US14 | Agricultor | Baja | Navegación en el mapa | Como agricultor, deseo acercar y desplazarme por el mapa para examinar zonas específicas con mayor detalle. | **Scenario 1: Acercamiento y alejamiento**<br>Given el mapa de fertilidad está visible<br>When el agricultor acerca o aleja la vista<br>Then el mapa presenta mayor o menor nivel de detalle según la acción<br><br>**Scenario 2: Desplazamiento**<br>Given el mapa se encuentra con alto nivel de detalle<br>When el agricultor se desplaza por el mapa<br>Then la vista se desplaza y mantiene el nivel de acercamiento seleccionado |
 
 #### EPIC05: Motor de Recomendaciones (Monitoring)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US15 | Agricultor | Alta | Recomendación automática de riego | Como agricultor, deseo recibir una recomendación automática sobre cuándo regar para optimizar el uso del agua y evitar el estrés hídrico. | **Scenario 1: Humedad críticamente baja**<br>Given el agricultor ha iniciado sesión y el sensor de la zona "Norte" reporta 25% de humedad<br>And el umbral mínimo configurado para la zona es 30%<br>When el sistema procesa la última lectura<br>Then se genera una recomendación urgente de riego para la zona Norte con una duración sugerida de 25 minutos<br>And se envía una notificación al dispositivo del agricultor si las notificaciones están habilitadas<br><br>**Scenario 2: Humedad adecuada**<br>Given el sensor de la zona "Sur" reporta 65% de humedad y los umbrales son mínimo 30% y máximo 80%<br>When el sistema procesa la lectura<br>Then se genera un aviso informativo que indica que no es necesario regar<br>And no se envía notificación al dispositivo<br><br>**Scenario 3: Humedad excesiva**<br>Given el sensor reporta 85% de humedad y el umbral máximo es 80%<br>When el sistema evalúa la condición<br>Then se genera una recomendación de suspender el riego por riesgo de pudrición de raíces |
 | US16 | Agricultor | Alta | Recomendación automática de fertilización | Como agricultor, deseo recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar la sobrefertilización y reducir costos. | **Scenario 1: Deficiencia de nitrógeno**<br>Given el sensor de la zona "Este" reporta N=15 ppm, P=25 ppm y K=40 ppm<br>And los rangos óptimos son N (20-40 ppm), P (15-30 ppm) y K (30-50 ppm)<br>When el sistema evalúa los datos<br>Then se genera una recomendación de aplicar 8 kg/ha de Nitrógeno (Urea 46-0-0) para la zona Este<br>And la recomendación se registra con tipo "fertilizer"<br><br>**Scenario 2: Nutrientes en niveles óptimos**<br>Given la zona "Oeste" reporta N=35 ppm, P=22 ppm y K=45 ppm<br>When el agricultor consulta las recomendaciones<br>Then el sistema informa que los niveles son adecuados y sugiere mantener el plan de fertilización<br><br>**Scenario 3: Deficiencias múltiples**<br>Given la zona "Norte" reporta N=10 ppm, P=8 ppm y K=20 ppm<br>When el sistema procesa los datos<br>Then se genera una recomendación prioritaria de aplicar 12 kg/ha de NPK 20-20-20 por deficiencias múltiples |
 
 #### EPIC06: Gestión de Sensores (Monitoring)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US17 | Agricultor | Alta | Registro de un nuevo sensor | Como agricultor, deseo registrar un nuevo sensor en mi cuenta para monitorear una nueva zona o cultivo. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a la gestión de sensores<br>When registra un dispositivo con código único (formato TT-XXXXXX), nombre de la zona y cultivo actual<br>And confirma el registro<br>Then el sensor queda asociado a su cuenta con estado "Activo"<br>And el sistema comienza a recibir datos en los siguientes 5 minutos<br><br>**Scenario 2: Código inválido o inexistente**<br>Given el agricultor ingresa un código que no existe en el inventario global<br>When confirma el registro<br>Then el sistema informa que el código es inválido y no asocia el sensor<br><br>**Scenario 3: Código ya registrado**<br>Given el código ingresado ya está asociado a otra cuenta<br>When el agricultor confirma el registro<br>Then el sistema informa que el sensor ya está registrado por otro usuario y no lo asocia |
 | US18 | Agricultor | Media | Configuración de umbrales de alerta | Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado. | **Scenario 1: Configuración por zona**<br>Given el agricultor se encuentra en la configuración de alertas de una zona<br>When establece humedad mínima de 25% y máxima de 75%<br>And confirma la configuración<br>Then el sistema guarda los umbrales para esa zona y confirma la actualización<br><br>**Scenario 2: Alerta por umbral personalizado**<br>Given el umbral máximo de la zona "Centro" es 70%<br>And el sensor reporta 72% de humedad<br>When el sistema evalúa la condición<br>Then se genera una alerta que indica humedad excesiva y sugiere suspender el riego por 12 horas<br><br>**Scenario 3: Restablecimiento de valores**<br>Given el agricultor ha modificado los umbrales de una zona<br>When solicita restablecer los valores por defecto<br>Then el sistema restaura los umbrales predeterminados y confirma la acción |
 
 #### EPIC07: API RESTful
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US19 | Developer | Media | Documentación interactiva de la API | Como developer, deseo consultar la documentación de la API para comprender cómo consumir sus endpoints correctamente. | **Scenario 1: Consulta de la documentación**<br>Given la API del backend se encuentra desplegada en el entorno de desarrollo<br>When el developer accede a la documentación interactiva<br>Then el sistema presenta los endpoints agrupados por controlador<br>And cada endpoint incluye método HTTP, ruta, parámetros y ejemplos de solicitud y respuesta<br><br>**Scenario 2: Prueba de un endpoint**<br>Given el developer cuenta con un token JWT válido<br>When ejecuta la consulta de un sensor específico desde la documentación<br>Then el sistema responde con el código HTTP y el JSON correspondiente<br><br>**Scenario 3: Actualización de la documentación**<br>Given se incorpora un nuevo endpoint al backend<br>When el equipo genera una nueva versión del proyecto<br>Then la documentación se actualiza automáticamente sin cambios manuales |
 | US20 | Developer | Media | Consulta de datos de un sensor | Como developer, deseo consumir un endpoint que devuelva los últimos valores de un sensor para mostrarlos en la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un sensor con identificador sens-001 asociado a una parcela y con lecturas de las últimas 24 horas<br>When se consulta el endpoint con un token válido<br>Then el sistema responde HTTP 200 con el identificador del sensor, la parcela, la humedad, los nutrientes (N-P-K), la temperatura, la fecha de la lectura y el nivel de batería<br><br>**Scenario 2: Sensor no encontrado**<br>Given no existe un sensor con el identificador consultado<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 404 con un mensaje que indica que el sensor no existe<br><br>**Scenario 3: Lecturas desactualizadas**<br>Given el sensor consultado no registra lecturas recientes<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 200 e indica que los datos están desactualizados junto con el tiempo transcurrido desde la última lectura |
 | US21 | Developer | Media | Registro de recomendaciones mediante webhook | Como developer, deseo implementar un endpoint que reciba las recomendaciones del motor de análisis para almacenarlas y mostrarlas en la aplicación. | **Scenario 1: Recepción válida**<br>Given el motor de análisis envía una recomendación con zona, acción, duración, prioridad y motivo<br>And la solicitud incluye una clave de API válida<br>When el sistema procesa la solicitud<br>Then el sistema almacena la recomendación y responde HTTP 201 con la ubicación del recurso creado<br>And la recomendación queda disponible para el agricultor<br><br>**Scenario 2: Datos incompletos**<br>Given la solicitud no incluye la zona de la recomendación<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 400 con el detalle del campo faltante y no almacena la recomendación<br><br>**Scenario 3: Clave de API inválida**<br>Given la solicitud no incluye la clave de API o incluye una incorrecta<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 401 y no procesa la recomendación |
@@ -1004,14 +985,14 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC08: Integración con Servicios Externos
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US22 | Agricultor | Media | Consulta del pronóstico del clima | Como agricultor, deseo consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego con las lluvias previstas. | **Scenario 1: Consulta del pronóstico**<br>Given el agricultor ha iniciado sesión y su perfil tiene una ubicación configurada<br>When consulta el pronóstico en su panel principal<br>Then el sistema presenta la probabilidad de lluvia de las próximas 24 horas, la temperatura actual y prevista, la humedad ambiental y la velocidad del viento<br>And los datos provienen de un servicio externo de clima<br><br>**Scenario 2: Actualización automática**<br>Given el pronóstico está visible y la última actualización tiene más de 3 horas<br>When el sistema ejecuta la actualización periódica<br>Then el pronóstico se actualiza sin intervención del agricultor<br><br>**Scenario 3: Recomendación combinada**<br>Given el pronóstico indica 80% de probabilidad de lluvia con 10 mm en las próximas 6 horas<br>And el sensor de humedad reporta 35%<br>When el sistema evalúa ambos factores<br>Then el sistema recomienda suspender el riego planificado para ese día y estima un ahorro aproximado de 500 litros |
 | US23 | Agricultor | Baja | Consulta de imágenes satelitales | Como agricultor, deseo consultar imágenes satelitales de mi parcela para identificar visualmente zonas con problemas de crecimiento. | **Scenario 1: Consulta de la imagen más reciente**<br>Given el agricultor accede a la sección de imágenes satelitales<br>When el sistema obtiene la imagen más reciente del servicio externo<br>Then el sistema presenta la imagen con su fecha de captura<br>And el agricultor puede alternar entre la vista satelital y el mapa base<br><br>**Scenario 2: Consulta histórica**<br>Given el agricultor consulta una fecha anterior<br>When el sistema obtiene la imagen disponible más cercana a esa fecha<br>Then el sistema presenta la imagen e informa la fecha y el porcentaje de nubosidad<br>And si no existen imágenes para la fecha, el sistema informa la situación<br><br>**Scenario 3: Comparación de periodos**<br>Given el agricultor activa la comparación entre dos fechas<br>When el sistema presenta ambas imágenes<br>Then el agricultor puede comparar los cambios en la vegetación entre los dos periodos |
 
 #### EPIC09: Stock Management
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US24 | Agricultor | Media | Registro de insumos | Como agricultor, deseo registrar los insumos que tengo disponibles para llevar un control de los productos destinados a mis cultivos. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a su inventario<br>When registra un insumo con nombre, cantidad, unidad de medida, precio unitario y proveedor opcional<br>And confirma el registro<br>Then el insumo queda registrado en el inventario y el sistema confirma la operación<br><br>**Scenario 2: Nombre obligatorio**<br>Given el agricultor intenta registrar un insumo sin nombre<br>When confirma el registro<br>Then el sistema informa que el nombre es obligatorio y no registra el insumo<br><br>**Scenario 3: Cantidad inválida**<br>Given el agricultor ingresa una cantidad negativa<br>When confirma el registro<br>Then el sistema informa que la cantidad debe ser mayor o igual a cero y no registra el insumo |
 | US25 | Agricultor | Media | Consulta y filtrado del inventario | Como agricultor, deseo consultar mi inventario y filtrarlo por nombre o disponibilidad para encontrar rápidamente lo que necesito. | **Scenario 1: Consulta del inventario**<br>Given el agricultor accede a su inventario<br>When el sistema carga la información<br>Then se presenta la lista de insumos con nombre, cantidad, unidad, precio unitario y proveedor<br>And la lista se organiza en páginas de 10 elementos<br><br>**Scenario 2: Filtro por nombre**<br>Given el agricultor consulta su inventario<br>When busca por el nombre de un insumo<br>Then el sistema presenta únicamente los insumos cuyo nombre coincide con la búsqueda<br><br>**Scenario 3: Filtro por stock bajo**<br>Given el agricultor consulta su inventario<br>When aplica el filtro de stock bajo<br>Then el sistema presenta los insumos con cantidad inferior al umbral configurado e indica su condición |
 | US26 | Agricultor | Baja | Actualización del stock de insumos | Como agricultor, deseo aumentar o disminuir la cantidad de un insumo para reflejar el consumo real o las nuevas compras. | **Scenario 1: Descuento por consumo**<br>Given el agricultor consulta un insumo de su inventario<br>When registra el descuento de una cantidad<br>And confirma la operación<br>Then el sistema reduce el stock en la cantidad indicada y confirma la actualización<br><br>**Scenario 2: Aumento por compra**<br>Given el agricultor registra una nueva compra de un insumo<br>When ingresa la cantidad y el precio de compra<br>And confirma la operación<br>Then el sistema aumenta el stock y registra el movimiento en el historial<br><br>**Scenario 3: Stock insuficiente**<br>Given el insumo tiene 10 unidades disponibles y el agricultor intenta descontar 15<br>When confirma la operación<br>Then el sistema informa que el stock es insuficiente y no realiza el descuento |
@@ -1019,7 +1000,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC10: Notification Management
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US27 | Agricultor | Alta | Consulta de notificaciones de los sensores | Como agricultor, deseo recibir y consultar las notificaciones generadas por los sensores para actuar ante condiciones críticas. | **Scenario 1: Consulta de notificaciones**<br>Given el agricultor ha iniciado sesión<br>When consulta sus notificaciones<br>Then el sistema presenta las notificaciones no leídas primero<br>And cada notificación indica su tipo, mensaje, fecha, hora y estado<br><br>**Scenario 2: Notificación por humedad baja**<br>Given el sensor de la zona "Norte" reporta 25% de humedad, por debajo del umbral crítico<br>When el sistema procesa la lectura<br>Then el sistema genera una notificación que informa la humedad registrada y recomienda regar en las próximas 2 horas<br>And la notificación se envía al panel del agricultor y a su correo si el canal está habilitado<br><br>**Scenario 3: Marcado como leída**<br>Given el agricultor consulta una notificación no leída<br>When abre su detalle<br>Then el sistema marca la notificación como leída y actualiza el contador de notificaciones pendientes |
 | US28 | Agricultor | Media | Configuración de preferencias de notificaciones | Como agricultor, deseo configurar qué notificaciones recibo y por qué canales para ajustar la aplicación a mis necesidades. | **Scenario 1: Habilitar o deshabilitar un tipo**<br>Given el agricultor accede a la configuración de notificaciones<br>When desactiva las notificaciones de humedad<br>Then el sistema deja de enviar ese tipo de notificaciones y confirma la actualización<br><br>**Scenario 2: Selección de canales**<br>Given el agricultor configura sus canales de notificación<br>When habilita la aplicación móvil y el correo electrónico<br>Then el sistema envía las alertas por ambos canales y confirma la actualización<br><br>**Scenario 3: Umbral personalizado**<br>Given el agricultor establece un umbral mínimo de humedad de 35%<br>When el sensor reporta 32%<br>Then el sistema genera la alerta correspondiente<br>And si el sensor reporta 40%, el sistema no genera la alerta |
 | US29 | Proveedor | Media | Alertas de interés sobre productos | Como proveedor, deseo recibir alertas cuando el interés por un producto supere un umbral para anticipar la revisión de su disponibilidad. | **Scenario 1: Interés alto**<br>Given el proveedor configuró un umbral de interés de 100 consultas mensuales<br>When las consultas del mes superan ese umbral<br>Then el sistema genera una notificación que informa las consultas registradas y sugiere revisar la disponibilidad del producto<br><br>**Scenario 2: Producto sin consultas**<br>Given un producto no registra consultas en los últimos 30 días<br>When el sistema detecta la inactividad<br>Then el sistema genera una notificación que sugiere revisar su publicación o promover el producto<br><br>**Scenario 3: Configuración del umbral**<br>Given el proveedor accede a la configuración de notificaciones<br>When establece un umbral de interés de 50 consultas para un producto<br>Then el sistema genera alertas solo cuando las consultas superan ese umbral |
@@ -1030,7 +1011,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC11: Community & Reputation
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US33 | Proveedor | Media | Consulta de comentarios y calificaciones | Como proveedor, deseo consultar los comentarios y calificaciones sobre mis productos para conocer la percepción de los agricultores y mejorar mi oferta. | **Scenario 1: Consulta de comentarios**<br>Given el proveedor consulta la comunidad y selecciona un producto de su catálogo<br>When el sistema carga la información<br>Then se presenta la lista de comentarios con nombre del agricultor, calificación, texto y fecha<br>And los comentarios se ordenan del más reciente al más antiguo<br><br>**Scenario 2: Filtro por calificación**<br>Given el proveedor consulta los comentarios de un producto<br>When aplica el filtro de 5 estrellas<br>Then el sistema presenta únicamente los comentarios con esa calificación y actualiza el contador<br><br>**Scenario 3: Respuesta a un comentario**<br>Given el proveedor consulta un comentario de un agricultor<br>When publica una respuesta<br>Then el sistema registra la respuesta debajo del comentario original y notifica al agricultor |
 | US34 | Proveedor | Baja | Consulta de la reputación de productos | Como proveedor, deseo consultar un resumen de la reputación de mis productos para identificar oportunidades de mejora. | **Scenario 1: Resumen por producto**<br>Given el proveedor accede a la sección de reputación<br>When el sistema carga la información<br>Then se presenta, por cada producto, el nombre, la calificación promedio, el número de reseñas y la distribución de calificaciones<br><br>**Scenario 2: Productos con baja calificación**<br>Given el proveedor tiene productos con calificación promedio menor a 3 estrellas<br>When consulta el resumen de reputación<br>Then el sistema resalta esos productos y sugiere revisar los comentarios negativos<br><br>**Scenario 3: Notificación de nueva reseña**<br>Given un agricultor publica una reseña sobre un producto del proveedor<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación y el contador de notificaciones se actualiza |
 | US35 | Cliente final | Media | Publicación de reseñas de productos | Como cliente final, deseo publicar una reseña y calificación sobre un producto para compartir mi experiencia con otros compradores. | **Scenario 1: Publicación exitosa**<br>Given el cliente ha iniciado sesión y consultó el producto<br>When publica una reseña con calificación de 1 a 5 estrellas y un texto de entre 10 y 500 caracteres<br>Then el sistema registra la reseña y la presenta en el detalle del producto<br><br>**Scenario 2: Texto demasiado corto**<br>Given el cliente ingresa un texto de menos de 10 caracteres<br>When intenta publicar la reseña<br>Then el sistema informa que la reseña debe tener al menos 10 caracteres y no la publica<br><br>**Scenario 3: Edición o eliminación**<br>Given el cliente ha publicado una reseña previamente<br>When modifica su contenido o solicita eliminarla<br>Then el sistema actualiza o elimina la reseña y confirma la operación |
@@ -1039,7 +1020,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC12: Analytics & Catalog
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | US37 | Proveedor | Media | Consulta de productos con mayor interés | Como proveedor, deseo consultar los productos con mayor interés de los agricultores para orientar mi oferta. | **Scenario 1: Consulta del interés**<br>Given el proveedor ha iniciado sesión con su rol<br>When consulta la sección de analíticas de interés<br>Then el sistema presenta una tabla con producto, consultas, favoritos, contactos y tendencia<br>And la tabla se ordena por número de consultas de mayor a menor<br><br>**Scenario 2: Tendencia por producto**<br>Given el proveedor consulta el interés por un producto específico<br>When el sistema carga la información<br>Then se presenta la evolución mensual de las consultas de los últimos 12 meses con los valores de cada periodo<br><br>**Scenario 3: Filtros de interés**<br>Given el proveedor consulta la tabla de interés<br>When aplica un filtro por región<br>Then el sistema actualiza la información con las consultas de esa región |
 | US38 | Proveedor | Baja | Consulta de zonas con mayor actividad | Como proveedor, deseo consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial. | **Scenario 1: Interés por región**<br>Given el proveedor consulta la sección de zonas de interés<br>When el sistema carga la información<br>Then se presenta un mapa con las regiones diferenciadas por nivel de interés<br>And cada región permite consultar el número de agricultores y los productos más consultados<br><br>**Scenario 2: Consulta de métricas**<br>Given el proveedor consulta el mapa de interés<br>When solicita la vista de tabla<br>Then el sistema presenta región, agricultores activos, consultas, producto principal y contactos generados<br>And la tabla permite ordenarse por cualquiera de sus campos<br><br>**Scenario 3: Exportación de datos**<br>Given el proveedor consulta las analíticas de interés<br>When solicita exportar la información<br>Then el sistema genera un archivo CSV con los datos filtrados y la fecha de generación |
 | US39 | Cliente final | Media | Consulta del catálogo de productos | Como cliente final, deseo consultar el catálogo de productos agrícolas con filtros por categoría, región y características registradas del producto para encontrar lo que busco. | **Scenario 1: Consulta del catálogo**<br>Given el cliente accede al catálogo<br>When el sistema carga la información<br>Then se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br><br>**Scenario 2: Filtros del catálogo**<br>Given el cliente consulta el catálogo<br>When aplica los filtros de categoría y región<br>Then el sistema presenta únicamente los productos que coinciden con ambos filtros<br><br>**Scenario 3: Búsqueda por nombre**<br>Given el cliente consulta el catálogo<br>When busca un producto por su nombre<br>Then el sistema presenta los productos cuyo nombre coincide con la búsqueda |
@@ -1049,7 +1030,7 @@ La siguiente tabla resume los Epics identificados y las historias que agrupa cad
 #### EPIC13: Configuración y Despliegue (Technical Stories)
 
 | Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-| :--- | :--- | :---: | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | TS01 | Developer | Media | Configuración de repositorios con GitFlow | Como developer, deseo que los repositorios sigan GitFlow y Conventional Commits para mantener un historial ordenado y facilitar el trabajo colaborativo. | **Scenario 1: Ramas del flujo de trabajo**<br>Given se consultan las ramas de un repositorio del proyecto<br>Then existen las ramas permanentes main y develop<br>And las funcionalidades se desarrollan en ramas feature<br>And la rama main solo recibe cambios mediante pull request con al menos una aprobación<br><br>**Scenario 2: Mensajes de commit**<br>Given se revisa el historial de commits de un repositorio<br>When se analizan los últimos mensajes registrados<br>Then todos siguen el formato tipo(alcance): descripción<br><br>**Scenario 3: Plantilla de pull request**<br>Given un developer crea una pull request hacia develop<br>When se abre la solicitud<br>Then se carga una plantilla con la descripción del cambio, su tipo, las pruebas ejecutadas y las evidencias correspondientes |
 | TS02 | Developer | Media | Despliegue automático de los productos | Como developer, deseo que los cambios integrados se desplieguen automáticamente para mantener disponibles las versiones más recientes de los productos. | **Scenario 1: Despliegue del frontend**<br>Given se integra un cambio en la rama main del repositorio del frontend<br>When el servicio de despliegue detecta el cambio<br>Then el sistema compila y publica la nueva versión en menos de 2 minutos<br>And el equipo recibe una notificación del despliegue<br><br>**Scenario 2: Integración continua del backend**<br>Given se integra un cambio en la rama main del repositorio del backend<br>When el flujo de integración continua se ejecuta<br>Then el sistema ejecuta las pruebas unitarias<br>And si las pruebas pasan, compila y despliega la API<br>And si alguna prueba falla, cancela el despliegue y notifica al equipo<br><br>**Scenario 3: Variables de entorno en el despliegue**<br>Given la aplicación requiere variables de configuración<br>When el servicio de despliegue compila el proyecto<br>Then las variables se inyectan desde la configuración del servicio y no están incluidas en el repositorio |
 | TS03 | Developer | Media | Configuración de la base de datos en la nube | Como developer, deseo contar con una base de datos PostgreSQL en la nube para persistir la información de usuarios, parcelas, dispositivos y recomendaciones. | **Scenario 1: Conexión desde la API**<br>Given la API está configurada con la cadena de conexión del servicio de base de datos<br>When el equipo ejecuta el proyecto en entorno local apuntando a la nube<br>Then la API se conecta a la base de datos sin errores de conexión<br>And el sistema registra la conexión establecida<br><br>**Scenario 2: Migraciones al iniciar**<br>Given existen migraciones pendientes en el proyecto de acceso a datos<br>When la API se inicia en el entorno de despliegue<br>Then el sistema aplica las migraciones y actualiza el esquema de la base de datos<br><br>**Scenario 3: Copias de seguridad**<br>Given la base de datos está en producción<br>When el servicio ejecuta las tareas programadas<br>Then el sistema genera copias de seguridad diarias con una retención mínima de 7 días<br>And el equipo puede restaurar una copia desde el servicio de base de datos |
@@ -1093,7 +1074,7 @@ El enlace público del mapa se incorporará cuando el equipo habilite su compart
 El Product Backlog prioriza las historias por valor para el negocio, considerando la Landing Page desde el primer sprint. La estimación utiliza la escala 1, 2, 3, 5 y 8, y la columna Sprint indica el sprint previsto para su desarrollo.
 
 | # Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
-| :---: | :--- | :--- | :---: | :---: |
+| :--- | :--- | :--- | :--- | :--- |
 | 1 | US01 | Visualización del mensaje de valor | 2 | Sprint 1 |
 | 2 | US02 | Conocimiento de las características de la solución | 3 | Sprint 1 |
 | 3 | US03 | Solicitud de demostración | 5 | Sprint 1 |
@@ -1252,7 +1233,7 @@ El **Context Map** define formalmente las relaciones de integración y gobernanz
 #### Patrones de Relación y Matriz de Integración
 
 | Contexto Upstream (U) | Contexto Downstream (D) | Patrón DDD Adoptado | Justificación Técnica y de Diseño |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **IAM & Security** | **Field & Parcel Management** | *Customer / Supplier* | IAM provee la identidad autenticada (`userId`) requerida para asignar propietarios a las parcelas agrícolas. |
 | **IAM & Security** | **Farmer Community** | *Conformist* | La comunidad acepta directamente el modelo de identidad y perfil emitido por IAM sin transformaciones adicionales. |
 | **Field & Parcel Management** | **Crop Analytics & Reporting** | *Customer / Supplier* | Analytics depende de los datos estructurales del predio e historial de inspecciones provistos por Parcel Management. |
@@ -2463,1342 +2444,6 @@ entity "notifications" as notifications {
 | GlobalExceptionHandlerMiddleware.cs | ASP.NET Core Middleware | Middleware centralizado de gestión de excepciones no capturadas para transformarlas en respuestas normalizadas Problem Details. |
 | MiddlewareExtensions.cs | Middleware Extension | Método de extensión de IApplicationBuilder para registrar de forma limpia el middleware de excepciones globales en el pipeline HTTP. |
 
-# Capítulo III: Solution UI/UX Design
-
-[Volver al contenido principal](#contenido)
-
-> Pendiente de desarrollo.
-
-## 3.1. Product Design
-
-### 3.1.1. Style Guidelines
-
-#### 3.1.1.1. General Style Guidelines
-
-### 3.1.2. Information Architecture
-
-#### 3.1.2.1. Organization Systems
-
-#### 3.1.2.2. Labelling Systems
-
-#### 3.1.2.3. SEO Tags and Meta Tags
-
-#### 3.1.2.4. Searching Systems
-
-#### 3.1.2.5. Navigation Systems
-
-### 3.1.3. Landing Page UI Design
-
-#### 3.1.3.1. Landing Page Wireframe
-
-#### 3.1.3.2. Landing Page Mock-up
-
-### 3.1.4. Mobile Applications UX/UI Design
-
-#### 3.1.4.1. Mobile Applications Wireframes
-
-#### 3.1.4.2. Mobile Applications Wireflow Diagrams
-
-#### 3.1.4.3. Mobile Applications Mock-ups
-
-#### 3.1.4.4. Mobile Applications User Flow Diagrams
-
-#### 3.1.4.5. Mobile Applications Prototyping
-
-# Capítulo IV: Product Implementation & Validation
-
-[Volver al contenido principal](#contenido)
-
-> Pendiente de desarrollo.
-
-## 4.1. Software Configuration Management
-
-### 4.1.1. Software Development Environment Configuration
-
-### 4.1.2. Source Code Management
-
-### 4.1.3. Source Code Style Guide & Conventions
-
-### 4.1.4. Software Deployment Configuration
-
-## 4.2. Landing Page & Mobile Application Implementation
-
-Repetir la siguiente estructura por cada sprint, reemplazando «x» por la posición de la subsección y «n» por el número del sprint.
-
-### 4.2.x. Sprint n
-
-#### 4.2.x.1. Sprint Planning n
-
-#### 4.2.x.2. Aspect Leaders and Collaborators
-
-#### 4.2.x.3. Sprint Backlog n
-
-#### 4.2.x.4. Development Evidence for Sprint Review
-
-#### 4.2.x.5. Testing Suite Evidence for Sprint Review
-
-#### 4.2.x.6. Execution Evidence for Sprint Review
-
-#### 4.2.x.7. Services Documentation Evidence for Sprint Review
-
-#### 4.2.x.8. Software Deployment Evidence for Sprint Review
-
-#### 4.2.x.9. Team Collaboration Insights during Sprint
-
-## 4.3. Validation Interviews
-
-### 4.3.1. Diseño de Entrevistas
-
-### 4.3.2. Registro de Entrevistas
-
-### 4.3.3. Evaluaciones según heurísticas
-
-## 2.6. Tactical-Level Domain-Driven Design
-
-El Diseño Táctico de DDD complementa la arquitectura del software guiando el desarrollo mediante patrones de diseño estandarizados, lo que garantiza la correcta implementación de las reglas de negocio y asegura la mantenibilidad del sistema. 
-
-### 2.6.1. Bounded Context: Identity & Access Management
-
-#### 2.6.1.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| User.cs | Aggregate Root | Entidad principal que gestiona el ciclo de vida e identidad del usuario. |
-| UserAudit.cs | Partial Entity / Extension | Implementa propiedades de auditoría (`CreatedAt`, `UpdatedAt`). |
-| Email.cs | Value Object | Valida, encapsula y normaliza la dirección de correo electrónico. |
-| IUserRepository.cs | Domain Repository Interface | Define el contrato de persistencia para consultar y almacenar usuarios. |
-| SignInCommand.cs / SignUpCommand.cs | Domain Command | Estructuras de datos para solicitar el inicio o creación de sesión. |
-| GetUserByEmailQuery.cs / GetUserByIdQuery.cs | Domain Query | Estructuras de datos para consultar usuarios por ID o Email. |
-| IamErrors.cs / IamError.cs | Domain Model Errors | Define los códigos y mensajes de error específicos de autenticación e identidad. |
-
-#### 2.6.1.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| AuthenticationController.cs | REST Controller | Gestiona las peticiones de autenticación (`sign-in`, `sign-up`). |
-| UsersController.cs | REST Controller | Gestiona las peticiones de consulta de usuarios por ID o Email. |
-| IIamContextFacade.cs | ACL / Facade Interface | Contrato para integración segura e inter-contexto. |
-| SignInResource.cs / SignUpResource.cs | Inbound Resource (DTO) | Representa los datos recibidos en las solicitudes de autenticación. |
-| UserResource.cs / AuthenticatedUserResource.cs | Outbound Resource (DTO) | Representa la estructura de respuesta enviada al cliente HTTP. |
-| SignInCommandFromResourceAssembler.cs | Assembler / Mapper | Transforma `SignInResource` a `SignInCommand`. |
-| SignUpCommandFromResourceAssembler.cs | Assembler / Mapper | Transforma `SignUpResource` a `SignUpCommand`. |
-| UserResourceFromEntityAssembler.cs | **Assembler / Mapper | Transforma la entidad `User` a `UserResource`. |
-| AuthenticatedUserResourceFromEntityAssembler.cs | Assembler / Mapper | Transforma `User` y JWT Token a `AuthenticatedUserResource`. |
-| IamActionResultAssembler.cs | REST Response Mapper | Traduce errores y resultados de dominio a respuestas HTTP (`ProblemDetails`). |
-
-#### 2.6.1.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| IUserCommandService.cs | Inbound Command Port | Contrato para la ejecución de comandos de usuario (sign-in, sign-up). |
-| UserCommandService.cs | Command Application Service | Orquesta la lógica de casos de uso de registro y autenticación. |
-| IUserQueryService.cs | Inbound Query Port | Contrato para la ejecución de consultas de lectura sobre usuarios. |
-| UserQueryService.cs | Query Application Service | Implementa las consultas para obtener usuarios por ID o Email. |
-| ITokenService.cs | Outbound Service Interface | Contrato para generación y validación de tokens JWT. |
-| IHashingService.cs | Outbound Service Interface | Contrato para cifrado y verificación de contraseñas. |
-| IamContextFacade.cs | ACL Facade Implementation | Implementa la fachada de integración pública para otros Bounded Contexts. |
-
-#### 2.6.1.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| UserRepository.cs | Repository Implementation | Implementa las operaciones de persistencia en base de datos para el Agregado User. |
-| ModelBuilderExtensions.cs | ORM Mapping Configuration | Configura el esquema de la tabla de usuarios e índices únicos en Entity Framework Core. |
-| TokenService.cs | Security Service Implementation | Gestiona la creación y validación técnica de tokens JWT. |
-| TokenSettings.cs | Configuration Model | Representa las claves y configuraciones del token leídas desde appsettings.json. |
-| HashingService.cs | Security Service Implementation | Realiza el cifrado y validación de contraseñas utilizando el algoritmo BCrypt. |
-| RequestAuthorizationMiddleware.cs | ASP.NET Core Middleware | Intercepta peticiones HTTP para extraer y validar el token JWT adjunto. |
-| RequestAuthorizationMiddlewareExtensions.cs | Middleware Extension | Registra el middleware de autorización dentro de la canalización de la aplicación. |
-| AuthorizeAttribute.cs | Authorization Filter | Filtro que valida la presencia del usuario autenticado en el contexto HTTP. |
-| AllowAnonymousAttribute.cs | Metadata Attribute | Atributo para omitir la validación de autorización en endpoints públicos. |
-
-#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-
-```plantuml
-@startuml C4_Component_IAM
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-title Component Diagram for IAM Bounded Context
-
-Container(spa, "Single-Page Application", "React / Web Browser", "Interfaz de usuario de la plataforma TerraTech")
-Container(external_bc, "Other Bounded Contexts", "C# / .NET", "Otros módulos de la plataforma (ej. Profile)")
-ContainerDb(database, "Database", "MySQL / PostgreSQL", "Almacena los datos de usuarios e identidad")
-
-Container_Boundary(iam_bc, "IAM Bounded Context") {
-    
-    Boundary(interface_layer, "Interface Layer") {
-        Component(auth_ctrl, "Authentication Controller", "ASP.NET Core REST Controller", "Expone endpoints REST para inicio de sesión y registro (/api/v1/authentication)")
-        Component(users_ctrl, "Users Controller", "ASP.NET Core REST Controller", "Expone endpoints REST protegidos para la gestión de usuarios (/api/v1/users)")
-        Component(assemblers, "DTO Assemblers / Mappers", "C# Static Classes", "Transforma objetos entre Resources (DTOs), Comandos, Consultas y Entidades")
-        Component(acl_facade, "IAM Context Facade", "C# Class (ACL)", "Ofrece un punto de entrada público desacoplado para otros Bounded Contexts")
-    }
-
-    Boundary(application_layer, "Application Layer") {
-        Component(cmd_service, "User Command Service", "C# Application Service", "Orquesta la lógica de casos de uso para escribir/modificar datos (SignUp, SignIn)")
-        Component(query_service, "User Query Service", "C# Application Service", "Orquesta los casos de uso de lectura (GetUserById, GetUserByEmail)")
-    }
-
-    Boundary(domain_layer, "Domain Layer") {
-        Component(user_aggregate, "User Aggregate Root", "C# Domain Entity & Value Objects", "Representa al usuario e impone las reglas de negocio (Email, PasswordHash)")
-        Component(repo_interface, "IUserRepository Interface", "C# Domain Interface", "Define el contrato de persistencia para los agregados de tipo User")
-    }
-
-    Boundary(infrastructure_layer, "Infrastructure Layer") {
-        Component(user_repo, "UserRepository Implementation", "Entity Framework Core", "Implementa IUserRepository para interactuar con la base de datos")
-        Component(token_service, "Token Service", "System.IdentityModel.Tokens.Jwt", "Genera y valida tokens de acceso JWT")
-        Component(hashing_service, "Hashing Service", "BCrypt.Net", "Procesa el encriptado y verificación de contraseñas")
-        Component(auth_middleware, "Authorization Middleware & Attributes", "ASP.NET Core Pipeline", "Intercepta solicitudes HTTP, valida JWT e inyecta el usuario en HttpContext")
-    }
-}
-
-' Interacciones Externas
-Rel(spa, auth_ctrl, "Envía peticiones de Sign-In / Sign-Up", "JSON / HTTPS")
-Rel(spa, users_ctrl, "Consulta datos de usuario", "JSON / HTTPS / JWT")
-Rel(external_bc, acl_facade, "Invoca operaciones de IAM inter-contexto", "C# Method Calls")
-
-' Interacciones Internas de la Capa de Interfaz
-Rel(auth_ctrl, assemblers, "Utiliza para mapear Resources a Commands", "In-Process")
-Rel(users_ctrl, assemblers, "Utiliza para mapear Entities a Resources", "In-Process")
-Rel(auth_ctrl, cmd_service, "Envía SignInCommand y SignUpCommand", "In-Process")
-Rel(users_ctrl, query_service, "Envía GetUserByIdQuery y GetUserByEmailQuery", "In-Process")
-Rel(acl_facade, cmd_service, "Ejecuta SignUpCommand", "In-Process")
-Rel(acl_facade, query_service, "Ejecuta GetUserByEmailQuery / GetUserByIdQuery", "In-Process")
-
-' Interacciones de la Capa de Aplicación
-Rel(cmd_service, user_aggregate, "Instancia y modifica el estado del Agregado", "In-Process")
-Rel(cmd_service, repo_interface, "Persiste cambios de agregados", "In-Process")
-Rel(cmd_service, hashing_service, "Cifra y verifica contraseñas", "In-Process")
-Rel(cmd_service, token_service, "Genera tokens JWT tras autenticación exitosa", "In-Process")
-Rel(query_service, repo_interface, "Consulta agregados User", "In-Process")
-
-' Interacciones de la Capa de Infraestructura
-Rel(auth_middleware, token_service, "Valida el token JWT en las peticiones HTTP", "In-Process")
-Rel(auth_middleware, query_service, "Carga la información del usuario autenticado", "In-Process")
-Rel(user_repo, repo_interface, "Implementa", "C# Inheritance")
-Rel(user_repo, database, "Lee y escribe registros de la tabla 'users'", "SQL / EF Core")
-
-@enduml
-```
-
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
-```plantuml
-@startuml DomainLayer_IAM_ClassDiagram
-
-package "IAM" {
-    package "Domain" {
-        package "Model" {
-            
-            package "Aggregates" {
-                interface IAuditableEntity {
-                    + CreatedAt : DateTimeOffset? {get; set;}
-                    + UpdatedAt : DateTimeOffset? {get; set;}
-                }
-
-                class User <<Aggregate Root>> {
-                    + Id : int {get;}
-                    + EmailAddress : Email {get; private set;}
-                    - PasswordHash : string {get; private set;}
-                    + CreatedAt : DateTimeOffset? {get; set;}
-                    + UpdatedAt : DateTimeOffset? {get; set;}
-                    + User()
-                    + User(emailAddress : Email, passwordHash : string)
-                    + UpdateEmail(newEmail : Email) : User
-                    + UpdatePasswordHash(newPasswordHash : string) : User
-                }
-
-                IAuditableEntity <|.. User : implements
-            }
-
-            package "ValueObjects" {
-                class Email <<Value Object>> {
-                    + Value : string {get; init;}
-                    - {static} EmailValidationRegex() : Regex
-                    + Email(value : string)
-                    + ToString() : string
-                }
-            }
-
-            package "Commands" {
-                class SignInCommand <<Record>> {
-                    + Email : string {get; init;}
-                    + Password : string {get; init;}
-                    + SignInCommand(Email : string, Password : string)
-                }
-
-                class SignUpCommand <<Record>> {
-                    + Email : string {get; init;}
-                    + Password : string {get; init;}
-                    + SignUpCommand(Email : string, Password : string)
-                }
-            }
-
-            package "Queries" {
-                class GetUserByEmailQuery <<Record>> {
-                    + Email : string {get; init;}
-                    + GetUserByEmailQuery(Email : string)
-                }
-
-                class GetUserByIdQuery <<Record>> {
-                    + Id : int {get; init;}
-                    + GetUserByIdQuery(Id : int)
-                }
-            }
-
-            package "Errors" {
-                enum IamError {
-                    None
-                    UserNotFound
-                    UsernameAlreadyTaken
-                    InvalidCredentials
-                    OperationCancelled
-                    DatabaseError
-                    InternalServerError
-                    ExternalServiceError
-                }
-
-                class Error <<Value Object>> {
-                    + Code : string {get;}
-                    + Message : string {get;}
-                    + Error(code : string, message : string)
-                }
-
-                class IamErrors <<Static>> {
-                    + {static} InvalidCredentials : Error
-                    + {static} UsernameAlreadyTaken : Error
-                    + {static} UserCreationFailed : Error
-                }
-            }
-        }
-
-        package "Repositories" {
-            interface IBaseRepository<T> {
-                + AddAsync(entity : T, cancellationToken : CancellationToken) : Task
-                + FindByIdAsync(id : int, cancellationToken : CancellationToken) : Task<T?>
-            }
-
-            interface IUserRepository {
-                + FindByEmailAsync(emailAddress : Email, cancellationToken : CancellationToken) : Task<User?>
-                + ExistsByEmailAsync(emailAddress : Email, cancellationToken : CancellationToken) : Task<bool>
-            }
-
-            IBaseRepository <|-- IUserRepository : extends
-        }
-    }
-}
-
-' Relaciones del Modelo Táctico
-User "1" *-- "1" Email : contains >
-IUserRepository ..> User : manages >
-IamErrors o-- Error : contains >
-
-@enduml
-```
-
-##### 2.6.1.6.2. Bounded Context Database Design Diagram
-
-```plantuml
-@startuml Database_Design_IAM
-
-entity "users" as users {
-    * id : INT <<PK, AUTO_INCREMENT>>
-    --
-    * email_address : VARCHAR(255) <<UNIQUE, NOT NULL>>
-    * password_hash : LONGTEXT / VARCHAR <<NOT NULL>>
-    created_at : DATETIMEOFFSET <<NULL>>
-    updated_at : DATETIMEOFFSET <<NULL>>
-}
-
-@enduml
-```
-
-### 2.6.2. Bounded Context: Analytics Management 
-
-#### 2.6.2.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| Report.cs | Aggregate Root | Entidad principal que modela los datos analíticos e impone reglas de modificación de métricas. |
-| ReportAudit.cs | Partial Class / Auditing | Incorpora propiedades de auditoría temporal (CreatedAt, UpdatedAt) al Agregado Report. |
-| DeviceId.cs | Value Object | Encapsula y valida el identificador numérico del dispositivo. |
-| GeneratedAt.cs | Value Object | Encapsula y valida la fecha de generación del reporte analítico. |
-| MeanValue.cs | Value Object | Encapsula y valida el valor promedio estadístico (rango 0 - 100). |
-| Variance.cs | Value Object | Encapsula y valida la varianza estadística (no negativa). |
-| StandardDeviation.cs | Value Object | Encapsula y valida la desviación estándar (no negativa). |
-| TechnicalInterpretation.cs | Value Object | Encapsula y valida la interpretación técnica textual del análisis. |
-| CreateReportCommand.cs | Command | Transporta los datos requeridos para la creación de un reporte. |
-| UpdateReportCommand.cs | Command | Transporta los datos requeridos para la actualización de un reporte existente. |
-| GetReportByIdQuery.cs | Query | Transporta el identificador para la consulta individual de un reporte. |
-| IReportRepository.cs | Domain Repository Interface | Define las operaciones de lectura y consulta especializadas para la entidad Report. |
-
-#### 2.6.2.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ReportsController.cs | REST Controller | Expone y gestiona los endpoints HTTP REST para la administración de reportes analíticos. |
-| CreateReportResource.cs | Request DTO | Contrato de entrada con validaciones para crear un reporte. |
-| UpdateReportResource.cs | Request DTO | Contrato de entrada con validaciones para actualizar estadísticas de un reporte. |
-| ReportResource.cs | Response DTO | Contrato de salida con los datos formateados del reporte analítico. |
-| CreateReportCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea CreateReportResource hacia el objeto inmutable CreateReportCommand. |
-| ReportResourceFromEntityAssembler.cs | Assembler / Transformer | Mapea la entidad de dominio Report hacia el recurso de respuesta ReportResource. |
-| ActionResultFromCreateReportResultAssembler.cs | Assembler / HTTP Transformer | Convierte el objeto Result<Report> en respuestas HTTP estructuradas (201, 409, 500). |
-
-#### 2.6.2.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| IReportCommandService.cs | Service Interface | Contrato para la ejecución de comandos de modificación de reportes. |
-| ReportCommandService.cs | Application Service | Orquesta la creación y actualización de agregados Report y la confirmación en el UnitOfWork. |
-| IReportQueryService.cs | Service Interface | Contrato para la consulta de datos de reportes analíticos. |
-| ReportQueryService.cs | Application Service | Implementa la lógica de recuperación de reportes desde el repositorio de dominio. |
-| CreateReportError.cs | Application Error Enum | Define los tipos de errores de negocio para la creación de reportes. |
-| UpdateReportError.cs | Application Error Enum | Define los tipos de errores de negocio para la actualización de reportes. |
-
-#### 2.6.2.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ReportRepository.cs | Concrete Repository | Implementa la persistencia y consultas específicas del Agregado Report sobre Entity Framework Core. |
-| ModelBuilderExtensions.cs | EF Core Configuration | Configura el mapeo ORM Fluent API del Agregado Report y sus Objetos de Valor en la base de datos. |
-
-#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
-
-
-#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
-
-```plantuml
-@startuml AnalyticsManagement_ComponentDiagram
-
-package "AnalyticsManagement Bounded Context" {
-
-    [REST API Controller] as Controller
-    
-    package "Application Layer" {
-        [ReportCommandService] as CmdService
-        [ReportQueryService] as QueryService
-    }
-
-    package "Domain Layer" {
-        [Report Aggregate] as Aggregate
-        [IReportRepository] as RepInterface
-    }
-
-    package "Infrastructure Layer" {
-        [ReportRepository] as RepImpl
-        [DbContext / ORM] as ORM
-    }
-}
-
-database "MySQL Database" as DB
-
-' Relationships
-Controller --> CmdService
-Controller --> QueryService
-
-CmdService --> Aggregate
-CmdService --> RepInterface
-QueryService --> RepInterface
-
-RepImpl ..|> RepInterface
-RepImpl --> ORM
-ORM --> DB
-
-@enduml
-```
-
-#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
-
-```plantuml
-@startuml DomainLayer_AnalyticsManagement_ClassDiagram
-
-package "AnalyticsManagement" {
-    package "Domain" {
-        package "Model" {
-            
-            package "Aggregates" {
-                interface IAuditableEntity {
-                    + CreatedAt : DateTimeOffset? {get; set;}
-                    + UpdatedAt : DateTimeOffset? {get; set;}
-                }
-
-                class Report <<Aggregate Root>> {
-                    + Id : int {get; private set;}
-                    + DeviceId : DeviceId {get; private set;}
-                    + GeneratedAt : GeneratedAt {get; private set;}
-                    + MeanValue : MeanValue {get; private set;}
-                    + Variance : Variance {get; private set;}
-                    + StandardDeviation : StandardDeviation {get; private set;}
-                    + TechnicalInterpretation : TechnicalInterpretation {get; private set;}
-                    + CreatedAt : DateTimeOffset? {get; set;}
-                    + UpdatedAt : DateTimeOffset? {get; set;}
-                    + Report()
-                    + Report(command : CreateReportCommand)
-                    + UpdateStatistics(mean : double, variance : double, stdDev : double, interpretation : string) : void
-                }
-
-                IAuditableEntity <|.. Report : implements
-            }
-
-            package "ValueObjects" {
-                class DeviceId <<Value Object>> {
-                    + Value : int {get;}
-                    + DeviceId(value : int)
-                    + ToString() : string
-                }
-
-                class GeneratedAt <<Value Object>> {
-                    + Value : DateTimeOffset {get;}
-                    + GeneratedAt(value : DateTimeOffset)
-                    + ToString() : string
-                }
-
-                class MeanValue <<Value Object>> {
-                    + Value : double {get;}
-                    + MeanValue(value : double)
-                    + ToString() : string
-                }
-
-                class Variance <<Value Object>> {
-                    + Value : double {get;}
-                    + Variance(value : double)
-                    + ToString() : string
-                }
-
-                class StandardDeviation <<Value Object>> {
-                    + Value : double {get;}
-                    + StandardDeviation(value : double)
-                    + ToString() : string
-                }
-
-                class TechnicalInterpretation <<Value Object>> {
-                    + Value : string {get;}
-                    + TechnicalInterpretation(value : string)
-                    + ToString() : string
-                }
-            }
-
-            package "Commands" {
-                class CreateReportCommand <<Record>> {
-                    + DeviceId : DeviceId {get;}
-                    + GeneratedAt : GeneratedAt {get;}
-                    + MeanValue : MeanValue {get;}
-                    + Variance : Variance {get;}
-                    + StandardDeviation : StandardDeviation {get;}
-                    + TechnicalInterpretation : TechnicalInterpretation {get;}
-                }
-
-                class UpdateReportCommand <<Record>> {
-                    + Id : int {get;}
-                    + MeanValue : double {get;}
-                    + Variance : double {get;}
-                    + StandardDeviation : double {get;}
-                    + TechnicalInterpretation : string {get;}
-                }
-            }
-
-            package "Queries" {
-                class GetReportByIdQuery <<Record>> {
-                    + Id : int {get;}
-                }
-            }
-        }
-
-        package "Repositories" {
-            interface IBaseRepository<T> {
-                + AddAsync(entity : T, cancellationToken : CancellationToken) : Task
-                + FindByIdAsync(id : int, cancellationToken : CancellationToken) : Task<T?>
-                + ListAsync(cancellationToken : CancellationToken) : Task<IEnumerable<T>>
-                + Update(entity : T) : void
-            }
-
-            interface IReportRepository {
-                + FindByDeviceIdAsync(deviceId : DeviceId, cancellationToken : CancellationToken) : Task<IEnumerable<Report>>
-                + FindByDateRangeAsync(from : GeneratedAt, to : GeneratedAt, cancellationToken : CancellationToken) : Task<IEnumerable<Report>>
-                + FindByDeviceIdAndGeneratedAtAsync(deviceId : DeviceId, generatedAt : GeneratedAt, cancellationToken : CancellationToken) : Task<Report?>
-            }
-
-            IBaseRepository <|-- IReportRepository : extends
-        }
-    }
-}
-
-' Relaciones del Modelo Táctico
-Report "1" *-- "1" DeviceId : contains >
-Report "1" *-- "1" GeneratedAt : contains >
-Report "1" *-- "1" MeanValue : contains >
-Report "1" *-- "1" Variance : contains >
-Report "1" *-- "1" StandardDeviation : contains >
-Report "1" *-- "1" TechnicalInterpretation : contains >
-
-IReportRepository ..> Report : manages >
-CreateReportCommand ..> Report : instantiates >
-
-@enduml
-```
-
-##### 2.6.2.6.2. Bounded Context Database Design Diagram
-
-```plantuml
-@startuml AnalyticsManagement_DatabaseDesign
-
-entity "reports" as reports {
-    * id : INT <<PK, AUTO_INCREMENT>>
-    --
-    * device_id : INT <<NOT NULL>>
-    * generated_at : DATETIMEOFFSET <<NOT NULL>>
-    * mean_value : DOUBLE <<NOT NULL>>
-    * variance : DOUBLE <<NOT NULL>>
-    * standard_deviation : DOUBLE <<NOT NULL>>
-    * technical_interpretation : VARCHAR(500) <<NOT NULL>>
-    created_at : DATETIMEOFFSET <<NULL>>
-    updated_at : DATETIMEOFFSET <<NULL>>
-}
-
-@enduml
-```
-
-### 2.6.3. Bounded Context: Monitoring Management
-
-#### 2.6.3.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| Field.cs | Aggregate Root | Representa una parcela o campo agrícola y gestiona sus reglas internas de actualización. |
-| FieldAudit.cs | Partial Class / Audit | Implementa IAuditableEntity para registrar marcas de tiempo de creación y actualización de campos. |
-| Device.cs | Aggregate Root | Representa un dispositivo/sensor de monitoreo asociado a un campo. |
-| DeviceAudit.cs | Partial Class / Audit | Implementa IAuditableEntity para registrar marcas de tiempo de creación y actualización de dispositivos. |
-| IFieldRepository.cs | Domain Repository Interface | Define el contrato de persistencia para el agregado Field. |
-| IDeviceRepository.cs | Domain Repository Interface | Define el contrato de persistencia para el agregado Device. |
-| DeviceStatus.cs | Value Object | Encapsula y normaliza el estado del dispositivo (ONLINE, OFFLINE, LOW_BATTERY). |
-| FieldId.cs | Value Object | Encapsula el identificador de la parcela. |
-| FieldName.cs | Value Object | Valida y almacena el nombre del campo. |
-| LastSync.cs | Value Object | Almacena la marca de tiempo de la última sincronización del dispositivo. |
-| LocationLatLong.cs | Value Object | Valida y almacena la latitud y longitud de la parcela. |
-| MacAddress.cs | Value Object | Valida el formato de la dirección MAC del dispositivo. |
-| ProfileId.cs | Value Object | Encapsula el identificador del perfil del usuario propietario. |
-| SizeM2.cs | Value Object | Valida y almacena la extensión en metros cuadrados. |
-| SoilType.cs | Value Object | Valida y almacena la clasificación del tipo de suelo. |
-| CreateFieldCommand.cs | Command Record | DTO de comando para solicitar la creación de un campo. |
-| UpdateFieldCommand.cs | Command Record | DTO de comando para solicitar la actualización de un campo. |
-| DeleteFieldCommand.cs | Command Record | DTO de comando para solicitar la eliminación de un campo. |
-| CreateDeviceCommand.cs | Command Record | DTO de comando para solicitar la creación de un dispositivo. |
-| UpdateDeviceCommand.cs | Command Record | DTO de comando para solicitar la actualización de un dispositivo. |
-| DeleteDeviceCommand.cs | Command Record | DTO de comando para solicitar la eliminación de un dispositivo. |
-| GetFieldByIdQuery.cs | Query Record | Estructura para consultar un campo por su identificador. |
-| GetFieldBySoilTypeQuery.cs | Query Record | Estructura para consultar campos por tipo de suelo. |
-| GetDeviceByIdQuery.cs | Query Record | Estructura para consultar un dispositivo por su identificador. |
-| GetDevicesByStatusQuery.cs | Query Record | Estructura para consultar dispositivos por estado operativo. |
-| GetDevicesByFieldIdQuery.cs | Query Record | Estructura para consultar dispositivos asociados a un campo. |
-
-#### 2.6.3.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| FieldsController.cs | REST Controller | Maneja las solicitudes HTTP relacionadas con campos/parcelas (CRUD y consultas por tipo de suelo). |
-| DevicesController.cs | REST Controller | Maneja las solicitudes HTTP relacionadas con dispositivos IoT (CRUD y consultas por campo/estado). |
-| CreateFieldResource.cs | DTO / Input Resource | DTO para la creación de un nuevo campo con validaciones de formulario. |
-| UpdateFieldResource.cs | DTO / Input Resource | DTO para la actualización de un campo existente. |
-| FieldResource.cs | DTO / Output Resource | DTO de respuesta para la representación aplanada de un campo (Field). |
-| CreateDeviceResource.cs | DTO / Input Resource | DTO para la creación de un dispositivo IoT con validación de dirección MAC y estado. |
-| UpdateDeviceResource.cs | DTO / Input Resource | DTO para la actualización de datos de un dispositivo. |
-| DeviceResource.cs | DTO / Output Resource | DTO de respuesta para la representación aplanada de un dispositivo (Device). |
-| CreateFieldCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un CreateFieldResource a CreateFieldCommand con Value Objects. |
-| UpdateFieldCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un UpdateFieldResource a UpdateFieldCommand. |
-| FieldResourceFromEntityAssembler.cs | Assembler / Transformer | Mapea la entidad de agregado Field a FieldResource. |
-| ActionResultFromCreateFieldResultAssembler.cs | Result Assembler | Transforma el Result<Field> de la aplicación a una respuesta ActionResult de ASP.NET Core. |
-| CreateDeviceCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un CreateDeviceResource a CreateDeviceCommand. |
-| UpdateDeviceCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un UpdateDeviceResource a UpdateDeviceCommand. |
-| DeviceResourceFromEntityAssembler.cs | Assembler / Transformer | Mapea la entidad de agregado Device a DeviceResource. |
-| ActionResultFromCreateDeviceResultAssembler.cs | Result Assembler | Transforma el Result<Device> de la aplicación a una respuesta ActionResult de ASP.NET Core. |
-
-#### 2.6.3.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| CreateDeviceError.cs | Enum / Error | Enumera los errores del caso de uso de dispositivos (duplicado, no encontrado, MAC inválida, etc.). |
-| CreateFieldError.cs | Enum / Error | Enumera los errores del caso de uso de campos (duplicado, no encontrado, suelo inválido, etc.). |
-| IDeviceCommandService.cs | Service Interface | Interfaz del servicio de comandos para el manejo de CRUD de dispositivos. |
-| IDeviceQueryService.cs | Service Interface | Interfaz del servicio de consultas para recuperar dispositivos e información proyectada a recursos. |
-| IFieldCommandService.cs | Service Interface | Interfaz del servicio de comandos para el manejo de CRUD de campos/parcelas. |
-| IFieldQueryService.cs | Service Interface | Interfaz del servicio de consultas para recuperar campos e información proyectada a recursos. |
-| DeviceCommandService.cs | Command Service Implementation | Implementa la lógica de comandos para crear, actualizar y eliminar dispositivos con manejo de transacciones. |
-| FieldCommandService.cs | Command Service Implementation | Implementa la lógica de comandos para crear, actualizar y eliminar campos con validación de duplicados. |
-| DeviceQueryService.cs | Query Service Implementation | Implementa la lógica de consulta para listar o filtrar dispositivos por ID, campo y estado. |
-| FieldQueryService.cs | Query Service Implementation | Implementa la lógica de consulta para listar o filtrar campos por ID y tipo de suelo. |
-
-#### 2.6.3.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ModelBuilderExtensions.cs | EF Core Configuration / Extension | Configura el mapeo ORM de los agregados Field y Device (claves, tablas y Value Objects) mediante Fluent API. |
-| FieldRepository.cs | Repository Implementation | Implementa la persistencia para la entidad Field en base de datos mediante EF Core. |
-| DeviceRepository.cs | Repository Implementation | Implementa la persistencia para la entidad Device en base de datos mediante EF Core. |
-
-#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-```plantuml
-@startuml C4_Component_Monitoring
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-LAYOUT_WITH_LEGEND()
-
-title Component Diagram for Monitoring Management Bounded Context
-
-Container(web_app, "Single-Page Application", "Angular", "Interfaz gráfica para el monitoreo agrícola.")
-
-Container_Boundary(api, "Monitoring Management Container") {
-    Component(fields_controller, "FieldsController", "ASP.NET Core REST Controller", "Expone endpoints REST para parcelas (/api/v1/fields).")
-    Component(devices_controller, "DevicesController", "ASP.NET Core REST Controller", "Expone endpoints REST para sensores IoT (/api/v1/devices).")
-    
-    Component(field_cmd_service, "FieldCommandService", "Application Service", "Procesa lógica de creación, actualización y eliminación de campos.")
-    Component(field_qry_service, "FieldQueryService", "Application Service", "Ejecuta consultas avanzadas y filtrado de parcelas.")
-    Component(device_cmd_service, "DeviceCommandService", "Application Service", "Procesa la lógica de ciclo de vida de dispositivos IoT.")
-    Component(device_qry_service, "DeviceQueryService", "Application Service", "Ejecuta consultas filtradas de dispositivos por estado y parcela.")
-    
-    Component(domain_model, "Domain Model", "Domain Layer", "Encapsula Agregados (Field, Device) y Value Objects.")
-    
-    Component(field_repo, "FieldRepository", "EF Core Repository", "Provee persistencia física de parcelas en MySQL.")
-    Component(device_repo, "DeviceRepository", "EF Core Repository", "Provee persistencia física de sensores IoT en MySQL.")
-}
-
-ContainerDb(database, "Relational Database", "MySQL", "Almacena información de parcelas, estados y dispositivos.")
-
-Rel(web_app, fields_controller, "Realiza peticiones HTTP/REST", "JSON/HTTPS")
-Rel(web_app, devices_controller, "Realiza peticiones HTTP/REST", "JSON/HTTPS")
-
-Rel(fields_controller, field_cmd_service, "Invocación de Comandos")
-Rel(fields_controller, field_qry_service, "Invocación de Consultas")
-Rel(devices_controller, device_cmd_service, "Invocación de Comandos")
-Rel(devices_controller, device_qry_service, "Invocación de Consultas")
-
-Rel(field_cmd_service, domain_model, "Opera con")
-Rel(field_qry_service, domain_model, "Lee de")
-Rel(device_cmd_service, domain_model, "Opera con")
-Rel(device_qry_service, domain_model, "Lee de")
-
-Rel(field_cmd_service, field_repo, "Persiste mediante")
-Rel(field_qry_service, field_repo, "Consulta mediante")
-Rel(device_cmd_service, device_repo, "Persiste mediante")
-Rel(device_qry_service, device_repo, "Consulta mediante")
-
-Rel(field_repo, database, "Lee y escribe datos en", "EF Core / MySQL Protocol")
-Rel(device_repo, database, "Lee y escribe datos en", "EF Core / MySQL Protocol")
-
-@enduml
-```
-
-#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
-
-```plantuml
-@startuml Domain_Class_Diagram_Monitoring
-
-package "Monitoring.Domain.Model.Aggregates" {
-    class Field {
-        + Id: int
-        + ProfileId: ProfileId
-        + Name: FieldName
-        + SizeM2: SizeM2
-        + SoilType: SoilType
-        + LocationLatLong: LocationLatLong
-        + Field()
-        + Field(command: CreateFieldCommand)
-        + Update(command: UpdateFieldCommand): void
-    }
-
-    class Device {
-        + Id: int
-        + FieldId: FieldId
-        + MacAddress: MacAddress
-        + Status: DeviceStatus
-        + LastSync: LastSync
-        + Device()
-        + Device(command: CreateDeviceCommand)
-        + Update(command: UpdateDeviceCommand): void
-    }
-}
-
-package "Monitoring.Domain.Model.ValueObjects" {
-    class FieldId {
-        + Value: int
-        + FieldId(value: int)
-    }
-
-    class ProfileId {
-        + Value: int
-        + ProfileId(value: int)
-    }
-
-    class FieldName {
-        + Value: string
-        + FieldName(value: string)
-    }
-
-    class SizeM2 {
-        + Value: double
-        + SizeM2(value: double)
-    }
-
-    class SoilType {
-        + Value: string
-        + SoilType(value: string)
-    }
-
-    class LocationLatLong {
-        + Latitude: double
-        + Longitude: double
-        + LocationLatLong(latitude: double, longitude: double)
-    }
-
-    class MacAddress {
-        + Value: string
-        + MacAddress(value: string)
-    }
-
-    class DeviceStatus {
-        + Value: string
-        + DeviceStatus(value: string)
-        + {static} ONLINE: string = "ONLINE"
-        + {static} OFFLINE: string = "OFFLINE"
-        + {static} LOW_BATTERY: string = "LOW_BATTERY"
-    }
-
-    class LastSync {
-        + Value: DateTimeOffset
-        + LastSync(value: DateTimeOffset)
-    }
-}
-
-package "Monitoring.Domain.Repositories" {
-    interface IFieldRepository {
-        + FindBySoilTypeAsync(soilType: SoilType, cancellationToken: CancellationToken): Task<IEnumerable<Field>>
-        + FindBySoilTypeAndLocationLatLongAsync(soilType: SoilType, location: LocationLatLong, cancellationToken: CancellationToken): Task<Field?>
-    }
-
-    interface IDeviceRepository {
-        + FindByFieldIdAsync(fieldId: FieldId, cancellationToken: CancellationToken): Task<IEnumerable<Device>>
-        + FindByMacAddressAsync(macAddress: MacAddress, cancellationToken: CancellationToken): Task<Device?>
-        + ExistsByMacAddressAsync(macAddress: MacAddress, cancellationToken: CancellationToken): Task<bool>
-        + FindByStatusAsync(status: DeviceStatus, cancellationToken: CancellationToken): Task<IEnumerable<Device>>
-    }
-}
-
-' Relaciones de composición/uso con Value Objects
-Field *-- FieldName : contains
-Field *-- ProfileId : contains
-Field *-- SizeM2 : contains
-Field *-- SoilType : contains
-Field *-- LocationLatLong : contains
-
-Device *-- FieldId : contains
-Device *-- MacAddress : contains
-Device *-- DeviceStatus : contains
-Device *-- LastSync : contains
-
-' Asociación entre agregados
-Field "1" -- "0..*" Device : "asocia a nivel lógico (FieldId)"
-
-' Relaciones de repositorios
-IFieldRepository ..> Field : "persiste y consulta"
-IDeviceRepository ..> Device : "persiste y consulta"
-
-@enduml
-```
-
-##### 2.6.3.6.2. Bounded Context Database Design Diagram
-
-```plantuml
-@startuml Database_Design_Monitoring
-
-entity "fields" as fields {
-    * Id : INT <<PK, AI>>
-    --
-    * ProfileId : INT
-    * Name : VARCHAR(100)
-    * SizeM2 : DOUBLE
-    * SoilType : VARCHAR(50)
-    * Latitude : DOUBLE
-    * Longitude : DOUBLE
-}
-
-entity "devices" as devices {
-    * Id : INT <<PK, AI>>
-    --
-    * FieldId : INT <<FK>>
-    * MacAddress : VARCHAR(17) <<UNIQUE>>
-    * Status : VARCHAR(20)
-    * LastSync : DATETIME
-}
-
-fields ||--o{ devices : "1 contiene N"
-
-@enduml
-```
-
-### 2.6.4. Bounded Context: Stock Management
-
-#### 2.6.4.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| Inventory.cs | Aggregate Root | Representa el registro de inventario de un producto y gestiona las reglas para actualizar o descontar stock. |
-| InventoryAudit.cs | Partial Class / Audit | Implementa IAuditableEntity para auditoría de creación y actualización en el inventario. |
-| IInventoryRepository.cs | Domain Repository Interface | Define el contrato de persistencia para la entidad e inventario del dominio. |
-| CreateInventoryCommand.cs | Command Record | DTO de comando para solicitar el registro inicial de stock de un producto. |
-| UpdateInventoryCommand.cs | Command Record | DTO de comando para actualizar la cantidad de stock disponible. |
-| GetAllInventoryQuery.cs | Query Record | Estructura para solicitar la consulta de todos los registros de inventario. |
-| GetInventoryByIdQuery.cs | Query Record | Estructura para consultar un registro de inventario por su identificador único. |
-
-#### 2.6.4.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| InventoriesController.cs | REST Controller | Maneja las solicitudes HTTP relacionadas con el inventario de stock (CRUD). |
-| CreateInventoryResource.cs | DTO / Input Resource | Esquema de datos para la solicitud de creación de un registro de inventario. |
-| UpdateInventoryResource.cs | DTO / Input Resource | Esquema de datos para la solicitud de actualización de la cantidad de stock. |
-| InventoryResource.cs | DTO / Output Resource | Esquema de respuesta para la representación aplanada del inventario. |
-| CreateInventoryCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un CreateInventoryResource a CreateInventoryCommand. |
-| InventoryResourceFromEntityAssembler.cs | Assembler / Transformer | Mapea la entidad de agregado Inventory a un DTO InventoryResource. |
-
-#### 2.6.4.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| StockError.cs | Enum / Error | Enumera los tipos de errores asociados a las operaciones de inventario. |
-| IStockService.cs | Service Interface | Contrato del servicio de aplicación que define el manejo de comandos y consultas de stock. |
-| StockService.cs | Application Service Implementation | Implementa los casos de uso para crear, actualizar y consultar registros de inventario con manejo de transacciones. |
-
-#### 2.6.4.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ModelBuilderExtensions.cs | EF Core Configuration / Extension | Configura la entidad Inventory en la base de datos (claves, tipos de columna y restricciones). |
-| InventoryRepository.cs | Repository Implementation | Implementa la persistencia para la entidad Inventory en base de datos mediante EF Core. |
-
-#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
-
-```plantuml
-@startuml C4_Component_Stock
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-LAYOUT_WITH_LEGEND()
-
-title Component Diagram for Stock Management Bounded Context
-
-Container(web_app, "Single-Page Application", "Angular", "Interfaz gráfica para la gestión de inventario y stock.")
-
-Container_Boundary(api, "Stock Management Container") {
-    Component(inventories_controller, "InventoriesController", "ASP.NET Core REST Controller", "Expone endpoints REST para inventario (/api/v1/inventories).")
-    
-    Component(stock_service, "StockService", "Application Service", "Coordina los casos de uso para consultar, crear y actualizar existencias.")
-    
-    Component(domain_model, "Domain Model", "Domain Layer", "Encapsula el Agregado Inventory, comandos, consultas y errores.")
-    
-    Component(inventory_repo, "InventoryRepository", "EF Core Repository", "Provee persistencia física de inventarios en MySQL.")
-}
-
-ContainerDb(database, "Relational Database", "MySQL", "Almacena existencias, ubicaciones y registros de inventario.")
-
-Rel(web_app, inventories_controller, "Realiza peticiones HTTP/REST", "JSON/HTTPS")
-
-Rel(inventories_controller, stock_service, "Invocación de Comandos y Consultas")
-
-Rel(stock_service, domain_model, "Opera y modifica")
-
-Rel(stock_service, inventory_repo, "Persiste y consulta mediante")
-
-Rel(inventory_repo, database, "Lee y escribe datos en", "EF Core / MySQL Protocol")
-
-@enduml
-```
-
-#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
-
-```plantuml
-@startuml Domain_Class_Diagram_Stock
-
-package "StockManagement.Domain.Model.Aggregates" {
-    class Inventory {
-        + Id: int
-        + ProductId: int
-        + StockQuantity: int
-        + WarehouseLocation: string
-        + CreatedAt: DateTimeOffset?
-        + UpdatedAt: DateTimeOffset?
-        # Inventory()
-        + Inventory(command: CreateInventoryCommand)
-        + UpdateStock(newQuantity: int): void
-        + DiscountStock(quantity: int): void
-    }
-}
-
-package "StockManagement.Domain.Model.Commands" {
-    class CreateInventoryCommand <<record>> {
-        + ProductId: int
-        + StockQuantity: int
-        + WarehouseLocation: string?
-    }
-
-    class UpdateInventoryCommand <<record>> {
-        + Id: int
-        + StockQuantity: int
-    }
-}
-
-package "StockManagement.Domain.Model.Queries" {
-    class GetAllInventoryQuery <<record>>
-    class GetInventoryByIdQuery <<record>> {
-        + Id: int
-    }
-}
-
-package "StockManagement.Domain.Repositories" {
-    interface IInventoryRepository {
-        + FindByProductIdAsync(productId: int, cancellationToken: CancellationToken): Task<Inventory?>
-    }
-}
-
-package "StockManagement.Application.Errors" {
-    enum StockError {
-        NotFound
-        DuplicateProduct
-        InvalidProductId
-        InvalidStockQuantity
-        InsufficientStock
-        UnexpectedError
-    }
-}
-
-' Relaciones
-Inventory ..> CreateInventoryCommand : "creado mediante"
-Inventory ..> UpdateInventoryCommand : "actualizado mediante"
-
-IInventoryRepository ..> Inventory : "persiste y consulta"
-
-@enduml
-```
-
-##### 2.6.4.6.2. Bounded Context Database Design Diagram
-
-```plantuml
-@startuml Database_Design_Stock
-
-entity "inventories" as inventories {
-    * Id : INT <<PK, AI>>
-    --
-    * ProductId : INT
-    * StockQuantity : INT
-    WarehouseLocation : VARCHAR(255)
-    CreatedAt : DATETIME
-    UpdatedAt : DATETIME
-}
-
-@enduml
-```
-
-### 2.6.5. Bounded Context: Notification Management
-
-#### 2.6.5.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| Notification.cs | Aggregate Root | Representa la entidad de notificación de un usuario y gestiona las reglas para marcarla como leída. |
-| NotificationAudit.cs | Partial Class / Audit | Implementa IAuditableEntity para registrar marcas de tiempo de creación y actualización de notificaciones. |
-| INotificationRepository.cs | Domain Repository Interface | Define el contrato de persistencia para consultar y almacenar notificaciones por perfil de usuario. |
-| CreateNotificationCommand.cs | Command Record | DTO de comando para solicitar la creación y envío de una nueva notificación o alerta. |
-| MarkAsReadCommand.cs | Command Record | DTO de comando para solicitar el cambio de estado de una notificación a leída. |
-| GetNotificationByIdQuery.cs | Query Record | Estructura para consultar una notificación específica por su identificador único. |
-| GetNotificationsByProfileQuery.cs | Query Record | Estructura para consultar el historial de notificaciones asociadas a un perfil. |
-
-#### 2.6.5.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| NotificationsController.cs | REST Controller | Maneja las solicitudes HTTP relacionadas con notificaciones y alertas (creación, lectura e historial). |
-| CreateNotificationResource.cs | DTO / Input Resource | Esquema de datos para la solicitud de creación y envío de una notificación. |
-| MarkAsReadResource.cs | DTO / Input Resource | Esquema de datos para solicitar el cambio de estado a leída. |
-| NotificationResource.cs | DTO / Output Resource | Esquema de respuesta con los datos detallados de la notificación. |
-| CreateNotificationCommandFromResourceAssembler.cs | Assembler / Transformer | Mapea un CreateNotificationResource a CreateNotificationCommand. |
-| NotificationResourceFromEntityAssembler.cs | Assembler / Transformer | Mapea la entidad de agregado Notification a un DTO NotificationResource. |
-
-#### 2.6.5.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| NotificationError.cs | Enum / Error | Enumera los tipos de errores asociados al procesamiento y envío de notificaciones. |
-| INotificationService.cs | Service Interface | Contrato del servicio de aplicación que define la gestión de comandos y consultas para notificaciones. |
-| NotificationService.cs | Application Service Implementation | Implementa la lógica de aplicación para crear, marcar como leídas y consultar notificaciones con control transaccional. |
-
-#### 2.6.5.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ModelBuilderExtensions.cs | EF Core Configuration / Extension | Configura el mapeo ORM de la entidad Notification en la base de datos (claves, restricciones y longitud de columnas). |
-| NotificationRepository.cs | Repository Implementation | Implementa la persistencia y consultas específicas de notificaciones por perfil y estado de lectura mediante EF Core. |
-
-#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
-
-```plantuml
-@startuml C4_Component_Notification
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
-
-LAYOUT_WITH_LEGEND()
-
-title Component Diagram for Notification Management Bounded Context
-
-Container(web_app, "Single-Page Application", "Angular", "Interfaz gráfica para la gestión y visualización de notificaciones.")
-
-Container_Boundary(api, "Notification Management Container") {
-    Component(notifications_controller, "NotificationsController", "ASP.NET Core REST Controller", "Expone endpoints REST para notificaciones (/api/v1/notifications).")
-    
-    Component(notification_service, "NotificationService", "Application Service", "Coordina la creación, actualización de estado y envío de alertas.")
-    
-    Component(domain_model, "Domain Model", "Domain Layer", "Encapsula el Agregado Notification, comandos, consultas y reglas.")
-    
-    Component(notification_repo, "NotificationRepository", "EF Core Repository", "Provee persistencia física de notificaciones en MySQL.")
-}
-
-ContainerDb(database, "Relational Database", "MySQL", "Almacena alertas, mensajes, estados de lectura e historial por usuario.")
-
-Rel(web_app, notifications_controller, "Realiza peticiones HTTP/REST", "JSON/HTTPS")
-
-Rel(notifications_controller, notification_service, "Invocación de Comandos y Consultas")
-
-Rel(notification_service, domain_model, "Opera y modifica")
-
-Rel(notification_service, notification_repo, "Persiste y consulta mediante")
-
-Rel(notification_repo, database, "Lee y escribe datos en", "EF Core / MySQL Protocol")
-
-@enduml
-```
-
-#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
-
-```plantuml
-@startuml Domain_Class_Diagram_Notification
-
-package "NotificationManagement.Domain.Model.Aggregates" {
-    class Notification {
-        + Id: int
-        + ProfileId: int
-        + Title: string
-        + Message: string
-        + IsRead: bool
-        + IsAlert: bool
-        + CreatedAt: DateTimeOffset?
-        + UpdatedAt: DateTimeOffset?
-        # Notification()
-        + Notification(command: CreateNotificationCommand)
-        + MarkAsRead(): void
-    }
-}
-
-package "NotificationManagement.Domain.Model.Commands" {
-    class CreateNotificationCommand <<record>> {
-        + ProfileId: int
-        + Title: string
-        + Message: string
-        + IsAlert: bool
-    }
-
-    class MarkAsReadCommand <<record>> {
-        + Id: int
-    }
-}
-
-package "NotificationManagement.Domain.Model.Queries" {
-    class GetNotificationByIdQuery <<record>> {
-        + Id: int
-    }
-
-    class GetNotificationsByProfileQuery <<record>> {
-        + ProfileId: int
-    }
-}
-
-package "NotificationManagement.Domain.Repositories" {
-    interface INotificationRepository {
-        + FindByProfileIdAsync(profileId: int, cancellationToken: CancellationToken): Task<IEnumerable<Notification>>
-        + FindUnreadByProfileIdAsync(profileId: int, cancellationToken: CancellationToken): Task<IEnumerable<Notification>>
-    }
-}
-
-package "NotificationManagement.Application.Errors" {
-    enum NotificationError {
-        NotFound
-        DuplicateNotification
-        InvalidProfileId
-        InvalidTitle
-        InvalidMessage
-        UnexpectedError
-    }
-}
-
-' Relaciones
-Notification ..> CreateNotificationCommand : "creado mediante"
-Notification ..> MarkAsReadCommand : "actualizado mediante"
-
-INotificationRepository ..> Notification : "persiste y consulta"
-
-@enduml
-```
-
-##### 2.6.5.6.2. Bounded Context Database Design Diagram
-
-```plantuml
-@startuml Database_Design_Notification
-
-entity "notifications" as notifications {
-    * Id : INT <<PK, AI>>
-    --
-    * ProfileId : INT
-    * Title : VARCHAR(255)
-    * Message : VARCHAR(1000)
-    * IsRead : BOOLEAN
-    * IsAlert : BOOLEAN
-    CreatedAt : DATETIME
-    UpdatedAt : DATETIME
-}
-
-@enduml
-```
-
-### 2.6.6. Bounded Context: Shared Bounded
-
-#### 2.6.6.1. Domain Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| IAuditableEntity.cs | Entity Interface | Contrato para entidades que requieren seguimiento de marcas de tiempo de auditoría (creación y actualización). |
-| IEvent.cs | Domain Event Interface | Interfaz base para marcar eventos de dominio e integrarlos con el bus de eventos del patrón mediador. |
-| Error.cs | Value Record | Estructura para la representación unificada de errores de dominio con código y mensaje. |
-| IBaseRepository.cs | Repository Interface | Interfaz genérica que define las operaciones CRUD fundamentales para todos los repositorios. |
-| IUnitOfWork.cs | Repository Interface | Contrato para la confirmación atómica de cambios en la capa de persistencia. |
-
-#### 2.6.6.2. Interface Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| ProblemDetailsFactory.cs | Interface Custom Factory | Construye respuestas uniformes de error estandarizadas (RFC 7807 Problem Details) con soporte de localización para la API REST. |
-
-#### 2.6.6.3. Application Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| IEventHandler.cs | Application Event Handler Interface | Abstracción para el manejo y suscripción de eventos de dominio integrados con el patrón Mediador. |
-| Result.cs | Application Model / Functional Result | Wrapper genérico y no genérico que encapsula el resultado de las operaciones en la capa de aplicación (éxito o fallo con errores fuertemente tipados). |
-
-#### 2.6.6.4. Infrastructure Layer
-
-| Archivo | Tipo de Componente | Responsabilidad Principal |
-| :--- | :--- | :--- |
-| AppDbContext.cs | EF Core DbContext | Contexto principal de la base de datos que registra los modelos de todos los Bounded Contexts y aplica las convenciones de nombrado snake_case e interceptores. |
-| AuditableEntityInterceptor.cs | EF Core Interceptor | Intercepta la persitencia en EF Core para auditar automáticamente las marcas de tiempo (CreatedAt y UpdatedAt) en entidades IAuditableEntity. |
-| BaseRepository.cs | Base Repository Implementation | Implementación genérica de las operaciones de lectura, escritura y borrado sobre Entity Framework Core. |
-| UnitOfWork.cs | Repository Implementation | Controla la confirmación de transacciones atómicas llamando al guardado centralizado de cambios en el AppDbContext. |
-| LoggingCommandBehavior.cs | Mediator Pipeline Behavior | Intercepta la ejecución de comandos para registrar logs de auditoría antes y después de su procesamiento. |
-| GlobalExceptionHandlerMiddleware.cs | ASP.NET Core Middleware | Middleware centralizado de gestión de excepciones no capturadas para transformarlas en respuestas normalizadas Problem Details. |
-| MiddlewareExtensions.cs | Middleware Extension | Método de extensión de IApplicationBuilder para registrar de forma limpia el middleware de excepciones globales en el pipeline HTTP. |
-
-# Capítulo III: Solution UI/UX Design
-
-[Volver al contenido principal](#contenido)
-
-> Pendiente de desarrollo.
-
-## 3.1. Product Design
-
-### 3.1.1. Style Guidelines
-
-#### 3.1.1.1. General Style Guidelines
-
-### 3.1.2. Information Architecture
-
-#### 3.1.2.1. Organization Systems
-
-#### 3.1.2.2. Labelling Systems
-
-#### 3.1.2.3. SEO Tags and Meta Tags
-
-#### 3.1.2.4. Searching Systems
-
-#### 3.1.2.5. Navigation Systems
-
-### 3.1.3. Landing Page UI Design
-
-#### 3.1.3.1. Landing Page Wireframe
-
-#### 3.1.3.2. Landing Page Mock-up
-
-### 3.1.4. Mobile Applications UX/UI Design
-
-#### 3.1.4.1. Mobile Applications Wireframes
-
-#### 3.1.4.2. Mobile Applications Wireflow Diagrams
-
-#### 3.1.4.3. Mobile Applications Mock-ups
-
-#### 3.1.4.4. Mobile Applications User Flow Diagrams
-
-#### 3.1.4.5. Mobile Applications Prototyping
-
-# Capítulo IV: Product Implementation & Validation
-
-[Volver al contenido principal](#contenido)
-
-> Pendiente de desarrollo.
-
-## 4.1. Software Configuration Management
-
-### 4.1.1. Software Development Environment Configuration
-
-### 4.1.2. Source Code Management
-
-### 4.1.3. Source Code Style Guide & Conventions
-
-### 4.1.4. Software Deployment Configuration
-
-## 4.2. Landing Page & Mobile Application Implementation
-
-Repetir la siguiente estructura por cada sprint, reemplazando «x» por la posición de la subsección y «n» por el número del sprint.
-
-### 4.2.x. Sprint n
-
-#### 4.2.x.1. Sprint Planning n
-
-#### 4.2.x.2. Aspect Leaders and Collaborators
-
-#### 4.2.x.3. Sprint Backlog n
-
-#### 4.2.x.4. Development Evidence for Sprint Review
-
-#### 4.2.x.5. Testing Suite Evidence for Sprint Review
-
-#### 4.2.x.6. Execution Evidence for Sprint Review
-
-#### 4.2.x.7. Services Documentation Evidence for Sprint Review
-
-#### 4.2.x.8. Software Deployment Evidence for Sprint Review
-
-#### 4.2.x.9. Team Collaboration Insights during Sprint
-
-## 4.3. Validation Interviews
-
-### 4.3.1. Diseño de Entrevistas
-
-### 4.3.2. Registro de Entrevistas
-
-### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones
 
@@ -3806,49 +2451,11 @@ Repetir la siguiente estructura por cada sprint, reemplazando «x» por la posic
 
 ## Conclusiones y recomendaciones
 
-Pendiente de incorporar las conclusiones y recomendaciones correspondientes a cada entrega, relacionándolas con la problemática, los supuestos, las hipótesis y los resultados obtenidos.
+- TerraTech aborda la problemática de la agricultura familiar y de subsistencia en el Perú mediante una solución que integra sensores IoT de bajo costo y una aplicación móvil nativa. Su objetivo principal es transformar datos complejos de humedad, temperatura y nutrientes del suelo en recomendaciones comprensibles, alertas y visualizaciones intuitivas para la toma de decisiones oportunas de riego y fertilización.
 
-## Video App Validation
+- El proyecto aplicó la metodología Lean UX formulando hipótesis verificables centradas en la reducción de uso innecesario de agua, ahorro en costos de fertilizantes y un incremento potencial de la rentabilidad del agricultor. Estas hipótesis se sustentaron con un proceso de Needfinding riguroso que incluyó 7 entrevistas semiestructuradas, elaboración de User Personas, User Task Matrix, User Journey Maps y Empathy Maps.
 
-Pendiente de incorporar la evidencia de validación de la aplicación con usuarios y la evaluación heurística.
-
-| Elemento | Información |
-| --- | --- |
-| Enlace al video | Por completar |
-| Duración | Por completar |
-| Captura representativa | Por incorporar |
-
-## Video About-the-Product
-
-Pendiente de incorporar el video de presentación de TerraTech, incluyendo su modelo de negocio, características, beneficios y demostración del producto.
-
-| Elemento | Información |
-| --- | --- |
-| Enlace en OneDrive | Por completar |
-| Enlace en YouTube | Por completar |
-| Duración | Por completar |
-| Captura representativa | Por incorporar |
-
-## Video About-the-Team
-
-Pendiente de incorporar el video sobre el trabajo del equipo, las actividades realizadas, los aprendizajes y el logro del Student Outcome.
-
-| Elemento | Información |
-| --- | --- |
-| Enlace al video | Por completar |
-| Duración | Por completar |
-| Captura representativa | Por incorporar |
-| Resumen y pauta de tiempos | Por completar |
-
-# Glosario
-
-[Volver al contenido principal](#contenido)
-
-Esta sección reúne los términos técnicos, las abreviaturas y los acrónimos utilizados en el informe.
-
-| Término | Definición |
-| --- | --- |
-| Por completar | Por completar |
+- Para asegurar la escalabilidad del proyecto, el equipo empleó Domain-Driven Design (DDD) a nivel estratégico, identificando 5 Bounded Contexts a través de EventStorming y Domain Storytelling. La arquitectura de la solución se estructuró mediante el modelo C4 (Contexto, Contenedores y Despliegue) contemplando arquitecturas limpias y desacopladas alineadas al dominio agrícola.
 
 # Bibliografía
 
@@ -3870,36 +2477,6 @@ Organización de las Naciones Unidas para la Alimentación y la Agricultura. (20
 
 Gothelf, J. (2016, 15 de diciembre). *The Lean UX canvas*. https://jeffgothelf.com/blog/leanuxcanvas/
 
-## Lenguajes, frameworks y herramientas
-
-Pendiente de incorporar las referencias de los lenguajes, frameworks y herramientas utilizados en el proyecto.
-
 # Anexos
 
 [Volver al contenido principal](#contenido)
-
-## Anexo A. Videos de Exposiciones
-
-Esta sección reúne las evidencias de exposición correspondientes a las entregas del proyecto.
-
-| Entrega | Enlace al video | Duración del video | Responsable de Consolidación | Captura representativa |
-| --- | --- | --- | --- | --- |
-| AV1 | [Enlace al Video de Exposición AV1 - TerraTech](https://upcedupe-my.sharepoint.com/) | 14:35 min | Bendezú Navarro, Rúbens Fitzgerald | [Captura en enlace] |
-| TB1 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
-| AV2 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
-| TB2 | Por completar | Máximo 15 minutos | Por completar | Por incorporar |
-
-#### Pauta y Estructura de la Exposición AV1 (Consolidada por Persona 4):
-* **Min 00:00 - 02:30:** Introducción, Startup Profile (NovaTech) y Problemática 5W+2H (Persona 1).
-* **Min 02:30 - 05:30:** Análisis de Competidores, Matriz FODA y Entrevistas a usuarios (Persona 2).
-* **Min 05:30 - 08:30:** Needfinding, User Personas, User Stories y Product Backlog (Persona 3).
-* **Min 08:30 - 11:45:** **Big Picture EventStorming, Strategic DDD, Domain Storytelling, Context Mapping y Diagramas C4 de Contexto, Contenedores y Despliegue (Persona 4 - Bendezú Navarro, Rúbens Fitzgerald).**
-* **Min 11:45 - 14:35:** Tactical DDD preliminar, asignación de Bounded Contexts y conclusiones grupales del avance (Persona 5 y cierre grupal).
-
-## Anexo B. Artefactos complementarios
-
-Pendiente de incorporar los documentos, diagramas y demás evidencias complementarias del proyecto.
-
-| Artefacto | Descripción | Enlace o ubicación |
-| --- | --- | --- |
-| Por completar | Por completar | Por completar |
