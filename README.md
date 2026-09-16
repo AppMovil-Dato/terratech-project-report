@@ -32,7 +32,7 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | --- | --- | --- | --- |
-| 0.1.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Elaboración completa de la sección 2.3.5 Big Picture EventStorming, sección 2.5 Strategic-Level Domain-Driven Design (Candidate Context Discovery, Domain Storytelling, Bounded Context Canvases, Context Mapping y Diagramas C4 de Contexto, Contenedores y Despliegue), perfil de integrante, objetivos SMART y Student Outcome 7. |
+| 0.5.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Consolidación del Release 0.5.0: Modelado integral de Big Picture EventStorming (2.3.5), Strategic DDD (Context Discovery, Domain Storytelling, Bounded Context Canvases, Context Mapping), Arquitectura C4 (Contexto, Contenedores, Despliegue), perfil de integrante (Persona 4), Objetivos SMART, Student Outcome 7, glosario técnico y bibliografía APA 7 con papers Q1/Q2. |
 
 ## Project Report Collaboration Insights
 
