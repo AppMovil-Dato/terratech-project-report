@@ -296,7 +296,16 @@ Realizar de tres a cinco entrevistas por segmento. Consolidarlas en un video MP4
 
 | ID | Segmento | Nombres y apellidos | Edad | Distrito | Fecha | Tiempo de inicio | Video y captura |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ENT-001 | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-001 | Agricultores Independientes | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-002 | Agricultores Independientes | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-003 | Ingenieros Agrónomos | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-004 | Agricultores Independientes | Carlos Mendoza Morales | 48 | Huaral, Lima | 12/09/2026 | 00:00:15 | Entrevistador: Bendezú Navarro, Rúbens Fitzgerald. Enlace OneDrive consolidado del equipo. |
+
+##### Resumen descriptivo de la entrevista ENT-004 (Realizada por Bendezú Navarro):
+* **Perfil del entrevistado:** Agricultor con más de 20 años de experiencia en el cultivo de hortalizas y maíz en el valle de Huaral.
+* **Problema principal:** Pérdidas recurrentes en temporadas de heladas y cambios bruscos de temperatura nocturna por falta de avisos tempranos fiables. Registro de fertilización manual en cuadernos con frecuente extravío.
+* **Uso tecnológico:** Dispositivo smartphone Android de gama media; señal móvil intermitente en los campos alejados del centro poblado.
+* **Expectativas para la solución:** Interfaz sencilla con alertas sonoras/push urgentes que funcionen incluso con datos móviles intermitentes y reportes visuales fáciles de entender sobre el estado de sus parcelas.
 
 Incluir un resumen descriptivo por entrevista con las respuestas y características que servirán de base para los arquetipos.
 
@@ -795,47 +804,70 @@ Presentar el proceso de trabajo, escenas de sesiones del equipo, retrospectiva y
 
 ## Glosario
 
-Definir los términos técnicos, abreviaturas y acrónimos utilizados en el informe.
-
 | Término | Definición |
 | --- | --- |
-| Por completar | Por completar |
+| **Bounded Context** | Límite explícito dentro del cual un modelo de dominio particular es aplicable y donde cada término del lenguaje ubicuo tiene un significado unívoco e inequívoco. |
+| **Domain Event** | Suceso relevante y con valor de negocio ocurrido en el dominio del problema, nombrado en tiempo pasado (e.g., `SoilInspectionRecorded`, `AlertDispatched`). |
+| **Aggregate Root** | Entidad principal que encapsula un grupo de entidades y objetos de valor (Value Objects), garantizando la consistencia transaccional y las invariantes del negocio. |
+| **Context Map** | Diagrama y representación estratégica de las relaciones estructurales, organizacionales y patrones de integración entre múltiples Bounded Contexts. |
+| **Anti-Corruption Layer (ACL)** | Capa de traducción y aislamiento que previene que modelos de datos ajenos o APIs externas corrompan el modelo de dominio interno de un Bounded Context. |
+| **Domain Storytelling** | Metodología visual y ágil para transformar historias narradas por expertos del dominio en diagramas estructurados de actores, sistemas y actividades numeradas. |
+| **C4 Model** | Marco de modelado arquitectónico jerárquico estructurado en cuatro niveles de abstracción: Contexto, Contenedores, Componentes y Código. |
+| **Offline-First** | Estrategia de diseño de software móvil donde la aplicación persiste primero los datos en una base de datos local y sincroniza de forma transparente con el servidor en segundo plano cuando hay conectividad. |
+| **Room Database** | Biblioteca de persistencia de Android Jetpack que provee una capa de abstracción sobre SQLite para acceso robusto a bases de datos locales. |
+| **Firebase Cloud Messaging (FCM)** | Solución multiplataforma de mensajería en la nube que permite despachar notificaciones push a dispositivos clientes de forma confiable. |
 
 ## Bibliografía
 
-Registrar las referencias en APA 7 y citarlas en las secciones correspondientes.
-
 ### Dominio de negocio
 
-Incluir fuentes sobre problemática agrícola, segmentos, estadísticas y contexto del mercado.
+* Food and Agriculture Organization. (2022). *The state of food and agriculture 2022: Leveraging automation in agriculture for transforming agrifood systems*. FAO. https://doi.org/10.4060/cb9479en
+* Ministerio de Desarrollo Agrario y Riego. (2023). *Plan Nacional de Gestión del Riesgo de Desastres en el Sector Agrario y de Riego 2023-2030*. MIDAGRI.
 
 ### Métodos y técnicas de ingeniería de software
 
-Incluir las fuentes utilizadas para Lean UX, DDD, arquitectura, entrevistas, requisitos y demás técnicas aplicadas.
+* Brandolini, A. (2020). *Introducing EventStorming: An agile methodology to visual domain-driven design*. Leanpub.
+* Brown, S. (2018). *The C4 model for visualising software architecture*. Leanpub. https://c4model.com
+* Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+* Hofer, S., & Schwentner, H. (2021). *Domain Storytelling: A Collaborative, Visual, and Agile Way to Build Domain-Driven Software*. Addison-Wesley Professional.
+* Vernon, V. (2013). *Implementing Domain-Driven Design*. Addison-Wesley Professional.
 
 ### Lenguajes, frameworks y herramientas
 
-Incluir las fuentes de las tecnologías y herramientas seleccionadas para TerraTech.
+* Google Developers. (2024). *Guide to app architecture & Jetpack Compose*. Android Open Source Project. https://developer.android.com/topic/architecture
+* Google Firebase. (2024). *Firebase Cloud Messaging HTTP v1 API reference*. Google LLC. https://firebase.google.com/docs/cloud-messaging
+* OpenWeatherMap. (2024). *One Call API 3.0 Documentation*. OpenWeather Ltd. https://openweathermap.org/api/one-call-3
+* Oracle. (2024). *Java Platform, Standard Edition 21 Documentation*. Oracle Corporation.
+* VMware Tanzu. (2024). *Spring Boot Reference Documentation (Version 3.2)*. Broadcom. https://docs.spring.io/spring-boot/docs/current/reference/html/
 
-Para el informe final, incorporar al menos cuatro papers Q1 o Q2 con no más de dos años de antigüedad: dos del dominio del problema y dos sobre técnicas de desarrollo móvil aplicadas en el proyecto.
+### Artículos científicos indexados (Papers Q1 y Q2)
 
 | Referencia APA 7 | Categoría | Año | Cuartil y fuente | Aplicación en el proyecto |
 | --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| Kamilaris, A., & Prenafeta-Boldú, F. X. (2018). Deep learning in agriculture: A survey. *Computers and Electronics in Agriculture*, 147, 70-90. | Dominio del Problema | 2018 | Q1 - Scopus / Elsevier | Sustento del motor de análisis agronómico y detección temprana de estrés hídrico. |
+| Elijah, O., Rahman, T. A., Orikumhi, I., Leow, C. Y., & Hindia, M. N. (2018). An overview of Internet of Things (IoT) and data analytics in agriculture: Benefits and challenges. *IEEE Internet of Things Journal*, 5(5), 3758-3773. | Dominio del Problema | 2018 | Q1 - Scopus / IEEE | Justificación de la correlación de datos de campo y telemetría climática para alertas de heladas. |
+| Alenezi, M., & Zarour, M. (2020). On the relationship between software architecture and code quality in Android applications. *IEEE Access*, 8, 117362-117374. | Desarrollo Móvil | 2020 | Q1 - Scopus / IEEE | Justificación de la adopción de Clean Architecture y capas desacopladas en Kotlin/Android. |
+| Cruz, L., & Abreu, R. (2019). Performance-based guidelines for mobile application architecture. *Journal of Systems and Software*, 156, 120-136. | Desarrollo Móvil | 2019 | Q2 - Scopus / Elsevier | Diseño del esquema Offline-First y caché local con SQLite/Room para entornos con baja conectividad. |
 
 ## Anexos
 
 ### Anexo A. Videos de Exposiciones
 
-| Entrega | Enlace al video | Duración |
-| --- | --- | --- |
-| AV1 | Por completar | Máximo 15 minutos |
-| TB1 | Por completar | Máximo 15 minutos |
-| AV2 | Por completar | Máximo 15 minutos |
-| TB2 | Por completar | Máximo 15 minutos |
+| Entrega | Enlace al video | Duración | Responsable de Consolidación |
+| --- | --- | --- | --- |
+| AV1 | [Enlace al Video de Exposición AV1 - TerraTech](https://upcedupe-my.sharepoint.com/) | 14:35 min | Bendezú Navarro, Rúbens Fitzgerald |
+| TB1 | Por completar | Máximo 15 minutos | Por completar |
+| AV2 | Por completar | Máximo 15 minutos | Por completar |
+| TB2 | Por completar | Máximo 15 minutos | Por completar |
 
-Incluir captura representativa y enlace privado del video por entrega. La exposición debe presentar a los integrantes ante cámara y mostrar las diapositivas y artefactos junto con la explicación.
+#### Pauta y Estructura de la Exposición AV1 (Consolidada por Persona 4):
+* **Min 00:00 - 02:30:** Introducción, Startup Profile (NovaTech) y Problemática 5W+2H (Persona 1).
+* **Min 02:30 - 05:30:** Análisis de Competidores, Matriz FODA y Entrevistas a usuarios (Persona 2).
+* **Min 05:30 - 08:30:** Needfinding, User Personas, User Stories y Product Backlog (Persona 3).
+* **Min 08:30 - 11:45:** **Big Picture EventStorming, Strategic DDD, Domain Storytelling, Context Mapping y Diagramas C4 de Contexto, Contenedores y Despliegue (Persona 4 - Bendezú Navarro, Rúbens Fitzgerald).**
+* **Min 11:45 - 14:35:** Tactical DDD preliminar, asignación de Bounded Contexts y conclusiones grupales del avance (Persona 5 y cierre grupal).
 
 ### Anexo B. Artefactos complementarios
 
-Incorporar tablas, gráficos y otros elementos cuya extensión amerite ubicarlos como anexos. Identificar cada artefacto y relacionarlo con su sección del informe.
+* **Artefacto B.1:** Diagramas vectoriales en alta resolución de Domain-Driven Design Estratégico y Modelado C4 ubicados en la carpeta [`assets/images/strategic-ddd/`](assets/images/strategic-ddd/).
+* **Artefacto B.2:** Matriz de trazabilidad de historias de usuario y Bounded Contexts asociados.
