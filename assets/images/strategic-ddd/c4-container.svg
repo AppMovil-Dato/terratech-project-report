@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="shadow5" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow5" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <rect x="30" y="25" width="1140" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadow5)"/>
+  <text x="60" y="58" fill="#f8fafc" font-size="20" font-weight="700">TerraTech — C4 Container Diagram (Nivel 2)</text>
+  <text x="60" y="80" fill="#94a3b8" font-size="13">Diagrama de Contenedores: Arquitectura de Aplicación Móvil Android Nativa, API REST y Persistencia</text>
+
+  <!-- System Boundary -->
+  <rect x="30" y="115" width="820" height="715" rx="16" fill="#111827" fill-opacity="0.6" stroke="#2563eb" stroke-width="2" stroke-dasharray="8,6"/>
+  <text x="50" y="145" fill="#60a5fa" font-size="14" font-weight="bold">Límite del Sistema: TerraTech Platform</text>
+
+  <!-- Container 1: Mobile App Android -->
+  <g transform="translate(60, 175)">
+    <rect width="340" height="280" rx="12" fill="#438dd5" stroke="#93c5fd" stroke-width="2" filter="url(#shadow5)"/>
+    <text x="170" y="35" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">Android Mobile Application</text>
+    <text x="170" y="58" fill="#dbeafe" font-size="12" text-anchor="middle">[Container: Kotlin / Jetpack Compose]</text>
+    <text x="25" y="95" fill="#ffffff" font-size="11">Interfaz móvil intuitiva para agricultores.</text>
+    <text x="25" y="115" fill="#ffffff" font-size="11">Acceso a sensores locales (Cámara, GPS).</text>
+    <text x="25" y="135" fill="#ffffff" font-size="11">Soporte Offline-First con sincronización.</text>
+
+    <!-- Sub-element: Room DB inside Mobile -->
+    <rect x="25" y="165" width="290" height="90" rx="8" fill="#1e40af" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="170" y="190" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">Local SQLite / Room Database</text>
+    <text x="170" y="210" fill="#bfdbfe" font-size="11" text-anchor="middle">[Database Component - Dispositivo Móvil]</text>
+    <text x="170" y="235" fill="#dbeafe" font-size="10" text-anchor="middle">Caché offline de parcelas, reportes y tareas</text>
+  </g>
+
+  <!-- Container 2: Web Landing Page -->
+  <g transform="translate(60, 500)">
+    <rect width="340" height="150" rx="12" fill="#438dd5" stroke="#93c5fd" stroke-width="2" filter="url(#shadow5)"/>
+    <text x="170" y="35" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">Web Landing Page</text>
+    <text x="170" y="58" fill="#dbeafe" font-size="12" text-anchor="middle">[Container: HTML5 / CSS3 / JavaScript / Vue]</text>
+    <text x="25" y="95" fill="#ffffff" font-size="11">Página pública promocional, propuesta de valor,</text>
+    <text x="25" y="115" fill="#ffffff" font-size="11">planes de suscripción y enlace de descarga APK.</text>
+  </g>
+
+  <!-- Container 3: Backend REST API -->
+  <g transform="translate(470, 175)">
+    <rect width="340" height="280" rx="12" fill="#438dd5" stroke="#93c5fd" stroke-width="2" filter="url(#shadow5)"/>
+    <text x="170" y="35" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">Backend REST API</text>
+    <text x="170" y="58" fill="#dbeafe" font-size="12" text-anchor="middle">[Container: Java 21 / Spring Boot 3]</text>
+    <text x="25" y="95" fill="#ffffff" font-size="11">• IAM &amp; JWT Security Controller</text>
+    <text x="25" y="115" fill="#ffffff" font-size="11">• Parcel &amp; Soil Inspection Management API</text>
+    <text x="25" y="135" fill="#ffffff" font-size="11">• Agronomic Analytics &amp; Risk Engine</text>
+    <text x="25" y="155" fill="#ffffff" font-size="11">• Alert Dispatcher &amp; Threshold Monitor</text>
+    <text x="25" y="175" fill="#ffffff" font-size="11">• Community &amp; Knowledge Forum API</text>
+    <rect x="25" y="210" width="290" height="50" rx="6" fill="#1e40af"/>
+    <text x="170" y="232" fill="#93c5fd" font-size="11" font-weight="bold" text-anchor="middle">Arquitectura Limpia / DDD Multicapa</text>
+    <text x="170" y="248" fill="#e0f2fe" font-size="10" text-anchor="middle">Domain, Application, Interface &amp; Infrastructure</text>
+  </g>
+
+  <!-- Container 4: Relational Database PostgreSQL -->
+  <g transform="translate(470, 500)">
+    <rect width="340" height="150" rx="12" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2.5" filter="url(#shadow5)"/>
+    <text x="170" y="35" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">Relational Database</text>
+    <text x="170" y="58" fill="#bfdbfe" font-size="12" text-anchor="middle">[Container: PostgreSQL 16]</text>
+    <text x="25" y="95" fill="#ffffff" font-size="11">Almacena usuarios, coordenadas de parcelas,</text>
+    <text x="25" y="115" fill="#ffffff" font-size="11">historial de inspecciones, reportes y posts.</text>
+  </g>
+
+  <!-- External Services Boundary -->
+  <g transform="translate(890, 175)">
+    <rect width="270" height="180" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow5)"/>
+    <text x="135" y="35" fill="#f59e0b" font-size="15" font-weight="bold" text-anchor="middle">OpenWeatherMap API</text>
+    <text x="135" y="55" fill="#cbd5e1" font-size="11" text-anchor="middle">[External API]</text>
+    <text x="20" y="90" fill="#94a3b8" font-size="11">Datos meteorológicos en tiempo real,</text>
+    <text x="20" y="110" fill="#94a3b8" font-size="11">radiación solar, pronósticos de heladas</text>
+    <text x="20" y="130" fill="#94a3b8" font-size="11">y precipitación acumulada.</text>
+  </g>
+
+  <g transform="translate(890, 420)">
+    <rect width="270" height="180" rx="12" fill="#1e293b" stroke="#f97316" stroke-width="2" filter="url(#shadow5)"/>
+    <text x="135" y="35" fill="#f97316" font-size="15" font-weight="bold" text-anchor="middle">Firebase Cloud Messaging</text>
+    <text x="135" y="55" fill="#cbd5e1" font-size="11" text-anchor="middle">[External SaaS Push Gateway]</text>
+    <text x="20" y="90" fill="#94a3b8" font-size="11">Entrega de notificaciones push de alta</text>
+    <text x="20" y="110" fill="#94a3b8" font-size="11">prioridad ante alertas climáticas y</text>
+    <text x="20" y="130" fill="#94a3b8" font-size="11">respuestas de agrónomos en la comunidad.</text>
+  </g>
+
+  <!-- Connectors -->
+  <!-- Mobile -> Backend -->
+  <path d="M 400 280 L 470 280" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <text x="435" y="270" fill="#38bdf8" font-size="10" font-weight="bold" text-anchor="middle">HTTPS/REST</text>
+  <text x="435" y="295" fill="#94a3b8" font-size="9" text-anchor="middle">JSON/JWT</text>
+
+  <!-- Backend -> Database -->
+  <path d="M 640 455 L 640 500" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <text x="640" y="480" fill="#38bdf8" font-size="10" font-weight="bold" text-anchor="middle">JDBC / JPA</text>
+
+  <!-- Backend -> Weather API -->
+  <path d="M 810 260 L 890 260" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow5)"/>
+  <text x="850" y="250" fill="#fde68a" font-size="9" font-weight="bold" text-anchor="middle">REST/JSON</text>
+
+  <!-- Backend -> FCM -->
+  <path d="M 810 380 L 890 470" stroke="#f97316" stroke-width="2" marker-end="url(#arrow5)"/>
+  <text x="850" y="415" fill="#fed7aa" font-size="9" font-weight="bold" text-anchor="middle">FCM Admin</text>
+</svg>

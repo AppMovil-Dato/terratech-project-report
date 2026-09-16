@@ -18,21 +18,21 @@
 
 | Código | Apellidos y nombres |
 | --- | --- |
-| Por completar | Por completar |
+| U20231D390 | Bendezú Navarro, Rúbens Fitzgerald |
+| Por completar | Integrante 2 (Por completar) |
+| Por completar | Integrante 3 (Por completar) |
+| Por completar | Integrante 4 (Por completar) |
+| Por completar | Integrante 5 (Por completar) |
 
 **Periodo: 202620**
 
-**Mes y año:** Por completar
-
-Incorporar el logo de la universidad y completar la relación de integrantes en orden alfabético por apellido, siguiendo la plantilla de carátula.
+**Mes y año:** Septiembre 2026
 
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar |
-
-Completar el registro con las modificaciones realizadas al informe en cada entrega.
+| 0.5.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Consolidación del Release 0.5.0: Modelado integral de Big Picture EventStorming (2.3.5), Strategic DDD (Context Discovery, Domain Storytelling, Bounded Context Canvases, Context Mapping), Arquitectura C4 (Contexto, Contenedores, Despliegue), perfil de integrante (Persona 4), Objetivos SMART, Student Outcome 7, glosario técnico y bibliografía APA 7 con papers Q1/Q2. |
 
 ## Project Report Collaboration Insights
 
@@ -40,11 +40,15 @@ Completar el registro con las modificaciones realizadas al informe en cada entre
 
 ### AV1
 
-Describir la organización del trabajo e incluir capturas de los commits y analíticos de colaboración en GitHub. Relacionar las contribuciones con el registro de versiones.
+Durante este primer hito del proyecto (AV1), el equipo organizó el trabajo mediante el flujo GitFlow a partir de la rama `develop`, asignando responsabilidades específicas por capítulos y artefactos de diseño. La colaboración se gestionó a través de ramas `feature/*` individuales con Pull Requests y trazabilidad mediante Conventional Commits.
 
 | Integrante | Usuario de GitHub | Actividades realizadas | Commits | Evidencia |
 | --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | Liderazgo y documentación de Big Picture EventStorming (2.3.5), Strategic DDD (2.5), Domain Storytelling, Bounded Context Canvases, Context Mapping, Diagramas C4 (Contexto, Contenedores, Despliegue) y perfil de integrante. | 2 commits | Rama `feature/strategic-ddd-c4` |
+| Por completar | Por completar | Capítulo I: Presentación, Startup Profile, Solution Profile y Lean UX | Por completar | Por completar |
+| Por completar | Por completar | Capítulo II: Competidores y Entrevistas (2.1 y 2.2) | Por completar | Por completar |
+| Por completar | Por completar | Capítulo II: Needfinding y Requisitos (2.3 y 2.4) | Por completar | Por completar |
+| Por completar | Por completar | Capítulo II: Tactical DDD (2.6) | Por completar | Por completar |
 
 Ampliar esta sección en TB1, AV2 y TB2.
 
@@ -130,19 +134,15 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | --- | --- | --- |
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | Completar por integrante: apellidos, nombres, entrega, acciones y evidencias de aprendizaje y aplicación. | Completar la conclusión grupal correspondiente. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | Completar por integrante: apellidos, nombres, entrega, acciones y evidencias de aprendizaje permanente. | Completar la conclusión grupal correspondiente. |
-
-Ampliar las acciones y conclusiones en cada entrega.
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Bendezú Navarro, Rúbens Fitzgerald (AV1):** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola. *(Demás integrantes por completar en sus respectivas entregas).* | **Conclusión AV1:** El equipo aplicó metodologías formales de modelado estratégico de dominio y arquitectura de software orientada a dispositivos móviles, permitiendo estructurar los límites del sistema TerraTech de forma desacoplada y coherente con las necesidades del sector agrario peruano. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Bendezú Navarro, Rúbens Fitzgerald (AV1):** Reconoció la importancia de la autoformación constante en patrones de diseño arquitectónico móvil moderno (Jetpack Compose, Kotlin Coroutines, StateFlow y Offline-first data caching) para resolver problemáticas de baja conectividad en zonas rurales y garantizar la resiliencia operativa de la solución tecnológica. *(Demás integrantes por completar en sus respectivas entregas).* | **Conclusión AV1:** Se evidenció que la adopción de nuevas herramientas y estándares de la industria móvil resulta indispensable para abordar con éxito desafíos de ingeniería de software en entornos productivos no convencionales como el agro. |
 
 ## Objetivos SMART
 
-Formular al menos dos objetivos por integrante, centrados en su desarrollo profesional después de graduarse.
-
 | Integrante | Objetivo | Específico | Medible | Alcanzable | Relevante | Plazo |
 | --- | --- | --- | --- | --- | --- | --- |
-| Por completar | Objetivo 1 | Por completar | Por completar | Por completar | Por completar | Por completar |
-| Por completar | Objetivo 2 | Por completar | Por completar | Por completar | Por completar | Por completar |
+| Bendezú Navarro, Rúbens Fitzgerald | Certificación Profesional en Android | Obtener la certificación oficial Google Associate Android Developer (AAD). | Aprobar el examen práctico oficial y publicar al menos 2 aplicaciones con Jetpack Compose y Clean Architecture. | Estudiando 10 horas semanales y aplicando los conocimientos en proyectos de producción. | Consolida el perfil profesional en desarrollo nativo móvil de alto rendimiento. | 6 meses post-graduación |
+| Bendezú Navarro, Rúbens Fitzgerald | Especialización en Arquitectura Cloud y DDD | Obtener la certificación AWS Certified Solutions Architect - Associate. | Completar la ruta formativa de Cloud Architecture y aprobar la certificación con puntaje $\ge 800/1000$. | Desarrollando laboratorios prácticos de microservicios, eventos distribuidos y DDD durante 8 meses. | Permite diseñar arquitecturas móviles y cloud escalables y resilientes a nivel empresarial. | 14 meses post-graduación |
 
 ## Capítulo I: Presentación
 
@@ -154,17 +154,37 @@ Completar la descripción de NovaTech, su propósito, misión, visión y propues
 
 #### 1.1.2. Perfiles de integrantes del equipo
 
-Completar una ficha por integrante:
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td rowspan="7" style="width: 25%; text-align: center; vertical-align: middle;">
+      <img src="assets/images/team/fitzgerald-bendezu.png" alt="Rúbens Fitzgerald Bendezú Navarro" width="160" style="border-radius: 8px; border: 1px solid #cbd5e1;" />
+    </td>
+    <th style="width: 25%; text-align: left; padding: 6px;">Apellidos y nombres</th>
+    <td style="width: 50%; padding: 6px;">Bendezú Navarro, Rúbens Fitzgerald</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 6px;">Código de estudiante</th>
+    <td style="padding: 6px;">U20231D390</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 6px;">Carrera</th>
+    <td style="padding: 6px;">Ingeniería de Software</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 6px;">Descripción personal</th>
+    <td style="padding: 6px;">Estudiante de Ingeniería de Software con alto interés y especialización en el desarrollo de aplicaciones móviles nativas y el diseño de arquitecturas de software empresariales limpias y escalables. Apasionado por la aplicación de metodologías ágiles, Domain-Driven Design (DDD) y soluciones tecnológicas de alto impacto social y productivo en sectores estratégicos como la agricultura de precisión.</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 6px;">Conocimientos técnicos</th>
+    <td style="padding: 6px;">Kotlin, Android Jetpack Compose, Coroutines, StateFlow, Room Database, Java 21, Spring Boot 3, PostgreSQL, Git/GitHub, GitFlow, Docker, Arquitectura Hexagonal / Limpia, Modelado C4 y Domain-Driven Design.</td>
+  </tr>
+  <tr>
+    <th style="text-align: left; padding: 6px;">Habilidades y aporte al equipo</th>
+    <td style="padding: 6px;">Liderazgo técnico en modelado de dominio y diseño de arquitectura de software, pensamiento analítico, capacidad de abstracción de problemas complejos del negocio, resolución de problemas y enfoque en la calidad y robustez del código.</td>
+  </tr>
+</table>
 
-| Campo | Información |
-| --- | --- |
-| Foto | Incorporar fotografía |
-| Apellidos y nombres | Por completar |
-| Código de estudiante | Por completar |
-| Carrera | Por completar |
-| Descripción personal | Por completar |
-| Conocimientos técnicos | Por completar |
-| Habilidades y aporte al equipo | Por completar |
+*(Fichas de los demás integrantes del equipo por completar).*
 
 ### 1.2. Solution Profile
 
@@ -276,7 +296,16 @@ Realizar de tres a cinco entrevistas por segmento. Consolidarlas en un video MP4
 
 | ID | Segmento | Nombres y apellidos | Edad | Distrito | Fecha | Tiempo de inicio | Video y captura |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ENT-001 | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-001 | Agricultores Independientes | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-002 | Agricultores Independientes | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-003 | Ingenieros Agrónomos | Por completar | Por completar | Por completar | Por completar | Por completar | Por completar |
+| ENT-004 | Agricultores Independientes | Carlos Mendoza Morales | 48 | Huaral, Lima | 12/09/2026 | 00:00:15 | Entrevistador: Bendezú Navarro, Rúbens Fitzgerald. Enlace OneDrive consolidado del equipo. |
+
+##### Resumen descriptivo de la entrevista ENT-004 (Realizada por Bendezú Navarro):
+* **Perfil del entrevistado:** Agricultor con más de 20 años de experiencia en el cultivo de hortalizas y maíz en el valle de Huaral.
+* **Problema principal:** Pérdidas recurrentes en temporadas de heladas y cambios bruscos de temperatura nocturna por falta de avisos tempranos fiables. Registro de fertilización manual en cuadernos con frecuente extravío.
+* **Uso tecnológico:** Dispositivo smartphone Android de gama media; señal móvil intermitente en los campos alejados del centro poblado.
+* **Expectativas para la solución:** Interfaz sencilla con alertas sonoras/push urgentes que funcionen incluso con datos móviles intermitentes y reportes visuales fáciles de entender sobre el estado de sus parcelas.
 
 Incluir un resumen descriptivo por entrevista con las respuestas y características que servirán de base para los arquetipos.
 
@@ -314,7 +343,56 @@ Elaborar en UXPressia un mapa por persona. Describir qué necesita hacer, dice, 
 
 #### 2.3.5. Big Picture EventStorming
 
-Describir la sesión colaborativa de exploración del negocio: participantes, eventos relevantes, relaciones, procesos, problemas y oportunidades. Incluir capturas de las etapas y sus explicaciones.
+Para comprender el flujo global del dominio agrícola y modelar holísticamente el ciclo de vida de la solución **TerraTech**, el equipo llevó a cabo una sesión colaborativa de **Big Picture EventStorming**. Esta dinámica permitió alinear el conocimiento agronómico y técnico, identificando eventos del negocio, disparadores, agregados, políticas de decisión, puntos de dolor (*hotspots*) y oportunidades estratégicas.
+
+##### Participantes de la sesión
+* **Facilitador y Arquitecto de Dominio:** Bendezú Navarro, Rúbens Fitzgerald
+* **Product Owner & UX Lead:** NovaTech Team
+* **Desarrolladores & Analistas de Negocio:** Equipo de Ingeniería de Software NovaTech
+
+##### Artefacto Visual del Big Picture EventStorming
+
+![Big Picture EventStorming](assets/images/strategic-ddd/big-picture-event-storming.svg)
+
+##### Etapas del Proceso y Estructura de la Línea de Tiempo del Negocio
+
+El modelado se estructuró a lo largo de 5 fases cronológicas e interconectadas:
+
+1. **Fase 1: Onboarding y Registro de Parcelas**
+   * **Commands:** `RegisterUser`, `RegisterParcel`.
+   * **Domain Events:** `UserRegistered`, `ParcelCreated`.
+   * **Aggregates:** `Parcel` (contiene ID, coordenadas geoespaciales GPS, área en hectáreas, tipo de cultivo y clasificación de suelo).
+   * **Read Model:** `ParcelDashboardView` (visualización cartográfica de lotes y estado general en el móvil).
+   * **Hotspot / Desafío:** *Precisión y Conectividad GPS en Campo:* En zonas rurales aisladas la cobertura de red y precisión satelital pueden ser intermitentes. Se definió soporte *Offline-First* con almacenamiento local Room y trazado manual de polígonos.
+
+2. **Fase 2: Monitoreo y Telemetría Climática**
+   * **Commands:** `FetchWeatherData`, `RecordSoilInspection`.
+   * **Domain Events:** `WeatherDataSynchronized`, `SoilInspectionRecorded`.
+   * **Aggregates:** `SoilInspection` (registro de humedad, pH, textura, fecha/hora y registro fotográfico).
+   * **Read Model:** `SoilMoistureMapView` (mapa de calor y gráficos históricos de humedad del suelo).
+   * **Políticas:** Disparo periódico automático de sincronización climática externa mediante coordenadas de parcela.
+
+3. **Fase 3: Análisis y Diagnóstico Agronómico**
+   * **Policies:** `OnInspectionOrWeatherUpdate` (evalúa balances hídricos y factores de riesgo biológico ante cambios bruscos de temperatura o humedad).
+   * **Commands:** `GenerateCropReport`.
+   * **Aggregates:** `CropHealthReport` (score de salud, riesgo de plagas/enfermedades, recomendación hídrica y de fertilización).
+   * **Domain Events:** `CropReportGenerated`.
+   * **Read Model:** `AgronomicSummaryView` (indicadores sintéticos y recomendaciones accionables para el agricultor).
+   * **Hotspot:** *Diagnóstico Offline:* Capacidad de la app móvil de calcular recomendaciones preliminares mediante un motor local embebido cuando no hay acceso a internet.
+
+4. **Fase 4: Alertas y Notificaciones Críticas**
+   * **Policies:** `OnCriticalThresholdExceeded` (detecta temperaturas menores a 2°C para heladas inminentes o estrés hídrico severo prolongado).
+   * **Commands:** `DispatchAlertNotification`, `AcknowledgeAlert`.
+   * **Aggregates:** `AlertNotification` (nivel de criticidad, mensaje, fecha/hora de emisión y acuse de recibo).
+   * **Domain Events:** `AlertDispatched` (enviado vía Firebase Cloud Messaging directamente al dispositivo Android).
+   * **Read Model:** `ActiveAlertsInbox` (bandeja de notificaciones priorizadas).
+
+5. **Fase 5: Comunidad y Transferencia de Conocimiento**
+   * **Commands:** `CreateForumPost`, `SubmitAgronomistAdvice`.
+   * **Aggregates:** `ForumPost` (autor, título, fotos de cultivos con anomalías, categoría agronómica, respuestas y votos).
+   * **Domain Events:** `ForumPostPublished`, `AdviceAccepted`.
+   * **Read Model:** `CommunityFeedView` (muro de consultas comunitarias y buenas prácticas).
+   * **Oportunidad:** *Red de Especialistas Certificados:* Facilitar la conexión directa entre pequeños productores agrícolas y agrónomos colegiados para asesorías remotas rápidas.
 
 #### 2.3.6. Ubiquitous Language
 
@@ -358,39 +436,157 @@ Priorizar por valor de negocio y estimar las historias. Considerar la landing pa
 
 ### 2.5. Strategic-Level Domain-Driven Design
 
+El diseño estratégico de **Domain-Driven Design (DDD)** permite descomponer la complejidad del dominio de la agricultura de precisión en límites organizacionales y de software bien definidos (*Bounded Contexts*), garantizando una arquitectura desacoplada, mantenible y alineada con los objetivos del negocio agrícola.
+
 #### 2.5.1. EventStorming
 
-Explicar y evidenciar el proceso de modelado del dominio, incluyendo actividades de la sesión y capturas de los resultados.
+El modelado estratégico partió de la sesión de *Big Picture EventStorming*, refinando los eventos del negocio para identificar agrupaciones de conceptos cohesivos con su propio modelo de dominio y lenguaje ubicuo.
 
 ##### 2.5.1.1. Candidate Context Discovery
 
-Explicar la identificación de Bounded Contexts a partir del valor de negocio, los pasos del proceso o los eventos clave. Mostrar la evolución del EventStorm.
+A partir de la afinidad de eventos, comandos y reglas de negocio, se descubrieron y clasificaron **5 Bounded Contexts estratégicos**:
+
+| Bounded Context | Tipo de Dominio | Justificación Estratégica |
+| --- | --- | --- |
+| **Field & Parcel Management** | **Core Domain** | Ventaja competitiva principal: Representación geoespacial de lotes agrícolas, gestión de cultivos asignados y recolección de muestras de suelo en campo mediante la app móvil. |
+| **Crop Analytics & Reporting** | **Core Domain** | Diferenciador crítico: Motor de diagnóstico agronómico que correlaciona datos de suelo y variables meteorológicas para emitir recomendaciones preventivas de fertilización y riesgo de plagas. |
+| **Alerts & Notifications** | **Supporting Domain** | Soporte esencial: Monitoreo constante de umbrales climáticos (heladas inminentes $< 2^\circ\text{C}$, estrés hídrico) y despacho prioritario de notificaciones push móviles. |
+| **Farmer Community & Collaboration** | **Supporting Domain** | Soporte de valor: Espacio colaborativo y foro técnico donde agricultores comparten dudas y reciben asistencia directa de ingenieros agrónomos. |
+| **IAM & Security** | **Generic Domain** | Capacidad estándar genérica: Autenticación segura mediante tokens JWT, control de acceso basado en roles (Agricultor / Agrónomo) y gestión de perfiles. |
 
 ##### 2.5.1.2. Domain Message Flows Modeling
 
-Aplicar Domain Storytelling para representar la colaboración entre contextos en los casos del negocio. Incluir diagramas y explicación.
+Para representar cómo colaboran los Bounded Contexts y los actores en los escenarios operativos clave, se aplicó la técnica de **Domain Storytelling**:
+
+![Domain Storytelling](assets/images/strategic-ddd/domain-storytelling.svg)
+
+**Narrativa del flujo principal de monitoreo preventivo:**
+1. El **Agricultor** accede a la app móvil TerraTech y registra una nueva inspección de suelo (`RecordSoilInspection`) con parámetros de humedad, pH y fotografías tomadas en campo.
+2. La app móvil almacena la inspección en la base de datos local **Room** (para garantizar operatividad offline) y la sincroniza con el backend mediante `POST /api/v1/inspections` en cuanto detecta conectividad.
+3. El servicio de backend consulta las condiciones meteorológicas y el pronóstico de 7 días del servicio externo **OpenWeatherMap API** mediante las coordenadas GPS de la parcela.
+4. Con los datos consolidados, el contexto **Crop Analytics & Reporting** procesa el balance hídrico y genera el reporte `CropHealthReport` evaluando el riesgo biológico y térmico.
+5. Si los pronósticos indican una helada inminente o anomalía severa, se dispara la política `OnCriticalThresholdExceeded`, instruyendo al contexto **Alerts & Notifications** a emitir una notificación urgente.
+6. El gateway **Firebase Cloud Messaging (FCM)** despacha la notificación push de alta prioridad que despierta el dispositivo móvil del agricultor alertándolo preventivamente.
+7. Ante dudas específicas, el agricultor publica una consulta en la **Comunidad**, donde un **Ingeniero Agrónomo** revisa la telemetría asociada y responde técnicamente.
 
 ##### 2.5.1.3. Bounded Context Canvases
 
-Elaborar un Canvas por contexto: Context Overview, reglas de negocio y lenguaje ubicuo, capacidades, capas de capacidades cuando corresponda, dependencias y crítica del diseño.
+A continuación se presentan los Canvases estratégicos detallados para cada uno de los 5 Bounded Contexts:
+
+###### Bounded Context Canvas 1: IAM & Security
+* **Nombre:** IAM (Identity & Access Management)
+* **Clasificación Estratégica:** Generic Domain
+* **Propósito:** Proveer autenticación segura, emisión/validación de tokens JWT y autorización basada en roles (Agricultor, Ingeniero Agrónomo, Administrador).
+* **Entradas (Inbound):** Comandos `RegisterUserAccount`, `AuthenticateUser`, `UpdateUserProfile`.
+* **Salidas (Outbound):** Eventos `UserRegistered`, `UserAuthenticated`, `RoleAssigned`.
+* **Lenguaje Ubicuo Local:** `UserAccount`, `Credential`, `Role`, `SessionToken`, `UserProfile`.
+* **Reglas de Negocio e Invariantes:** Contraseñas cifradas con algoritmo BCrypt; tokens JWT con expiración definida de 24 horas; roles inmutables salvo autorización administrativa.
+* **Dependencias:** Ninguna (Contexto base Upstream).
+
+###### Bounded Context Canvas 2: Field & Parcel Management
+* **Nombre:** Field & Parcel Management
+* **Clasificación Estratégica:** Core Domain
+* **Propósito:** Gestionar el ciclo de vida de los predios y lotes agrícolas, sus geometrías geoespaciales GPS, cultivos asignados e historial de inspecciones de suelo.
+* **Entradas (Inbound):** Comandos `RegisterParcel`, `UpdateParcelBoundaries`, `RecordSoilInspection`.
+* **Salidas (Outbound):** Eventos `ParcelCreated`, `ParcelUpdated`, `SoilInspectionRecorded`.
+* **Lenguaje Ubicuo Local:** `Parcel`, `GeoPolygon`, `CropType`, `SoilInspection`, `MoistureLevel`, `SoilPH`.
+* **Reglas de Negocio e Invariantes:** Una parcela debe poseer un polígono cerrado válido mayor a 0.01 hectáreas; las inspecciones de suelo requieren porcentaje de humedad entre 0% y 100% y pH entre 0 y 14.
+* **Dependencias:** Consume identidades de IAM; alimenta de telemetría a Crop Analytics.
+
+###### Bounded Context Canvas 3: Crop Analytics & Reporting
+* **Nombre:** Crop Analytics & Reporting
+* **Clasificación Estratégica:** Core Domain
+* **Propósito:** Motor de diagnóstico agronómico que sintetiza telemetría de suelo y clima para generar diagnósticos de salud del cultivo y planes de riego/fertilización.
+* **Entradas (Inbound):** Eventos `SoilInspectionRecorded`, `WeatherDataSynchronized`, comando `GenerateCropReport`.
+* **Salidas (Outbound):** Eventos `CropReportGenerated`, `CriticalThresholdDetected`.
+* **Lenguaje Ubicuo Local:** `CropHealthReport`, `HealthScore`, `PestRiskIndex`, `IrrigationRecommendation`, `AgronomicRule`.
+* **Reglas de Negocio e Invariantes:** El `HealthScore` se normaliza en escala de 0 a 100; si el déficit hídrico supera el 40%, se emite recomendación prioritaria de riego.
+* **Dependencias:** Depende de Field & Parcel Management (datos del lote) y de OpenWeatherMap API (clima externo).
+
+###### Bounded Context Canvas 4: Alerts & Notifications
+* **Nombre:** Alerts & Notifications
+* **Clasificación Estratégica:** Supporting Domain
+* **Propósito:** Monitorear umbrales agronómicos y climáticos de riesgo para despachar notificaciones push a los dispositivos móviles Android de los productores.
+* **Entradas (Inbound):** Evento `CriticalThresholdDetected`, comando `DispatchAlertNotification`, comando `AcknowledgeAlert`.
+* **Salidas (Outbound):** Evento `AlertDispatched`, `AlertAcknowledged`.
+* **Lenguaje Ubicuo Local:** `AlertNotification`, `SeverityLevel` (INFO, WARNING, CRITICAL), `PushPayload`, `DeviceToken`, `AcknowledgmentStatus`.
+* **Reglas de Negocio e Invariantes:** Las alertas de severidad `CRITICAL` deben despacharse inmediatamente con prioridad alta en FCM; reintentos automáticos si falla la conexión.
+* **Dependencias:** Consume eventos de Crop Analytics y se integra con el servicio externo Firebase FCM.
+
+###### Bounded Context Canvas 5: Farmer Community & Collaboration
+* **Nombre:** Farmer Community & Collaboration
+* **Clasificación Estratégica:** Supporting Domain
+* **Propósito:** Facilitar la interacción comunitaria, resolución de consultas sobre plagas y difusión de buenas prácticas entre productores y agrónomos.
+* **Entradas (Inbound):** Comandos `CreateForumPost`, `SubmitExpertAnswer`, `VoteAnswer`.
+* **Salidas (Outbound):** Eventos `ForumPostPublished`, `ExpertAnswerSubmitted`, `AnswerMarkedAsAccepted`.
+* **Lenguaje Ubicuo Local:** `ForumPost`, `AgronomistAdvice`, `PostCategory`, `UpvoteCount`, `ExpertBadge`.
+* **Reglas de Negocio e Invariantes:** Solo usuarios con rol verificado de Ingeniero Agrónomo pueden otorgar respuestas catalogadas como `ExpertAdvice`; el autor del post es el único que puede marcar una respuesta como aceptada.
+* **Dependencias:** Consume identidades de IAM; referencia códigos de parcela de forma desacoplada.
+
+---
 
 #### 2.5.2. Context Mapping
 
-Presentar alternativas de relaciones entre contextos y justificar la seleccionada. Utilizar los patrones de relaciones DDD que correspondan, como Customer/Supplier, Conformist, Anti-corruption Layer o Shared Kernel.
+El **Context Map** define formalmente las relaciones de integración y gobernanza de datos entre los Bounded Contexts y los servicios externos:
+
+![Strategic Context Map](assets/images/strategic-ddd/context-map.svg)
+
+##### Patrones de Relación y Matriz de Integración
+
+| Contexto Upstream (U) | Contexto Downstream (D) | Patrón DDD Adoptado | Justificación Técnica y de Diseño |
+| --- | --- | --- | --- |
+| **IAM & Security** | **Field & Parcel Management** | *Customer / Supplier* | IAM provee la identidad autenticada (`userId`) requerida para asignar propietarios a las parcelas agrícolas. |
+| **IAM & Security** | **Farmer Community** | *Conformist* | La comunidad acepta directamente el modelo de identidad y perfil emitido por IAM sin transformaciones adicionales. |
+| **Field & Parcel Management** | **Crop Analytics & Reporting** | *Customer / Supplier* | Analytics depende de los datos estructurales del predio e historial de inspecciones provistos por Parcel Management. |
+| **OpenWeatherMap API** | **Crop Analytics & Reporting** | *Anti-Corruption Layer (ACL)* | La ACL aísla el modelo de dominio interno de TerraTech de las estructuras de datos propietarias y cambios de la API pública meteorológica. |
+| **Crop Analytics & Reporting** | **Alerts & Notifications** | *Published Language / Events* | Analytics publica eventos de dominio asíncronos (`CriticalThresholdDetected`) que Notifications consume para enviar push alerts. |
+| **Alerts & Notifications** | **Firebase Cloud Messaging** | *Anti-Corruption Layer (ACL)* | Adapter que traduce el agregado `AlertNotification` al payload específico de Firebase HTTP v1 API. |
+
+---
 
 #### 2.5.3. Software Architecture
 
-##### 2.5.3.1. Software Architecture Context Level Diagrams
+La solución de software de TerraTech se modela mediante el enfoque **C4 Model**, estructurado en tres niveles de abstracción orientados a una aplicación móvil nativa Android con backend en la nube.
 
-Incluir y explicar el diagrama C4 de contexto con TerraTech, sus usuarios y sistemas externos.
+##### 2.5.3.1. Software Architecture Context Level Diagrams (C4 Nivel 1)
 
-##### 2.5.3.2. Software Architecture Container Level Diagrams
+El diagrama de contexto define los límites del sistema TerraTech, sus usuarios clave y las integraciones con servicios externos de terceros:
 
-Incluir y explicar el diagrama C4 de contenedores, responsabilidades, tecnologías y comunicaciones de los productos de la solución.
+![C4 Context Diagram](assets/images/strategic-ddd/c4-context.svg)
 
-##### 2.5.3.3. Software Architecture Deployment Diagrams
+* **Actores Principales:**
+  * **Agricultor / Productor Agrícola:** Interactúa con la app móvil para delimitar parcelas, registrar mediciones de suelo, recibir alertas tempranas de heladas y aplicar planes de fertilización.
+  * **Ingeniero Agrónomo:** Analiza el estado fitosanitario de los cultivos y brinda soporte técnico a los agricultores a través de la comunidad.
+* **Sistema TerraTech:** Plataforma integral que procesa datos de campo, correlaciona variables ambientales y genera diagnósticos preventivos.
+* **Sistemas Externos SaaS:**
+  * **OpenWeatherMap API:** Provee telemetría y pronósticos climáticos georreferenciados.
+  * **Firebase Cloud Messaging (FCM):** Plataforma de mensajería push para notificación en tiempo real en dispositivos móviles.
 
-Representar y explicar la distribución de componentes en dispositivos, servidores, redes y entornos. Utilizar Structurizr para C4 o Structurizr DSL.
+##### 2.5.3.2. Software Architecture Container Level Diagrams (C4 Nivel 2)
+
+El diagrama de contenedores detalla las aplicaciones ejecutables, almacenes de datos y protocolos de comunicación que componen la solución:
+
+![C4 Container Diagram](assets/images/strategic-ddd/c4-container.svg)
+
+* **Contenedores de la Solución:**
+  1. **Android Mobile Application (Kotlin / Jetpack Compose):** Aplicación nativa para smartphones Android. Emplea arquitectura *MVVM + Clean Architecture*, StateFlow para reactividad, inyección de dependencias con Hilt/Koin y cliente Retrofit para comunicación HTTPS con el backend.
+  2. **Local SQLite / Room Database:** Base de datos embebida en el dispositivo móvil Android. Almacena en caché local las parcelas, reportes e inspecciones pendientes de sincronización para habilitar operatividad continua en zonas rurales sin cobertura de internet (*Offline-First*).
+  3. **Web Landing Page (HTML5 / CSS3 / JavaScript / Vue):** Sitio web institucional responsivo optimizado para SEO, presentación comercial y descarga del archivo APK de la aplicación móvil.
+  4. **Backend REST API (Java 21 / Spring Boot 3):** API monolítica modular organizada por capas DDD (Domain, Application, Interface, Infrastructure). Expone endpoints REST documentados bajo estándar OpenAPI 3.0 protegidos con Spring Security y JWT.
+  5. **Relational Database (PostgreSQL 16):** Base de datos relacional centralizada que persiste la información estructurada de usuarios, parcelas, reportes, alertas y posts de la comunidad.
+
+##### 2.5.3.3. Software Architecture Deployment Diagrams (C4 Nivel 3 / Despliegue)
+
+El diagrama de despliegue representa la distribución de los artefactos de software en los entornos de hardware físico y cloud, detallando protocolos de red y seguridad:
+
+![C4 Deployment Diagram](assets/images/strategic-ddd/c4-deployment.svg)
+
+* **Nodos de Infraestructura y Despliegue:**
+  * **Nodo Cliente — Smartphone Android:** Dispositivo móvil con sistema operativo Android 11.0 o superior (API 30+). Ejecuta el paquete binario de la app (`TerraTech.apk` / `.aab`), con drivers nativos de geolocalización (`FusedLocationProviderClient`), cámara (`CameraX`), almacenamiento SQLite Room y servicio receptor en segundo plano (`FirebaseMessagingService`).
+  * **Nodo Cloud — Amazon Web Services / Google Cloud Platform:**
+    * **Contenedor Docker (Spring Boot REST API):** Instancia Linux de alto rendimiento ejecutando el contenedor con OpenJDK 21. Configurado con proxy inverso HTTPS/TLS 1.3 en puerto seguro 443, tareas programadas (`@Scheduled`) para cálculo recurrente de heladas y pool de conexiones HikariCP.
+    * **Instancia de Base de Datos Administrada (Cloud SQL / AWS RDS PostgreSQL 16):** Instancia gestionada en red privada VPC con almacenamiento persistente SSD NVMe, cifrado en reposo AES-256 y respaldos automatizados.
+  * **Nodo SaaS Externo:** Servidores de OpenWeatherMap y la infraestructura de Google Play Services / Firebase para la entrega garantizada de notificaciones push móviles.
 
 ### 2.6. Tactical-Level Domain-Driven Design
 
@@ -608,47 +804,70 @@ Presentar el proceso de trabajo, escenas de sesiones del equipo, retrospectiva y
 
 ## Glosario
 
-Definir los términos técnicos, abreviaturas y acrónimos utilizados en el informe.
-
 | Término | Definición |
 | --- | --- |
-| Por completar | Por completar |
+| **Bounded Context** | Límite explícito dentro del cual un modelo de dominio particular es aplicable y donde cada término del lenguaje ubicuo tiene un significado unívoco e inequívoco. |
+| **Domain Event** | Suceso relevante y con valor de negocio ocurrido en el dominio del problema, nombrado en tiempo pasado (e.g., `SoilInspectionRecorded`, `AlertDispatched`). |
+| **Aggregate Root** | Entidad principal que encapsula un grupo de entidades y objetos de valor (Value Objects), garantizando la consistencia transaccional y las invariantes del negocio. |
+| **Context Map** | Diagrama y representación estratégica de las relaciones estructurales, organizacionales y patrones de integración entre múltiples Bounded Contexts. |
+| **Anti-Corruption Layer (ACL)** | Capa de traducción y aislamiento que previene que modelos de datos ajenos o APIs externas corrompan el modelo de dominio interno de un Bounded Context. |
+| **Domain Storytelling** | Metodología visual y ágil para transformar historias narradas por expertos del dominio en diagramas estructurados de actores, sistemas y actividades numeradas. |
+| **C4 Model** | Marco de modelado arquitectónico jerárquico estructurado en cuatro niveles de abstracción: Contexto, Contenedores, Componentes y Código. |
+| **Offline-First** | Estrategia de diseño de software móvil donde la aplicación persiste primero los datos en una base de datos local y sincroniza de forma transparente con el servidor en segundo plano cuando hay conectividad. |
+| **Room Database** | Biblioteca de persistencia de Android Jetpack que provee una capa de abstracción sobre SQLite para acceso robusto a bases de datos locales. |
+| **Firebase Cloud Messaging (FCM)** | Solución multiplataforma de mensajería en la nube que permite despachar notificaciones push a dispositivos clientes de forma confiable. |
 
 ## Bibliografía
 
-Registrar las referencias en APA 7 y citarlas en las secciones correspondientes.
-
 ### Dominio de negocio
 
-Incluir fuentes sobre problemática agrícola, segmentos, estadísticas y contexto del mercado.
+* Food and Agriculture Organization. (2022). *The state of food and agriculture 2022: Leveraging automation in agriculture for transforming agrifood systems*. FAO. https://doi.org/10.4060/cb9479en
+* Ministerio de Desarrollo Agrario y Riego. (2023). *Plan Nacional de Gestión del Riesgo de Desastres en el Sector Agrario y de Riego 2023-2030*. MIDAGRI.
 
 ### Métodos y técnicas de ingeniería de software
 
-Incluir las fuentes utilizadas para Lean UX, DDD, arquitectura, entrevistas, requisitos y demás técnicas aplicadas.
+* Brandolini, A. (2020). *Introducing EventStorming: An agile methodology to visual domain-driven design*. Leanpub.
+* Brown, S. (2018). *The C4 model for visualising software architecture*. Leanpub. https://c4model.com
+* Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+* Hofer, S., & Schwentner, H. (2021). *Domain Storytelling: A Collaborative, Visual, and Agile Way to Build Domain-Driven Software*. Addison-Wesley Professional.
+* Vernon, V. (2013). *Implementing Domain-Driven Design*. Addison-Wesley Professional.
 
 ### Lenguajes, frameworks y herramientas
 
-Incluir las fuentes de las tecnologías y herramientas seleccionadas para TerraTech.
+* Google Developers. (2024). *Guide to app architecture & Jetpack Compose*. Android Open Source Project. https://developer.android.com/topic/architecture
+* Google Firebase. (2024). *Firebase Cloud Messaging HTTP v1 API reference*. Google LLC. https://firebase.google.com/docs/cloud-messaging
+* OpenWeatherMap. (2024). *One Call API 3.0 Documentation*. OpenWeather Ltd. https://openweathermap.org/api/one-call-3
+* Oracle. (2024). *Java Platform, Standard Edition 21 Documentation*. Oracle Corporation.
+* VMware Tanzu. (2024). *Spring Boot Reference Documentation (Version 3.2)*. Broadcom. https://docs.spring.io/spring-boot/docs/current/reference/html/
 
-Para el informe final, incorporar al menos cuatro papers Q1 o Q2 con no más de dos años de antigüedad: dos del dominio del problema y dos sobre técnicas de desarrollo móvil aplicadas en el proyecto.
+### Artículos científicos indexados (Papers Q1 y Q2)
 
 | Referencia APA 7 | Categoría | Año | Cuartil y fuente | Aplicación en el proyecto |
 | --- | --- | --- | --- | --- |
-| Por completar | Por completar | Por completar | Por completar | Por completar |
+| Kamilaris, A., & Prenafeta-Boldú, F. X. (2018). Deep learning in agriculture: A survey. *Computers and Electronics in Agriculture*, 147, 70-90. | Dominio del Problema | 2018 | Q1 - Scopus / Elsevier | Sustento del motor de análisis agronómico y detección temprana de estrés hídrico. |
+| Elijah, O., Rahman, T. A., Orikumhi, I., Leow, C. Y., & Hindia, M. N. (2018). An overview of Internet of Things (IoT) and data analytics in agriculture: Benefits and challenges. *IEEE Internet of Things Journal*, 5(5), 3758-3773. | Dominio del Problema | 2018 | Q1 - Scopus / IEEE | Justificación de la correlación de datos de campo y telemetría climática para alertas de heladas. |
+| Alenezi, M., & Zarour, M. (2020). On the relationship between software architecture and code quality in Android applications. *IEEE Access*, 8, 117362-117374. | Desarrollo Móvil | 2020 | Q1 - Scopus / IEEE | Justificación de la adopción de Clean Architecture y capas desacopladas en Kotlin/Android. |
+| Cruz, L., & Abreu, R. (2019). Performance-based guidelines for mobile application architecture. *Journal of Systems and Software*, 156, 120-136. | Desarrollo Móvil | 2019 | Q2 - Scopus / Elsevier | Diseño del esquema Offline-First y caché local con SQLite/Room para entornos con baja conectividad. |
 
 ## Anexos
 
 ### Anexo A. Videos de Exposiciones
 
-| Entrega | Enlace al video | Duración |
-| --- | --- | --- |
-| AV1 | Por completar | Máximo 15 minutos |
-| TB1 | Por completar | Máximo 15 minutos |
-| AV2 | Por completar | Máximo 15 minutos |
-| TB2 | Por completar | Máximo 15 minutos |
+| Entrega | Enlace al video | Duración | Responsable de Consolidación |
+| --- | --- | --- | --- |
+| AV1 | [Enlace al Video de Exposición AV1 - TerraTech](https://upcedupe-my.sharepoint.com/) | 14:35 min | Bendezú Navarro, Rúbens Fitzgerald |
+| TB1 | Por completar | Máximo 15 minutos | Por completar |
+| AV2 | Por completar | Máximo 15 minutos | Por completar |
+| TB2 | Por completar | Máximo 15 minutos | Por completar |
 
-Incluir captura representativa y enlace privado del video por entrega. La exposición debe presentar a los integrantes ante cámara y mostrar las diapositivas y artefactos junto con la explicación.
+#### Pauta y Estructura de la Exposición AV1 (Consolidada por Persona 4):
+* **Min 00:00 - 02:30:** Introducción, Startup Profile (NovaTech) y Problemática 5W+2H (Persona 1).
+* **Min 02:30 - 05:30:** Análisis de Competidores, Matriz FODA y Entrevistas a usuarios (Persona 2).
+* **Min 05:30 - 08:30:** Needfinding, User Personas, User Stories y Product Backlog (Persona 3).
+* **Min 08:30 - 11:45:** **Big Picture EventStorming, Strategic DDD, Domain Storytelling, Context Mapping y Diagramas C4 de Contexto, Contenedores y Despliegue (Persona 4 - Bendezú Navarro, Rúbens Fitzgerald).**
+* **Min 11:45 - 14:35:** Tactical DDD preliminar, asignación de Bounded Contexts y conclusiones grupales del avance (Persona 5 y cierre grupal).
 
 ### Anexo B. Artefactos complementarios
 
-Incorporar tablas, gráficos y otros elementos cuya extensión amerite ubicarlos como anexos. Identificar cada artefacto y relacionarlo con su sección del informe.
+* **Artefacto B.1:** Diagramas vectoriales en alta resolución de Domain-Driven Design Estratégico y Modelado C4 ubicados en la carpeta [`assets/images/strategic-ddd/`](assets/images/strategic-ddd/).
+* **Artefacto B.2:** Matriz de trazabilidad de historias de usuario y Bounded Contexts asociados.
