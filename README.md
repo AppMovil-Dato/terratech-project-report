@@ -1,48 +1,63 @@
-![Logo de la Universidad Peruana de Ciencias Aplicadas](assets/images/readme/upc-logo.png){width=150px .nolink}
+<div align="center">
 
-\begin{center}
+  <img src="assets/images/readme/upc-logo.png" alt="Logo de la Universidad Peruana de Ciencias Aplicadas" width="90">
 
-Universidad Peruana de Ciencias Aplicadas
+  <p>
+    Universidad Peruana de Ciencias Aplicadas<br>
+    Carrera de Ingeniería de Software
+  </p>
 
-Carrera de Ingeniería de Software
+  <br>
 
-**1ACC0238**
+  <p>
+    <strong>1ACC0238</strong><br>
+    <strong>Aplicaciones para Dispositivos Móviles</strong>
+  </p>
 
-**Aplicaciones para Dispositivos Móviles**
+  <p>
+    NRC<br>
+    <strong>13975</strong>
+  </p>
 
-NRC  
-**13975**
+<h3>Informe del Trabajo Final</h3>
 
-**Informe de Trabajo Final**
+  <p>
+    Docente<br>
+    <strong>Quevedo Velasco, David Gerardo</strong>
+  </p>
 
-Docente  
-**Quevedo Velasco, David Gerardo**
+  <br>
 
-Equipo  
-**NovaTech**
+  <p>
+    Equipo<br>
+    <strong>NovaTech</strong>
+  </p>
 
-Proyecto  
-**TerraTech**
+  <p>
+    Proyecto<br>
+    <strong>TerraTech</strong>
+  </p>
 
-**Integrantes**
+  <br>
 
-U202323479    Barba Estrada, Bryan Eduardo
+  <p><strong>Integrantes</strong></p>
 
-U20231D390    Bendezú Navarro, Rúbens Fitzgerald
+  <p>
+    Barba Estrada, Bryan Eduardo — U202323479<br>
+    Bendezú Navarro, Rúbens Fitzgerald — U20231D390<br>
+    Delgado Perez, James Caleb — U202115277<br>
+    Pariona Chacca, Angel Jose — U202314734<br>
+    Retuerto Rodriguez, Jorge Manuel — U202318612
+  </p>
 
-U202115277    Delgado Perez, James Caleb
+  <br>
 
-U202314734    Pariona Chacca, Angel Jose
+  <p><strong>Período 202620</strong></p>
+  <p><strong>Septiembre 2026</strong></p>
 
-U202318612    Retuerto Rodriguez, Jorge Manuel
+</div>
 
-**Período 202620**
-
-**Septiembre 2026**
-
-\end{center}
-
-\pagebreak
+<div style="page-break-after: always;"></div>
 
 ## Registro de Versiones del Informe
 
@@ -114,7 +129,7 @@ assets/images/readme/report-collaboration-insights-av1.png.png
       largos y difíciles de recordar.
     - Evitar subir demasiado contenido en un solo commit.
 
-\pagebreak
+<div class="page"></div>
 
 ## Contenido
 
@@ -124,37 +139,37 @@ assets/images/readme/report-collaboration-insights-av1.png.png
 - [Student Outcome](#student-outcome)
 - [Objetivos SMART](#objetivos-smart)
 - [Capítulo I: Presentación](#capítulo-i-presentación)
-    - [1.1. Startup Profile](#startup-profile)
-        - [1.1.1. Descripción de la Startup](#descripción-de-la-startup)
-        - [1.1.2. Perfiles de integrantes del equipo](#perfiles-de-integrantes-del-equipo)
-    - [1.2. Solution Profile](#solution-profile)
-        - [1.2.1. Antecedentes y problemática](#antecedentes-y-problemática)
-        - [1.2.2. Lean UX Process](#lean-ux-process)
-    - [1.3. Segmentos objetivo](#segmentos-objetivo)
+    - [1.1. Startup Profile](#11-startup-profile)
+        - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+        - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.2. Solution Profile](#12-solution-profile)
+        - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [1.2.2. Lean UX Process](#122-lean-ux-process)
+    - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
-    - [2.1. Competidores](#competidores)
-        - [2.1.1. Análisis competitivo](#análisis-competitivo)
-        - [2.1.2. Estrategias y tácticas frente a competidores](#estrategias-y-tácticas-frente-a-competidores)
-    - [2.2. Entrevistas](#entrevistas)
-        - [2.2.1. Diseño de entrevistas](#diseño-de-entrevistas)
-        - [2.2.2. Registro de entrevistas](#registro-de-entrevistas)
-        - [2.2.3. Análisis de entrevistas](#análisis-de-entrevistas)
-    - [2.3. Needfinding](#needfinding)
-        - [2.3.1. User Personas](#user-personas)
-        - [2.3.2. User Task Matrix](#user-task-matrix)
-        - [2.3.3. User Journey Mapping](#user-journey-mapping)
-        - [2.3.4. Empathy Mapping](#empathy-mapping)
-        - [2.3.5. Big Picture EventStorming](#big-picture-eventstorming)
-        - [2.3.6. Ubiquitous Language](#ubiquitous-language)
-    - [2.4. Requirements Specification](#requirements-specification)
-        - [2.4.1. User Stories](#user-stories)
-        - [2.4.2. Impact Mapping](#impact-mapping)
-        - [2.4.3. Product Backlog](#product-backlog)
-    - [2.5. Strategic-Level Domain-Driven Design](#strategic-level-domain-driven-design)
-        - [2.5.1. EventStorming](#eventstorming)
-        - [2.5.2. Context Mapping](#context-mapping)
-        - [2.5.3. Software Architecture](#software-architecture)
-    - [2.6. Tactical-Level Domain-Driven Design](#tactical-level-domain-driven-design)
+    - [2.1. Competidores](#21-competidores)
+        - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [2.2. Entrevistas](#22-entrevistas)
+        - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+        - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+        - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+    - [2.3. Needfinding](#23-needfinding)
+        - [2.3.1. User Personas](#231-user-personas)
+        - [2.3.2. User Task Matrix](#232-user-task-matrix)
+        - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+        - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+        - [2.3.5. Big Picture EventStorming](#235-big-picture-eventstorming)
+        - [2.3.6. Ubiquitous Language](#236-ubiquitous-language)
+    - [2.4. Requirements Specification](#24-requirements-specification)
+        - [2.4.1. User Stories](#241-user-stories)
+        - [2.4.2. Impact Mapping](#242-impact-mapping)
+        - [2.4.3. Product Backlog](#243-product-backlog)
+    - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+        - [2.5.1. EventStorming](#251-eventstorming)
+        - [2.5.2. Context Mapping](#252-context-mapping)
+        - [2.5.3. Software Architecture](#253-software-architecture)
+    - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -162,7 +177,7 @@ assets/images/readme/report-collaboration-insights-av1.png.png
     - [Métodos y técnicas de ingeniería de software](#métodos-y-técnicas-de-ingeniería-de-software)
 - [Anexos](#anexos)
 
-\pagebreak
+<div class="page"></div>
 
 ## Student Outcome
 
@@ -282,7 +297,7 @@ relevantes y estar delimitados por un plazo.
 | Relevante | Utilizar arquitecturas conocidas, herramientas de código abierto o infraestructura en la nube con capas gratuitas (e.g., Firebase, Vercel, AWS Free Tier) para reducir costos iniciales y avanzar de forma incremental. | Permitirá validar una idea de negocio propia en el mercado, poner en práctica habilidades de liderazgo, producto y desarrollo integral, y diversificar las fuentes de ingresos/portafolio. |
 | Plazo | En un plazo máximo de 3 a 6 meses posteriores a la finalización de los estudios académicos. | En un plazo máximo de 6 a 9 meses, dedicando horas semanales constantes fuera del horario académico. |
 
-\pagebreak
+<div class="page"></div>
 
 # Capítulo I: Presentación
 
@@ -885,7 +900,9 @@ capacidades complementarias documentadas en los requisitos del producto
 se mantienen dentro del alcance general de TerraTech, aunque no todas se
 representan como hipótesis independientes en el Canvas.
 
-![Canvas](assets/images/cap1/LeanUxCanvas.png){with=90% height=650px}
+<p align="center">
+  <img src="assets/images/cap1/LeanUxCanvas.png" alt="Lean UX Canvas de TerraTech" width="800">
+</p>
 
 ## 1.3. Segmentos objetivo
 
@@ -1023,23 +1040,24 @@ El objetivo del **Competitive Analysis Landscape** es evaluar el perfil
 de producto, marketing y FODA de estos competidores para identificar
 oportunidades clave de diferenciación para **TerraTech**, especialmente
 en accesibilidad económica, experiencia móvil optimizada para trabajo en
-campo, soporte para zonas con baja o nula conectividad mediante
-almacenamiento local y monitoreo continuo del suelo en tiempo real.
+campo, soporte para zonas con conectividad limitada mediante almacenamiento 
+local y monitoreo frecuente de las condiciones del suelo con consulta de 
+información actualizada.
 
 | Dimensión | TerraTech (Nuestra Startup) | Agrotech | AgroVista del Valle | Phytech |
 |:---|:---|:---|:---|:---|
 | **Logo** | <img src="assets/images/cap2/terratech-logo.png" alt="Logo TerraTech" width="50"> | <img src="assets/images/cap2/logo-agrotech.png" alt="Logo AgroTech" width="50"> | <img src="assets/images/cap2/logo-vista-del-valle.png" alt="Logo AgroVista" width="50"> | <img src="assets/images/cap2/logo-phytech.png" alt="Logo Phytech" width="50"> |
-| **Overview** | Solución móvil conectada a sensores IoT de bajo costo que permite monitorear en tiempo real la humedad y nutrientes del suelo desde smartphones, generando alertas preventivas y análisis predictivo adaptado a las condiciones del campo peruano. | Empresa que implementa tecnología agrícola mediante el uso de drones, sensores y asesoría técnica especializada presencial para optimizar la productividad de los cultivos. | Empresa de servicios agrícolas que utiliza análisis multiespectral e imágenes satelitales/aéreas para monitorear la salud vegetal y evaluar las condiciones del terreno. | Plataforma digital internacional de agricultura de precisión que integra sensores IoT e inteligencia artificial para optimizar el riego y el rendimiento de cultivos a gran escala. |
-| **Ventaja competitiva y valor ofrecido** | Monitoreo continuo del suelo en tiempo real con latencia mínima, alertas push inmediatas, funcionamiento offline en la app móvil con sincronización posterior, interfaz simplificada para baja alfabetización digital y costos altamente accesibles para pequeños y medianos agricultores. | Soluciones integrales de hardware de alta gama (drones) y acompañamiento técnico presencial especializado. | Alta precisión en el análisis científico de imágenes multiespectrales para la detección temprana de anomalías en grandes extensiones. | Algoritmos avanzados de IA para la automatización de decisiones de riego a nivel empresarial con soporte global. |
-| **Mercado objetivo** | Pequeños y medianos agricultores peruanos, cooperativas agrarias, asesores/proveedores de insumos y compradores interesados en trazabilidad. | Medianos y grandes productores agrícolas y empresas agroindustriales. | Agricultores medianos, empresas agroexportadoras y agroindustrias con capacidad de inversión técnica. | Grandes empresas agroindustriales y agroexportadoras multinacionales. |
-| **Estrategias de marketing** | Alianzas con cooperativas agrarias locales, demostraciones prácticas en campo (pilotos), difusión digital y enfoque en sostenibilidad y retorno de inversión rápido. | Ventas directas B2B, demostraciones presenciales y participación en ferias y eventos del sector agroindustrial. | Servicios especializados B2B, networking corporativo y promoción técnica basada en casos de estudio. | Marketing B2B corporativo de alto nivel, posicionamiento premium internacional y publicaciones científicas. |
-| **Productos y servicios** | Sensores IoT de suelo, aplicación móvil (Android/iOS) con soporte offline, alertas climáticas/riego, dashboard de fertilidad y trazabilidad por código QR. | Venta y alquiler de drones agrícolas, sensores de campo y consultoría técnica agronómica personalizada. | Servicios de teledetección multiespectral, diagnósticos de vigor vegetal (NDVI) y reportes agronómicos periódicos. | Sensores IoT propietarios en planta/suelo, plataforma analítica con IA, módulos de automatización de riego y soporte corporativo. |
-| **Precios y costos** | Kit de sensores accesible (\< S/ 300) y modelo de suscripción mensual flexible (S/ 30 - S/ 50 por usuario/mes). | Costos elevados debido a la inversión en aeronaves no tripuladas y horas de consultoría especializada. | Tarifas medias a altas por hectárea o por vuelo de teledetección programado. | Costos muy elevados con suscripciones anuales empresariales (\> US\$ 500 / ha / año). |
-| **Canales de distribución** | Aplicación móvil en tiendas digitales (Google Play Store / App Store), landing page web informativa y venta directa de sensores. | Canal corporativo web, visitas comerciales directas y distribuidores autorizados de drones. | Plataforma web de consulta de reportes y contacto comercial directo. | Aplicación móvil y web corporativa con despliegue empresarial asistido. |
-| **Fortalezas** | Experiencia de usuario móvil diseñada para entornos rurales, bajo costo, soporte offline, alertas en tiempo real y adaptación local. | Tecnología de vanguardia (drones), personal técnico calificado y reconocimiento institucional. | Métricas visuales de alta precisión para macro-lotes y análisis científico riguroso. | Inteligencia artificial madura, infraestructura IoT robusta y respaldo financiero internacional. |
-| **Debilidades** | Dependencia de penetración de smartphones en zonas rurales y posicionamiento de marca en fase inicial. | Barrera de entrada por precios altos y dependencia de operadores especializados para el vuelo de drones. | No ofrece monitoreo continuo en tiempo real (depende de la frecuencia de captura aérea/satelital). | Costos prohibitivos para pequeños productores y escasa adaptación a la realidad agrícola andina/costera local. |
-| **Oportunidades** | Masificación de smartphones y redes de conectividad rural (LoRaWAN/4G), e interés creciente en optimización de recursos hídricos. | Creciente adopción de servicios tecnológicos por empresas agroexportadoras. | Creciente demanda de certificaciones de sanidad vegetal para exportación. | Crecimiento global del mercado de agricultura de precisión e IoT. |
-| **Amenazas** | Resistencia al cambio tecnológico en zonas tradicionales y variabilidad de cobertura móvil en el campo. | Aparición de soluciones de teledetección satelital gratuitas o de bajo costo. | Entrada de sensores IoT económicos que reduzcan la necesidad de vuelos recurrentes. | Competidores locales emergentes con soluciones móviles de bajo costo. |
+| **Overview** | Solución móvil conectada a sensores IoT de bajo costo que permite consultar información actualizada sobre la humedad, los nutrientes, la temperatura y otras condiciones relevantes del suelo desde smartphones, generando alertas y herramientas de análisis orientadas a apoyar la toma de decisiones agrícolas en el contexto peruano. | Empresa que implementa tecnología agrícola mediante el uso de drones, sensores y asesoría técnica especializada presencial para optimizar la productividad de los cultivos. | Empresa de servicios agrícolas que utiliza análisis multiespectral e imágenes satelitales o aéreas para monitorear la salud vegetal y evaluar las condiciones del terreno. | Plataforma digital internacional de agricultura de precisión que integra sensores IoT e inteligencia artificial para optimizar el riego y el rendimiento de cultivos a gran escala. |
+| **Ventaja competitiva y valor ofrecido** | Monitoreo actualizado de las condiciones del suelo, alertas móviles, consulta offline de información previamente almacenada con sincronización posterior, interfaz simplificada para usuarios con distintos niveles de alfabetización digital y una propuesta de costo accesible orientada a pequeños y medianos agricultores. | Soluciones integrales de hardware de alta gama, como drones, y acompañamiento técnico presencial especializado. | Alta precisión en el análisis científico de imágenes multiespectrales para macro-lotes y grandes extensiones agrícolas. | Algoritmos avanzados de inteligencia artificial para apoyar y automatizar decisiones de riego a nivel empresarial, con soporte internacional. |
+| **Mercado objetivo** | Pequeños y medianos agricultores peruanos, cooperativas agrarias, proveedores y asesores de insumos agrícolas, así como clientes finales y compradores interesados en consultar información de procedencia y trazabilidad. | Medianos y grandes productores agrícolas y empresas agroindustriales. | Agricultores medianos, empresas agroexportadoras y agroindustrias con capacidad de inversión técnica. | Grandes empresas agroindustriales y agroexportadoras multinacionales. |
+| **Estrategias de marketing** | Alianzas con cooperativas agrarias locales, demostraciones prácticas en campo, pilotos con usuarios, difusión digital y comunicación de los beneficios potenciales relacionados con la gestión de recursos y el acceso a información agrícola. | Ventas directas B2B, demostraciones presenciales y participación en ferias y eventos del sector agroindustrial. | Servicios especializados B2B, networking corporativo y promoción técnica basada en casos de estudio. | Marketing B2B corporativo de alto nivel, posicionamiento premium internacional y publicaciones técnicas y científicas. |
+| **Productos y servicios** | Sensores IoT para monitoreo agrícola, aplicación móvil con alcance inicial en Android y posibilidad de expansión futura a otras plataformas, soporte para consulta offline de información previamente almacenada, alertas agrícolas, herramientas de análisis y mecanismos de trazabilidad mediante códigos QR. | Venta y alquiler de drones agrícolas, sensores de campo y consultoría técnica agronómica personalizada. | Servicios de teledetección multiespectral, diagnósticos de vigor vegetal (NDVI) y reportes agronómicos periódicos. | Sensores IoT propietarios en planta y suelo, plataforma analítica con inteligencia artificial, módulos de automatización de riego y soporte corporativo. |
+| **Precios y costos** | Como hipótesis comercial inicial por validar, TerraTech considera un kit IoT con un precio inferior a S/ 300 y planes de suscripción mensual dentro de un rango aproximado de S/ 30 a S/ 50. Estos valores deberán contrastarse con los costos reales y la disposición de pago de los usuarios. | Costos elevados debido a la inversión en aeronaves no tripuladas y horas de consultoría especializada. | Tarifas medias a altas por hectárea o por vuelo de teledetección programado. | Costos elevados asociados a soluciones empresariales de agricultura de precisión y despliegues a gran escala. |
+| **Canales de distribución** | Aplicación móvil con distribución inicial orientada a Android, landing page web informativa, canales digitales y venta directa de los sensores. La expansión a otras plataformas móviles podrá evaluarse en etapas posteriores. | Canal corporativo web, visitas comerciales directas y distribuidores autorizados de drones. | Plataforma web de consulta de reportes y contacto comercial directo. | Aplicación móvil y plataforma web corporativa con despliegue empresarial asistido. |
+| **Fortalezas** | Experiencia de usuario móvil diseñada para entornos rurales, propuesta de bajo costo, consulta offline de información almacenada, alertas, integración con sensores y adaptación al contexto de pequeños y medianos agricultores. | Tecnología de vanguardia basada en drones, personal técnico calificado y acompañamiento especializado. | Métricas visuales de alta precisión para grandes extensiones y análisis científico especializado. | Inteligencia artificial madura, infraestructura IoT robusta y experiencia en despliegues agrícolas empresariales. |
+| **Debilidades** | Dependencia del acceso a smartphones compatibles, necesidad de validar la conectividad y autonomía de los dispositivos IoT, y posicionamiento de marca todavía en fase inicial. | Barrera de entrada por precios altos y dependencia de operadores especializados para el uso de drones. | No ofrece monitoreo continuo del suelo mediante sensores propios y depende de la frecuencia de captura aérea o satelital. | Costos elevados para pequeños productores y menor adaptación específica a la realidad agrícola rural peruana. |
+| **Oportunidades** | Mayor adopción de dispositivos móviles, evolución de las tecnologías de conectividad rural, disponibilidad de soluciones IoT de menor costo e interés creciente en la optimización del uso de agua, fertilizantes y otros recursos agrícolas. | Creciente adopción de servicios tecnológicos por empresas agroexportadoras. | Creciente demanda de herramientas de monitoreo y análisis para la producción agrícola. | Crecimiento global del mercado de agricultura de precisión e IoT. |
+| **Amenazas** | Resistencia al cambio tecnológico en determinados usuarios, conectividad limitada en zonas rurales, costos de mantenimiento del hardware y aparición de otras soluciones agrícolas de bajo costo. | Aparición de soluciones de teledetección satelital gratuitas o de menor costo. | Entrada de sensores IoT económicos que reduzcan la necesidad de vuelos recurrentes. | Aparición de competidores locales con soluciones móviles adaptadas al contexto y a presupuestos menores. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -1050,11 +1068,11 @@ accesible:
 
 | Hallazgo | Estrategia | Táctica |
 |:---|:---|:---|
-| **Altos costos de competidores (Phytech \> US\$ 500/ha; Agrotech con drones costosos)** | Diferenciación por accesibilidad económica y bajo costo de adopción. | Ofrecer kits de sensores IoT a precio de penetración (\< S/ 300) junto con una aplicación móvil accesible bajo suscripción flexible (S/ 30 - S/ 50 mensuales), eliminando costos de consultoría externa. |
-| **Falta de monitoreo continuo en competidores basados en vuelos periódicos (AgroVista del Valle)** | Posicionamiento en monitoreo continuo del suelo en tiempo real directo al smartphone. | Enviar lecturas de humedad y nutrientes cada 5 minutos directo a la app móvil, permitiendo tomar decisiones inmediatas de riego y fertilización antes de que se produzca estrés hídrico. |
-| **Baja alfabetización digital y desconfianza del agricultor rural ante software complejo** | Experiencia de usuario móvil simplificada e inclusiva con asistencia guiada. | Diseñar la aplicación móvil con tipografía legible (mínimo 16px), íconos de alto contraste, semáforos visuales (rojo/amarillo/verde), sistema de notificaciones push directas y tutoriales paso a paso interactivos. |
-| **Conectividad intermitente o nula en zonas agrícolas rurales** | Resiliencia de la solución móvil mediante arquitectura offline-first y conectividad IoT LoRaWAN. | Incorporar almacenamiento local en el dispositivo móvil (SQLite/Room) para consulta de datos sin conexión y sincronización en segundo plano al recuperar señal, complementado con sensores que transmiten vía LoRaWAN (915 MHz). |
-| **Falta de herramientas para que el agricultor demuestre la calidad de su cosecha a compradores** | Transparencia y trazabilidad compartible desde el dispositivo móvil. | Permitir al agricultor generar fichas de trazabilidad y códigos QR desde la app móvil para compartirlos por WhatsApp o imprimirlos, certificando el buen uso de agua y nutrientes ante clientes y proveedores. |
+| **Altos costos de adopción de algunas soluciones de agricultura de precisión orientadas a productores de mayor escala** | Diferenciación por accesibilidad económica y menor barrera de adopción para pequeños y medianos agricultores. | Evaluar una propuesta comercial basada en kits de sensores IoT de bajo costo y planes de suscripción accesibles. Como hipótesis inicial por validar, TerraTech considera un kit inferior a S/ 300 y planes mensuales dentro de un rango aproximado de S/ 30 a S/ 50, sujetos a los costos reales y a la disposición de pago de los usuarios. |
+| **Las soluciones basadas principalmente en vuelos o capturas periódicas no proporcionan una actualización permanente de las condiciones directamente medidas en el suelo** | Diferenciación mediante monitoreo frecuente de las condiciones del suelo y consulta de información actualizada desde la aplicación móvil. | Evaluar, mediante las pruebas de viabilidad técnica, una frecuencia de actualización adecuada para las lecturas de humedad, nutrientes, temperatura y otros indicadores, buscando proporcionar información suficientemente actualizada sin comprometer innecesariamente el consumo energético, la conectividad o la autonomía de los dispositivos. |
+| **Los agricultores pueden presentar distintos niveles de alfabetización digital y experiencia con aplicaciones móviles** | Diseñar una experiencia móvil simplificada, comprensible e inclusiva para usuarios con diferentes niveles de experiencia tecnológica. | Diseñar la aplicación móvil con tipografía legible, íconos representativos, indicadores visuales tipo semáforo, textos breves, alertas comprensibles y mecanismos de orientación que faciliten la interpretación de la información agrícola. |
+| **La conectividad puede ser intermitente o limitada en determinadas zonas agrícolas rurales** | Aplicar una estrategia de resiliencia móvil basada en almacenamiento local y sincronización posterior. | Incorporar almacenamiento local mediante tecnologías compatibles con la plataforma móvil, como SQLite/Room, para permitir la consulta de información previamente almacenada cuando no exista conexión. La sincronización se realizará cuando se recupere la conectividad. El protocolo de comunicación utilizado por los sensores y la frecuencia de transmisión serán definidos a partir de las pruebas de viabilidad técnica, considerando alternativas de conectividad adecuadas para el entorno rural. |
+| **Los compradores y otros actores del ecosistema agrícola pueden tener dificultades para consultar información clara sobre la procedencia y las condiciones registradas durante el cultivo** | Diferenciación mediante mecanismos de transparencia y trazabilidad accesibles desde dispositivos móviles. | Permitir al agricultor generar o compartir fichas informativas de trazabilidad y códigos QR que faciliten a clientes, compradores y otros usuarios autorizados la consulta de información registrada sobre la procedencia, el cultivo y el uso de recursos. Estos mecanismos presentan información disponible en TerraTech y no constituyen por sí mismos una certificación externa de calidad, inocuidad, producción orgánica o buenas prácticas agrícolas. |
 
 ## 2.2. Entrevistas
 
@@ -1207,10 +1225,9 @@ grabación y resumen descriptivo:
   digital. Indicó que para adoptar una aplicación móvil requiere
   asistencia guiada o tutoriales paso a paso interactivos, ya que la
   complejidad técnica lo intimida. Asimismo, opera en un entorno rural
-  con frecuentes cortes de energía e intermitencia de red, por lo que la
-  aplicación móvil debe ser capaz de almacenar datos localmente y operar
-  sin conexión continua, actualizando los datos de los sensores IoT vía
-  LoRaWAN y sincronizándose cuando haya señal disponible.
+  con frecuentes cortes de energía e intermitencia de red, por lo que valora
+  una aplicación móvil que permita consultar información previamente almacenada
+  sin conexión continua y sincronizarla posteriormente cuando se recupere la conectividad.
 
 - **ENT-003 (Anita Monago Cachay - Proveedora de Insumos, Lima):** Anita
   es mayorista de frutas y verduras con 35 años. Basa su éxito comercial
@@ -1249,16 +1266,18 @@ grabación y resumen descriptivo:
 - **ENT-007 (Albert Ponduro - Cliente Final / Comprador Mayorista,
   Cañete):** Albert (29 años) es comprador mayorista y comerciante en el
   Mercado Modelo. Destaca que la falta de verificación sobre el origen y
-  manejo del suelo le genera incertidumbre al negociar. Cree
-  indispensable una interfaz móvil ágil con escaneo QR o dashboard
-  simplificado que le permita certificar a sus clientes que las verduras
-  fueron cultivadas con suelo fértil y agua limpia.
+  manejo del suelo le genera incertidumbre al negociar. Cree indispensable 
+  una interfaz móvil ágil con escaneo QR o un dashboard simplificado que
+  le permita mostrar a sus clientes información registrada sobre el origen
+  y las condiciones de cultivo de los productos.
 
 ### 2.2.3. Análisis de entrevistas
 
 El análisis de las entrevistas consolida las variables objetivas
 (demográficas) y subjetivas (comportamiento, tecnología y dolores) para
 fundamentar los requerimientos de la solución móvil **TerraTech**.
+
+Los porcentajes presentados a continuación corresponden exclusivamente a la muestra de siete personas entrevistadas y no deben interpretarse como resultados estadísticamente representativos de la totalidad de los segmentos objetivo.
 
 | Segmento | Variable | Valor observado | Frecuencia | Total de entrevistados | Porcentaje | Entrevistas relacionadas |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -1302,14 +1321,14 @@ fundamentar los requerimientos de la solución móvil **TerraTech**.
   dosificación les permitirá ahorrar tiempo y elevar la tasa de
   fidelización y venta de insumos.
 
-- **Segmento 3 (Clientes Finales y Compradores Mayoristas):** Los
-  compradores representan a un público nativo digital y consciente de la
-  sostenibilidad. El 100% utiliza su smartphone de forma cotidiana y
-  valora positivamente la verificación del origen de los alimentos
-  mediante la lectura de códigos QR en puntos de venta. Esto valida la
-  necesidad de que la aplicación móvil TerraTech permita generar
-  certificados públicos de buenas prácticas agrícolas accesibles
-  mediante enlace web móvil o escaneo QR directo.
+- **Segmento 3 (Clientes Finales y Compradores Mayoristas):** En 
+  la muestra entrevistada de clientes finales y compradores, 
+  los tres participantes manifestaron utilizar su smartphone
+  de manera cotidiana y mostraron interés por consultar información 
+  sobre la procedencia de los productos mediante códigos QR. 
+  Estos hallazgos respaldan la necesidad de que TerraTech permita
+  consultar fichas de trazabilidad e información registrada sobre 
+  el origen y las condiciones de cultivo mediante mecanismos de acceso móvil.
 
 ## 2.3. Needfinding
 
@@ -1336,15 +1355,21 @@ características más frecuentes del análisis estadístico presentado en
 
 **Segmento 1: Agricultor**
 
-![](assets/images/cap2/user-person-1.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-1.png" alt="User Persona Agricultor" width="520">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
-![](assets/images/cap2/user-person-2.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-2.png" alt="User Persona Proveedor de insumos" width="520">
+</p>
 
 **Segmento 3: Cliente final**
 
-![](assets/images/cap2/user-person-3.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/user-person-3.png" alt="User Persona Cliente final" width="520">
+</p>
 
 ### 2.3.2. User Task Matrix
 
@@ -1404,7 +1429,9 @@ inspección visual y de su experiencia, lo que le genera incertidumbre
 frente a cambios climáticos inesperados y un importante esfuerzo físico
 al recorrer el terreno.
 
-![](assets/images/cap2/journey-map-1.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-1.png" alt="User Journey Map Agricultor" width="700">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
@@ -1414,7 +1441,9 @@ presenciales con su experiencia previa, pero la ausencia de datos reales
 del suelo genera recomendaciones poco precisas, reclamos y pérdida de
 confianza de sus clientes.
 
-![](assets/images/cap2/journey-map-2.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-2.png" alt="User Journey Map Proveedor de insumos" width="700">
+</p>
 
 **Segmento 3: Cliente final**
 
@@ -1424,7 +1453,9 @@ producto, no dispone de información confiable sobre el origen ni las
 prácticas de cultivo, por lo que decide con información incompleta y
 desconfianza.
 
-![](assets/images/cap2/journey-map-3.png){width=400px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/journey-map-3.png" alt="User Journey Map Cliente final" width="700">
+</p>
 
 ### 2.3.4. Empathy Mapping
 
@@ -1443,7 +1474,9 @@ también desea mayor certeza para mejorar su productividad. Sus pains son
 la falta de información precisa y el esfuerzo físico; sus gains, la
 tranquilidad de anticiparse al clima y proteger su inversión.
 
-![](assets/images/cap2/empathy-map-1.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-1.png" alt="Empathy Map Agricultor" width="650">
+</p>
 
 **Segmento 2: Proveedor de insumos**
 
@@ -1455,7 +1488,9 @@ trabajo en visitas a campo y experiencia. Sus pains son la falta de
 datos objetivos y la pérdida de clientes; sus gains, fidelizar a los
 agricultores y aumentar sus ventas con asesorías más acertadas.
 
-![](assets/images/cap2/empathy-map-2.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-2.png" alt="Empathy Map Proveedor de insumos" width="650">
+</p>
 
 **Segmento 3: Cliente final**
 
@@ -1467,7 +1502,9 @@ decidir por precio y apariencia. Sus pains son la dificultad para
 verificar el origen y la calidad; sus gains, acceder a productos
 saludables y reconocer prácticas sostenibles con mayor confianza.
 
-![](assets/images/cap2/empathy-map-3.png){width=700px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/empathy-map-3.png" alt="Empathy Map Cliente final" width="650">
+</p>
 
 ### 2.3.5. Big Picture EventStorming
 
@@ -1521,7 +1558,9 @@ del sistema.
   registros de rendimiento.
 - Cuando un producto se publica, se genera su código QR de trazabilidad.
 
-![](assets/images/cap2/big-picture-event-storming2.0.jpg){width=500px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/big-picture-event-storming2.0.jpg" alt="Big Picture EventStorming de TerraTech" width="700">
+</p>
 
 ### 2.3.6. Ubiquitous Language
 
@@ -1710,13 +1749,13 @@ funcionalidades.
 
 #### EPIC12: Analytics & Catalog
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US37 | Proveedor | Media | Consulta de productos con mayor interés | Como proveedor, deseo consultar los productos con mayor interés de los agricultores para orientar mi oferta. | **Scenario 1: Consulta del interés**<br>Given el proveedor ha iniciado sesión con su rol<br>When consulta la sección de analíticas de interés<br>Then el sistema presenta una tabla con producto, consultas, favoritos, contactos y tendencia<br>And la tabla se ordena por número de consultas de mayor a menor<br><br>**Scenario 2: Tendencia por producto**<br>Given el proveedor consulta el interés por un producto específico<br>When el sistema carga la información<br>Then se presenta la evolución mensual de las consultas de los últimos 12 meses con los valores de cada periodo<br><br>**Scenario 3: Filtros de interés**<br>Given el proveedor consulta la tabla de interés<br>When aplica un filtro por región<br>Then el sistema actualiza la información con las consultas de esa región |
-| US38 | Proveedor | Baja | Consulta de zonas con mayor actividad | Como proveedor, deseo consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial. | **Scenario 1: Interés por región**<br>Given el proveedor consulta la sección de zonas de interés<br>When el sistema carga la información<br>Then se presenta un mapa con las regiones diferenciadas por nivel de interés<br>And cada región permite consultar el número de agricultores y los productos más consultados<br><br>**Scenario 2: Consulta de métricas**<br>Given el proveedor consulta el mapa de interés<br>When solicita la vista de tabla<br>Then el sistema presenta región, agricultores activos, consultas, producto principal y contactos generados<br>And la tabla permite ordenarse por cualquiera de sus campos<br><br>**Scenario 3: Exportación de datos**<br>Given el proveedor consulta las analíticas de interés<br>When solicita exportar la información<br>Then el sistema genera un archivo CSV con los datos filtrados y la fecha de generación |
-| US39 | Cliente final | Media | Consulta del catálogo de productos | Como cliente final, deseo consultar el catálogo de productos agrícolas con filtros por categoría, región y características registradas del producto para encontrar lo que busco. | **Scenario 1: Consulta del catálogo**<br>Given el cliente accede al catálogo<br>When el sistema carga la información<br>Then se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br><br>**Scenario 2: Filtros del catálogo**<br>Given el cliente consulta el catálogo<br>When aplica los filtros de categoría y región<br>Then el sistema presenta únicamente los productos que coinciden con ambos filtros<br><br>**Scenario 3: Búsqueda por nombre**<br>Given el cliente consulta el catálogo<br>When busca un producto por su nombre<br>Then el sistema presenta los productos cuyo nombre coincide con la búsqueda |
-| US40 | Cliente final | Media | Consulta del detalle y la trazabilidad de un producto | Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. | **Scenario 1: Información del producto**<br>Given el cliente selecciona un producto del catálogo<br>When el sistema carga su detalle<br>Then se presenta el nombre, las imágenes, el precio, la descripción, la región de origen, el nombre del agricultor, la información de trazabilidad y las prácticas de cultivo registradas<br><br>**Scenario 2: Consulta de la trazabilidad**<br>Given el cliente consulta el detalle de un producto<br>When accede a la sección de trazabilidad<br>Then el sistema presenta la línea de tiempo con las fechas de siembra, cosecha, empaque, envío y llegada al almacén<br><br>**Scenario 3: Acciones sobre el producto**<br>Given el cliente consulta el detalle de un producto<br>When solicita contactar al agricultor<br>Then el sistema habilita el contacto con el agricultor<br>And la incorporación del producto a un carrito de compras se considera fuera del alcance de esta entrega |
-| US41 | Proveedor | Media | Consulta de la información de los cultivos de los clientes | Como proveedor o asesor autorizado, deseo consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos. | **Scenario 1: Consulta autorizada**<br>Given el proveedor cuenta con autorización de un agricultor para consultar la información de sus cultivos<br>When consulta la información registrada<br>Then el sistema presenta las parcelas, el cultivo, la humedad, los nutrientes y las alertas registradas del cliente<br><br>**Scenario 2: Consulta sin autorización**<br>Given el proveedor no cuenta con autorización de un agricultor<br>When intenta consultar la información de sus cultivos<br>Then el sistema deniega el acceso y no muestra información del cliente<br><br>**Scenario 3: Consulta del histórico**<br>Given el proveedor cuenta con autorización vigente<br>When consulta el histórico de un cultivo de su cliente<br>Then el sistema presenta la evolución de los indicadores y las recomendaciones registradas |
+| Story ID | User | Priority | Título | Descripción | Acceptance Criteria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|:---|:---|:---|:---|:---|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| US37 | Proveedor | Media | Consulta de productos con mayor interés | Como proveedor, deseo consultar los productos con mayor interés de los agricultores para orientar mi oferta. | **Scenario 1: Consulta del interés**<br>Given el proveedor ha iniciado sesión con su rol<br>When consulta la sección de analíticas de interés<br>Then el sistema presenta una tabla con producto, consultas, favoritos, contactos y tendencia<br>And la tabla se ordena por número de consultas de mayor a menor<br><br>**Scenario 2: Tendencia por producto**<br>Given el proveedor consulta el interés por un producto específico<br>When el sistema carga la información<br>Then se presenta la evolución mensual de las consultas de los últimos 12 meses con los valores de cada periodo<br><br>**Scenario 3: Filtros de interés**<br>Given el proveedor consulta la tabla de interés<br>When aplica un filtro por región<br>Then el sistema actualiza la información con las consultas de esa región                                                                                                                                                                                                                                                                                                             |
+| US38 | Proveedor | Baja | Consulta de zonas con mayor actividad | Como proveedor, deseo consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial. | **Scenario 1: Interés por región**<br>Given el proveedor consulta la sección de zonas de interés<br>When el sistema carga la información<br>Then se presenta un mapa con las regiones diferenciadas por nivel de interés<br>And cada región permite consultar el número de agricultores y los productos más consultados<br><br>**Scenario 2: Consulta de métricas**<br>Given el proveedor consulta el mapa de interés<br>When solicita la vista de tabla<br>Then el sistema presenta región, agricultores activos, consultas, producto principal y contactos generados<br>And la tabla permite ordenarse por cualquiera de sus campos<br><br>**Scenario 3: Exportación de datos**<br>Given el proveedor consulta las analíticas de interés<br>When solicita exportar la información<br>Then el sistema genera un archivo CSV con los datos filtrados y la fecha de generación                                                                                                                                                                                                                                          |
+| US39 | Cliente final | Media | Consulta del catálogo de productos | Como cliente final, deseo consultar el catálogo de productos agrícolas con filtros por categoría, región y características registradas del producto para encontrar lo que busco. | **Scenario 1: Consulta del catálogo**<br>Given el cliente accede al catálogo<br>When el sistema carga la información<br>Then se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br><br>**Scenario 2: Filtros del catálogo**<br>Given el cliente consulta el catálogo<br>When aplica los filtros de categoría y región<br>Then el sistema presenta únicamente los productos que coinciden con ambos filtros<br><br>**Scenario 3: Búsqueda por nombre**<br>Given el cliente consulta el catálogo<br>When busca un producto por su nombre<br>Then el sistema presenta los productos cuyo nombre coincide con la búsqueda                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| US40 | Cliente final | Media | Consulta del detalle y la trazabilidad de un producto | Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. | **Scenario 1: Información del producto**<br>Given el cliente selecciona un producto del catálogo<br>When el sistema carga su detalle<br>Then se presenta el nombre, las imágenes, el precio, la descripción, la región de origen, el nombre del agricultor, la información de trazabilidad y las prácticas de cultivo registradas<br><br>**Scenario 2: Consulta de la trazabilidad**<br>Given el cliente consulta un producto desde el catálogo o accede a su ficha mediante un código QR<br>When solicita consultar su trazabilidad<br>Then el sistema presenta la información registrada y disponible sobre su procedencia, agricultor, cultivo y los eventos de producción asociados al producto<br>And únicamente se presenta información previamente registrada y autorizada en TerraTech<br><br>**Scenario 3: Acciones sobre el producto**<br>Given el cliente consulta el detalle de un producto<br>When solicita contactar al agricultor<br>Then el sistema habilita el contacto con el agricultor<br>And la incorporación del producto a un carrito de compras se considera fuera del alcance de esta entrega |
+| US41 | Proveedor | Media | Consulta de la información de los cultivos de los clientes | Como proveedor o asesor autorizado, deseo consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos. | **Scenario 1: Consulta autorizada**<br>Given el proveedor cuenta con autorización de un agricultor para consultar la información de sus cultivos<br>When consulta la información registrada<br>Then el sistema presenta las parcelas, el cultivo, la humedad, los nutrientes y las alertas registradas del cliente<br><br>**Scenario 2: Consulta sin autorización**<br>Given el proveedor no cuenta con autorización de un agricultor<br>When intenta consultar la información de sus cultivos<br>Then el sistema deniega el acceso y no muestra información del cliente<br><br>**Scenario 3: Consulta del histórico**<br>Given el proveedor cuenta con autorización vigente<br>When consulta el histórico de un cultivo de su cliente<br>Then el sistema presenta la evolución de los indicadores y las recomendaciones registradas                                                                                                                                                                                                                                                                                   |
 
 #### EPIC13: Configuración y Despliegue (Technical Stories)
 
@@ -1756,13 +1795,13 @@ historias que los habilitan.
 | BG-01: Lograr que al menos el 80% de los agricultores participantes utilice TerraTech de forma regular durante los 3 meses posteriores al piloto. | Agricultor | Tomar decisiones informadas para optimizar los cultivos. | Recomendaciones automáticas de riego y fertilización con análisis predictivo. | US15: Como agricultor, deseo recibir una recomendación automática de riego para optimizar el uso del agua.<br>US16: Como agricultor, deseo recibir una recomendación de fertilización para evitar la sobrefertilización. |
 | BG-02: Reducir entre 25% y 30% el uso innecesario de agua en los cultivos de los agricultores usuarios al finalizar el primer ciclo de uso. | Agricultor | Reducir costos de agua y fertilizantes. | Alertas configurables por umbral y recomendaciones basadas en el pronóstico del clima. | US18: Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas.<br>US22: Como agricultor, deseo consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego. |
 | BG-03: Reducir en 20% los costos relacionados con el uso innecesario de fertilizantes durante el primer ciclo de uso. | Agricultor | Aplicar fertilizantes según los niveles de nutrientes registrados del suelo. | Recomendaciones y alertas basadas en los niveles de nutrientes del suelo. | US16: Como agricultor, deseo recibir una recomendación de fertilización para evitar la sobrefertilización.<br>US18: Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas. |
-| BG-04: Lograr que al menos el 70% de los proveedores participantes utilice la información registrada en TerraTech para sustentar sus recomendaciones durante el piloto. | Proveedor | Acceder a información registrada de los cultivos de sus clientes. | Consulta autorizada de la información de los cultivos de los clientes. | US41: Como proveedor o asesor autorizado, deseo consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos. |
-| BG-04: Lograr que al menos el 70% de los proveedores participantes utilice la información registrada en TerraTech para sustentar sus recomendaciones durante el piloto. | Proveedor | Recomendar insumos adecuados con mayor precisión. | Recomendaciones de insumos basadas en el análisis de los datos del suelo. | US16: Como agricultor, deseo recibir una recomendación de fertilización para evitar la sobrefertilización.<br>US29: Como proveedor, deseo recibir alertas cuando la demanda de un producto supere un umbral para anticipar la reposición de stock. |
+| BG-04: Lograr que al menos el 70% de los proveedores participantes utilice la información registrada en TerraTech para sustentar sus recomendaciones durante el piloto. | Proveedor | Acceder a información autorizada de los cultivos de sus clientes para respaldar sus recomendaciones. | Consulta autorizada de información e histórico de los cultivos de los clientes. | US41: Como proveedor o asesor autorizado, deseo consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos. |
 | BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Conocer el origen y la trazabilidad del producto. | Ficha de producto con información de origen y línea de tiempo del cultivo. | US40: Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. |
 | BG-05: Lograr que al menos el 60% de los clientes finales y compradores participantes consulte la información de trazabilidad al menos una vez durante el piloto. | Cliente final | Tomar decisiones de compra con mayor confianza. | Catálogo de productos con reseñas y calificaciones de otros compradores. | US39: Como cliente final, deseo consultar el catálogo de productos con filtros por categoría, región y características registradas del producto.<br>US36: Como cliente final, deseo consultar las reseñas de otros compradores para evaluar la calidad de un producto antes de comprarlo. |
-| BG-06: Incrementar en 15% las ventas de los proveedores participantes durante el piloto. | Proveedor | Focalizar su oferta según el interés registrado por los agricultores. | Analítica de interés por producto y zona. | US37: Como proveedor, deseo consultar los productos con mayor interés de los agricultores para orientar mi oferta.<br>US38: Como proveedor, deseo consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial. |
 
-![](assets/images/cap2/impact-mapping.png){width=1000px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/impact-mapping.png" alt="Impact Mapping de TerraTech" width="700">
+</p>
 
 El enlace público del mapa se incorporará cuando el equipo habilite su
 compartición desde UXPressia.
@@ -1853,51 +1892,52 @@ lenguaje ubicuo.
 
 #### 2.5.1.1. Candidate Context Discovery
 
-A partir de la afinidad de eventos, comandos y reglas de negocio, se
-descubrieron y clasificaron **5 Bounded Contexts estratégicos**:
+A partir de la afinidad de eventos, comandos y reglas de negocio identificados durante el Big Picture EventStorming, se descubrieron y clasificaron cinco Bounded Contexts estratégicos para representar las principales responsabilidades de TerraTech.
 
 | Bounded Context | Tipo de Dominio | Justificación Estratégica |
-|----|----|----|
-| **Field & Parcel Management** | **Core Domain** | Ventaja competitiva principal: Representación geoespacial de lotes agrícolas, gestión de cultivos asignados y recolección de muestras de suelo en campo mediante la app móvil. |
-| **Crop Analytics & Reporting** | **Core Domain** | Diferenciador crítico: Motor de diagnóstico agronómico que correlaciona datos de suelo y variables meteorológicas para emitir recomendaciones preventivas de fertilización y riesgo de plagas. |
-| **Alerts & Notifications** | **Supporting Domain** | Soporte esencial: Monitoreo constante de umbrales climáticos (heladas inminentes \< 2°C, estrés hídrico) y despacho prioritario de notificaciones push móviles. |
-| **Farmer Community & Collaboration** | **Supporting Domain** | Soporte de valor: Espacio colaborativo y foro técnico donde agricultores comparten dudas y reciben asistencia directa de ingenieros agrónomos. |
-| **IAM & Security** | **Generic Domain** | Capacidad estándar genérica: Autenticación segura mediante tokens JWT, control de acceso basado en roles (Agricultor / Agrónomo) y gestión de perfiles. |
+|---|---|---|
+| **Field & Parcel Management** | **Core Domain** | Gestiona estratégicamente los terrenos, parcelas y la información asociada al monitoreo agrícola, constituyendo una capacidad central para organizar los espacios productivos y sus datos relacionados. |
+| **Crop Analytics & Reporting** | **Core Domain** | Agrupa las capacidades estratégicas relacionadas con el análisis de información agrícola, generación de reportes y apoyo a la toma de decisiones sobre el estado de los cultivos. |
+| **Alerts & Notifications** | **Supporting Domain** | Gestiona las alertas y notificaciones destinadas a informar oportunamente a los usuarios sobre condiciones relevantes relacionadas con sus cultivos y actividades agrícolas. |
+| **Farmer Community & Collaboration** | **Supporting Domain** | Representa las capacidades de interacción, colaboración y comunidad contempladas para conectar a los diferentes participantes del ecosistema TerraTech. |
+| **IAM & Security** | **Generic Domain** | Gestiona la identidad, autenticación y autorización necesarias para controlar el acceso de los usuarios a las capacidades de TerraTech. |
+
+> **Nota de alineación con el diseño táctico:** Los Bounded Contexts definidos en esta sección corresponden a la visión estratégica de TerraTech. La sección 2.6 documenta el diseño táctico del backend reutilizado, por lo que sus nombres y granularidad no necesariamente mantienen una correspondencia uno a uno.
+>
+> En términos de responsabilidad, **Field & Parcel Management** se relaciona principalmente con **Monitoring Management**; **Crop Analytics & Reporting** con **Analytics Management**; **Alerts & Notifications** con **Notification Management**; e **IAM & Security** con **Identity & Access Management**.
+>
+> **Farmer Community & Collaboration** representa una capacidad estratégica contemplada en los requisitos funcionales, aunque actualmente no dispone de un Bounded Context táctico independiente documentado en la sección 2.6. Asimismo, **Stock Management**, presente en el diseño táctico reutilizado, constituye una capacidad de soporte para la gestión de insumos agrícolas.
+>
+> Los componentes agrupados como **Shared** en la sección 2.6 corresponden a elementos técnicos transversales utilizados por diferentes contextos y no constituyen un dominio de negocio independiente.
+
+Adicionalmente, el backend dispone de componentes compartidos utilizados transversalmente por los Bounded Contexts, tales como mecanismos de auditoría, manejo de errores, persistencia, Unit of Work y procesamiento de eventos. Estos elementos se documentan en la sección 2.6 como `Shared`, pero no representan por sí mismos un dominio de negocio independiente.
+
+Las funcionalidades de comunidad, reputación, catálogo y trazabilidad forman parte del alcance funcional planteado para TerraTech y se encuentran consideradas en los requisitos del producto. Sin embargo, no se presentan en esta etapa como Bounded Contexts implementados mientras no exista un modelo táctico independiente que los respalde.
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
-Para representar cómo colaboran los Bounded Contexts y los actores en
-los escenarios operativos clave, se aplicó la técnica de **Domain
-Storytelling**:
+Para representar la colaboración entre los actores y los Bounded Contexts estratégicos de TerraTech, se utiliza Domain Storytelling. El flujo describe a nivel de negocio cómo las principales capacidades de la solución colaboran durante el monitoreo y análisis de la actividad agrícola.
 
 ![Domain Storytelling](assets/images/strategic-ddd/domain-storytelling.svg)
 
-**Narrativa del flujo principal de monitoreo preventivo:** 1. El
-**Agricultor** accede a la app móvil TerraTech y registra una nueva
-inspección de suelo (`RecordSoilInspection`) con parámetros de humedad,
-pH y fotografías tomadas en campo. 2. La app móvil almacena la
-inspección en la base de datos local **Room** (para garantizar
-operatividad offline) y la sincroniza con el backend mediante
-`POST /api/v1/inspections` en cuanto detecta conectividad. 3. El
-servicio de backend consulta las condiciones meteorológicas y el
-pronóstico de 7 días del servicio externo **OpenWeatherMap API**
-mediante las coordenadas GPS de la parcela. 4. Con los datos
-consolidados, el contexto **Crop Analytics & Reporting** procesa el
-balance hídrico y genera el reporte `CropHealthReport` evaluando el
-riesgo biológico y térmico. 5. Si los pronósticos indican una helada
-inminente o anomalía severa, se dispara la política
-`OnCriticalThresholdExceeded`, instruyendo al contexto **Alerts &
-Notifications** a emitir una notificación urgente. 6. El gateway
-**Firebase Cloud Messaging (FCM)** despacha la notificación push de alta
-prioridad que despierta el dispositivo móvil del agricultor alertándolo
-preventivamente. 7. Ante dudas específicas, el agricultor publica una
-consulta en la **Comunidad**, donde un **Ingeniero Agrónomo** revisa la
-telemetría asociada y responde técnicamente.
+**Narrativa del flujo principal de monitoreo agrícola:**
 
+1. El **Agricultor** accede a TerraTech y se autentica mediante las capacidades correspondientes a **IAM & Security**.
+
+2. Desde la aplicación móvil, el agricultor consulta y administra la información relacionada con sus terrenos y parcelas mediante **Field & Parcel Management**.
+
+3. La información registrada y obtenida a partir del monitoreo agrícola puede ser utilizada por **Crop Analytics & Reporting** para generar métricas, análisis e interpretaciones que apoyen la toma de decisiones.
+
+4. Cuando el análisis identifica una situación que debe ser comunicada al usuario, **Alerts & Notifications** gestiona la generación y presentación de la alerta correspondiente.
+
+5. Las funcionalidades de **Farmer Community & Collaboration** permiten representar estratégicamente la interacción entre agricultores, asesores y otros participantes del ecosistema TerraTech.
+
+6. La aplicación móvil presenta estas capacidades mediante una experiencia adaptada al trabajo agrícola y consume los servicios disponibles del backend reutilizado.
+
+> **Consideración de implementación:** Este Domain Storytelling representa el flujo estratégico objetivo de TerraTech y no implica que cada capacidad estratégica disponga actualmente de un Bounded Context táctico independiente. La implementación existente se encuentra documentada en la sección 2.6 y deberá reutilizarse o evolucionar progresivamente según las necesidades de las siguientes entregas, evitando asumir la incorporación inmediata de nuevos módulos al backend.
 #### 2.5.1.3. Bounded Context Canvases
 
-A continuación se presentan los Canvases estratégicos detallados para
-cada uno de los 5 Bounded Contexts:
+> **Nota de alcance estratégico:** Los siguientes Bounded Context Canvases representan la visión estratégica propuesta para la evolución de TerraTech como solución móvil. Su propósito es delimitar responsabilidades, reglas de negocio y lenguaje del dominio. Por ello, no debe interpretarse que cada contexto disponga actualmente de una implementación táctica independiente dentro del backend reutilizado documentado en la sección 2.6.
 
 ##### Bounded Context Canvas 1: IAM & Security
 
@@ -1912,9 +1952,9 @@ cada uno de los 5 Bounded Contexts:
   `RoleAssigned`.
 - **Lenguaje Ubicuo Local:** `UserAccount`, `Credential`, `Role`,
   `SessionToken`, `UserProfile`.
-- **Reglas de Negocio e Invariantes:** Contraseñas cifradas con
-  algoritmo BCrypt; tokens JWT con expiración definida de 24 horas;
-  roles inmutables salvo autorización administrativa.
+- **Reglas de Negocio e Invariantes:** Contraseñas cifradas con algoritmo BCrypt;
+  los tokens JWT utilizan el tiempo de expiración definido en la configuración vigente del backend;
+  los roles se gestionan de acuerdo con las reglas de autorización de TerraTech.
 - **Dependencias:** Ninguna (Contexto base Upstream).
 
 ##### Bounded Context Canvas 2: Field & Parcel Management
@@ -2015,9 +2055,7 @@ gobernanza de datos entre los Bounded Contexts y los servicios externos:
 
 ### 2.5.3. Software Architecture
 
-La solución de software de TerraTech se modela mediante el enfoque **C4
-Model**, estructurado en tres niveles de abstracción orientados a una
-aplicación móvil nativa Android con backend en la nube.
+La solución de software de TerraTech se modela utilizando el enfoque **C4 Model** para representar su contexto y sus contenedores principales, complementándolo con un diagrama de despliegue que muestra la distribución de los artefactos de software en la infraestructura prevista. La arquitectura se orienta a una aplicación móvil nativa Android que consume los servicios del backend reutilizado de TerraTech.
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams (C4 Nivel 1)
 
@@ -2028,12 +2066,10 @@ usuarios clave y las integraciones con servicios externos de terceros:
 
 
 - **Actores Principales:**
-    - **Agricultor / Productor Agrícola:** Interactúa con la app móvil
-      para delimitar parcelas, registrar mediciones de suelo, recibir
-      alertas tempranas de heladas y aplicar planes de fertilización.
-    - **Ingeniero Agrónomo:** Analiza el estado fitosanitario de los
-      cultivos y brinda soporte técnico a los agricultores a través de la
-      comunidad.
+    - **Agricultor / Productor Agrícola:** Interactúa con la aplicación móvil para consultar y gestionar información relacionada con sus terrenos, monitoreo, alertas y actividades agrícolas.
+    - **Ingeniero Agrónomo / Asesor:** Puede brindar orientación técnica al agricultor dentro de las capacidades de asesoría contempladas por TerraTech.
+    - **Proveedor de Insumos Agrícolas:** Utiliza información autorizada para apoyar sus recomendaciones y consultar información relevante para el seguimiento de sus clientes y productos.
+    - **Cliente Final / Comprador:** Consulta información sobre productos agrícolas, su procedencia, opiniones y datos de trazabilidad disponibles en TerraTech.
 - **Sistema TerraTech:** Plataforma integral que procesa datos de campo,
   correlaciona variables ambientales y genera diagnósticos preventivos.
 - **Sistemas Externos SaaS:**
@@ -2056,23 +2092,23 @@ solución:
         *MVVM + Clean Architecture*, StateFlow para reactividad, inyección
         de dependencias con Hilt/Koin y cliente Retrofit para comunicación
         HTTPS con el backend.
-    2.  **Local SQLite / Room Database:** Base de datos embebida en el
-        dispositivo móvil Android. Almacena en caché local las parcelas,
-        reportes e inspecciones pendientes de sincronización para
-        habilitar operatividad continua en zonas rurales sin cobertura de
-        internet (*Offline-First*).
+    2. **Local SQLite / Room Database:** Base de datos embebida en el dispositivo móvil Android.
+        Almacena localmente información previamente obtenida y los datos que requieran sincronización 
+        posterior, permitiendo consultar información disponible cuando no exista conexión y
+        actualizarla cuando se recupere la conectividad.
     3.  **Web Landing Page (HTML5 / CSS3 / JavaScript / Vue):** Sitio web
         institucional responsivo optimizado para SEO, presentación
         comercial y descarga del archivo APK de la aplicación móvil.
-    4.  **Backend REST API (Java 21 / Spring Boot 3):** API monolítica
-        modular organizada por capas DDD (Domain, Application, Interface,
-        Infrastructure). Expone endpoints REST documentados bajo estándar
-        OpenAPI 3.0 protegidos con Spring Security y JWT.
-    5.  **Relational Database (PostgreSQL 16):** Base de datos relacional
-        centralizada que persiste la información estructurada de usuarios,
-        parcelas, reportes, alertas y posts de la comunidad.
+    4.  **Backend REST API (C# / ASP.NET Core):** API modular organizada mediante capas de Domain,
+         Application, Interface e Infrastructure. Expone endpoints REST consumidos por la aplicación móvil
+         y utiliza mecanismos de autenticación y autorización basados en JWT.
+         La persistencia del backend se gestiona mediante Entity Framework Core.
+    5.  **Relational Database:** Base de datos relacional centralizada utilizada por el backend de TerraTech
+        para persistir la información estructurada de los diferentes Bounded Contexts.
+        El motor de base de datos debe corresponder con el proveedor configurado 
+        en la implementación reutilizada del backend.
 
-#### 2.5.3.3. Software Architecture Deployment Diagrams (C4 Nivel 3 / Despliegue)
+#### 2.5.3.3. Software Architecture Deployment Diagram
 
 El diagrama de despliegue representa la distribución de los artefactos
 de software en los entornos de hardware físico y cloud, detallando
@@ -2081,25 +2117,13 @@ protocolos de red y seguridad:
 ![Strategic Context Map](assets/images/strategic-ddd/c4-deployment.svg)
 
 - **Nodos de Infraestructura y Despliegue:**
-    - **Nodo Cliente — Smartphone Android:** Dispositivo móvil con sistema
-      operativo Android 11.0 o superior (API 30+). Ejecuta el paquete
-      binario de la app (`TerraTech.apk` / `.aab`), con drivers nativos de
-      geolocalización (`FusedLocationProviderClient`), cámara (`CameraX`),
-      almacenamiento SQLite Room y servicio receptor en segundo plano
-      (`FirebaseMessagingService`).
-    - **Nodo Cloud — Amazon Web Services / Google Cloud Platform:**
-        - **Contenedor Docker (Spring Boot REST API):** Instancia Linux de
-          alto rendimiento ejecutando el contenedor con OpenJDK 21.
-          Configurado con proxy inverso HTTPS/TLS 1.3 en puerto seguro 443,
-          tareas programadas (`@Scheduled`) para cálculo recurrente de
-          heladas y pool de conexiones HikariCP.
-        - **Instancia de Base de Datos Administrada (Cloud SQL / AWS RDS
-          PostgreSQL 16):** Instancia gestionada en red privada VPC con
-          almacenamiento persistente SSD NVMe, cifrado en reposo AES-256 y
-          respaldos automatizados.
-    - **Nodo SaaS Externo:** Servidores de OpenWeatherMap y la
-      infraestructura de Google Play Services / Firebase para la entrega
-      garantizada de notificaciones push móviles.
+    - **Nodo Cliente — Smartphone Android:** Dispositivo móvil que ejecuta la aplicación TerraTech. La aplicación utiliza almacenamiento local mediante Room para conservar información disponible sin conexión y sincronizarla posteriormente cuando exista conectividad.
+
+    - **Nodo Cloud — Infraestructura de despliegue:**
+        - **Backend REST API:** Servicio que ejecuta la API ASP.NET Core reutilizada por TerraTech y expone sus endpoints mediante HTTPS.
+        - **Base de datos relacional:** Servicio encargado de persistir la información centralizada utilizada por el backend. El motor y el proveedor de despliegue deberán coincidir con la configuración real del proyecto.
+
+    - **Nodo SaaS Externo:** Servicios externos utilizados por TerraTech, como el proveedor de información climática y el servicio seleccionado para el envío de notificaciones push.
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
@@ -2133,7 +2157,7 @@ la mantenibilidad del sistema.
 | UserResource.cs / AuthenticatedUserResource.cs | Outbound Resource (DTO) | Representa la estructura de respuesta enviada al cliente HTTP. |
 | SignInCommandFromResourceAssembler.cs | Assembler / Mapper | Transforma `SignInResource` a `SignInCommand`. |
 | SignUpCommandFromResourceAssembler.cs | Assembler / Mapper | Transforma `SignUpResource` a `SignUpCommand`. |
-| UserResourceFromEntityAssembler.cs | \*\*Assembler / Mapper | Transforma la entidad `User` a `UserResource`. |
+| UserResourceFromEntityAssembler.cs | Assembler / Mapper | Transforma la entidad `User` a `UserResource`. |
 | AuthenticatedUserResourceFromEntityAssembler.cs | Assembler / Mapper | Transforma `User` y JWT Token a `AuthenticatedUserResource`. |
 | IamActionResultAssembler.cs | REST Response Mapper | Traduce errores y resultados de dominio a respuestas HTTP (`ProblemDetails`). |
 
@@ -2163,21 +2187,27 @@ la mantenibilidad del sistema.
 | AuthorizeAttribute.cs | Authorization Filter | Filtro que valida la presencia del usuario autenticado en el contexto HTTP. |
 | AllowAnonymousAttribute.cs | Metadata Attribute | Atributo para omitir la validación de autorización en endpoints públicos. |
 
-\pagebreak
+<div class="page"></div>
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Iam-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Component.png" alt="IAM Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Iam-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Domain.png" alt="IAM Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Iam-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Iam-Db.png" alt="IAM Database Design Diagram" width="650">
+</p>
 
 ### 2.6.2. Bounded Context: Analytics Management
 
@@ -2230,17 +2260,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Analytics-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Component.png" alt="Analytics Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Component](assets/images/cap5/Analytics-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Domain.png" alt="Analytics Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Analytics-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Analytics-Db.png" alt="Analytics Database Design Diagram" width="650">
+</p>
 
 ### 2.6.3. Bounded Context: Monitoring Management
 
@@ -2321,17 +2357,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Monitoring-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Component.png" alt="Monitoring Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Monitoring-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Domain.png" alt="Monitoring Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-![Db](assets/images/cap5/Monitoring-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Monitoring-Db.png" alt="Monitoring Database Design Diagram" width="650">
+</p>
 
 ### 2.6.4. Bounded Context: Stock Management
 
@@ -2375,17 +2417,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Stock-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Component.png" alt="Stock Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Stock-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Domain.png" alt="Stock Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-![Database](assets/images/cap5/Stock-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Stock-Db.png" alt="Stock Database Design Diagram" width="650">
+</p>
 
 ### 2.6.5. Bounded Context: Notification Management
 
@@ -2429,17 +2477,23 @@ la mantenibilidad del sistema.
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-![Component](assets/images/cap5/Notification-Component.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Component.png" alt="Notification Bounded Context Component Level Diagram" width="650">
+</p>
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-![Domain](assets/images/cap5/Notification-Domain.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Domain.png" alt="Notification Domain Layer Class Diagram" width="650">
+</p>
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-![Database](assets/images/cap5/Notification-Db.png){width=300px}
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap5/Notification-Db.png" alt="Notification Database Design Diagram" width="650">
+</p>
 
 ### 2.6.6. Bounded Context: Shared Bounded
 
