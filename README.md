@@ -1078,7 +1078,7 @@ accesible:
 
 ### 2.2.1. Diseño de entrevistas
 
-Para recopilar requerimientos reales del dominio y diseñar la
+Para recopilar requisitos reales del dominio y diseñar la
 experiencia móvil de **TerraTech**, se prepararon guías de entrevista
 semiestructuradas orientadas a los tres segmentos objetivo:
 **Agricultores**, **Proveedores de Insumos Agrícolas** y **Clientes
@@ -1087,7 +1087,7 @@ Finales / Compradores**.
 | Segmento | Pregunta principal | Preguntas complementarias | Información buscada |
 |:---|:---|:---|:---|
 | **Segmento 1: Agricultores** | ¿Cómo gestiona actualmente el riego y fertilización de sus cultivos, y qué dificultades enfrenta al tomar estas decisiones en el campo? | 1\. ¿Qué cultivos trabaja y qué extensión tiene su terreno?<br>2. ¿Cómo evalúa la humedad y fertilidad del suelo en el día a día?<br>3. ¿Qué pérdidas ha tenido por factores climáticos o plagas?<br>4. ¿Qué celular utiliza y cómo es su experiencia con aplicaciones móviles?<br>5. ¿Qué opina de recibir alertas en su teléfono sobre cuándo regar?<br>6. ¿Qué temores tiene al instalar tecnología o sensores en su terreno? | Nivel de alfabetización digital, tipo de dispositivo móvil utilizado, conectividad en campo, métodos de monitoreo tradicionales, puntos de dolor ante heladas/sequías y disposición al uso de alertas en el smartphone. |
-| **Segmento 2: Proveedores de Insumos** | ¿Cómo realiza el diagnóstico y la recomendación de fertilizantes e insumos a los agricultores, y cómo valida su efectividad? | 1\. ¿Qué insumos ofrece y cómo asesora a sus clientes?<br>2. ¿Qué datos del suelo le ayudarían a recomendar productos con mayor precisión?<br>3. ¿Cómo realiza el seguimiento postventa de sus productos?<br>4. ¿Qué herramientas móviles o digitales utiliza para su trabajo diario?<br>5. ¿Cómo le ayudaría contar con una app que reciba datos en tiempo real de los campos de sus clientes? | Procesos de asesoría técnica, canales de comunicación móvil (WhatsApp, apps), problemas de recomendaciones inexactas por falta de datos y requerimientos para un dashboard móvil de clientes. |
+| **Segmento 2: Proveedores de Insumos** | ¿Cómo realiza el diagnóstico y la recomendación de fertilizantes e insumos a los agricultores, y cómo valida su efectividad? | 1\. ¿Qué insumos ofrece y cómo asesora a sus clientes?<br>2. ¿Qué datos del suelo le ayudarían a recomendar productos con mayor precisión?<br>3. ¿Cómo realiza el seguimiento postventa de sus productos?<br>4. ¿Qué herramientas móviles o digitales utiliza para su trabajo diario?<br>5. ¿Cómo le ayudaría contar con una app que reciba datos en tiempo real de los campos de sus clientes? | Procesos de asesoría técnica, canales de comunicación móvil (WhatsApp, apps), problemas de recomendaciones inexactas por falta de datos y requisitos para un dashboard móvil de clientes. |
 | **Segmento 3: Clientes Finales / Compradores** | ¿Qué factores determinan su decisión de compra de productos agrícolas y qué importancia le otorga a la trazabilidad y sostenibilidad? | 1\. ¿Con qué frecuencia compra productos agrícolas y dónde?<br>2. ¿Cómo verifica la frescura, calidad y ausencia de químicos nocivos?<br>3. ¿Estaría dispuesto a pagar más si conoce el proceso de cultivo?<br>4. ¿Utiliza su smartphone para escanear códigos QR o buscar información de alimentos?<br>5. ¿Qué información le generaría mayor confianza al comprar? | Hábitos de compra, uso del smartphone en el punto de venta (búsqueda de información, lectura de QR), disposición a pagar por productos sostenibles y necesidades de visualización de trazabilidad. |
 
 #### Cuestionario detallado por segmento
@@ -1273,62 +1273,83 @@ grabación y resumen descriptivo:
 
 ### 2.2.3. Análisis de entrevistas
 
-El análisis de las entrevistas consolida las variables objetivas
-(demográficas) y subjetivas (comportamiento, tecnología y dolores) para
-fundamentar los requerimientos de la solución móvil **TerraTech**.
+El análisis de las entrevistas consolida las variables objetivas (demográficas, tecnológicas y de infraestructura) y subjetivas (comportamientos, puntos de dolor, expectativas y necesidades funcionales) obtenidas a partir de las siete entrevistas en profundidad realizadas. Este análisis permite fundamentar cuantitativa y cualitativamente los requisitos de la solución móvil **TerraTech**.
 
-Los porcentajes presentados a continuación corresponden exclusivamente a la muestra de siete personas entrevistadas y no deben interpretarse como resultados estadísticamente representativos de la totalidad de los segmentos objetivo.
+#### 1. Análisis estadístico consolidado por dimensiones
 
-| Segmento | Variable | Valor observado | Frecuencia | Total de entrevistados | Porcentaje | Entrevistas relacionadas |
-|:---|:---|:---|:---|:---|:---|:---|
-| **Agricultores** | Género | Masculino | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Rango de edad | 50 a 67 años | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Nivel educativo | Primaria / Secundaria incompleta | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Alfabetización digital | Baja / Nula (requiere interfaz asistida e íconos) | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Conectividad en campo | Nula / Intermitente (requiere soporte offline) | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Principal dolor | Pérdidas por heladas / Sequías / Esfuerzo físico | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Dispositivo móvil de acceso | Smartphone básico / Teléfono convencional | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Proveedores de Insumos** | Rango de edad | 26 a 35 años | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Nivel educativo | Secundaria completa / Superior técnica | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Canal de comunicación principal | WhatsApp / Teléfono móvil | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Principal dolor | Falta de datos de campo para respaldar recomendaciones | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Dispositivo de preferencia | Smartphone de gama media | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Interés en app móvil de monitoreo | Alto (reducción de tiempos y datos en tiempo real) | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Clientes Finales** | Rango de edad | 17 a 29 años | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Nivel educativo | Superior en curso / Completa | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Uso de smartphone para compras/búsqueda | Diario (Redes sociales, Google, escaneo QR) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Factor decisivo de compra | Frescura, calidad y verificación de procedencia | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Mecanismo preferido de trazabilidad | Código QR escaneable desde la cámara del móvil | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
+A continuación se presentan las variables evaluadas en la muestra de estudio, clasificadas en cuatro dimensiones clave:
 
-#### Síntesis del análisis por segmento
+| Dimensión | Variable evaluada | Valor observado | Frecuencia | Total segmento | % Muestral | Entrevistas | Deducción para la solución móvil |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| **Sociodemográfica** | Rango de edad: Agricultores | 50 a 67 años (Promedio: 59.5 años) | 2 | 2 | 100% | ENT-001, ENT-002 | Interfaz accesible con fuentes legibles, botones amplios y mínimo texto denso. |
+| **Sociodemográfica** | Rango de edad: Proveedores | 26 a 35 años (Promedio: 30.5 años) | 2 | 2 | 100% | ENT-003, ENT-004 | Disposición a dashboards analíticos y reportes técnicos exportables. |
+| **Sociodemográfica** | Rango de edad: Compradores | 17 a 29 años (Promedio: 23.7 años) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Interacción rápida y dinámica mediante cámara y lectura QR directa. |
+| **Sociodemográfica** | Nivel educativo: Agricultores | Primaria / Secundaria incompleta | 2 | 2 | 100% | ENT-001, ENT-002 | Priorizar iconografía universal y metáforas visuales (código semáforo). |
+| **Sociodemográfica** | Nivel educativo: Proveedores | Secundaria completa / Superior técnica | 2 | 2 | 100% | ENT-003, ENT-004 | Comprensión de métricas agronómicas (pH, NPK, conductividad eléctrica). |
+| **Sociodemográfica** | Nivel educativo: Compradores | Superior universitaria (en curso / egresado) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Interés por fichas de sostenibilidad y procedencia transparente. |
+| **Tecnológica** | Dispositivo predominante: Agricultores | Smartphone básico Android (gama de entrada) | 2 | 2 | 100% | ENT-001, ENT-002 | Optimización estricta de memoria RAM, almacenamiento y batería. |
+| **Tecnológica** | Dispositivo predominante: Proveedores y Compradores | Smartphone Android de gama media / alta | 5 | 5 | 100% | ENT-003 a ENT-007 | Aprovechamiento de cámara de alta resolución y procesamiento local ágil. |
+| **Conectividad** | Conectividad en campo: Agricultores | Sin señal continua / 2G-3G intermitente | 2 | 2 | 100% | ENT-001, ENT-002 | **Arquitectura Offline-First obligatoria**: almacenamiento local en SQLite/Room y sincronización posterior. |
+| **Conectividad** | Conectividad habitual: Proveedores / Compradores | 4G / Wi-Fi urbano continuo | 5 | 5 | 100% | ENT-003 a ENT-007 | Consulta en tiempo real de lotes y visualización inmediata de fichas de trazabilidad. |
+| **Puntos de dolor** | Pérdidas por falta de monitoreo: Agricultores | Pérdidas del 20% al 40% en cosechas por heladas/sequías | 2 | 2 | 100% | ENT-001, ENT-002 | Alertas push visuales y audibles sobre umbrales críticos de suelo y clima. |
+| **Puntos de dolor** | Asesoría empírica sin datos: Proveedores | Dificultad para recomendar fertilizantes exactos | 2 | 2 | 100% | ENT-003, ENT-004 | Panel de consulta de parámetros de suelo de lotes vinculados. |
+| **Puntos de dolor** | Desconfianza de origen: Compradores | Incertidumbre sobre uso de agroquímicos y frescura | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Ficha informativa de trazabilidad accesible por escaneo de código QR. |
+| **Adopción** | Disposición al uso de alertas en el celular | Muy alta (si el uso es simple y visual) | 7 | 7 | 100% | ENT-001 a ENT-007 | Notificaciones claras y orientadas a acciones correctivas inmediatas. |
 
-- **Segmento 1 (Agricultores):** Los agricultores operan en un contexto
-  de vulnerabilidad climática y aislamiento digital. El 100% depende de
-  la observación empírica directa y presenta baja alfabetización
-  digital. Para que la aplicación móvil sea adoptada con éxito, debe
-  diseñarse bajo principios de accesibilidad universal: uso de colores
-  semafóricos (verde, amarillo, rojo), íconos representativos en lugar
-  de tablas densas, notificaciones push sonoras y claras, y soporte de
-  funcionamiento offline para que la falta de cobertura 4G en el campo
-  no impida la visualización del estado del terreno.
+#### 2. Infografía de métricas y patrones de comportamiento
 
-- **Segmento 2 (Proveedores de Insumos Agrícolas):** Este segmento tiene
-  una alta adopción tecnológica móvil (100% usuarios activos de
-  smartphones y mensajería instantánea). Su principal cuello de botella
-  es la falta de datos objetivos del suelo al momento de prescribir
-  insumos, lo que genera reclamos postventa. Una aplicación móvil con
-  paneles de consulta de lotes de clientes y sugerencias automáticas de
-  dosificación les permitirá ahorrar tiempo y elevar la tasa de
-  fidelización y venta de insumos.
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/Rural%20Connectivity-2026-09-29-204512.png" alt="Infografia de métricas" width="1200">
+</p>
 
-- **Segmento 3 (Clientes Finales y Compradores Mayoristas):** En 
-  la muestra entrevistada de clientes finales y compradores, 
-  los tres participantes manifestaron utilizar su smartphone
-  de manera cotidiana y mostraron interés por consultar información 
-  sobre la procedencia de los productos mediante códigos QR. 
-  Estos hallazgos respaldan la necesidad de que TerraTech permita
-  consultar fichas de trazabilidad e información registrada sobre 
-  el origen y las condiciones de cultivo mediante mecanismos de acceso móvil.
+#### 3. Matrices de análisis cruzado y comparativo
+
+##### Matriz A: Hábitos digitales, dispositivos y nivel de conectividad (Rural vs. Urbano)
+
+| Variable de contexto | Agricultores (Entorno Rural) | Proveedores de Insumos (Semi-urbano / Rural) | Clientes Finales / Compradores (Entorno Urbano) |
+|:---|:---|:---|:---|
+| **Dispositivo utilizado** | Smartphones de gama baja con pantallas reducidas o teléfonos convencionales. | Smartphones de gama media (Android), alto uso de mensajería instantánea y llamadas. | Smartphones de gama media y alta con cámaras avanzadas y conectividad constante. |
+| **Disponibilidad de red** | Conectividad nula en parcelas profundas; acceso 2G/3G esporádico en zonas altas o poblados. | Conectividad 4G estable en locales comerciales; intermitencia durante visitas a campo. | Conectividad 4G/5G y redes Wi-Fi residenciales y comerciales permanentes. |
+| **Frecuencia de interacción móvil** | Esporádica durante la faena agrícola (mañanas y noches); preferencia por avisos audibles o alertas directas. | Continua a lo largo del día para cotizaciones, coordinación logística y consultas técnicas. | Frecuente y multimodal (redes sociales, banca móvil, lectura de códigos QR en puntos de compra). |
+| **Implicancia técnica para TerraTech** | La aplicación debe priorizar la persistencia local y el renderizado sin conexión activa. | La aplicación debe facilitar la visualización multi-lote y el filtrado rápido de clientes. | La aplicación debe permitir la apertura instantánea de la ficha de trazabilidad sin registros engorrosos. |
+
+##### Matriz B: Puntos de dolor, causas raíz e impacto operacional
+
+| Segmento | Punto de dolor principal | Causa raíz observada | Impacto económico / operacional | Solución propuesta en TerraTech |
+|:---|:---|:---|:---|:---|
+| **Agricultores** | Pérdida de cosechas y fatiga física por monitoreo manual. | Falta de instrumentos de medición accesibles; toma de decisiones por tanteo visual o tacto. | Pérdidas económicas de hasta un 40% por heladas o sobre-riego; desgaste físico innecesario. | Sensores IoT en suelo con alertas automáticas en la aplicación móvil y código de colores semafórico. |
+| **Proveedores de Insumos** | Inexactitud en la dosificación y recetas de fertilizantes. | Carencia de datos sobre pH, humedad y nutrientes del terreno del cliente al momento de la venta. | Prescripciones ineficaces, desperdicio de producto y reclamos de clientes insatisfechos. | Acceso móvil a perfiles de suelo compartidos por agricultores para sugerir insumos con base técnica. |
+| **Compradores / Clientes Finales** | Incertidumbre sobre el origen, inocuidad y uso de químicos en los alimentos. | Ausencia de mecanismos directos de consulta de procedencia en los canales minoristas y mayoristas. | Desconfianza en la compra, dificultad para valorar productos cultivados con prácticas sostenibles. | Ficha informativa de trazabilidad consultable mediante el escaneo de un código QR en el empaque. |
+
+##### Matriz C: Diferenciación estructural entre Agricultores y Compradores
+
+A fin de responder con precisión a los criterios de diseño de la experiencia de usuario y arquitectura del sistema, la siguiente matriz contrasta explícitamente las diferencias funcionales, operativas y de contexto entre el **Agricultor** (productor) y el **Comprador / Cliente Final** (consumidor / mayorista):
+
+| Criterio de diferenciación | Agricultor (Productor agrícola) | Comprador / Cliente Final (Consumidor / Mayorista) |
+|:---|:---|:---|
+| **Rol en la cadena de valor** | **Generador del producto primario**: cultiva, gestiona recursos hídricos, aplica insumos y cosecha. | **Adquirente del producto terminado**: evalúa, compra, comercializa o consume el alimento cosechado. |
+| **Contexto de uso de la aplicación** | Campo de cultivo / parcela rural, con exposición al sol, polvo, fatiga física y baja conectividad. | Punto de venta minorista/mayorista (mercados, supermercados) o el hogar, con conectividad 4G/Wi-Fi. |
+| **Objetivo principal en TerraTech** | **Monitorear y proteger el cultivo**: consultar humedad/nutrientes, recibir alertas preventivas y optimizar riego. | **Verificar y validar**: conocer la procedencia del producto, fecha de cosecha y prácticas de cultivo registradas. |
+| **Flujo principal en la aplicación** | Registro de parcelas $\rightarrow$ vinculación de sensores IoT $\rightarrow$ lectura de métricas de suelo $\rightarrow$ recepción de alertas offline/online. | Escaneo de código QR desde la cámara móvil $\rightarrow$ visualización inmediata de la ficha informativa de trazabilidad. |
+| **Nivel de alfabetización digital** | **Bajo a intermedio**: requiere interfaces ultra simplificadas, navegación guiada, íconos grandes y soporte visual sin tecnicismos. | **Intermedio a alto**: habituado al uso ágil de smartphones, escaneo de códigos QR, navegación por pestañas y compras digitales. |
+| **Dependencia de conectividad** | **Crítica (modo offline obligatorio)**: la aplicación debe funcionar sin internet mediante almacenamiento en Room SQLite. | **En línea (tiempo real)**: la consulta de fichas QR se ejecuta conectándose al servicio web cuando el usuario escanea el producto. |
+| **Tipo de datos que consume** | Datos crudos procesados de telemetría de suelo (humedad %, temperatura °C, pH, NPK) y recomendaciones de acción inmediata. | Resumen consolidado de trazabilidad (lugar de procedencia, agricultor, fecha de cosecha y prácticas registradas). |
+
+#### 4. Síntesis cualitativa y deducción de requisitos para la solución móvil
+
+A partir de la triangulación de datos cuantitativos, matrices comparativas y testimonios recogidos en las entrevistas, se extraen las siguientes directrices esenciales para la arquitectura y diseño de **TerraTech**:
+
+1. **Arquitectura Offline-First y Resiliencia de Datos (Segmento Agricultores):**
+   Dado que el 100% de los agricultores entrevistados enfrenta caídas de señal en sus parcelas, la aplicación Android debe implementar un patrón de persistencia local robusto con Room / SQLite. Las lecturas sincronizadas desde los nodos sensores deben almacenarse localmente de forma inmediata, permitiendo al agricultor revisar el histórico reciente y el estado de sus lotes sin conexión, disparando la sincronización en segundo plano una vez restablecido el enlace a internet.
+
+2. **Diseño de Interfaz Inclusivo y Semafórico (Segmento Agricultores):**
+   La brecha de alfabetización digital identificada en los productores mayores (50 a 67 años) exige descartar tablas analíticas densas o terminología agronómica compleja en la vista principal. Se deben emplear tarjetas de resumen con indicadores de color tipo semáforo (Verde: Óptimo, Amarillo: Precaución, Rojo: Crítico), íconos universales descriptivos (gota para humedad, termómetro para temperatura) y alertas sonoras configurables para eventos de riesgo (como heladas inminentes o déficit severo de agua).
+
+3. **Módulo de Trazabilidad Transparente y Escaneo Ligero (Segmento Compradores):**
+   La necesidad expresada por los clientes finales de contar con certeza sobre el origen de los alimentos se traduce en una funcionalidad de escaneo de códigos QR integrada en la aplicación móvil. Al escanear el código presente en el lote o empaque, el comprador accederá directamente a una ficha informativa que muestra los datos registrados del cultivo (fecha de cosecha, región de procedencia y uso responsable del agua), fomentando un vínculo de confianza comercial sin requerir procesos de autenticación complejos para el consumidor.
+
+4. **Interoperabilidad y Asesoría Técnica Respaldada (Segmento Proveedores):**
+   Los asesores técnicos y proveedores requieren un mecanismo ágil para consultar la telemetría de los campos de sus clientes agricultores (previa autorización), permitiéndoles prescribir planes de fertilización basados en datos objetivos del suelo, reduciendo los reclamos por mala dosificación y agilizando la venta consultiva a través de reportes exportables compatibles con canales habituales como WhatsApp.
 
 ## 2.3. Needfinding
 
@@ -1345,13 +1366,7 @@ Las fichas de User Persona presentan el perfil de cada segmento objetivo
 y reúnen sus datos demográficos, metas, frustraciones, habilidades
 tecnológicas, marcas e influencias y canales de interacción. Cada ficha
 se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007:
-el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y
-conectividad limitada; el proveedor de insumos (ENT-003, ENT-004)
-necesita datos objetivos del suelo para respaldar sus recomendaciones; y
-el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y
-la trazabilidad del producto. Asimismo, cada ficha incorpora las
-características más frecuentes del análisis estadístico presentado en
-2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
+el **agricultor** (ENT-001, ENT-002) como productor primario en entorno rural que presenta baja alfabetización digital y conectividad limitada; el **proveedor de insumos** (ENT-003, ENT-004) como asesor técnico que necesita datos objetivos del suelo para respaldar sus recomendaciones; y el **cliente final / comprador** (ENT-005, ENT-006, ENT-007) como adquirente o consumidor en entorno urbano que prioriza la transparencia y la trazabilidad del producto mediante escaneo móvil. Asimismo, cada ficha incorpora las características más representativas del análisis estadístico presentado en 2.2.3, reflejando la clara diferenciación operativa y tecnológica entre el productor agrícola y el comprador final.
 
 **Segmento 1: Agricultor**
 
@@ -2077,8 +2092,9 @@ funcionalidades.
     </tr>
   </tbody>
 </table>
+
 <table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
-   
+  <!-- Fila 1: Encabezados superiores -->
   <thead>
     <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
       <th style="width: 20%;">Story ID</th>
@@ -2088,44 +2104,45 @@ funcionalidades.
     </tr>
   </thead>
   <tbody>
-     
-<tr>
+    <!-- Fila 2: Valores superiores -->
+    <tr>
       <td style="text-align: center;">US08</td>
       <td>Usuario registrado</td>
       <td style="text-align: center;">Media</td>
       <td>EPIC02 - Autenticación y Gestión de Usuarios (IAM)</td>
     </tr>
 
-     
+    
 <tr>
       <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
       <td colspan="3">Recuperación de contraseña</td>
     </tr>
 
-     
+    
 <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
       <td colspan="4">Description</td>
     </tr>
 
- <tr>
+    
+<tr>
       <td colspan="4">
         <b>Como</b> usuario registrado,<br>
         <b>deseo</b> recuperar mi contraseña olvidada para volver a acceder a mi cuenta.
       </td>
     </tr>
 
- 
+    
 <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
       <td colspan="4">Acceptance Criteria</td>
     </tr>
 
- 
+    
 <tr>
       <td colspan="4">
         <b>Scenario 1: Envío del enlace de recuperación</b><br>
         <b>Given</b> el usuario solicita recuperar su contraseña<br>
         <b>When</b> ingresa su correo registrado y confirma el envío<br>
-        <b>Then</b> el sistema envía un enlace con toke</table>ico válido por 1 hora<br>
+        <b>Then</b> el sistema envía un enlace con token único válido por 1 hora<br>
         <b>And</b> informa que debe revisar su correo para restablecer la contraseña<br>
         <br>
         <b>Scenario 2: Restablecimiento exitoso</b><br>
@@ -2141,7 +2158,7 @@ funcionalidades.
       </td>
     </tr>
   </tbody>
-  </table>
+</table>
 <table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
    
   <thead>
