@@ -171,6 +171,27 @@ assets/images/readme/report-collaboration-insights-av1.png.png
         - [2.5.2. Context Mapping](#252-context-mapping)
         - [2.5.3. Software Architecture](#253-software-architecture)
     - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+    - [3.1. Product design](#31-product-design)
+        - [3.1.1. Style Guidelines](#311-style-guidelines)
+            - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+        - [3.1.2. Information Architecture](#312-information-architecture)
+            - [3.1.2.1. Organization Systems](#3121-organization-systems)
+            - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+            - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+            - [3.1.2.4. Searching Systems](#3124-searching-systems)
+            - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+            - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+            - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+            - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+            - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+            - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+            - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+            - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
+- [Capítulo IV: Product Implementation & Validation](#capitulo-4-product-implementation--validation)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -5842,6 +5863,157 @@ la mantenibilidad del sistema.
 | GlobalExceptionHandlerMiddleware.cs | ASP.NET Core Middleware | Middleware centralizado de gestión de excepciones no capturadas para transformarlas en respuestas normalizadas Problem Details. |
 | MiddlewareExtensions.cs | Middleware Extension | Método de extensión de IApplicationBuilder para registrar de forma limpia el middleware de excepciones globales en el pipeline HTTP. |
 
+<div class="page"></div>
+
+# Capítulo III: Solution UI/UX Design
+
+## 3.1. Product design
+
+### 3.1.1. Style Guidelines
+
+#### 3.1.1.1. General Style Guidelines
+
+### 3.1.2. Information Architecture
+
+#### 3.1.2.1. Organization Systems
+
+#### 3.1.2.2. Labelling Systems
+
+#### 3.1.2.3. SEO Tags and Meta Tags
+
+#### 3.1.2.4. Searching Systems
+
+#### 3.1.2.5. Navigation Systems
+
+### 3.1.3. Landing Page UI Design
+
+#### 3.1.3.1. Landing Page Wireframe
+
+#### 3.1.3.2. Landing Page Mock-up
+
+### 3.1.4. Mobile Applications UX/UI Design
+
+El diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para la aplicación móvil de **TerraTech** se enfoca en resolver las necesidades operativas de agricultores y compradores en campo. La solución se sustenta en tres principios clave:
+1. **Resiliencia operativa (Offline-First):** Soporte de almacenamiento local en el dispositivo (SQLite/Room) para garantizar el acceso a los datos de telemetría y el registro de riego incluso sin conexión a internet.
+2. **Diseño inclusivo y ergonomía táctil:** Elementos interactivos con áreas mínimas de contacto de 48 × 48 dp y alto contraste para facilitar la lectura bajo luz solar directa y el uso con guantes.
+3. **Claridad informativa:** Jerarquía visual simple que prioriza métricas críticas de humedad de suelo y alertas inmediatas.
+
+#### 3.1.4.1. Mobile Applications Wireframes
+
+Los wireframes representan la estructura básica y esquemática de la aplicación móvil en baja fidelidad. Se prescinde deliberadamente de elementos cromáticos y fotográficos para evaluar la distribución espacial, los patrones de navegación y la jerarquía de los contenidos antes de la etapa visual final.
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-wireframes.png" alt="Wireframes de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.9. Wireframes de la aplicación móvil de TerraTech.</em></p>
+
+La propuesta estructural abarca las pantallas clave del flujo móvil:
+- **Inicio (Dashboard):** Resumen del clima, indicadores generales de salud del suelo, estado de sensores y acceso directo a la acción de riego.
+- **Mis Parcelas:** Lista y visualización de sectores de cultivo con filtros rápidos y estado de cada lote.
+- **Detalle de Sensor IoT:** Vista técnica de telemetría en tiempo real, nivel de batería del nodo y recomendación agronómica de riego.
+- **Mercado / Catálogo:** Catálogo de lotes agrícolas cosechados para compradores mayoristas con certificación de calidad por sensores.
+- **Modo Sin Conexión:** Pantalla informativa de contingencia que notifica el uso de datos locales y permite reintentar la sincronización.
+- **Mi Perfil:** Información del productor agrícola, configuración de alertas y opciones de cuenta.
+
+#### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+El diagrama de Wireflow ilustra el flujo de navegación secuencial y los cambios de estado de la interfaz a partir de las acciones e interacciones del usuario en las pantallas de baja fidelidad.
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-wireflow.png" alt="Diagrama de Wireflow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.10. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
+
+A continuación se resumen los pasos principales del flujo operativo del agricultor:
+
+| Paso (*Step*) | Pantalla Origen | Acción del Usuario (*User Event*) | Pantalla Destino | Cambio de Estado / Resultado |
+| :---: | :--- | :--- | :--- | :--- |
+| **P1** | Inicio (Dashboard) | Tap en tarjeta de sector *"Sector Palto A-1"* | Mis Parcelas | Filtra y enfoca la parcela seleccionada. |
+| **P2** | Mis Parcelas | Tap en *"Ver Detalle"* del Sensor S-04 | Detalle de Sensor | Carga telemetría actual y recomendación de riego. |
+| **P3** | Detalle de Sensor | Tap en botón *"Activar Riego"* | Confirmación | Abre diálogo para confirmar el tiempo de riego. |
+| **P4** | Detalle de Sensor | Tap en botón de retorno `←` | Mis Parcelas | Vuelve a la lista preservando filtros. |
+| **P5** | Menú inferior | Tap en pestaña *"Mercado"* | Catálogo de Cosechas | Cambia al catálogo comercial de lotes agrícolas. |
+| **P6** | Cualquier pantalla | Pérdida de cobertura de red | Modo Sin Conexión | Conmuta automáticamente al almacenamiento local (SQLite). |
+
+#### 3.1.4.3. Mobile Applications Mock-ups
+
+Los mock-ups en alta fidelidad representan la interfaz gráfica definitiva de la aplicación móvil de TerraTech, aplicando integralmente el Design System del producto: paleta cromática verde bosque (`#2E7D32`) y ámbar (`#F59E0B`), componentes basados en Material 3 e iOS, y tipografía optimizada para lectura en exteriores.
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-mockup.png" alt="Mock-ups en Alta Fidelidad de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.11. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
+
+Detalle visual de las pantallas principales:
+- **Dashboard (Inicio):** Saludo personalizado a Don Carlos, tarjeta de clima local, tarjetas 2×2 con telemetría en tiempo real (humedad, temperatura, estado de sensores), gráfico interactivo a 7 días y botón destacado para programar riego.
+- **Mis Parcelas:** Lista de sectores con pines satelitales codificados por color (verde: óptimo, ámbar: atención), chips de filtro rápido y datos de área cultivada.
+- **Detalle de Sensor IoT:** Medidor radial de humedad del suelo, estado de batería y conectividad LoRaWAN, y recomendación agronómica generada por el motor de reglas.
+- **Mercado Agrícola:** Catálogo de cosechas para compradores mayoristas con fotos reales, precios por volumen y certificación de calidad respaldada por datos de sensores.
+- **Modo Sin Conexión:** Banner de advertencia con estado del almacenamiento local SQLite y botón para reintentar la sincronización.
+- **Mi Perfil:** Identidad del productor, credenciales de predio agrícola, configuración de alertas de riego y opciones de cuenta.
+
+#### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+El diagrama de User Flow detalla el recorrido interactivo que experimenta el usuario en las pantallas de alta fidelidad, documentando formalmente la ruta óptima esperada (*Happy Path*) y los escenarios de excepción o contingencia en campo (*Unhappy Paths*).
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-userflow.png" alt="Diagrama de User Flow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.12. Diagrama de User Flow de la aplicación móvil de TerraTech.</em></p>
+
+Rutas documentadas en el flujo:
+
+-  **Happy Path (Monitoreo y Activación de Riego):**
+  1. Don Carlos abre la aplicación y visualiza el Dashboard con telemetría en tiempo real.
+  2. Identifica que el *Sector Palto A-1* registra una humedad baja del 28%.
+  3. Ingresa al detalle del sensor y consulta la recomendación de riego por goteo de 40 minutos.
+  4. Presiona *"Activar Electroválvula"* y confirma el turno de riego.
+  5. El sistema emite la confirmación y actualiza el estado a *"Riego en Curso"*.
+
+-  **Unhappy Path 1 (Pérdida de Cobertura en Campo Rural):**
+  1. El dispositivo pierde señal celular durante el recorrido en el predio.
+  2. La aplicación conmuta inmediatamente al almacenamiento local en el dispositivo (SQLite).
+  3. Se despliega el banner de *Modo Sin Conexión* con la última hora de sincronización.
+  4. Las acciones y notas registradas se guardan localmente y se autosincronizan al recuperar conectividad.
+
+-  **Unhappy Path 2 (Falla o Desconexión de Sensor IoT):**
+  1. Un sensor físico no emite lecturas por más de 4 horas continuas.
+  2. El sistema dispara una alerta crítica con badge rojo en la tarjeta del sector.
+  3. Al ingresar, se ofrece una guía paso a paso para verificar la batería y la antena del nodo en campo.
+
+El diagrama de User Flow detalla el recorrido interactivo que experimenta el usuario en las pantallas de alta fidelidad, documentando formalmente la ruta óptima esperada (*Happy Path*) y los escenarios de excepción o contingencia en campo (*Unhappy Paths*).
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-unhappypath.png" alt="Diagrama de User Flow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.12. Unhappy Path .</em></p>
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+Para validar la fluidez de interacción y navegación de la aplicación móvil de TerraTech antes de la fase de implementación de software, se construyó un prototipo navegable e interactivo en Figma.
+
+<p align="center">
+  <img src="assets/images/cap3/mobile-prototype.png" alt="Mapa de Conexiones del Prototipo en Figma" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.13. Conexiones y flujos de navegación interactiva del prototipo móvil en Figma.</em></p>
+
+Criterios de interacción adoptados:
+- **Transiciones fluidas (Smart Animate):** La navegación jerárquica utiliza animaciones de deslizamiento horizontal (*Slide in from right*) con duración de 300 ms y aceleración *Ease-Out*, emulando el comportamiento nativo de Android e iOS.
+- **Retroalimentación táctil:** Los botones incorporan estados visuales (*Pressed*) y elevación para confirmar la recepción del toque.
+- **Diálogos modales (Bottom Sheets):** La confirmación de riego se despliega como una hoja deslizable inferior para no perder el contexto de la pantalla.
+- **Navegación persistente:** La barra de navegación inferior (Bottom Nav) permite conmutar de manera directa entre Inicio, Parcelas, Mercado y Perfil.
+
+##### Enlace al Prototipo Interactivo en Figma:
+El prototipo funcional de la aplicación móvil se encuentra disponible para su exploración pública en el siguiente enlace:
+
+> **🔗 Enlace del Prototipo Interactivo en Figma:**  
+> [https://www.figma.com/proto/TerraTech-Mobile-App-Prototype](https://www.figma.com/proto/vcdNW0lT5QEWPf92aJNmMC/Terra-tech-app?node-id=62-2025&p=f&t=XWfBJgH2aLW5Nsv7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)  
+> *(Acceso público configurado en Figma con permisos de visualización).*
+
+---
+
+
+
 # Capitulo 4: Product Implementation & Validation
 
 ## 4. Product Implementation & Validation
@@ -6071,3 +6243,4 @@ https://jeffgothelf.com/blog/leanuxcanvas/
 # Anexos
 
 [Volver al contenido principal](#contenido)
+Link del Figma: https://www.figma.com/design/vcdNW0lT5QEWPf92aJNmMC/Terra-tech-app?node-id=0-1&t=XDJHLiBI10PJ61IV-1
