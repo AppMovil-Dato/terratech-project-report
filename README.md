@@ -5841,6 +5841,169 @@ la mantenibilidad del sistema.
 | GlobalExceptionHandlerMiddleware.cs | ASP.NET Core Middleware | Middleware centralizado de gestión de excepciones no capturadas para transformarlas en respuestas normalizadas Problem Details. |
 | MiddlewareExtensions.cs | Middleware Extension | Método de extensión de IApplicationBuilder para registrar de forma limpia el middleware de excepciones globales en el pipeline HTTP. |
 
+# Capitulo 4: Product Implementation & Validation
+
+## 4. Product Implementation & Validation
+
+### 4.1. Software Configuration Management
+
+#### 4.1.1. Software Development Environment Configuration
+
+#### 4.1.2. Source Code Management
+
+#### 4.1.3. Source Code Style Guide & Conventions 
+
+### 4.2. Landing Page & Mobile Application Implementation
+
+#### 4.2.1. Sprint 1
+
+#### 4.2.1.1. Sprint Planning 1
+
+Los objetivos dentro del sprint 1 fueron los siguientes:
+
+- Diseñar, implementar y desplegar el core de la Web API REST del BackEnd para
+  TerraTech utilizando C#, .NET y Domain-Driven Design (DDD), garantizando los servicios
+  de autenticación de usuarios, gestión de terrenos/parcelas y la recepción de telemetría
+  de sensores.
+
+#### 4.2.1.2. Aspect Leaders and Collaborators
+
+<table>
+  <thead>
+    <tr>
+      <th>Rol / Responsabilidad</th>
+      <th>Líder e Integrantes</th>
+      <th>Entregables Principales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>BackEnd & Software Architecture Lead</b></td>
+      <td>Jorge Retuerto</td>
+      <td>Arquitectura en capas (DDD/Clean Architecture), diseño de Entidades, Servicios de Dominio y controladores REST en Spring Boot.</td>
+    </tr>
+    <tr>
+      <td><b>Database & Persistence Lead</b></td>
+      <td>Rúbens Bendezú</td>
+      <td>Mapeo de entidades JPA/Hibernate, scripts de migración PostgreSQL y repositorios Spring Data JPA.</td>
+    </tr>
+    <tr>
+      <td><b>Security & Authentication Lead</b></td>
+      <td>Bryan Barba / James Delgado</td>
+      <td>Implementación de Spring Security, filtros JWT (JSON Web Token) y cifrado de contraseñas con BCrypt.</td>
+    </tr>
+    <tr>
+      <td><b>BackEnd QA & Testing Lead</b></td>
+      <td>Angel Pariona</td>
+      <td>Pruebas unitarias de servicios de dominio con JUnit 5/Mockito y pruebas de integración de API REST con <code>MockMvc</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 4.2.1.3. Sprint Backlog 1
+
+- BackEnd
+
+A continuación se presenta el Backlog que combina 
+las Historias de Usuario desarrolladas y el resumen de las tareas 
+técnicas completadas:
+
+<table>
+  <thead>
+    <tr>
+      <th>User Story ID</th>
+      <th>Descripción</th>
+      <th>Estimación (Puntos de Historia)</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>US-01</b></td>
+      <td>Como usuario, quiero autenticarme en el sistema para obtener un token de acceso seguro.</td>
+      <td>5</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td><b>US-02</b></td>
+      <td>Como agricultor, quiero registrar y listar mis parcelas/terrenos a través de la API REST.</td>
+      <td>5</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td><b>US-03</b></td>
+      <td>Como sistema IoT, quiero enviar lecturas de sensores (humedad, temperatura) a la API REST para su almacenamiento.</td>
+      <td>8</td>
+      <td>Completado</td>
+    </tr>
+  </tbody>
+</table>
+
+Resumen de Tareas Técnicas Completadas:
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Refactorizar e integrar los componentes BackEnd del proyecto heredado (<i>Desarrollo de Aplicaciones Web</i>) a la nueva estructura de DDD.</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td>Configurar OpenAPI / Swagger UI para la documentación interactiva de endpoints.</td>
+      <td>Completado</td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### 4.2.1.4. Development Evidence for Sprint Review
+
+- Back End
+
+* **Estructura del Proyecto:** Organización del código bajo patrones de Domain-Driven Design (DDD):
+    * `domain/`: Entidades de negocio, Value Objects y Domain Services.
+    * `infrastructure/`: Implementaciones JPA, Spring Data Repositories y filtros de seguridad.
+    * `interfaces/rest/`: Controladores REST (`@RestController`), DTOs (Requests/Responses) y Assemblers.
+* **Evolución del BackEnd Heredado:** Refactorización del código previo de *Desarrollo de Aplicaciones Web* para 
+cumplir con los estándares de arquitectura modular, separando el modelo de persistencia.
+* **Capturas de Ejecución:** Evidencia del servidor iniciando correctamente en el entorno de desarrollo 
+y respondiendo peticiones HTTP en el puerto designado.
+
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+#### 4.2.1.6. Execution Evidence for Sprint Review
+
+#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+* **Servicio Web BackEnd:** Compilación del artefacto ejecutable (`.dll` / binarios autofrenados) vía .NET CLI (`dotnet publish`) y despliegue continuo en la plataforma PaaS (ej. Render / Railway / Azure App Service / AWS) expuesto bajo protocolo HTTPS.
+
+Back End URL: [Swagger BackEnd](https://backend-terratech.onrender.com/swagger/index.html)
+
+![Deployment Evidence](/assets/images/cap4/deployment-evidence-1.png)
+
+![Deployment Evidence](/assets/images/cap4/deployment-evidence-2.png)
+
+* **Base de Datos:** Instancia desplegada de MySQL en la nube (ej. PlanetScale / AWS RDS / Aiven), con tablas generadas y gestionadas mediante migraciones de Entity Framework Core (EF Core Migrations) o ejecuciones DDL de inicialización.
+
+![DataBase Service](/assets/images/cap4/database-service.png)
+
+#### 4.2.1.9. Team Collaboration Insights during Sprint
+
+### 4.3. Validation Interviews
+
+#### 4.3.1. Diseño de Entrevistas
+
+#### 4.3.2. Registro de Entrevistas
+
+#### 4.3.3. Evaluaciones según heurísticas
+
 # Conclusiones
 
 [Volver al contenido principal](#contenido)
