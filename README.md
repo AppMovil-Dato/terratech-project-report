@@ -73,6 +73,7 @@
 | 0.4.3 | 15/09/2026 | Barba Estrada, Bryan Eduardo | Desarrollo de 2.3 Needfinding y 2.4 Requirements Specification (user stories, technical/spike stories, impact mapping y product backlog) y correcciones de consistencia del Capítulo II. |
 | 0.4.4 | 15/09/2026 | Pariona Chacca, Angel Jose | Elaboración y documentación de las secciones 2.1 Competidores (análisis competitivo y landscape) y 2.2 Entrevistas (diseño, registro de 7 entrevistas y análisis estadístico y cualitativo por segmento) con enfoque en aplicación móvil. |
 | 0.5.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Elaboración y documentación del Strategic Domain-Driven Design (DDD): descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diseño de arquitectura de software C4 (diagramas de Contexto, Contenedores y Despliegue con soporte offline-first y persistencia local Room). |
+| 0.6.0 | 15/09/2026 | Jorge Manuel Retuerto Rodriguez | Elaboración y documentación del BackEnd, implementando Domain-Drive-Design. Asimismo, ejecutando el deployment del servicio. |
 
 ## Project Report Collaboration Insights
 
@@ -1078,7 +1079,7 @@ accesible:
 
 ### 2.2.1. Diseño de entrevistas
 
-Para recopilar requerimientos reales del dominio y diseñar la
+Para recopilar requisitos reales del dominio y diseñar la
 experiencia móvil de **TerraTech**, se prepararon guías de entrevista
 semiestructuradas orientadas a los tres segmentos objetivo:
 **Agricultores**, **Proveedores de Insumos Agrícolas** y **Clientes
@@ -1087,7 +1088,7 @@ Finales / Compradores**.
 | Segmento | Pregunta principal | Preguntas complementarias | Información buscada |
 |:---|:---|:---|:---|
 | **Segmento 1: Agricultores** | ¿Cómo gestiona actualmente el riego y fertilización de sus cultivos, y qué dificultades enfrenta al tomar estas decisiones en el campo? | 1\. ¿Qué cultivos trabaja y qué extensión tiene su terreno?<br>2. ¿Cómo evalúa la humedad y fertilidad del suelo en el día a día?<br>3. ¿Qué pérdidas ha tenido por factores climáticos o plagas?<br>4. ¿Qué celular utiliza y cómo es su experiencia con aplicaciones móviles?<br>5. ¿Qué opina de recibir alertas en su teléfono sobre cuándo regar?<br>6. ¿Qué temores tiene al instalar tecnología o sensores en su terreno? | Nivel de alfabetización digital, tipo de dispositivo móvil utilizado, conectividad en campo, métodos de monitoreo tradicionales, puntos de dolor ante heladas/sequías y disposición al uso de alertas en el smartphone. |
-| **Segmento 2: Proveedores de Insumos** | ¿Cómo realiza el diagnóstico y la recomendación de fertilizantes e insumos a los agricultores, y cómo valida su efectividad? | 1\. ¿Qué insumos ofrece y cómo asesora a sus clientes?<br>2. ¿Qué datos del suelo le ayudarían a recomendar productos con mayor precisión?<br>3. ¿Cómo realiza el seguimiento postventa de sus productos?<br>4. ¿Qué herramientas móviles o digitales utiliza para su trabajo diario?<br>5. ¿Cómo le ayudaría contar con una app que reciba datos en tiempo real de los campos de sus clientes? | Procesos de asesoría técnica, canales de comunicación móvil (WhatsApp, apps), problemas de recomendaciones inexactas por falta de datos y requerimientos para un dashboard móvil de clientes. |
+| **Segmento 2: Proveedores de Insumos** | ¿Cómo realiza el diagnóstico y la recomendación de fertilizantes e insumos a los agricultores, y cómo valida su efectividad? | 1\. ¿Qué insumos ofrece y cómo asesora a sus clientes?<br>2. ¿Qué datos del suelo le ayudarían a recomendar productos con mayor precisión?<br>3. ¿Cómo realiza el seguimiento postventa de sus productos?<br>4. ¿Qué herramientas móviles o digitales utiliza para su trabajo diario?<br>5. ¿Cómo le ayudaría contar con una app que reciba datos en tiempo real de los campos de sus clientes? | Procesos de asesoría técnica, canales de comunicación móvil (WhatsApp, apps), problemas de recomendaciones inexactas por falta de datos y requisitos para un dashboard móvil de clientes. |
 | **Segmento 3: Clientes Finales / Compradores** | ¿Qué factores determinan su decisión de compra de productos agrícolas y qué importancia le otorga a la trazabilidad y sostenibilidad? | 1\. ¿Con qué frecuencia compra productos agrícolas y dónde?<br>2. ¿Cómo verifica la frescura, calidad y ausencia de químicos nocivos?<br>3. ¿Estaría dispuesto a pagar más si conoce el proceso de cultivo?<br>4. ¿Utiliza su smartphone para escanear códigos QR o buscar información de alimentos?<br>5. ¿Qué información le generaría mayor confianza al comprar? | Hábitos de compra, uso del smartphone en el punto de venta (búsqueda de información, lectura de QR), disposición a pagar por productos sostenibles y necesidades de visualización de trazabilidad. |
 
 #### Cuestionario detallado por segmento
@@ -1273,62 +1274,83 @@ grabación y resumen descriptivo:
 
 ### 2.2.3. Análisis de entrevistas
 
-El análisis de las entrevistas consolida las variables objetivas
-(demográficas) y subjetivas (comportamiento, tecnología y dolores) para
-fundamentar los requerimientos de la solución móvil **TerraTech**.
+El análisis de las entrevistas consolida las variables objetivas (demográficas, tecnológicas y de infraestructura) y subjetivas (comportamientos, puntos de dolor, expectativas y necesidades funcionales) obtenidas a partir de las siete entrevistas en profundidad realizadas. Este análisis permite fundamentar cuantitativa y cualitativamente los requisitos de la solución móvil **TerraTech**.
 
-Los porcentajes presentados a continuación corresponden exclusivamente a la muestra de siete personas entrevistadas y no deben interpretarse como resultados estadísticamente representativos de la totalidad de los segmentos objetivo.
+#### 1. Análisis estadístico consolidado por dimensiones
 
-| Segmento | Variable | Valor observado | Frecuencia | Total de entrevistados | Porcentaje | Entrevistas relacionadas |
-|:---|:---|:---|:---|:---|:---|:---|
-| **Agricultores** | Género | Masculino | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Rango de edad | 50 a 67 años | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Nivel educativo | Primaria / Secundaria incompleta | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Alfabetización digital | Baja / Nula (requiere interfaz asistida e íconos) | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Conectividad en campo | Nula / Intermitente (requiere soporte offline) | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Principal dolor | Pérdidas por heladas / Sequías / Esfuerzo físico | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Agricultores** | Dispositivo móvil de acceso | Smartphone básico / Teléfono convencional | 2 | 2 | 100% | ENT-001, ENT-002 |
-| **Proveedores de Insumos** | Rango de edad | 26 a 35 años | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Nivel educativo | Secundaria completa / Superior técnica | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Canal de comunicación principal | WhatsApp / Teléfono móvil | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Principal dolor | Falta de datos de campo para respaldar recomendaciones | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Dispositivo de preferencia | Smartphone de gama media | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Proveedores de Insumos** | Interés en app móvil de monitoreo | Alto (reducción de tiempos y datos en tiempo real) | 2 | 2 | 100% | ENT-003, ENT-004 |
-| **Clientes Finales** | Rango de edad | 17 a 29 años | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Nivel educativo | Superior en curso / Completa | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Uso de smartphone para compras/búsqueda | Diario (Redes sociales, Google, escaneo QR) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Factor decisivo de compra | Frescura, calidad y verificación de procedencia | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
-| **Clientes Finales** | Mecanismo preferido de trazabilidad | Código QR escaneable desde la cámara del móvil | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 |
+A continuación se presentan las variables evaluadas en la muestra de estudio, clasificadas en cuatro dimensiones clave:
 
-#### Síntesis del análisis por segmento
+| Dimensión | Variable evaluada | Valor observado | Frecuencia | Total segmento | % Muestral | Entrevistas | Deducción para la solución móvil |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| **Sociodemográfica** | Rango de edad: Agricultores | 50 a 67 años (Promedio: 59.5 años) | 2 | 2 | 100% | ENT-001, ENT-002 | Interfaz accesible con fuentes legibles, botones amplios y mínimo texto denso. |
+| **Sociodemográfica** | Rango de edad: Proveedores | 26 a 35 años (Promedio: 30.5 años) | 2 | 2 | 100% | ENT-003, ENT-004 | Disposición a dashboards analíticos y reportes técnicos exportables. |
+| **Sociodemográfica** | Rango de edad: Compradores | 17 a 29 años (Promedio: 23.7 años) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Interacción rápida y dinámica mediante cámara y lectura QR directa. |
+| **Sociodemográfica** | Nivel educativo: Agricultores | Primaria / Secundaria incompleta | 2 | 2 | 100% | ENT-001, ENT-002 | Priorizar iconografía universal y metáforas visuales (código semáforo). |
+| **Sociodemográfica** | Nivel educativo: Proveedores | Secundaria completa / Superior técnica | 2 | 2 | 100% | ENT-003, ENT-004 | Comprensión de métricas agronómicas (pH, NPK, conductividad eléctrica). |
+| **Sociodemográfica** | Nivel educativo: Compradores | Superior universitaria (en curso / egresado) | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Interés por fichas de sostenibilidad y procedencia transparente. |
+| **Tecnológica** | Dispositivo predominante: Agricultores | Smartphone básico Android (gama de entrada) | 2 | 2 | 100% | ENT-001, ENT-002 | Optimización estricta de memoria RAM, almacenamiento y batería. |
+| **Tecnológica** | Dispositivo predominante: Proveedores y Compradores | Smartphone Android de gama media / alta | 5 | 5 | 100% | ENT-003 a ENT-007 | Aprovechamiento de cámara de alta resolución y procesamiento local ágil. |
+| **Conectividad** | Conectividad en campo: Agricultores | Sin señal continua / 2G-3G intermitente | 2 | 2 | 100% | ENT-001, ENT-002 | **Arquitectura Offline-First obligatoria**: almacenamiento local en SQLite/Room y sincronización posterior. |
+| **Conectividad** | Conectividad habitual: Proveedores / Compradores | 4G / Wi-Fi urbano continuo | 5 | 5 | 100% | ENT-003 a ENT-007 | Consulta en tiempo real de lotes y visualización inmediata de fichas de trazabilidad. |
+| **Puntos de dolor** | Pérdidas por falta de monitoreo: Agricultores | Pérdidas del 20% al 40% en cosechas por heladas/sequías | 2 | 2 | 100% | ENT-001, ENT-002 | Alertas push visuales y audibles sobre umbrales críticos de suelo y clima. |
+| **Puntos de dolor** | Asesoría empírica sin datos: Proveedores | Dificultad para recomendar fertilizantes exactos | 2 | 2 | 100% | ENT-003, ENT-004 | Panel de consulta de parámetros de suelo de lotes vinculados. |
+| **Puntos de dolor** | Desconfianza de origen: Compradores | Incertidumbre sobre uso de agroquímicos y frescura | 3 | 3 | 100% | ENT-005, ENT-006, ENT-007 | Ficha informativa de trazabilidad accesible por escaneo de código QR. |
+| **Adopción** | Disposición al uso de alertas en el celular | Muy alta (si el uso es simple y visual) | 7 | 7 | 100% | ENT-001 a ENT-007 | Notificaciones claras y orientadas a acciones correctivas inmediatas. |
 
-- **Segmento 1 (Agricultores):** Los agricultores operan en un contexto
-  de vulnerabilidad climática y aislamiento digital. El 100% depende de
-  la observación empírica directa y presenta baja alfabetización
-  digital. Para que la aplicación móvil sea adoptada con éxito, debe
-  diseñarse bajo principios de accesibilidad universal: uso de colores
-  semafóricos (verde, amarillo, rojo), íconos representativos en lugar
-  de tablas densas, notificaciones push sonoras y claras, y soporte de
-  funcionamiento offline para que la falta de cobertura 4G en el campo
-  no impida la visualización del estado del terreno.
+#### 2. Infografía de métricas y patrones de comportamiento
 
-- **Segmento 2 (Proveedores de Insumos Agrícolas):** Este segmento tiene
-  una alta adopción tecnológica móvil (100% usuarios activos de
-  smartphones y mensajería instantánea). Su principal cuello de botella
-  es la falta de datos objetivos del suelo al momento de prescribir
-  insumos, lo que genera reclamos postventa. Una aplicación móvil con
-  paneles de consulta de lotes de clientes y sugerencias automáticas de
-  dosificación les permitirá ahorrar tiempo y elevar la tasa de
-  fidelización y venta de insumos.
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap2/Rural%20Connectivity-2026-09-29-204512.png" alt="Infografia de métricas" width="1200">
+</p>
 
-- **Segmento 3 (Clientes Finales y Compradores Mayoristas):** En 
-  la muestra entrevistada de clientes finales y compradores, 
-  los tres participantes manifestaron utilizar su smartphone
-  de manera cotidiana y mostraron interés por consultar información 
-  sobre la procedencia de los productos mediante códigos QR. 
-  Estos hallazgos respaldan la necesidad de que TerraTech permita
-  consultar fichas de trazabilidad e información registrada sobre 
-  el origen y las condiciones de cultivo mediante mecanismos de acceso móvil.
+#### 3. Matrices de análisis cruzado y comparativo
+
+##### Matriz A: Hábitos digitales, dispositivos y nivel de conectividad (Rural vs. Urbano)
+
+| Variable de contexto | Agricultores (Entorno Rural) | Proveedores de Insumos (Semi-urbano / Rural) | Clientes Finales / Compradores (Entorno Urbano) |
+|:---|:---|:---|:---|
+| **Dispositivo utilizado** | Smartphones de gama baja con pantallas reducidas o teléfonos convencionales. | Smartphones de gama media (Android), alto uso de mensajería instantánea y llamadas. | Smartphones de gama media y alta con cámaras avanzadas y conectividad constante. |
+| **Disponibilidad de red** | Conectividad nula en parcelas profundas; acceso 2G/3G esporádico en zonas altas o poblados. | Conectividad 4G estable en locales comerciales; intermitencia durante visitas a campo. | Conectividad 4G/5G y redes Wi-Fi residenciales y comerciales permanentes. |
+| **Frecuencia de interacción móvil** | Esporádica durante la faena agrícola (mañanas y noches); preferencia por avisos audibles o alertas directas. | Continua a lo largo del día para cotizaciones, coordinación logística y consultas técnicas. | Frecuente y multimodal (redes sociales, banca móvil, lectura de códigos QR en puntos de compra). |
+| **Implicancia técnica para TerraTech** | La aplicación debe priorizar la persistencia local y el renderizado sin conexión activa. | La aplicación debe facilitar la visualización multi-lote y el filtrado rápido de clientes. | La aplicación debe permitir la apertura instantánea de la ficha de trazabilidad sin registros engorrosos. |
+
+##### Matriz B: Puntos de dolor, causas raíz e impacto operacional
+
+| Segmento | Punto de dolor principal | Causa raíz observada | Impacto económico / operacional | Solución propuesta en TerraTech |
+|:---|:---|:---|:---|:---|
+| **Agricultores** | Pérdida de cosechas y fatiga física por monitoreo manual. | Falta de instrumentos de medición accesibles; toma de decisiones por tanteo visual o tacto. | Pérdidas económicas de hasta un 40% por heladas o sobre-riego; desgaste físico innecesario. | Sensores IoT en suelo con alertas automáticas en la aplicación móvil y código de colores semafórico. |
+| **Proveedores de Insumos** | Inexactitud en la dosificación y recetas de fertilizantes. | Carencia de datos sobre pH, humedad y nutrientes del terreno del cliente al momento de la venta. | Prescripciones ineficaces, desperdicio de producto y reclamos de clientes insatisfechos. | Acceso móvil a perfiles de suelo compartidos por agricultores para sugerir insumos con base técnica. |
+| **Compradores / Clientes Finales** | Incertidumbre sobre el origen, inocuidad y uso de químicos en los alimentos. | Ausencia de mecanismos directos de consulta de procedencia en los canales minoristas y mayoristas. | Desconfianza en la compra, dificultad para valorar productos cultivados con prácticas sostenibles. | Ficha informativa de trazabilidad consultable mediante el escaneo de un código QR en el empaque. |
+
+##### Matriz C: Diferenciación estructural entre Agricultores y Compradores
+
+A fin de responder con precisión a los criterios de diseño de la experiencia de usuario y arquitectura del sistema, la siguiente matriz contrasta explícitamente las diferencias funcionales, operativas y de contexto entre el **Agricultor** (productor) y el **Comprador / Cliente Final** (consumidor / mayorista):
+
+| Criterio de diferenciación | Agricultor (Productor agrícola) | Comprador / Cliente Final (Consumidor / Mayorista) |
+|:---|:---|:---|
+| **Rol en la cadena de valor** | **Generador del producto primario**: cultiva, gestiona recursos hídricos, aplica insumos y cosecha. | **Adquirente del producto terminado**: evalúa, compra, comercializa o consume el alimento cosechado. |
+| **Contexto de uso de la aplicación** | Campo de cultivo / parcela rural, con exposición al sol, polvo, fatiga física y baja conectividad. | Punto de venta minorista/mayorista (mercados, supermercados) o el hogar, con conectividad 4G/Wi-Fi. |
+| **Objetivo principal en TerraTech** | **Monitorear y proteger el cultivo**: consultar humedad/nutrientes, recibir alertas preventivas y optimizar riego. | **Verificar y validar**: conocer la procedencia del producto, fecha de cosecha y prácticas de cultivo registradas. |
+| **Flujo principal en la aplicación** | Registro de parcelas $\rightarrow$ vinculación de sensores IoT $\rightarrow$ lectura de métricas de suelo $\rightarrow$ recepción de alertas offline/online. | Escaneo de código QR desde la cámara móvil $\rightarrow$ visualización inmediata de la ficha informativa de trazabilidad. |
+| **Nivel de alfabetización digital** | **Bajo a intermedio**: requiere interfaces ultra simplificadas, navegación guiada, íconos grandes y soporte visual sin tecnicismos. | **Intermedio a alto**: habituado al uso ágil de smartphones, escaneo de códigos QR, navegación por pestañas y compras digitales. |
+| **Dependencia de conectividad** | **Crítica (modo offline obligatorio)**: la aplicación debe funcionar sin internet mediante almacenamiento en Room SQLite. | **En línea (tiempo real)**: la consulta de fichas QR se ejecuta conectándose al servicio web cuando el usuario escanea el producto. |
+| **Tipo de datos que consume** | Datos crudos procesados de telemetría de suelo (humedad %, temperatura °C, pH, NPK) y recomendaciones de acción inmediata. | Resumen consolidado de trazabilidad (lugar de procedencia, agricultor, fecha de cosecha y prácticas registradas). |
+
+#### 4. Síntesis cualitativa y deducción de requisitos para la solución móvil
+
+A partir de la triangulación de datos cuantitativos, matrices comparativas y testimonios recogidos en las entrevistas, se extraen las siguientes directrices esenciales para la arquitectura y diseño de **TerraTech**:
+
+1. **Arquitectura Offline-First y Resiliencia de Datos (Segmento Agricultores):**
+   Dado que el 100% de los agricultores entrevistados enfrenta caídas de señal en sus parcelas, la aplicación Android debe implementar un patrón de persistencia local robusto con Room / SQLite. Las lecturas sincronizadas desde los nodos sensores deben almacenarse localmente de forma inmediata, permitiendo al agricultor revisar el histórico reciente y el estado de sus lotes sin conexión, disparando la sincronización en segundo plano una vez restablecido el enlace a internet.
+
+2. **Diseño de Interfaz Inclusivo y Semafórico (Segmento Agricultores):**
+   La brecha de alfabetización digital identificada en los productores mayores (50 a 67 años) exige descartar tablas analíticas densas o terminología agronómica compleja en la vista principal. Se deben emplear tarjetas de resumen con indicadores de color tipo semáforo (Verde: Óptimo, Amarillo: Precaución, Rojo: Crítico), íconos universales descriptivos (gota para humedad, termómetro para temperatura) y alertas sonoras configurables para eventos de riesgo (como heladas inminentes o déficit severo de agua).
+
+3. **Módulo de Trazabilidad Transparente y Escaneo Ligero (Segmento Compradores):**
+   La necesidad expresada por los clientes finales de contar con certeza sobre el origen de los alimentos se traduce en una funcionalidad de escaneo de códigos QR integrada en la aplicación móvil. Al escanear el código presente en el lote o empaque, el comprador accederá directamente a una ficha informativa que muestra los datos registrados del cultivo (fecha de cosecha, región de procedencia y uso responsable del agua), fomentando un vínculo de confianza comercial sin requerir procesos de autenticación complejos para el consumidor.
+
+4. **Interoperabilidad y Asesoría Técnica Respaldada (Segmento Proveedores):**
+   Los asesores técnicos y proveedores requieren un mecanismo ágil para consultar la telemetría de los campos de sus clientes agricultores (previa autorización), permitiéndoles prescribir planes de fertilización basados en datos objetivos del suelo, reduciendo los reclamos por mala dosificación y agilizando la venta consultiva a través de reportes exportables compatibles con canales habituales como WhatsApp.
 
 ## 2.3. Needfinding
 
@@ -1345,13 +1367,7 @@ Las fichas de User Persona presentan el perfil de cada segmento objetivo
 y reúnen sus datos demográficos, metas, frustraciones, habilidades
 tecnológicas, marcas e influencias y canales de interacción. Cada ficha
 se elaboró en UXPressia a partir de las entrevistas ENT-001 a ENT-007:
-el agricultor (ENT-001, ENT-002) presenta baja alfabetización digital y
-conectividad limitada; el proveedor de insumos (ENT-003, ENT-004)
-necesita datos objetivos del suelo para respaldar sus recomendaciones; y
-el cliente final (ENT-005, ENT-006, ENT-007) prioriza la transparencia y
-la trazabilidad del producto. Asimismo, cada ficha incorpora las
-características más frecuentes del análisis estadístico presentado en
-2.2.3 y las oportunidades de diferenciación detectadas en 2.1.
+el **agricultor** (ENT-001, ENT-002) como productor primario en entorno rural que presenta baja alfabetización digital y conectividad limitada; el **proveedor de insumos** (ENT-003, ENT-004) como asesor técnico que necesita datos objetivos del suelo para respaldar sus recomendaciones; y el **cliente final / comprador** (ENT-005, ENT-006, ENT-007) como adquirente o consumidor en entorno urbano que prioriza la transparencia y la trazabilidad del producto mediante escaneo móvil. Asimismo, cada ficha incorpora las características más representativas del análisis estadístico presentado en 2.2.3, reflejando la clara diferenciación operativa y tecnológica entre el productor agrícola y el comprador final.
 
 **Segmento 1: Agricultor**
 
@@ -1656,128 +1672,3415 @@ funcionalidades.
 | EPIC13 | Configuración y Despliegue (Technical Stories) | Transversal (infraestructura) | TS01–TS05, TS08–TS11 |
 | EPIC14 | Investigación y Viabilidad (Spike Stories) | Transversal (investigación) | SP01, SP02, SP03 |
 
+
 #### EPIC01: Landing Page & Marketing
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US01 | Visitante | Alta | Visualización del mensaje de valor | Como visitante, deseo comprender rápidamente qué ofrece TerraTech para evaluar si la solución responde a mi necesidad. | **Scenario 1: Visualización del mensaje principal**<br>Given el visitante accede a la URL del Landing Page<br>When la página termina de cargar<br>Then se presenta el mensaje de valor de TerraTech y una acción para solicitar una demostración<br>And la acción de solicitud está disponible desde la página principal sin necesidad de desplazamiento<br><br>**Scenario 2: Adaptación a pantallas pequeñas**<br>Given el visitante accede desde un dispositivo móvil de 320px de ancho<br>When la página se renderiza<br>Then el contenido principal se adapta verticalmente sin desbordamiento horizontal |
-| US02 | Visitante | Media | Conocimiento de las características de la solución | Como visitante, deseo conocer las características principales de TerraTech para determinar si satisface mis necesidades. | **Scenario 1: Presentación de características**<br>Given el visitante ha cargado el Landing Page<br>When consulta la sección de características<br>Then se describen exactamente tres características: “Sensor de Humedad”, “Sensor de Nutrientes” y “Alertas en Tiempo Real”<br>And cada característica incluye un título y una descripción de máximo 150 caracteres |
-| US03 | Visitante | Alta | Solicitud de demostración | Como visitante, deseo solicitar una demostración para recibir información personalizada sobre TerraTech. | **Scenario 1: Envío exitoso**<br>Given el visitante completa los campos Nombre, Email, Teléfono y Tamaño de terreno en hectáreas<br>When confirma el envío de la solicitud<br>Then el sistema registra la solicitud y muestra una confirmación de recepción<br>And los campos del formulario quedan vacíos<br><br>**Scenario 2: Campos obligatorios incompletos**<br>Given el visitante omite el campo Email<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico es obligatorio y no registra la solicitud<br><br>**Scenario 3: Formato de correo inválido**<br>Given el visitante ingresa un correo con formato inválido<br>When intenta enviar la solicitud<br>Then el sistema informa que el correo electrónico no es válido y no registra la solicitud |
-| US04 | Visitante | Baja | Consulta de términos y condiciones | Como visitante, deseo leer los términos y condiciones del servicio para conocer mis derechos y obligaciones al usar TerraTech. | **Scenario 1: Acceso desde el Landing Page**<br>Given el visitante se encuentra en el Landing Page<br>When solicita consultar los términos y condiciones<br>Then el sistema presenta el documento completo con su fecha de última actualización<br><br>**Scenario 2: Acceso desde la aplicación móvil**<br>Given el usuario ha iniciado sesión en la aplicación móvil<br>When solicita consultar los términos y condiciones<br>Then el sistema presenta el documento sin abandonar la aplicación |
-| US05 | Visitante | Media | Información del proyecto y del equipo | Como visitante, deseo conocer el propósito del proyecto y al equipo responsable para generar confianza en la solución. | **Scenario 1: Información del proyecto**<br>Given el visitante accede al Landing Page<br>When consulta la sección sobre el proyecto<br>Then se presenta la misión y visión de TerraTech junto con el nombre de la startup NovaTech<br><br>**Scenario 2: Información del equipo**<br>Given el visitante consulta la sección del equipo<br>Then se muestran las fotografías, nombres completos, roles y especialidad de los integrantes del equipo de desarrollo |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+       
+<tr>
+      <td style="text-align: center;">US01</td>
+      <td>Visitante</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC01 - Landing Page & Marketing</td>
+    </tr>
+
+   
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Visualización del mensaje de valor</td>
+</tr>
+
+    
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Description</td>
+</tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> visitante,<br>
+       <b>deseo</b> comprender rápidamente qué ofrece TerraTech para evaluar si la solución responde a mi necesidad.
+     </td>
+</tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+</tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Scenario 1: Visualización del mensaje principal</b><br>
+       <b>Given</b> el visitante accede a la URL del Landing Page<br>
+       <b>When</b> la página termina de cargar<br>
+       <b>Then</b> se presenta el mensaje de valor de TerraTech y una acción para solicitar una demostración<br>
+       <b>And</b> la acción de solicitud está disponible desde la página principal sin necesidad de desplazamiento<br>
+       <br>
+       <b>Scenario 2: Adaptación a pantallas pequeñas</b><br>
+       <b>Given</b> el visitante accede desde un dispositivo móvil de 320px de ancho<br>
+       <b>When</b> la página se renderiza<br>
+       <b>Then</b> el contenido principal se adapta verticalmente sin desbordamiento horizontal
+</td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US02</td>
+      <td>Visitante</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC01 - Landing Page & Marketing</td>
+    </tr>
+
+ 
+<tr>
+<th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+<td colspan="3">Conocimiento de las características de la solución</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Description</td>
+</tr>
+ 
+<tr>
+<td colspan="4">
+<b>Como</b> visitante,<br>
+<b>deseo</b> conocer las características principales de TerraTech para determinar si satisface mis necesidades.
+</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Acceptance Criteria</td>
+</tr>
+<!-- Fila 7: Contenido Acceptance Criteria -->
+<tr>
+<td colspan="4">
+<b>Scenario 1: Presentación de características</b><br>
+<b>Given</b> el visitante ha cargado el Landing Page<br>
+<b>When</b> consulta la sección de características<br>
+<b>Then</b> se describen exactamente tres características: “Sensor de Humedad”, “Sensor de Nutrientes” y “Alertas en Tiempo Real”<br>
+<b>And</b> cada característica incluye un título y una descripción de máximo 150 caracteres
+</td>
+</tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+<td style="text-align: center;">US03</td>
+<td>Visitante</td>
+<td style="text-align: center;">Alta</td>
+<td>EPIC01 - Landing Page & Marketing</td>
+</tr>
+ 
+<tr>
+<th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+<td colspan="3">Solicitud de demostración</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Description</td>
+</tr>
+ 
+<tr>
+<td colspan="4">
+<b>Como</b> visitante,<br>
+<b>deseo</b> solicitar una demostración para recibir información personalizada sobre TerraTech.
+</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Acceptance Criteria</td>
+</tr>
+<!-- Fila 7: Contenido Acceptance Criteria -->
+<tr>
+<td colspan="4">
+<b>Scenario 1: Envío exitoso</b><br>
+<b>Given</b> el visitante completa los campos Nombre, Email, Teléfono y Tamaño de terreno en hectáreas<br>
+<b>When</b> confirma el envío de la solicitud<br>
+<b>Then</b> el sistema registra la solicitud y muestra una confirmación de recepción<br>
+<b>And</b> los campos del formulario quedan vacíos<br>
+<br>
+<b>Scenario 2: Campos obligatorios incompletos</b><br>
+<b>Given</b> el visitante omite el campo Email<br>
+<b>When</b> intenta enviar la solicitud<br>
+<b>Then</b> el sistema informa que el correo electrónico es obligatorio y no registra la solicitud<br>
+<br>
+<b>Scenario 3: Formato de correo inválido</b><br>
+<b>Given</b> el visitante ingresa un correo con formato inválido<br>
+<b>When</b> intenta enviar la solicitud<br>
+<b>Then</b> el sistema informa que el correo electrónico no es válido y no registra la solicitud
+</td>
+</tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US04</td>
+     <td>Visitante</td>
+     <td style="text-align: center;">Baja</td>
+     <td>EPIC01 - Landing Page & Marketing</td>
+   </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de términos y condiciones</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> visitante,<br>
+       <b>deseo</b> leer los términos y condiciones del servicio para conocer mis derechos y obligaciones al usar TerraTech.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Acceso desde el Landing Page</b><br>
+       <b>Given</b> el visitante se encuentra en el Landing Page<br>
+       <b>When</b> solicita consultar los términos y condiciones<br>
+       <b>Then</b> el sistema presenta el documento completo con su fecha de última actualización<br>
+       <br>
+       <b>Scenario 2: Acceso desde la aplicación móvil</b><br>
+       <b>Given</b> el usuario ha iniciado sesión en la aplicación móvil<br>
+       <b>When</b> solicita consultar los términos y condiciones<br>
+       <b>Then</b> el sistema presenta el documento sin abandonar la aplicación
+     </td>
+   </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US05</td>
+      <td>Visitante</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC01 - Landing Page & Marketing</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Información del proyecto y del equipo</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> visitante,<br>
+       <b>deseo</b> conocer el propósito del proyecto y al equipo responsable para generar confianza en la solución.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Información del proyecto</b><br>
+       <b>Given</b> el visitante accede al Landing Page<br>
+       <b>When</b> consulta la sección sobre el proyecto<br>
+       <b>Then</b> se presenta la misión y visión de TerraTech junto con el nombre de la startup NovaTech<br>
+       <br>
+       <b>Scenario 2: Información del equipo</b><br>
+       <b>Given</b> el visitante consulta la sección del equipo<br>
+       <b>Then</b> se muestran las fotografías, nombres completos, roles y especialidad de los integrantes del equipo de desarrollo
+     </td>
+   </tr>
+  </tbody>
+</table>
 
 #### EPIC02: Autenticación y Gestión de Usuarios (IAM)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US06 | Agricultor | Alta | Registro de nuevo usuario | Como agricultor, deseo crear una cuenta en TerraTech para acceder a la aplicación y configurar mis parcelas. | **Scenario 1: Registro exitoso**<br>Given el usuario accede al registro<br>When ingresa Nombre (mínimo 2 caracteres), Email válido y Contraseña (mínimo 6 caracteres) confirmada correctamente<br>And confirma el registro<br>Then se crea la cuenta con rol “Agricultor”<br>And el sistema envía un correo de verificación con enlace válido por 24 horas<br><br>**Scenario 2: Correo ya registrado**<br>Given el usuario ingresa un correo que ya existe<br>When confirma el registro<br>Then el sistema informa que el correo ya está registrado y ofrece la opción de recuperar la contraseña<br><br>**Scenario 3: Contraseñas no coinciden**<br>Given el usuario ingresa contraseñas distintas<br>When confirma el registro<br>Then el sistema informa que las contraseñas no coinciden y no crea la cuenta |
-| US07 | Usuario registrado | Alta | Inicio de sesión | Como usuario registrado, deseo iniciar sesión con mis credenciales para acceder a mi información y a los datos de mis cultivos. | **Scenario 1: Inicio de sesión exitoso**<br>Given el usuario se encuentra en la pantalla de inicio de sesión<br>When ingresa email y contraseña válidos y verificados<br>And confirma el inicio de sesión<br>Then el sistema emite un token JWT válido por 8 horas<br>And el usuario accede a su información personalizada<br><br>**Scenario 2: Credenciales incorrectas**<br>Given el usuario ingresa una contraseña incorrecta<br>When confirma el inicio de sesión<br>Then el sistema informa que las credenciales son inválidas y no emite token<br><br>**Scenario 3: Correo no verificado**<br>Given el usuario se registró pero no verificó su correo<br>When intenta iniciar sesión con credenciales correctas<br>Then el sistema indica que debe verificar su correo electrónico y ofrece reenviar el enlace de verificación |
-| US08 | Usuario registrado | Media | Recuperación de contraseña | Como usuario registrado, deseo recuperar mi contraseña olvidada para volver a acceder a mi cuenta. | **Scenario 1: Envío del enlace de recuperación**<br>Given el usuario solicita recuperar su contraseña<br>When ingresa su correo registrado y confirma el envío<br>Then el sistema envía un enlace con token único válido por 1 hora<br>And informa que debe revisar su correo para restablecer la contraseña<br><br>**Scenario 2: Restablecimiento exitoso**<br>Given el usuario accede al enlace de recuperación con un token válido<br>When ingresa y confirma la nueva contraseña<br>Then el sistema actualiza la contraseña almacenada de forma cifrada<br>And informa que la contraseña fue actualizada<br><br>**Scenario 3: Token expirado o inválido**<br>Given el usuario accede a un enlace de recuperación con token inválido o expirado<br>When intenta restablecer su contraseña<br>Then el sistema informa que el enlace expiró y permite solicitar uno nuevo |
-| US09 | Agricultor | Media | Gestión del perfil de usuario | Como agricultor, deseo consultar y actualizar mi perfil para mantener vigente mi información personal y la de mi parcela. | **Scenario 1: Consulta del perfil**<br>Given el usuario ha iniciado sesión<br>When accede a su perfil<br>Then el sistema muestra Nombre, Email (no editable), Teléfono, Ubicación y Tamaño del terreno, junto con la fecha de registro<br><br>**Scenario 2: Actualización exitosa**<br>Given el usuario modifica su número de teléfono<br>When confirma la actualización<br>Then el sistema guarda el nuevo valor y confirma la actualización<br><br>**Scenario 3: Validación del tamaño del terreno**<br>Given el usuario ingresa un tamaño de terreno negativo<br>When confirma la actualización<br>Then el sistema informa que el tamaño debe ser mayor a 0 y no actualiza el perfil |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US06</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+     <td>EPIC02 - Autenticación y Gestión de Usuarios (IAM)</td>
+   </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Registro de nuevo usuario</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> crear una cuenta en TerraTech para acceder a la aplicación y configurar mis parcelas.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Registro exitoso</b><br>
+       <b>Given</b> el usuario accede al registro<br>
+       <b>When</b> ingresa Nombre (mínimo 2 caracteres), Email válido y Contraseña (mínimo 6 caracteres) confirmada correctamente<br>
+       <b>And</b> confirma el registro<br>
+       <b>Then</b> se crea la cuenta con rol “Agricultor”<br>
+       <b>And</b> el sistema envía un correo de verificación con enlace válido por 24 horas<br>
+       <br>
+       <b>Scenario 2: Correo ya registrado</b><br>
+       <b>Given</b> el usuario ingresa un correo que ya existe<br>
+       <b>When</b> confirma el registro<br>
+       <b>Then</b> el sistema informa que el correo ya está registrado y ofrece la opción de recuperar la contraseña<br>
+       <br>
+       <b>Scenario 3: Contraseñas no coinciden</b><br>
+       <b>Given</b> el usuario ingresa contraseñas distintas<br>
+       <b>When</b> confirma el registro<br>
+       <b>Then</b> el sistema informa que las contraseñas no coinciden y no crea la cuenta
+     </td>
+   </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US07</td>
+      <td>Usuario registrado</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC02 - Autenticación y Gestión de Usuarios (IAM)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Inicio de sesión</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> usuario registrado,<br>
+        <b>deseo</b> iniciar sesión con mis credenciales para acceder a mi información y a los datos de mis cultivos.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Inicio de sesión exitoso</b><br>
+        <b>Given</b> el usuario se encuentra en la pantalla de inicio de sesión<br>
+        <b>When</b> ingresa email y contraseña válidos y verificados<br>
+        <b>And</b> confirma el inicio de sesión<br>
+        <b>Then</b> el sistema emite un token JWT válido por 8 horas<br>
+        <b>And</b> el usuario accede a su información personalizada<br>
+        <br>
+        <b>Scenario 2: Credenciales incorrectas</b><br>
+        <b>Given</b> el usuario ingresa una contraseña incorrecta<br>
+        <b>When</b> confirma el inicio de sesión<br>
+        <b>Then</b> el sistema informa que las credenciales son inválidas y no emite token<br>
+        <br>
+        <b>Scenario 3: Correo no verificado</b><br>
+        <b>Given</b> el usuario se registró pero no verificó su correo<br>
+        <b>When</b> intenta iniciar sesión con credenciales correctas<br>
+        <b>Then</b> el sistema indica que debe verificar su correo electrónico y ofrece reenviar el enlace de verificación
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+  <!-- Fila 1: Encabezados superiores -->
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Fila 2: Valores superiores -->
+    <tr>
+      <td style="text-align: center;">US08</td>
+      <td>Usuario registrado</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC02 - Autenticación y Gestión de Usuarios (IAM)</td>
+    </tr>
+
+    
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Recuperación de contraseña</td>
+    </tr>
+
+    
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+    
+<tr>
+      <td colspan="4">
+        <b>Como</b> usuario registrado,<br>
+        <b>deseo</b> recuperar mi contraseña olvidada para volver a acceder a mi cuenta.
+      </td>
+    </tr>
+
+    
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+    
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Envío del enlace de recuperación</b><br>
+        <b>Given</b> el usuario solicita recuperar su contraseña<br>
+        <b>When</b> ingresa su correo registrado y confirma el envío<br>
+        <b>Then</b> el sistema envía un enlace con token único válido por 1 hora<br>
+        <b>And</b> informa que debe revisar su correo para restablecer la contraseña<br>
+        <br>
+        <b>Scenario 2: Restablecimiento exitoso</b><br>
+        <b>Given</b> el usuario accede al enlace de recuperación con un token válido<br>
+        <b>When</b> ingresa y confirma la nueva contraseña<br>
+        <b>Then</b> el sistema actualiza la contraseña almacenada de forma cifrada<br>
+        <b>And</b> informa que la contraseña fue actualizada<br>
+        <br>
+        <b>Scenario 3: Token expirado o inválido</b><br>
+        <b>Given</b> el usuario accede a un enlace de recuperación con token inválido o expirado<br>
+        <b>When</b> intenta restablecer su contraseña<br>
+        <b>Then</b> el sistema informa que el enlace expiró y permite solicitar uno nuevo
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US09</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC02 - Autenticación y Gestión de Usuarios (IAM)</td>
+    </tr>
+
+ 
+<tr>
+<th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+<td colspan="3">Gestión del perfil de usuario</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Description</td>
+</tr>
+ 
+<tr>
+<td colspan="4">
+<b>Como</b> agricultor,<br>
+<b>deseo</b> consultar y actualizar mi perfil para mantener vigente mi información personal y la de mi parcela.
+</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Acceptance Criteria</td>
+</tr>
+<!-- Fila 7: Contenido Acceptance Criteria -->
+<tr>
+<td colspan="4">
+<b>Scenario 1: Consulta del perfil</b><br>
+<b>Given</b> el usuario ha iniciado sesión<br>
+<b>When</b> accede a su perfil<br>
+<b>Then</b> el sistema muestra Nombre, Email (no editable), Teléfono, Ubicación y Tamaño del terreno, junto con la fecha de registro<br>
+<br>
+<b>Scenario 2: Actualización exitosa</b><br>
+<b>Given</b> el usuario modifica su número de teléfono<br>
+<b>When</b> confirma la actualización<br>
+<b>Then</b> el sistema guarda el nuevo valor y confirma la actualización<br>
+<br>
+<b>Scenario 3: Validación del tamaño del terreno</b><br>
+<b>Given</b> el usuario ingresa un tamaño de terreno negativo<br>
+<b>When</b> confirma la actualización<br>
+<b>Then</b> el sistema informa que el tamaño debe ser mayor a 0 y no actualiza el perfil
+</td>
+</tr>
+  </tbody>
+</table>
 
 #### EPIC03: Dashboard de Monitoreo en Tiempo Real (Monitoring)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US10 | Agricultor | Alta | Consulta de indicadores clave | Como agricultor, deseo consultar en tiempo real los valores de humedad, nutrientes y temperatura del suelo para decidir oportunamente el riego y la fertilización. | **Scenario 1: Consulta inicial**<br>Given el agricultor ha iniciado sesión y tiene al menos un sensor asociado<br>When accede al dashboard<br>Then el sistema muestra los valores actuales de humedad (%), nutrientes (N-P-K en ppm) y temperatura del suelo (°C)<br>And indica la fecha y hora de la última actualización de cada valor<br><br>**Scenario 2: Actualización automática**<br>Given el dashboard está visible y existe conexión con el servicio de datos<br>When el backend recibe una nueva lectura del sensor<br>Then los valores mostrados se actualizan sin intervención del usuario<br><br>**Scenario 3: Sensor sin conexión**<br>Given un sensor no envía datos durante más de 30 minutos<br>When el sistema actualiza la información<br>Then el sistema advierte que los datos están desactualizados por falta de conexión del sensor |
-| US11 | Agricultor | Media | Selección de zona o sensor específico | Como agricultor, deseo seleccionar una parcela o sensor específico para revisar los datos de esa zona de mi cultivo. | **Scenario 1: Selección de zona**<br>Given el agricultor tiene configuradas zonas con nombres<br>When selecciona una zona<br>Then el sistema muestra los indicadores correspondientes a los sensores de esa zona<br><br>**Scenario 2: Actualización de indicadores por zona**<br>Given el dashboard muestra los datos de una zona<br>When el agricultor selecciona otra zona<br>Then los indicadores y el histórico se actualizan con los datos de la nueva zona<br>And el sistema registra el cambio de zona consultada |
-| US12 | Agricultor | Media | Consulta del histórico de datos | Como agricultor, deseo consultar el histórico de humedad de mi cultivo para identificar tendencias y anticipar decisiones. | **Scenario 1: Rango por defecto**<br>Given el agricultor consulta el histórico<br>When el sistema carga la información<br>Then se presentan los valores de humedad de los últimos 7 días<br>And se indica el umbral mínimo configurado como referencia<br><br>**Scenario 2: Cambio de rango**<br>Given el agricultor consulta el histórico de 7 días<br>When selecciona un rango de 30 días<br>Then el sistema actualiza la información en menos de 2 segundos<br><br>**Scenario 3: Detalle de un punto del histórico**<br>Given el histórico está visible<br>When el agricultor consulta un punto específico<br>Then el sistema informa la fecha exacta, el valor de humedad y si existió una alerta en esa fecha |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US10</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC03 - Dashboard de Monitoreo en Tiempo Real (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Consulta de indicadores clave</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> consultar en tiempo real los valores de humedad, nutrientes y temperatura del suelo para decidir oportunamente el riego y la fertilización.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Consulta inicial</b><br>
+        <b>Given</b> el agricultor ha iniciado sesión y tiene al menos un sensor asociado<br>
+        <b>When</b> accede al dashboard<br>
+        <b>Then</b> el sistema muestra los valores actuales de humedad (%), nutrientes (N-P-K en ppm) y temperatura del suelo (°C)<br>
+        <b>And</b> indica la fecha y hora de la última actualización de cada valor<br>
+        <br>
+        <b>Scenario 2: Actualización automática</b><br>
+        <b>Given</b> el dashboard está visible y existe conexión con el servicio de datos<br>
+        <b>When</b> el backend recibe una nueva lectura del sensor<br>
+        <b>Then</b> los valores mostrados se actualizan sin intervención del usuario<br>
+        <br>
+        <b>Scenario 3: Sensor sin conexión</b><br>
+        <b>Given</b> un sensor no envía datos durante más de 30 minutos<br>
+        <b>When</b> el sistema actualiza la información<br>
+        <b>Then</b> el sistema advierte que los datos están desactualizados por falta de conexión del sensor
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US11</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC03 - Dashboard de Monitoreo en Tiempo Real (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Selección de zona o sensor específico</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> seleccionar una parcela o sensor específico para revisar los datos de esa zona de mi cultivo.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Selección de zona</b><br>
+        <b>Given</b> el agricultor tiene configuradas zonas con nombres<br>
+        <b>When</b> selecciona una zona<br>
+        <b>Then</b> el sistema muestra los indicadores correspondientes a los sensores de esa zona<br>
+        <br>
+        <b>Scenario 2: Actualización de indicadores por zona</b><br>
+        <b>Given</b> el dashboard muestra los datos de una zona<br>
+        <b>When</b> el agricultor selecciona otra zona<br>
+        <b>Then</b> los indicadores y el histórico se actualizan con los datos de la nueva zona<br>
+        <b>And</b> el sistema registra el cambio de zona consultada
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US12</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC03 - Dashboard de Monitoreo en Tiempo Real (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Consulta del histórico de datos</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> consultar el histórico de humedad de mi cultivo para identificar tendencias y anticipar decisiones.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Rango por defecto</b><br>
+        <b>Given</b> el agricultor consulta el histórico<br>
+        <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presentan los valores de humedad de los últimos 7 días<br>
+        <b>And</b> se indica el umbral mínimo configurado como referencia<br>
+        <br>
+        <b>Scenario 2: Cambio de rango</b><br>
+        <b>Given</b> el agricultor consulta el histórico de 7 días<br>
+        <b>When</b> selecciona un rango de 30 días<br>
+        <b>Then</b> el sistema actualiza la información en menos de 2 segundos<br>
+        <br>
+        <b>Scenario 3: Detalle de un punto del histórico</b><br>
+        <b>Given</b> el histórico está visible<br>
+        <b>When</b> el agricultor consulta un punto específico<br>
+        <b>Then</b> el sistema informa la fecha exacta, el valor de humedad y si existió una alerta en esa fecha
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC04: Mapa de Fertilidad (Monitoring)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US13 | Agricultor | Media | Identificación de zonas fértiles | Como agricultor, deseo identificar las zonas más fértiles de mi terreno para planificar la rotación de cultivos y optimizar la siembra. | **Scenario 1: Visualización de fertilidad por zona**<br>Given el agricultor accede a la sección del mapa de fertilidad y existe al menos una zona con datos de sensores<br>When el sistema carga el mapa<br>Then cada zona se representa según su nivel de fertilidad:<br>- Óptimo: humedad mayor a 60% y nutrientes en rango óptimo<br>- Moderado: humedad entre 30% y 60% o nutrientes en rango medio<br>- Crítico: humedad menor a 30% o nutrientes bajos<br>And el agricultor puede consultar el detalle de cada zona<br><br>**Scenario 2: Acciones sugeridas por nivel**<br>Given el mapa de fertilidad está visible<br>When el agricultor consulta la referencia de niveles<br>Then el sistema presenta, para cada nivel, la acción sugerida correspondiente (mantener el plan actual, monitorear en 12 horas o regar y fertilizar en las próximas 2 horas) |
-| US14 | Agricultor | Baja | Navegación en el mapa | Como agricultor, deseo acercar y desplazarme por el mapa para examinar zonas específicas con mayor detalle. | **Scenario 1: Acercamiento y alejamiento**<br>Given el mapa de fertilidad está visible<br>When el agricultor acerca o aleja la vista<br>Then el mapa presenta mayor o menor nivel de detalle según la acción<br><br>**Scenario 2: Desplazamiento**<br>Given el mapa se encuentra con alto nivel de detalle<br>When el agricultor se desplaza por el mapa<br>Then la vista se desplaza y mantiene el nivel de acercamiento seleccionado |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US13</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC04 - Mapa de Fertilidad (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Identificación de zonas fértiles</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> identificar las zonas más fértiles de mi terreno para planificar la rotación de cultivos y optimizar la siembra.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Visualización de fertilidad por zona</b><br>
+        <b>Given</b> el agricultor accede a la sección del mapa de fertilidad y existe al menos una zona con datos de sensores<br>
+        <b>When</b> el sistema carga el mapa<br>
+        <b>Then</b> cada zona se representa según su nivel de fertilidad:<br>
+        - Óptimo: humedad mayor a 60% y nutrientes en rango óptimo<br>
+        - Moderado: humedad entre 30% y 60% o nutrientes en rango medio<br>
+        - Crítico: humedad menor a 30% o nutrientes bajos<br>
+        <b>And</b> el agricultor puede consultar el detalle de cada zona<br>
+        <br>
+        <b>Scenario 2: Acciones sugeridas por nivel</b><br>
+        <b>Given</b> el mapa de fertilidad está visible<br>
+        <b>When</b> el agricultor consulta la referencia de niveles<br>
+        <b>Then</b> el sistema presenta, para cada nivel, la acción sugerida correspondiente (mantener el plan actual, monitorear en 12 horas o regar y fertilizar en las próximas 2 horas)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US14</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC04 - Mapa de Fertilidad (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Navegación en el mapa</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> acercar y desplazarme por el mapa para examinar zonas específicas con mayor detalle.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Acercamiento y alejamiento</b><br>
+        <b>Given</b> el mapa de fertilidad está visible<br>
+        <b>When</b> el agricultor acerca o aleja la vista<br>
+        <b>Then</b> el mapa presenta mayor o menor nivel de detalle según la acción<br>
+        <br>
+        <b>Scenario 2: Desplazamiento</b><br>
+        <b>Given</b> el mapa se encuentra con alto nivel de detalle<br>
+        <b>When</b> el agricultor se desplaza por el mapa<br>
+        <b>Then</b> la vista se desplaza y mantiene el nivel de acercamiento seleccionado
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC05: Motor de Recomendaciones (Monitoring)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US15 | Agricultor | Alta | Recomendación automática de riego | Como agricultor, deseo recibir una recomendación automática sobre cuándo regar para optimizar el uso del agua y evitar el estrés hídrico. | **Scenario 1: Humedad críticamente baja**<br>Given el agricultor ha iniciado sesión y el sensor de la zona “Norte” reporta 25% de humedad<br>And el umbral mínimo configurado para la zona es 30%<br>When el sistema procesa la última lectura<br>Then se genera una recomendación urgente de riego para la zona Norte con una duración sugerida de 25 minutos<br>And se envía una notificación al dispositivo del agricultor si las notificaciones están habilitadas<br><br>**Scenario 2: Humedad adecuada**<br>Given el sensor de la zona “Sur” reporta 65% de humedad y los umbrales son mínimo 30% y máximo 80%<br>When el sistema procesa la lectura<br>Then se genera un aviso informativo que indica que no es necesario regar<br>And no se envía notificación al dispositivo<br><br>**Scenario 3: Humedad excesiva**<br>Given el sensor reporta 85% de humedad y el umbral máximo es 80%<br>When el sistema evalúa la condición<br>Then se genera una recomendación de suspender el riego por riesgo de pudrición de raíces |
-| US16 | Agricultor | Alta | Recomendación automática de fertilización | Como agricultor, deseo recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar la sobrefertilización y reducir costos. | **Scenario 1: Deficiencia de nitrógeno**<br>Given el sensor de la zona “Este” reporta N=15 ppm, P=25 ppm y K=40 ppm<br>And los rangos óptimos son N (20-40 ppm), P (15-30 ppm) y K (30-50 ppm)<br>When el sistema evalúa los datos<br>Then se genera una recomendación de aplicar 8 kg/ha de Nitrógeno (Urea 46-0-0) para la zona Este<br>And la recomendación se registra con tipo “fertilizer”<br><br>**Scenario 2: Nutrientes en niveles óptimos**<br>Given la zona “Oeste” reporta N=35 ppm, P=22 ppm y K=45 ppm<br>When el agricultor consulta las recomendaciones<br>Then el sistema informa que los niveles son adecuados y sugiere mantener el plan de fertilización<br><br>**Scenario 3: Deficiencias múltiples**<br>Given la zona “Norte” reporta N=10 ppm, P=8 ppm y K=20 ppm<br>When el sistema procesa los datos<br>Then se genera una recomendación prioritaria de aplicar 12 kg/ha de NPK 20-20-20 por deficiencias múltiples |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US15</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC05 - Motor de Recomendaciones (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Recomendación automática de riego</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> recibir una recomendación automática sobre cuándo regar para optimizar el uso del agua y evitar el estrés hídrico.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Humedad críticamente baja</b><br>
+        <b>Given</b> el agricultor ha iniciado sesión y el sensor de la zona “Norte” reporta 25% de humedad<br>
+        <b>And</b> el umbral mínimo configurado para la zona es 30%<br>
+        <b>When</b> el sistema procesa la última lectura<br>
+        <b>Then</b> se genera una recomendación urgente de riego para la zona Norte con una duración sugerida de 25 minutos<br>
+        <b>And</b> se envía una notificación al dispositivo del agricultor si las notificaciones están habilitadas<br>
+        <br>
+        <b>Scenario 2: Humedad adecuada</b><br>
+        <b>Given</b> el sensor de la zona “Sur” reporta 65% de humedad y los umbrales son mínimo 30% y máximo 80%<br>
+        <b>When</b> el sistema procesa la lectura<br>
+        <b>Then</b> se genera un aviso informativo que indica que no es necesario regar<br>
+        <b>And</b> no se envía notificación al dispositivo<br>
+        <br>
+        <b>Scenario 3: Humedad excesiva</b><br>
+        <b>Given</b> el sensor reporta 85% de humedad y el umbral máximo es 80%<br>
+        <b>When</b> el sistema evalúa la condición<br>
+        <b>Then</b> se genera una recomendación de suspender el riego por riesgo de pudrición de raíces
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US16</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC05 - Motor de Recomendaciones (Monitoring)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Recomendación automática de fertilización</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar la sobrefertilización y reducir costos.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Deficiencia de nitrógeno</b><br>
+        <b>Given</b> el sensor de la zona “Este” reporta N=15 ppm, P=25 ppm y K=40 ppm<br>
+        <b>And</b> los rangos óptimos son N (20-40 ppm), P (15-30 ppm) y K (30-50 ppm)<br>
+        <b>When</b> el sistema evalúa los datos<br>
+        <b>Then</b> se genera una recomendación de aplicar 8 kg/ha de Nitrógeno (Urea 46-0-0) para la zona Este<br>
+        <b>And</b> la recomendación se registra con tipo “fertilizer”<br>
+        <br>
+        <b>Scenario 2: Nutrientes en niveles óptimos</b><br>
+        <b>Given</b> la zona “Oeste” reporta N=35 ppm, P=22 ppm y K=45 ppm<br>
+        <b>When</b> el agricultor consulta las recomendaciones<br>
+        <b>Then</b> el sistema informa que los niveles son adecuados y sugiere mantener el plan de fertilización<br>
+        <br>
+        <b>Scenario 3: Deficiencias múltiples</b><br>
+        <b>Given</b> la zona “Norte” reporta N=10 ppm, P=8 ppm y K=20 ppm<br>
+        <b>When</b> el sistema procesa los datos<br>
+        <b>Then</b> se genera una recomendación prioritaria de aplicar 12 kg/ha de NPK 20-20-20 por deficiencias múltiples
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC06: Gestión de Sensores (Monitoring)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US17 | Agricultor | Alta | Registro de un nuevo sensor | Como agricultor, deseo registrar un nuevo sensor en mi cuenta para monitorear una nueva zona o cultivo. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a la gestión de sensores<br>When registra un dispositivo con código único (formato TT-XXXXXX), nombre de la zona y cultivo actual<br>And confirma el registro<br>Then el sensor queda asociado a su cuenta con estado “Activo”<br>And el sistema comienza a recibir datos en los siguientes 5 minutos<br><br>**Scenario 2: Código inválido o inexistente**<br>Given el agricultor ingresa un código que no existe en el inventario global<br>When confirma el registro<br>Then el sistema informa que el código es inválido y no asocia el sensor<br><br>**Scenario 3: Código ya registrado**<br>Given el código ingresado ya está asociado a otra cuenta<br>When el agricultor confirma el registro<br>Then el sistema informa que el sensor ya está registrado por otro usuario y no lo asocia |
-| US18 | Agricultor | Media | Configuración de umbrales de alerta | Como agricultor, deseo configurar umbrales personalizados de humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado. | **Scenario 1: Configuración por zona**<br>Given el agricultor se encuentra en la configuración de alertas de una zona<br>When establece humedad mínima de 25% y máxima de 75%<br>And confirma la configuración<br>Then el sistema guarda los umbrales para esa zona y confirma la actualización<br><br>**Scenario 2: Alerta por umbral personalizado**<br>Given el umbral máximo de la zona “Centro” es 70%<br>And el sensor reporta 72% de humedad<br>When el sistema evalúa la condición<br>Then se genera una alerta que indica humedad excesiva y sugiere suspender el riego por 12 horas<br><br>**Scenario 3: Restablecimiento de valores**<br>Given el agricultor ha modificado los umbrales de una zona<br>When solicita restablecer los valores por defecto<br>Then el sistema restaura los umbrales predeterminados y confirma la acción |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US17</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC06 - Gestión de Sensores (Monitoring)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Registro de un nuevo sensor</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> registrar un nuevo sensor en mi cuenta para monitorear una nueva zona o cultivo.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Registro exitoso</b><br>
+       <b>Given</b> el agricultor accede a la gestión de sensores<br>
+       <b>When</b> registra un dispositivo con código único (formato TT-XXXXXX), nombre de la zona y cultivo actual<br>
+       <b>And</b> confirma el registro<br>
+       <b>Then</b> el sensor queda asociado a su cuenta con estado “Activo”<br>
+       <b>And</b> el sistema comienza a recibir datos en los siguientes 5 minutos<br>
+       <br>
+       <b>Scenario 2: Código inválido o inexistente</b><br>
+       <b>Given</b> el agricultor ingresa un código que no existe en el inventario global<br>
+       <b>When</b> confirma el registro<br>
+       <b>Then</b> el sistema informa que el código es inválido y no asocia el sensor<br>
+       <br>
+       <b>Scenario 3: Código ya registrado</b><br>
+       <b>Given</b> el código ingresado ya está asociado a otra cuenta<br>
+       <b>When</b> el agricultor confirma el registro<br>
+       <b>Then</b> el sistema informa que el sensor ya está registrado por otro usuario y no lo asocia
+     </td>
+   </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US18</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC06 - Gestión de Sensores (Monitoring)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Configuración de umbrales de alerta</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> configurar umbrales personalizados de humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Configuración por zona</b><br>
+       <b>Given</b> el agricultor se encuentra en la configuración de alertas de una zona<br>
+       <b>When</b> establece humedad mínima de 25% y máxima de 75%<br>
+       <b>And</b> confirma la configuración<br>
+       <b>Then</b> el sistema guarda los umbrales para esa zona y confirma la actualización<br>
+       <br>
+       <b>Scenario 2: Alerta por umbral personalizado</b><br>
+       <b>Given</b> el umbral máximo de la zona “Centro” es 70%<br>
+       <b>And</b> el sensor reporta 72% de humedad<br>
+       <b>When</b> el sistema evalúa la condición<br>
+       <b>Then</b> se genera una alerta que indica humedad excesiva y sugiere suspender el riego por 12 horas<br>
+       <br>
+       <b>Scenario 3: Restablecimiento de valores</b><br>
+       <b>Given</b> el agricultor ha modificado los umbrales de una zona<br>
+       <b>When</b> solicita restablecer los valores por defecto<br>
+       <b>Then</b> el sistema restaura los umbrales predeterminados y confirma la acción
+     </td>
+   </tr>
+  </tbody>
+</table>
 
 #### EPIC07: API RESTful
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US19 | Developer | Media | Documentación interactiva de la API | Como developer, deseo consultar la documentación de la API para comprender cómo consumir sus endpoints correctamente. | **Scenario 1: Consulta de la documentación**<br>Given la API del backend se encuentra desplegada en el entorno de desarrollo<br>When el developer accede a la documentación interactiva<br>Then el sistema presenta los endpoints agrupados por controlador<br>And cada endpoint incluye método HTTP, ruta, parámetros y ejemplos de solicitud y respuesta<br><br>**Scenario 2: Prueba de un endpoint**<br>Given el developer cuenta con un token JWT válido<br>When ejecuta la consulta de un sensor específico desde la documentación<br>Then el sistema responde con el código HTTP y el JSON correspondiente<br><br>**Scenario 3: Actualización de la documentación**<br>Given se incorpora un nuevo endpoint al backend<br>When el equipo genera una nueva versión del proyecto<br>Then la documentación se actualiza automáticamente sin cambios manuales |
-| US20 | Developer | Media | Consulta de datos de un sensor | Como developer, deseo consumir un endpoint que devuelva los últimos valores de un sensor para mostrarlos en la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un sensor con identificador sens-001 asociado a una parcela y con lecturas de las últimas 24 horas<br>When se consulta el endpoint con un token válido<br>Then el sistema responde HTTP 200 con el identificador del sensor, la parcela, la humedad, los nutrientes (N-P-K), la temperatura, la fecha de la lectura y el nivel de batería<br><br>**Scenario 2: Sensor no encontrado**<br>Given no existe un sensor con el identificador consultado<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 404 con un mensaje que indica que el sensor no existe<br><br>**Scenario 3: Lecturas desactualizadas**<br>Given el sensor consultado no registra lecturas recientes<br>When se ejecuta la consulta<br>Then el sistema responde HTTP 200 e indica que los datos están desactualizados junto con el tiempo transcurrido desde la última lectura |
-| US21 | Developer | Media | Registro de recomendaciones mediante webhook | Como developer, deseo implementar un endpoint que reciba las recomendaciones del motor de análisis para almacenarlas y mostrarlas en la aplicación. | **Scenario 1: Recepción válida**<br>Given el motor de análisis envía una recomendación con zona, acción, duración, prioridad y motivo<br>And la solicitud incluye una clave de API válida<br>When el sistema procesa la solicitud<br>Then el sistema almacena la recomendación y responde HTTP 201 con la ubicación del recurso creado<br>And la recomendación queda disponible para el agricultor<br><br>**Scenario 2: Datos incompletos**<br>Given la solicitud no incluye la zona de la recomendación<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 400 con el detalle del campo faltante y no almacena la recomendación<br><br>**Scenario 3: Clave de API inválida**<br>Given la solicitud no incluye la clave de API o incluye una incorrecta<br>When el sistema procesa la solicitud<br>Then el sistema responde HTTP 401 y no procesa la recomendación |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US19</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC07 - API RESTful</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Documentación interactiva de la API</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> consultar la documentación de la API para comprender cómo consumir sus endpoints correctamente.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta de la documentación</b><br>
+       <b>Given</b> la API del backend se encuentra desplegada en el entorno de desarrollo<br>
+       <b>When</b> el developer accede a la documentación interactiva<br>
+       <b>Then</b> el sistema presenta los endpoints agrupados por controlador<br>
+       <b>And</b> cada endpoint incluye método HTTP, ruta, parámetros y ejemplos de solicitud y respuesta<br>
+       <br>
+       <b>Scenario 2: Prueba de un endpoint</b><br>
+       <b>Given</b> el developer cuenta con un token JWT válido<br>
+       <b>When</b> ejecuta la consulta de un sensor específico desde la documentación<br>
+       <b>Then</b> el sistema responde con el código HTTP y el JSON correspondiente<br>
+       <br>
+       <b>Scenario 3: Actualización de la documentación</b><br>
+       <b>Given</b> se incorpora un nuevo endpoint al backend<br>
+       <b>When</b> el equipo genera una nueva versión del proyecto<br>
+       <b>Then</b> la documentación se actualiza automáticamente sin cambios manuales
+     </td>
+   </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US20</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC07 - API RESTful</td>
+    </tr>
+
+     
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de datos de un sensor</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> consumir un endpoint que devuelva los últimos valores de un sensor para mostrarlos en la aplicación móvil.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta exitosa</b><br>
+       <b>Given</b> existe un sensor con identificador sens-001 asociado a una parcela y con lecturas de las últimas 24 horas<br>
+       <b>When</b> se consulta el endpoint con un token válido<br>
+       <b>Then</b> el sistema responde HTTP 200 con el identificador del sensor, la parcela, la humedad, los nutrientes (N-P-K), la temperatura, la fecha de la lectura y el nivel de batería<br>
+       <br>
+       <b>Scenario 2: Sensor no encontrado</b><br>
+       <b>Given</b> no existe un sensor con el identificador consultado<br>
+       <b>When</b> se ejecuta la consulta<br>
+       <b>Then</b> el sistema responde HTTP 404 con un mensaje que indica que el sensor no existe<br>
+       <br>
+       <b>Scenario 3: Lecturas desactualizadas</b><br>
+       <b>Given</b> el sensor consultado no registra lecturas recientes<br>
+       <b>When</b> se ejecuta la consulta<br>
+       <b>Then</b> el sistema responde HTTP 200 e indica que los datos están desactualizados junto con el tiempo transcurrido desde la última lectura
+     </td>
+   </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US21</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC07 - API RESTful</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Registro de recomendaciones mediante webhook</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> implementar un endpoint que reciba las recomendaciones del motor de análisis para almacenarlas y mostrarlas en la aplicación.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Recepción válida</b><br>
+       <b>Given</b> el motor de análisis envía una recomendación con zona, acción, duración, prioridad y motivo<br>
+       <b>And</b> la solicitud incluye una clave de API válida<br>
+       <b>When</b> el sistema procesa la solicitud<br>
+       <b>Then</b> el sistema almacena la recomendación y responde HTTP 201 con la ubicación del recurso creado<br>
+       <b>And</b> la recomendación queda disponible para el agricultor<br>
+       <br>
+       <b>Scenario 2: Datos incompletos</b><br>
+       <b>Given</b> la solicitud no incluye la zona de la recomendación<br>
+       <b>When</b> el sistema procesa la solicitud<br>
+       <b>Then</b> el sistema responde HTTP 400 con el detalle del campo faltante y no almacena la recomendación<br>
+       <br>
+       <b>Scenario 3: Clave de API inválida</b><br>
+       <b>Given</b> la solicitud no incluye la clave de API o incluye una incorrecta<br>
+       <b>When</b> el sistema procesa la solicitud<br>
+       <b>Then</b> el sistema responde HTTP 401 y no procesa la recomendación
+     </td>
+   </tr>
+  </tbody>
+</table>
 
 #### EPIC08: Integración con Servicios Externos
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US22 | Agricultor | Media | Consulta del pronóstico del clima | Como agricultor, deseo consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego con las lluvias previstas. | **Scenario 1: Consulta del pronóstico**<br>Given el agricultor ha iniciado sesión y su perfil tiene una ubicación configurada<br>When consulta el pronóstico en su panel principal<br>Then el sistema presenta la probabilidad de lluvia de las próximas 24 horas, la temperatura actual y prevista, la humedad ambiental y la velocidad del viento<br>And los datos provienen de un servicio externo de clima<br><br>**Scenario 2: Actualización automática**<br>Given el pronóstico está visible y la última actualización tiene más de 3 horas<br>When el sistema ejecuta la actualización periódica<br>Then el pronóstico se actualiza sin intervención del agricultor<br><br>**Scenario 3: Recomendación combinada**<br>Given el pronóstico indica 80% de probabilidad de lluvia con 10 mm en las próximas 6 horas<br>And el sensor de humedad reporta 35%<br>When el sistema evalúa ambos factores<br>Then el sistema recomienda suspender el riego planificado para ese día y estima un ahorro aproximado de 500 litros |
-| US23 | Agricultor | Baja | Consulta de imágenes satelitales | Como agricultor, deseo consultar imágenes satelitales de mi parcela para identificar visualmente zonas con problemas de crecimiento. | **Scenario 1: Consulta de la imagen más reciente**<br>Given el agricultor accede a la sección de imágenes satelitales<br>When el sistema obtiene la imagen más reciente del servicio externo<br>Then el sistema presenta la imagen con su fecha de captura<br>And el agricultor puede alternar entre la vista satelital y el mapa base<br><br>**Scenario 2: Consulta histórica**<br>Given el agricultor consulta una fecha anterior<br>When el sistema obtiene la imagen disponible más cercana a esa fecha<br>Then el sistema presenta la imagen e informa la fecha y el porcentaje de nubosidad<br>And si no existen imágenes para la fecha, el sistema informa la situación<br><br>**Scenario 3: Comparación de periodos**<br>Given el agricultor activa la comparación entre dos fechas<br>When el sistema presenta ambas imágenes<br>Then el agricultor puede comparar los cambios en la vegetación entre los dos periodos |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US22</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC08 - Integración con Servicios Externos</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Consulta del pronóstico del clima</td>
+   </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+   </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> consultar el pronóstico del clima junto con los datos de mi suelo para coordinar el riego con las lluvias previstas.
+</td>
+</tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Consulta del pronóstico</b><br>
+        <b>Given</b> el agricultor ha iniciado sesión y su perfil tiene una ubicación configurada<br>
+        <b>When</b> consulta el pronóstico en su panel principal<br>
+        <b>Then</b> el sistema presenta la probabilidad de lluvia de las próximas 24 horas, la temperatura actual y prevista, la humedad ambiental y la velocidad del viento<br>
+        <b>And</b> los datos provienen de un servicio externo de clima<br>
+        <br>
+        <b>Scenario 2: Actualización automática</b><br>
+        <b>Given</b> el pronóstico está visible y la última actualización tiene más de 3 horas<br>
+        <b>When</b> el sistema ejecuta la actualización periódica<br>
+        <b>Then</b> el pronóstico se actualiza sin intervención del agricultor<br>
+        <br>
+        <b>Scenario 3: Recomendación combinada</b><br>
+        <b>Given</b> el pronóstico indica 80% de probabilidad de lluvia con 10 mm en las próximas 6 horas<br>
+        <b>And</b> el sensor de humedad reporta 35%<br>
+        <b>When</b> el sistema evalúa ambos factores<br>
+        <b>Then</b> el sistema recomienda suspender el riego planificado para ese día y estima un ahorro aproximado de 500 litros
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US23</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC08 - Integración con Servicios Externos</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Consulta de imágenes satelitales</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> consultar imágenes satelitales de mi parcela para identificar visualmente zonas con problemas de crecimiento.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Consulta de la imagen más reciente</b><br>
+        <b>Given</b> el agricultor accede a la sección de imágenes satelitales<br>
+        <b>When</b> el sistema obtiene la imagen más reciente del servicio externo<br>
+        <b>Then</b> el sistema presenta la imagen con su fecha de captura<br>
+        <b>And</b> el agricultor puede alternar entre la vista satelital y el mapa base<br>
+        <br>
+        <b>Scenario 2: Consulta histórica</b><br>
+        <b>Given</b> el agricultor consulta una fecha anterior<br>
+        <b>When</b> el sistema obtiene la imagen disponible más cercana a esa fecha<br>
+        <b>Then</b> el sistema presenta la imagen e informa la fecha y el porcentaje de nubosidad<br>
+        <b>And</b> si no existen imágenes para la fecha, el sistema informa la situación<br>
+        <br>
+        <b>Scenario 3: Comparación de periodos</b><br>
+        <b>Given</b> el agricultor activa la comparación entre dos fechas<br>
+        <b>When</b> el sistema presenta ambas imágenes<br>
+        <b>Then</b> el agricultor puede comparar los cambios en la vegetación entre los dos periodos
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC09: Stock Management
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US24 | Agricultor | Media | Registro de insumos | Como agricultor, deseo registrar los insumos que tengo disponibles para llevar un control de los productos destinados a mis cultivos. | **Scenario 1: Registro exitoso**<br>Given el agricultor accede a su inventario<br>When registra un insumo con nombre, cantidad, unidad de medida, precio unitario y proveedor opcional<br>And confirma el registro<br>Then el insumo queda registrado en el inventario y el sistema confirma la operación<br><br>**Scenario 2: Nombre obligatorio**<br>Given el agricultor intenta registrar un insumo sin nombre<br>When confirma el registro<br>Then el sistema informa que el nombre es obligatorio y no registra el insumo<br><br>**Scenario 3: Cantidad inválida**<br>Given el agricultor ingresa una cantidad negativa<br>When confirma el registro<br>Then el sistema informa que la cantidad debe ser mayor o igual a cero y no registra el insumo |
-| US25 | Agricultor | Media | Consulta y filtrado del inventario | Como agricultor, deseo consultar mi inventario y filtrarlo por nombre o disponibilidad para encontrar rápidamente lo que necesito. | **Scenario 1: Consulta del inventario**<br>Given el agricultor accede a su inventario<br>When el sistema carga la información<br>Then se presenta la lista de insumos con nombre, cantidad, unidad, precio unitario y proveedor<br>And la lista se organiza en páginas de 10 elementos<br><br>**Scenario 2: Filtro por nombre**<br>Given el agricultor consulta su inventario<br>When busca por el nombre de un insumo<br>Then el sistema presenta únicamente los insumos cuyo nombre coincide con la búsqueda<br><br>**Scenario 3: Filtro por stock bajo**<br>Given el agricultor consulta su inventario<br>When aplica el filtro de stock bajo<br>Then el sistema presenta los insumos con cantidad inferior al umbral configurado e indica su condición |
-| US26 | Agricultor | Baja | Actualización del stock de insumos | Como agricultor, deseo aumentar o disminuir la cantidad de un insumo para reflejar el consumo real o las nuevas compras. | **Scenario 1: Descuento por consumo**<br>Given el agricultor consulta un insumo de su inventario<br>When registra el descuento de una cantidad<br>And confirma la operación<br>Then el sistema reduce el stock en la cantidad indicada y confirma la actualización<br><br>**Scenario 2: Aumento por compra**<br>Given el agricultor registra una nueva compra de un insumo<br>When ingresa la cantidad y el precio de compra<br>And confirma la operación<br>Then el sistema aumenta el stock y registra el movimiento en el historial<br><br>**Scenario 3: Stock insuficiente**<br>Given el insumo tiene 10 unidades disponibles y el agricultor intenta descontar 15<br>When confirma la operación<br>Then el sistema informa que el stock es insuficiente y no realiza el descuento |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US24</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC09 - Stock Management</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Registro de insumos</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> agricultor,<br>
+        <b>deseo</b> registrar los insumos que tengo disponibles para llevar un control de los productos destinados a mis cultivos.
+      </td>
+    </tr>
+
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+ 
+<tr>
+      <td colspan="4">
+        <b>Scenario 1: Registro exitoso</b><br>
+        <b>Given</b> el agricultor accede a su inventario<br>
+        <b>When</b> registra un insumo con nombre, cantidad, unidad de medida, precio unitario y proveedor opcional<br>
+        <b>And</b> confirma el registro<br>
+        <b>Then</b> el insumo queda registrado en el inventario y el sistema confirma la operación<br>
+        <br>
+        <b>Scenario 2: Nombre obligatorio</b><br>
+        <b>Given</b> el agricultor intenta registrar un insumo sin nombre<br>
+        <b>When</b> confirma el registro<br>
+        <b>Then</b> el sistema informa que el nombre es obligatorio y no registra el insumo<br>
+        <br>
+        <b>Scenario 3: Cantidad inválida</b><br>
+        <b>Given</b> el agricultor ingresa una cantidad negativa<br>
+        <b>When</b> confirma el registro<br>
+        <b>Then</b> el sistema informa que la cantidad debe ser mayor o igual a cero y no registra el insumo
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US25</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC09 - Stock Management</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Consulta y filtrado del inventario</td>
+    </tr>
+
+     
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> consultar mi inventario y filtrarlo por nombre o disponibilidad para encontrar rápidamente lo que necesito.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta del inventario</b><br>
+       <b>Given</b> el agricultor accede a su inventario<br>
+       <b>When</b> el sistema carga la información<br>
+       <b>Then</b> se presenta la lista de insumos con nombre, cantidad, unidad, precio unitario y proveedor<br>
+       <b>And</b> la lista se organiza en páginas de 10 elementos<br>
+       <br>
+       <b>Scenario 2: Filtro por nombre</b><br>
+       <b>Given</b> el agricultor consulta su inventario<br>
+       <b>When</b> busca por el nombre de un insumo<br>
+       <b>Then</b> el sistema presenta únicamente los insumos cuyo nombre coincide con la búsqueda<br>
+       <br>
+       <b>Scenario 3: Filtro por stock bajo</b><br>
+       <b>Given</b> el agricultor consulta su inventario<br>
+       <b>When</b> aplica el filtro de stock bajo<br>
+       <b>Then</b> el sistema presenta los insumos con cantidad inferior al umbral configurado e indica su condición
+     </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US26</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC09 - Stock Management</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Actualización del stock de insumos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> aumentar o disminuir la cantidad de un insumo para reflejar el consumo real o las nuevas compras.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Descuento por consumo</b><br>
+       <b>Given</b> el agricultor consulta un insumo de su inventario<br>
+       <b>When</b> registra el descuento de una cantidad<br>
+       <b>And</b> confirma la operación<br>
+       <b>Then</b> el sistema reduce el stock en la cantidad indicada y confirma la actualización<br>
+       <br>
+       <b>Scenario 2: Aumento por compra</b><br>
+       <b>Given</b> el agricultor registra una nueva compra de un insumo<br>
+       <b>When</b> ingresa la cantidad y el precio de compra<br>
+       <b>And</b> confirma la operación<br>
+       <b>Then</b> el sistema aumenta el stock y registra el movimiento en el historial<br>
+       <br>
+       <b>Scenario 3: Stock insuficiente</b><br>
+       <b>Given</b> el insumo tiene 10 unidades disponibles y el agricultor intenta descontar 15<br>
+       <b>When</b> confirma la operación<br>
+       <b>Then</b> el sistema informa que el stock es insuficiente y no realiza el descuento
+     </td>
+   </tr>
+  </tbody>
+</table>
 
 #### EPIC10: Notification Management
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US27 | Agricultor | Alta | Consulta de notificaciones de los sensores | Como agricultor, deseo recibir y consultar las notificaciones generadas por los sensores para actuar ante condiciones críticas. | **Scenario 1: Consulta de notificaciones**<br>Given el agricultor ha iniciado sesión<br>When consulta sus notificaciones<br>Then el sistema presenta las notificaciones no leídas primero<br>And cada notificación indica su tipo, mensaje, fecha, hora y estado<br><br>**Scenario 2: Notificación por humedad baja**<br>Given el sensor de la zona “Norte” reporta 25% de humedad, por debajo del umbral crítico<br>When el sistema procesa la lectura<br>Then el sistema genera una notificación que informa la humedad registrada y recomienda regar en las próximas 2 horas<br>And la notificación se envía al panel del agricultor y a su correo si el canal está habilitado<br><br>**Scenario 3: Marcado como leída**<br>Given el agricultor consulta una notificación no leída<br>When abre su detalle<br>Then el sistema marca la notificación como leída y actualiza el contador de notificaciones pendientes |
-| US28 | Agricultor | Media | Configuración de preferencias de notificaciones | Como agricultor, deseo configurar qué notificaciones recibo y por qué canales para ajustar la aplicación a mis necesidades. | **Scenario 1: Habilitar o deshabilitar un tipo**<br>Given el agricultor accede a la configuración de notificaciones<br>When desactiva las notificaciones de humedad<br>Then el sistema deja de enviar ese tipo de notificaciones y confirma la actualización<br><br>**Scenario 2: Selección de canales**<br>Given el agricultor configura sus canales de notificación<br>When habilita la aplicación móvil y el correo electrónico<br>Then el sistema envía las alertas por ambos canales y confirma la actualización<br><br>**Scenario 3: Umbral personalizado**<br>Given el agricultor establece un umbral mínimo de humedad de 35%<br>When el sensor reporta 32%<br>Then el sistema genera la alerta correspondiente<br>And si el sensor reporta 40%, el sistema no genera la alerta |
-| US29 | Proveedor | Media | Alertas de interés sobre productos | Como proveedor, deseo recibir alertas cuando el interés por un producto supere un umbral para anticipar la revisión de su disponibilidad. | **Scenario 1: Interés alto**<br>Given el proveedor configuró un umbral de interés de 100 consultas mensuales<br>When las consultas del mes superan ese umbral<br>Then el sistema genera una notificación que informa las consultas registradas y sugiere revisar la disponibilidad del producto<br><br>**Scenario 2: Producto sin consultas**<br>Given un producto no registra consultas en los últimos 30 días<br>When el sistema detecta la inactividad<br>Then el sistema genera una notificación que sugiere revisar su publicación o promover el producto<br><br>**Scenario 3: Configuración del umbral**<br>Given el proveedor accede a la configuración de notificaciones<br>When establece un umbral de interés de 50 consultas para un producto<br>Then el sistema genera alertas solo cuando las consultas superan ese umbral |
-| US30 | Proveedor | Baja | Notificaciones de nuevas reseñas | Como proveedor, deseo recibir notificaciones cuando un agricultor publique una reseña sobre mis productos para responder oportunamente. | **Scenario 1: Reseña positiva**<br>Given un agricultor publica una reseña con calificación de 4 o 5 estrellas sobre un producto del proveedor<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación con el producto, la calificación y el comentario<br>And la notificación permite acceder al detalle de la reseña<br><br>**Scenario 2: Reseña negativa**<br>Given un agricultor publica una reseña con calificación de 1 o 2 estrellas<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación prioritaria con el producto, la calificación y el comentario<br>And la notificación permite responder a la reseña |
-| US31 | Cliente final | Baja | Notificaciones de nuevos productos de interés | Como cliente final, deseo recibir notificaciones cuando se publique un producto que coincida con mis intereses para conocer las novedades disponibles. | **Scenario 1: Nuevo producto en una categoría de interés**<br>Given el cliente marcó “Frutas” como categoría de interés<br>When un agricultor publica un producto de esa categoría<br>Then el cliente recibe una notificación con el nombre del producto y un acceso a su detalle<br><br>**Scenario 2: Nuevo producto en una región de interés**<br>Given el cliente seleccionó “Huánuco” como región de interés<br>When se publica un producto de esa región<br>Then el cliente recibe una notificación con la información del producto<br><br>**Scenario 3: Configuración de intereses**<br>Given el cliente accede a la configuración de sus intereses<br>When selecciona categorías y regiones<br>Then el sistema guarda las preferencias y envía solo las notificaciones que coinciden con ellas |
-| US32 | Cliente final | Baja | Notificaciones de novedades y disponibilidad | Como cliente final, deseo recibir avisos cuando un producto de mi interés cambie de precio o disponibilidad para aprovechar la oportunidad. | **Scenario 1: Cambio de precio**<br>Given un producto marcado como favorito actualiza su precio publicado<br>When el sistema registra el cambio<br>Then el cliente recibe una notificación con el producto y el nuevo precio<br><br>**Scenario 2: Cambio de disponibilidad**<br>Given la disponibilidad publicada de un producto favorito cambia<br>When el sistema detecta el cambio<br>Then el cliente recibe una notificación que informa la nueva disponibilidad<br><br>**Scenario 3: Gestión de favoritos**<br>Given el cliente consulta el detalle de un producto<br>When agrega el producto a sus favoritos<br>Then el sistema comienza a enviarle notificaciones de precio y disponibilidad de ese producto |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US27</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+ 
+<tr>
+<th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+<td colspan="3">Consulta de notificaciones de los sensores</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Description</td>
+</tr>
+  
+<tr>
+<td colspan="4">
+<b>Como</b> agricultor,<br>
+<b>deseo</b> recibir y consultar las notificaciones generadas por los sensores para actuar ante condiciones críticas.
+</td>
+</tr>
+ 
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+<td colspan="4">Acceptance Criteria</td>
+</tr>
+<!-- Fila 7: Contenido Acceptance Criteria -->
+<tr>
+<td colspan="4">
+<b>Scenario 1: Consulta de notificaciones</b><br>
+<b>Given</b> el agricultor ha iniciado sesión<br>
+<b>When</b> consulta sus notificaciones<br>
+<b>Then</b> el sistema presenta las notificaciones no leídas primero<br>
+<b>And</b> cada notificación indica su tipo, mensaje, fecha, hora y estado<br>
+<br>
+<b>Scenario 2: Notificación por humedad baja</b><br>
+<b>Given</b> el sensor de la zona “Norte” reporta 25% de humedad, por debajo del umbral crítico<br>
+<b>When</b> el sistema procesa la lectura<br>
+<b>Then</b> el sistema genera una notificación que informa la humedad registrada y recomienda regar en las próximas 2 horas<br>
+<b>And</b> la notificación se envía al panel del agricultor y a su correo si el canal está habilitado<br>
+<br>
+<b>Scenario 3: Marcado como leída</b><br>
+<b>Given</b> el agricultor consulta una notificación no leída<br>
+<b>When</b> abre su detalle<br>
+<b>Then</b> el sistema marca la notificación como leída y actualiza el contador de notificaciones pendientes
+</td>
+</tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US28</td>
+      <td>Agricultor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+     
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Configuración de preferencias de notificaciones</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> agricultor,<br>
+       <b>deseo</b> configurar qué notificaciones recibo y por qué canales para ajustar la aplicación a mis necesidades.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Habilitar o deshabilitar un tipo</b><br>
+       <b>Given</b> el agricultor accede a la configuración de notificaciones<br>
+       <b>When</b> desactiva las notificaciones de humedad<br>
+       <b>Then</b> el sistema deja de enviar ese tipo de notificaciones y confirma la actualización<br>
+       <br>
+       <b>Scenario 2: Selección de canales</b><br>
+       <b>Given</b> el agricultor configura sus canales de notificación<br>
+        <b>When</b> habilita la aplicación móvil y el correo electrónico<br>
+        <b>Then</b> el sistema envía las alertas por ambos canales y confirma la actualización<br>
+        <br>
+        <b>Scenario 3: Umbral personalizado</b><br>
+        <b>Given</b> el agricultor establece un umbral mínimo de humedad de 35%<br>
+        <b>When</b> el sensor reporta 32%<br>
+        <b>Then</b> el sistema genera la alerta correspondiente<br>
+        <b>And</b> si el sensor reporta 40%, el sistema no genera la alerta
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US29</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Alertas de interés sobre productos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> recibir alertas cuando el interés por un producto supere un umbral para anticipar la revisión de su disponibilidad.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Interés alto</b><br>
+       <b>Given</b> el proveedor configuró un umbral de interés de 100 consultas mensuales<br>
+       <b>When</b> las consultas del mes superan ese umbral<br>
+       <b>Then</b> el sistema genera una notificación que informa las consultas registradas y sugiere revisar la disponibilidad del producto<br>
+       <br>
+       <b>Scenario 2: Producto sin consultas</b><br>
+        <b>Given</b> un producto no registra consultas en los últimos 30 días<br>
+        <b>When</b> el sistema detecta la inactividad<br>
+        <b>Then</b> el sistema genera una notificación que sugiere revisar su publicación o promover el producto<br>
+        <br>
+        <b>Scenario 3: Configuración del umbral</b><br>
+        <b>Given</b> el proveedor accede a la configuración de notificaciones<br>
+        <b>When</b> establece un umbral de interés de 50 consultas para un producto<br>
+        <b>Then</b> el sistema genera alertas solo cuando las consultas superan ese umbral
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US30</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Notificaciones de nuevas reseñas</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> recibir notificaciones cuando un agricultor publique una reseña sobre mis productos para responder oportunamente.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Reseña positiva</b><br>
+       <b>Given</b> un agricultor publica una reseña con calificación de 4 o 5 estrellas sobre un producto del proveedor<br>
+       <b>When</b> el sistema registra la reseña<br>
+       <b>Then</b> el proveedor recibe una notificación con el producto, la calificación y el comentario<br>
+        <b>And</b> la notificación permite acceder al detalle de la reseña<br>
+        <br>
+        <b>Scenario 2: Reseña negativa</b><br>
+        <b>Given</b> un agricultor publica una reseña con calificación de 1 o 2 estrellas<br>
+        <b>When</b> el sistema registra la reseña<br>
+        <b>Then</b> el proveedor recibe una notificación prioritaria con el producto, la calificación y el comentario<br>
+        <b>And</b> la notificación permite responder a la reseña
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US31</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Notificaciones de nuevos productos de interés</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> recibir notificaciones cuando se publique un producto que coincida con mis intereses para conocer las novedades disponibles.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Nuevo producto en una categoría de interés</b><br>
+       <b>Given</b> el cliente marcó “Frutas” como categoría de interés<br>
+       <b>When</b> un agricultor publica un producto de esa categoría<br>
+        <b>Then</b> el cliente recibe una notificación con el nombre del producto y un acceso a su detalle<br>
+        <br>
+        <b>Scenario 2: Nuevo producto en una región de interés</b><br>
+        <b>Given</b> el cliente seleccionó “Huánuco” como región de interés<br>
+        <b>When</b> se publica un producto de esa región<br>
+        <b>Then</b> el cliente recibe una notificación con la información del producto<br>
+        <br>
+        <b>Scenario 3: Configuración de intereses</b><br>
+        <b>Given</b> el cliente accede a la configuración de sus intereses<br>
+        <b>When</b> selecciona categorías y regiones<br>
+        <b>Then</b> el sistema guarda las preferencias y envía solo las notificaciones que coinciden con ellas
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US32</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC10 - Notification Management</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Notificaciones de novedades y disponibilidad</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> recibir avisos cuando un producto de mi interés cambie de precio o disponibilidad para aprovechar la oportunidad.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Cambio de precio</b><br>
+        <b>Given</b> un producto marcado como favorito actualiza su precio publicado<br>
+        <b>When</b> el sistema registra el cambio<br>
+        <b>Then</b> el cliente recibe una notificación con el producto y el nuevo precio<br>
+        <br>
+        <b>Scenario 2: Cambio de disponibilidad</b><br>
+        <b>Given</b> la disponibilidad publicada de un producto favorito cambia<br>
+        <b>When</b> el sistema detecta el cambio<br>
+        <b>Then</b> el cliente recibe una notificación que informa la nueva disponibilidad<br>
+        <br>
+        <b>Scenario 3: Gestión de favoritos</b><br>
+        <b>Given</b> el cliente consulta el detalle de un producto<br>
+        <b>When</b> agrega el producto a sus favoritos<br>
+        <b>Then</b> el sistema comienza a enviarle notificaciones de precio y disponibilidad de ese producto
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC11: Community & Reputation
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| US33 | Proveedor | Media | Consulta de comentarios y calificaciones | Como proveedor, deseo consultar los comentarios y calificaciones sobre mis productos para conocer la percepción de los agricultores y mejorar mi oferta. | **Scenario 1: Consulta de comentarios**<br>Given el proveedor consulta la comunidad y selecciona un producto de su catálogo<br>When el sistema carga la información<br>Then se presenta la lista de comentarios con nombre del agricultor, calificación, texto y fecha<br>And los comentarios se ordenan del más reciente al más antiguo<br><br>**Scenario 2: Filtro por calificación**<br>Given el proveedor consulta los comentarios de un producto<br>When aplica el filtro de 5 estrellas<br>Then el sistema presenta únicamente los comentarios con esa calificación y actualiza el contador<br><br>**Scenario 3: Respuesta a un comentario**<br>Given el proveedor consulta un comentario de un agricultor<br>When publica una respuesta<br>Then el sistema registra la respuesta debajo del comentario original y notifica al agricultor |
-| US34 | Proveedor | Baja | Consulta de la reputación de productos | Como proveedor, deseo consultar un resumen de la reputación de mis productos para identificar oportunidades de mejora. | **Scenario 1: Resumen por producto**<br>Given el proveedor accede a la sección de reputación<br>When el sistema carga la información<br>Then se presenta, por cada producto, el nombre, la calificación promedio, el número de reseñas y la distribución de calificaciones<br><br>**Scenario 2: Productos con baja calificación**<br>Given el proveedor tiene productos con calificación promedio menor a 3 estrellas<br>When consulta el resumen de reputación<br>Then el sistema resalta esos productos y sugiere revisar los comentarios negativos<br><br>**Scenario 3: Notificación de nueva reseña**<br>Given un agricultor publica una reseña sobre un producto del proveedor<br>When el sistema registra la reseña<br>Then el proveedor recibe una notificación y el contador de notificaciones se actualiza |
-| US35 | Cliente final | Media | Publicación de reseñas de productos | Como cliente final, deseo publicar una reseña y calificación sobre un producto para compartir mi experiencia con otros compradores. | **Scenario 1: Publicación exitosa**<br>Given el cliente ha iniciado sesión y consultó el producto<br>When publica una reseña con calificación de 1 a 5 estrellas y un texto de entre 10 y 500 caracteres<br>Then el sistema registra la reseña y la presenta en el detalle del producto<br><br>**Scenario 2: Texto demasiado corto**<br>Given el cliente ingresa un texto de menos de 10 caracteres<br>When intenta publicar la reseña<br>Then el sistema informa que la reseña debe tener al menos 10 caracteres y no la publica<br><br>**Scenario 3: Edición o eliminación**<br>Given el cliente ha publicado una reseña previamente<br>When modifica su contenido o solicita eliminarla<br>Then el sistema actualiza o elimina la reseña y confirma la operación |
-| US36 | Cliente final | Media | Consulta de reseñas de otros compradores | Como cliente final, deseo consultar las reseñas y calificaciones de otros compradores para evaluar la calidad de un producto antes de comprarlo. | **Scenario 1: Consulta de reseñas**<br>Given el cliente consulta el detalle de un producto<br>When el sistema carga la sección de reseñas<br>Then se presenta la lista de reseñas con nombre del comprador, calificación, fecha, texto y fotografía si existe<br>And las reseñas se ordenan de la más reciente a la más antigua<br><br>**Scenario 2: Resumen de calificaciones**<br>Given el cliente consulta las reseñas de un producto<br>Then el sistema presenta la calificación promedio, el número total de reseñas y la distribución de estrellas<br><br>**Scenario 3: Filtro por calificación**<br>Given el cliente consulta las reseñas de un producto<br>When aplica un filtro por calificación<br>Then el sistema presenta únicamente las reseñas con esa calificación y actualiza el contador |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US33</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC11 - Community & Reputation</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de comentarios y calificaciones</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> consultar los comentarios y calificaciones sobre mis productos para conocer la percepción de los agricultores y mejorar mi oferta.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta de comentarios</b><br>
+        <b>Given</b> el proveedor consulta la comunidad y selecciona un producto de su catálogo<br>
+        <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presenta la lista de comentarios con nombre del agricultor, calificación, texto y fecha<br>
+        <b>And</b> los comentarios se ordenan del más reciente al más antiguo<br>
+        <br>
+        <b>Scenario 2: Filtro por calificación</b><br>
+        <b>Given</b> el proveedor consulta los comentarios de un producto<br>
+        <b>When</b> aplica el filtro de 5 estrellas<br>
+        <b>Then</b> el sistema presenta únicamente los comentarios con esa calificación y actualiza el contador<br>
+        <br>
+        <b>Scenario 3: Respuesta a un comentario</b><br>
+        <b>Given</b> el proveedor consulta un comentario de un agricultor<br>
+        <b>When</b> publica una respuesta<br>
+        <b>Then</b> el sistema registra la respuesta debajo del comentario original y notifica al agricultor
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US34</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC11 - Community & Reputation</td>
+    </tr>
+
+     
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de la reputación de productos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> consultar un resumen de la reputación de mis productos para identificar oportunidades de mejora.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Resumen por producto</b><br>
+       <b>Given</b> el proveedor accede a la sección de reputación<br>
+       <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presenta, por cada producto, el nombre, la calificación promedio, el número de reseñas y la distribución de calificaciones<br>
+        <br>
+        <b>Scenario 2: Productos con baja calificación</b><br>
+        <b>Given</b> el proveedor tiene productos con calificación promedio menor a 3 estrellas<br>
+        <b>When</b> consulta el resumen de reputación<br>
+        <b>Then</b> el sistema resalta esos productos y sugiere revisar los comentarios negativos<br>
+        <br>
+        <b>Scenario 3: Notificación de nueva reseña</b><br>
+        <b>Given</b> un agricultor publica una reseña sobre un producto del proveedor<br>
+        <b>When</b> el sistema registra la reseña<br>
+        <b>Then</b> el proveedor recibe una notificación y el contador de notificaciones se actualiza
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US35</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC11 - Community & Reputation</td>
+    </tr>
+
+     
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Publicación de reseñas de productos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> publicar una reseña y calificación sobre un producto para compartir mi experiencia con otros compradores.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Publicación exitosa</b><br>
+        <b>Given</b> el cliente ha iniciado sesión y consultó el producto<br>
+        <b>When</b> publica una reseña con calificación de 1 a 5 estrellas y un texto de entre 10 y 500 caracteres<br>
+        <b>Then</b> el sistema registra la reseña y la presenta en el detalle del producto<br>
+        <br>
+        <b>Scenario 2: Texto demasiado corto</b><br>
+        <b>Given</b> el cliente ingresa un texto de menos de 10 caracteres<br>
+        <b>When</b> intenta publicar la reseña<br>
+        <b>Then</b> el sistema informa que la reseña debe tener al menos 10 caracteres y no la publica<br>
+        <br>
+        <b>Scenario 3: Edición o eliminación</b><br>
+        <b>Given</b> el cliente ha publicado una reseña previamente<br>
+        <b>When</b> modifica su contenido o solicita eliminarla<br>
+        <b>Then</b> el sistema actualiza o elimina la reseña y confirma la operación
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US36</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC11 - Community & Reputation</td>
+    </tr>
+
+     
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de reseñas de otros compradores</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> consultar las reseñas y calificaciones de otros compradores para evaluar la calidad de un producto antes de comprarlo.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta de reseñas</b><br>
+       <b>Given</b> el cliente consulta el detalle de un producto<br>
+       <b>When</b> el sistema carga la sección de reseñas<br>
+       <b>Then</b> se presenta la lista de reseñas con nombre del comprador, calificación, fecha, texto y fotografía si existe<br>
+       <b>And</b> las reseñas se ordenan de la más reciente a la más antigua<br>
+        <br>
+        <b>Scenario 2: Resumen de calificaciones</b><br>
+        <b>Given</b> el cliente consulta las reseñas de un producto<br>
+        <b>Then</b> el sistema presenta la calificación promedio, el número total de reseñas y la distribución de estrellas<br>
+        <br>
+        <b>Scenario 3: Filtro por calificación</b><br>
+        <b>Given</b> el cliente consulta las reseñas de un producto<br>
+        <b>When</b> aplica un filtro por calificación<br>
+        <b>Then</b> el sistema presenta únicamente las reseñas con esa calificación y actualiza el contador
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC12: Analytics & Catalog
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|:---|:---|:---|:---|:---|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US37 | Proveedor | Media | Consulta de productos con mayor interés | Como proveedor, deseo consultar los productos con mayor interés de los agricultores para orientar mi oferta. | **Scenario 1: Consulta del interés**<br>Given el proveedor ha iniciado sesión con su rol<br>When consulta la sección de analíticas de interés<br>Then el sistema presenta una tabla con producto, consultas, favoritos, contactos y tendencia<br>And la tabla se ordena por número de consultas de mayor a menor<br><br>**Scenario 2: Tendencia por producto**<br>Given el proveedor consulta el interés por un producto específico<br>When el sistema carga la información<br>Then se presenta la evolución mensual de las consultas de los últimos 12 meses con los valores de cada periodo<br><br>**Scenario 3: Filtros de interés**<br>Given el proveedor consulta la tabla de interés<br>When aplica un filtro por región<br>Then el sistema actualiza la información con las consultas de esa región                                                                                                                                                                                                                                                                                                             |
-| US38 | Proveedor | Baja | Consulta de zonas con mayor actividad | Como proveedor, deseo consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial. | **Scenario 1: Interés por región**<br>Given el proveedor consulta la sección de zonas de interés<br>When el sistema carga la información<br>Then se presenta un mapa con las regiones diferenciadas por nivel de interés<br>And cada región permite consultar el número de agricultores y los productos más consultados<br><br>**Scenario 2: Consulta de métricas**<br>Given el proveedor consulta el mapa de interés<br>When solicita la vista de tabla<br>Then el sistema presenta región, agricultores activos, consultas, producto principal y contactos generados<br>And la tabla permite ordenarse por cualquiera de sus campos<br><br>**Scenario 3: Exportación de datos**<br>Given el proveedor consulta las analíticas de interés<br>When solicita exportar la información<br>Then el sistema genera un archivo CSV con los datos filtrados y la fecha de generación                                                                                                                                                                                                                                          |
-| US39 | Cliente final | Media | Consulta del catálogo de productos | Como cliente final, deseo consultar el catálogo de productos agrícolas con filtros por categoría, región y características registradas del producto para encontrar lo que busco. | **Scenario 1: Consulta del catálogo**<br>Given el cliente accede al catálogo<br>When el sistema carga la información<br>Then se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br><br>**Scenario 2: Filtros del catálogo**<br>Given el cliente consulta el catálogo<br>When aplica los filtros de categoría y región<br>Then el sistema presenta únicamente los productos que coinciden con ambos filtros<br><br>**Scenario 3: Búsqueda por nombre**<br>Given el cliente consulta el catálogo<br>When busca un producto por su nombre<br>Then el sistema presenta los productos cuyo nombre coincide con la búsqueda                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| US40 | Cliente final | Media | Consulta del detalle y la trazabilidad de un producto | Como cliente final, deseo consultar la información detallada de un producto, incluyendo su origen y trazabilidad, para tomar una decisión de compra informada. | **Scenario 1: Información del producto**<br>Given el cliente selecciona un producto del catálogo<br>When el sistema carga su detalle<br>Then se presenta el nombre, las imágenes, el precio, la descripción, la región de origen, el nombre del agricultor, la información de trazabilidad y las prácticas de cultivo registradas<br><br>**Scenario 2: Consulta de la trazabilidad**<br>Given el cliente consulta un producto desde el catálogo o accede a su ficha mediante un código QR<br>When solicita consultar su trazabilidad<br>Then el sistema presenta la información registrada y disponible sobre su procedencia, agricultor, cultivo y los eventos de producción asociados al producto<br>And únicamente se presenta información previamente registrada y autorizada en TerraTech<br><br>**Scenario 3: Acciones sobre el producto**<br>Given el cliente consulta el detalle de un producto<br>When solicita contactar al agricultor<br>Then el sistema habilita el contacto con el agricultor<br>And la incorporación del producto a un carrito de compras se considera fuera del alcance de esta entrega |
-| US41 | Proveedor | Media | Consulta de la información de los cultivos de los clientes | Como proveedor o asesor autorizado, deseo consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos. | **Scenario 1: Consulta autorizada**<br>Given el proveedor cuenta con autorización de un agricultor para consultar la información de sus cultivos<br>When consulta la información registrada<br>Then el sistema presenta las parcelas, el cultivo, la humedad, los nutrientes y las alertas registradas del cliente<br><br>**Scenario 2: Consulta sin autorización**<br>Given el proveedor no cuenta con autorización de un agricultor<br>When intenta consultar la información de sus cultivos<br>Then el sistema deniega el acceso y no muestra información del cliente<br><br>**Scenario 3: Consulta del histórico**<br>Given el proveedor cuenta con autorización vigente<br>When consulta el histórico de un cultivo de su cliente<br>Then el sistema presenta la evolución de los indicadores y las recomendaciones registradas                                                                                                                                                                                                                                                                                   |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US37</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC12 - Analytics & Catalog</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de productos con mayor interés</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> consultar los productos con mayor interés de los agricultores para orientar mi oferta.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta del interés</b><br>
+        <b>Given</b> el proveedor ha iniciado sesión con su rol<br>
+        <b>When</b> consulta la sección de analíticas de interés<br>
+        <b>Then</b> el sistema presenta una tabla con producto, consultas, favoritos, contactos y tendencia<br>
+        <b>And</b> la tabla se ordena por número de consultas de mayor a menor<br>
+        <br>
+        <b>Scenario 2: Tendencia por producto</b><br>
+        <b>Given</b> el proveedor consulta el interés por un producto específico<br>
+        <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presenta la evolución mensual de las consultas de los últimos 12 meses con los valores de cada periodo<br>
+        <br>
+        <b>Scenario 3: Filtros de interés</b><br>
+        <b>Given</b> el proveedor consulta la tabla de interés<br>
+        <b>When</b> aplica un filtro por región<br>
+        <b>Then</b> el sistema actualiza la información con las consultas de esa región
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US38</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Baja</td>
+      <td>EPIC12 - Analytics & Catalog</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de zonas con mayor actividad</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor,<br>
+       <b>deseo</b> consultar las zonas con mayor interés por insumos para focalizar mi estrategia comercial.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+        <b>Scenario 1: Interés por región</b><br>
+        <b>Given</b> el proveedor consulta la sección de zonas de interés<br>
+        <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presenta un mapa con las regiones diferenciadas por nivel de interés<br>
+        <b>And</b> cada región permite consultar el número de agricultores y los productos más consultados<br>
+        <br>
+        <b>Scenario 2: Consulta de métricas</b><br>
+        <b>Given</b> el proveedor consulta el mapa de interés<br>
+        <b>When</b> solicita la vista de tabla<br>
+        <b>Then</b> el sistema presenta región, agricultores activos, consultas, producto principal y contactos generados<br>
+        <b>And</b> la tabla permite ordenarse por cualquiera de sus campos<br>
+        <br>
+        <b>Scenario 3: Exportación de datos</b><br>
+        <b>Given</b> el proveedor consulta las analíticas de interés<br>
+        <b>When</b> solicita exportar la información<br>
+        <b>Then</b> el sistema genera un archivo CSV con los datos filtrados y la fecha de generación
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US39</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC12 - Analytics & Catalog</td>
+    </tr>
+
+     
+<tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta del catálogo de productos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> consultar el catálogo de productos agrícolas con filtros por categoría, región y características registradas del producto para encontrar lo que busco.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta del catálogo</b><br>
+       <b>Given</b> el cliente accede al catálogo<br>
+        <b>When</b> el sistema carga la información<br>
+        <b>Then</b> se presentan los productos con imagen, nombre, precio, región de origen y calificación promedio<br>
+        <br>
+        <b>Scenario 2: Filtros del catálogo</b><br>
+        <b>Given</b> el cliente consulta el catálogo<br>
+        <b>When</b> aplica los filtros de categoría y región<br>
+        <b>Then</b> el sistema presenta únicamente los productos que coinciden con ambos filtros<br>
+        <br>
+        <b>Scenario 3: Búsqueda por nombre</b><br>
+        <b>Given</b> el cliente consulta el catálogo<br>
+        <b>When</b> busca un producto por su nombre<br>
+        <b>Then</b> el sistema presenta los productos cuyo nombre coincide con la búsqueda
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US40</td>
+      <td>Cliente final</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC12 - Analytics & Catalog</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta del detalle y la trazabilidad de un producto</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> cliente final,<br>
+       <b>deseo</b> consultar la información detallada de un producto, incluyendo su origen y trazabilidad,<br>
+       <b>para</b> tomar una decisión de compra informada.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Información del producto</b><br>
+       <b>Given</b> el cliente selecciona un producto del catálogo<br>
+       <b>When</b> el sistema carga su detalle<br>
+       <b>Then</b> se presenta el nombre, las imágenes, el precio, la descripción, la región de origen, el nombre del agricultor, la información de trazabilidad y las prácticas de cultivo registradas<br>
+        <br>
+        <b>Scenario 2: Consulta de la trazabilidad</b><br>
+        <b>Given</b> el cliente consulta un producto desde el catálogo o accede a su ficha mediante un código QR<br>
+        <b>When</b> solicita consultar su trazabilidad<br>
+        <b>Then</b> el sistema presenta la información registrada y disponible sobre su procedencia, agricultor, cultivo y los eventos de producción asociados al producto<br>
+        <b>And</b> únicamente se presenta información previamente registrada y autorizada en TerraTech<br>
+        <br>
+        <b>Scenario 3: Acciones sobre el producto</b><br>
+        <b>Given</b> el cliente consulta el detalle de un producto<br>
+        <b>When</b> solicita contactar al agricultor<br>
+        <b>Then</b> el sistema habilita el contacto con el agricultor<br>
+        <b>And</b> la incorporación del producto a un carrito de compras se considera fuera del alcance de esta entrega
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">US41</td>
+      <td>Proveedor</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC12 - Analytics & Catalog</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de la información de los cultivos de los clientes</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> proveedor o asesor autorizado,<br>
+       <b>deseo</b> consultar la información registrada de los cultivos de mis clientes para sustentar mis recomendaciones de insumos.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta autorizada</b><br>
+       <b>Given</b> el proveedor cuenta con autorización de un agricultor para consultar la información de sus cultivos<br>
+       <b>When</b> consulta la información registrada<br>
+        <b>Then</b> el sistema presenta las parcelas, el cultivo, la humedad, los nutrientes y las alertas registradas del cliente<br>
+        <br>
+        <b>Scenario 2: Consulta sin autorización</b><br>
+        <b>Given</b> el proveedor no cuenta con autorización de un agricultor<br>
+        <b>When</b> intenta consultar la información de sus cultivos<br>
+        <b>Then</b> el sistema deniega el acceso y no muestra información del cliente<br>
+        <br>
+        <b>Scenario 3: Consulta del histórico</b><br>
+        <b>Given</b> el proveedor cuenta con autorización vigente<br>
+        <b>When</b> consulta el histórico de un cultivo de su cliente<br>
+        <b>Then</b> el sistema presenta la evolución de los indicadores y las recomendaciones registradas
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC13: Configuración y Despliegue (Technical Stories)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:---|:---|:---|:---|
-| TS01 | Developer | Media | Configuración de repositorios con GitFlow | Como developer, deseo que los repositorios sigan GitFlow y Conventional Commits para mantener un historial ordenado y facilitar el trabajo colaborativo. | **Scenario 1: Ramas del flujo de trabajo**<br>Given se consultan las ramas de un repositorio del proyecto<br>Then existen las ramas permanentes main y develop<br>And las funcionalidades se desarrollan en ramas feature<br>And la rama main solo recibe cambios mediante pull request con al menos una aprobación<br><br>**Scenario 2: Mensajes de commit**<br>Given se revisa el historial de commits de un repositorio<br>When se analizan los últimos mensajes registrados<br>Then todos siguen el formato tipo(alcance): descripción<br><br>**Scenario 3: Plantilla de pull request**<br>Given un developer crea una pull request hacia develop<br>When se abre la solicitud<br>Then se carga una plantilla con la descripción del cambio, su tipo, las pruebas ejecutadas y las evidencias correspondientes |
-| TS02 | Developer | Media | Despliegue automático de los productos | Como developer, deseo que los cambios integrados se desplieguen automáticamente para mantener disponibles las versiones más recientes de los productos. | **Scenario 1: Despliegue del frontend**<br>Given se integra un cambio en la rama main del repositorio del frontend<br>When el servicio de despliegue detecta el cambio<br>Then el sistema compila y publica la nueva versión en menos de 2 minutos<br>And el equipo recibe una notificación del despliegue<br><br>**Scenario 2: Integración continua del backend**<br>Given se integra un cambio en la rama main del repositorio del backend<br>When el flujo de integración continua se ejecuta<br>Then el sistema ejecuta las pruebas unitarias<br>And si las pruebas pasan, compila y despliega la API<br>And si alguna prueba falla, cancela el despliegue y notifica al equipo<br><br>**Scenario 3: Variables de entorno en el despliegue**<br>Given la aplicación requiere variables de configuración<br>When el servicio de despliegue compila el proyecto<br>Then las variables se inyectan desde la configuración del servicio y no están incluidas en el repositorio |
-| TS03 | Developer | Media | Configuración de la base de datos en la nube | Como developer, deseo contar con una base de datos PostgreSQL en la nube para persistir la información de usuarios, parcelas, dispositivos y recomendaciones. | **Scenario 1: Conexión desde la API**<br>Given la API está configurada con la cadena de conexión del servicio de base de datos<br>When el equipo ejecuta el proyecto en entorno local apuntando a la nube<br>Then la API se conecta a la base de datos sin errores de conexión<br>And el sistema registra la conexión establecida<br><br>**Scenario 2: Migraciones al iniciar**<br>Given existen migraciones pendientes en el proyecto de acceso a datos<br>When la API se inicia en el entorno de despliegue<br>Then el sistema aplica las migraciones y actualiza el esquema de la base de datos<br><br>**Scenario 3: Copias de seguridad**<br>Given la base de datos está en producción<br>When el servicio ejecuta las tareas programadas<br>Then el sistema genera copias de seguridad diarias con una retención mínima de 7 días<br>And el equipo puede restaurar una copia desde el servicio de base de datos |
-| TS04 | Developer | Media | Configuración de variables de entorno | Como developer, deseo utilizar variables de entorno para las configuraciones sensibles y evitar credenciales incluidas en el repositorio. | **Scenario 1: Configuración del frontend**<br>Given el frontend requiere la URL de la API y una clave de servicio externo<br>When se revisa el repositorio del frontend<br>Then no existen claves incluidas en el código<br>And existe un archivo de ejemplo con las variables requeridas<br>And el archivo con valores locales está excluido del control de versiones<br><br>**Scenario 2: Configuración del backend**<br>Given el backend requiere la cadena de conexión, la clave del servicio de clima y la clave de firma de tokens<br>When se revisa la configuración del proyecto<br>Then los valores sensibles se proporcionan mediante variables de entorno o secretos locales<br><br>**Scenario 3: Validación al iniciar**<br>Given la API se inicia sin la clave de firma de tokens configurada<br>When el sistema carga la configuración<br>Then la API interrumpe el inicio con un mensaje que indica la variable faltante<br>And no expone información sensible |
-| TS05 | Developer | Alta | Implementación del servicio de autenticación | Como developer, deseo implementar endpoints seguros de registro e inicio de sesión para que la aplicación móvil gestione las sesiones de los usuarios. | **Scenario 1: Registro exitoso**<br>Given se recibe una solicitud de registro con un correo único y una contraseña válida<br>When la API verifica que el correo no está registrado<br>And cifra la contraseña antes de almacenarla<br>Then la API responde HTTP 201 con los datos del usuario registrado y un estado de éxito<br><br>**Scenario 2: Correo duplicado**<br>Given se recibe una solicitud de registro con un correo ya existente<br>When la API busca el correo en la base de datos y encuentra coincidencia<br>Then la API responde HTTP 400 con un mensaje que indica que el correo ya está registrado y no almacena el usuario<br><br>**Scenario 3: Inicio de sesión exitoso**<br>Given se recibe una solicitud de inicio de sesión con credenciales válidas<br>When la API valida las credenciales<br>Then la API responde HTTP 200 con los datos del usuario y el token de sesión<br><br>**Scenario 4: Credenciales inválidas**<br>Given se recibe una solicitud de inicio de sesión con credenciales incorrectas<br>When la API no encuentra coincidencia de credenciales<br>Then la API responde con un estado de error y no emite token de sesión |
-| TS08 | Developer | Media | Consulta de perfiles agrícolas | Como developer, deseo consultar un endpoint que devuelva la configuración de un perfil agrícola para utilizarla en la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un perfil asociado a un terreno en la base de datos<br>When se consulta el endpoint con un token válido<br>Then la API responde HTTP 200 con el identificador del perfil, el usuario asociado, el nombre del terreno, el teléfono de contacto y los umbrales configurados<br><br>**Scenario 2: Perfil no encontrado**<br>Given no existe un perfil con el identificador consultado<br>When se ejecuta la consulta<br>Then la API responde HTTP 404 con un mensaje que indica que el perfil no existe |
-| TS09 | Developer | Media | Gestión del inventario de insumos | Como developer, deseo implementar endpoints para gestionar el inventario de insumos de los agricultores. | **Scenario 1: Registro de un insumo**<br>Given un agricultor autenticado con perfil válido<br>When se recibe una solicitud de registro con producto, perfil, cantidad y ubicación de almacén<br>Then la API responde HTTP 201 con los datos del registro creado<br><br>**Scenario 2: Consulta del inventario**<br>Given un agricultor autenticado registra al menos un insumo<br>When se consulta el inventario<br>Then la API responde HTTP 200 con la lista de insumos registrados<br><br>**Scenario 3: Actualización de stock**<br>Given existe un insumo registrado<br>When se recibe una solicitud de actualización con una nueva cantidad<br>Then la API responde HTTP 200 con el insumo actualizado<br><br>**Scenario 4: Consulta de un insumo por identificador**<br>Given existe un insumo registrado con un identificador conocido<br>When se consulta ese identificador<br>Then la API responde HTTP 200 con los datos del insumo |
-| TS10 | Developer | Media | Consulta de reportes analíticos por dispositivo | Como developer, deseo consultar un endpoint que devuelva los reportes analíticos de un dispositivo para alimentar los gráficos de la aplicación móvil. | **Scenario 1: Consulta exitosa**<br>Given existe un reporte asociado a un dispositivo en la base de datos<br>When se consulta el endpoint con un token válido<br>Then la API responde HTTP 200 con el identificador del reporte, el dispositivo, el tipo de reporte, el valor promedio, la varianza, la desviación estándar, la interpretación técnica y la fecha de generación<br><br>**Scenario 2: Reporte no encontrado**<br>Given no existe un reporte para el dispositivo consultado<br>When se ejecuta la consulta<br>Then la API responde HTTP 404 con un mensaje que indica que el reporte no existe |
-| TS11 | Developer | Media | Gestión de la comunidad y reseñas | Como developer, deseo implementar los endpoints del módulo de comunidad para gestionar perfiles públicos y reseñas de productos. | **Scenario 1: Creación de un perfil de comunidad**<br>Given un usuario recién registrado desea activar su perfil en la comunidad<br>When la API recibe el alias, la biografía pública y la visibilidad del perfil<br>Then la API responde HTTP 201 con los datos del perfil creado<br><br>**Scenario 2: Consulta de un perfil público**<br>Given existe un perfil de comunidad con identificador conocido<br>When se consulta el perfil<br>Then la API responde HTTP 200 con el alias, la puntuación de reputación, la biografía y la visibilidad<br><br>**Scenario 3: Actualización del perfil**<br>Given un agricultor modifica su alias, su biografía y la visibilidad de su perfil<br>When la API recibe la actualización<br>Then la API responde HTTP 200 con los datos actualizados del perfil |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS01</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Configuración de repositorios con GitFlow</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> que los repositorios sigan GitFlow y Conventional Commits para mantener un historial ordenado y facilitar el trabajo colaborativo.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Ramas del flujo de trabajo</b><br>
+       <b>Given</b> se consultan las ramas de un repositorio del proyecto<br>
+       <b>Then</b> existen las ramas permanentes main y develop<br>
+        <b>And</b> las funcionalidades se desarrollan en ramas feature<br>
+        <b>And</b> la rama main solo recibe cambios mediante pull request con al menos una aprobación<br>
+        <br>
+        <b>Scenario 2: Mensajes de commit</b><br>
+        <b>Given</b> se revisa el historial de commits de un repositorio<br>
+        <b>When</b> se analizan los últimos mensajes registrados<br>
+        <b>Then</b> todos siguen el formato tipo(alcance): descripción<br>
+        <br>
+        <b>Scenario 3: Plantilla de pull request</b><br>
+        <b>Given</b> un developer crea una pull request hacia develop<br>
+        <b>When</b> se abre la solicitud<br>
+        <b>Then</b> se carga una plantilla con la descripción del cambio, su tipo, las pruebas ejecutadas y las evidencias correspondientes
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS02</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Despliegue automático de los productos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> que los cambios integrados se desplieguen automáticamente para mantener disponibles las versiones más recientes de los productos.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Despliegue del frontend</b><br>
+       <b>Given</b> se integra un cambio en la rama main del repositorio del frontend<br>
+       <b>When</b> el servicio de despliegue detecta el cambio<br>
+       <b>Then</b> el sistema compila y publica la nueva versión en menos de 2 minutos<br>
+       <b>And</b> el equipo recibe una notificación del despliegue<br>
+        <br>
+        <b>Scenario 2: Integración continua del backend</b><br>
+        <b>Given</b> se integra un cambio en la rama main del repositorio del backend<br>
+        <b>When</b> el flujo de integración continua se ejecuta<br>
+        <b>Then</b> el sistema ejecuta las pruebas unitarias<br>
+        <b>And</b> si las pruebas pasan, compila y despliega la API<br>
+        <b>And</b> si alguna prueba falla, cancela el despliegue y notifica al equipo<br>
+        <br>
+        <b>Scenario 3: Variables de entorno en el despliegue</b><br>
+        <b>Given</b> la aplicación requiere variables de configuración<br>
+        <b>When</b> el servicio de despliegue compila el proyecto<br>
+        <b>Then</b> las variables se inyectan desde la configuración del servicio y no están incluidas en el repositorio
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS03</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Configuración de la base de datos en la nube</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> contar con una base de datos PostgreSQL en la nube para persistir la información de usuarios, parcelas, dispositivos y recomendaciones.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+        <b>Scenario 1: Conexión desde la API</b><br>
+        <b>Given</b> la API está configurada con la cadena de conexión del servicio de base de datos<br>
+        <b>When</b> el equipo ejecuta el proyecto en entorno local apuntando a la nube<br>
+        <b>Then</b> la API se conecta a la base de datos sin errores de conexión<br>
+        <b>And</b> el sistema registra la conexión establecida<br>
+        <br>
+        <b>Scenario 2: Migraciones al iniciar</b><br>
+        <b>Given</b> existen migraciones pendientes en el proyecto de acceso a datos<br>
+        <b>When</b> la API se inicia en el entorno de despliegue<br>
+        <b>Then</b> el sistema aplica las migraciones y actualiza el esquema de la base de datos<br>
+        <br>
+        <b>Scenario 3: Copias de seguridad</b><br>
+        <b>Given</b> la base de datos está en producción<br>
+        <b>When</b> el servicio ejecuta las tareas programadas<br>
+        <b>Then</b> el sistema genera copias de seguridad diarias con una retención mínima de 7 días<br>
+        <b>And</b> el equipo puede restaurar una copia desde el servicio de base de datos
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS04</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Configuración de variables de entorno</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> utilizar variables de entorno para las configuraciones sensibles y evitar credenciales incluidas en el repositorio.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Configuración del frontend</b><br>
+       <b>Given</b> el frontend requiere la URL de la API y una clave de servicio externo<br>
+       <b>When</b> se revisa el repositorio del frontend<br>
+       <b>Then</b> no existen claves incluidas en el código<br>
+        <b>And</b> existe un archivo de ejemplo con las variables requeridas<br>
+        <b>And</b> el archivo con valores locales está excluido del control de versiones<br>
+        <br>
+        <b>Scenario 2: Configuración del backend</b><br>
+        <b>Given</b> el backend requiere la cadena de conexión, la clave del servicio de clima y la clave de firma de tokens<br>
+        <b>When</b> se revisa la configuración del proyecto<br>
+        <b>Then</b> los valores sensibles se proporcionan mediante variables de entorno o secretos locales<br>
+        <br>
+        <b>Scenario 3: Validación al iniciar</b><br>
+        <b>Given</b> la API se inicia sin la clave de firma de tokens configurada<br>
+        <b>When</b> el sistema carga la configuración<br>
+        <b>Then</b> la API interrumpe el inicio con un mensaje que indica la variable faltante<br>
+        <b>And</b> no expone información sensible
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS05</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Alta</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Implementación del servicio de autenticación</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> implementar endpoints seguros de registro e inicio de sesión para que la aplicación móvil gestione las sesiones de los usuarios.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Registro exitoso</b><br>
+       <b>Given</b> se recibe una solicitud de registro con un correo único y una contraseña válida<br>
+       <b>When</b> la API verifica que el correo no está registrado<br>
+        <b>And</b> cifra la contraseña antes de almacenarla<br>
+        <b>Then</b> la API responde HTTP 201 con los datos del usuario registrado y un estado de éxito<br>
+        <br>
+        <b>Scenario 2: Correo duplicado</b><br>
+        <b>Given</b> se recibe una solicitud de registro con un correo ya existente<br>
+        <b>When</b> la API busca el correo en la base de datos y encuentra coincidencia<br>
+        <b>Then</b> la API responde HTTP 400 con un mensaje que indica que el correo ya está registrado y no almacena el usuario<br>
+        <br>
+        <b>Scenario 3: Inicio de sesión exitoso</b><br>
+        <b>Given</b> se recibe una solicitud de inicio de sesión con credenciales válidas<br>
+        <b>When</b> la API valida las credenciales<br>
+        <b>Then</b> la API responde HTTP 200 con los datos del usuario y el token de sesión<br>
+        <br>
+        <b>Scenario 4: Credenciales inválidas</b><br>
+        <b>Given</b> se recibe una solicitud de inicio de sesión con credenciales incorrectas<br>
+        <b>When</b> la API no encuentra coincidencia de credenciales<br>
+        <b>Then</b> la API responde con un estado de error y no emite token de sesión
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS08</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Consulta de perfiles agrícolas</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> consultar un endpoint que devuelva la configuración de un perfil agrícola para utilizarla en la aplicación móvil.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Consulta exitosa</b><br>
+       <b>Given</b> existe un perfil asociado a un terreno en la base de datos<br>
+       <b>When</b> se consulta el endpoint con un token válido<br>
+        <b>Then</b> la API responde HTTP 200 con el identificador del perfil, el usuario asociado, el nombre del terreno, el teléfono de contacto y los umbrales configurados<br>
+        <br>
+        <b>Scenario 2: Perfil no encontrado</b><br>
+        <b>Given</b> no existe un perfil con el identificador consultado<br>
+        <b>When</b> se ejecuta la consulta<br>
+        <b>Then</b> la API responde HTTP 404 con un mensaje que indica que el perfil no existe
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS09</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Gestión del inventario de insumos</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> implementar endpoints para gestionar el inventario de insumos de los agricultores.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Registro de un insumo</b><br>
+       <b>Given</b> un agricultor autenticado con perfil válido<br>
+       <b>When</b> se recibe una solicitud de registro con producto, perfil, cantidad y ubicación de almacén<br>
+        <b>Then</b> la API responde HTTP 201 con los datos del registro creado<br>
+        <br>
+        <b>Scenario 2: Consulta del inventario</b><br>
+        <b>Given</b> un agricultor autenticado registra al menos un insumo<br>
+        <b>When</b> se consulta el inventario<br>
+        <b>Then</b> la API responde HTTP 200 con la lista de insumos registrados<br>
+        <br>
+        <b>Scenario 3: Actualización de stock</b><br>
+        <b>Given</b> existe un insumo registrado<br>
+        <b>When</b> se recibe una solicitud de actualización con una nueva cantidad<br>
+        <b>Then</b> la API responde HTTP 200 con el insumo actualizado<br>
+        <br>
+        <b>Scenario 4: Consulta de un insumo por identificador</b><br>
+        <b>Given</b> existe un insumo registrado con un identificador conocido<br>
+        <b>When</b> se consulta ese identificador<br>
+        <b>Then</b> la API responde HTTP 200 con los datos del insumo
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">TS10</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+    </tr>
+
+     
+  <tr>
+    <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+    <td colspan="3">Consulta de reportes analíticos por dispositivo</td>
+  </tr>
+
+   
+  <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+    <td colspan="4">Description</td>
+  </tr>
+
+   <tr>
+    <td colspan="4">
+      <b>Como</b> developer,<br>
+      <b>deseo</b> consultar un endpoint que devuelva los reportes analíticos de un dispositivo para alimentar los gráficos de la aplicación móvil.
+    </td>
+  </tr>
+
+ 
+  <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+    <td colspan="4">Acceptance Criteria</td>
+  </tr>
+
+ 
+  <tr>
+    <td colspan="4">
+      <b>Scenario 1: Consulta exitosa</b><br>
+      <b>Given</b> existe un reporte asociado a un dispositivo en la base de datos<br>
+        <b>When</b> se consulta el endpoint con un token válido<br>
+        <b>Then</b> la API responde HTTP 200 con el identificador del reporte, el dispositivo, el tipo de reporte, el valor promedio, la varianza, la desviación estándar, la interpretación técnica y la fecha de generación<br>
+        <br>
+        <b>Scenario 2: Reporte no encontrado</b><br>
+        <b>Given</b> no existe un reporte para el dispositivo consultado<br>
+        <b>When</b> se ejecuta la consulta<br>
+        <b>Then</b> la API responde HTTP 404 con un mensaje que indica que el reporte no existe
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+   <tr>
+     <td style="text-align: center;">TS11</td>
+     <td>Developer</td>
+     <td style="text-align: center;">Media</td>
+     <td>EPIC13 - Configuración y Despliegue (Technical Stories)</td>
+   </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Gestión de la comunidad y reseñas</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Como</b> developer,<br>
+       <b>deseo</b> implementar los endpoints del módulo de comunidad para gestionar perfiles públicos y reseñas de productos.
+     </td>
+   </tr>
+
+ 
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+<tr>
+     <td colspan="4">
+       <b>Scenario 1: Creación de un perfil de comunidad</b><br>
+       <b>Given</b> un usuario recién registrado desea activar su perfil en la comunidad<br>
+       <b>When</b> la API recibe el alias, la biografía pública y la visibilidad del perfil<br>
+       <b>Then</b> la API responde HTTP 201 con los datos del perfil creado<br>
+       <br>
+       <b>Scenario 2: Consulta de un perfil público</b><br>
+       <b>Given</b> existe un perfil de comunidad con identificador conocido<br>
+       <b>When</b> se consulta el perfil<br>
+       <b>Then</b> la API responde HTTP 200 con el alias, la puntuación de reputación, la biografía y la visibilidad<br>
+       <br>
+       <b>Scenario 3: Actualización del perfil</b><br>
+       <b>Given</b> un agricultor modifica su alias, su biografía y la visibilidad de su perfil<br>
+       <b>When</b> la API recibe la actualización<br>
+        <b>Then</b> la API responde HTTP 200 con los datos actualizados del perfil
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### EPIC14: Investigación y Viabilidad (Spike Stories)
 
-| Story ID | User | Priority | Título | Descripción | Acceptance Criteria |
-|:---|:---|:--:|:---|:---|:---|
-| SP01 | Developer | Media | Viabilidad de la integración de sensores IoT | Como equipo de desarrollo, queremos investigar y prototipar la integración de los sensores IoT de TerraTech con la aplicación móvil para conocer sus implicaciones técnicas y el esfuerzo requerido. | **Contexto:** TerraTech utiliza sensores que registran humedad, nutrientes y temperatura del suelo. El equipo necesita definir cómo se transmiten las lecturas, cómo se reciben en la aplicación móvil y qué restricciones impone el entorno rural.<br><br>**Scenario 1: Revisión de la documentación del hardware**<br>Given el equipo requiere comprender el funcionamiento de los sensores<br>When revisa la documentación técnica de los dispositivos y del protocolo de comunicación<br>Then el equipo documenta los formatos de transmisión, la frecuencia de envío y los requisitos de configuración en un informe compartido<br><br>**Scenario 2: Evaluación de compatibilidad con la aplicación móvil**<br>Given la aplicación móvil se desarrolla con la tecnología definida por el equipo<br>When se evalúa la recepción de los datos del sensor en un prototipo<br>Then el equipo documenta las librerías necesarias, los requisitos de permisos y las limitaciones encontradas<br><br>**Scenario 3: Prueba de concepto**<br>Given el equipo dispone de un sensor de prueba<br>When construye un prototipo mínimo que recibe y presenta una lectura<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la integración<br>When desglosa las tareas y compara alternativas<br>Then el informe incluye una estimación de esfuerzo y una recomendación de implementación<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
-| SP02 | Developer | Media | Viabilidad del almacenamiento local y la sincronización sin conexión | Como equipo de desarrollo, queremos investigar las alternativas de almacenamiento local y sincronización para que la aplicación móvil funcione con conectividad limitada. | **Contexto:** parte de los usuarios trabaja en zonas rurales con conectividad intermitente o nula. La aplicación debe permitir consultar información previamente descargada y actualizarla cuando se recupere la conexión.<br><br>**Scenario 1: Revisión de alternativas**<br>Given el equipo requiere definir la estrategia de almacenamiento local<br>When compara las alternativas disponibles para la tecnología móvil seleccionada<br>Then el equipo documenta ventajas, limitaciones y esfuerzo de adopción de cada alternativa en un informe compartido<br><br>**Scenario 2: Prototipo de almacenamiento y consulta**<br>Given el equipo seleccionó una alternativa<br>When construye un prototipo que almacena localmente las últimas lecturas y las consulta sin conexión<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 3: Evaluación de la sincronización**<br>Given el prototipo almacena información localmente<br>When se restablece la conexión<br>Then el equipo evalúa y documenta el mecanismo de sincronización, la resolución de conflictos y el consumo de datos<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la estrategia<br>When desglosa las tareas de implementación<br>Then el informe incluye una estimación de esfuerzo y una recomendación técnica<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
-| SP03 | Developer | Media | Viabilidad de las notificaciones push | Como equipo de desarrollo, queremos investigar la integración de un servicio de notificaciones push para enviar alertas de los cultivos a los usuarios. | **Contexto:** las alertas de humedad, nutrientes y clima requieren notificar al usuario incluso cuando la aplicación no está en uso. El equipo debe evaluar el servicio, los permisos y las limitaciones en dispositivos con restricciones de batería.<br><br>**Scenario 1: Evaluación del servicio de notificaciones**<br>Given el equipo requiere enviar alertas al dispositivo móvil<br>When revisa las opciones de servicios de notificaciones disponibles<br>Then el equipo documenta la configuración requerida, los costos y las limitaciones de cada opción en un informe compartido<br><br>**Scenario 2: Prototipo de recepción de la alerta**<br>Given el equipo seleccionó un servicio de notificaciones<br>When construye un prototipo que recibe una alerta enviada desde el backend<br>Then el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br><br>**Scenario 3: Evaluación de permisos y segmentación**<br>Given el prototipo recibe notificaciones<br>When se prueban los permisos del sistema operativo y la segmentación por preferencias del usuario<br>Then el equipo documenta el comportamiento observado y las limitaciones por tipo de dispositivo<br><br>**Scenario 4: Estimación del esfuerzo**<br>Given el equipo identificó los componentes de la integración<br>When desglosa las tareas de implementación<br>Then el informe incluye una estimación de esfuerzo y una recomendación técnica<br><br>**Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint. |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">SP01</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC14 - Investigación y Viabilidad (Spike Stories)</td>
+    </tr>
+
+     
+<tr>
+      <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+      <td colspan="3">Viabilidad de la integración de sensores IoT</td>
+    </tr>
+
+     
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Description</td>
+    </tr>
+
+ <tr>
+      <td colspan="4">
+        <b>Como</b> equipo de desarrollo,<br>
+        <b>queremos</b> investigar y prototipar la integración de los sensores IoT de TerraTech con la aplicación móvil para conocer sus implicaciones técnicas y el esfuerzo requerido.
+      </td>
+    </tr>
+
+    
+<tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <td colspan="4">Acceptance Criteria</td>
+    </tr>
+
+    
+<tr>
+      <td colspan="4">
+        **Contexto:** TerraTech utiliza sensores que registran humedad, nutrientes y temperatura del suelo. El equipo necesita definir cómo se transmiten las lecturas, cómo se reciben en la aplicación móvil y qué restricciones impone el entorno rural.<br>
+        <br>
+        <b>Scenario 1: Revisión de la documentación del hardware</b><br>
+        <b>Given</b> el equipo requiere comprender el funcionamiento de los sensores<br>
+        <b>When</b> revisa la documentación técnica de los dispositivos y del protocolo de comunicación<br>
+        <b>Then</b> el equipo documenta los formatos de transmisión, la frecuencia de envío y los requisitos de configuración en un informe compartido<br>
+        <br>
+        <b>Scenario 2: Evaluación de compatibilidad con la aplicación móvil</b><br>
+        <b>Given</b> la aplicación móvil se desarrolla con la tecnología definida por el equipo<br>
+        <b>When</b> se evalúa la recepción de los datos del sensor en un prototipo<br>
+        <b>Then</b> el equipo documenta las bibliotecas necesarias, los requisitos de permisos y las limitaciones encontradas<br>
+        <br>
+        <b>Scenario 3: Prueba de concepto</b><br>
+        <b>Given</b> el equipo dispone de un sensor de prueba<br>
+        <b>When</b> construye un prototipo mínimo que recibe y presenta una lectura<br>
+        <b>Then</b> el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br>
+        <br>
+        <b>Scenario 4: Estimación del esfuerzo</b><br>
+        <b>Given</b> el equipo identificó los componentes de la integración<br>
+        <b>When</b> desglosa las tareas y compara alternativas<br>
+        <b>Then</b> el informe incluye una estimación de esfuerzo y una recomendación de implementación<br>
+        <br>
+        **Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">SP02</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC14 - Investigación y Viabilidad (Spike Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Viabilidad del almacenamiento local y la sincronización sin conexión</td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+    
+   <tr>
+     <td colspan="4">
+       <b>Como</b> equipo de desarrollo,<br>
+       <b>queremos</b> investigar las alternativas de almacenamiento local y sincronización para que la aplicación móvil funcione con conectividad limitada.
+     </td>
+   </tr>
+
+    
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+<tr>
+     <td colspan="4">
+        Contexto:  parte de los usuarios trabaja en zonas rurales con conectividad intermitente o nula. La aplicación debe permitir consultar información previamente descargada y actualizarla cuando se recupere la conexión.<br>
+       <br>
+       <b>Scenario 1: Revisión de alternativas</b><br>
+        <b>Given</b> el equipo requiere definir la estrategia de almacenamiento local<br>
+        <b>When</b> compara las alternativas disponibles para la tecnología móvil seleccionada<br>
+        <b>Then</b> el equipo documenta ventajas, limitaciones y esfuerzo de adopción de cada alternativa en un informe compartido<br>
+        <br>
+        <b>Scenario 2: Prototipo de almacenamiento y consulta</b><br>
+        <b>Given</b> el equipo seleccionó una alternativa<br>
+        <b>When</b> construye un prototipo que almacena localmente las últimas lecturas y las consulta sin conexión<br>
+        <b>Then</b> el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br>
+        <br>
+        <b>Scenario 3: Evaluación de la sincronización</b><br>
+        <b>Given</b> el prototipo almacena información localmente<br>
+        <b>When</b> se restablece la conexión<br>
+        <b>Then</b> el equipo evalúa y documenta el mecanismo de sincronización, la resolución de conflictos y el consumo de datos<br>
+        <br>
+        <b>Scenario 4: Estimación del esfuerzo</b><br>
+        <b>Given</b> el equipo identificó los componentes de la estrategia<br>
+        <b>When</b> desglosa las tareas de implementación<br>
+        <b>Then</b> el informe incluye una estimación de esfuerzo y una recomendación técnica<br>
+        <br>
+        **Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; text-align: left; margin-bottom: 24px;">
+   
+  <thead>
+    <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+      <th style="width: 20%;">Story ID</th>
+      <th style="width: 35%;">User</th>
+      <th style="width: 20%;">Priority</th>
+      <th style="width: 25%;">Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+     
+<tr>
+      <td style="text-align: center;">SP03</td>
+      <td>Developer</td>
+      <td style="text-align: center;">Media</td>
+      <td>EPIC14 - Investigación y Viabilidad (Spike Stories)</td>
+    </tr>
+
+    
+   <tr>
+     <th style="text-align: center; background-color: #f9f9f9; font-weight: bold;">Title</th>
+     <td colspan="3">Viabilidad de las notificaciones push</td>
+   </tr>
+
+   
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Description</td>
+   </tr>
+
+   
+   <tr>
+     <td colspan="4">
+       <b>Como</b> equipo de desarrollo,<br>
+       <b>queremos</b> investigar la integración de un servicio de notificaciones push para enviar alertas de los cultivos a los usuarios.
+     </td>
+   </tr>
+
+   
+   <tr style="text-align: center; font-weight: bold; background-color: #f2f2f2;">
+     <td colspan="4">Acceptance Criteria</td>
+   </tr>
+
+   
+   <tr>
+     <td colspan="4">
+       **Contexto:** las alertas de humedad, nutrientes y clima requieren notificar al usuario incluso cuando la aplicación no está en uso. El equipo debe evaluar el servicio, los permisos y las limitaciones en dispositivos con restricciones de batería.<br>
+       <br>
+       <b>Scenario 1: Evaluación del servicio de notificaciones</b><br>
+       <b>Given</b> el equipo requiere enviar alertas al dispositivo móvil<br>
+       <b>When</b> revisa las opciones de servicios de notificaciones disponibles<br>
+       <b>Then</b> el equipo documenta la configuración requerida, los costos y las limitaciones de cada opción en un informe compartido<br>
+       <br>
+       <b>Scenario 2: Prototipo de recepción de la alerta</b><br>
+        <b>Given</b> el equipo seleccionó un servicio de notificaciones<br>
+        <b>When</b> construye un prototipo que recibe una alerta enviada desde el backend<br>
+        <b>Then</b> el prototipo funciona, queda registrado en una rama del repositorio y se referencia en el informe<br>
+        <br>
+        <b>Scenario 3: Evaluación de permisos y segmentación</b><br>
+        <b>Given</b> el prototipo recibe notificaciones<br>
+        <b>When</b> se prueban los permisos del sistema operativo y la segmentación por preferencias del usuario<br>
+        <b>Then</b> el equipo documenta el comportamiento observado y las limitaciones por tipo de dispositivo<br>
+        <br>
+        <b>Scenario 4: Estimación del esfuerzo</b><br>
+        <b>Given</b> el equipo identificó los componentes de la integración<br>
+        <b>When</b> desglosa las tareas de implementación<br>
+        <b>Then</b> el informe incluye una estimación de esfuerzo y una recomendación técnica<br>
+        <br>
+        **Definition of Done:** el informe se comparte y revisa en una reunión del equipo, el prototipo está en una rama del repositorio y la investigación se completa dentro del sprint.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.4.2. Impact Mapping
 
@@ -1808,66 +5111,73 @@ compartición desde UXPressia.
 
 ### 2.4.3. Product Backlog
 
-El Product Backlog prioriza las historias por valor para el negocio,
-considerando la Landing Page desde el primer sprint. La estimación
-utiliza la escala 1, 2, 3, 5 y 8, y la columna Sprint indica el sprint
-previsto para su desarrollo.
+El Product Backlog consolida y prioriza las 53 historias del proyecto (historias de usuario, historias técnicas y spikes de investigación) ordenadas estrictamente por su valor para el negocio, dependencias técnicas y precedencia arquitectónica a lo largo de los **4 Sprints** de desarrollo del ciclo académico. La estimación utiliza la escala de Fibonacci (1, 2, 3, 5 y 8 Story Points).
 
 | \# Orden | User Story ID | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 |:---|:---|:---|:---|:---|
-| 1 | US01 | Visualización del mensaje de valor | 2 | Sprint 1 |
-| 2 | US02 | Conocimiento de las características de la solución | 3 | Sprint 1 |
-| 3 | US03 | Solicitud de demostración | 5 | Sprint 1 |
-| 4 | US04 | Consulta de términos y condiciones | 1 | Sprint 1 |
-| 5 | US05 | Información del proyecto y del equipo | 2 | Sprint 1 |
-| 6 | US06 | Registro de nuevo usuario | 5 | Sprint 2 |
-| 7 | US07 | Inicio de sesión | 3 | Sprint 2 |
-| 8 | US08 | Recuperación de contraseña | 3 | Sprint 2 |
-| 9 | US09 | Gestión del perfil de usuario | 2 | Sprint 2 |
-| 10 | US10 | Consulta de indicadores clave | 5 | Sprint 2 |
-| 11 | US11 | Selección de zona o sensor específico | 3 | Sprint 2 |
-| 12 | US12 | Consulta del histórico de datos | 5 | Sprint 2 |
-| 13 | US17 | Registro de un nuevo sensor | 3 | Sprint 2 |
-| 14 | US13 | Identificación de zonas fértiles | 8 | Sprint 3 |
-| 15 | US14 | Navegación en el mapa | 3 | Sprint 3 |
-| 16 | US15 | Recomendación automática de riego | 5 | Sprint 3 |
-| 17 | US16 | Recomendación automática de fertilización | 5 | Sprint 3 |
-| 18 | US18 | Configuración de umbrales de alerta | 3 | Sprint 3 |
-| 19 | US22 | Consulta del pronóstico del clima | 5 | Sprint 3 |
-| 20 | US19 | Documentación interactiva de la API | 2 | Sprint 4 |
-| 21 | US20 | Consulta de datos de un sensor | 3 | Sprint 4 |
-| 22 | US21 | Registro de recomendaciones mediante webhook | 5 | Sprint 4 |
-| 23 | US23 | Consulta de imágenes satelitales | 8 | Sprint 4 |
-| 24 | US24 | Registro de insumos | 3 | Sprint 4 |
-| 25 | US25 | Consulta y filtrado del inventario | 3 | Sprint 4 |
-| 26 | US26 | Actualización del stock de insumos | 5 | Sprint 4 |
-| 27 | US27 | Consulta de notificaciones de los sensores | 3 | Sprint 4 |
-| 28 | US28 | Configuración de preferencias de notificaciones | 5 | Sprint 4 |
-| 29 | US29 | Alertas de interés sobre productos | 3 | Sprint 5 |
-| 30 | US30 | Notificaciones de nuevas reseñas | 3 | Sprint 5 |
-| 31 | US31 | Notificaciones de nuevos productos de interés | 3 | Sprint 5 |
-| 32 | US32 | Notificaciones de novedades y disponibilidad | 3 | Sprint 5 |
-| 33 | US33 | Consulta de comentarios y calificaciones | 3 | Sprint 5 |
-| 34 | US34 | Consulta de la reputación de productos | 3 | Sprint 5 |
-| 35 | US35 | Publicación de reseñas de productos | 3 | Sprint 5 |
-| 36 | US36 | Consulta de reseñas de otros compradores | 2 | Sprint 5 |
-| 37 | US37 | Consulta de productos con mayor interés | 5 | Sprint 5 |
-| 38 | US38 | Consulta de zonas con mayor actividad | 5 | Sprint 5 |
-| 39 | US39 | Consulta del catálogo de productos | 5 | Sprint 5 |
-| 40 | US40 | Consulta del detalle y la trazabilidad de un producto | 5 | Sprint 5 |
-| 41 | US41 | Consulta de la información de los cultivos de los clientes | 5 | Sprint 5 |
-| 42 | TS01 | Configuración de repositorios con GitFlow | 2 | Sprint 1 |
-| 43 | TS02 | Despliegue automático de los productos | 3 | Sprint 1 |
-| 44 | TS03 | Configuración de la base de datos en la nube | 3 | Sprint 1 |
-| 45 | TS04 | Configuración de variables de entorno | 2 | Sprint 1 |
-| 46 | TS05 | Implementación del servicio de autenticación | 8 | Sprint 2 |
-| 47 | TS08 | Consulta de perfiles agrícolas | 3 | Sprint 5 |
-| 48 | TS09 | Gestión del inventario de insumos | 5 | Sprint 5 |
-| 49 | TS10 | Consulta de reportes analíticos por dispositivo | 3 | Sprint 5 |
-| 50 | TS11 | Gestión de la comunidad y reseñas | 8 | Sprint 5 |
-| 51 | SP01 | Viabilidad de la integración de sensores IoT | 3 | Sprint 3 |
-| 52 | SP02 | Viabilidad del almacenamiento local y la sincronización sin conexión | 3 | Sprint 4 |
-| 53 | SP03 | Viabilidad de las notificaciones push | 3 | Sprint 5 |
+| 1 | TS01 | Configuración de repositorios con GitFlow | 2 | Sprint 1 |
+| 2 | TS02 | Despliegue automático de los productos | 3 | Sprint 1 |
+| 3 | TS03 | Configuración de la base de datos en la nube | 3 | Sprint 1 |
+| 4 | TS04 | Configuración de variables de entorno | 2 | Sprint 1 |
+| 5 | US01 | Visualización del mensaje de valor | 2 | Sprint 1 |
+| 6 | US02 | Conocimiento de las características de la solución | 3 | Sprint 1 |
+| 7 | US03 | Solicitud de demostración | 5 | Sprint 1 |
+| 8 | US04 | Consulta de términos y condiciones | 1 | Sprint 1 |
+| 9 | US05 | Información del proyecto y del equipo | 2 | Sprint 1 |
+| 10 | SP01 | Viabilidad de la integración de sensores IoT | 3 | Sprint 1 |
+| 11 | TS05 | Implementación del servicio de autenticación | 8 | Sprint 2 |
+| 12 | US06 | Registro de nuevo usuario | 5 | Sprint 2 |
+| 13 | US07 | Inicio de sesión | 3 | Sprint 2 |
+| 14 | US08 | Recuperación de contraseña | 3 | Sprint 2 |
+| 15 | US09 | Gestión del perfil de usuario | 2 | Sprint 2 |
+| 16 | TS08 | Consulta de perfiles agrícolas | 3 | Sprint 2 |
+| 17 | US17 | Registro de un nuevo sensor | 3 | Sprint 2 |
+| 18 | US10 | Consulta de indicadores clave | 5 | Sprint 2 |
+| 19 | US11 | Selección de zona o sensor específico | 3 | Sprint 2 |
+| 20 | US12 | Consulta del histórico de datos | 5 | Sprint 2 |
+| 21 | SP02 | Viabilidad del almacenamiento local y la sincronización sin conexión | 3 | Sprint 2 |
+| 22 | US13 | Identificación de zonas fértiles | 8 | Sprint 3 |
+| 23 | US14 | Navegación en el mapa | 3 | Sprint 3 |
+| 24 | US15 | Recomendación automática de riego | 5 | Sprint 3 |
+| 25 | US16 | Recomendación automática de fertilización | 5 | Sprint 3 |
+| 26 | US18 | Configuración de umbrales de alerta | 3 | Sprint 3 |
+| 27 | US22 | Consulta del pronóstico del clima | 5 | Sprint 3 |
+| 28 | US23 | Consulta de imágenes satelitales | 8 | Sprint 3 |
+| 29 | TS09 | Gestión del inventario de insumos | 5 | Sprint 3 |
+| 30 | US24 | Registro de insumos | 3 | Sprint 3 |
+| 31 | US25 | Consulta y filtrado del inventario | 3 | Sprint 3 |
+| 32 | US26 | Actualización del stock de insumos | 5 | Sprint 3 |
+| 33 | TS10 | Consulta de reportes analíticos por dispositivo | 3 | Sprint 3 |
+| 34 | SP03 | Viabilidad de las notificaciones push | 3 | Sprint 3 |
+| 35 | US27 | Consulta de notificaciones de los sensores | 3 | Sprint 4 |
+| 36 | US28 | Configuración de preferencias de notificaciones | 5 | Sprint 4 |
+| 37 | US29 | Alertas de interés sobre productos | 3 | Sprint 4 |
+| 38 | US30 | Notificaciones de nuevas reseñas | 3 | Sprint 4 |
+| 39 | US31 | Notificaciones de nuevos productos de interés | 3 | Sprint 4 |
+| 40 | US32 | Notificaciones de novedades y disponibilidad | 3 | Sprint 4 |
+| 41 | US39 | Consulta del catálogo de productos | 5 | Sprint 4 |
+| 42 | US40 | Consulta del detalle y la trazabilidad de un producto | 5 | Sprint 4 |
+| 43 | US41 | Consulta de la información de los cultivos de los clientes | 5 | Sprint 4 |
+| 44 | TS11 | Gestión de la comunidad y reseñas | 8 | Sprint 4 |
+| 45 | US33 | Consulta de comentarios y calificaciones | 3 | Sprint 4 |
+| 46 | US34 | Consulta de la reputación de productos | 3 | Sprint 4 |
+| 47 | US35 | Publicación de reseñas de productos | 3 | Sprint 4 |
+| 48 | US36 | Consulta de reseñas de otros compradores | 2 | Sprint 4 |
+| 49 | US37 | Consulta de productos con mayor interés | 5 | Sprint 4 |
+| 50 | US38 | Consulta de zonas con mayor actividad | 5 | Sprint 4 |
+| 51 | US19 | Documentación interactiva de la API | 2 | Sprint 4 |
+| 52 | US20 | Consulta de datos de un sensor | 3 | Sprint 4 |
+| 53 | US21 | Registro de recomendaciones mediante webhook | 5 | Sprint 4 |
+
+#### Resumen de distribución y velocidad estimada por Sprint
+
+| Sprint | Enfoque principal del Sprint | Historias asignadas | Story Points | % del Backlog |
+|:---|:---|:---:|:---:|:---:|
+| **Sprint 1** | Setup técnico, infraestructura CI/CD, Landing Page y Spike IoT | 10 (4 TS, 5 US, 1 SP) | 26 SP | 12.9% |
+| **Sprint 2** | IAM, perfiles de usuario, telemetría en tiempo real y Spike Offline | 11 (2 TS, 8 US, 1 SP) | 43 SP | 21.3% |
+| **Sprint 3** | Analítica de suelo, prescripciones inteligentes, inventario y Spike Push | 13 (2 TS, 10 US, 1 SP) | 59 SP | 29.2% |
+| **Sprint 4** | Alertas push, trazabilidad QR, catálogo, comunidad y APIs externas | 19 (1 TS, 18 US) | 74 SP | 36.6% |
+| **Total** | **Proyecto completo TerraTech** | **53 historias** | **202 SP** | **100%** |
 
 La captura del tablero y el enlace público del Product Backlog se
 incorporarán cuando el equipo cree el tablero en la herramienta de
@@ -2531,6 +5841,169 @@ la mantenibilidad del sistema.
 | LoggingCommandBehavior.cs | Mediator Pipeline Behavior | Intercepta la ejecución de comandos para registrar logs de auditoría antes y después de su procesamiento. |
 | GlobalExceptionHandlerMiddleware.cs | ASP.NET Core Middleware | Middleware centralizado de gestión de excepciones no capturadas para transformarlas en respuestas normalizadas Problem Details. |
 | MiddlewareExtensions.cs | Middleware Extension | Método de extensión de IApplicationBuilder para registrar de forma limpia el middleware de excepciones globales en el pipeline HTTP. |
+
+# Capitulo 4: Product Implementation & Validation
+
+## 4. Product Implementation & Validation
+
+### 4.1. Software Configuration Management
+
+#### 4.1.1. Software Development Environment Configuration
+
+#### 4.1.2. Source Code Management
+
+#### 4.1.3. Source Code Style Guide & Conventions 
+
+### 4.2. Landing Page & Mobile Application Implementation
+
+#### 4.2.1. Sprint 1
+
+#### 4.2.1.1. Sprint Planning 1
+
+Los objetivos dentro del sprint 1 fueron los siguientes:
+
+- Diseñar, implementar y desplegar el core de la Web API REST del BackEnd para
+  TerraTech utilizando C#, .NET y Domain-Driven Design (DDD), garantizando los servicios
+  de autenticación de usuarios, gestión de terrenos/parcelas y la recepción de telemetría
+  de sensores.
+
+#### 4.2.1.2. Aspect Leaders and Collaborators
+
+<table>
+  <thead>
+    <tr>
+      <th>Rol / Responsabilidad</th>
+      <th>Líder e Integrantes</th>
+      <th>Entregables Principales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>BackEnd & Software Architecture Lead</b></td>
+      <td>Jorge Retuerto</td>
+      <td>Arquitectura en capas (DDD/Clean Architecture), diseño de Entidades, Servicios de Dominio y controladores REST en Spring Boot.</td>
+    </tr>
+    <tr>
+      <td><b>Database & Persistence Lead</b></td>
+      <td>Rúbens Bendezú</td>
+      <td>Mapeo de entidades JPA/Hibernate, scripts de migración PostgreSQL y repositorios Spring Data JPA.</td>
+    </tr>
+    <tr>
+      <td><b>Security & Authentication Lead</b></td>
+      <td>Bryan Barba / James Delgado</td>
+      <td>Implementación de Spring Security, filtros JWT (JSON Web Token) y cifrado de contraseñas con BCrypt.</td>
+    </tr>
+    <tr>
+      <td><b>BackEnd QA & Testing Lead</b></td>
+      <td>Angel Pariona</td>
+      <td>Pruebas unitarias de servicios de dominio con JUnit 5/Mockito y pruebas de integración de API REST con <code>MockMvc</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 4.2.1.3. Sprint Backlog 1
+
+- BackEnd
+
+A continuación se presenta el Backlog que combina 
+las Historias de Usuario desarrolladas y el resumen de las tareas 
+técnicas completadas:
+
+<table>
+  <thead>
+    <tr>
+      <th>User Story ID</th>
+      <th>Descripción</th>
+      <th>Estimación (Puntos de Historia)</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>US-01</b></td>
+      <td>Como usuario, quiero autenticarme en el sistema para obtener un token de acceso seguro.</td>
+      <td>5</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td><b>US-02</b></td>
+      <td>Como agricultor, quiero registrar y listar mis parcelas/terrenos a través de la API REST.</td>
+      <td>5</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td><b>US-03</b></td>
+      <td>Como sistema IoT, quiero enviar lecturas de sensores (humedad, temperatura) a la API REST para su almacenamiento.</td>
+      <td>8</td>
+      <td>Completado</td>
+    </tr>
+  </tbody>
+</table>
+
+Resumen de Tareas Técnicas Completadas:
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Refactorizar e integrar los componentes BackEnd del proyecto heredado (<i>Desarrollo de Aplicaciones Web</i>) a la nueva estructura de DDD.</td>
+      <td>Completado</td>
+    </tr>
+    <tr>
+      <td>Configurar OpenAPI / Swagger UI para la documentación interactiva de endpoints.</td>
+      <td>Completado</td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### 4.2.1.4. Development Evidence for Sprint Review
+
+- Back End
+
+* **Estructura del Proyecto:** Organización del código bajo patrones de Domain-Driven Design (DDD):
+    * `domain/`: Entidades de negocio, Value Objects y Domain Services.
+    * `infrastructure/`: Implementaciones JPA, Spring Data Repositories y filtros de seguridad.
+    * `interfaces/rest/`: Controladores REST (`@RestController`), DTOs (Requests/Responses) y Assemblers.
+* **Evolución del BackEnd Heredado:** Refactorización del código previo de *Desarrollo de Aplicaciones Web* para 
+cumplir con los estándares de arquitectura modular, separando el modelo de persistencia.
+* **Capturas de Ejecución:** Evidencia del servidor iniciando correctamente en el entorno de desarrollo 
+y respondiendo peticiones HTTP en el puerto designado.
+
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+#### 4.2.1.6. Execution Evidence for Sprint Review
+
+#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+* **Servicio Web BackEnd:** Compilación del artefacto ejecutable (`.dll` / binarios autofrenados) vía .NET CLI (`dotnet publish`) y despliegue continuo en la plataforma PaaS (ej. Render / Railway / Azure App Service / AWS) expuesto bajo protocolo HTTPS.
+
+Back End URL: [Swagger BackEnd](https://backend-terratech.onrender.com/swagger/index.html)
+
+![Deployment Evidence](/assets/images/cap4/deployment-evidence-1.png)
+
+![Deployment Evidence](/assets/images/cap4/deployment-evidence-2.png)
+
+* **Base de Datos:** Instancia desplegada de MySQL en la nube (ej. PlanetScale / AWS RDS / Aiven), con tablas generadas y gestionadas mediante migraciones de Entity Framework Core (EF Core Migrations) o ejecuciones DDL de inicialización.
+
+![DataBase Service](/assets/images/cap4/database-service.png)
+
+#### 4.2.1.9. Team Collaboration Insights during Sprint
+
+### 4.3. Validation Interviews
+
+#### 4.3.1. Diseño de Entrevistas
+
+#### 4.3.2. Registro de Entrevistas
+
+#### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones
 
