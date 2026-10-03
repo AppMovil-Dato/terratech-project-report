@@ -73,6 +73,7 @@
 | 0.4.3 | 15/09/2026 | Barba Estrada, Bryan Eduardo | Desarrollo de 2.3 Needfinding y 2.4 Requirements Specification (user stories, technical/spike stories, impact mapping y product backlog) y correcciones de consistencia del Capítulo II. |
 | 0.4.4 | 15/09/2026 | Pariona Chacca, Angel Jose | Elaboración y documentación de las secciones 2.1 Competidores (análisis competitivo y landscape) y 2.2 Entrevistas (diseño, registro de 7 entrevistas y análisis estadístico y cualitativo por segmento) con enfoque en aplicación móvil. |
 | 0.5.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Elaboración y documentación del Strategic Domain-Driven Design (DDD): descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diseño de arquitectura de software C4 (diagramas de Contexto, Contenedores y Despliegue con soporte offline-first y persistencia local Room). |
+| 0.6.0 | 15/09/2026 | Jorge Manuel Retuerto Rodriguez | Elaboración y documentación del BackEnd, implementando Domain-Drive-Design. Asimismo, ejecutando el deployment del servicio. |
 
 ## Project Report Collaboration Insights
 
