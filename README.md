@@ -5834,27 +5834,403 @@ la mantenibilidad del sistema.
 
 ## 3.1. Product design
 
+El Product Design de **TerraTech** establece los lineamientos visuales, de organización y de navegación que permiten mantener una experiencia coherente entre la Landing Page y la aplicación móvil. Para la TB1 se reutiliza la Landing Page desarrollada previamente para el proyecto, adaptando su documentación al alcance actual de TerraTech y manteniendo una implementación web basada en **HTML5, CSS3 y JavaScript**.
+
+La propuesta de diseño busca comunicar de manera sencilla el propósito de TerraTech y permitir que un visitante comprenda rápidamente cómo la solución integra sensores IoT y servicios digitales para apoyar el monitoreo agrícola. La Landing Page funciona como el principal punto de presentación del producto y orienta al usuario hacia la propuesta de valor, las características principales, la información del proyecto y la solicitud de una demostración.
+
+El diseño considera los tres segmentos objetivo identificados para TerraTech: pequeños y medianos agricultores, proveedores y asesores de insumos agrícolas, y clientes finales o compradores. Debido a que estos usuarios presentan distintos niveles de experiencia tecnológica, se prioriza una interfaz limpia, una jerarquía visual clara, textos breves y acciones fácilmente identificables.
+
+Asimismo, el diseño mantiene consistencia con la experiencia móvil definida para TerraTech, reutilizando una identidad visual basada en tonos relacionados con agricultura, sostenibilidad y tecnología, y asegurando que la Landing Page pueda visualizarse correctamente tanto en navegadores de escritorio como en dispositivos móviles.
+
+
 ### 3.1.1. Style Guidelines
+
+Las Style Guidelines de TerraTech definen los criterios visuales y comunicacionales utilizados en la Landing Page. Su objetivo es mantener una identidad consistente y facilitar que los visitantes comprendan el propósito del producto sin requerir conocimientos técnicos sobre IoT o agricultura de precisión.
+
+Estas pautas comprenden el tono de comunicación, identidad visual, tipografía, paleta cromática, espaciado y criterios de adaptación responsive. Los mismos principios sirven como referencia para mantener coherencia visual con la aplicación móvil.
+
 
 #### 3.1.1.1. General Style Guidelines
 
+##### Tone of Voice
+
+El tono de comunicación de TerraTech se define como **claro, confiable, cercano y orientado a la acción**. La información relacionada con sensores, monitoreo del suelo y análisis agrícola debe presentarse de manera comprensible, evitando utilizar terminología técnica innecesaria frente a usuarios que pueden presentar distintos niveles de alfabetización digital.
+
+La comunicación no pretende reemplazar el criterio de un especialista ni presentar las recomendaciones de TerraTech como diagnósticos definitivos. Por ello, los mensajes se formulan como información y apoyo para la toma de decisiones.
+
+Los llamados a la acción utilizan expresiones directas y breves, como **“Conoce TerraTech”**, **“Ver características”** y **“Solicitar demostración”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
+
+
+##### Branding
+
+La identidad visual de **TerraTech** combina elementos asociados con la agricultura y la tecnología. La marca busca transmitir sostenibilidad, innovación, confianza y facilidad de uso.
+
+El logotipo utilizado en el proyecto se mantiene como principal identificador visual de TerraTech y debe conservar sus proporciones originales, evitando distorsiones, rotaciones o alteraciones cromáticas que afecten su reconocimiento.
+
+<p align="center">
+  <img src="assets/images/cap2/terratech-logo.png" alt="Logo de TerraTech" width="220">
+</p>
+
+En la Landing Page, el logotipo se posiciona principalmente en el encabezado y puede volver a utilizarse de manera secundaria en el Footer. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+
+
+##### Typography
+
+Para la Landing Page se establece **Roboto** como familia tipográfica principal debido a su legibilidad en interfaces digitales y su correcta adaptación a diferentes resoluciones de pantalla.
+
+La jerarquía tipográfica propuesta es la siguiente:
+
+| Elemento | Tamaño aproximado | Peso | Uso |
+|:---|:---:|:---:|:---|
+| H1 | 40–48 px | 700 | Mensaje principal del Hero |
+| H2 | 30–36 px | 700 | Títulos de secciones |
+| H3 | 20–24 px | 600 | Títulos de características y tarjetas |
+| Body | 16–18 px | 400 | Textos descriptivos |
+| Small | 14 px | 400 | Información complementaria |
+| Button | 16 px | 600 | Call To Action |
+
+Para dispositivos móviles, los encabezados reducen progresivamente su tamaño manteniendo un mínimo de 16 px en los textos principales, evitando problemas de lectura y desbordamientos horizontales.
+
+
+##### Colors
+
+La identidad cromática de la Landing Page mantiene coherencia con la propuesta visual utilizada en la aplicación móvil de TerraTech.
+
+| Nombre | HEX | Uso principal |
+|:---|:---:|:---|
+| Verde TerraTech | `#2E7D32` | Color principal, botones CTA, títulos destacados e indicadores positivos |
+| Ámbar TerraTech | `#F59E0B` | Elementos de atención, detalles visuales y estados de precaución |
+| Blanco | `#FFFFFF` | Fondos, tarjetas y contraste |
+| Gris muy claro | `#F5F7F5` | Fondos alternativos entre secciones |
+| Gris oscuro | `#1F2937` | Texto principal |
+| Gris medio | `#6B7280` | Texto secundario |
+| Rojo de alerta | `#D32F2F` | Mensajes de error o estados críticos |
+
+El verde `#2E7D32` funciona como color principal por su relación con el sector agrícola y la sostenibilidad. El ámbar `#F59E0B` actúa como color de apoyo para resaltar información que requiere atención.
+
+Los colores de estado nunca deben utilizarse como único medio de comunicación. Siempre deben complementarse con texto, íconos o etiquetas para mantener la accesibilidad.
+
+
+##### Spacing and Layout
+
+La interfaz utiliza una escala de espaciado basada en múltiplos de **8 px**, permitiendo mantener consistencia entre márgenes, paddings, botones, tarjetas y secciones.
+
+| Token | Valor | Uso |
+|:---|:---:|:---|
+| XS | 8 px | Separación mínima |
+| S | 16 px | Padding interno |
+| M | 24 px | Separación entre componentes |
+| L | 32 px | Separación entre bloques |
+| XL | 48 px | Separación entre secciones |
+| 2XL | 64 px | Espacios principales del layout |
+
+La Landing Page utiliza un contenedor central con ancho máximo para evitar líneas de texto excesivamente largas en pantallas grandes. En dispositivos móviles, los componentes se reorganizan verticalmente.
+
+Los botones principales poseen un área suficientemente amplia para facilitar la interacción táctil. Las tarjetas utilizan bordes redondeados, espacio interno uniforme y separación clara entre elementos.
+
+El diseño responsive garantiza la correcta visualización desde pantallas de aproximadamente **320 px de ancho**, evitando desbordamiento horizontal y reorganizando los elementos mediante CSS Flexbox, Grid y media queries.
+
+
 ### 3.1.2. Information Architecture
+
+La Information Architecture de la Landing Page de TerraTech determina cómo se organiza, etiqueta y presenta el contenido para que los visitantes comprendan rápidamente qué ofrece la solución y puedan encontrar las acciones principales.
+
+Al tratarse de una Landing Page orientada principalmente a presentar TerraTech y dirigir al usuario hacia una solicitud de demostración, se emplea una arquitectura simple, jerárquica y basada en navegación por secciones dentro de una misma página.
+
 
 #### 3.1.2.1. Organization Systems
 
+La Landing Page utiliza principalmente un sistema de organización **jerárquico y por tópicos**.
+
+La organización jerárquica presenta primero la información general del producto y posteriormente información más específica. De esta forma, el visitante conoce inicialmente la propuesta de valor de TerraTech, continúa con sus características y finalmente puede conocer el proyecto, el equipo y solicitar una demostración.
+
+La organización por tópicos agrupa la información según su función dentro de la página.
+
+La estructura principal queda definida de la siguiente manera:
+
+```text
+Landing Page TerraTech
+│
+├── Inicio
+│   └── Propuesta de valor + Call To Action
+│
+├── Características
+│   ├── Sensor de Humedad
+│   ├── Sensor de Nutrientes
+│   └── Alertas en Tiempo Real
+│
+├── Sobre TerraTech
+│   ├── Propósito de la solución
+│   └── NovaTech
+│
+├── Nuestro Equipo
+│   └── Integrantes del proyecto
+│
+├── Solicitar Demostración
+│   └── Formulario de contacto
+│
+└── Footer
+    ├── Términos y condiciones
+    └── Información complementaria
+    
+```
+
 #### 3.1.2.2. Labelling Systems
+
+El sistema de etiquetado de la Landing Page de **TerraTech** utiliza términos breves, comprensibles y orientados al usuario final. Debido a que la página tiene como objetivo presentar la propuesta de valor de la solución y facilitar el acceso a sus principales contenidos, se evita exponer nombres técnicos internos, Bounded Contexts o conceptos de implementación que no aporten valor al visitante.
+
+Las etiquetas se mantienen consistentes entre el Navbar, los títulos de las secciones y los Call To Action.
+
+| Etiqueta | Propósito |
+|:---|:---|
+| **Inicio** | Presentar la propuesta de valor principal de TerraTech. |
+| **Beneficios** | Resumir el valor que aporta la solución al monitoreo agrícola. |
+| **Características** | Presentar las capacidades principales disponibles para el alcance actual. |
+| **Sobre TerraTech** | Explicar el propósito de la solución y su relación con agricultura e IoT. |
+| **Soluciones** | Mostrar las funcionalidades contempladas para la TB1. |
+| **Planes** | Presentar información comercial y alternativas referenciales de la Landing Page. Al tratarse de una sección de diseño, su presencia en los wireframes y mock-ups no implica que todos los planes se encuentren implementados funcionalmente en esta entrega. |
+| **Equipo** | Presentar al equipo NovaTech responsable del proyecto. |
+| **Contacto** | Permitir que el visitante solicite información o una demostración. |
+| **Solicitar demostración** | Call To Action principal de la Landing Page. |
+| **Términos y condiciones** | Permitir consultar información legal y condiciones generales del servicio. |
+
+En las secciones asociadas con la TB1 se utilizan etiquetas que reflejan directamente las historias que serán presentadas: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores en tiempo real**, **Historial de mediciones** y **Consulta sin conexión**.
+
+Los Call To Action utilizan expresiones directas como **“Solicitar demostración”** y **“Conocer funcionalidades”**, reduciendo ambigüedad y facilitando que el visitante comprenda la acción disponible.
+
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
+La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
+
+**Title**
+
+```text
+TerraTech | Agricultura inteligente y monitoreo del suelo
+```
+
+**Description**
+
+```text
+TerraTech integra sensores IoT y una aplicación móvil para gestionar parcelas, consultar humedad, temperatura y nutrientes del suelo, revisar mediciones históricas y acceder a información previamente descargada.
+```
+
+**Keywords**
+
+```text
+TerraTech, agricultura inteligente, agricultura de precisión,
+sensores IoT, humedad del suelo, temperatura del suelo,
+nutrientes del suelo, monitoreo agrícola, historial de mediciones,
+aplicación Android, tecnología agrícola
+```
+
+Los principales Meta Tags considerados son:
+
+| Meta Tag | Valor |
+|:---|:---|
+| Charset | `UTF-8` |
+| Viewport | `width=device-width, initial-scale=1.0` |
+| Author | `NovaTech` |
+| Robots | `index, follow` |
+| Language | `es-PE` |
+| Content-Type | `text/html; charset=UTF-8` |
+
+La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. A su vez, `title` y `description` describen el producto sin atribuir funcionalidades que no se encuentran dentro del alcance actual de la TB1.
+
+
 #### 3.1.2.4. Searching Systems
+
+La Landing Page de TerraTech presenta un volumen reducido y estructurado de información, por lo que para la TB1 **no se requiere un motor de búsqueda interno**.
+
+La localización del contenido se resuelve mediante el Navbar y enlaces internos que permiten desplazarse directamente hacia cada sección de la página.
+
+Esta decisión responde a tres criterios:
+
+- La información se concentra en una única Landing Page.
+- El número de secciones es reducido y fácilmente identificable.
+- Incorporar una barra de búsqueda no aportaría valor adicional en el alcance actual.
+
+El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las características, la información sobre TerraTech, las funcionalidades incluidas en la TB1 y el formulario de contacto mediante la navegación principal.
+
+En futuras iteraciones, si TerraTech incorpora documentación, artículos, catálogos extensos u otros contenidos de mayor volumen, podría evaluarse la incorporación de un mecanismo de búsqueda específico.
+
 
 #### 3.1.2.5. Navigation Systems
 
+La Landing Page de TerraTech utiliza un sistema de navegación global mediante un **Navbar** ubicado en la parte superior de la interfaz.
+
+La navegación sigue una estructura lineal y predecible:
+
+```text
+Inicio → Beneficios → Características → Sobre TerraTech → Soluciones → Planes → Equipo → Contacto
+```
+
+Cada opción puede asociarse a un identificador HTML para desplazar al usuario hacia la sección correspondiente dentro de la misma página.
+
+El botón **“Solicitar demostración”** funciona como Call To Action principal y dirige al visitante hacia el formulario de contacto.
+
+En Desktop, las opciones principales permanecen visibles horizontalmente. En Mobile, el menú se adapta a un formato de tipo hamburguesa controlado mediante JavaScript para reducir el espacio ocupado por la navegación.
+
+La navegación entre secciones puede complementarse mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú puede cerrarse automáticamente y desplazar al usuario hacia el contenido correspondiente.
+
+El Footer complementa la navegación proporcionando acceso a información institucional, términos y condiciones y otros enlaces relevantes.
+
+Debe considerarse que las secciones comerciales reutilizadas en la Landing Page, como **Planes**, funcionan como contenido informativo y de diseño. Su presencia en los wireframes y mock-ups permite documentar la estructura visual completa de la Landing Page, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+
+
 ### 3.1.3. Landing Page UI Design
+
+El Landing Page UI Design de TerraTech materializa visualmente las Style Guidelines y la Information Architecture definidas previamente.
+
+La Landing Page reutilizada se documenta considerando su implementación mediante **HTML5, CSS3 y JavaScript**, y se adapta al alcance funcional que será presentado en la TB1.
+
+La Landing Page no pretende simular que todas sus secciones dependen del backend. Su función principal es comunicar el producto. Por ello, las secciones de presentación y marketing conviven con una sección específica de **funcionalidades para el alcance TB1**, la cual refleja las historias que actualmente se encuentran contempladas por el backend y la aplicación Android:
+
+- **US06 — Registro:** creación de cuenta con nombre, correo, contraseña y confirmación, incluyendo validación de campos y correo duplicado.
+- **US07 — Inicio de sesión:** autenticación mediante JWT, presentación de errores y acceso únicamente a recursos propios.
+- **US09 — Perfil:** consulta y edición de datos personales y del terreno.
+- **US17 — Registro de sensor:** asociación de un dispositivo válido a una parcela propia, rechazando códigos inválidos o ya asociados.
+- **US11 — Selección de parcela/sensor:** selección de una parcela y consulta de sus dispositivos.
+- **US10 — Indicadores:** consulta de humedad, temperatura y nutrientes con fecha de actualización y aviso de datos desactualizados.
+- **US12 — Histórico:** consulta de humedad de los últimos 7 días, cambio a 30 días y visualización del detalle de una lectura.
+- **Nueva HU — Consulta sin conexión:** consulta de parcelas, sensores y mediciones previamente descargadas, indicando la antigüedad de la información.
+
+Se consideran versiones **Desktop Web Browser** y **Mobile Web Browser**, manteniendo el mismo contenido pero modificando la distribución de los componentes según el espacio disponible.
+
 
 #### 3.1.3.1. Landing Page Wireframe
 
+Los wireframes representan la estructura de la Landing Page en baja fidelidad. Su objetivo es mostrar la jerarquía del contenido, distribución de componentes, navegación y comportamiento responsive antes de aplicar colores, fotografías y estilos definitivos.
+
+Para facilitar su lectura, la Landing Page se documenta por secciones en lugar de mostrarse como una única imagen vertical de gran tamaño.
+
+##### Inicio / Hero
+
+La primera sección contiene el Header, Navbar, propuesta de valor y Call To Action principal. El contenido comunica que TerraTech permite gestionar parcelas y sensores, consultar datos del suelo y acceder a información desde la aplicación Android.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-hero.png" alt="Wireframe de Inicio y Hero de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.1. Wireframe de la Landing Page de TerraTech — Inicio / Hero (Desktop y Mobile).</em></p>
+
+
+##### Beneficios y Características
+
+Esta sección organiza las funcionalidades principales en tarjetas independientes para facilitar su exploración. La estructura se encuentra alineada con el alcance actual de la aplicación Android y el backend.
+
+Se representan el registro e inicio de sesión, perfil y parcelas, registro de sensor, selección de parcela, indicadores en tiempo real, historial de mediciones y consulta sin conexión.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-benefits-features.png" alt="Wireframe de Beneficios y Características de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.2. Wireframe de la Landing Page de TerraTech — Beneficios y Características (Desktop y Mobile).</em></p>
+
+
+##### Sobre TerraTech y Soluciones para el alcance TB1
+
+Esta sección explica la relación entre sensores IoT, servicios digitales y la aplicación Android. Además, presenta únicamente las capacidades que se consideran dentro del alcance funcional de la TB1.
+
+La sección evita presentar como implementadas capacidades que pertenecen a iteraciones posteriores del producto.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-about-scope.png" alt="Wireframe Sobre TerraTech y Soluciones TB1" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.3. Wireframe de la Landing Page de TerraTech — Sobre TerraTech y Soluciones para el alcance TB1 (Desktop y Mobile).</em></p>
+
+
+##### Planes y Equipo
+
+Como parte del diseño integral de la Landing Page reutilizada, también se documenta una sección destinada a presentar planes referenciales y la identidad del equipo NovaTech. Estas secciones cumplen una función de comunicación visual dentro de la Landing Page y permiten completar la narrativa del producto antes del formulario de contacto.
+
+En esta etapa, los planes se documentan como parte del diseño de interfaz y no como evidencia de que exista una lógica comercial completamente implementada en backend.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-plans-team.png" alt="Wireframe de Planes y Equipo de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.4. Wireframe de la Landing Page de TerraTech — Planes y Equipo (Desktop y Mobile).</em></p>
+
+
+##### Contacto y Footer
+
+La última sección presenta el formulario de solicitud de demostración y el Footer. El formulario permite recopilar información básica del interesado y funciona como principal mecanismo de conversión de la Landing Page.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-contact-footer.png" alt="Wireframe de Contacto y Footer de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.5. Wireframe de la Landing Page de TerraTech — Contacto y Footer (Desktop y Mobile).</em></p>
+
+
 #### 3.1.3.2. Landing Page Mock-up
+
+Los mock-ups representan la versión de alta fidelidad de la Landing Page de TerraTech e incorporan la identidad visual del producto, tipografía, paleta cromática, imágenes, iconografía, botones, tarjetas y espaciados.
+
+Se mantiene el verde TerraTech `#2E7D32` como color principal y el ámbar `#F59E0B` como color de apoyo. La versión Mobile conserva la misma jerarquía de contenido de Desktop, reorganizando los componentes en una sola columna cuando el espacio disponible lo requiere.
+
+Al igual que los wireframes, los mock-ups se presentan por secciones para facilitar la revisión del diseño.
+
+##### Inicio / Hero
+
+El mock-up del Hero presenta la propuesta de valor de TerraTech junto con una representación de la aplicación Android y sensores utilizados en campo. Las llamadas a la acción permanecen visibles desde la primera pantalla.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-hero.png" alt="Mock-up de Inicio y Hero de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.6. Mock-up de la Landing Page de TerraTech — Inicio / Hero (Desktop y Mobile).</em></p>
+
+
+##### Beneficios y Características
+
+El diseño de alta fidelidad organiza las funcionalidades mediante tarjetas visuales con iconos y descripciones breves. El objetivo es que el visitante identifique rápidamente las capacidades que podrá encontrar en la aplicación.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-benefits-features.png" alt="Mock-up de Beneficios y Características de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.7. Mock-up de la Landing Page de TerraTech — Beneficios y Características (Desktop y Mobile).</em></p>
+
+
+##### Sobre TerraTech y Soluciones para el alcance TB1
+
+Esta sección utiliza recursos visuales relacionados con agricultura y sensores IoT para explicar la integración entre el campo, el backend y la aplicación Android.
+
+Las tarjetas inferiores sintetizan el alcance funcional de la TB1: acceso seguro, gestión de parcelas y perfil, asociación de sensores, visualización de indicadores, histórico de 7 y 30 días y consulta sin conexión de datos previamente descargados.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-about-scope.png" alt="Mock-up Sobre TerraTech y Soluciones TB1" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.8. Mock-up de la Landing Page de TerraTech — Sobre TerraTech y Soluciones para el alcance TB1 (Desktop y Mobile).</em></p>
+
+
+##### Planes y Equipo
+
+El mock-up de esta sección presenta en alta fidelidad la oferta visual de planes y la presentación del equipo NovaTech. Su inclusión busca documentar el diseño completo de la Landing Page reutilizada y mantener coherencia con la estructura general del sitio web.
+
+Aunque el bloque de planes se presenta como parte del diseño, debe entenderse como un elemento de comunicación visual y no como evidencia suficiente de reglas comerciales ya implementadas en backend.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-plans-team.png" alt="Mock-up de Planes y Equipo de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.9. Mock-up de la Landing Page de TerraTech — Planes y Equipo (Desktop y Mobile).</em></p>
+
+
+##### Contacto y Footer
+
+El mock-up final presenta el formulario de solicitud de demostración utilizando campos claramente identificados y un Call To Action principal. El Footer reúne información institucional y enlaces complementarios.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-contact-footer.png" alt="Mock-up de Contacto y Footer de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.10. Mock-up de la Landing Page de TerraTech — Contacto y Footer (Desktop y Mobile).</em></p>
+
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
