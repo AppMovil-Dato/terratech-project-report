@@ -75,6 +75,7 @@
 | 0.5.0 | 15/09/2026 | Bendezú Navarro, Rúbens Fitzgerald | Elaboración y documentación del Strategic Domain-Driven Design (DDD): descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diseño de arquitectura de software C4 (diagramas de Contexto, Contenedores y Despliegue con soporte offline-first y persistencia local Room).                                                                                 |
 | 0.6.0 | 15/09/2026 | Jorge Manuel Retuerto Rodriguez    | Elaboración y documentación del BackEnd, implementando Domain-Drive-Design. Asimismo, ejecutando el deployment del servicio.                                                                                                                                                                                                                                                                                           |
 | 0.7.0| 15/09/2026 | AngelJose Pariona Chacca           | Elaboracion y documentacion de la seccion 3.1.4. Mobile UX & UI  (Mockup, Wireframes, Wireflow, Userflow, Prototype)                                                                                                                                                                                                                                                                                                   |
+| 0.7.1 | 04/10/2026 | Pariona Chacca, Angel Jose         | Actualización TB1 de la sección 3.1.4 Mobile Applications UX/UI Design: especificación de 8 wireframes, wireflow P1-P8, mockups en alta fidelidad, 4 diagramas modulares de User Flow y rutas de excepción (Unhappy Paths). |
 ## Project Report Collaboration Insights
 
 Esta sección presenta la organización y las evidencias del trabajo
@@ -5855,122 +5856,197 @@ la mantenibilidad del sistema.
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
-El diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para la aplicación móvil de **TerraTech** se enfoca en resolver las necesidades operativas de agricultores y compradores en campo. La solución se sustenta en tres principios clave:
-1. **Resiliencia operativa (Offline-First):** Soporte de almacenamiento local en el dispositivo (SQLite/Room) para garantizar el acceso a los datos de telemetría y el registro de riego incluso sin conexión a internet.
-2. **Diseño inclusivo y ergonomía táctil:** Elementos interactivos con áreas mínimas de contacto de 48 × 48 dp y alto contraste para facilitar la lectura bajo luz solar directa y el uso con guantes.
-3. **Claridad informativa:** Jerarquía visual simple que prioriza métricas críticas de humedad de suelo y alertas inmediatas.
+El diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para la aplicación móvil de **TerraTech** se encuentra estrictamente delimitado para resolver las necesidades prioritarias del agricultor dentro del alcance de la entrega (TB1 / Sprint 2). La solución tecnológica móvil se enfoca en dos pilares fundamentales: la **gestión de identidad, predios y dispositivos IoT**, y el **monitoreo agronómico en tiempo real con capacidad de consulta resiliente sin conexión**.
+
+El diseño responde a tres principios esenciales:
+1. **Resiliencia operativa en campo rural (Offline-First):** Soporte de almacenamiento local en el dispositivo (SQLite / Room) para garantizar la consulta ininterrumpida de parcelas, sensores y mediciones descargadas previamente, indicando de forma visible la antigüedad de los datos en zonas sin cobertura de red.
+2. **Ergonomía táctil y diseño inclusivo:** Componentes con áreas de contacto mínimas de 48 × 48 dp, contrastes cromáticos adecuados para lectura bajo luz solar directa en campo y flujos optimizados para usuarios con diversos niveles de alfabetización digital.
+3. **Claridad informativa y veracidad de telemetría:** Jerarquía visual enfocada en indicadores agronómicos críticos (humedad %, temperatura del suelo °C y nutrientes N-P-K en ppm), señalando con precisión la fecha y hora de la última sincronización y emitiendo alertas visuales preventivas ante falta de recepción de datos por más de 30 minutos.
+
+Las interfaces y flujos implementados cubren de manera exhaustiva las 8 Historias de Usuario priorizadas para el producto móvil:
+- **US06 — Registro:** Creación de cuenta de usuario con validación de nombre, correo electrónico y contraseña confirmada.
+- **US07 — Inicio de sesión:** Autenticación segura mediante tokens JWT, control de credenciales incorrectas, verificación de correo y restricción de acceso a recursos propios.
+- **US09 — Perfil:** Visualización y edición de datos del agricultor y de la parcela (número de teléfono, ubicación y tamaño de terreno).
+- **US17 — Registro de sensor:** Asociación de dispositivos físicos válidos (`TT-XXXXXX`) a una parcela específica con rechazo de códigos inválidos o duplicados.
+- **US11 — Selección de parcela/sensor:** Navegación y filtrado entre parcelas y sus respectivos sensores asociados.
+- **US10 — Indicadores:** Visualización en tiempo real de humedad, temperatura y nutrientes (N, P, K) con timestamp y alerta de datos desactualizados.
+- **US12 — Histórico:** Monitoreo gráfico de humedad a 7 días (por defecto con umbral mínimo de referencia), selector rápido a 30 días y detalle táctil de cada punto.
+- **Nueva HU — Consulta sin conexión:** Acceso a la información previamente almacenada en caché local y banner informativo con la antigüedad de la sincronización.
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
-Los wireframes representan la estructura básica y esquemática de la aplicación móvil en baja fidelidad. Se prescinde deliberadamente de elementos cromáticos y fotográficos para evaluar la distribución espacial, los patrones de navegación y la jerarquía de los contenidos antes de la etapa visual final.
+Los wireframes representan la estructura esquemática en baja fidelidad de la aplicación móvil de TerraTech. Se prescinde deliberadamente de estilos visuales finales para validar la distribución de elementos, la jerarquía de los datos agronómicos y la usabilidad de los formularios antes de la capa gráfica definitiva.
 
 <p align="center">
   <img src="assets/images/cap3/mobile-wireframes.png" alt="Wireframes de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.9. Wireframes de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.9. Wireframes de la aplicación móvil de TerraTech (Alcance TB1).</em></p>
 
-La propuesta estructural abarca las pantallas clave del flujo móvil:
-- **Inicio (Dashboard):** Resumen del clima, indicadores generales de salud del suelo, estado de sensores y acceso directo a la acción de riego.
-- **Mis Parcelas:** Lista y visualización de sectores de cultivo con filtros rápidos y estado de cada lote.
-- **Detalle de Sensor IoT:** Vista técnica de telemetría en tiempo real, nivel de batería del nodo y recomendación agronómica de riego.
-- **Mercado / Catálogo:** Catálogo de lotes agrícolas cosechados para compradores mayoristas con certificación de calidad por sensores.
-- **Modo Sin Conexión:** Pantalla informativa de contingencia que notifica el uso de datos locales y permite reintentar la sincronización.
-- **Mi Perfil:** Información del productor agrícola, configuración de alertas y opciones de cuenta.
+La arquitectura de información en baja fidelidad comprende las pantallas esenciales del alcance funcional:
+- **WF-01: Registro de Usuario (US06):** Formulario con campos para Nombre (mínimo 2 caracteres), Correo electrónico, Contraseña (mínimo 6 caracteres), Confirmar contraseña y enlace para usuarios ya registrados. Muestra mensajes de error en línea ante contraseñas no coincidentes o correo ya registrado.
+- **WF-02: Inicio de Sesión (US07):** Formulario de autenticación con Email, Contraseña, botón de acceso, recuperación de credenciales y mensaje de contingencia en caso de correo no verificado con opción de reenvío de enlace.
+- **WF-03: Dashboard de Indicadores Clave (US10 y US11):** Cabecera con selector desplegable de parcelas y sensores asociados, timestamp explícito de la última actualización, tarjetas de medición para Humedad del suelo (%), Temperatura (°C) y Nutrientes (N, P, K en ppm), acompañadas de banner de advertencia si la telemetría supera los 30 minutos sin actualizar.
+- **WF-04: Consulta de Histórico de Humedad (US12):** Gráfico temporal de líneas con vista por defecto a 7 días, línea punteada indicativa del umbral mínimo de humedad del cultivo, botones selectores para alternar entre 7 días y 30 días, y tarjeta flotante con el detalle de la fecha, hora, porcentaje de humedad y alerta registrada.
+- **WF-05: Selector y Gestión de Parcelas / Sensores (US11):** Listado de parcelas del agricultor, desglose de los sensores IoT vinculados a cada sector y botón para vincular nuevo hardware.
+- **WF-06: Registro de Nuevo Sensor (US17):** Modal o vista de formulario para ingresar el código único del dispositivo con formato `TT-XXXXXX`, selector de parcela de destino, tipo de cultivo actual y validación en tiempo real que rechaza identificadores no inventariados o previamente asociados.
+- **WF-07: Perfil de Usuario y Terreno (US09):** Vista de consulta con Nombre, Correo electrónico (campo inmutable de solo lectura), Teléfono, Ubicación geográfica, Tamaño del terreno (con validación de valor estrictamente positivo) y fecha de creación de la cuenta, junto con controles para guardar cambios.
+- **WF-08: Vista con Soporte Sin Conexión (Nueva HU):** Banner persistente en la parte superior que advierte el funcionamiento en modo offline, indicando el tiempo transcurrido desde la última sincronización y habilitando la lectura de los datos locales sin interrupciones.
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-El diagrama de Wireflow ilustra el flujo de navegación secuencial y los cambios de estado de la interfaz a partir de las acciones e interacciones del usuario en las pantallas de baja fidelidad.
+El diagrama de Wireflow ilustra las transiciones lógicas y cambios de estado de la interfaz en respuesta a los eventos del usuario, conectando las vistas de baja fidelidad en un flujo coherente y validado con las historias de usuario de TB1.
 
 <p align="center">
   <img src="assets/images/cap3/mobile-wireflow.png" alt="Diagrama de Wireflow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
 </p>
 <p align="center"><em>Figura 3.10. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
 
-A continuación se resumen los pasos principales del flujo operativo del agricultor:
+A continuación se detalla la secuencia de navegación y eventos contemplados en el flujo operativo del agricultor:
 
-| Paso (*Step*) | Pantalla Origen | Acción del Usuario (*User Event*) | Pantalla Destino | Cambio de Estado / Resultado |
-| :---: | :--- | :--- | :--- | :--- |
-| **P1** | Inicio (Dashboard) | Tap en tarjeta de sector *"Sector Palto A-1"* | Mis Parcelas | Filtra y enfoca la parcela seleccionada. |
-| **P2** | Mis Parcelas | Tap en *"Ver Detalle"* del Sensor S-04 | Detalle de Sensor | Carga telemetría actual y recomendación de riego. |
-| **P3** | Detalle de Sensor | Tap en botón *"Activar Riego"* | Confirmación | Abre diálogo para confirmar el tiempo de riego. |
-| **P4** | Detalle de Sensor | Tap en botón de retorno `←` | Mis Parcelas | Vuelve a la lista preservando filtros. |
-| **P5** | Menú inferior | Tap en pestaña *"Mercado"* | Catálogo de Cosechas | Cambia al catálogo comercial de lotes agrícolas. |
-| **P6** | Cualquier pantalla | Pérdida de cobertura de red | Modo Sin Conexión | Conmuta automáticamente al almacenamiento local (SQLite). |
+| Paso (*Step*) | Pantalla Origen | Acción del Usuario (*User Event*) | Pantalla Destino | Cambio de Estado / Resultado | HU Asociada |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| **P1** | Inicio de Sesión | Ingreso de credenciales válidas y tap en *"Iniciar Sesión"* | Dashboard Principal | Genera y almacena token JWT (8 horas); carga parcelas y sensores del usuario. | US07 |
+| **P2** | Inicio de Sesión | Tap en *"¿No tienes cuenta? Regístrate"* | Registro de Usuario | Despliega formulario de registro con validación de campos. | US06 |
+| **P3** | Dashboard Principal | Tap en selector de parcelas y elección de nueva parcela | Dashboard Principal | Actualiza los indicadores clave (humedad, temperatura, N-P-K) correspondientes a la parcela elegida. | US11, US10 |
+| **P4** | Dashboard Principal | Tap en *"Ver Histórico"* o gráfico de humedad | Vista de Histórico | Carga gráfico a 7 días con umbral de referencia. | US12 |
+| **P5** | Vista de Histórico | Tap en chip *"30 días"* | Vista de Histórico | Solicita y refresca la serie temporal ampliada en menos de 2 segundos. | US12 |
+| **P6** | Dashboard / Menú | Tap en botón `+` *"Registrar Sensor"* | Formulario de Sensor | Abre formulario para ingresar código `TT-XXXXXX`, parcela y cultivo. | US17 |
+| **P7** | Menú Inferior | Tap en pestaña *"Perfil"* | Mi Perfil | Carga datos personales y de parcela; permite modificar teléfono y tamaño de terreno (> 0). | US09 |
+| **P8** | Cualquier Pantalla | Pérdida de conectividad celular en campo | Pantalla Actual en Modo Offline | Despliega banner superior con antigüedad de última sincronización y activa consulta sobre almacenamiento local (SQLite). | Nueva HU |
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-Los mock-ups en alta fidelidad representan la interfaz gráfica definitiva de la aplicación móvil de TerraTech, aplicando integralmente el Design System del producto: paleta cromática verde bosque (`#2E7D32`) y ámbar (`#F59E0B`), componentes basados en Material 3 e iOS, y tipografía optimizada para lectura en exteriores.
+Los mock-ups en alta fidelidad plasman el diseño visual definitivo de la aplicación móvil, implementando los lineamientos del Design System de TerraTech: esquema cromático primario verde agronómico (`#2E7D32`), color secundario ámbar de atención (`#F59E0B`), fondos neutros de alto contraste (`#F8FAF8`), tarjetas basadas en Material Design 3 y tipografía Roboto/Inter optimizada para visualización bajo luz ambiental exterior.
 
 <p align="center">
   <img src="assets/images/cap3/mobile-mockup.png" alt="Mock-ups en Alta Fidelidad de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
 <p align="center"><em>Figura 3.11. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
 
-Detalle visual de las pantallas principales:
-- **Dashboard (Inicio):** Saludo personalizado a Don Carlos, tarjeta de clima local, tarjetas 2×2 con telemetría en tiempo real (humedad, temperatura, estado de sensores), gráfico interactivo a 7 días y botón destacado para programar riego.
-- **Mis Parcelas:** Lista de sectores con pines satelitales codificados por color (verde: óptimo, ámbar: atención), chips de filtro rápido y datos de área cultivada.
-- **Detalle de Sensor IoT:** Medidor radial de humedad del suelo, estado de batería y conectividad LoRaWAN, y recomendación agronómica generada por el motor de reglas.
-- **Mercado Agrícola:** Catálogo de cosechas para compradores mayoristas con fotos reales, precios por volumen y certificación de calidad respaldada por datos de sensores.
-- **Modo Sin Conexión:** Banner de advertencia con estado del almacenamiento local SQLite y botón para reintentar la sincronización.
-- **Mi Perfil:** Identidad del productor, credenciales de predio agrícola, configuración de alertas de riego y opciones de cuenta.
+Detalle de las pantallas en alta fidelidad:
+- **Pantalla de Autenticación y Registro (US06 / US07):** Interfaz limpia con el logotipo de TerraTech, campos de entrada con etiquetas flotantes y validación visual instantánea (indicadores de error en rojo y mensajes informativos accesibles).
+- **Dashboard de Monitoreo Agronómico (US10 / US11):** Encabezado con selector rápido de parcela (*ej. "Parcela Los Olivos - Sensor TT-004812"*), fecha y hora exacta de sincronización (*"Actualizado: Hoy, 10:15 AM"*), medidores de humedad relativa con barra semafórica, temperatura en grados centígrados e indicadores de macronutrientes (Nitrógeno, Fósforo y Potasio en ppm). Incluye badge de advertencia ámbar cuando los datos superan los 30 minutos de antigüedad.
+- **Gráfico Histórico de Telemetría (US12):** Curva interactiva de humedad del suelo con línea horizontal punteada que demarca el umbral hídrico mínimo recomendado, selector con botones de alternancia entre 7 y 30 días, y tooltip flotante con información puntual del valor y estado de alerta.
+- **Registro de Sensor IoT (US17):** Formulario intuitivo con teclado numérico/alfanumérico restringido al formato `TT-XXXXXX`, menú desplegable de asignación a parcela propia y mensaje de confirmación con estado de sensor "Activo".
+- **Perfil del Agricultor y Parcela (US09):** Resumen de cuenta con avatar, correo inmutable, campos editables de teléfono y superficie del predio (ha), validando que el tamaño del terreno sea estrictamente mayor a 0.
+- **Indicador de Modo Sin Conexión (Nueva HU):** Componente de alerta superior fijo en color gris/ámbar que comunica de forma clara: *"Modo sin conexión. Visualizando datos locales de hace 2 h"*, asegurando que el agricultor sepa en todo momento la frescura de la información consultada.
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-El diagrama de User Flow detalla el recorrido interactivo que experimenta el usuario en las pantallas de alta fidelidad, documentando formalmente la ruta óptima esperada (*Happy Path*) y los escenarios de excepción o contingencia en campo (*Unhappy Paths*).
+Los diagramas de User Flow detallan las rutas e interacciones secuenciales que realiza el agricultor a través de las pantallas en alta fidelidad de **TerraTech**. Cada flujo documenta el objetivo del usuario, las condiciones de entrada y salida, la interacción paso a paso y la trazabilidad directa con las Historias de Usuario (HUs) del alcance TB1.
+
+##### User Flow 1: Acceso, Registro y Autenticación Inicial (Onboarding & Authentication Flow)
+- **Objetivo:** Permitir a un productor agrícola registrarse como nuevo usuario o iniciar sesión para acceder al sistema de telemetría y gestión predial.
+- **Historias de Usuario asociadas:** US06 (Registro de Usuario), US07 (Inicio de Sesión).
+- **Secuencia de pantallas:** `01_Registro` ➔ `02_Login` ➔ `03_Dashboard`
+- **Recorrido paso a paso:**
+  1. **Apertura de la aplicación:** El agricultor accede a la aplicación móvil. Si es un usuario nuevo, inicia en el formulario de Registro (`01_Registro`); si ya cuenta con credenciales, utiliza el enlace directo para ir a Inicio de Sesión (`02_Login`).
+  2. **Ingreso y validación de datos de registro:** En la pantalla `01_Registro`, el usuario completa su Nombre (mínimo 2 caracteres), Correo Electrónico y Contraseña (mínimo 6 caracteres con confirmación coincidente). El sistema valida localmente los campos antes de habilitar el botón *"Registrarse"*.
+  3. **Confirmación y transición:** Al enviar el formulario, el backend valida la unicidad del correo electrónico, registra la cuenta y redirige automáticamente al usuario a la pantalla de Inicio de Sesión (`02_Login`).
+  4. **Autenticación segura:** En `02_Login`, el agricultor ingresa su correo y contraseña y pulsa *"Iniciar Sesión"*. 
+  5. **Acceso al Dashboard:** El sistema carga la vista principal (`03_Dashboard`) con la bienvenida personalizada y los datos de telemetría de su primera parcela activa.
 
 <p align="center">
-  <img src="assets/images/cap3/mobile-userflow.png" alt="Diagrama de User Flow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
+  <img src="assets/images/cap3/User-Flow-1.png" alt="User Flow 1 - Acceso, Registro y Autenticación" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.12. Diagrama de User Flow de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.12. User Flow 1: Flujo de Acceso, Registro y Autenticación Inicial.</em></p>
 
-Rutas documentadas en el flujo:
+---
 
--  **Happy Path (Monitoreo y Activación de Riego):**
-  1. Don Carlos abre la aplicación y visualiza el Dashboard con telemetría en tiempo real.
-  2. Identifica que el *Sector Palto A-1* registra una humedad baja del 28%.
-  3. Ingresa al detalle del sensor y consulta la recomendación de riego por goteo de 40 minutos.
-  4. Presiona *"Activar Electroválvula"* y confirma el turno de riego.
-  5. El sistema emite la confirmación y actualiza el estado a *"Riego en Curso"*.
-
--  **Unhappy Path 1 (Pérdida de Cobertura en Campo Rural):**
-  1. El dispositivo pierde señal celular durante el recorrido en el predio.
-  2. La aplicación conmuta inmediatamente al almacenamiento local en el dispositivo (SQLite).
-  3. Se despliega el banner de *Modo Sin Conexión* con la última hora de sincronización.
-  4. Las acciones y notas registradas se guardan localmente y se autosincronizan al recuperar conectividad.
-
--  **Unhappy Path 2 (Falla o Desconexión de Sensor IoT):**
-  1. Un sensor físico no emite lecturas por más de 4 horas continuas.
-  2. El sistema dispara una alerta crítica con badge rojo en la tarjeta del sector.
-  3. Al ingresar, se ofrece una guía paso a paso para verificar la batería y la antena del nodo en campo.
-
-El diagrama de User Flow detalla el recorrido interactivo que experimenta el usuario en las pantallas de alta fidelidad, documentando formalmente la ruta óptima esperada (*Happy Path*) y los escenarios de excepción o contingencia en campo (*Unhappy Paths*).
+##### User Flow 2: Monitoreo Agronómico y Diagnóstico Histórico (Telemetry & Historical Analysis Flow)
+- **Objetivo:** Monitorear en tiempo real las métricas críticas del suelo (humedad, temperatura y nutrientes N-P-K) y consultar su evolución histórica para la toma de decisiones de riego.
+- **Historias de Usuario asociadas:** US07 (Inicio de Sesión), US10 (Indicadores en tiempo real), US12 (Histórico de humedad).
+- **Secuencia de pantallas:** `02_Login` ➔ `03_Dashboard` ➔ `04_Histórico`
+- **Recorrido paso a paso:**
+  1. **Inicio de sesión exitoso:** El agricultor se autentica desde `02_Login` y aterriza en `03_Dashboard`.
+  2. **Lectura de telemetría en tiempo real:** En `03_Dashboard`, visualiza las tarjetas de telemetría de la parcela activa: Humedad del suelo (%), Temperatura (°C) y niveles de Nitrógeno, Fósforo y Potasio (N-P-K en ppm), verificando el timestamp de la última lectura recibida.
+  3. **Transición a la vista histórica:** El usuario pulsa sobre la tarjeta de humedad o sobre el enlace *"Ver Histórico"*.
+  4. **Consulta gráfica a 7 días:** La aplicación abre la pantalla `04_Histórico`, renderizando la curva temporal de humedad de los últimos 7 días con una línea punteada que demarca el umbral mínimo agronómico para el cultivo.
+  5. **Interacción y ampliación de rango:** El usuario pulsa el chip selector de *"30 días"* para analizar la tendencia mensual del suelo o toca un nodo específico del gráfico para visualizar un tooltip con la fecha, hora, valor exacto y estado de alerta.
 
 <p align="center">
-  <img src="assets/images/cap3/mobile-unhappypath.png" alt="Diagrama de User Flow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
+  <img src="assets/images/cap3/User-Flow-2.png" alt="User Flow 2 - Monitoreo Agronómico y Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.12. Unhappy Path .</em></p>
+<p align="center"><em>Figura 3.13. User Flow 2: Flujo de Monitoreo Agronómico y Diagnóstico Histórico.</em></p>
+
+---
+
+##### User Flow 3: Gestión de Parcelas y Vinculación de Hardware IoT (Parcel Management & Sensor Pairing Flow)
+- **Objetivo:** Consultar la distribución de sectores agrícolas y vincular un nuevo sensor IoT físico al predio del agricultor.
+- **Historias de Usuario asociadas:** US11 (Selección y gestión de parcelas/sensores), US17 (Registro de sensor IoT).
+- **Secuencia de pantallas:** `03_Dashboard` ➔ `05_Parcelas` ➔ `06_Registro_Sensor`
+- **Recorrido paso a paso:**
+  1. **Acceso desde el Dashboard:** Desde `03_Dashboard`, el agricultor interactúa con el selector superior de parcelas o navega hacia la sección de parcelas.
+  2. **Inspección de sectores y sensores:** En `05_Parcelas`, visualiza la lista de sectores de cultivo registrados (nombre, área en hectáreas, tipo de cultivo) y los sensores IoT asociados con su estado operativo ("Activo").
+  3. **Acción de vinculación:** El agricultor pulsa el botón flotante o de acción destacada `+` (*"Vincular Sensor"*).
+  4. **Formulario de registro de hardware:** La interfaz transiciona a `06_Registro_Sensor`. El usuario ingresa el identificador único del hardware físico con formato estricto `TT-XXXXXX`, selecciona la parcela de destino en el menú desplegable y define el cultivo asociado.
+  5. **Validación y confirmación:** Al pulsar *"Registrar Sensor"*, el sistema verifica que el código exista en el inventario global y no se encuentre previamente asignado. Tras la confirmación exitosa, el nuevo sensor queda vinculado y se actualiza el listado en `05_Parcelas`.
+
+<p align="center">
+  <img src="assets/images/cap3/User-Flow-3.png" alt="User Flow 3 - Gestión de Parcelas y Vinculación de Hardware IoT" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.14. User Flow 3: Flujo de Gestión de Parcelas y Vinculación de Hardware IoT.</em></p>
+
+---
+
+##### User Flow 4: Navegación Cruzada de Parcela a Diagnóstico Histórico (Cross-Parcel Historical Navigation Flow)
+- **Objetivo:** Permitir al agricultor alternar entre diferentes sectores de cultivo desde la vista de parcelas y acceder directamente a su telemetría histórica.
+- **Historias de Usuario asociadas:** US11 (Selección de parcela/sensor), US10 (Indicadores en tiempo real), US12 (Histórico de humedad).
+- **Secuencia de pantallas:** `05_Parcelas` ➔ `03_Dashboard` ➔ `04_Histórico`
+- **Recorrido paso a paso:**
+  1. **Selección de sector en parcelas:** Desde `05_Parcelas`, el agricultor pulsa sobre una tarjeta de sector específico (por ejemplo, *"Parcela Norte"*).
+  2. **Actualización contextual del Dashboard:** La aplicación regresa al panel principal (`03_Dashboard`), actualizando inmediatamente el contexto operativo con la telemetría, alertas y sensores asociados al sector seleccionado.
+  3. **Inspección de telemetría:** El usuario revisa los indicadores actualizados de humedad, temperatura y nutrientes para dicha parcela.
+  4. **Navegación al histórico del sector:** El usuario pulsa sobre la tarjeta de humedad para evaluar la evolución hídrica del lote elegido.
+  5. **Visualización de serie temporal:** La aplicación abre `04_Histórico`, mostrando la gráfica temporal correspondiente al sensor del sector seleccionado con opciones de análisis a 7 y 30 días.
+
+<p align="center">
+  <img src="assets/images/cap3/User-Flow-4.png" alt="User Flow 4 - Navegación Cruzada de Parcela a Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.15. User Flow 4: Flujo de Navegación Cruzada de Parcela a Diagnóstico Histórico.</em></p>
+
+---
+
+##### Rutas de Excepción y Contingencia (Unhappy Paths)
+
+El diseño de experiencia de usuario contempla formalmente los escenarios de excepción, validaciones fallidas y contingencia en campo:
+
+<p align="center">
+  <img src="assets/images/cap3/unhappy-path.png" alt="Diagrama de Rutas de Excepción (Unhappy Paths)" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+<p align="center"><em>Figura 3.16. Diagrama de Rutas de Excepción y Contingencia (Unhappy Paths).</em></p>
+
+- **UP1 — Fallos en Registro o Inicio de Sesión (US06 / US07):**
+  - *Caso 1.1 (Registro con correo ya registrado):* Si el agricultor intenta registrarse con un correo ya existente en la base de datos, el formulario bloquea la creación, muestra el mensaje de error *"El correo electrónico ya se encuentra registrado"* y provee un enlace directo para recuperar la contraseña o iniciar sesión.
+  - *Caso 1.2 (Contraseñas no coincidentes o con longitud menor a 6 caracteres):* La interfaz valida en tiempo real los campos; si las contraseñas difieren o no alcanzan la longitud mínima requerida, se desactivan los controles de envío y se despliegan mensajes de advertencia en color rojo debajo de los campos afectados.
+  - *Caso 1.3 (Credenciales incorrectas o correo no verificado):* Si las credenciales no coinciden, se emite el mensaje *"Correo o contraseña incorrectos"* sin exponer información sensible. Si el usuario no ha verificado su cuenta por correo, se presenta una notificación con la opción de reenviar el enlace de activación.
+
+- **UP2 — Registro de Sensor con Código Inválido o Duplicado (US17):**
+  - *Caso 2.1 (Formato inválido o código inexistente):* Si el código ingresado no cumple con la nomenclatura `TT-XXXXXX` o no figura en el inventario global de hardware de TerraTech, el sistema rechaza la solicitud indicando *"Código de sensor no válido o no reconocido en el sistema"*.
+  - *Caso 2.2 (Sensor previamente asignado):* Si el identificador ingresado ya se encuentra registrado y vinculado a otra parcela o cuenta de usuario, el sistema notifica *"El sensor ya se encuentra vinculado a otra parcela"* para prevenir conflictos de asignación.
+
+- **UP3 — Sensor sin Conexión / Telemetría Desactualizada > 30 min (US10):**
+  - Si el sensor físico en campo deja de transmitir lecturas por falla de batería, caída del nodo o falta de enlace por más de 30 minutos continuos, el Dashboard (`03_Dashboard`) muestra una tarjeta de advertencia destacada en color ámbar: *"Datos desactualizados: última lectura recibida hace XX minutos. Verifique el estado físico del sensor"*. Esto previene que el agricultor tome decisiones operativas con información extemporánea.
+
+- **UP4 — Pérdida Total de Cobertura Celular en Campo Rural (Nueva HU):**
+  - Cuando el agricultor se desplaza a una zona del predio sin conectividad a internet (red móvil o Wi-Fi), la aplicación activa de manera transparente la arquitectura *Offline-First* basada en persistencia local (Room / SQLite). Se despliega un banner superior persistente en color gris/ámbar (`08_Offline`): *"Modo sin conexión. Consultando datos locales de hace XX min"*. El usuario puede seguir navegando por sus parcelas, sensores y mediciones históricas previamente almacenadas en caché sin experimentar bloqueos ni cierres inesperados.
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
-Para validar la fluidez de interacción y navegación de la aplicación móvil de TerraTech antes de la fase de implementación de software, se construyó un prototipo navegable e interactivo en Figma.
+Para garantizar la validación ergonómica y funcional de los flujos antes de la codificación en Android Studio, se diseñó un prototipo interactivo en Figma conectado bajo la cuenta institucional para estudiantes.
 
-<p align="center">
-  <img src="assets/images/cap3/mobile-prototype.png" alt="Mapa de Conexiones del Prototipo en Figma" style="width: 100%; max-width: 850px; height: auto;">
-</p>
-<p align="center"><em>Figura 3.13. Conexiones y flujos de navegación interactiva del prototipo móvil en Figma.</em></p>
-
-Criterios de interacción adoptados:
-- **Transiciones fluidas (Smart Animate):** La navegación jerárquica utiliza animaciones de deslizamiento horizontal (*Slide in from right*) con duración de 300 ms y aceleración *Ease-Out*, emulando el comportamiento nativo de Android e iOS.
-- **Retroalimentación táctil:** Los botones incorporan estados visuales (*Pressed*) y elevación para confirmar la recepción del toque.
-- **Diálogos modales (Bottom Sheets):** La confirmación de riego se despliega como una hoja deslizable inferior para no perder el contexto de la pantalla.
-- **Navegación persistente:** La barra de navegación inferior (Bottom Nav) permite conmutar de manera directa entre Inicio, Parcelas, Mercado y Perfil.
+Criterios de interacción y usabilidad implementados:
+- **Navegación y transiciones fluidas:** Transiciones de pantalla tipo *Push* y *Slide in* con aceleración *Ease-out* de 250 ms, siguiendo los estándares de diseño de Android y Material 3.
+- **Retroalimentación de estado (Feedback táctil):** Estados *Hover*, *Pressed* y *Focused* en campos de formulario y botones de acción principal, garantizando confirmación visual inmediata del toque.
+- **Navegación contextual:** Barra de navegación persistente inferior (Bottom Navigation Bar) con acceso directo a *Dashboard*, *Parcelas*, *Histórico* y *Perfil*.
+- **Simulación de casos de uso reales:** El prototipo permite reproducir tanto el flujo óptimo de consulta de indicadores N-P-K e históricos a 7/30 días, como los estados de advertencia por datos desactualizados y conmutación a modo offline.
 
 ##### Enlace al Prototipo Interactivo en Figma:
 El prototipo funcional de la aplicación móvil se encuentra disponible para su exploración pública en el siguiente enlace:
 
 > **🔗 Enlace del Prototipo Interactivo en Figma:**  
-> [https://www.figma.com/proto/TerraTech-Mobile-App-Prototype](https://www.figma.com/proto/vcdNW0lT5QEWPf92aJNmMC/Terra-tech-app?node-id=62-2025&p=f&t=XWfBJgH2aLW5Nsv7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)  
-> *(Acceso público configurado en Figma con permisos de visualización).*
+> [https://www.figma.com/proto/tEitQn36cpZFYQTRyniiRg/terra-tech?node-id=71-1011&p=f&m=dev&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=71%3A1011&t=teQZ0rjvalCVeAep-1](https://www.figma.com/proto/tEitQn36cpZFYQTRyniiRg/terra-tech?node-id=71-1011&p=f&m=dev&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=71%3A1011&t=teQZ0rjvalCVeAep-1)  
+> *(Acceso público configurado en Figma con permisos de visualización e interacción de prototipo).*
 
 ---
 
