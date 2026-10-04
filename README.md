@@ -78,6 +78,7 @@
 | 0.7.1 | 04/10/2026 | Pariona Chacca, Angel Jose         | Actualización TB1 de la sección 3.1.4 Mobile Applications UX/UI Design: especificación de 8 wireframes, wireflow P1-P8, mockups en alta fidelidad, 4 diagramas modulares de User Flow y rutas de excepción (Unhappy Paths). |
 | 0.8.0 | 04/10/2026 | Barba Estrada, Bryan Eduardo       | Documentacion TB1 de la seccion 4.3 Validation Interviews (diseno, resumenes por recorridos y evaluacion por heuristicas) y consolidacion del Student Outcome a tabla unica con conclusion grupal restaurada y normalizacion de guiones. |
 | 0.8.1 | 04/10/2026 | Barba Estrada, Bryan Eduardo       | Reestructuracion del Student Outcome 7 a formato Nombre mas AV1/TB1 por integrante, conclusiones solo grupales por entrega y retiro de evidencias del bloque Barba. |
+| 0.8.2 | 04/10/2026 | Delgado Perez, James Caleb | Desarrollo y documentación para TB1 de la sección 3.1 Product Design de TerraTech, incluyendo Style Guidelines, Information Architecture y Landing Page UI Design; elaboración e incorporación de wireframes y mock-ups responsive para Desktop y Mobile; y alineación del diseño de la Landing Page con el alcance funcional actual de la aplicación Android y el backend. |
 ## Project Report Collaboration Insights
 
 Esta sección presenta la organización y las evidencias del trabajo
@@ -112,16 +113,20 @@ asignadas de manera independiente.
 | Pariona Chacca, Angel Jose | Angelitoso-opp | **Responsabilidad:** desarrollo de 2.1 Competidores y 2.2 Entrevistas.<br><br>**Realizado:** benchmark y Competitive Analysis Landscape de 3 competidores directos, análisis FODA y estrategias competitivas móviles; diseño metodológico de entrevistas semiestructuradas para 3 segmentos; registro y resúmenes de 7 entrevistas (ENT-001 a ENT-007) y análisis estadístico y cualitativo por segmento.<br><br> |
 | Retuerto Rodriguez, Jorge Manuel | Calin1407 | **Responsabilidad:** Documentacion de arquitectura, Model C4 y diagrama de cada Bounded |
 
-#### Evidencias de colaboración
+### TB1
 
-<!--
-Antes de la entrega AV1, incorporar aquí:
-&#10;1. Captura de los analíticos de contribución del repositorio.
-2. Captura del historial de commits.
-3. Explicación de los principales aportes de cada integrante.
-&#10;Ruta sugerida para la imagen:
-assets/images/readme/report-collaboration-insights-av1.png.png
--->
+Para el desarrollo de la TB1, el equipo NovaTech continuó trabajando mediante GitFlow, utilizando ramas `feature/*` para desarrollar de manera independiente los distintos componentes de diseño, implementación y validación de TerraTech. Los avances fueron integrados progresivamente en `develop`, permitiendo conservar la trazabilidad de los aportes realizados por cada integrante.
+
+#### Registro preliminar de participación
+
+| Integrante | Usuario de GitHub | Responsabilidad asignada |
+|:---|:---|:---|
+| Barba Estrada, Bryan Eduardo | bry4nbe | **Responsabilidad:** documentación y diseño de la validación del producto para TB1.<br><br>**Realizado:** desarrollo de la sección 4.3 Validation Interviews; definición de los recorridos de validación para agricultores, proveedores y compradores; organización de las tareas correspondientes al alcance funcional de TB1; y documentación de la evaluación de usabilidad mediante las heurísticas de Jakob Nielsen. Asimismo, participó en la actualización y reorganización del Student Outcome correspondiente a la entrega. |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | **Responsabilidad:** persistencia de datos e integración técnica correspondiente al Sprint 1.<br><br>**Realizado:** participación en la configuración de la persistencia y base de datos utilizada por el backend de TerraTech, considerando el mapeo de entidades, repositorios y mecanismos de acceso a datos requeridos por las funcionalidades desarrolladas durante la TB1, manteniendo coherencia con la arquitectura basada en Domain-Driven Design definida previamente. |
+| Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo de las bases de Product Design y diseño de la Landing Page para TB1.<br><br>**Realizado:** documentación de la sección 3.1 Product Design; definición de Style Guidelines e Information Architecture; desarrollo de los sistemas de organización, etiquetado, navegación, búsqueda y metadatos SEO; elaboración e incorporación de wireframes y mock-ups responsive de la Landing Page para Desktop y Mobile; alineación visual con el alcance funcional de la aplicación Android y el backend; y actualización del Registro de Versiones y Student Outcome correspondiente a TB1. |
+| Pariona Chacca, Angel Jose | Angelitoso-opp | **Responsabilidad:** diseño UX/UI de la aplicación móvil TerraTech.<br><br>**Realizado:** desarrollo y documentación de la sección 3.1.4 Mobile Applications UX/UI Design, incluyendo wireframes, wireflows, mock-ups, User Flow Diagrams y prototipo interactivo en Figma, considerando Happy Paths y Unhappy Paths asociados a conectividad limitada, consulta de información y operación de sensores. |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | **Responsabilidad:** implementación y despliegue del backend de TerraTech para el Sprint 1.<br><br>**Realizado:** desarrollo de la Web API REST utilizando C#, ASP.NET Core y Domain-Driven Design; implementación de componentes de dominio, aplicación, infraestructura e interfaces; integración de autenticación y servicios vinculados con usuarios, parcelas, dispositivos y telemetría; documentación mediante Swagger/OpenAPI; y despliegue del servicio backend para su consumo durante la implementación de TerraTech. |
+
 
 ### Collaboration Insights AV1
 
@@ -135,11 +140,24 @@ assets/images/readme/report-collaboration-insights-av1.png.png
 
 <div class="page"></div>
 
+### Collaboration Insights TB1
+
+![TB1](assets/images/team/collaboration-insights-tb1.png)
+
+- Recomendaciones para siguientes entregas:
+    - Mantener los aportes separados en commits pequeños y descriptivos, diferenciando documentación, wireframes, mock-ups e implementación.
+    - Actualizar la rama `develop` antes de integrar nuevos aportes para reducir conflictos entre las secciones modificadas por distintos integrantes.
+    - Resolver los conflictos de integración conservando los cambios válidos de ambos integrantes, especialmente cuando varios miembros modifican archivos compartidos como `README.md`.
+    - Mantener ramas `feature/*` cortas y asociadas a una responsabilidad concreta para facilitar la revisión mediante Pull Requests.
+
+<div class="page"></div>
+
 ## Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
     - [AV1](#av1)
+    - [TB1](#tb1)
 - [Student Outcome](#student-outcome)
 - [Objetivos SMART](#objetivos-smart)
 - [Capítulo I: Presentación](#capítulo-i-presentación)
@@ -217,10 +235,10 @@ En el siguiente cuadro se describen las acciones realizadas y los
 enunciados de conclusiones por parte del grupo, que permiten sustentar
 el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-|---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **Barba Estrada, Bryan Eduardo** - **AV1:** Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br>**Evidencias:** secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`.<br><br>**Barba Estrada, Bryan Eduardo** - **TB1:** Desarrollé la documentación de la sección 4.3 Validation Interviews, incluyendo el diseño de las entrevistas, la adaptación de sus resúmenes a los recorridos definidos y la redacción del apartado de evaluación de usabilidad según las heurísticas de Jakob Nielsen.<br>**Evidencias:** sección 4.3 del README y commits de la rama `feature/validation-interviews`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** - **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** - **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br>**Evidencias:** Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1.<br><br>**Pariona Chacca, Angel Jose** - **AV1:** Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br>**Evidencias:** secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo.<br><br>**Pariona Chacca, Angel Jose** - **TB1:** Investigué y apliqué los principios de diseño de experiencia de usuario (UX) e interfaz móvil (UI) basados en Material Design 3 y heurísticas de usabilidad para entornos rurales. Diseñé 8 pantallas en baja fidelidad (wireframes) y alta fidelidad (mockups), un wireflow operacional P1-P8, 4 diagramas modulares de User Flow y rutas de contingencia (Unhappy Paths), asegurando la trazabilidad con las 8 historias de usuario priorizadas (US06, US07, US09, US10, US11, US12, US17 y Consulta sin conexión). Además, validé los estándares vectoriales de 16 archivos SVG estructurados y semánticos, garantizando la consistencia geométrica de 390 × 844 px y áreas de contacto mínimas de 48 × 48 dp.<br>**Evidencias:** sección 3.1.4 del README, 16 archivos SVG estandarizados, 5 diagramas de flujos en `assets/images/cap3/` y prototipo interactivo en Figma.<br><br>**Retuerto Rodriguez, Jorge Manuel** - **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema. | **Barba Estrada, Bryan Eduardo - AV1:** La aplicación de estos conceptos me permitió estructurar los requisitos del sistema de forma clara y priorizada, asegurando que las historias de usuario y artefactos de diseño reflejen adecuadamente las necesidades reales del dominio.<br><br>**Barba Estrada, Bryan Eduardo - TB1:** Comprendí cómo relacionar las historias de usuario y sus criterios de aceptación con los recorridos de las entrevistas de validación, y cómo utilizar las heurísticas de usabilidad para orientar la revisión de la experiencia de los participantes.<br><br>**Bendezú Navarro, Rúbens Fitzgerald - AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Delgado Perez, James Caleb - AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido.<br><br>**Pariona Chacca, Angel Jose - AV1:** Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil.<br><br>**Pariona Chacca, Angel Jose - TB1:** La aplicación práctica de los patrones de diseño móvil y la estandarización SVG me permitió comprender la importancia de articular el diseño visual con las restricciones de implementación en Android nativo. Aprendí que diseñar para el sector agrícola requiere priorizar la ergonomía táctil en exteriores, la claridad inmediata de los indicadores agronómicos y la resiliencia en escenarios sin conexión (*Offline-First*), asegurando que la interfaz responda con precisión al modelo de dominio del backend.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable.<br><br>**Retuerto Rodriguez, Jorge Manuel - AV1:** El diseño de los diagramas de clases y la estructura de datos por Bounded Context me permitieron entender cómo traducir los conceptos estratégicos del dominio agrícola en un modelo de software táctico. Aprendí que definir correctamente las relaciones entre entidades e iterar sobre el modelo de persistencia local es clave para garantizar la integridad y coherencia de los datos en aplicaciones móviles. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Barba Estrada, Bryan Eduardo** - **AV1:** Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br>**Evidencias:** artefactos de Needfinding, user stories y product backlog incorporados en el README.<br><br>**Barba Estrada, Bryan Eduardo** - **TB1:** Reconocí la importancia de revisar los criterios de usabilidad y mantener la coherencia entre los requisitos, el diseño de las entrevistas y su documentación. Revisé la redacción de la sección 4.3 y organicé los cambios en tres commits para conservar la trazabilidad de mi aporte.<br>**Evidencias:** sección 4.3 del README e historial de commits de `feature/validation-interviews`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** - **AV1:** Reconoció la importancia de la autoformación permanente en patrones modernos de arquitectura móvil nativa (Jetpack Compose, Kotlin Coroutines, Room y Offline-First) para resolver desafíos de baja conectividad en el sector agrícola peruano.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** - **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1.<br><br>**Pariona Chacca, Angel Jose** - **AV1:** Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br>**Evidencias:** análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub.<br><br>**Pariona Chacca, Angel Jose** - **TB1:** Reconocí la necesidad de investigar y dominar el uso de herramientas de diseño vectorial (Figma), estándares de gráficos escalables (SVG semántico y XML bien formado) y flujos colaborativos de Git para garantizar la fidelidad entre el diseño UX/UI y la implementación móvil. Asimismo, comprendí la importancia de revisar y refinar continuamente los flujos de interacción a partir de la retroalimentación técnica y las restricciones del backend, asegurando la coherencia entre las historias de usuario, los wireframes, los user flows y los prototipos interactivos.<br>**Evidencias:** sección 3.1.4 del README, validación de archivos SVG, imágenes actualizadas en `assets/images/cap3/` e historial de commits de `feature/cap3-mobile-ux-ui`.<br><br>**Retuerto Rodriguez, Jorge Manuel** - **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema. | **Barba Estrada, Bryan Eduardo - AV1:** El aprendizaje continuo de herramientas de diseño y flujos de trabajo colaborativos en Git es fundamental para mantener una documentación ágil, consistente y alineada con los estándares de la industria.<br><br>**Barba Estrada, Bryan Eduardo - TB1:** Comprendí que los criterios de evaluación deben revisarse conforme evoluciona el alcance del proyecto. También reforcé la importancia de distinguir los recorridos definidos de los resultados observados y de documentar los cambios de manera clara.<br><br>**Bendezú Navarro, Rúbens Fitzgerald - AV1:** Se evidenció que la adopción de nuevas herramientas y estándares de la industria móvil resulta indispensable para abordar con éxito desafíos de ingeniería de software en entornos productivos no convencionales como el agro.<br><br>**Delgado Perez, James Caleb - AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>**Pariona Chacca, Angel Jose - AV1:** Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles.<br><br>**Pariona Chacca, Angel Jose - TB1:** Comprendí que el diseño de software móvil evoluciona constantemente y exige actualizarse continuamente en sistemas de diseño, accesibilidad ergonómica y herramientas de prototipado. Reconocí que mantener un aprendizaje activo y una comunicación estrecha con los requerimientos de arquitectura y backend es indispensable para entregar soluciones coherentes, mantenibles y preparadas para la fase de desarrollo en Android Studio.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable.<br><br>**Retuerto Rodriguez, Jorge Manuel - AV1:** Mantenerse actualizado en patrones de modelado de datos y arquitecturas de almacenamiento local es fundamental para afrontar los retos de sincronización e integridad de información en el sector agrícola. Comprendí que el aprendizaje constante me permite diseñar estructuras de software robustas que se adaptan eficientemente a los cambios en los requisitos del dominio. |
+| Criterio específico | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software. | **Barba Estrada, Bryan Eduardo** - **AV1:** Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br>**Evidencias:** secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`.<br><br>**Barba Estrada, Bryan Eduardo** - **TB1:** Desarrollé la documentación de la sección 4.3 Validation Interviews, incluyendo el diseño de las entrevistas, la adaptación de sus resúmenes a los recorridos definidos y la redacción del apartado de evaluación de usabilidad según las heurísticas de Jakob Nielsen.<br>**Evidencias:** sección 4.3 del README y commits de la rama `feature/validation-interviews`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** - **AV1:** Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** - **AV1:** Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br>**Evidencias:** Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1. <br><br>**TB1:** Revisé y apliqué conceptos de Product Design, diseño responsive y arquitectura de información para desarrollar la documentación del Capítulo III correspondiente a la Landing Page de TerraTech. Definí y documenté los sistemas de etiquetado, metadatos SEO, mecanismos de búsqueda y navegación, y elaboré wireframes y mock-ups responsive para Desktop y Mobile. Asimismo, adapté estos artefactos al alcance funcional actual de la TB1, manteniendo coherencia con las historias priorizadas de registro, inicio de sesión, perfil, gestión de parcelas y sensores, indicadores del suelo, histórico de mediciones y consulta sin conexión. <br><br>**Pariona Chacca, Angel Jose** - **AV1:** Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br>**Evidencias:** secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo.<br><br>**Pariona Chacca, Angel Jose** - **TB1:** Investigué y apliqué los principios de diseño de experiencia de usuario (UX) e interfaz móvil (UI) basados en Material Design 3 y heurísticas de usabilidad para entornos rurales. Diseñé 8 pantallas en baja fidelidad (wireframes) y alta fidelidad (mockups), un wireflow operacional P1-P8, 4 diagramas modulares de User Flow y rutas de contingencia (Unhappy Paths), asegurando la trazabilidad con las 8 historias de usuario priorizadas (US06, US07, US09, US10, US11, US12, US17 y Consulta sin conexión). Además, validé los estándares vectoriales de 16 archivos SVG estructurados y semánticos, garantizando la consistencia geométrica de 390 × 844 px y áreas de contacto mínimas de 48 × 48 dp.<br>**Evidencias:** sección 3.1.4 del README, 16 archivos SVG estandarizados, 5 diagramas de flujos en `assets/images/cap3/` y prototipo interactivo en Figma.<br><br>**Retuerto Rodriguez, Jorge Manuel** - **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema. | **Barba Estrada, Bryan Eduardo - AV1:** La aplicación de estos conceptos me permitió estructurar los requisitos del sistema de forma clara y priorizada, asegurando que las historias de usuario y artefactos de diseño reflejen adecuadamente las necesidades reales del dominio.<br><br>**Barba Estrada, Bryan Eduardo - TB1:** Comprendí cómo relacionar las historias de usuario y sus criterios de aceptación con los recorridos de las entrevistas de validación, y cómo utilizar las heurísticas de usabilidad para orientar la revisión de la experiencia de los participantes.<br><br>**Bendezú Navarro, Rúbens Fitzgerald - AV1:** La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores.<br><br>**Delgado Perez, James Caleb - AV1:** La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido.<br><br>**Delgado Perez, James Caleb - TB1:** En esta entrega, el equipo actualizó y aplicó conocimientos de diseño UI/UX, arquitectura de información, diseño responsive, desarrollo móvil, integración con servicios backend, persistencia de datos y validación de usabilidad para continuar la evolución de TerraTech. Se documentaron las Style Guidelines, wireframes, mock-ups, wireflows, User Flows y prototipos de la Landing Page y de la aplicación móvil, manteniendo coherencia con el alcance funcional de la TB1. Asimismo, se avanzó en la implementación y despliegue de los servicios requeridos para autenticación, gestión de parcelas y sensores, consulta de indicadores e históricos y acceso a información previamente almacenada. Estas actividades permitieron al equipo relacionar los conocimientos adquiridos en el curso con decisiones concretas de diseño e implementación del producto.<br><br>**Pariona Chacca, Angel Jose - AV1:** Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil.<br><br>**Pariona Chacca, Angel Jose - TB1:** La aplicación práctica de los patrones de diseño móvil y la estandarización SVG me permitió comprender la importancia de articular el diseño visual con las restricciones de implementación en Android nativo. Aprendí que diseñar para el sector agrícola requiere priorizar la ergonomía táctil en exteriores, la claridad inmediata de los indicadores agronómicos y la resiliencia en escenarios sin conexión (*Offline-First*), asegurando que la interfaz responda con precisión al modelo de dominio del backend.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable.<br><br>**Retuerto Rodriguez, Jorge Manuel - AV1:** El diseño de los diagramas de clases y la estructura de datos por Bounded Context me permitieron entender cómo traducir los conceptos estratégicos del dominio agrícola en un modelo de software táctico. Aprendí que definir correctamente las relaciones entre entidades e iterar sobre el modelo de persistencia local es clave para garantizar la integridad y coherencia de los datos en aplicaciones móviles. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Barba Estrada, Bryan Eduardo** - **AV1:** Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br>**Evidencias:** artefactos de Needfinding, user stories y product backlog incorporados en el README.<br><br>**Barba Estrada, Bryan Eduardo** - **TB1:** Reconocí la importancia de revisar los criterios de usabilidad y mantener la coherencia entre los requisitos, el diseño de las entrevistas y su documentación. Revisé la redacción de la sección 4.3 y organicé los cambios en tres commits para conservar la trazabilidad de mi aporte.<br>**Evidencias:** sección 4.3 del README e historial de commits de `feature/validation-interviews`.<br><br>**Bendezú Navarro, Rúbens Fitzgerald** - **AV1:** Reconoció la importancia de la autoformación permanente en patrones modernos de arquitectura móvil nativa (Jetpack Compose, Kotlin Coroutines, Room y Offline-First) para resolver desafíos de baja conectividad en el sector agrícola peruano.<br>**Evidencias:** Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README.<br><br>**Delgado Perez, James Caleb** - **AV1:** Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br>**Evidencias:** README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1.<br><br>**TB1: Reconocí la necesidad de continuar fortaleciendo mis conocimientos de diseño UI/UX responsive, arquitectura de información y documentación de interfaces para mantener coherencia entre el diseño y la implementación real del producto. Durante la elaboración del Capítulo III tuve que contrastar los wireframes y mock-ups con el alcance actualizado de la TB1 y con las funcionalidades soportadas por la aplicación Android y el backend. También reforcé el uso de Git y GitFlow al organizar mi trabajo en una rama feature y registrar por separado la documentación, los wireframes y los mock-ups mediante commits independientes.**<br><br>**Pariona Chacca, Angel Jose** - **AV1:** Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br>**Evidencias:** análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub.<br><br>**Pariona Chacca, Angel Jose** - **TB1:** Reconocí la necesidad de investigar y dominar el uso de herramientas de diseño vectorial (Figma), estándares de gráficos escalables (SVG semántico y XML bien formado) y flujos colaborativos de Git para garantizar la fidelidad entre el diseño UX/UI y la implementación móvil. Asimismo, comprendí la importancia de revisar y refinar continuamente los flujos de interacción a partir de la retroalimentación técnica y las restricciones del backend, asegurando la coherencia entre las historias de usuario, los wireframes, los user flows y los prototipos interactivos.<br>**Evidencias:** sección 3.1.4 del README, validación de archivos SVG, imágenes actualizadas en `assets/images/cap3/` e historial de commits de `feature/cap3-mobile-ux-ui`.<br><br>**Retuerto Rodriguez, Jorge Manuel** - **AV1:** Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | **Barba Estrada, Bryan Eduardo - AV1:** El aprendizaje continuo de herramientas de diseño y flujos de trabajo colaborativos en Git es fundamental para mantener una documentación ágil, consistente y alineada con los estándares de la industria.<br><br>**Barba Estrada, Bryan Eduardo - TB1:** Comprendí que los criterios de evaluación deben revisarse conforme evoluciona el alcance del proyecto. También reforcé la importancia de distinguir los recorridos definidos de los resultados observados y de documentar los cambios de manera clara.<br><br>**Bendezú Navarro, Rúbens Fitzgerald - AV1:** Se evidenció que la adopción de nuevas herramientas y estándares de la industria móvil resulta indispensable para abordar con éxito desafíos de ingeniería de software en entornos productivos no convencionales como el agro.<br><br>**Delgado Perez, James Caleb - AV1:** Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto.<br><br>**Delgado Perez, James Caleb - TB1:**El desarrollo de la TB1 permitió al equipo reconocer que la construcción de una solución móvil requiere aprendizaje continuo y revisión permanente de decisiones técnicas y de experiencia de usuario. Durante esta entrega fue necesario profundizar en diseño responsive, prototipado móvil, arquitectura de aplicaciones, autenticación, persistencia local, integración con servicios y evaluación de usabilidad. Asimismo, la preparación de las Validation Interviews evidenció la importancia de contrastar el diseño y la implementación con usuarios de los segmentos objetivo, considerando tanto los recorridos exitosos como los errores, la conectividad limitada y la comprensión de la información presentada. Como resultado, el equipo reforzó la necesidad de continuar investigando, validando e iterando TerraTech en función de nueva evidencia técnica y de usuario.<br><br>**Pariona Chacca, Angel Jose - AV1:** Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles.<br><br>**Pariona Chacca, Angel Jose - TB1:** Comprendí que el diseño de software móvil evoluciona constantemente y exige actualizarse continuamente en sistemas de diseño, accesibilidad ergonómica y herramientas de prototipado. Reconocí que mantener un aprendizaje activo y una comunicación estrecha con los requerimientos de arquitectura y backend es indispensable para entregar soluciones coherentes, mantenibles y preparadas para la fase de desarrollo en Android Studio.<br><br>El equipo aplicó metodologías formales de modelado de dominio estratégico (DDD) y arquitectura de software orientada a aplicaciones móviles nativas, permitiendo estructurar los límites de TerraTech de forma desacoplada y escalable.<br><br>**Retuerto Rodriguez, Jorge Manuel - AV1:** Mantenerse actualizado en patrones de modelado de datos y arquitecturas de almacenamiento local es fundamental para afrontar los retos de sincronización e integridad de información en el sector agrícola. Comprendí que el aprendizaje constante me permite diseñar estructuras de software robustas que se adaptan eficientemente a los cambios en los requisitos del dominio.                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Objetivos SMART
 
@@ -5834,27 +5852,403 @@ la mantenibilidad del sistema.
 
 ## 3.1. Product design
 
+El Product Design de **TerraTech** establece los lineamientos visuales, de organización y de navegación que permiten mantener una experiencia coherente entre la Landing Page y la aplicación móvil. Para la TB1 se reutiliza la Landing Page desarrollada previamente para el proyecto, adaptando su documentación al alcance actual de TerraTech y manteniendo una implementación web basada en **HTML5, CSS3 y JavaScript**.
+
+La propuesta de diseño busca comunicar de manera sencilla el propósito de TerraTech y permitir que un visitante comprenda rápidamente cómo la solución integra sensores IoT y servicios digitales para apoyar el monitoreo agrícola. La Landing Page funciona como el principal punto de presentación del producto y orienta al usuario hacia la propuesta de valor, las características principales, la información del proyecto y la solicitud de una demostración.
+
+El diseño considera los tres segmentos objetivo identificados para TerraTech: pequeños y medianos agricultores, proveedores y asesores de insumos agrícolas, y clientes finales o compradores. Debido a que estos usuarios presentan distintos niveles de experiencia tecnológica, se prioriza una interfaz limpia, una jerarquía visual clara, textos breves y acciones fácilmente identificables.
+
+Asimismo, el diseño mantiene consistencia con la experiencia móvil definida para TerraTech, reutilizando una identidad visual basada en tonos relacionados con agricultura, sostenibilidad y tecnología, y asegurando que la Landing Page pueda visualizarse correctamente tanto en navegadores de escritorio como en dispositivos móviles.
+
+
 ### 3.1.1. Style Guidelines
+
+Las Style Guidelines de TerraTech definen los criterios visuales y comunicacionales utilizados en la Landing Page. Su objetivo es mantener una identidad consistente y facilitar que los visitantes comprendan el propósito del producto sin requerir conocimientos técnicos sobre IoT o agricultura de precisión.
+
+Estas pautas comprenden el tono de comunicación, identidad visual, tipografía, paleta cromática, espaciado y criterios de adaptación responsive. Los mismos principios sirven como referencia para mantener coherencia visual con la aplicación móvil.
+
 
 #### 3.1.1.1. General Style Guidelines
 
+##### Tone of Voice
+
+El tono de comunicación de TerraTech se define como **claro, confiable, cercano y orientado a la acción**. La información relacionada con sensores, monitoreo del suelo y análisis agrícola debe presentarse de manera comprensible, evitando utilizar terminología técnica innecesaria frente a usuarios que pueden presentar distintos niveles de alfabetización digital.
+
+La comunicación no pretende reemplazar el criterio de un especialista ni presentar las recomendaciones de TerraTech como diagnósticos definitivos. Por ello, los mensajes se formulan como información y apoyo para la toma de decisiones.
+
+Los llamados a la acción utilizan expresiones directas y breves, como **“Conoce TerraTech”**, **“Ver características”** y **“Solicitar demostración”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
+
+
+##### Branding
+
+La identidad visual de **TerraTech** combina elementos asociados con la agricultura y la tecnología. La marca busca transmitir sostenibilidad, innovación, confianza y facilidad de uso.
+
+El logotipo utilizado en el proyecto se mantiene como principal identificador visual de TerraTech y debe conservar sus proporciones originales, evitando distorsiones, rotaciones o alteraciones cromáticas que afecten su reconocimiento.
+
+<p align="center">
+  <img src="assets/images/cap2/terratech-logo.png" alt="Logo de TerraTech" width="220">
+</p>
+
+En la Landing Page, el logotipo se posiciona principalmente en el encabezado y puede volver a utilizarse de manera secundaria en el Footer. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+
+
+##### Typography
+
+Para la Landing Page se establece **Roboto** como familia tipográfica principal debido a su legibilidad en interfaces digitales y su correcta adaptación a diferentes resoluciones de pantalla.
+
+La jerarquía tipográfica propuesta es la siguiente:
+
+| Elemento | Tamaño aproximado | Peso | Uso |
+|:---|:---:|:---:|:---|
+| H1 | 40–48 px | 700 | Mensaje principal del Hero |
+| H2 | 30–36 px | 700 | Títulos de secciones |
+| H3 | 20–24 px | 600 | Títulos de características y tarjetas |
+| Body | 16–18 px | 400 | Textos descriptivos |
+| Small | 14 px | 400 | Información complementaria |
+| Button | 16 px | 600 | Call To Action |
+
+Para dispositivos móviles, los encabezados reducen progresivamente su tamaño manteniendo un mínimo de 16 px en los textos principales, evitando problemas de lectura y desbordamientos horizontales.
+
+
+##### Colors
+
+La identidad cromática de la Landing Page mantiene coherencia con la propuesta visual utilizada en la aplicación móvil de TerraTech.
+
+| Nombre | HEX | Uso principal |
+|:---|:---:|:---|
+| Verde TerraTech | `#2E7D32` | Color principal, botones CTA, títulos destacados e indicadores positivos |
+| Ámbar TerraTech | `#F59E0B` | Elementos de atención, detalles visuales y estados de precaución |
+| Blanco | `#FFFFFF` | Fondos, tarjetas y contraste |
+| Gris muy claro | `#F5F7F5` | Fondos alternativos entre secciones |
+| Gris oscuro | `#1F2937` | Texto principal |
+| Gris medio | `#6B7280` | Texto secundario |
+| Rojo de alerta | `#D32F2F` | Mensajes de error o estados críticos |
+
+El verde `#2E7D32` funciona como color principal por su relación con el sector agrícola y la sostenibilidad. El ámbar `#F59E0B` actúa como color de apoyo para resaltar información que requiere atención.
+
+Los colores de estado nunca deben utilizarse como único medio de comunicación. Siempre deben complementarse con texto, íconos o etiquetas para mantener la accesibilidad.
+
+
+##### Spacing and Layout
+
+La interfaz utiliza una escala de espaciado basada en múltiplos de **8 px**, permitiendo mantener consistencia entre márgenes, paddings, botones, tarjetas y secciones.
+
+| Token | Valor | Uso |
+|:---|:---:|:---|
+| XS | 8 px | Separación mínima |
+| S | 16 px | Padding interno |
+| M | 24 px | Separación entre componentes |
+| L | 32 px | Separación entre bloques |
+| XL | 48 px | Separación entre secciones |
+| 2XL | 64 px | Espacios principales del layout |
+
+La Landing Page utiliza un contenedor central con ancho máximo para evitar líneas de texto excesivamente largas en pantallas grandes. En dispositivos móviles, los componentes se reorganizan verticalmente.
+
+Los botones principales poseen un área suficientemente amplia para facilitar la interacción táctil. Las tarjetas utilizan bordes redondeados, espacio interno uniforme y separación clara entre elementos.
+
+El diseño responsive garantiza la correcta visualización desde pantallas de aproximadamente **320 px de ancho**, evitando desbordamiento horizontal y reorganizando los elementos mediante CSS Flexbox, Grid y media queries.
+
+
 ### 3.1.2. Information Architecture
+
+La Information Architecture de la Landing Page de TerraTech determina cómo se organiza, etiqueta y presenta el contenido para que los visitantes comprendan rápidamente qué ofrece la solución y puedan encontrar las acciones principales.
+
+Al tratarse de una Landing Page orientada principalmente a presentar TerraTech y dirigir al usuario hacia una solicitud de demostración, se emplea una arquitectura simple, jerárquica y basada en navegación por secciones dentro de una misma página.
+
 
 #### 3.1.2.1. Organization Systems
 
+La Landing Page utiliza principalmente un sistema de organización **jerárquico y por tópicos**.
+
+La organización jerárquica presenta primero la información general del producto y posteriormente información más específica. De esta forma, el visitante conoce inicialmente la propuesta de valor de TerraTech, continúa con sus características y finalmente puede conocer el proyecto, el equipo y solicitar una demostración.
+
+La organización por tópicos agrupa la información según su función dentro de la página.
+
+La estructura principal queda definida de la siguiente manera:
+
+```text
+Landing Page TerraTech
+│
+├── Inicio
+│   └── Propuesta de valor + Call To Action
+│
+├── Características
+│   ├── Sensor de Humedad
+│   ├── Sensor de Nutrientes
+│   └── Alertas en Tiempo Real
+│
+├── Sobre TerraTech
+│   ├── Propósito de la solución
+│   └── NovaTech
+│
+├── Nuestro Equipo
+│   └── Integrantes del proyecto
+│
+├── Solicitar Demostración
+│   └── Formulario de contacto
+│
+└── Footer
+    ├── Términos y condiciones
+    └── Información complementaria
+    
+```
+
 #### 3.1.2.2. Labelling Systems
+
+El sistema de etiquetado de la Landing Page de **TerraTech** utiliza términos breves, comprensibles y orientados al usuario final. Debido a que la página tiene como objetivo presentar la propuesta de valor de la solución y facilitar el acceso a sus principales contenidos, se evita exponer nombres técnicos internos, Bounded Contexts o conceptos de implementación que no aporten valor al visitante.
+
+Las etiquetas se mantienen consistentes entre el Navbar, los títulos de las secciones y los Call To Action.
+
+| Etiqueta | Propósito |
+|:---|:---|
+| **Inicio** | Presentar la propuesta de valor principal de TerraTech. |
+| **Beneficios** | Resumir el valor que aporta la solución al monitoreo agrícola. |
+| **Características** | Presentar las capacidades principales disponibles para el alcance actual. |
+| **Sobre TerraTech** | Explicar el propósito de la solución y su relación con agricultura e IoT. |
+| **Soluciones** | Mostrar las funcionalidades contempladas para la TB1. |
+| **Planes** | Presentar información comercial y alternativas referenciales de la Landing Page. Al tratarse de una sección de diseño, su presencia en los wireframes y mock-ups no implica que todos los planes se encuentren implementados funcionalmente en esta entrega. |
+| **Equipo** | Presentar al equipo NovaTech responsable del proyecto. |
+| **Contacto** | Permitir que el visitante solicite información o una demostración. |
+| **Solicitar demostración** | Call To Action principal de la Landing Page. |
+| **Términos y condiciones** | Permitir consultar información legal y condiciones generales del servicio. |
+
+En las secciones asociadas con la TB1 se utilizan etiquetas que reflejan directamente las historias que serán presentadas: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores en tiempo real**, **Historial de mediciones** y **Consulta sin conexión**.
+
+Los Call To Action utilizan expresiones directas como **“Solicitar demostración”** y **“Conocer funcionalidades”**, reduciendo ambigüedad y facilitando que el visitante comprenda la acción disponible.
+
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
+La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
+
+**Title**
+
+```text
+TerraTech | Agricultura inteligente y monitoreo del suelo
+```
+
+**Description**
+
+```text
+TerraTech integra sensores IoT y una aplicación móvil para gestionar parcelas, consultar humedad, temperatura y nutrientes del suelo, revisar mediciones históricas y acceder a información previamente descargada.
+```
+
+**Keywords**
+
+```text
+TerraTech, agricultura inteligente, agricultura de precisión,
+sensores IoT, humedad del suelo, temperatura del suelo,
+nutrientes del suelo, monitoreo agrícola, historial de mediciones,
+aplicación Android, tecnología agrícola
+```
+
+Los principales Meta Tags considerados son:
+
+| Meta Tag | Valor |
+|:---|:---|
+| Charset | `UTF-8` |
+| Viewport | `width=device-width, initial-scale=1.0` |
+| Author | `NovaTech` |
+| Robots | `index, follow` |
+| Language | `es-PE` |
+| Content-Type | `text/html; charset=UTF-8` |
+
+La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. A su vez, `title` y `description` describen el producto sin atribuir funcionalidades que no se encuentran dentro del alcance actual de la TB1.
+
+
 #### 3.1.2.4. Searching Systems
+
+La Landing Page de TerraTech presenta un volumen reducido y estructurado de información, por lo que para la TB1 **no se requiere un motor de búsqueda interno**.
+
+La localización del contenido se resuelve mediante el Navbar y enlaces internos que permiten desplazarse directamente hacia cada sección de la página.
+
+Esta decisión responde a tres criterios:
+
+- La información se concentra en una única Landing Page.
+- El número de secciones es reducido y fácilmente identificable.
+- Incorporar una barra de búsqueda no aportaría valor adicional en el alcance actual.
+
+El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las características, la información sobre TerraTech, las funcionalidades incluidas en la TB1 y el formulario de contacto mediante la navegación principal.
+
+En futuras iteraciones, si TerraTech incorpora documentación, artículos, catálogos extensos u otros contenidos de mayor volumen, podría evaluarse la incorporación de un mecanismo de búsqueda específico.
+
 
 #### 3.1.2.5. Navigation Systems
 
+La Landing Page de TerraTech utiliza un sistema de navegación global mediante un **Navbar** ubicado en la parte superior de la interfaz.
+
+La navegación sigue una estructura lineal y predecible:
+
+```text
+Inicio → Beneficios → Características → Sobre TerraTech → Soluciones → Planes → Equipo → Contacto
+```
+
+Cada opción puede asociarse a un identificador HTML para desplazar al usuario hacia la sección correspondiente dentro de la misma página.
+
+El botón **“Solicitar demostración”** funciona como Call To Action principal y dirige al visitante hacia el formulario de contacto.
+
+En Desktop, las opciones principales permanecen visibles horizontalmente. En Mobile, el menú se adapta a un formato de tipo hamburguesa controlado mediante JavaScript para reducir el espacio ocupado por la navegación.
+
+La navegación entre secciones puede complementarse mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú puede cerrarse automáticamente y desplazar al usuario hacia el contenido correspondiente.
+
+El Footer complementa la navegación proporcionando acceso a información institucional, términos y condiciones y otros enlaces relevantes.
+
+Debe considerarse que las secciones comerciales reutilizadas en la Landing Page, como **Planes**, funcionan como contenido informativo y de diseño. Su presencia en los wireframes y mock-ups permite documentar la estructura visual completa de la Landing Page, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+
+
 ### 3.1.3. Landing Page UI Design
+
+El Landing Page UI Design de TerraTech materializa visualmente las Style Guidelines y la Information Architecture definidas previamente.
+
+La Landing Page reutilizada se documenta considerando su implementación mediante **HTML5, CSS3 y JavaScript**, y se adapta al alcance funcional que será presentado en la TB1.
+
+La Landing Page no pretende simular que todas sus secciones dependen del backend. Su función principal es comunicar el producto. Por ello, las secciones de presentación y marketing conviven con una sección específica de **funcionalidades para el alcance TB1**, la cual refleja las historias que actualmente se encuentran contempladas por el backend y la aplicación Android:
+
+- **US06 — Registro:** creación de cuenta con nombre, correo, contraseña y confirmación, incluyendo validación de campos y correo duplicado.
+- **US07 — Inicio de sesión:** autenticación mediante JWT, presentación de errores y acceso únicamente a recursos propios.
+- **US09 — Perfil:** consulta y edición de datos personales y del terreno.
+- **US17 — Registro de sensor:** asociación de un dispositivo válido a una parcela propia, rechazando códigos inválidos o ya asociados.
+- **US11 — Selección de parcela/sensor:** selección de una parcela y consulta de sus dispositivos.
+- **US10 — Indicadores:** consulta de humedad, temperatura y nutrientes con fecha de actualización y aviso de datos desactualizados.
+- **US12 — Histórico:** consulta de humedad de los últimos 7 días, cambio a 30 días y visualización del detalle de una lectura.
+- **Nueva HU — Consulta sin conexión:** consulta de parcelas, sensores y mediciones previamente descargadas, indicando la antigüedad de la información.
+
+Se consideran versiones **Desktop Web Browser** y **Mobile Web Browser**, manteniendo el mismo contenido pero modificando la distribución de los componentes según el espacio disponible.
+
 
 #### 3.1.3.1. Landing Page Wireframe
 
+Los wireframes representan la estructura de la Landing Page en baja fidelidad. Su objetivo es mostrar la jerarquía del contenido, distribución de componentes, navegación y comportamiento responsive antes de aplicar colores, fotografías y estilos definitivos.
+
+Para facilitar su lectura, la Landing Page se documenta por secciones en lugar de mostrarse como una única imagen vertical de gran tamaño.
+
+##### Inicio / Hero
+
+La primera sección contiene el Header, Navbar, propuesta de valor y Call To Action principal. El contenido comunica que TerraTech permite gestionar parcelas y sensores, consultar datos del suelo y acceder a información desde la aplicación Android.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-hero.png" alt="Wireframe de Inicio y Hero de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.1. Wireframe de la Landing Page de TerraTech — Inicio / Hero (Desktop y Mobile).</em></p>
+
+
+##### Beneficios y Características
+
+Esta sección organiza las funcionalidades principales en tarjetas independientes para facilitar su exploración. La estructura se encuentra alineada con el alcance actual de la aplicación Android y el backend.
+
+Se representan el registro e inicio de sesión, perfil y parcelas, registro de sensor, selección de parcela, indicadores en tiempo real, historial de mediciones y consulta sin conexión.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-benefits-features.png" alt="Wireframe de Beneficios y Características de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.2. Wireframe de la Landing Page de TerraTech — Beneficios y Características (Desktop y Mobile).</em></p>
+
+
+##### Sobre TerraTech y Soluciones para el alcance TB1
+
+Esta sección explica la relación entre sensores IoT, servicios digitales y la aplicación Android. Además, presenta únicamente las capacidades que se consideran dentro del alcance funcional de la TB1.
+
+La sección evita presentar como implementadas capacidades que pertenecen a iteraciones posteriores del producto.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-about-scope.png" alt="Wireframe Sobre TerraTech y Soluciones TB1" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.3. Wireframe de la Landing Page de TerraTech — Sobre TerraTech y Soluciones para el alcance TB1 (Desktop y Mobile).</em></p>
+
+
+##### Planes y Equipo
+
+Como parte del diseño integral de la Landing Page reutilizada, también se documenta una sección destinada a presentar planes referenciales y la identidad del equipo NovaTech. Estas secciones cumplen una función de comunicación visual dentro de la Landing Page y permiten completar la narrativa del producto antes del formulario de contacto.
+
+En esta etapa, los planes se documentan como parte del diseño de interfaz y no como evidencia de que exista una lógica comercial completamente implementada en backend.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-plans-team.png" alt="Wireframe de Planes y Equipo de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.4. Wireframe de la Landing Page de TerraTech — Planes y Equipo (Desktop y Mobile).</em></p>
+
+
+##### Contacto y Footer
+
+La última sección presenta el formulario de solicitud de demostración y el Footer. El formulario permite recopilar información básica del interesado y funciona como principal mecanismo de conversión de la Landing Page.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-wireframe-contact-footer.png" alt="Wireframe de Contacto y Footer de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.5. Wireframe de la Landing Page de TerraTech — Contacto y Footer (Desktop y Mobile).</em></p>
+
+
 #### 3.1.3.2. Landing Page Mock-up
+
+Los mock-ups representan la versión de alta fidelidad de la Landing Page de TerraTech e incorporan la identidad visual del producto, tipografía, paleta cromática, imágenes, iconografía, botones, tarjetas y espaciados.
+
+Se mantiene el verde TerraTech `#2E7D32` como color principal y el ámbar `#F59E0B` como color de apoyo. La versión Mobile conserva la misma jerarquía de contenido de Desktop, reorganizando los componentes en una sola columna cuando el espacio disponible lo requiere.
+
+Al igual que los wireframes, los mock-ups se presentan por secciones para facilitar la revisión del diseño.
+
+##### Inicio / Hero
+
+El mock-up del Hero presenta la propuesta de valor de TerraTech junto con una representación de la aplicación Android y sensores utilizados en campo. Las llamadas a la acción permanecen visibles desde la primera pantalla.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-hero.png" alt="Mock-up de Inicio y Hero de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.6. Mock-up de la Landing Page de TerraTech — Inicio / Hero (Desktop y Mobile).</em></p>
+
+
+##### Beneficios y Características
+
+El diseño de alta fidelidad organiza las funcionalidades mediante tarjetas visuales con iconos y descripciones breves. El objetivo es que el visitante identifique rápidamente las capacidades que podrá encontrar en la aplicación.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-benefits-features.png" alt="Mock-up de Beneficios y Características de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.7. Mock-up de la Landing Page de TerraTech — Beneficios y Características (Desktop y Mobile).</em></p>
+
+
+##### Sobre TerraTech y Soluciones para el alcance TB1
+
+Esta sección utiliza recursos visuales relacionados con agricultura y sensores IoT para explicar la integración entre el campo, el backend y la aplicación Android.
+
+Las tarjetas inferiores sintetizan el alcance funcional de la TB1: acceso seguro, gestión de parcelas y perfil, asociación de sensores, visualización de indicadores, histórico de 7 y 30 días y consulta sin conexión de datos previamente descargados.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-about-scope.png" alt="Mock-up Sobre TerraTech y Soluciones TB1" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.8. Mock-up de la Landing Page de TerraTech — Sobre TerraTech y Soluciones para el alcance TB1 (Desktop y Mobile).</em></p>
+
+
+##### Planes y Equipo
+
+El mock-up de esta sección presenta en alta fidelidad la oferta visual de planes y la presentación del equipo NovaTech. Su inclusión busca documentar el diseño completo de la Landing Page reutilizada y mantener coherencia con la estructura general del sitio web.
+
+Aunque el bloque de planes se presenta como parte del diseño, debe entenderse como un elemento de comunicación visual y no como evidencia suficiente de reglas comerciales ya implementadas en backend.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-plans-team.png" alt="Mock-up de Planes y Equipo de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.9. Mock-up de la Landing Page de TerraTech — Planes y Equipo (Desktop y Mobile).</em></p>
+
+
+##### Contacto y Footer
+
+El mock-up final presenta el formulario de solicitud de demostración utilizando campos claramente identificados y un Call To Action principal. El Footer reúne información institucional y enlaces complementarios.
+
+<p align="center" style="page-break-inside: avoid;">
+  <img src="assets/images/cap3/landing-mockup-contact-footer.png" alt="Mock-up de Contacto y Footer de TerraTech" style="width: 100%; max-width: 850px; height: auto;">
+</p>
+
+<p align="center"><em>Figura 3.10. Mock-up de la Landing Page de TerraTech — Contacto y Footer (Desktop y Mobile).</em></p>
+
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
