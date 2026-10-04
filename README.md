@@ -6267,6 +6267,92 @@ El recorrido por la Landing Page permite a los participantes conocer la propuest
 
 #### 4.3.2. Registro de Entrevistas
 
+### Segmento 1: Agricultores
+
+**Entrevista 1**
+
+**Nombre:** Yanderson Montenegro  
+**Edad:** 24 años  
+**Distrito:** Huancavelica  
+**Timing:** 00:00 - 14:00
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**resumen**
+
+El recorrido de la entrevista con Yanderson Montenegro se centra en las tareas habituales de un agricultor al utilizar TerraTech. La primera parte comprende la exploración de la Landing Page y el registro de una cuenta con nombre, correo, contraseña y confirmación, prestando atención a las validaciones de los campos y al mensaje ante un correo duplicado. También incluye el inicio de sesión, la revisión del mensaje ante credenciales incorrectas y la consulta y edición de los datos personales y del terreno.
+
+El recorrido continúa con la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. La selección de una parcela permite consultar sus dispositivos y revisar los indicadores de humedad, temperatura y nutrientes. La evaluación considera la facilidad para encontrar estos datos, identificar su fecha de actualización y comprender el aviso de datos desactualizados, además de la comprobación del acceso únicamente a recursos propios.
+
+El cierre de la sesión incluye la consulta del histórico de humedad de los últimos 7 días, el cambio de la vista a 30 días y el acceso al detalle de una lectura. También contempla desactivar la conexión a internet para consultar las parcelas, sensores y mediciones descargadas previamente. Los comentarios del participante constituyen un insumo para evaluar la facilidad del recorrido y la claridad con la que se muestra la antigüedad de la información.
+
+### Segmento 2: Proveedores de insumos agrícolas
+
+**ENTREVISTA 1**
+
+**Nombre:** Anita Monago Cachay  
+**Edad:** 35 años  
+**Distrito:** Ica  
+**Timing:** 14:01 - 18:49
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Anita Monago Cachay aborda la comprensión de la propuesta de TerraTech y la utilidad de la información del suelo para las decisiones sobre insumos agrícolas. El recorrido comienza con la exploración de la Landing Page y continúa con el registro y el inicio de sesión, prestando atención a las validaciones de los campos y a los mensajes ante un correo duplicado o credenciales incorrectas.
+
+Con una cuenta de prueba de agricultor, el recorrido incluye la consulta y actualización de los datos personales y del terreno, la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. La selección de la parcela permite identificar sus dispositivos y consultar los indicadores de humedad, temperatura y nutrientes. Este recorrido también contempla la comprobación del acceso únicamente a recursos propios.
+
+La sesión contempla la revisión de la fecha de actualización, el aviso de datos desactualizados y el histórico de humedad de 7 y 30 días, junto con el detalle de una lectura. El recorrido finaliza con la consulta de parcelas, sensores y mediciones previamente descargadas sin conexión. La revisión de sus observaciones se centra en la facilidad para encontrar la información y reconocer su antigüedad.
+
+---
+
+**ENTREVISTA 2**
+
+**Nombre:** Alvaro Medina Huaqui
+**Edad:** 25 años  
+**Distrito:** Ica  
+**Timing:** 18:50 - 26:13
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Alvaro Medina Huaqui se enfoca en la navegación y la presentación de la información dentro del alcance de TB1. El recorrido comprende la exploración de la Landing Page, el registro y el inicio de sesión, con énfasis en la claridad de los campos, las validaciones y los mensajes ante correos duplicados o credenciales incorrectas.
+
+El uso de la cuenta de prueba de agricultor comprende la consulta y edición de los datos personales y del terreno, la asociación de un dispositivo válido a una parcela propia y la selección de la parcela para revisar sus dispositivos. La evaluación considera la comprensión de los mensajes de rechazo de códigos inválidos o ya asociados y la comprobación del acceso únicamente a recursos propios.
+
+El recorrido continúa con los indicadores de humedad, temperatura y nutrientes y el histórico de humedad. La revisión presta atención a la facilidad para cambiar entre 7 y 30 días, abrir el detalle de una lectura e identificar la fecha de actualización y el aviso de datos desactualizados. El cierre incluye la consulta de parcelas, sensores y mediciones descargadas previamente sin conexión, con énfasis en la claridad con la que se presenta su antigüedad.
+
+### Segmento 3: Clientes Finales
+
+**ENTREVISTA 1**
+
+**Nombre:** Myke Dylan Guillen Geraldo
+**Edad:** 22 años  
+**Distrito:** Huaraz  
+**Timing:** 26:14 - 32:31
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento3-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Myke Dylan Guillen Geraldo aborda la comprensión de la propuesta de TerraTech y de los recorridos de monitoreo agrícola. La sesión comienza con la exploración de la Landing Page y continúa con el registro y el inicio de sesión, incluyendo la revisión de las validaciones y los mensajes ante correos duplicados o credenciales incorrectas. El uso de una cuenta de prueba de agricultor permite consultar y actualizar los datos personales y del terreno y contempla la comprobación del acceso únicamente a recursos propios.
+
+El recorrido continúa con la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. También incluye la selección de una parcela, la consulta de sus dispositivos y la visualización de los indicadores de humedad, temperatura y nutrientes. En esta parte, la evaluación se centra en la identificación de la fecha de actualización y la comprensión del aviso de datos desactualizados.
+
+El cierre de la sesión comprende la consulta del histórico de humedad de los últimos 7 días, el cambio de la vista a 30 días y el acceso al detalle de una lectura. También incluye la consulta de parcelas, sensores y mediciones previamente descargadas sin conexión a internet y la identificación de su antigüedad. Los comentarios del participante constituyen un insumo para valorar si la información y los recorridos son comprensibles para una persona menos familiarizada con el monitoreo agrícola.
+
+
+
 #### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones
