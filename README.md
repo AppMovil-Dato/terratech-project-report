@@ -6355,6 +6355,27 @@ El cierre de la sesión comprende la consulta del histórico de humedad de los �
 
 #### 4.3.3. Evaluaciones según heurísticas
 
+La evaluación de usabilidad de TerraTech se basa en los **10 principios heurísticos de Jakob Nielsen** y sigue los recorridos definidos en el diseño de las entrevistas para TB1. Considera la comprensión de la propuesta de valor, la facilidad para encontrar las funciones y la ejecución de las tareas contempladas en la Landing Page y la Web Application.
+
+Las heurísticas consideradas son las siguientes:
+
+1. Visibilidad del estado del sistema.
+2. Relación entre el sistema y el mundo real.
+3. Control y libertad del usuario.
+4. Consistencia y estándares.
+5. Prevención de errores.
+6. Reconocimiento antes que recuerdo.
+7. Flexibilidad y eficiencia de uso.
+8. Diseño estético y minimalista.
+9. Ayuda para reconocer, diagnosticar y recuperarse de errores.
+10. Ayuda y documentación.
+
+El registro de cada entrevista distingue si las tareas se completan sin ayuda, con ayuda o si no pueden completarse. El análisis contempla las dificultades observadas, los comentarios y las sugerencias de los participantes, relacionando cada hallazgo con el flujo evaluado y la heurística correspondiente. La revisión presta especial atención a los mensajes de registro, inicio de sesión y asociación de sensores, así como a la selección de parcelas, la edición del perfil y la consulta de indicadores e históricos.
+
+La evaluación también considera si los participantes identifican la fecha de actualización de los datos, comprenden los avisos de información desactualizada y reconocen la antigüedad de las mediciones disponibles sin conexión. Los resultados constituyen la base para priorizar mejoras en la navegación, los mensajes y la presentación de la información dentro del alcance de TB1.
+
+
+
 # Conclusiones
 
 [Volver al contenido principal](#contenido)
