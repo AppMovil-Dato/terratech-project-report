@@ -6173,6 +6173,98 @@ Back End URL: [Swagger BackEnd](https://backend-terratech.onrender.com/swagger/i
 
 #### 4.3.1. Diseño de Entrevistas
 
+Las entrevistas de validación de TerraTech están dirigidas a los tres segmentos objetivo: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. El recorrido de cada sesión comprende la exploración de la **Landing Page** y el uso de la **Web Application** para evaluar las funcionalidades incluidas en TB1: registro, inicio de sesión, perfil, asociación y selección de sensores por parcela, indicadores del suelo, histórico de humedad y consulta sin conexión.
+
+Las tareas permiten observar si los participantes comprenden la interfaz, encuentran la información que necesitan y reconocen los mensajes del sistema. Los recorridos de gestión y monitoreo de parcelas contemplan el uso de una cuenta de prueba de agricultor, de modo que los tres segmentos puedan evaluar la experiencia sin atribuir estas funciones a los perfiles de proveedor o comprador. El diseño también incluye comprobaciones técnicas de la autenticación mediante JWT y del acceso únicamente a recursos propios.
+
+***Objetivo General***
+
+Validar la facilidad de uso de TerraTech dentro del alcance de TB1, observando si los participantes comprenden la propuesta de valor y logran registrarse, iniciar sesión, actualizar su perfil, asociar y seleccionar sensores, consultar indicadores e históricos y acceder a información previamente descargada cuando no tienen conexión.
+
+---
+
+### Segmento 1: Agricultores (dueños de cultivo)
+
+#### Landing Page
+La exploración de la Landing Page permite a los participantes conocer cómo TerraTech puede ayudarles a monitorear sus parcelas, identificar los beneficios de consultar indicadores e históricos y encontrar el acceso a la aplicación.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Registro con nombre, correo, contraseña y confirmación, incluyendo la validación de campos y el rechazo de correos duplicados. Inicio de sesión, mensajes de error y acceso únicamente a recursos propios.
+- Consulta y edición de los datos personales y del terreno.
+- Asociación de un dispositivo válido a una parcela propia y rechazo de códigos inválidos o ya asociados.
+- Selección de una parcela y consulta de sus dispositivos.
+- Consulta de humedad, temperatura y nutrientes, con fecha de actualización y aviso de datos desactualizados.
+- Consulta del histórico de humedad de los últimos 7 días, cambio a 30 días y acceso al detalle de una lectura.
+- Consulta sin conexión de parcelas, sensores y mediciones previamente descargadas, mostrando la antigüedad de la información.
+
+#### User Flows a validar
+
+- **UF-A1:** Crear una cuenta con nombre, correo, contraseña y confirmación; revisar los mensajes ante campos inválidos o un correo duplicado. Luego, iniciar sesión, comprobar el mensaje ante credenciales incorrectas y verificar que solo se acceda a recursos propios.
+- **UF-A2:** Consultar el perfil, modificar los datos personales y del terreno y comprobar que los cambios se hayan guardado.
+- **UF-A3:** Asociar un dispositivo válido a una parcela propia y comprobar qué ocurre al ingresar un código inválido o uno que ya está asociado.
+- **UF-A4:** Elegir una parcela y consultar los dispositivos vinculados a ella.
+- **UF-A5:** Revisar los valores de humedad, temperatura y nutrientes, identificar cuándo se actualizaron y reconocer el aviso de datos desactualizados.
+- **UF-A6:** Consultar la humedad de los últimos 7 días, cambiar la vista a 30 días y abrir el detalle de una lectura.
+- **UF-A7:** Desactivar la conexión a internet y consultar las parcelas, sensores y mediciones descargadas previamente, identificando la antigüedad de los datos.
+
+---
+
+### Segmento 2: Proveedores de insumos agrícolas
+
+#### Landing Page
+
+La exploración de la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo la información del suelo puede ayudar a los agricultores a decidir qué insumos necesitan.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Claridad del registro y del inicio de sesión, incluyendo las validaciones y los mensajes ante correos duplicados o credenciales incorrectas.
+- Facilidad para consultar y actualizar los datos personales y del terreno.
+- Comprensión del proceso de asociación de sensores a parcelas propias y de los mensajes ante códigos inválidos o ya asociados.
+- Facilidad para elegir una parcela e identificar sus dispositivos.
+- Claridad de los indicadores del suelo, su fecha de actualización, los avisos de datos desactualizados y la consulta del histórico de humedad.
+- Facilidad para consultar información descargada sin conexión y reconocer su antigüedad.
+
+#### User Flows a validar
+
+- **UF-P1:** Recorrer el registro y el inicio de sesión, revisar las validaciones y los mensajes de error y comprobar que solo se acceda a recursos propios.
+- **UF-P2:** Consultar y editar el perfil de prueba, asociar un sensor a una parcela propia y revisar los mensajes ante códigos inválidos o ya asociados. Después, elegir la parcela y consultar sus dispositivos.
+- **UF-P3:** Revisar los indicadores del suelo, su fecha de actualización y el aviso de datos desactualizados. Consultar también el histórico de humedad de 7 y 30 días y abrir el detalle de una lectura.
+- **UF-P4:** Consultar parcelas, sensores y mediciones previamente descargadas sin conexión, identificando qué información está disponible y cuál es su antigüedad.
+
+---
+
+### Segmento 3: Clientes Finales (compradores mayoristas y minoristas)
+
+#### Landing Page
+
+El recorrido por la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo los agricultores pueden utilizarla para consultar las condiciones del suelo y monitorear sus parcelas.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Facilidad para registrarse e iniciar sesión, comprender los mensajes de error y acceder únicamente a recursos propios.
+- Claridad de la consulta y edición de los datos personales y del terreno.
+- Comprensión de la asociación de sensores a parcelas propias y de los mensajes ante códigos inválidos o ya asociados.
+- Facilidad para seleccionar una parcela y consultar sus dispositivos.
+- Claridad de los indicadores de humedad, temperatura y nutrientes, su fecha de actualización y los avisos de datos desactualizados.
+- Facilidad para consultar el histórico de humedad de 7 y 30 días y abrir el detalle de una lectura.
+- Comprensión de la información disponible sin conexión y de su antigüedad.
+
+#### User Flows a validar
+
+- **UF-C1:** Recorrer el registro y el inicio de sesión, revisar las validaciones y los mensajes de error y comprobar el acceso únicamente a recursos propios. Luego, consultar y actualizar los datos personales y del terreno en el perfil de prueba.
+- **UF-C2:** Asociar un dispositivo válido a una parcela propia y revisar los mensajes al ingresar códigos inválidos o ya asociados.
+- **UF-C3:** Elegir una parcela, consultar sus dispositivos y revisar los indicadores de humedad, temperatura y nutrientes, identificando su fecha de actualización y el aviso de datos desactualizados.
+- **UF-C4:** Consultar la humedad de los últimos 7 días, cambiar la vista a 30 días y abrir el detalle de una lectura.
+- **UF-C5:** Consultar parcelas, sensores y mediciones previamente descargadas sin conexión a internet, identificando la antigüedad de la información.
+
+
 #### 4.3.2. Registro de Entrevistas
 
 #### 4.3.3. Evaluaciones según heurísticas
