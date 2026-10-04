@@ -218,8 +218,8 @@ el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | TV1: Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br><br>**Evidencias:** TV1: secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`. | TV1: La aplicación de estos conceptos me permitió estructurar los requisitos del sistema de forma clara y priorizada, asegurando que las historias de usuario y artefactos de diseño reflejen adecuadamente las necesidades reales del dominio. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | TV1: Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br><br>**Evidencias:** TV1: artefactos de Needfinding, user stories y product backlog incorporados en el README. | TV1: El aprendizaje continuo de herramientas de diseño y flujos de trabajo colaborativos en Git es fundamental para mantener una documentación ágil, consistente y alineada con los estándares de la industria. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | **AV1:** Revisé los lineamientos del curso y los apliqué al desarrollo de 2.3 Needfinding y 2.4 Requirements Specification. Aprendí a elaborar User Personas, User Task Matrix, User Journey Maps, Empathy Maps y Ubiquitous Language, y a redactar User Stories con criterios de aceptación en formato Given–When–Then, Technical Stories, Spike Stories, Impact Mapping y Product Backlog. Reforcé además el uso de Markdown, GitFlow y Conventional Commits.<br><br>**Evidencias AV1:** secciones 2.3 y 2.4 del README, imágenes de los artefactos y commits de la rama `feature/av1-needfinding-requirements`.<br><br>**TB1:** Desarrollé la documentación de la sección 4.3 Validation Interviews, incluyendo el diseño de las entrevistas, la adaptación de sus resúmenes a los recorridos definidos y la redacción del apartado de evaluación de usabilidad según las heurísticas de Jakob Nielsen.<br><br>**Evidencias TB1:** sección 4.3 del README y commits de la rama `feature/validation-interviews`. | **AV1:** La aplicación de estos conceptos me permitió estructurar los requisitos del sistema de forma clara y priorizada, asegurando que las historias de usuario y artefactos de diseño reflejen adecuadamente las necesidades reales del dominio.<br><br>**TB1:** Comprendí cómo relacionar las historias de usuario y sus criterios de aceptación con los recorridos de las entrevistas de validación, y cómo utilizar las heurísticas de usabilidad para orientar la revisión de la experiencia de los participantes. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **AV1:** Identifiqué que las herramientas de análisis de experiencia (UXPressia) y de modelado (Miro) requieren práctica continua, por lo que investigué su documentación y buenas prácticas. Comprendí también la importancia de mantener actualizados los conceptos de especificación de requisitos y de trabajo colaborativo con ramas, merges y revisión de cambios.<br><br>**Evidencias AV1:** artefactos de Needfinding, user stories y product backlog incorporados en el README.<br><br>**TB1:** Reconocí la importancia de revisar los criterios de usabilidad y mantener la coherencia entre los requisitos, el diseño de las entrevistas y su documentación. Revisé la redacción de la sección 4.3 y organicé los cambios en tres commits para conservar la trazabilidad de mi aporte.<br><br>**Evidencias TB1:** sección 4.3 del README e historial de commits de `feature/validation-interviews`. | **AV1:** El aprendizaje continuo de herramientas de diseño y flujos de trabajo colaborativos en Git es fundamental para mantener una documentación ágil, consistente y alineada con los estándares de la industria.<br><br>**TB1:** Comprendí que los criterios de evaluación deben revisarse conforme evoluciona el alcance del proyecto. También reforcé la importancia de distinguir los recorridos definidos de los resultados observados y de documentar los cambios de manera clara. |
 
 ---
 
@@ -227,8 +227,8 @@ el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | TV1: Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Evidencias:** TV1: Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README. | TV1: La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | TV1: Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico y el modelado de arquitectura C4 orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Evidencias:** TV1: Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README. | TV1: La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | AV1: Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico (descubrimiento de Bounded Contexts, Domain Storytelling, Bounded Context Canvases y Context Mapping) junto con el modelado de arquitectura C4 (Contexto, Contenedores y Despliegue) orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Evidencias:** AV1: Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README. | AV1: La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | AV1: Investigó y aplicó los principios de Domain-Driven Design (DDD) Estratégico y el modelado de arquitectura C4 orientado a aplicaciones móviles nativas Android con persistencia local Room y arquitectura limpia, asegurando una base técnica escalable para el monitoreo agrícola.<br><br>**Evidencias:** AV1: Diagramas de Big Picture EventStorming, Domain Storytelling, Bounded Context Canvases (5 contextos), Context Mapping y diagramas C4 incorporados en la sección 2.5 del README. | AV1: La aplicación formal de Domain-Driven Design Estratégico y el modelado C4 me permitieron delimitar con claridad las fronteras de responsabilidad de TerraTech, comprendiendo que el éxito de una aplicación móvil en entornos agrícolas radica en una arquitectura desacoplada, resiliente a fallos de conectividad y alineada rigurosamente con el lenguaje del dominio de los productores. |
 
 ---
 
@@ -236,8 +236,8 @@ el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | TV1: Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br><br>**Evidencias:** TV1: Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1. | TV1: La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | TV1: Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br><br>**Evidencias:** TV1: README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1. | TV1: Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | AV1: Revisé los lineamientos del curso y el material de referencia de Lean UX para adaptar el Capítulo I de TerraTech al proyecto de aplicaciones móviles, reutilizando la base tecnológica del proyecto previo y alineando el Capítulo I con el alcance funcional actualmente documentado para TerraTech. Apliqué la técnica 5W + 2H para organizar la problemática y desarrollé los Problem Statements, Assumptions, Hypothesis Statements y Lean UX Canvas. Asimismo, revisé el sustento estadístico de los segmentos objetivo y organicé las referencias bibliográficas en formato APA 7. Estas actividades me permitieron aplicar los conocimientos adquiridos mediante la consulta de fuentes y la revisión de la coherencia entre las secciones relacionadas con mi aporte.<br><br>**Evidencias:** AV1: Capítulo I actualizado, Lean UX Canvas y bibliografía incorporados en el README de la AV1. | AV1: La revisión de los materiales del curso y su aplicación a TerraTech me permitieron comprender cómo relacionar el problema, los usuarios, los supuestos y las hipótesis de una solución. Aprendí que reutilizar un proyecto requiere revisar su documentación, contrastar la información existente y adaptar su formulación al contexto móvil y al alcance funcional actualmente definido. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | AV1: Reconocí la necesidad de ampliar mis conocimientos de Markdown, Git y GitFlow para responder a los cambios en la organización del informe. Apliqué estos conocimientos al consolidar la estructura del informe en un único README, ajustar los enlaces del índice y registrar mis aportes mediante ramas y commits. También actualicé el registro de versiones, el registro de participación, el Student Outcome y los objetivos SMART, y revisé la coherencia del Capítulo I con el alcance funcional actualizado de TerraTech. La revisión del Lean UX Canvas y de las fuentes estadísticas me permitió reconocer que los supuestos del proyecto deben contrastarse y actualizarse conforme se obtiene nueva evidencia.<br><br>**Evidencias:** AV1: README consolidado, Capítulo I actualizado, Lean UX Canvas, registro de versiones, registro de participación e historial de commits de la AV1. | AV1: Comprendí que el aprendizaje permanente forma parte del desarrollo de software y de su documentación. Consultar fuentes, revisar la coherencia del proyecto y aplicar nuevos conocimientos de Lean UX, Markdown y control de versiones me permitió atender los requisitos de la entrega y conservar la trazabilidad de mis aportes. Reconozco que debo continuar este proceso durante las siguientes etapas del proyecto. |
 
 ---
 
@@ -245,8 +245,8 @@ el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | TV1: Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br><br>**Evidencias:** TV1: secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo. | TV1: Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | TV1: Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br><br>**Evidencias:** TV1: análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub. | TV1: Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | AV1: Investigué el mercado de soluciones agrícolas móviles y la formulación de entrevistas semiestructuradas, profundizando en patrones de diseño accesible para usuarios con baja alfabetización digital y en arquitecturas móviles resilientes con soporte sin conexión (almacenamiento local SQLite/Room) y conectividad evaluada para campo. Apliqué estos conceptos al benchmark de competidores y a la sistematización de 7 entrevistas reales para extraer requisitos aplicables a la solución móvil.<br><br>**Evidencias:** AV1: secciones 2.1 y 2.2 del README con matrices de análisis competitivo, registro de entrevistas y análisis estadístico-cualitativo. | AV1: Comprender las dificultades reales de los agricultores y compradores mediante entrevistas me demostró que una solución de software debe sustentarse en una investigación empírica rigurosa. Desarrollar interfaces simples y modos sin conexión no es solo una decisión técnica, sino una necesidad de accesibilidad que exige actualizar constantemente nuestros criterios de diseño de software móvil. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | AV1: Reconocí que el análisis del entorno de mercado y las expectativas de los usuarios no son estáticos, sino que exigen una constante actualización sobre nuevas tecnologías móviles y diseño inclusivo. Comprendí la necesidad del aprendizaje continuo para contrastar hipótesis teóricas con la retroalimentación directa de los usuarios en campo, adaptando las soluciones de software de forma ágil y profesional.<br><br>**Evidencias:** AV1: análisis comparativo de competidores, síntesis estadística de entrevistas en el README y registro de actividades colaborativas en GitHub. | AV1: Asimilar las necesidades de distintos perfiles (desde agricultores tradicionales hasta compradores urbanos) me demostró que el rol del ingeniero de software requiere constante investigación y empatía. Mantener una actitud de aprendizaje continuo es indispensable para proponer soluciones tecnológicas inclusivas y sostenibles. |
 
 ---
 
@@ -254,8 +254,8 @@ el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | TV1: Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema.<br><br>**Evidencias:** TV1: Diagramas de clases del dominio y modelo de base de datos local/relacional documentados en la sección 2.5 del README. | TV1: El diseño de los diagramas de clases y la estructura de datos por Bounded Context me permitieron entender cómo traducir los conceptos estratégicos del dominio agrícola en un modelo de software táctico. Aprendí que definir correctamente las relaciones entre entidades e iterar sobre el modelo de persistencia local es clave para garantizar la integridad y coherencia de los datos en aplicaciones móviles. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | TV1: Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema.<br><br>**Evidencias:** TV1: Diagramas de clases del dominio y modelo de base de datos local/relacional documentados en la sección 2.5 del README. | TV1: Mantenerse actualizado en patrones de modelado de datos y arquitecturas de almacenamiento local es fundamental para afrontar los retos de sincronización e integridad de información en el sector agrícola. Comprendí que el aprendizaje constante me permite diseñar estructuras de software robustas que se adaptan eficientemente a los cambios en los requisitos del dominio. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | AV1: Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema.<br><br>**Evidencias:** AV1: Diagramas de clases del dominio y modelo de base de datos local/relacional documentados en la sección 2.5 del README. | AV1: El diseño de los diagramas de clases y la estructura de datos por Bounded Context me permitieron entender cómo traducir los conceptos estratégicos del dominio agrícola en un modelo de software táctico. Aprendí que definir correctamente las relaciones entre entidades e iterar sobre el modelo de persistencia local es clave para garantizar la integridad y coherencia de los datos en aplicaciones móviles. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | AV1: Investigué y apliqué patrones de diseño de software táctico y modelado de datos para soluciones móviles e IoT. Diseñé los diagramas de clases del dominio de software por cada Bounded Context y desarrollé el diseño de base de datos relacional y local (Room/SQLite), asegurando la correcta representación de entidades, agregados, relaciones e interacciones de datos para la persistencia offline y sincronización del sistema.<br><br>**Evidencias:** AV1: Diagramas de clases del dominio y modelo de base de datos local/relacional documentados en la sección 2.5 del README. | AV1: Mantenerse actualizado en patrones de modelado de datos y arquitecturas de almacenamiento local es fundamental para afrontar los retos de sincronización e integridad de información en el sector agrícola. Comprendí que el aprendizaje constante me permite diseñar estructuras de software robustas que se adaptan eficientemente a los cambios en los requisitos del dominio. |
 
 ## Objetivos SMART
 
@@ -6173,9 +6173,208 @@ Back End URL: [Swagger BackEnd](https://backend-terratech.onrender.com/swagger/i
 
 #### 4.3.1. Diseño de Entrevistas
 
+Las entrevistas de validación de TerraTech están dirigidas a los tres segmentos objetivo: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. El recorrido de cada sesión comprende la exploración de la **Landing Page** y el uso de la **Web Application** para evaluar las funcionalidades incluidas en TB1: registro, inicio de sesión, perfil, asociación y selección de sensores por parcela, indicadores del suelo, histórico de humedad y consulta sin conexión.
+
+Las tareas permiten observar si los participantes comprenden la interfaz, encuentran la información que necesitan y reconocen los mensajes del sistema. Los recorridos de gestión y monitoreo de parcelas contemplan el uso de una cuenta de prueba de agricultor, de modo que los tres segmentos puedan evaluar la experiencia sin atribuir estas funciones a los perfiles de proveedor o comprador. El diseño también incluye comprobaciones técnicas de la autenticación mediante JWT y del acceso únicamente a recursos propios.
+
+***Objetivo General***
+
+Validar la facilidad de uso de TerraTech dentro del alcance de TB1, observando si los participantes comprenden la propuesta de valor y logran registrarse, iniciar sesión, actualizar su perfil, asociar y seleccionar sensores, consultar indicadores e históricos y acceder a información previamente descargada cuando no tienen conexión.
+
+---
+
+### Segmento 1: Agricultores (dueños de cultivo)
+
+#### Landing Page
+La exploración de la Landing Page permite a los participantes conocer cómo TerraTech puede ayudarles a monitorear sus parcelas, identificar los beneficios de consultar indicadores e históricos y encontrar el acceso a la aplicación.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Registro con nombre, correo, contraseña y confirmación, incluyendo la validación de campos y el rechazo de correos duplicados. Inicio de sesión, mensajes de error y acceso únicamente a recursos propios.
+- Consulta y edición de los datos personales y del terreno.
+- Asociación de un dispositivo válido a una parcela propia y rechazo de códigos inválidos o ya asociados.
+- Selección de una parcela y consulta de sus dispositivos.
+- Consulta de humedad, temperatura y nutrientes, con fecha de actualización y aviso de datos desactualizados.
+- Consulta del histórico de humedad de los últimos 7 días, cambio a 30 días y acceso al detalle de una lectura.
+- Consulta sin conexión de parcelas, sensores y mediciones previamente descargadas, mostrando la antigüedad de la información.
+
+#### User Flows a validar
+
+- **UF-A1:** Crear una cuenta con nombre, correo, contraseña y confirmación; revisar los mensajes ante campos inválidos o un correo duplicado. Luego, iniciar sesión, comprobar el mensaje ante credenciales incorrectas y verificar que solo se acceda a recursos propios.
+- **UF-A2:** Consultar el perfil, modificar los datos personales y del terreno y comprobar que los cambios se hayan guardado.
+- **UF-A3:** Asociar un dispositivo válido a una parcela propia y comprobar qué ocurre al ingresar un código inválido o uno que ya está asociado.
+- **UF-A4:** Elegir una parcela y consultar los dispositivos vinculados a ella.
+- **UF-A5:** Revisar los valores de humedad, temperatura y nutrientes, identificar cuándo se actualizaron y reconocer el aviso de datos desactualizados.
+- **UF-A6:** Consultar la humedad de los últimos 7 días, cambiar la vista a 30 días y abrir el detalle de una lectura.
+- **UF-A7:** Desactivar la conexión a internet y consultar las parcelas, sensores y mediciones descargadas previamente, identificando la antigüedad de los datos.
+
+---
+
+### Segmento 2: Proveedores de insumos agrícolas
+
+#### Landing Page
+
+La exploración de la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo la información del suelo puede ayudar a los agricultores a decidir qué insumos necesitan.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Claridad del registro y del inicio de sesión, incluyendo las validaciones y los mensajes ante correos duplicados o credenciales incorrectas.
+- Facilidad para consultar y actualizar los datos personales y del terreno.
+- Comprensión del proceso de asociación de sensores a parcelas propias y de los mensajes ante códigos inválidos o ya asociados.
+- Facilidad para elegir una parcela e identificar sus dispositivos.
+- Claridad de los indicadores del suelo, su fecha de actualización, los avisos de datos desactualizados y la consulta del histórico de humedad.
+- Facilidad para consultar información descargada sin conexión y reconocer su antigüedad.
+
+#### User Flows a validar
+
+- **UF-P1:** Recorrer el registro y el inicio de sesión, revisar las validaciones y los mensajes de error y comprobar que solo se acceda a recursos propios.
+- **UF-P2:** Consultar y editar el perfil de prueba, asociar un sensor a una parcela propia y revisar los mensajes ante códigos inválidos o ya asociados. Después, elegir la parcela y consultar sus dispositivos.
+- **UF-P3:** Revisar los indicadores del suelo, su fecha de actualización y el aviso de datos desactualizados. Consultar también el histórico de humedad de 7 y 30 días y abrir el detalle de una lectura.
+- **UF-P4:** Consultar parcelas, sensores y mediciones previamente descargadas sin conexión, identificando qué información está disponible y cuál es su antigüedad.
+
+---
+
+### Segmento 3: Clientes Finales (compradores mayoristas y minoristas)
+
+#### Landing Page
+
+El recorrido por la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo los agricultores pueden utilizarla para consultar las condiciones del suelo y monitorear sus parcelas.
+
+#### Web Application
+
+**Elementos a validar:**
+
+- Facilidad para registrarse e iniciar sesión, comprender los mensajes de error y acceder únicamente a recursos propios.
+- Claridad de la consulta y edición de los datos personales y del terreno.
+- Comprensión de la asociación de sensores a parcelas propias y de los mensajes ante códigos inválidos o ya asociados.
+- Facilidad para seleccionar una parcela y consultar sus dispositivos.
+- Claridad de los indicadores de humedad, temperatura y nutrientes, su fecha de actualización y los avisos de datos desactualizados.
+- Facilidad para consultar el histórico de humedad de 7 y 30 días y abrir el detalle de una lectura.
+- Comprensión de la información disponible sin conexión y de su antigüedad.
+
+#### User Flows a validar
+
+- **UF-C1:** Recorrer el registro y el inicio de sesión, revisar las validaciones y los mensajes de error y comprobar el acceso únicamente a recursos propios. Luego, consultar y actualizar los datos personales y del terreno en el perfil de prueba.
+- **UF-C2:** Asociar un dispositivo válido a una parcela propia y revisar los mensajes al ingresar códigos inválidos o ya asociados.
+- **UF-C3:** Elegir una parcela, consultar sus dispositivos y revisar los indicadores de humedad, temperatura y nutrientes, identificando su fecha de actualización y el aviso de datos desactualizados.
+- **UF-C4:** Consultar la humedad de los últimos 7 días, cambiar la vista a 30 días y abrir el detalle de una lectura.
+- **UF-C5:** Consultar parcelas, sensores y mediciones previamente descargadas sin conexión a internet, identificando la antigüedad de la información.
+
+
 #### 4.3.2. Registro de Entrevistas
 
+### Segmento 1: Agricultores
+
+**Entrevista 1**
+
+**Nombre:** Yanderson Montenegro  
+**Edad:** 24 años  
+**Distrito:** Huancavelica  
+**Timing:** 00:00 - 14:00
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**resumen**
+
+El recorrido de la entrevista con Yanderson Montenegro se centra en las tareas habituales de un agricultor al utilizar TerraTech. La primera parte comprende la exploración de la Landing Page y el registro de una cuenta con nombre, correo, contraseña y confirmación, prestando atención a las validaciones de los campos y al mensaje ante un correo duplicado. También incluye el inicio de sesión, la revisión del mensaje ante credenciales incorrectas y la consulta y edición de los datos personales y del terreno.
+
+El recorrido continúa con la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. La selección de una parcela permite consultar sus dispositivos y revisar los indicadores de humedad, temperatura y nutrientes. La evaluación considera la facilidad para encontrar estos datos, identificar su fecha de actualización y comprender el aviso de datos desactualizados, además de la comprobación del acceso únicamente a recursos propios.
+
+El cierre de la sesión incluye la consulta del histórico de humedad de los últimos 7 días, el cambio de la vista a 30 días y el acceso al detalle de una lectura. También contempla desactivar la conexión a internet para consultar las parcelas, sensores y mediciones descargadas previamente. Los comentarios del participante constituyen un insumo para evaluar la facilidad del recorrido y la claridad con la que se muestra la antigüedad de la información.
+
+### Segmento 2: Proveedores de insumos agrícolas
+
+**ENTREVISTA 1**
+
+**Nombre:** Anita Monago Cachay  
+**Edad:** 35 años  
+**Distrito:** Ica  
+**Timing:** 14:01 - 18:49
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Anita Monago Cachay aborda la comprensión de la propuesta de TerraTech y la utilidad de la información del suelo para las decisiones sobre insumos agrícolas. El recorrido comienza con la exploración de la Landing Page y continúa con el registro y el inicio de sesión, prestando atención a las validaciones de los campos y a los mensajes ante un correo duplicado o credenciales incorrectas.
+
+Con una cuenta de prueba de agricultor, el recorrido incluye la consulta y actualización de los datos personales y del terreno, la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. La selección de la parcela permite identificar sus dispositivos y consultar los indicadores de humedad, temperatura y nutrientes. Este recorrido también contempla la comprobación del acceso únicamente a recursos propios.
+
+La sesión contempla la revisión de la fecha de actualización, el aviso de datos desactualizados y el histórico de humedad de 7 y 30 días, junto con el detalle de una lectura. El recorrido finaliza con la consulta de parcelas, sensores y mediciones previamente descargadas sin conexión. La revisión de sus observaciones se centra en la facilidad para encontrar la información y reconocer su antigüedad.
+
+---
+
+**ENTREVISTA 2**
+
+**Nombre:** Alvaro Medina Huaqui
+**Edad:** 25 años  
+**Distrito:** Ica  
+**Timing:** 18:50 - 26:13
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Alvaro Medina Huaqui se enfoca en la navegación y la presentación de la información dentro del alcance de TB1. El recorrido comprende la exploración de la Landing Page, el registro y el inicio de sesión, con énfasis en la claridad de los campos, las validaciones y los mensajes ante correos duplicados o credenciales incorrectas.
+
+El uso de la cuenta de prueba de agricultor comprende la consulta y edición de los datos personales y del terreno, la asociación de un dispositivo válido a una parcela propia y la selección de la parcela para revisar sus dispositivos. La evaluación considera la comprensión de los mensajes de rechazo de códigos inválidos o ya asociados y la comprobación del acceso únicamente a recursos propios.
+
+El recorrido continúa con los indicadores de humedad, temperatura y nutrientes y el histórico de humedad. La revisión presta atención a la facilidad para cambiar entre 7 y 30 días, abrir el detalle de una lectura e identificar la fecha de actualización y el aviso de datos desactualizados. El cierre incluye la consulta de parcelas, sensores y mediciones descargadas previamente sin conexión, con énfasis en la claridad con la que se presenta su antigüedad.
+
+### Segmento 3: Clientes Finales
+
+**ENTREVISTA 1**
+
+**Nombre:** Myke Dylan Guillen Geraldo
+**Edad:** 22 años  
+**Distrito:** Huaraz  
+**Timing:** 26:14 - 32:31
+
+<img src="assets/images/cap4/Entrevista_Validacion_Segmento3-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**Resumen:**
+
+La entrevista con Myke Dylan Guillen Geraldo aborda la comprensión de la propuesta de TerraTech y de los recorridos de monitoreo agrícola. La sesión comienza con la exploración de la Landing Page y continúa con el registro y el inicio de sesión, incluyendo la revisión de las validaciones y los mensajes ante correos duplicados o credenciales incorrectas. El uso de una cuenta de prueba de agricultor permite consultar y actualizar los datos personales y del terreno y contempla la comprobación del acceso únicamente a recursos propios.
+
+El recorrido continúa con la asociación de un dispositivo válido a una parcela propia y la revisión de los mensajes ante códigos inválidos o ya asociados. También incluye la selección de una parcela, la consulta de sus dispositivos y la visualización de los indicadores de humedad, temperatura y nutrientes. En esta parte, la evaluación se centra en la identificación de la fecha de actualización y la comprensión del aviso de datos desactualizados.
+
+El cierre de la sesión comprende la consulta del histórico de humedad de los últimos 7 días, el cambio de la vista a 30 días y el acceso al detalle de una lectura. También incluye la consulta de parcelas, sensores y mediciones previamente descargadas sin conexión a internet y la identificación de su antigüedad. Los comentarios del participante constituyen un insumo para valorar si la información y los recorridos son comprensibles para una persona menos familiarizada con el monitoreo agrícola.
+
+
+
 #### 4.3.3. Evaluaciones según heurísticas
+
+La evaluación de usabilidad de TerraTech se basa en los **10 principios heurísticos de Jakob Nielsen** y sigue los recorridos definidos en el diseño de las entrevistas para TB1. Considera la comprensión de la propuesta de valor, la facilidad para encontrar las funciones y la ejecución de las tareas contempladas en la Landing Page y la Web Application.
+
+Las heurísticas consideradas son las siguientes:
+
+1. Visibilidad del estado del sistema.
+2. Relación entre el sistema y el mundo real.
+3. Control y libertad del usuario.
+4. Consistencia y estándares.
+5. Prevención de errores.
+6. Reconocimiento antes que recuerdo.
+7. Flexibilidad y eficiencia de uso.
+8. Diseño estético y minimalista.
+9. Ayuda para reconocer, diagnosticar y recuperarse de errores.
+10. Ayuda y documentación.
+
+El registro de cada entrevista distingue si las tareas se completan sin ayuda, con ayuda o si no pueden completarse. El análisis contempla las dificultades observadas, los comentarios y las sugerencias de los participantes, relacionando cada hallazgo con el flujo evaluado y la heurística correspondiente. La revisión presta especial atención a los mensajes de registro, inicio de sesión y asociación de sensores, así como a la selección de parcelas, la edición del perfil y la consulta de indicadores e históricos.
+
+La evaluación también considera si los participantes identifican la fecha de actualización de los datos, comprenden los avisos de información desactualizada y reconocen la antigüedad de las mediciones disponibles sin conexión. Los resultados constituyen la base para priorizar mejoras en la navegación, los mensajes y la presentación de la información dentro del alcance de TB1.
+
+
 
 # Conclusiones
 
