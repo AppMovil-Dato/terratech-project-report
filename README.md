@@ -113,16 +113,20 @@ asignadas de manera independiente.
 | Pariona Chacca, Angel Jose | Angelitoso-opp | **Responsabilidad:** desarrollo de 2.1 Competidores y 2.2 Entrevistas.<br><br>**Realizado:** benchmark y Competitive Analysis Landscape de 3 competidores directos, análisis FODA y estrategias competitivas móviles; diseño metodológico de entrevistas semiestructuradas para 3 segmentos; registro y resúmenes de 7 entrevistas (ENT-001 a ENT-007) y análisis estadístico y cualitativo por segmento.<br><br> |
 | Retuerto Rodriguez, Jorge Manuel | Calin1407 | **Responsabilidad:** Documentacion de arquitectura, Model C4 y diagrama de cada Bounded |
 
-#### Evidencias de colaboración
+### TB1
 
-<!--
-Antes de la entrega AV1, incorporar aquí:
-&#10;1. Captura de los analíticos de contribución del repositorio.
-2. Captura del historial de commits.
-3. Explicación de los principales aportes de cada integrante.
-&#10;Ruta sugerida para la imagen:
-assets/images/readme/report-collaboration-insights-av1.png.png
--->
+Para el desarrollo de la TB1, el equipo NovaTech continuó trabajando mediante GitFlow, utilizando ramas `feature/*` para desarrollar de manera independiente los distintos componentes de diseño, implementación y validación de TerraTech. Los avances fueron integrados progresivamente en `develop`, permitiendo conservar la trazabilidad de los aportes realizados por cada integrante.
+
+#### Registro preliminar de participación
+
+| Integrante | Usuario de GitHub | Responsabilidad asignada |
+|:---|:---|:---|
+| Barba Estrada, Bryan Eduardo | bry4nbe | **Responsabilidad:** documentación y diseño de la validación del producto para TB1.<br><br>**Realizado:** desarrollo de la sección 4.3 Validation Interviews; definición de los recorridos de validación para agricultores, proveedores y compradores; organización de las tareas correspondientes al alcance funcional de TB1; y documentación de la evaluación de usabilidad mediante las heurísticas de Jakob Nielsen. Asimismo, participó en la actualización y reorganización del Student Outcome correspondiente a la entrega. |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | **Responsabilidad:** persistencia de datos e integración técnica correspondiente al Sprint 1.<br><br>**Realizado:** participación en la configuración de la persistencia y base de datos utilizada por el backend de TerraTech, considerando el mapeo de entidades, repositorios y mecanismos de acceso a datos requeridos por las funcionalidades desarrolladas durante la TB1, manteniendo coherencia con la arquitectura basada en Domain-Driven Design definida previamente. |
+| Delgado Perez, James Caleb | JAmsy06 | **Responsabilidad:** desarrollo de las bases de Product Design y diseño de la Landing Page para TB1.<br><br>**Realizado:** documentación de la sección 3.1 Product Design; definición de Style Guidelines e Information Architecture; desarrollo de los sistemas de organización, etiquetado, navegación, búsqueda y metadatos SEO; elaboración e incorporación de wireframes y mock-ups responsive de la Landing Page para Desktop y Mobile; alineación visual con el alcance funcional de la aplicación Android y el backend; y actualización del Registro de Versiones y Student Outcome correspondiente a TB1. |
+| Pariona Chacca, Angel Jose | Angelitoso-opp | **Responsabilidad:** diseño UX/UI de la aplicación móvil TerraTech.<br><br>**Realizado:** desarrollo y documentación de la sección 3.1.4 Mobile Applications UX/UI Design, incluyendo wireframes, wireflows, mock-ups, User Flow Diagrams y prototipo interactivo en Figma, considerando Happy Paths y Unhappy Paths asociados a conectividad limitada, consulta de información y operación de sensores. |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | **Responsabilidad:** implementación y despliegue del backend de TerraTech para el Sprint 1.<br><br>**Realizado:** desarrollo de la Web API REST utilizando C#, ASP.NET Core y Domain-Driven Design; implementación de componentes de dominio, aplicación, infraestructura e interfaces; integración de autenticación y servicios vinculados con usuarios, parcelas, dispositivos y telemetría; documentación mediante Swagger/OpenAPI; y despliegue del servicio backend para su consumo durante la implementación de TerraTech. |
+
 
 ### Collaboration Insights AV1
 
@@ -136,11 +140,24 @@ assets/images/readme/report-collaboration-insights-av1.png.png
 
 <div class="page"></div>
 
+### Collaboration Insights TB1
+
+![TB1](assets/images/team/collaboration-insights-tb1.png)
+
+- Recomendaciones para siguientes entregas:
+    - Mantener los aportes separados en commits pequeños y descriptivos, diferenciando documentación, wireframes, mock-ups e implementación.
+    - Actualizar la rama `develop` antes de integrar nuevos aportes para reducir conflictos entre las secciones modificadas por distintos integrantes.
+    - Resolver los conflictos de integración conservando los cambios válidos de ambos integrantes, especialmente cuando varios miembros modifican archivos compartidos como `README.md`.
+    - Mantener ramas `feature/*` cortas y asociadas a una responsabilidad concreta para facilitar la revisión mediante Pull Requests.
+
+<div class="page"></div>
+
 ## Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
     - [AV1](#av1)
+    - [TB1](#tb1)
 - [Student Outcome](#student-outcome)
 - [Objetivos SMART](#objetivos-smart)
 - [Capítulo I: Presentación](#capítulo-i-presentación)
