@@ -76,6 +76,7 @@
 | 0.6.0 | 15/09/2026 | Jorge Manuel Retuerto Rodriguez    | Elaboración y documentación del BackEnd, implementando Domain-Drive-Design. Asimismo, ejecutando el deployment del servicio.                                                                                                                                                                                                                                                                                           |
 | 0.7.0| 15/09/2026 | AngelJose Pariona Chacca           | Elaboracion y documentacion de la seccion 3.1.4. Mobile UX & UI  (Mockup, Wireframes, Wireflow, Userflow, Prototype)                                                                                                                                                                                                                                                                                                   |
 | 0.8.0 | 04/10/2026 | Barba Estrada, Bryan Eduardo       | Documentacion TB1 de la seccion 4.3 Validation Interviews (diseno, resumenes por recorridos y evaluacion por heuristicas) y consolidacion del Student Outcome a tabla unica con conclusion grupal restaurada y normalizacion de guiones. |
+| 0.8.1 | 04/10/2026 | Barba Estrada, Bryan Eduardo       | Reestructuracion del Student Outcome 7 a formato Nombre mas AV1/TB1 por integrante, conclusiones solo grupales por entrega y retiro de evidencias del bloque Barba. |
 ## Project Report Collaboration Insights
 
 Esta sección presenta la organización y las evidencias del trabajo
