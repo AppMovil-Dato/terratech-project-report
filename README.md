@@ -6548,21 +6548,284 @@ El prototipo funcional de la aplicación móvil se encuentra disponible para su 
 > [https://www.figma.com/design/tEitQn36cpZFYQTRyniiRg/terra-tech?node-id=0-1&m=dev](https://www.figma.com/design/tEitQn36cpZFYQTRyniiRg/terra-tech?node-id=0-1&m=dev)  
 > *(Acceso público configurado en Figma con permisos de visualización e interacción de prototipo).*
 
----
-
-
-
 # Capitulo 4: Product Implementation & Validation
 
 ## 4. Product Implementation & Validation
 
 ### 4.1. Software Configuration Management
 
+La Gestión de la Configuración de Software en TerraTech garantiza 
+la trazabilidad, consistencia, integridad y mantenibilidad de los 
+artefactos generados tanto en la aplicación móvil nativa Android 
+como en el servicio Web API Backend.
+
 #### 4.1.1. Software Development Environment Configuration
+
+Para garantizar un entorno de desarrollo homogéneo, reproducible y 
+libre de conflictos entre los integrantes del equipo NovaTech, 
+se establecieron las siguientes herramientas, SDKs y configuraciones 
+estandarizadas:
+
+- Entorno de Desarrollo para la Aplicacion Móvil
+  - IDE: Android Studio
+  - Lenguaje: Kotlin (versión 2.4)
+  - Framework UI: Jetpack Compose 
+  - Persistencia Local (Offline-First): Room Database v2.6+.
+  - Gestor de Dependencias: Gradle con versionamiento Catalogs (toml).
+
+- Entorno de Desarrollo para el Backend
+  - IDE: Visual Studio Code/ JetBrains
+  - Framework: .NET 10 WEB Api.
+  - Lenguaje: C# 13
+  - Persistencia/ORM: Entity Framework Core
+  - Autenticacion por JWT
+  - Documentacion de API: Swagger UI/ OpenAPI 3.0.
 
 #### 4.1.2. Source Code Management
 
-#### 4.1.3. Source Code Style Guide & Conventions 
+El código fuente de TerraTech se gestiona de manera centralizada en la 
+organización de GitHub AppMovil-Dato. Se adoptó la metodología de ramificación
+GitFlow adaptada para entregas incrementales y trabajo colaborativo iterativo.
+
+- Repositorios del Proyecto 
+
+  - Terratech-report: Repositorio de documentación oficial del proyecto en Markdown.   
+  - Terratech-mobile: Repositorio del código fuente de la aplicación nativa en Android/Kotlin.   
+  - Terratech-backend: Repositorio del servicio Web API REST desarrollado en .NET / C#.
+
+- **GitFlow WorkFlow**
+
+Para organizar el desarrollo de TerraTech, el equipo utilizará **GitFlow** como workflow 
+de control de versiones. Este modelo permitirá separar el desarrollo de
+nuevas funcionalidades de las versiones estables del producto, facilitando la 
+integración y revisión de los cambios realizados por los integrantes.
+
+Las ramas principales cosideradas para el proyecto serán `main` y `develop`.
+
+**main**
+
+La rama `main` contendrá las versiones estables de los productos, correspondientes
+a versiones que hayan sido revisadas y que estén listas para su publicación o 
+despliegue.
+
+**develop**
+
+La rama `develop` será utilizada como rama principal de integración durante el 
+desarrollo. En ella se incorporarán las funcionalidades terminadas antes de 
+formar parte de una versión estable.
+
+**feature**
+
+Cada nueva funcionalidad será desarrollada mediante una rama `feature` independiente, 
+creada a partir de `develop`. Esto permitirá que cada integrante pueda trabajar sobre una
+funcionalidad específica sin afectar directamente la rama de desarrollo principal.
+
+La convención utilizada será:
+
+```
+feature/<feature-name>
+```
+
+El nombre de la funcionalidad se escribirá en inglés, utilizando palabras descriptivas 
+separadas por guiones (kebab-case).
+
+Algunos ejemplos relacionados son:
+
+```
+feature/soil-monitoring
+feature/crop-dashboard
+feature/user-authentication
+feature/soil-data-analysis
+```
+
+Una vez finalizada una funcionalidad, los cambios serán revisados mediante 
+un **Pull Request** antes de integrarse a `develop`.
+
+**release**
+
+Las ramas `release` serán utilizadas cuando el equipo prepare una nueva versión
+para su publicación. Estas ramas permitirán realizar pruebas finales, correcciones menores
+y ajustes necesarios antes de integrar la versión en `main`.
+
+La convención utilizada será:
+
+```
+release/vX.Y.Z
+```
+
+Por ejemplo:
+
+```
+release/v1.0.0
+release/v1.1.0
+release/v1.2.0
+```
+
+El nombre de las versiones seguirá el estándar **Semantic Versioning (SemVer)**, 
+utilizando el formato:
+
+```
+MAJOR.MINOR.PATCH
+```
+
+Donde:
+
+- **MAJOR:** se incrementa cuando se realizan cambios incompatibles con versiones anteriores.
+- **MINOR:** se incrementa cuando se agrega nueva funcionalidad manteniendo la compatibilidad.
+- **PATCH:** se incrementa cuando se realizan correcciones compatibles con la versión actual.
+
+**hotfix**
+
+Las ramas `hotfix` serán utilizadas para corregir errores críticos encontrados 
+en una versión estable del producto. Estas ramas se crearán a partir de `main` 
+para solucionar el problema sin incorporar cambios de desarrollo que todavía 
+no hayan sido publicados.
+
+La convención utilizada será:
+
+```
+hotfix/<bug-name>
+```
+
+Por ejemplo:
+
+```
+hotfix/soil-data-error
+hotfix/login-validation
+hotfix/api-response-error
+```
+
+Después de solucionar y validar el error, los cambios serán integrados tanto 
+en `main` como en `develop`, evitando que la corrección se pierda en futuras
+versiones.
+
+- **Conventional Commits**
+
+Para mantener un historial de cambios claro y uniforme, el equipo utilizará 
+**Conventional Commits** para definir los mensajes de los commits realizados
+durante el desarrollo.
+
+Los principales tipos de commit serán:
+
+| **Prefijo** | **Descripción** |
+| :--- | :--- |
+| `feat` | Implementación de una nueva funcionalidad. |
+| `fix` | Corrección de un error. |
+| `docs` | Cambios relacionados con la documentación. |
+| `style` | Cambios de formato que no modifican la lógica del sistema. |
+| `refactor` | Reestructuración del código sin modificar su comportamiento. |
+| `perf` | Mejoras relacionadas con el rendimiento. |
+| `test` | Creación o modificación de pruebas. |
+| `chore` | Tareas de mantenimiento, configuración o soporte del proyecto. |
+
+Los mensajes seguirán la estructura:
+
+```
+<type>(<scope>): <description>
+```
+
+Por ejemplo:
+
+```
+feat(frontend): add soil monitoring dashboard
+feat(api): add soil data endpoint
+fix(frontend): correct crop dashboard layout
+docs(scm): document source code management
+test(api): add soil monitoring tests
+```
+
+De esta manera, la utilización de Git, GitHub, GitFlow, Semantic Versioning 
+y Conventional Commits permitirá mantener una gestión organizada del código 
+fuente, facilitar la colaboración entre los integrantes y 
+asegurar la trazabilidad de los cambios realizados durante el desarrollo
+del proyecto.
+
+#### 4.1.3. Source Code Style Guide & Conventions
+
+Con el propósito de mantener un código fuente ordenado, legible y consistente, el equipo de GreenDream establecerá un conjunto de convenciones para el desarrollo de CultivaTech. Estas reglas serán aplicadas por todos los integrantes durante la implementación de la Landing Page, la Frontend Web Application y los Web Services.
+
+Para todos los lenguajes utilizados en la solución se empleará **nomenclatura en inglés**, incluyendo nombres de variables, funciones, clases, interfaces, componentes, archivos, métodos y otros elementos del código. Además, se tomarán como referencia las guías de estilo indicadas en el enunciado del proyecto.
+
+**Convenciones generales**
+
+Durante el desarrollo se aplicarán las siguientes reglas:
+
+- Los nombres de los elementos del código estarán escritos en inglés.
+- Se utilizarán nombres descriptivos que permitan identificar fácilmente la función de cada elemento.
+- Se evitarán abreviaciones innecesarias.
+- Se mantendrá una correcta indentación y formato del código.
+- Se priorizará la reutilización de componentes, funciones y servicios.
+- Cada componente o clase deberá mantener una responsabilidad específica.
+- Los comentarios se utilizarán únicamente cuando sean necesarios para explicar lógica que no resulte evidente a partir del código.
+- Se evitará mantener código duplicado o innecesario.
+
+- **Convenciones para HTML**
+
+Para la estructura de la Landing Page y las interfaces web se seguirán las recomendaciones de **HTML Style Guide and Coding Conventions** y **Google HTML/CSS Style Guide**.
+
+Las principales convenciones serán:
+
+- Utilizar elementos HTML semánticos como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Mantener una correcta jerarquía de encabezados utilizando `h1`, `h2`, `h3`, entre otros.
+- Utilizar atributos `alt` descriptivos en las imágenes.
+- Mantener una estructura HTML correctamente indentada.
+- Utilizar nombres descriptivos para los atributos y elementos relacionados con la interfaz.
+- Evitar el uso innecesario de estilos directamente dentro de los elementos HTML.
+
+Ejemplo:
+
+```
+<section class="soil-monitoring">
+    <h2>Soil Monitoring</h2>
+    <p>Monitor the conditions of the crop soil.</p>
+</section>
+```
+
+- **Convenciones para CSS**
+
+Para la definición de estilos se tomarán como referencia **Google HTML/CSS Style Guide** y las
+convenciones establecidas para CSS.
+
+Las principales reglas serán:
+
+- Utilizar nombres de clases descriptivos.
+- Utilizar `kebab-case` para las clases CSS.
+- Evitar estilos en línea cuando sea posible.
+- Mantener agrupadas las reglas relacionadas con cada componente.
+- Evitar la duplicación de estilos.
+- Eliminar reglas CSS que ya no sean utilizadas.
+
+Ejemplos:
+
+```
+soil-monitoring
+crop-dashboard
+weather-card
+user-profile
+```
+
+- **Convenciones para JavaScript**
+
+Para el código JavaScript utilizado en la Landing Page se seguirán las recomendaciones de 
+las guías de estilo de JavaScript y las convenciones establecidas por el equipo.
+
+Se aplicarán las siguientes reglas:
+
+- Utilizar `const` cuando el valor de una variable no necesite cambiar.
+- Utilizar `let` cuando sea necesario modificar el valor de una variable.
+- Evitar el uso de `var`.
+- Utilizar nombres descriptivos para variables y funciones.
+- Utilizar funciones con responsabilidades específicas.
+- Evitar la duplicación de código.
+- Mantener una correcta indentación y formato.
+
+Ejemplo:
+
+```
+const getSoilData = async () => {
+    // Implementation
+};
+```
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
