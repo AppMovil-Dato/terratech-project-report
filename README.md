@@ -53,7 +53,7 @@
   <br>
 
   <p><strong>Período 202620</strong></p>
-  <p><strong>Septiembre 2026</strong></p>
+  <p><strong>Octubre 2026</strong></p>
 
 </div>
 
@@ -83,7 +83,7 @@
 | 0.9.1 | 04/10/2026 | Bendezú Navarro, Rúbens Fitzgerald | Revisión de la pauta TB1: Student Outcome con conclusiones grupales acumulativas AV1/TB1 y preservación de reflexiones individuales en anexo; conclusiones TB1 contrastadas con hipótesis Lean UX y recomendaciones del roadmap. Integración autorizada en develop y main conservando los aportes del equipo. |
 | 0.9.2 | 04/10/2026 | Barba Estrada, Bryan Eduardo | Alineación de la sección 3.1 con la Landing Page implementada: tipografía Inter, paleta, escala de espaciado, breakpoints, estructura de secciones, etiquetas, metadatos, internationalización ES/EN y accesibilidad. Registro de la evidencia de implementación y publicación en GitHub Pages, columna de implementación de la Landing Page en la matriz LACX, corrección de la descripción tecnológica y renumeración de las figuras del capítulo 3. |
 | 0.9.3 | 05/10/2026 | Retuerto Rodriguez, Jorge Manuel | Implementacion de reglas de diseño y herramientas para el correcto desarrollo de la apliaciones                                                                                                                                                                                                                                                                                                                              | 
-
+| 1.0.0 | 05/10/2026 | Equipo NovaTech | Consolidación final del informe correspondiente a la TB1, integrando Product Design, Mobile UX/UI Design, implementación del Sprint 1, Validation Interviews, Collaboration Insights, Student Outcome, conclusiones y evidencias de la entrega. |
 ## Project Report Collaboration Insights
 
 Esta sección presenta la organización y las evidencias del trabajo
@@ -147,7 +147,25 @@ Para el desarrollo de la TB1, el equipo NovaTech continuó trabajando mediante G
 
 ### Collaboration Insights TB1
 
-![TB1](assets/images/team/collaboration-insights-tb1.png)
+<p align="center">
+  <img src="assets/images/team/tb1/report-network.png"
+       alt="Red de ramas del repositorio del informe"
+       width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/images/team/tb1/report-contributors-01.png"
+       alt="Contribuciones de JAmsy06 y bry4nbe"
+       width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/images/team/tb1/report-contributors-02.png"
+       alt="Contribuciones de Lucemz, angelitoso-opp y Calin1407"
+       width="100%">
+</p>
+
+
 
 - Recomendaciones para siguientes entregas:
     - Mantener los aportes separados en commits pequeños y descriptivos, diferenciando documentación, wireframes, mock-ups e implementación.
@@ -6551,8 +6569,6 @@ El prototipo funcional de la aplicación móvil se encuentra disponible para su 
 
 # Capitulo 4: Product Implementation & Validation
 
-## 4. Product Implementation & Validation
-
 ### 4.1. Software Configuration Management
 
 La Gestión de la Configuración de Software en TerraTech garantiza 
@@ -6743,7 +6759,7 @@ del proyecto.
 
 #### 4.1.3. Source Code Style Guide & Conventions
 
-Con el propósito de mantener un código fuente ordenado, legible y consistente, el equipo de GreenDream establecerá un conjunto de convenciones para el desarrollo de CultivaTech. Estas reglas serán aplicadas por todos los integrantes durante la implementación de la Landing Page, la Frontend Web Application y los Web Services.
+Con el propósito de mantener un código fuente ordenado, legible y consistente, el equipo NovaTech establece un conjunto de convenciones para el desarrollo de TerraTech. Estas reglas se aplican durante la implementación de la Landing Page, la aplicación móvil nativa Android y la Web API REST del backend.
 
 Para todos los lenguajes utilizados en la solución se empleará **nomenclatura en inglés**, incluyendo nombres de variables, funciones, clases, interfaces, componentes, archivos, métodos y otros elementos del código. Además, se tomarán como referencia las guías de estilo indicadas en el enunciado del proyecto.
 
@@ -6845,18 +6861,16 @@ El objetivo prioriza la consulta de datos de una parcela propia y su continuidad
 | Campo del Sprint Planning | Registro |
 | --- | --- |
 | Sprint # | Sprint 1, entrega TB1 |
-| Date / Time | Pendiente de incorporar la fecha y hora reales de la reunión; 04/10/2026 es el corte de documentación, no una fecha de reunión acreditada |
-| Location | Pendiente de confirmar plataforma o ubicación de la reunión |
+| Date / Time | No se cuenta con un acta que permita acreditar una fecha y hora formal de reunión para el Sprint 1. El 04/10/2026 corresponde al corte de documentación de la TB1. |
+| Location | No se registró una plataforma o ubicación formal de reunión para este Sprint. |
 | Prepared By | Bendezú Navarro, Rúbens Fitzgerald, usuario GitHub `Lucemz` |
-| Attendees | Pendiente de confirmar asistencia; la nómina del equipo no se presenta como registro de asistencia |
-| Sprint 0 Review Summary | No hay acta de un Sprint 0. Se parte del backend heredado y de los artefactos AV1 de dominio/arquitectura; durante TB1 se desarrollaron los diseños del Capítulo III |
-| Sprint 0 Retrospective Summary | Sin retrospectiva anterior acreditada. Como diagnóstico técnico se identificaron contratos de cuenta incompletos, controles de propiedad insuficientes y ausencia de mediciones persistidas para el recorrido móvil |
-| Sprint 1 Goal | Antes de la entrega TB1, permitir al agricultor completar el recorrido de cuenta a histórico sobre recursos propios y volver a consultar los datos descargados después de cerrar/reabrir la app sin red |
-| Métrica de cumplimiento | Recorrido HTTP y UI automatizado aprobados; protección de dos cuentas; histórico 7/30 y detalle con unidades/UTC/SIMULATED; reinicio offline aprobado; backend público listo. Demostración física y video del equipo pendientes |
-| Sprint 1 Velocity | Capacidad comprometida por el equipo pendiente de registrar. La suma del backlog no acredita velocidad histórica ni horas trabajadas |
-| Sum of Story Points | 26 SP para las siete HU móviles estimadas (5+3+2+3+3+5+5). HU-OFF01 pendiente de estimación. El Sprint 1 completo conserva además los 26 SP previos de infraestructura/Landing Page/spike IoT: 52 SP conocidos más HU-OFF01 |
-
-**Definition of Done técnica:** contratos documentados; validaciones y acceso por propietario; persistencia verificable; pruebas Debug aprobadas; errores distinguibles; fuentes versionadas y credenciales excluidas. Para aceptar el incremento del equipo se necesitan también revisión de los responsables, tablero, capturas actuales, video público y evaluación del porcentaje funcional exigido por la rúbrica. No se sustituye ese porcentaje por cobertura de líneas.
+| Attendees | No se cuenta con un registro formal de asistencia del Sprint 1. |
+| Sprint 0 Review Summary | No hay acta de un Sprint 0. Se parte del backend heredado y de los artefactos AV1 de dominio/arquitectura; durante TB1 se desarrollaron los diseños del Capítulo III. |
+| Sprint 0 Retrospective Summary | Sin retrospectiva anterior acreditada. Como diagnóstico técnico se identificaron contratos de cuenta incompletos, controles de propiedad insuficientes y ausencia de mediciones persistidas para el recorrido móvil. |
+| Sprint 1 Goal | Antes de la entrega TB1, permitir al agricultor completar el recorrido de cuenta a histórico sobre recursos propios y volver a consultar los datos descargados después de cerrar/reabrir la app sin red. |
+| Métrica de cumplimiento | Recorrido HTTP y UI automatizado aprobados; protección de dos cuentas; histórico 7/30 y detalle con unidades/UTC/SIMULATED; reinicio offline aprobado; backend público listo. La demostración física y el video del equipo no se encuentran acreditados en esta versión del informe. |
+| Sprint 1 Velocity | No calculada, debido a que el equipo no dispone de una velocidad histórica formalmente registrada para este Sprint. |
+| Sum of Story Points | 26 SP para las siete HU móviles estimadas (5+3+2+3+3+5+5). HU-OFF01 no fue estimada en esta entrega. El Sprint 1 completo conserva además los 26 SP previos de infraestructura/Landing Page/spike IoT: 52 SP conocidos más HU-OFF01. |**Definition of Done técnica:** contratos documentados; validaciones y acceso por propietario; persistencia verificable; pruebas Debug aprobadas; errores distinguibles; fuentes versionadas y credenciales excluidas. Para aceptar el incremento del equipo se necesitan también revisión de los responsables, tablero, capturas actuales, video público y evaluación del porcentaje funcional exigido por la rúbrica. No se sustituye ese porcentaje por cobertura de líneas.
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
@@ -6870,8 +6884,7 @@ La matriz LACX relaciona la responsabilidad registrada en el informe con los asp
 | Delgado Perez, James Caleb | JAmsy06 | — | — | — | — | L | — | — |
 | Barba Estrada, Bryan Eduardo | bry4nbe | — | — | — | — | — | L | L |
 
-La行列a de implementación de la Landing Page distingue el código del diseño: el diseño de 3.1.3 corresponde a Delgado Perez, James Caleb, mientras que el código HTML5, CSS3 y JavaScript, los diccionarios de idioma y la publicación en GitHub Pages corresponden a Barba Estrada, Bryan Eduardo. Bryan además verificó y ajustó la documentación de 3.1 y 3.1.2 contra el sitio publicado, sin modificar la autoría del diseño.
-
+La matriz de implementación de la Landing Page distingue el código del diseño:
 La tecnología efectiva es **C#, ASP.NET Core .NET 10, Entity Framework Core y MySQL** para backend; **Kotlin, Compose, MVVM/StateFlow, Hilt, Retrofit, Room y DataStore** para Android; **HTML5, CSS3 y JavaScript sin dependencias de frontend**, con diccionarios JSON para el bilingüismo ES/EN, para la Landing Page. Las menciones anteriores a Spring Security, JPA/Hibernate, Spring Data y PostgreSQL no describían esta implementación y se corrigen en este Sprint.
 
 #### 4.2.1.3. Sprint Backlog 1
@@ -7056,7 +7069,7 @@ El detalle de capturas y datos faltantes está en [checklist de cierre Sprint 1]
 
 #### 4.3.1. Diseño de Entrevistas
 
-Las entrevistas de validación de TerraTech están dirigidas a los tres segmentos objetivo: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. El recorrido de cada sesión comprende la exploración de la **Landing Page** y el uso de la **Web Application** para evaluar las funcionalidades incluidas en TB1: registro, inicio de sesión, perfil, asociación y selección de sensores por parcela, indicadores del suelo, histórico de humedad y consulta sin conexión.
+Las entrevistas de validación de TerraTech están dirigidas a los tres segmentos objetivo: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. El recorrido de cada sesión comprende la exploración de la **Landing Page** y el uso de la **aplicación móvil Android** para evaluar las funcionalidades incluidas en TB1: registro, inicio de sesión, perfil, asociación y selección de sensores por parcela, indicadores del suelo, histórico de humedad y consulta sin conexión.
 
 Las tareas permiten observar si los participantes comprenden la interfaz, encuentran la información que necesitan y reconocen los mensajes del sistema. Los recorridos de gestión y monitoreo de parcelas contemplan el uso de una cuenta de prueba de agricultor, de modo que los tres segmentos puedan evaluar la experiencia sin atribuir estas funciones a los perfiles de proveedor o comprador. El diseño también incluye comprobaciones técnicas de la autenticación mediante JWT y del acceso únicamente a recursos propios.
 
@@ -7071,7 +7084,7 @@ Validar la facilidad de uso de TerraTech dentro del alcance de TB1, observando s
 #### Landing Page
 La exploración de la Landing Page permite a los participantes conocer cómo TerraTech puede ayudarles a monitorear sus parcelas, identificar los beneficios de consultar indicadores e históricos y encontrar el acceso a la aplicación.
 
-#### Web Application
+#### Mobile Application
 
 **Elementos a validar:**
 
@@ -7101,7 +7114,7 @@ La exploración de la Landing Page permite a los participantes conocer cómo Ter
 
 La exploración de la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo la información del suelo puede ayudar a los agricultores a decidir qué insumos necesitan.
 
-#### Web Application
+#### Mobile Application
 
 **Elementos a validar:**
 
@@ -7127,7 +7140,7 @@ La exploración de la Landing Page permite a los participantes conocer la propue
 
 El recorrido por la Landing Page permite a los participantes conocer la propuesta de TerraTech y comprender cómo los agricultores pueden utilizarla para consultar las condiciones del suelo y monitorear sus parcelas.
 
-#### Web Application
+#### Mobile Application
 
 **Elementos a validar:**
 
@@ -7238,7 +7251,7 @@ El cierre de la sesión comprende la consulta del histórico de humedad de los �
 
 #### 4.3.3. Evaluaciones según heurísticas
 
-La evaluación de usabilidad de TerraTech se basa en los **10 principios heurísticos de Jakob Nielsen** y sigue los recorridos definidos en el diseño de las entrevistas para TB1. Considera la comprensión de la propuesta de valor, la facilidad para encontrar las funciones y la ejecución de las tareas contempladas en la Landing Page y la Web Application.
+La evaluación de usabilidad de TerraTech se basa en los **10 principios heurísticos de Jakob Nielsen** y sigue los recorridos definidos en el diseño de las entrevistas para TB1. Considera la comprensión de la propuesta de valor, la facilidad para encontrar las funciones y la ejecución de las tareas contempladas en la Landing Page y la aplicación móvil Android..
 
 Las heurísticas consideradas son las siguientes:
 
