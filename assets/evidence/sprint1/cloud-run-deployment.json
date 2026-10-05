@@ -1,0 +1,147 @@
+{
+  "verifiedAtUtc": "2026-10-05T00:36:50.068914+00:00",
+  "project": "terratech-510620",
+  "region": "us-east1",
+  "service": "backend-terratech-git",
+  "sourceCommit": "ab66a7f0fec118db38bfca36e4bbeefcc8534363",
+  "status": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-10-04T20:57:31.718855Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2026-10-04T20:54:49.725672Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2026-10-04T20:57:31.685905Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "backend-terratech-git-00006-56x",
+    "latestReadyRevisionName": "backend-terratech-git-00006-56x",
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "backend-terratech-git-00006-56x"
+      }
+    ]
+  },
+  "httpChecks": [
+    {
+      "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/health/live",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/health/ready",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/swagger/index.html",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/swagger/v1/swagger.json",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/api/v1/users/me",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "url": "https://terratech-api.lucemz.com/health/live",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "url": "https://terratech-api.lucemz.com/health/ready",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "url": "https://terratech-api.lucemz.com/swagger/index.html",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "url": "https://terratech-api.lucemz.com/swagger/v1/swagger.json",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "url": "https://terratech-api.lucemz.com/api/v1/users/me",
+      "status": 401,
+      "expected": 401
+    }
+  ],
+  "httpMethod": "GET using curl",
+  "defaultCloudRunUrlDisabled": true,
+  "previousChecks": {
+    "timestampRecorded": false,
+    "source": "previous deployment HTTP checks, collected before default URL was disabled",
+    "checks": [
+      {
+        "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/health/live",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/health/ready",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/swagger/index.html",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/swagger/v1/swagger.json",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://backend-terratech-git-qsxfla6hna-ue.a.run.app/api/v1/users/me",
+        "status": 401,
+        "expected": 401
+      },
+      {
+        "url": "https://terratech-api.lucemz.com/health/live",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://terratech-api.lucemz.com/health/ready",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://terratech-api.lucemz.com/swagger/index.html",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://terratech-api.lucemz.com/swagger/v1/swagger.json",
+        "status": 200,
+        "expected": 200
+      },
+      {
+        "url": "https://terratech-api.lucemz.com/api/v1/users/me",
+        "status": 401,
+        "expected": 401
+      }
+    ]
+  },
+  "credentialValuesRecorded": false,
+  "runtimeUiAgainstProductionVerified": false
+}

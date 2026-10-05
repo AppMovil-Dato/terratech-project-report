@@ -1,0 +1,277 @@
+{
+  "sourceFile": "TestResults/startup-migration/startup-migration.trx",
+  "sourceSha256": "dade09a10d767adb905b74f744858bda36c57f6d3a8454a59a1a1dd7ab01cd90",
+  "times": {
+    "creation": "2026-10-04T15:37:21.6233670-05:00",
+    "queuing": "2026-10-04T15:37:21.6233670-05:00",
+    "start": "2026-10-04T15:37:17.7524130-05:00",
+    "finish": "2026-10-04T15:37:40.5288050-05:00"
+  },
+  "counters": {
+    "total": "61",
+    "executed": "61",
+    "passed": "61",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "tests": [
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunRejectsInvalidPorts",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ProfileEditPersistsPersonalTerrainDataAndPreservesEmailAndThresholds",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationDuplicateAndWrongPassword",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CompleteJourneyReadingsUnitsRangesAndPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.TwoAccountsCannotReadWriteDeleteOrListOthersResources",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidJwt",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.MalformedSensorCodesDoNotCreateAssociations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunRejectsInvalidPorts",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationAcceptsMinimumsNormalizesEmailAndDoesNotExposePasswords",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.MalformedSensorCodesDoNotCreateAssociations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.LatestStalenessUsesStrictThirtyMinuteBoundary",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ReadingDetailPreservesCacheContractAndRejectsOtherDeviceAndOwner",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.MissingRoutesAndPublicSwagger",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.MalformedSensorCodesDoNotCreateAssociations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidRegistration",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidRegistration",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.LatestStalenessUsesStrictThirtyMinuteBoundary",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunDoesNotMigrateOnStartupAndReadinessRejectsEmptySchema",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunPortOverridesDefaultListener",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunHonorsExplicitStartupMigrationSetting",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.MalformedSensorCodesDoNotCreateAssociations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunRejectsInvalidPorts",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ConcurrentCloudRunStartsCreateOneCompleteSchema",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ProductionMigrationCommandExitsSuccessfullyAndIsRepeatable",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.UnknownOccupiedAndConcurrentSensorRegistration",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidJwt",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunCreatesMissingDatabaseAndSchemaAndPreservesAccountsOnRestart",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidJwt",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunUsesForwardedHttpsForCreatedResourceLocations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunProductionServesPublicHealthSwaggerAndPreservesJwtProtection",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ConfirmationIsExactAndRejectedSignupDoesNotReserveEmail",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ConfirmationIsExactAndRejectedSignupDoesNotReserveEmail",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidProfileDoesNotChangePersistedData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ExplicitDemoCommandsAreRepeatableAndBlockedInProduction",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.CloudRunPortOverridesDefaultListener",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ForeignKeysAndUniqueReadingTimestampAreEnforced",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.LatestStalenessUsesStrictThirtyMinuteBoundary",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ProfileThresholdsAndLegacySnakeCaseRemainCompatible",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.LegacyMacUsesSameRegistryAndOwnedCrudWorks",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.JwtRequiresExpirationAndApprovedAlgorithmForExistingUser",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ConfirmationIsExactAndRejectedSignupDoesNotReserveEmail",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.InvalidJwt",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.HistoryIncludesUtcBoundariesExcludesFutureAndSupportsDefaultRange",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.ParcelSelectionReturnsOnlyItsDevicesAndSupportsEmptyParcel",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.AncillaryPrivateResourcesAlsoEnforceOwnership",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.IncrementalMigrationPreservesLegacyDevicesAndAssociations",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.PreflightRejectsOrphansAndDuplicatesWithoutDeletingData",
+      "outcome": "Passed"
+    },
+    {
+      "name": "JourneyTests.RegistrationFieldsFailIndependentlyWithoutPersistence",
+      "outcome": "Passed"
+    }
+  ],
+  "configuration": "Debug",
+  "database": "isolated MySQL, never production",
+  "containsTestOutput": false
+}
