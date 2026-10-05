@@ -6704,6 +6704,14 @@ El login permite entrar con JWT; el perfil muestra los datos persistidos y convi
 
 El histórico alterna 7/30 días e incluye gráfica y lista cronológica; cada lectura conserva identidad y unidades. La última captura acredita recuperación de datos guardados tras reiniciar sin red, con banner offline y antigüedad visible. No se simula una respuesta de servidor para ocultar fallos de conexión.
 
+**Landing Page - Desktop y Mobile**
+
+Las siguientes capturas se tomaron el 4 de octubre de 2026 del [sitio publicado de TerraTech](https://appmovil-dato.github.io/LandingPage-TerraTech/). Son pantallas implementadas del sitio ejecutado en navegador, no mockups. La vista Desktop utiliza un viewport de 1440 × 900 px; la vista Mobile utiliza un viewport de 390 × 844 px y muestra el menú hamburguesa abierto.
+
+| Landing Page - Desktop | Landing Page - Mobile |
+| --- | --- |
+| <img src="assets/images/cap4/sprint1/landing-desktop.png" alt="Landing Page publicada de TerraTech en viewport de escritorio" width="220"> | <img src="assets/images/cap4/sprint1/landing-mobile.png" alt="Landing Page publicada de TerraTech en viewport móvil con el menú hamburguesa abierto" width="220"> |
+
 **Video de navegación:** existe una grabación local `artifacts/TerraTech-TB1-emulator.mp4` en el proyecto Android, excluida de Git. Falta publicar el video narrado del equipo en OneDrive/YouTube y colocar el enlace accesible; no se sustituye por una URL ficticia. Se requieren también capturas de registro/confirmación y del recorrido actual en teléfono; ver [detalle de evidencia pendiente](docs/TB1_SPRINT1_EVIDENCE_CHECKLIST.md).
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
