@@ -5436,9 +5436,11 @@ solución:
         Almacena localmente información previamente obtenida y los datos que requieran sincronización 
         posterior, permitiendo consultar información disponible cuando no exista conexión y
         actualizarla cuando se recupere la conectividad.
-    3.  **Web Landing Page (HTML5 / CSS3 / JavaScript / Vue):** Sitio web
-        institucional responsivo optimizado para SEO, presentación
-        comercial y descarga del archivo APK de la aplicación móvil.
+    3.  **Web Landing Page (HTML5 / CSS3 / JavaScript):** Sitio web
+        institucional responsivo, sin dependencias de frontend ni paso de
+        compilación. Presenta el producto, el alcance funcional, los planes
+        y el equipo, y deriva a la solicitud de demostración. La versión
+        bilingüe ES/EN se carga desde diccionarios JSON.
     4.  **Backend REST API (C# / ASP.NET Core):** API modular organizada mediante capas de Domain,
          Application, Interface e Infrastructure. Expone endpoints REST consumidos por la aplicación móvil
          y utiliza mecanismos de autenticación y autorización basados en JWT.
@@ -6377,7 +6379,7 @@ Los wireframes representan la estructura esquemática en baja fidelidad de la ap
 <p align="center">
   <img src="assets/images/cap3/mobile-wireframes.png" alt="Wireframes de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.9. Wireframes de la aplicación móvil de TerraTech (Alcance TB1).</em></p>
+<p align="center"><em>Figura 3.11. Wireframes de la aplicación móvil de TerraTech (Alcance TB1).</em></p>
 
 La arquitectura de información en baja fidelidad comprende las pantallas esenciales del alcance funcional:
 - **WF-01: Registro de Usuario (US06):** Formulario con campos para Nombre (mínimo 2 caracteres), Correo electrónico, Contraseña (mínimo 6 caracteres), Confirmar contraseña y enlace para usuarios ya registrados. Muestra mensajes de error en línea ante contraseñas no coincidentes o correo ya registrado.
@@ -6396,7 +6398,7 @@ El diagrama de Wireflow ilustra las transiciones lógicas y cambios de estado de
 <p align="center">
   <img src="assets/images/cap3/mobile-wireflow.png" alt="Diagrama de Wireflow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.10. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.12. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
 
 A continuación se detalla la secuencia de navegación y eventos contemplados en el flujo operativo del agricultor:
 
@@ -6418,7 +6420,7 @@ Los mock-ups en alta fidelidad plasman el diseño visual definitivo de la aplica
 <p align="center">
   <img src="assets/images/cap3/mobile-mockup.png" alt="Mock-ups en Alta Fidelidad de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.11. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.13. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
 
 Detalle de las pantallas en alta fidelidad:
 - **Pantalla de Autenticación y Registro (US06 / US07):** Interfaz limpia con el logotipo de TerraTech, campos de entrada con etiquetas flotantes y validación visual instantánea (indicadores de error en rojo y mensajes informativos accesibles).
@@ -6446,7 +6448,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-1.png" alt="User Flow 1 - Acceso, Registro y Autenticación" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.12. User Flow 1: Flujo de Acceso, Registro y Autenticación Inicial.</em></p>
+<p align="center"><em>Figura 3.14. User Flow 1: Flujo de Acceso, Registro y Autenticación Inicial.</em></p>
 
 ---
 
@@ -6464,7 +6466,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-2.png" alt="User Flow 2 - Monitoreo Agronómico y Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.13. User Flow 2: Flujo de Monitoreo Agronómico y Diagnóstico Histórico.</em></p>
+<p align="center"><em>Figura 3.15. User Flow 2: Flujo de Monitoreo Agronómico y Diagnóstico Histórico.</em></p>
 
 ---
 
@@ -6482,7 +6484,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-3.png" alt="User Flow 3 - Gestión de Parcelas y Vinculación de Hardware IoT" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.14. User Flow 3: Flujo de Gestión de Parcelas y Vinculación de Hardware IoT.</em></p>
+<p align="center"><em>Figura 3.16. User Flow 3: Flujo de Gestión de Parcelas y Vinculación de Hardware IoT.</em></p>
 
 ---
 
@@ -6500,7 +6502,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-4.png" alt="User Flow 4 - Navegación Cruzada de Parcela a Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.15. User Flow 4: Flujo de Navegación Cruzada de Parcela a Diagnóstico Histórico.</em></p>
+<p align="center"><em>Figura 3.17. User Flow 4: Flujo de Navegación Cruzada de Parcela a Diagnóstico Histórico.</em></p>
 
 ---
 
@@ -6511,7 +6513,7 @@ El diseño de experiencia de usuario contempla formalmente los escenarios de exc
 <p align="center">
   <img src="assets/images/cap3/unhappy-path.png" alt="Diagrama de Rutas de Excepción (Unhappy Paths)" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.16. Diagrama de Rutas de Excepción y Contingencia (Unhappy Paths).</em></p>
+<p align="center"><em>Figura 3.18. Diagrama de Rutas de Excepción y Contingencia (Unhappy Paths).</em></p>
 
 - **UP1 — Fallos en Registro o Inicio de Sesión (US06 / US07):**
   - *Caso 1.1 (Registro con correo ya registrado):* Si el agricultor intenta registrarse con un correo ya existente en la base de datos, el formulario bloquea la creación, muestra el mensaje de error *"El correo electrónico ya se encuentra registrado"* y provee un enlace directo para recuperar la contraseña o iniciar sesión.
