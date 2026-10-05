@@ -5920,20 +5920,25 @@ En la Landing Page, el logotipo se posiciona principalmente en el encabezado y p
 
 ##### Typography
 
-Para la Landing Page se establece **Roboto** como familia tipográfica principal debido a su legibilidad en interfaces digitales y su correcta adaptación a diferentes resoluciones de pantalla.
+Para la Landing Page se establece **Inter** como familia tipográfica principal. La fuente se autoaloja en el repositorio dentro de `public/fonts/`, con los pesos 400 y 700 y su licencia SIL Open Font License, evitando depender de un servicio externo para la carga tipográfica.
+
+La declaración de la fuente utiliza `font-display: swap`, de modo que el texto se muestra con una tipografía de sistema mientras Inter se descarga, sin bloquear el primer renderizado.
 
 La jerarquía tipográfica propuesta es la siguiente:
 
 | Elemento | Tamaño aproximado | Peso | Uso |
 |:---|:---:|:---:|:---|
-| H1 | 40–48 px | 700 | Mensaje principal del Hero |
-| H2 | 30–36 px | 700 | Títulos de secciones |
-| H3 | 20–24 px | 600 | Títulos de características y tarjetas |
-| Body | 16–18 px | 400 | Textos descriptivos |
+| H1 | 36–56 px | 700 | Mensaje principal del Hero |
+| H2 | 28–36 px | 700 | Títulos de secciones |
+| H3 | 20–24 px | 700 | Títulos de características y tarjetas |
+| Hero description | 18–20 px | 400 | Texto introductorio del Hero |
+| Body | 16 px | 400 | Textos descriptivos, con interlineado 1.5 |
 | Small | 14 px | 400 | Información complementaria |
-| Button | 16 px | 600 | Call To Action |
+| Button | 16 px | 700 | Call To Action |
 
-Para dispositivos móviles, los encabezados reducen progresivamente su tamaño manteniendo un mínimo de 16 px en los textos principales, evitando problemas de lectura y desbordamientos horizontales.
+En Desktop, el H1 alcanza 56 px y el H2 36 px. A partir del breakpoint de 800 px, el H1 se reduce a 36 px y el H2 a 28 px, conservando la jerarquía visual sin provocar desbordamientos horizontales. La descripción del Hero pasa de 20 px a 18 px en ese mismo punto de corte.
+
+Los botones y campos de formulario mantienen una altura mínima de 48 px para asegurar un área de interacción adecuada, y los textos principales se mantienen en 16 px como mínimo para evitar problemas de lectura en pantallas reducidas.
 
 
 ##### Colors
@@ -5943,36 +5948,70 @@ La identidad cromática de la Landing Page mantiene coherencia con la propuesta 
 | Nombre | HEX | Uso principal |
 |:---|:---:|:---|
 | Verde TerraTech | `#2E7D32` | Color principal, botones CTA, títulos destacados e indicadores positivos |
+| Verde TerraTech hover | `#1B5E20` | Estado hover de botones y enlaces principales |
+| Verde TerraTech suave | `#E8F5E9` | Fondos de realce y superficies secundarias |
 | Ámbar TerraTech | `#F59E0B` | Elementos de atención, detalles visuales y estados de precaución |
-| Blanco | `#FFFFFF` | Fondos, tarjetas y contraste |
-| Gris muy claro | `#F5F7F5` | Fondos alternativos entre secciones |
-| Gris oscuro | `#1F2937` | Texto principal |
-| Gris medio | `#6B7280` | Texto secundario |
-| Rojo de alerta | `#D32F2F` | Mensajes de error o estados críticos |
+| Ámbar fondo | `#FEF3C7` | Fondo de los avisos y mensajes preventivos |
+| Ámbar texto | `#92400E` | Texto de los avisos, con contraste suficiente sobre el fondo ámbar |
+| Verde éxito | `#F0FDF4` | Fondo del mensaje de confirmación del formulario |
+| Rojo de alerta | `#EF4444` | Acento de los mensajes de error |
+| Rojo texto | `#B91C1C` | Texto de los mensajes de error, con contraste suficiente sobre fondo blanco |
+| Blanco | `#FFFFFF` | Fondos de tarjetas, superficies y contraste |
+| Gris muy claro | `#F8FAFC` | Fondo general de la página |
+| Gris oscuro | `#0F172A` | Títulos y textos de mayor énfasis |
+| Gris medio | `#334155` | Color base del texto del cuerpo |
+| Gris secundario | `#64748B` | Texto secundario y anotaciones de apoyo |
+| Gris borde | `#E2E8F0` | Bordes de tarjetas, separadores y miniaturas |
+| Gris borde de control | `#CBD5E1` | Bordes de campos de formulario y controles |
 
 El verde `#2E7D32` funciona como color principal por su relación con el sector agrícola y la sostenibilidad. El ámbar `#F59E0B` actúa como color de apoyo para resaltar información que requiere atención.
+
+La paleta se define como variables CSS en un único bloque `:root`, de modo que los estados de interacción, los avisos y los mensajes de error se resuelvan sin duplicar valores hexadecimales a lo largo de la hoja de estilos.
 
 Los colores de estado nunca deben utilizarse como único medio de comunicación. Siempre deben complementarse con texto, íconos o etiquetas para mantener la accesibilidad.
 
 
 ##### Spacing and Layout
 
-La interfaz utiliza una escala de espaciado basada en múltiplos de **8 px**, permitiendo mantener consistencia entre márgenes, paddings, botones, tarjetas y secciones.
+La interfaz utiliza una escala de espaciado basada en múltiplos de **4 px**, declarada como variables CSS en el bloque `:root`. De esta forma, márgenes, paddings, botones, tarjetas y secciones comparten la misma retícula.
 
 | Token | Valor | Uso |
 |:---|:---:|:---|
-| XS | 8 px | Separación mínima |
-| S | 16 px | Padding interno |
-| M | 24 px | Separación entre componentes |
-| L | 32 px | Separación entre bloques |
-| XL | 48 px | Separación entre secciones |
-| 2XL | 64 px | Espacios principales del layout |
+| `--space-1` | 4 px | Separación mínima entre elementos muy próximos |
+| `--space-2` | 8 px | Separación interna breve |
+| `--space-3` | 12 px | Separación interna en componentes compactos |
+| `--space-4` | 16 px | Padding interno estándar |
+| `--space-6` | 24 px | Separación entre componentes |
+| `--space-8` | 32 px | Separación entre bloques |
+| `--space-12` | 48 px | Separación entre grupos de contenido |
+| `--space-16` | 64 px | Espacios amplios del layout |
+| `--space-24` | 96 px | Espacios principales del layout |
+
+Los tokens de layout complementan la escala de espaciado:
+
+| Token | Valor | Uso |
+|:---|:---:|:---|
+| `--container-max` | 1200 px | Ancho máximo del contenedor central |
+| `--control-height` | 48 px | Altura mínima de botones y campos |
+| `--section-space` | 56 px móvil / 96 px desktop | Espaciado vertical entre secciones |
+| `--radius-field` | 8 px | Campos de formulario, avisos y miniaturas |
+| `--radius-button` | 12 px | Botones y controles |
+| `--radius-card` | 16 px | Tarjetas de contenido |
+| `--radius-pill` | 999 px | Etiquetas de formato cerrado, como los tipos de suelo |
 
 La Landing Page utiliza un contenedor central con ancho máximo para evitar líneas de texto excesivamente largas en pantallas grandes. En dispositivos móviles, los componentes se reorganizan verticalmente.
 
 Los botones principales poseen un área suficientemente amplia para facilitar la interacción táctil. Las tarjetas utilizan bordes redondeados, espacio interno uniforme y separación clara entre elementos.
 
-El diseño responsive garantiza la correcta visualización desde pantallas de aproximadamente **320 px de ancho**, evitando desbordamiento horizontal y reorganizando los elementos mediante CSS Flexbox, Grid y media queries.
+El layout es fluido: el contenedor se resuelve con `min(1200px, 100% - 64px)` y la hoja de estilos no define un ancho mínimo, por lo que el contenido se adapta progresivamente al espacio disponible. La adaptación se organiza en tres breakpoints:
+
+| Breakpoint | Ajustes principales |
+|:---:|:---|
+| 1150 px | Las opciones de navegación pasan de etiquetas a botones compactos y el menú colapsa |
+| 800 px | El H1 baja a 36 px y el H2 a 28 px; las secciones pasan a una sola columna |
+| 600 px | Ajustes finos de espaciado y de texto auxiliar |
+
+La reorganización de los componentes se resuelve mediante CSS Grid y Flexbox, evitando desbordamiento horizontal en los anchos evaluados durante la validación de la interfaz.
 
 
 ### 3.1.2. Information Architecture
@@ -5995,28 +6034,38 @@ La estructura principal queda definida de la siguiente manera:
 ```text
 Landing Page TerraTech
 │
-├── Inicio
-│   └── Propuesta de valor + Call To Action
+├── Inicio (#inicio)
+│   ├── Propuesta de valor
+│   ├── Texto introductorio
+│   └── Call To Action: Solicitar demostración
 │
-├── Características
-│   ├── Sensor de Humedad
-│   ├── Sensor de Nutrientes
-│   └── Alertas en Tiempo Real
+├── Beneficios (#beneficios)
+│   ├── Registro e inicio de sesión
+│   ├── Perfil y parcelas
+│   ├── Registro de sensor
+│   ├── Selección de parcela
+│   ├── Indicadores del suelo
+│   ├── Historial de mediciones
+│   └── Consulta sin conexión
 │
-├── Sobre TerraTech
-│   ├── Propósito de la solución
-│   └── NovaTech
+├── Soluciones (#soluciones)
+│   ├── Explicación de la integración sensores + app
+│   ├── Resumen del alcance funcional de la TB1
+│   └── Visor de pantallas de la app (Indicadores, Histórico, Sin conexión)
 │
-├── Nuestro Equipo
-│   └── Integrantes del proyecto
+├── Planes (#planes)
+│   ├── Plan Pro
+│   └── Plan Empresarial
 │
-├── Solicitar Demostración
-│   └── Formulario de contacto
+├── Equipo (#equipo)
+│   └── Cinco integrantes de NovaTech con fotografía, nombre y rol
+│
+├── Contacto (#contacto)
+│   └── Formulario de solicitud de demostración
 │
 └── Footer
-    ├── Términos y condiciones
-    └── Información complementaria
-    
+    ├── Enlaces del proyecto e informe
+    └── Crédito de la fotografía agrícola
 ```
 
 #### 3.1.2.2. Labelling Systems
@@ -6028,58 +6077,71 @@ Las etiquetas se mantienen consistentes entre el Navbar, los títulos de las sec
 | Etiqueta | Propósito |
 |:---|:---|
 | **Inicio** | Presentar la propuesta de valor principal de TerraTech. |
-| **Beneficios** | Resumir el valor que aporta la solución al monitoreo agrícola. |
-| **Características** | Presentar las capacidades principales disponibles para el alcance actual. |
-| **Sobre TerraTech** | Explicar el propósito de la solución y su relación con agricultura e IoT. |
-| **Soluciones** | Mostrar las funcionalidades contempladas para la TB1. |
-| **Planes** | Presentar información comercial y alternativas referenciales de la Landing Page. Al tratarse de una sección de diseño, su presencia en los wireframes y mock-ups no implica que todos los planes se encuentren implementados funcionalmente en esta entrega. |
+| **Beneficios** | Resumir las capacidades que el visitante podrá encontrar en la aplicación. |
+| **Soluciones** | Explicar cómo se relacionan los sensores, los servicios y la aplicación, y mostrar el alcance funcional de la TB1. |
+| **Planes** | Presentar el plan Pro y la opción Empresarial. Al tratarse de una sección de contenido informativa, su presencia no implica que exista una lógica comercial implementada en el backend. |
 | **Equipo** | Presentar al equipo NovaTech responsable del proyecto. |
 | **Contacto** | Permitir que el visitante solicite información o una demostración. |
-| **Solicitar demostración** | Call To Action principal de la Landing Page. |
-| **Términos y condiciones** | Permitir consultar información legal y condiciones generales del servicio. |
+| **Solicitar demostración** | Call To Action principal, presente en el Hero, en el Header y en el formulario. |
+| **Conocer funcionalidades** | Call To Action secundario que dirige a la sección de Beneficios. |
+| **Contactar con nosotros** | Call To Action asociado al plan Empresarial. |
 
-En las secciones asociadas con la TB1 se utilizan etiquetas que reflejan directamente las historias que serán presentadas: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores en tiempo real**, **Historial de mediciones** y **Consulta sin conexión**.
+En la sección de Beneficios se utilizan siete etiquetas que reflejan directamente las historias priorizadas de la TB1: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores del suelo**, **Historial de mediciones** y **Consulta sin conexión**.
+
+La sección de Soluciones presenta un resumen del alcance funcional con las etiquetas **Acceso seguro**, **Parcelas y perfil**, **Sensores asociados**, **Últimas mediciones**, **Histórico de 7 y 30 días** e **Información descargada**. El visor de pantallas de la aplicación se opera mediante tres pestañas: **Indicadores**, **Histórico** y **Sin conexión**.
+
+Los títulos de sección emplean las etiquetas **Beneficios y características**, **Tecnología para conocer mejor tu suelo**, **Elige cómo empezar con TerraTech**, **Equipo NovaTech** y **Solicita una demostración**, manteniendo correspondencia con la función que cumple cada bloque.
 
 Los Call To Action utilizan expresiones directas como **“Solicitar demostración”** y **“Conocer funcionalidades”**, reduciendo ambigüedad y facilitando que el visitante comprenda la acción disponible.
+
+La Landing Page se publica en **español e inglés**, con el español como idioma predeterminado. El usuario cambia de idioma mediante un selector **ES / EN** situado en el Header. Ninguna etiqueta se escribe directamente en el HTML: todas se gestionan como claves de traducción en los diccionarios `public/i18n/es.json` y `public/i18n/en.json`, que el motor de `public/js/i18n.js` carga y aplica sobre la página mediante atributos `data-i18n`, sin recurrir a librerías externas.
+
+La cobertura de traducción comprende el contenido, la navegación, las etiquetas del formulario, los mensajes de validación y confirmación, los textos accesibles y los metadatos del documento. Este último punto se detalla en `3.1.2.3 SEO Tags and Meta Tags`.
+
+La preferencia de idioma se guarda en `localStorage`, por lo que se conserva al recargar la página. Las capturas originales de la aplicación Android permanecen en español, por lo que no se traducen; lo que sí se traduce son sus descripciones y textos alternativos, y el visor de pantallas informa de manera explícita el idioma original de las imágenes.
+
+Si la carga de los diccionarios falla, la página conserva el contenido original en español y los controles que dependen de la traducción permanecen deshabilitados, evitando presentar una interfaz incompleta. Al utilizar `fetch`, la Landing Page requiere servirse sobre HTTP; abrir el archivo `index.html` directamente desde el sistema de archivos no permite cargar los diccionarios, por lo que la revisión local se realiza mediante un servidor como Live Server o `python -m http.server`.
 
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
-La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
+La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores, redes sociales y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
 
 **Title**
 
 ```text
-TerraTech | Agricultura inteligente y monitoreo del suelo
+TerraTech | Monitorea tu parcela con datos del suelo
 ```
 
 **Description**
 
 ```text
-TerraTech integra sensores IoT y una aplicación móvil para gestionar parcelas, consultar humedad, temperatura y nutrientes del suelo, revisar mediciones históricas y acceder a información previamente descargada.
+Gestiona parcelas y sensores, consulta indicadores del suelo y revisa el histórico de humedad con TerraTech. Plan Pro por S/ 50 al mes.
 ```
 
-**Keywords**
-
-```text
-TerraTech, agricultura inteligente, agricultura de precisión,
-sensores IoT, humedad del suelo, temperatura del suelo,
-nutrientes del suelo, monitoreo agrícola, historial de mediciones,
-aplicación Android, tecnología agrícola
-```
-
-Los principales Meta Tags considerados son:
+Los metadatos implementados son:
 
 | Meta Tag | Valor |
 |:---|:---|
-| Charset | `UTF-8` |
-| Viewport | `width=device-width, initial-scale=1.0` |
-| Author | `NovaTech` |
-| Robots | `index, follow` |
-| Language | `es-PE` |
-| Content-Type | `text/html; charset=UTF-8` |
+| Charset | `utf-8` |
+| Viewport | `width=device-width, initial-scale=1` |
+| Theme color | `#2e7d32` |
+| Language (`html lang`) | `es` |
+| Open Graph title | `TerraTech \| Monitorea tu parcela con datos del suelo` |
+| Open Graph description | Igual que la descripción del documento |
+| Open Graph type | `website` |
+| Open Graph locale | `es_PE` |
+| Favicon | `public/favicon.svg`, declarado como imagen SVG |
+| Preload de fuentes | `inter-regular.ttf` e `inter-bold.ttf`, con `crossorigin` |
+| Scripts | `i18n.js` y `main.js`, cargados con `defer` |
 
-La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. A su vez, `title` y `description` describen el producto sin atribuir funcionalidades que no se encuentran dentro del alcance actual de la TB1.
+El atributo `lang` del elemento raíz declara el idioma del documento y se actualiza al cambiar el idioma de la interfaz, de modo que los lectores de pantalla interpretan el texto con la pronunciación correspondiente.
+
+La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. El color de tema hace que la barra de direcciones del navegador móvil adopte el verde institucional de TerraTech.
+
+Los metadatos de Open Graph permiten que el enlace compartido en redes sociales muestre el título, la descripción y el idioma correctos. El `title` y la `description` se gestionan además desde los diccionarios de idioma, por lo que cada versión de la página declara sus propios valores.
+
+La precarga de las dos variantes de Inter evita que la tipografía principal se descargue después del primer renderizado, reduciendo el desplazamiento visual del texto.
 
 
 #### 3.1.2.4. Searching Systems
@@ -6094,7 +6156,7 @@ Esta decisión responde a tres criterios:
 - El número de secciones es reducido y fácilmente identificable.
 - Incorporar una barra de búsqueda no aportaría valor adicional en el alcance actual.
 
-El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las características, la información sobre TerraTech, las funcionalidades incluidas en la TB1 y el formulario de contacto mediante la navegación principal.
+El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las soluciones, los planes, el equipo y el formulario de contacto mediante la navegación principal.
 
 En futuras iteraciones, si TerraTech incorpora documentación, artículos, catálogos extensos u otros contenidos de mayor volumen, podría evaluarse la incorporación de un mecanismo de búsqueda específico.
 
@@ -6106,20 +6168,32 @@ La Landing Page de TerraTech utiliza un sistema de navegación global mediante u
 La navegación sigue una estructura lineal y predecible:
 
 ```text
-Inicio → Beneficios → Características → Sobre TerraTech → Soluciones → Planes → Equipo → Contacto
+Inicio → Beneficios → Soluciones → Planes → Equipo → Contacto
 ```
 
-Cada opción puede asociarse a un identificador HTML para desplazar al usuario hacia la sección correspondiente dentro de la misma página.
+Cada opción se asocia a un identificador HTML que desplaza al usuario hacia la sección correspondiente dentro de la misma página.
 
-El botón **“Solicitar demostración”** funciona como Call To Action principal y dirige al visitante hacia el formulario de contacto.
+Como primer elemento enfocable del documento, la Landing Page incluye un enlace de salto **“Ir al contenido”** que permite a quien navega con teclado o lector de pantalla saltar directamente al contenido principal, evitando recorrer el Header en cada visita.
+
+El botón **“Solicitar demostración”** funciona como Call To Action principal, presente en el Header, en el Hero y en el propio formulario, y dirige al visitante hacia la sección de contacto.
 
 En Desktop, las opciones principales permanecen visibles horizontalmente. En Mobile, el menú se adapta a un formato de tipo hamburguesa controlado mediante JavaScript para reducir el espacio ocupado por la navegación.
 
-La navegación entre secciones puede complementarse mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú puede cerrarse automáticamente y desplazar al usuario hacia el contenido correspondiente.
+La navegación entre secciones se resuelve mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú se cierra automáticamente y el contenido se desplaza hasta la sección correspondiente.
 
-El Footer complementa la navegación proporcionando acceso a información institucional, términos y condiciones y otros enlaces relevantes.
+El Footer complementa la navegación proporcionando acceso directo a los enlaces del proyecto y del informe, e incluye el crédito de la fotografía agrícola utilizada.
 
-Debe considerarse que las secciones comerciales reutilizadas en la Landing Page, como **Planes**, funcionan como contenido informativo y de diseño. Su presencia en los wireframes y mock-ups permite documentar la estructura visual completa de la Landing Page, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+Debe considerarse que las secciones comerciales de la Landing Page, como **Planes**, funcionan como contenido informativo. Su presencia permite documentar la estructura visual completa del sitio, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+
+La interfaz incorpora además un conjunto de medidas de accesibilidad orientadas a garantizar que el contenido sea operable mediante teclado y comprensible por tecnologías de asistencia.
+
+Como primer elemento enfocable del documento, la Landing Page incluye un enlace de salto **“Ir al contenido”** dirigido al contenido principal. El atributo `lang` del elemento raíz declara el idioma y se actualiza según el idioma activo, mientras que cada `section` referencia su título mediante `aria-labelledby` y el navbar y el selector de idioma incorporan su propio `aria-label`. La biblioteca de iconos SVG se marca como `aria-hidden` por tratarse de elementos decorativos.
+
+El visor de pantallas de la aplicación se implementa como `tablist` con `tab` y `tabpanel`, navegable con teclado y con gestión del foco. El formulario emplea `novalidate` con validación propia, asocia a cada campo su ayuda y su error mediante `aria-describedby`, y muestra los resultados en un contenedor con `role="status"`, `aria-live="polite"` y `aria-atomic`, de modo que el mensaje se anuncia sin interrumpir al usuario.
+
+El foco visible se representa mediante un contorno de 2 px en el color institucional, separado 4 px del elemento, y se respeta la preferencia `prefers-reduced-motion` desactivando las transiciones. Las imágenes declaran sus dimensiones para evitar desplazamientos de layout, y las del visor emplean carga diferida.
+
+El botón de envío permanece deshabilitado mientras el formulario no sea válido y muestra un indicador de carga durante el procesamiento, lo que evita envíos duplicados y comunica el estado de la operación al usuario.
 
 
 ### 3.1.3. Landing Page UI Design
