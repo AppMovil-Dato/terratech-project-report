@@ -6595,17 +6595,19 @@ El objetivo prioriza la consulta de datos de una parcela propia y su continuidad
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
-La matriz LACX relaciona la responsabilidad registrada en el informe con los aspectos de este incremento. **L** significa líder del aspecto, **C** colaborador y **—** participación no acreditada en esta revisión. El informe previo atribuye a Jorge el backend base, a Angel el UX móvil, a James el diseño de Landing Page y a Bryan la documentación de validación; esos aportes se mantienen. La ampliación de backend, Android, pruebas y despliegue tiene commits verificables de `Lucemz`. La matriz debe ratificarse con el equipo; no se atribuyen implementaciones de seguridad o pruebas a un integrante sin sus commits.
+La matriz LACX relaciona la responsabilidad registrada en el informe con los aspectos de este incremento. **L** significa líder del aspecto, **C** colaborador y **—** participación no acreditada en esta revisión. El informe previo atribuye a Jorge el backend base, a Angel el UX móvil, a James el diseño de Landing Page y a Bryan la documentación de validación; esos aportes se mantienen. La ampliación de backend, Android, pruebas y despliegue tiene commits verificables de `Lucemz`. La implementación de la Landing Page en HTML5, CSS3 y JavaScript, con internationalización ES/EN y publicación en GitHub Pages, tiene commits verificables de `bry4nbe` en `LandingPage-TerraTech`; ese repositorio no incluye pruebas automatizadas, por lo que no se acredita cobertura de pruebas para ese producto. La matriz debe ratificarse con el equipo; no se atribuyen implementaciones de seguridad o pruebas a un integrante sin sus commits.
 
-| Team Member | GitHub Username | Backend base / arquitectura | Cierre backend / MySQL / Cloud Run | Implementación Android / Room / pruebas | UX móvil | Diseño Landing Page | Documentación de validación |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | C | L | L | C | — | C |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407 | L | C | — | — | — | — |
-| Pariona Chacca, Angel Jose | Angelitoso-opp | — | — | — | L | — | — |
-| Delgado Perez, James Caleb | JAmsy06 | — | — | — | — | L | — |
-| Barba Estrada, Bryan Eduardo | bry4nbe | — | — | — | — | — | L |
+| Team Member | GitHub Username | Backend base / arquitectura | Cierre backend / MySQL / Cloud Run | Implementación Android / Room / pruebas | UX móvil | Diseño Landing Page | Implementación Landing Page / ES-EN / Pages | Documentación de validación |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | C | L | L | C | — | — | C |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | L | C | — | — | — | — | — |
+| Pariona Chacca, Angel Jose | Angelitoso-opp | — | — | — | L | — | — | — |
+| Delgado Perez, James Caleb | JAmsy06 | — | — | — | — | L | — | — |
+| Barba Estrada, Bryan Eduardo | bry4nbe | — | — | — | — | — | L | L |
 
-La tecnología efectiva es **C#, ASP.NET Core .NET 10, Entity Framework Core y MySQL** para backend; **Kotlin, Compose, MVVM/StateFlow, Hilt, Retrofit, Room y DataStore** para Android. Las menciones anteriores a Spring Security, JPA/Hibernate, Spring Data y PostgreSQL no describían esta implementación y se corrigen en este Sprint.
+La行列a de implementación de la Landing Page distingue el código del diseño: el diseño de 3.1.3 corresponde a Delgado Perez, James Caleb, mientras que el código HTML5, CSS3 y JavaScript, los diccionarios de idioma y la publicación en GitHub Pages corresponden a Barba Estrada, Bryan Eduardo. Bryan además verificó y ajustó la documentación de 3.1 y 3.1.2 contra el sitio publicado, sin modificar la autoría del diseño.
+
+La tecnología efectiva es **C#, ASP.NET Core .NET 10, Entity Framework Core y MySQL** para backend; **Kotlin, Compose, MVVM/StateFlow, Hilt, Retrofit, Room y DataStore** para Android; **HTML5, CSS3 y JavaScript sin dependencias de frontend**, con diccionarios JSON para el bilingüismo ES/EN, para la Landing Page. Las menciones anteriores a Spring Security, JPA/Hibernate, Spring Data y PostgreSQL no describían esta implementación y se corrigen en este Sprint.
 
 #### 4.2.1.3. Sprint Backlog 1
 
