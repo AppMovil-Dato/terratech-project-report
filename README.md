@@ -5902,7 +5902,7 @@ El tono de comunicación de TerraTech se define como **claro, confiable, cercano
 
 La comunicación no pretende reemplazar el criterio de un especialista ni presentar las recomendaciones de TerraTech como diagnósticos definitivos. Por ello, los mensajes se formulan como información y apoyo para la toma de decisiones.
 
-Los llamados a la acción utilizan expresiones directas y breves, como **“Conoce TerraTech”**, **“Ver características”** y **“Solicitar demostración”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
+Los llamados a la acción utilizan expresiones directas y breves, como **“Solicitar demostración”**, **“Conocer funcionalidades”** y **“Contactar con nosotros”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
 
 
 ##### Branding
@@ -5915,7 +5915,9 @@ El logotipo utilizado en el proyecto se mantiene como principal identificador vi
   <img src="assets/images/cap2/terratech-logo.png" alt="Logo de TerraTech" width="220">
 </p>
 
-En la Landing Page, el logotipo se posiciona principalmente en el encabezado y puede volver a utilizarse de manera secundaria en el Footer. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+En la Landing Page, la marca se representa mediante un **símbolo vectorial de hoja** acompañado del nombre de TerraTech como texto. El símbolo se declara una sola vez como biblioteca de iconos SVG y se reutiliza mediante referencias en el encabezado y en el Footer, adoptando el color de la marca a través de la propiedad `currentColor`. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+
+El uso de un símbolo vectorial en lugar de una imagen rasterizada permite conservar la nitidez en cualquier resolución y adaptar el color al estado de la interfaz sin requerir variantes adicionales del logotipo. El archivo de imagen se reserva para los artefactos de documentación del proyecto.
 
 
 ##### Typography
@@ -6193,7 +6195,6 @@ El visor de pantallas de la aplicación se implementa como `tablist` con `tab` y
 
 El foco visible se representa mediante un contorno de 2 px en el color institucional, separado 4 px del elemento, y se respeta la preferencia `prefers-reduced-motion` desactivando las transiciones. Las imágenes declaran sus dimensiones para evitar desplazamientos de layout, y las del visor emplean carga diferida.
 
-El botón de envío permanece deshabilitado mientras el formulario no sea válido y muestra un indicador de carga durante el procesamiento, lo que evita envíos duplicados y comunica el estado de la operación al usuario.
 
 
 ### 3.1.3. Landing Page UI Design
