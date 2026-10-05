@@ -20,6 +20,7 @@ La sección 4.2.1 del README desarrolla los nueve subpuntos exigidos por el entr
 
 | Pendiente | Información/captura solicitada | Dónde se incorpora |
 | --- | --- | --- |
+| Student Outcome individual | Jorge: completar acciones TB1 en ambos criterios y relacionarlas con evidencias propias. Los otros cuatro integrantes ya cuentan con acciones TB1. Las conclusiones del cuadro son grupales y acumulativas AV1/TB1; las reflexiones previas se conservan en anexo | Student Outcome |
 | Acta real de Sprint Planning | Fecha, hora, lugar/plataforma, asistentes reales, objetivo acordado y capacidad/velocidad comprometida. Confirmar la matriz LACX propuesta. Si no hubo reunión, indicar esa situación y registrar el acuerdo real posterior | 4.2.1.1 y 4.2.1.2 |
 | Tablero del Sprint | Enlace público o acceso de lectura; captura con Sprint 1, IDs de las ocho HU, tareas, responsables y estados. Incorporar estimaciones en horas y estimación de HU-OFF01 acordadas; no derivarlas de los commits | 2.4.3 y 4.2.1.3 |
 | Registro y errores Android | Captura del formulario con confirmación; validación de campos/contraseñas distintas; correo duplicado y credenciales incorrectas. No mostrar contraseñas ni datos personales reales | 4.2.1.5 y 4.2.1.6 |
