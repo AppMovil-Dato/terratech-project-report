@@ -6626,7 +6626,8 @@ El backlog descompone el recorrido en tareas comprobables. La captura y URL púb
 | Transversal | Contrato desplegado | S1-13 | Cambiar API_URL Android a dominio HTTPS; comprobar BuildConfig y 11 rutas Retrofit | NR | RF | Done |
 | Transversal | Aceptación física | S1-14 | Recorrer el APK en teléfono mediante clics y reiniciar offline; adjuntar dispositivo/versión/resultado | NR | RF / equipo | To-do |
 | Transversal | Informe y exposición | S1-15 | Completar nueve subpuntos, anexar capturas públicas/board/analíticos y subir video de navegación | NR | RF / equipo | To-Review |
-| US01-US05 | Landing Page | S1-16 | Incorporar repositorio/commit de implementación, URL publicada, pruebas y ejecución; conservar diseños de 3.1.3 | NR | Responsable por confirmar | To-Review |
+| US01, US03, US05 | Landing Page | S1-16 | Repositorio, commits de implementación, publicación en GitHub Pages y conservación de los diseños de 3.1.3 | NR | Barba Estrada, Bryan Eduardo | Done |
+| US02, US04 | Landing Page | S1-17 | US02 exige tres características de sensor y US04 una consulta de términos y condiciones; ninguna se implementó, por lo que el alcance de la Landing Page se limita a US01, US03 y US05 | NR | Barba Estrada, Bryan Eduardo | To-do |
 
 No se declara recepción de telemetría de hardware físico: el catálogo y las lecturas de demostración se provisionan mediante comandos explícitos en Development y se bloquean en Production. El servidor publicado crea el esquema, no usuarios/contraseñas ni lecturas automáticamente.
 
@@ -6636,7 +6637,7 @@ El backend heredado se amplió para el recorrido móvil: identidad JWT estándar
 
 Android se organiza bajo `iam`, `profile`, `monitoring` y `core`, con capas `domain`, `application`, `infrastructure` y `presentation` en los contextos de negocio. ViewModels exponen StateFlow; los casos de uso aplican reglas de dominio; Retrofit, DTOs, entidades/DAOs Room y repositorios concretos permanecen en infraestructura. Hilt resuelve dependencias. Room almacena consultas y DataStore preferencias/selección y material de sesión protegido; no se persisten contraseñas.
 
-**Repositorios:** [backend](https://github.com/AppMovil-Dato/BackEnd-TerraTech), [Android](https://github.com/AppMovil-Dato/App-Android-Terratech), [informe](https://github.com/AppMovil-Dato/terratech-project-report). Los commits siguientes se inspeccionaron en los repositorios; cuando no existe cuerpo de mensaje se indica «Sin cuerpo» en lugar de inventarlo.
+**Repositorios:** [backend](https://github.com/AppMovil-Dato/BackEnd-TerraTech), [Android](https://github.com/AppMovil-Dato/App-Android-Terratech), [Landing Page](https://github.com/AppMovil-Dato/LandingPage-TerraTech) e [informe](https://github.com/AppMovil-Dato/terratech-project-report). Los commits siguientes se inspeccionaron en los repositorios; cuando no existe cuerpo de mensaje se indica «Sin cuerpo» en lugar de inventarlo.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date, Lima) |
 | --- | --- | --- | --- | --- | --- |
@@ -6647,8 +6648,13 @@ Android se organiza bajo `iam`, `profile`, `monitoring` y `core`, con capas `dom
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [23d71c1](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/23d71c1) | feat: implement TB1 Android journey with offline cache and verified tests | Sin cuerpo | 04/10/2026 |
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [6296024](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/6296024) | refactor: separate Android types screens content and context infrastructure | Sin cuerpo | 04/10/2026 |
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [3f4c4d6](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/3f4c4d6) | fix: point Android app to deployed TerraTech API | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [6000acd](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/6000acd) | feat(assets): add TerraTech visual resources | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [0ee2179](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/0ee2179) | feat(landing): build responsive page layout | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [284a6d5](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/284a6d5) | feat(i18n): add bilingual interactions and form simulation | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [353acd3](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/353acd3) | refactor(landing): organize public assets and load translations from JSON | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [ff7785e](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/ff7785e) | docs(readme): document project structure and internationalization | Sin cuerpo | 04/10/2026 |
 
-El diseño de Landing Page se documenta en 3.1.3; no se confunden wireframes/mockups con código desplegado. Los commits de implementación de ese producto están pendientes de incorporar.
+El diseño de Landing Page se documenta en 3.1.3; no se confunden wireframes/mockups con código desplegado. La implementación en HTML5, CSS3 y JavaScript puro, sin dependencias de frontend, se traza mediante los commits de `LandingPage-TerraTech` listados en 4.2.1.4 e incluye el diseño bilingüe ES/EN con diccionarios JSON cargados por `fetch`. El sitio se publica desde `main` en GitHub Pages: https://appmovil-dato.github.io/LandingPage-TerraTech/. El repositorio no incluye pruebas automatizadas, por lo que el comportamiento del formulario y del selector de idioma no cuenta con una suite ejecutada que lo acredite.
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
@@ -6738,7 +6744,7 @@ El backend está desplegado en **Google Cloud Run**, proyecto `terratech-510620`
 | Inicialización | La base defaultdb existente en Aiven recibió las migraciones Initial y Tb1Journey al arrancar. DatabaseInitializer puede crear una base ausente con permisos apropiados y coordina instancias mediante bloqueo de MySQL |
 | Verificación pública | Dominio propio verificado con curl: salud y Swagger 200; /users/me sin JWT 401. La URL predeterminada de Cloud Run está deshabilitada y responde 404. El archivo separa estas comprobaciones fechadas de las diez verificaciones anteriores sin timestamp; no se publican logs con credenciales |
 | Android | Commit 3f4c4d6 cambia API_URL por defecto a https://terratech-api.lucemz.com/. AssembleDebug, 32 unitarias y lint aprobados; APK instalable local, sin publicación en Play Store |
-| Landing Page | Diseños documentados; URL/repo de implementación, deploy y validación HTTP pendientes de aportar por el equipo |
+| Landing Page | Diseño en 3.1.3 e implementación en HTML5, CSS3 y JavaScript sin dependencias, con internationalización ES/EN. Publicada en GitHub Pages desde `main` en https://appmovil-dato.github.io/LandingPage-TerraTech/ con el commit ff7785e. La verificación consistió en comprobar que la URL pública devuelve el documento esperado en español, con las seis secciones, siete beneficios, tres pestañas del visor de pantallas, dos planes y el formulario de prueba; no se adjuntan volcado de red, cabeceras ni revisión de Lighthouse, y el repositorio no incluye pruebas automatizadas |
 
 El dominio público responde mediante Cloudflare delante del servicio. La comprobación usa GET con curl: un recolector con urllib recibió 403, por lo que se registra el método y no se interpreta ese bloqueo como fallo de arranque del backend. El certificado HTTPS público corresponde al dominio publicado. La conexión MySQL utiliza SslMode=Required; eso cifra la conexión, pero **no se afirma validación completa del certificado del servidor**. VerifyFull requiere montar la CA y actualizar la conexión. Ningún certificado, contraseña, JWT o archivo local de credenciales se incorpora al reporte.
 
@@ -6760,7 +6766,7 @@ El incremento reutiliza el backend anterior y los artefactos de dominio y UI del
 | Android | Implementación, validación, refactor y URL desplegada en feature/tb1-android; [historial](https://github.com/AppMovil-Dato/App-Android-Terratech/commits/feature/tb1-android/) |
 | Informe | main 433e395 se actualizó por fast-forward. develop 1aa2092 contenía además PR #7 y los cambios de diseño Landing Page; fue la base más reciente e incluía main |
 | Rama individual | feature/rubens-fitzgerald-tb1-sprint1, creada desde origin/develop 1aa2092; integra los nueve subpuntos y evidencia en una rama independiente para revisión |
-| Landing Page | La documentación de diseño no prueba contribuciones de código al producto; incorporar repositorio y analíticos cuando se disponga de esa evidencia |
+| Landing Page | Implementación, internacionalización y publicación en GitHub Pages atribuidas a Barba Estrada, Bryan Eduardo mediante los commits de `LandingPage-TerraTech`; [historial](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commits/main/) y [sitio publicado](https://appmovil-dato.github.io/LandingPage-TerraTech/). El diseño de 3.1.3 corresponde a Delgado Perez, James Caleb y se documenta por separado, sin atribuirle código. Faltan las capturas de analíticos de GitHub y las pantallas Desktop y Mobile reales que exige el checklist |
 
 **Interpretación:** separar contextos y archivos facilitó revisar cambios sin agrupar pantallas, DTOs y lógica; el contrato compartido evitó modificar rutas al cambiar de servidor local a Cloud Run. Las pruebas de dos cuentas y reinicio offline hicieron visible el trabajo de seguridad/persistencia. El fallo de despliegue se resolvió contrastando el error real y el formato de conexión, no cambiando el puerto de MySQL por el de HTTP.
 
