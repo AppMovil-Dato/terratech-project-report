@@ -5436,9 +5436,11 @@ solución:
         Almacena localmente información previamente obtenida y los datos que requieran sincronización 
         posterior, permitiendo consultar información disponible cuando no exista conexión y
         actualizarla cuando se recupere la conectividad.
-    3.  **Web Landing Page (HTML5 / CSS3 / JavaScript / Vue):** Sitio web
-        institucional responsivo optimizado para SEO, presentación
-        comercial y descarga del archivo APK de la aplicación móvil.
+    3.  **Web Landing Page (HTML5 / CSS3 / JavaScript):** Sitio web
+        institucional responsivo, sin dependencias de frontend ni paso de
+        compilación. Presenta el producto, el alcance funcional, los planes
+        y el equipo, y deriva a la solicitud de demostración. La versión
+        bilingüe ES/EN se carga desde diccionarios JSON.
     4.  **Backend REST API (C# / ASP.NET Core):** API modular organizada mediante capas de Domain,
          Application, Interface e Infrastructure. Expone endpoints REST consumidos por la aplicación móvil
          y utiliza mecanismos de autenticación y autorización basados en JWT.
@@ -5902,7 +5904,7 @@ El tono de comunicación de TerraTech se define como **claro, confiable, cercano
 
 La comunicación no pretende reemplazar el criterio de un especialista ni presentar las recomendaciones de TerraTech como diagnósticos definitivos. Por ello, los mensajes se formulan como información y apoyo para la toma de decisiones.
 
-Los llamados a la acción utilizan expresiones directas y breves, como **“Conoce TerraTech”**, **“Ver características”** y **“Solicitar demostración”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
+Los llamados a la acción utilizan expresiones directas y breves, como **“Solicitar demostración”**, **“Conocer funcionalidades”** y **“Contactar con nosotros”**, facilitando que el visitante identifique rápidamente las acciones disponibles.
 
 
 ##### Branding
@@ -5915,25 +5917,32 @@ El logotipo utilizado en el proyecto se mantiene como principal identificador vi
   <img src="assets/images/cap2/terratech-logo.png" alt="Logo de TerraTech" width="220">
 </p>
 
-En la Landing Page, el logotipo se posiciona principalmente en el encabezado y puede volver a utilizarse de manera secundaria en el Footer. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+En la Landing Page, la marca se representa mediante un **símbolo vectorial de hoja** acompañado del nombre de TerraTech como texto. El símbolo se declara una sola vez como biblioteca de iconos SVG y se reutiliza mediante referencias en el encabezado y en el Footer, adoptando el color de la marca a través de la propiedad `currentColor`. Se mantiene espacio suficiente alrededor del identificador para evitar interferencia con los elementos de navegación.
+
+El uso de un símbolo vectorial en lugar de una imagen rasterizada permite conservar la nitidez en cualquier resolución y adaptar el color al estado de la interfaz sin requerir variantes adicionales del logotipo. El archivo de imagen se reserva para los artefactos de documentación del proyecto.
 
 
 ##### Typography
 
-Para la Landing Page se establece **Roboto** como familia tipográfica principal debido a su legibilidad en interfaces digitales y su correcta adaptación a diferentes resoluciones de pantalla.
+Para la Landing Page se establece **Inter** como familia tipográfica principal. La fuente se autoaloja en el repositorio dentro de `public/fonts/`, con los pesos 400 y 700 y su licencia SIL Open Font License, evitando depender de un servicio externo para la carga tipográfica.
+
+La declaración de la fuente utiliza `font-display: swap`, de modo que el texto se muestra con una tipografía de sistema mientras Inter se descarga, sin bloquear el primer renderizado.
 
 La jerarquía tipográfica propuesta es la siguiente:
 
 | Elemento | Tamaño aproximado | Peso | Uso |
 |:---|:---:|:---:|:---|
-| H1 | 40–48 px | 700 | Mensaje principal del Hero |
-| H2 | 30–36 px | 700 | Títulos de secciones |
-| H3 | 20–24 px | 600 | Títulos de características y tarjetas |
-| Body | 16–18 px | 400 | Textos descriptivos |
+| H1 | 36–56 px | 700 | Mensaje principal del Hero |
+| H2 | 28–36 px | 700 | Títulos de secciones |
+| H3 | 20–24 px | 700 | Títulos de características y tarjetas |
+| Hero description | 18–20 px | 400 | Texto introductorio del Hero |
+| Body | 16 px | 400 | Textos descriptivos, con interlineado 1.5 |
 | Small | 14 px | 400 | Información complementaria |
-| Button | 16 px | 600 | Call To Action |
+| Button | 16 px | 700 | Call To Action |
 
-Para dispositivos móviles, los encabezados reducen progresivamente su tamaño manteniendo un mínimo de 16 px en los textos principales, evitando problemas de lectura y desbordamientos horizontales.
+En Desktop, el H1 alcanza 56 px y el H2 36 px. A partir del breakpoint de 800 px, el H1 se reduce a 36 px y el H2 a 28 px, conservando la jerarquía visual sin provocar desbordamientos horizontales. La descripción del Hero pasa de 20 px a 18 px en ese mismo punto de corte.
+
+Los botones y campos de formulario mantienen una altura mínima de 48 px para asegurar un área de interacción adecuada, y los textos principales se mantienen en 16 px como mínimo para evitar problemas de lectura en pantallas reducidas.
 
 
 ##### Colors
@@ -5943,36 +5952,70 @@ La identidad cromática de la Landing Page mantiene coherencia con la propuesta 
 | Nombre | HEX | Uso principal |
 |:---|:---:|:---|
 | Verde TerraTech | `#2E7D32` | Color principal, botones CTA, títulos destacados e indicadores positivos |
+| Verde TerraTech hover | `#1B5E20` | Estado hover de botones y enlaces principales |
+| Verde TerraTech suave | `#E8F5E9` | Fondos de realce y superficies secundarias |
 | Ámbar TerraTech | `#F59E0B` | Elementos de atención, detalles visuales y estados de precaución |
-| Blanco | `#FFFFFF` | Fondos, tarjetas y contraste |
-| Gris muy claro | `#F5F7F5` | Fondos alternativos entre secciones |
-| Gris oscuro | `#1F2937` | Texto principal |
-| Gris medio | `#6B7280` | Texto secundario |
-| Rojo de alerta | `#D32F2F` | Mensajes de error o estados críticos |
+| Ámbar fondo | `#FEF3C7` | Fondo de los avisos y mensajes preventivos |
+| Ámbar texto | `#92400E` | Texto de los avisos, con contraste suficiente sobre el fondo ámbar |
+| Verde éxito | `#F0FDF4` | Fondo del mensaje de confirmación del formulario |
+| Rojo de alerta | `#EF4444` | Acento de los mensajes de error |
+| Rojo texto | `#B91C1C` | Texto de los mensajes de error, con contraste suficiente sobre fondo blanco |
+| Blanco | `#FFFFFF` | Fondos de tarjetas, superficies y contraste |
+| Gris muy claro | `#F8FAFC` | Fondo general de la página |
+| Gris oscuro | `#0F172A` | Títulos y textos de mayor énfasis |
+| Gris medio | `#334155` | Color base del texto del cuerpo |
+| Gris secundario | `#64748B` | Texto secundario y anotaciones de apoyo |
+| Gris borde | `#E2E8F0` | Bordes de tarjetas, separadores y miniaturas |
+| Gris borde de control | `#CBD5E1` | Bordes de campos de formulario y controles |
 
 El verde `#2E7D32` funciona como color principal por su relación con el sector agrícola y la sostenibilidad. El ámbar `#F59E0B` actúa como color de apoyo para resaltar información que requiere atención.
+
+La paleta se define como variables CSS en un único bloque `:root`, de modo que los estados de interacción, los avisos y los mensajes de error se resuelvan sin duplicar valores hexadecimales a lo largo de la hoja de estilos.
 
 Los colores de estado nunca deben utilizarse como único medio de comunicación. Siempre deben complementarse con texto, íconos o etiquetas para mantener la accesibilidad.
 
 
 ##### Spacing and Layout
 
-La interfaz utiliza una escala de espaciado basada en múltiplos de **8 px**, permitiendo mantener consistencia entre márgenes, paddings, botones, tarjetas y secciones.
+La interfaz utiliza una escala de espaciado basada en múltiplos de **4 px**, declarada como variables CSS en el bloque `:root`. De esta forma, márgenes, paddings, botones, tarjetas y secciones comparten la misma retícula.
 
 | Token | Valor | Uso |
 |:---|:---:|:---|
-| XS | 8 px | Separación mínima |
-| S | 16 px | Padding interno |
-| M | 24 px | Separación entre componentes |
-| L | 32 px | Separación entre bloques |
-| XL | 48 px | Separación entre secciones |
-| 2XL | 64 px | Espacios principales del layout |
+| `--space-1` | 4 px | Separación mínima entre elementos muy próximos |
+| `--space-2` | 8 px | Separación interna breve |
+| `--space-3` | 12 px | Separación interna en componentes compactos |
+| `--space-4` | 16 px | Padding interno estándar |
+| `--space-6` | 24 px | Separación entre componentes |
+| `--space-8` | 32 px | Separación entre bloques |
+| `--space-12` | 48 px | Separación entre grupos de contenido |
+| `--space-16` | 64 px | Espacios amplios del layout |
+| `--space-24` | 96 px | Espacios principales del layout |
+
+Los tokens de layout complementan la escala de espaciado:
+
+| Token | Valor | Uso |
+|:---|:---:|:---|
+| `--container-max` | 1200 px | Ancho máximo del contenedor central |
+| `--control-height` | 48 px | Altura mínima de botones y campos |
+| `--section-space` | 56 px móvil / 96 px desktop | Espaciado vertical entre secciones |
+| `--radius-field` | 8 px | Campos de formulario, avisos y miniaturas |
+| `--radius-button` | 12 px | Botones y controles |
+| `--radius-card` | 16 px | Tarjetas de contenido |
+| `--radius-pill` | 999 px | Etiquetas de formato cerrado, como los tipos de suelo |
 
 La Landing Page utiliza un contenedor central con ancho máximo para evitar líneas de texto excesivamente largas en pantallas grandes. En dispositivos móviles, los componentes se reorganizan verticalmente.
 
 Los botones principales poseen un área suficientemente amplia para facilitar la interacción táctil. Las tarjetas utilizan bordes redondeados, espacio interno uniforme y separación clara entre elementos.
 
-El diseño responsive garantiza la correcta visualización desde pantallas de aproximadamente **320 px de ancho**, evitando desbordamiento horizontal y reorganizando los elementos mediante CSS Flexbox, Grid y media queries.
+El layout es fluido: el contenedor se resuelve con `min(1200px, 100% - 64px)` y la hoja de estilos no define un ancho mínimo, por lo que el contenido se adapta progresivamente al espacio disponible. La adaptación se organiza en tres breakpoints:
+
+| Breakpoint | Ajustes principales |
+|:---:|:---|
+| 1150 px | Las opciones de navegación pasan de etiquetas a botones compactos y el menú colapsa |
+| 800 px | El H1 baja a 36 px y el H2 a 28 px; las secciones pasan a una sola columna |
+| 600 px | Ajustes finos de espaciado y de texto auxiliar |
+
+La reorganización de los componentes se resuelve mediante CSS Grid y Flexbox, evitando desbordamiento horizontal en los anchos evaluados durante la validación de la interfaz.
 
 
 ### 3.1.2. Information Architecture
@@ -5995,28 +6038,38 @@ La estructura principal queda definida de la siguiente manera:
 ```text
 Landing Page TerraTech
 │
-├── Inicio
-│   └── Propuesta de valor + Call To Action
+├── Inicio (#inicio)
+│   ├── Propuesta de valor
+│   ├── Texto introductorio
+│   └── Call To Action: Solicitar demostración
 │
-├── Características
-│   ├── Sensor de Humedad
-│   ├── Sensor de Nutrientes
-│   └── Alertas en Tiempo Real
+├── Beneficios (#beneficios)
+│   ├── Registro e inicio de sesión
+│   ├── Perfil y parcelas
+│   ├── Registro de sensor
+│   ├── Selección de parcela
+│   ├── Indicadores del suelo
+│   ├── Historial de mediciones
+│   └── Consulta sin conexión
 │
-├── Sobre TerraTech
-│   ├── Propósito de la solución
-│   └── NovaTech
+├── Soluciones (#soluciones)
+│   ├── Explicación de la integración sensores + app
+│   ├── Resumen del alcance funcional de la TB1
+│   └── Visor de pantallas de la app (Indicadores, Histórico, Sin conexión)
 │
-├── Nuestro Equipo
-│   └── Integrantes del proyecto
+├── Planes (#planes)
+│   ├── Plan Pro
+│   └── Plan Empresarial
 │
-├── Solicitar Demostración
-│   └── Formulario de contacto
+├── Equipo (#equipo)
+│   └── Cinco integrantes de NovaTech con fotografía, nombre y rol
+│
+├── Contacto (#contacto)
+│   └── Formulario de solicitud de demostración
 │
 └── Footer
-    ├── Términos y condiciones
-    └── Información complementaria
-    
+    ├── Enlaces del proyecto e informe
+    └── Crédito de la fotografía agrícola
 ```
 
 #### 3.1.2.2. Labelling Systems
@@ -6028,58 +6081,71 @@ Las etiquetas se mantienen consistentes entre el Navbar, los títulos de las sec
 | Etiqueta | Propósito |
 |:---|:---|
 | **Inicio** | Presentar la propuesta de valor principal de TerraTech. |
-| **Beneficios** | Resumir el valor que aporta la solución al monitoreo agrícola. |
-| **Características** | Presentar las capacidades principales disponibles para el alcance actual. |
-| **Sobre TerraTech** | Explicar el propósito de la solución y su relación con agricultura e IoT. |
-| **Soluciones** | Mostrar las funcionalidades contempladas para la TB1. |
-| **Planes** | Presentar información comercial y alternativas referenciales de la Landing Page. Al tratarse de una sección de diseño, su presencia en los wireframes y mock-ups no implica que todos los planes se encuentren implementados funcionalmente en esta entrega. |
+| **Beneficios** | Resumir las capacidades que el visitante podrá encontrar en la aplicación. |
+| **Soluciones** | Explicar cómo se relacionan los sensores, los servicios y la aplicación, y mostrar el alcance funcional de la TB1. |
+| **Planes** | Presentar el plan Pro y la opción Empresarial. Al tratarse de una sección de contenido informativa, su presencia no implica que exista una lógica comercial implementada en el backend. |
 | **Equipo** | Presentar al equipo NovaTech responsable del proyecto. |
 | **Contacto** | Permitir que el visitante solicite información o una demostración. |
-| **Solicitar demostración** | Call To Action principal de la Landing Page. |
-| **Términos y condiciones** | Permitir consultar información legal y condiciones generales del servicio. |
+| **Solicitar demostración** | Call To Action principal, presente en el Hero, en el Header y en el formulario. |
+| **Conocer funcionalidades** | Call To Action secundario que dirige a la sección de Beneficios. |
+| **Contactar con nosotros** | Call To Action asociado al plan Empresarial. |
 
-En las secciones asociadas con la TB1 se utilizan etiquetas que reflejan directamente las historias que serán presentadas: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores en tiempo real**, **Historial de mediciones** y **Consulta sin conexión**.
+En la sección de Beneficios se utilizan siete etiquetas que reflejan directamente las historias priorizadas de la TB1: **Registro e inicio de sesión**, **Perfil y parcelas**, **Registro de sensor**, **Selección de parcela**, **Indicadores del suelo**, **Historial de mediciones** y **Consulta sin conexión**.
+
+La sección de Soluciones presenta un resumen del alcance funcional con las etiquetas **Acceso seguro**, **Parcelas y perfil**, **Sensores asociados**, **Últimas mediciones**, **Histórico de 7 y 30 días** e **Información descargada**. El visor de pantallas de la aplicación se opera mediante tres pestañas: **Indicadores**, **Histórico** y **Sin conexión**.
+
+Los títulos de sección emplean las etiquetas **Beneficios y características**, **Tecnología para conocer mejor tu suelo**, **Elige cómo empezar con TerraTech**, **Equipo NovaTech** y **Solicita una demostración**, manteniendo correspondencia con la función que cumple cada bloque.
 
 Los Call To Action utilizan expresiones directas como **“Solicitar demostración”** y **“Conocer funcionalidades”**, reduciendo ambigüedad y facilitando que el visitante comprenda la acción disponible.
+
+La Landing Page se publica en **español e inglés**, con el español como idioma predeterminado. El usuario cambia de idioma mediante un selector **ES / EN** situado en el Header. Ninguna etiqueta se escribe directamente en el HTML: todas se gestionan como claves de traducción en los diccionarios `public/i18n/es.json` y `public/i18n/en.json`, que el motor de `public/js/i18n.js` carga y aplica sobre la página mediante atributos `data-i18n`, sin recurrir a librerías externas.
+
+La cobertura de traducción comprende el contenido, la navegación, las etiquetas del formulario, los mensajes de validación y confirmación, los textos accesibles y los metadatos del documento. Este último punto se detalla en `3.1.2.3 SEO Tags and Meta Tags`.
+
+La preferencia de idioma se guarda en `localStorage`, por lo que se conserva al recargar la página. Las capturas originales de la aplicación Android permanecen en español, por lo que no se traducen; lo que sí se traduce son sus descripciones y textos alternativos, y el visor de pantallas informa de manera explícita el idioma original de las imágenes.
+
+Si la carga de los diccionarios falla, la página conserva el contenido original en español y los controles que dependen de la traducción permanecen deshabilitados, evitando presentar una interfaz incompleta. Al utilizar `fetch`, la Landing Page requiere servirse sobre HTTP; abrir el archivo `index.html` directamente desde el sistema de archivos no permite cargar los diccionarios, por lo que la revisión local se realiza mediante un servidor como Live Server o `python -m http.server`.
 
 
 #### 3.1.2.3. SEO Tags and Meta Tags
 
-La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
+La Landing Page de TerraTech incorpora metadatos básicos orientados a facilitar su correcta visualización, descripción e indexación en navegadores, redes sociales y motores de búsqueda. La configuración se implementa directamente en HTML5 y se complementa con CSS3 y JavaScript para la presentación y las interacciones.
 
 **Title**
 
 ```text
-TerraTech | Agricultura inteligente y monitoreo del suelo
+TerraTech | Monitorea tu parcela con datos del suelo
 ```
 
 **Description**
 
 ```text
-TerraTech integra sensores IoT y una aplicación móvil para gestionar parcelas, consultar humedad, temperatura y nutrientes del suelo, revisar mediciones históricas y acceder a información previamente descargada.
+Gestiona parcelas y sensores, consulta indicadores del suelo y revisa el histórico de humedad con TerraTech. Plan Pro por S/ 50 al mes.
 ```
 
-**Keywords**
-
-```text
-TerraTech, agricultura inteligente, agricultura de precisión,
-sensores IoT, humedad del suelo, temperatura del suelo,
-nutrientes del suelo, monitoreo agrícola, historial de mediciones,
-aplicación Android, tecnología agrícola
-```
-
-Los principales Meta Tags considerados son:
+Los metadatos implementados son:
 
 | Meta Tag | Valor |
 |:---|:---|
-| Charset | `UTF-8` |
-| Viewport | `width=device-width, initial-scale=1.0` |
-| Author | `NovaTech` |
-| Robots | `index, follow` |
-| Language | `es-PE` |
-| Content-Type | `text/html; charset=UTF-8` |
+| Charset | `utf-8` |
+| Viewport | `width=device-width, initial-scale=1` |
+| Theme color | `#2e7d32` |
+| Language (`html lang`) | `es` |
+| Open Graph title | `TerraTech \| Monitorea tu parcela con datos del suelo` |
+| Open Graph description | Igual que la descripción del documento |
+| Open Graph type | `website` |
+| Open Graph locale | `es_PE` |
+| Favicon | `public/favicon.svg`, declarado como imagen SVG |
+| Preload de fuentes | `inter-regular.ttf` e `inter-bold.ttf`, con `crossorigin` |
+| Scripts | `i18n.js` y `main.js`, cargados con `defer` |
 
-La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. A su vez, `title` y `description` describen el producto sin atribuir funcionalidades que no se encuentran dentro del alcance actual de la TB1.
+El atributo `lang` del elemento raíz declara el idioma del documento y se actualiza al cambiar el idioma de la interfaz, de modo que los lectores de pantalla interpretan el texto con la pronunciación correspondiente.
+
+La etiqueta `viewport` garantiza la adaptación del contenido a smartphones y otros dispositivos de pantalla reducida. El color de tema hace que la barra de direcciones del navegador móvil adopte el verde institucional de TerraTech.
+
+Los metadatos de Open Graph permiten que el enlace compartido en redes sociales muestre el título, la descripción y el idioma correctos. El `title` y la `description` se gestionan además desde los diccionarios de idioma, por lo que cada versión de la página declara sus propios valores.
+
+La precarga de las dos variantes de Inter evita que la tipografía principal se descargue después del primer renderizado, reduciendo el desplazamiento visual del texto.
 
 
 #### 3.1.2.4. Searching Systems
@@ -6094,7 +6160,7 @@ Esta decisión responde a tres criterios:
 - El número de secciones es reducido y fácilmente identificable.
 - Incorporar una barra de búsqueda no aportaría valor adicional en el alcance actual.
 
-El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las características, la información sobre TerraTech, las funcionalidades incluidas en la TB1 y el formulario de contacto mediante la navegación principal.
+El visitante puede localizar rápidamente la propuesta de valor, los beneficios, las soluciones, los planes, el equipo y el formulario de contacto mediante la navegación principal.
 
 En futuras iteraciones, si TerraTech incorpora documentación, artículos, catálogos extensos u otros contenidos de mayor volumen, podría evaluarse la incorporación de un mecanismo de búsqueda específico.
 
@@ -6106,20 +6172,31 @@ La Landing Page de TerraTech utiliza un sistema de navegación global mediante u
 La navegación sigue una estructura lineal y predecible:
 
 ```text
-Inicio → Beneficios → Características → Sobre TerraTech → Soluciones → Planes → Equipo → Contacto
+Inicio → Beneficios → Soluciones → Planes → Equipo → Contacto
 ```
 
-Cada opción puede asociarse a un identificador HTML para desplazar al usuario hacia la sección correspondiente dentro de la misma página.
+Cada opción se asocia a un identificador HTML que desplaza al usuario hacia la sección correspondiente dentro de la misma página.
 
-El botón **“Solicitar demostración”** funciona como Call To Action principal y dirige al visitante hacia el formulario de contacto.
+Como primer elemento enfocable del documento, la Landing Page incluye un enlace de salto **“Ir al contenido”** que permite a quien navega con teclado o lector de pantalla saltar directamente al contenido principal, evitando recorrer el Header en cada visita.
+
+El botón **“Solicitar demostración”** funciona como Call To Action principal, presente en el Header, en el Hero y en el propio formulario, y dirige al visitante hacia la sección de contacto.
 
 En Desktop, las opciones principales permanecen visibles horizontalmente. En Mobile, el menú se adapta a un formato de tipo hamburguesa controlado mediante JavaScript para reducir el espacio ocupado por la navegación.
 
-La navegación entre secciones puede complementarse mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú puede cerrarse automáticamente y desplazar al usuario hacia el contenido correspondiente.
+La navegación entre secciones se resuelve mediante `smooth scrolling`. Al seleccionar una opción desde el menú móvil, el menú se cierra automáticamente y el contenido se desplaza hasta la sección correspondiente.
 
-El Footer complementa la navegación proporcionando acceso a información institucional, términos y condiciones y otros enlaces relevantes.
+El Footer complementa la navegación proporcionando acceso directo a los enlaces del proyecto y del informe, e incluye el crédito de la fotografía agrícola utilizada.
 
-Debe considerarse que las secciones comerciales reutilizadas en la Landing Page, como **Planes**, funcionan como contenido informativo y de diseño. Su presencia en los wireframes y mock-ups permite documentar la estructura visual completa de la Landing Page, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+Debe considerarse que las secciones comerciales de la Landing Page, como **Planes**, funcionan como contenido informativo. Su presencia permite documentar la estructura visual completa del sitio, aunque el alcance funcional de la TB1 se concentra en registro, inicio de sesión, perfil, gestión de parcelas, asociación y selección de sensores, indicadores del suelo, histórico de mediciones y consulta de información previamente descargada.
+
+La interfaz incorpora además un conjunto de medidas de accesibilidad orientadas a garantizar que el contenido sea operable mediante teclado y comprensible por tecnologías de asistencia.
+
+Como primer elemento enfocable del documento, la Landing Page incluye un enlace de salto **“Ir al contenido”** dirigido al contenido principal. El atributo `lang` del elemento raíz declara el idioma y se actualiza según el idioma activo, mientras que cada `section` referencia su título mediante `aria-labelledby` y el navbar y el selector de idioma incorporan su propio `aria-label`. La biblioteca de iconos SVG se marca como `aria-hidden` por tratarse de elementos decorativos.
+
+El visor de pantallas de la aplicación se implementa como `tablist` con `tab` y `tabpanel`, navegable con teclado y con gestión del foco. El formulario emplea `novalidate` con validación propia, asocia a cada campo su ayuda y su error mediante `aria-describedby`, y muestra los resultados en un contenedor con `role="status"`, `aria-live="polite"` y `aria-atomic`, de modo que el mensaje se anuncia sin interrumpir al usuario.
+
+El foco visible se representa mediante un contorno de 2 px en el color institucional, separado 4 px del elemento, y se respeta la preferencia `prefers-reduced-motion` desactivando las transiciones. Las imágenes declaran sus dimensiones para evitar desplazamientos de layout, y las del visor emplean carga diferida.
+
 
 
 ### 3.1.3. Landing Page UI Design
@@ -6302,7 +6379,7 @@ Los wireframes representan la estructura esquemática en baja fidelidad de la ap
 <p align="center">
   <img src="assets/images/cap3/mobile-wireframes.png" alt="Wireframes de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.9. Wireframes de la aplicación móvil de TerraTech (Alcance TB1).</em></p>
+<p align="center"><em>Figura 3.11. Wireframes de la aplicación móvil de TerraTech (Alcance TB1).</em></p>
 
 La arquitectura de información en baja fidelidad comprende las pantallas esenciales del alcance funcional:
 - **WF-01: Registro de Usuario (US06):** Formulario con campos para Nombre (mínimo 2 caracteres), Correo electrónico, Contraseña (mínimo 6 caracteres), Confirmar contraseña y enlace para usuarios ya registrados. Muestra mensajes de error en línea ante contraseñas no coincidentes o correo ya registrado.
@@ -6321,7 +6398,7 @@ El diagrama de Wireflow ilustra las transiciones lógicas y cambios de estado de
 <p align="center">
   <img src="assets/images/cap3/mobile-wireflow.png" alt="Diagrama de Wireflow de la Aplicación Móvil" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.10. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.12. Diagrama de Wireflow de la aplicación móvil de TerraTech.</em></p>
 
 A continuación se detalla la secuencia de navegación y eventos contemplados en el flujo operativo del agricultor:
 
@@ -6343,7 +6420,7 @@ Los mock-ups en alta fidelidad plasman el diseño visual definitivo de la aplica
 <p align="center">
   <img src="assets/images/cap3/mobile-mockup.png" alt="Mock-ups en Alta Fidelidad de la Aplicación Móvil TerraTech" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.11. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
+<p align="center"><em>Figura 3.13. Mock-ups en alta fidelidad de la aplicación móvil de TerraTech.</em></p>
 
 Detalle de las pantallas en alta fidelidad:
 - **Pantalla de Autenticación y Registro (US06 / US07):** Interfaz limpia con el logotipo de TerraTech, campos de entrada con etiquetas flotantes y validación visual instantánea (indicadores de error en rojo y mensajes informativos accesibles).
@@ -6371,7 +6448,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-1.png" alt="User Flow 1 - Acceso, Registro y Autenticación" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.12. User Flow 1: Flujo de Acceso, Registro y Autenticación Inicial.</em></p>
+<p align="center"><em>Figura 3.14. User Flow 1: Flujo de Acceso, Registro y Autenticación Inicial.</em></p>
 
 ---
 
@@ -6389,7 +6466,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-2.png" alt="User Flow 2 - Monitoreo Agronómico y Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.13. User Flow 2: Flujo de Monitoreo Agronómico y Diagnóstico Histórico.</em></p>
+<p align="center"><em>Figura 3.15. User Flow 2: Flujo de Monitoreo Agronómico y Diagnóstico Histórico.</em></p>
 
 ---
 
@@ -6407,7 +6484,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-3.png" alt="User Flow 3 - Gestión de Parcelas y Vinculación de Hardware IoT" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.14. User Flow 3: Flujo de Gestión de Parcelas y Vinculación de Hardware IoT.</em></p>
+<p align="center"><em>Figura 3.16. User Flow 3: Flujo de Gestión de Parcelas y Vinculación de Hardware IoT.</em></p>
 
 ---
 
@@ -6425,7 +6502,7 @@ Los diagramas de User Flow detallan las rutas e interacciones secuenciales que r
 <p align="center">
   <img src="assets/images/cap3/User-Flow-4.png" alt="User Flow 4 - Navegación Cruzada de Parcela a Diagnóstico Histórico" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.15. User Flow 4: Flujo de Navegación Cruzada de Parcela a Diagnóstico Histórico.</em></p>
+<p align="center"><em>Figura 3.17. User Flow 4: Flujo de Navegación Cruzada de Parcela a Diagnóstico Histórico.</em></p>
 
 ---
 
@@ -6436,7 +6513,7 @@ El diseño de experiencia de usuario contempla formalmente los escenarios de exc
 <p align="center">
   <img src="assets/images/cap3/unhappy-path.png" alt="Diagrama de Rutas de Excepción (Unhappy Paths)" style="width: 100%; max-width: 850px; height: auto;">
 </p>
-<p align="center"><em>Figura 3.16. Diagrama de Rutas de Excepción y Contingencia (Unhappy Paths).</em></p>
+<p align="center"><em>Figura 3.18. Diagrama de Rutas de Excepción y Contingencia (Unhappy Paths).</em></p>
 
 - **UP1 — Fallos en Registro o Inicio de Sesión (US06 / US07):**
   - *Caso 1.1 (Registro con correo ya registrado):* Si el agricultor intenta registrarse con un correo ya existente en la base de datos, el formulario bloquea la creación, muestra el mensaje de error *"El correo electrónico ya se encuentra registrado"* y provee un enlace directo para recuperar la contraseña o iniciar sesión.
@@ -6518,17 +6595,19 @@ El objetivo prioriza la consulta de datos de una parcela propia y su continuidad
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
-La matriz LACX relaciona la responsabilidad registrada en el informe con los aspectos de este incremento. **L** significa líder del aspecto, **C** colaborador y **—** participación no acreditada en esta revisión. El informe previo atribuye a Jorge el backend base, a Angel el UX móvil, a James el diseño de Landing Page y a Bryan la documentación de validación; esos aportes se mantienen. La ampliación de backend, Android, pruebas y despliegue tiene commits verificables de `Lucemz`. La matriz debe ratificarse con el equipo; no se atribuyen implementaciones de seguridad o pruebas a un integrante sin sus commits.
+La matriz LACX relaciona la responsabilidad registrada en el informe con los aspectos de este incremento. **L** significa líder del aspecto, **C** colaborador y **—** participación no acreditada en esta revisión. El informe previo atribuye a Jorge el backend base, a Angel el UX móvil, a James el diseño de Landing Page y a Bryan la documentación de validación; esos aportes se mantienen. La ampliación de backend, Android, pruebas y despliegue tiene commits verificables de `Lucemz`. La implementación de la Landing Page en HTML5, CSS3 y JavaScript, con internationalización ES/EN y publicación en GitHub Pages, tiene commits verificables de `bry4nbe` en `LandingPage-TerraTech`; ese repositorio no incluye pruebas automatizadas, por lo que no se acredita cobertura de pruebas para ese producto. La matriz debe ratificarse con el equipo; no se atribuyen implementaciones de seguridad o pruebas a un integrante sin sus commits.
 
-| Team Member | GitHub Username | Backend base / arquitectura | Cierre backend / MySQL / Cloud Run | Implementación Android / Room / pruebas | UX móvil | Diseño Landing Page | Documentación de validación |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | C | L | L | C | — | C |
-| Retuerto Rodriguez, Jorge Manuel | Calin1407 | L | C | — | — | — | — |
-| Pariona Chacca, Angel Jose | Angelitoso-opp | — | — | — | L | — | — |
-| Delgado Perez, James Caleb | JAmsy06 | — | — | — | — | L | — |
-| Barba Estrada, Bryan Eduardo | bry4nbe | — | — | — | — | — | L |
+| Team Member | GitHub Username | Backend base / arquitectura | Cierre backend / MySQL / Cloud Run | Implementación Android / Room / pruebas | UX móvil | Diseño Landing Page | Implementación Landing Page / ES-EN / Pages | Documentación de validación |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bendezú Navarro, Rúbens Fitzgerald | Lucemz | C | L | L | C | — | — | C |
+| Retuerto Rodriguez, Jorge Manuel | Calin1407 | L | C | — | — | — | — | — |
+| Pariona Chacca, Angel Jose | Angelitoso-opp | — | — | — | L | — | — | — |
+| Delgado Perez, James Caleb | JAmsy06 | — | — | — | — | L | — | — |
+| Barba Estrada, Bryan Eduardo | bry4nbe | — | — | — | — | — | L | L |
 
-La tecnología efectiva es **C#, ASP.NET Core .NET 10, Entity Framework Core y MySQL** para backend; **Kotlin, Compose, MVVM/StateFlow, Hilt, Retrofit, Room y DataStore** para Android. Las menciones anteriores a Spring Security, JPA/Hibernate, Spring Data y PostgreSQL no describían esta implementación y se corrigen en este Sprint.
+La行列a de implementación de la Landing Page distingue el código del diseño: el diseño de 3.1.3 corresponde a Delgado Perez, James Caleb, mientras que el código HTML5, CSS3 y JavaScript, los diccionarios de idioma y la publicación en GitHub Pages corresponden a Barba Estrada, Bryan Eduardo. Bryan además verificó y ajustó la documentación de 3.1 y 3.1.2 contra el sitio publicado, sin modificar la autoría del diseño.
+
+La tecnología efectiva es **C#, ASP.NET Core .NET 10, Entity Framework Core y MySQL** para backend; **Kotlin, Compose, MVVM/StateFlow, Hilt, Retrofit, Room y DataStore** para Android; **HTML5, CSS3 y JavaScript sin dependencias de frontend**, con diccionarios JSON para el bilingüismo ES/EN, para la Landing Page. Las menciones anteriores a Spring Security, JPA/Hibernate, Spring Data y PostgreSQL no describían esta implementación y se corrigen en este Sprint.
 
 #### 4.2.1.3. Sprint Backlog 1
 
@@ -6551,7 +6630,8 @@ El backlog descompone el recorrido en tareas comprobables. La captura y URL púb
 | Transversal | Contrato desplegado | S1-13 | Cambiar API_URL Android a dominio HTTPS; comprobar BuildConfig y 11 rutas Retrofit | NR | RF | Done |
 | Transversal | Aceptación física | S1-14 | Recorrer el APK en teléfono mediante clics y reiniciar offline; adjuntar dispositivo/versión/resultado | NR | RF / equipo | To-do |
 | Transversal | Informe y exposición | S1-15 | Completar nueve subpuntos, anexar capturas públicas/board/analíticos y subir video de navegación | NR | RF / equipo | To-Review |
-| US01-US05 | Landing Page | S1-16 | Incorporar repositorio/commit de implementación, URL publicada, pruebas y ejecución; conservar diseños de 3.1.3 | NR | Responsable por confirmar | To-Review |
+| US01, US03, US05 | Landing Page | S1-16 | Repositorio, commits de implementación, publicación en GitHub Pages y conservación de los diseños de 3.1.3 | NR | Barba Estrada, Bryan Eduardo | Done |
+| US02, US04 | Landing Page | S1-17 | US02 exige tres características de sensor y US04 una consulta de términos y condiciones; ninguna se implementó, por lo que el alcance de la Landing Page se limita a US01, US03 y US05 | NR | Barba Estrada, Bryan Eduardo | To-do |
 
 No se declara recepción de telemetría de hardware físico: el catálogo y las lecturas de demostración se provisionan mediante comandos explícitos en Development y se bloquean en Production. El servidor publicado crea el esquema, no usuarios/contraseñas ni lecturas automáticamente.
 
@@ -6561,7 +6641,7 @@ El backend heredado se amplió para el recorrido móvil: identidad JWT estándar
 
 Android se organiza bajo `iam`, `profile`, `monitoring` y `core`, con capas `domain`, `application`, `infrastructure` y `presentation` en los contextos de negocio. ViewModels exponen StateFlow; los casos de uso aplican reglas de dominio; Retrofit, DTOs, entidades/DAOs Room y repositorios concretos permanecen en infraestructura. Hilt resuelve dependencias. Room almacena consultas y DataStore preferencias/selección y material de sesión protegido; no se persisten contraseñas.
 
-**Repositorios:** [backend](https://github.com/AppMovil-Dato/BackEnd-TerraTech), [Android](https://github.com/AppMovil-Dato/App-Android-Terratech), [informe](https://github.com/AppMovil-Dato/terratech-project-report). Los commits siguientes se inspeccionaron en los repositorios; cuando no existe cuerpo de mensaje se indica «Sin cuerpo» en lugar de inventarlo.
+**Repositorios:** [backend](https://github.com/AppMovil-Dato/BackEnd-TerraTech), [Android](https://github.com/AppMovil-Dato/App-Android-Terratech), [Landing Page](https://github.com/AppMovil-Dato/LandingPage-TerraTech) e [informe](https://github.com/AppMovil-Dato/terratech-project-report). Los commits siguientes se inspeccionaron en los repositorios; cuando no existe cuerpo de mensaje se indica «Sin cuerpo» en lugar de inventarlo.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date, Lima) |
 | --- | --- | --- | --- | --- | --- |
@@ -6572,8 +6652,13 @@ Android se organiza bajo `iam`, `profile`, `monitoring` y `core`, con capas `dom
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [23d71c1](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/23d71c1) | feat: implement TB1 Android journey with offline cache and verified tests | Sin cuerpo | 04/10/2026 |
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [6296024](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/6296024) | refactor: separate Android types screens content and context infrastructure | Sin cuerpo | 04/10/2026 |
 | AppMovil-Dato/App-Android-Terratech | feature/tb1-android | [3f4c4d6](https://github.com/AppMovil-Dato/App-Android-Terratech/commit/3f4c4d6) | fix: point Android app to deployed TerraTech API | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [6000acd](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/6000acd) | feat(assets): add TerraTech visual resources | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [0ee2179](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/0ee2179) | feat(landing): build responsive page layout | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [284a6d5](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/284a6d5) | feat(i18n): add bilingual interactions and form simulation | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [353acd3](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/353acd3) | refactor(landing): organize public assets and load translations from JSON | Sin cuerpo | 04/10/2026 |
+| AppMovil-Dato/LandingPage-TerraTech | main | [ff7785e](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commit/ff7785e) | docs(readme): document project structure and internationalization | Sin cuerpo | 04/10/2026 |
 
-El diseño de Landing Page se documenta en 3.1.3; no se confunden wireframes/mockups con código desplegado. Los commits de implementación de ese producto están pendientes de incorporar.
+El diseño de Landing Page se documenta en 3.1.3; no se confunden wireframes/mockups con código desplegado. La implementación en HTML5, CSS3 y JavaScript puro, sin dependencias de frontend, se traza mediante los commits de `LandingPage-TerraTech` listados en 4.2.1.4 e incluye el diseño bilingüe ES/EN con diccionarios JSON cargados por `fetch`. El sitio se publica desde `main` en GitHub Pages: https://appmovil-dato.github.io/LandingPage-TerraTech/. El repositorio no incluye pruebas automatizadas, por lo que el comportamiento del formulario y del selector de idioma no cuenta con una suite ejecutada que lo acredite.
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
@@ -6623,6 +6708,14 @@ El login permite entrar con JWT; el perfil muestra los datos persistidos y convi
 
 El histórico alterna 7/30 días e incluye gráfica y lista cronológica; cada lectura conserva identidad y unidades. La última captura acredita recuperación de datos guardados tras reiniciar sin red, con banner offline y antigüedad visible. No se simula una respuesta de servidor para ocultar fallos de conexión.
 
+**Landing Page - Desktop y Mobile**
+
+Las siguientes capturas se tomaron el 4 de octubre de 2026 del [sitio publicado de TerraTech](https://appmovil-dato.github.io/LandingPage-TerraTech/). Son pantallas implementadas del sitio ejecutado en navegador, no mockups. La vista Desktop utiliza un viewport de 1440 × 900 px; la vista Mobile utiliza un viewport de 390 × 844 px y muestra el menú hamburguesa abierto.
+
+| Landing Page - Desktop | Landing Page - Mobile |
+| --- | --- |
+| <img src="assets/images/cap4/sprint1/landing-desktop.png" alt="Landing Page publicada de TerraTech en viewport de escritorio" width="220"> | <img src="assets/images/cap4/sprint1/landing-mobile.png" alt="Landing Page publicada de TerraTech en viewport móvil con el menú hamburguesa abierto" width="220"> |
+
 **Video de navegación:** existe una grabación local `artifacts/TerraTech-TB1-emulator.mp4` en el proyecto Android, excluida de Git. Falta publicar el video narrado del equipo en OneDrive/YouTube y colocar el enlace accesible; no se sustituye por una URL ficticia. Se requieren también capturas de registro/confirmación y del recorrido actual en teléfono; ver [detalle de evidencia pendiente](docs/TB1_SPRINT1_EVIDENCE_CHECKLIST.md).
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
@@ -6663,7 +6756,7 @@ El backend está desplegado en **Google Cloud Run**, proyecto `terratech-510620`
 | Inicialización | La base defaultdb existente en Aiven recibió las migraciones Initial y Tb1Journey al arrancar. DatabaseInitializer puede crear una base ausente con permisos apropiados y coordina instancias mediante bloqueo de MySQL |
 | Verificación pública | Dominio propio verificado con curl: salud y Swagger 200; /users/me sin JWT 401. La URL predeterminada de Cloud Run está deshabilitada y responde 404. El archivo separa estas comprobaciones fechadas de las diez verificaciones anteriores sin timestamp; no se publican logs con credenciales |
 | Android | Commit 3f4c4d6 cambia API_URL por defecto a https://terratech-api.lucemz.com/. AssembleDebug, 32 unitarias y lint aprobados; APK instalable local, sin publicación en Play Store |
-| Landing Page | Diseños documentados; URL/repo de implementación, deploy y validación HTTP pendientes de aportar por el equipo |
+| Landing Page | Diseño en 3.1.3 e implementación en HTML5, CSS3 y JavaScript sin dependencias, con internationalización ES/EN. Publicada en GitHub Pages desde `main` en https://appmovil-dato.github.io/LandingPage-TerraTech/ con el commit ff7785e. La verificación consistió en comprobar que la URL pública devuelve el documento esperado en español, con las seis secciones, siete beneficios, tres pestañas del visor de pantallas, dos planes y el formulario de prueba; no se adjuntan volcado de red, cabeceras ni revisión de Lighthouse, y el repositorio no incluye pruebas automatizadas |
 
 El dominio público responde mediante Cloudflare delante del servicio. La comprobación usa GET con curl: un recolector con urllib recibió 403, por lo que se registra el método y no se interpreta ese bloqueo como fallo de arranque del backend. El certificado HTTPS público corresponde al dominio publicado. La conexión MySQL utiliza SslMode=Required; eso cifra la conexión, pero **no se afirma validación completa del certificado del servidor**. VerifyFull requiere montar la CA y actualizar la conexión. Ningún certificado, contraseña, JWT o archivo local de credenciales se incorpora al reporte.
 
@@ -6685,7 +6778,7 @@ El incremento reutiliza el backend anterior y los artefactos de dominio y UI del
 | Android | Implementación, validación, refactor y URL desplegada en feature/tb1-android; [historial](https://github.com/AppMovil-Dato/App-Android-Terratech/commits/feature/tb1-android/) |
 | Informe | main 433e395 se actualizó por fast-forward. develop 1aa2092 contenía además PR #7 y los cambios de diseño Landing Page; fue la base más reciente e incluía main |
 | Rama individual | feature/rubens-fitzgerald-tb1-sprint1, creada desde origin/develop 1aa2092; integra los nueve subpuntos y evidencia en una rama independiente para revisión |
-| Landing Page | La documentación de diseño no prueba contribuciones de código al producto; incorporar repositorio y analíticos cuando se disponga de esa evidencia |
+| Landing Page | Implementación, internacionalización y publicación en GitHub Pages atribuidas a Barba Estrada, Bryan Eduardo mediante los commits de `LandingPage-TerraTech`; [historial](https://github.com/AppMovil-Dato/LandingPage-TerraTech/commits/main/) y [sitio publicado](https://appmovil-dato.github.io/LandingPage-TerraTech/). El diseño de 3.1.3 corresponde a Delgado Perez, James Caleb y se documenta por separado, sin atribuirle código. Faltan las capturas de analíticos de GitHub y las pantallas Desktop y Mobile reales que exige el checklist |
 
 **Interpretación:** separar contextos y archivos facilitó revisar cambios sin agrupar pantallas, DTOs y lógica; el contrato compartido evitó modificar rutas al cambiar de servidor local a Cloud Run. Las pruebas de dos cuentas y reinicio offline hicieron visible el trabajo de seguridad/persistencia. El fallo de despliegue se resolvió contrastando el error real y el formato de conexión, no cambiando el puerto de MySQL por el de HTTP.
 
