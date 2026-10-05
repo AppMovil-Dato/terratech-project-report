@@ -1,0 +1,96 @@
+{
+  "sourceCommit": "3f4c4d602d604cdc440bb13caf51bdb8128f6b93",
+  "configuration": "Debug",
+  "baseUrl": "https://terratech-api.lucemz.com/",
+  "buildSuccessful": true,
+  "lintSuccessful": true,
+  "unitSuites": [
+    {
+      "suite": "com.novatech.terratech.ApiContractTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.073Z",
+      "cases": [
+        "registrationIncludesExactConfirmation",
+        "problemDetailsPreservesConflictAndNoDataCodes",
+        "noInternetIsNotAnEmptyCollection",
+        "historyAndDetailShareUnitsAndIdentity",
+        "sensorSelectionUsesFieldRoute",
+        "expiredSessionIsNotMislabelledOffline"
+      ]
+    },
+    {
+      "suite": "com.novatech.terratech.ApplicationActionsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.416Z",
+      "cases": [
+        "validRegistrationKeepsPasswordSpaces",
+        "loginUsesValidatedNormalizedEmail",
+        "shortNameNeverCallsBackend",
+        "rejectedConfirmationNeverCallsBackend"
+      ]
+    },
+    {
+      "suite": "com.novatech.terratech.DomainRulesTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.423Z",
+      "cases": [
+        "profileValidationLivesInDomainAndPreservesTerrainUnits",
+        "invalidEmailsFail",
+        "sensorCodeNormalizationAndValidation",
+        "invalidAreasFail",
+        "passwordLimits",
+        "rangesIncludeUtcEndpointsAndExcludeFuture",
+        "coordinatesRejectInvalidOrNonFiniteValues",
+        "emailNormalizesWithoutChangingPassword",
+        "tokenExpirationIsStrictAndNeverPrinted",
+        "readingStaleBoundaryIncludesFractions",
+        "hectaresConvertPreciselyToBackendUnits"
+      ]
+    },
+    {
+      "suite": "com.novatech.terratech.MonitoringStateTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.430Z",
+      "cases": [
+        "secondAccountClearsSelectionAndCachedReadingsImmediately",
+        "emptyParcelClearsPreviousDeviceReadings",
+        "invalidSensorNeverReachesRepository",
+        "creationEventSurvivesAutomaticRefreshUntilAcknowledged",
+        "occupiedSensorRetainsSelectionAndShowsConflict",
+        "offlineKeepsCachedValuesAndDoesNotLookEmpty",
+        "recoveryClearsOfflineFlagAfterSuccessfulRefresh"
+      ]
+    },
+    {
+      "suite": "com.novatech.terratech.UiOwnershipTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.465Z",
+      "cases": [
+        "switchingAccountCannotRenderThePreviousOwnersFieldsOrProfile"
+      ]
+    },
+    {
+      "suite": "com.novatech.terratech.ViewModelStateTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "timestamp": "2026-10-04T20:59:47.466Z",
+      "cases": [
+        "invalidConfirmationSetsErrorAndFinishesLoading",
+        "repeatedTapOnlySendsOneRequest",
+        "successClearsPreviousErrorAndReturnsToLogin"
+      ]
+    }
+  ],
+  "runtimeUiAgainstProductionVerified": false
+}
